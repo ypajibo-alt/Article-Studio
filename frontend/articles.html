@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Article Studio</title>
+  <style>
+    :root {
+      --bg:      #ffffff;
+      --sidebar: #1E1E2D;
+      --card:    #ffffff;
+      --input:   #f9fafb;
+      --border:  #e2e4e8;
+      --dim:     #c0c4cb;
+      --muted:   #8b919a;
+      --text:    #374151;
+      --bright:  #1a1a1a;
+      --purple:  #7C3AED;
+      --purple-light: #6d28d9;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: var(--bg); color: var(--text); min-height: 100vh; display: flex;
+    }
+
+    /* ── Sidebar ── */
+    .dossier-sidebar {
+      width: 200px; min-width: 200px; background: var(--sidebar);
+      display: flex; flex-direction: column; padding: 12px;
+      height: 100vh; position: sticky; top: 0; flex-shrink: 0;
+    }
+    .ds-logo { display: flex; align-items: center; gap: 10px; padding: 14px 12px 22px; }
+    .ds-logo span { font-size: 18px; font-weight: 700; color: var(--bright); letter-spacing: -0.02em; }
+    .ds-nav { display: flex; flex-direction: column; gap: 2px; }
+    .ds-nav-item {
+      display: flex; align-items: center; gap: 10px; padding: 8px 12px; border-radius: 8px;
+      color: rgba(255,255,255,0.5); text-decoration: none; font-size: 14px; font-weight: 500;
+      transition: background 0.15s, color 0.15s;
+    }
+    .ds-nav-item:hover { background: rgba(255,255,255,0.07); color: rgba(255,255,255,0.85); }
+    .ds-nav-item.active { background: var(--purple); color: #fff; }
+    .ds-icon { width: 18px; height: 18px; flex-shrink: 0; }
+
+    /* ── Main content ── */
+    .main { flex: 1; min-width: 0; padding: 32px 36px; display: flex; flex-direction: column; gap: 20px; }
+
+    /* ── Page header ── */
+    .page-header { display: flex; align-items: flex-start; justify-content: space-between; }
+    .page-title { font-size: 22px; font-weight: 700; color: var(--bright); line-height: 1; margin-bottom: 5px; }
+    .page-sub { font-size: 13px; color: var(--muted); }
+
+    .generate-btn {
+      padding: 8px 16px; border-radius: 8px; border: none;
+      background: #00B5A3; color: #fff; font-size: 13px; font-weight: 600;
+      cursor: pointer; font-family: inherit; text-decoration: none;
+      display: inline-flex; align-items: center; gap: 6px; transition: background 0.15s;
+      white-space: nowrap; flex-shrink: 0;
+    }
+    .generate-btn:hover { background: #009e8e; }
+
+    /* ── Filter bar ── */
+    .filter-bar { display: flex; gap: 10px; align-items: center; }
+
+    .search-input {
+      flex: 1; padding: 9px 14px; border-radius: 8px; border: 1px solid var(--border);
+      background: var(--card); font-size: 13px; font-family: inherit; color: var(--text);
+      outline: none; transition: border-color 0.15s;
+    }
+    .search-input:focus { border-color: var(--purple); }
+    .search-input::placeholder { color: var(--dim); }
+
+    /* status filter chips in the bar */
+    .status-chips { display: flex; gap: 4px; flex-shrink: 0; }
+    .status-chip {
+      padding: 7px 12px; border-radius: 6px; border: 1px solid var(--border);
+      background: transparent; font-size: 12px; font-weight: 500; color: var(--muted);
+      cursor: pointer; font-family: inherit; transition: all 0.15s; white-space: nowrap;
+    }
+    .status-chip:hover { border-color: var(--dim); color: var(--text); }
+    .status-chip.active { background: var(--purple); color: #fff; border-color: var(--purple); }
+    .status-chip .cnt { opacity: 0.65; margin-left: 4px; font-size: 11px; }
+
+    /* ── Table ── */
+    .table-section { flex: 1; min-height: 0; display: flex; flex-direction: column; }
+
+    .table-card {
+      background: #f0f2ff;
+      border: 1px solid #e2e4f0;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    table { width: 100%; border-collapse: collapse; background: #fff; }
+
+    thead tr { border-bottom: 1px solid #e2e4f0; }
+
+    thead th {
+      text-align: left; padding: 11px 16px; font-size: 13px; font-weight: 600;
+      color: #374151; white-space: nowrap; cursor: pointer; user-select: none;
+      background: #fff;
+      border-right: 1px solid #e9eaf0;
+    }
+    thead th:last-child { border-right: none; text-align: right; }
+    thead th .si { color: #9ca3af; margin-left: 5px; font-size: 11px; }
+    thead th:hover { color: #1a1a1a; }
+    thead th:hover .si { color: #6b7280; }
+    thead th.sorted { color: #1a1a1a; }
+    thead th.sorted .si { color: var(--purple); }
+    thead th.no-sort { cursor: default; }
+    thead th.no-sort:hover { color: #374151; }
+
+    tbody tr {
+      border-bottom: 1px solid #f0f1f5;
+      cursor: pointer; transition: background 0.1s;
+    }
+    tbody tr:hover { background: #f5f3ff; }
+    tbody tr:last-child { border-bottom: none; }
+
+    td { padding: 11px 16px; font-size: 13px; color: var(--text); vertical-align: middle; }
+
+    .table-footer {
+      background: #fff; border-top: 1px solid #e2e4f0;
+      padding: 10px 16px; display: flex; align-items: center;
+      justify-content: space-between; font-size: 12px; color: #6b7280;
+    }
+
+    .headline-text {
+      font-weight: 600; font-size: 13px; color: var(--bright);
+      display: block; line-height: 1.35; margin-bottom: 2px; text-decoration: none;
+    }
+    .headline-text:hover { color: var(--purple-light); }
+    .article-sub { font-size: 11px; color: var(--muted); line-height: 1.4; margin-bottom: 3px; }
+    .tag-row { display: flex; flex-wrap: wrap; gap: 3px; margin-top: 3px; }
+    .tag {
+      padding: 1px 6px; border-radius: 99px; font-size: 10px; font-weight: 600;
+      background: rgba(124,58,237,0.08); color: var(--purple);
+    }
+
+    .type-badge {
+      display: inline-block; padding: 2px 8px; border-radius: 6px; font-size: 11px;
+      font-weight: 600; background: var(--input); color: var(--muted);
+    }
+
+    .status-badge {
+      display: inline-block; padding: 2px 8px; border-radius: 6px;
+      font-size: 11px; font-weight: 700; white-space: nowrap;
+    }
+    .s-draft       { background: #f3f4f6;                  color: #6b7280; }
+    .s-ready       { background: rgba(0,181,163,0.1);     color: #00B5A3; }
+    .s-legal       { background: rgba(245,158,11,0.1);    color: #d97706; }
+    .s-mkt         { background: rgba(124,58,237,0.1);    color: var(--purple); }
+    .s-approved    { background: rgba(34,197,94,0.1);     color: #16a34a; }
+    .s-unpublished { background: #f3f4f6;                 color: #9ca3af; }
+
+    .td-date  { font-size: 12px; color: var(--dim); white-space: nowrap; }
+    .td-act   { text-align: right; white-space: nowrap; }
+
+    .act-btn {
+      padding: 4px 11px; border-radius: 6px; border: 1px solid var(--border);
+      background: var(--input); font-size: 11px; font-weight: 600; color: var(--muted);
+      text-decoration: none; display: inline-block; transition: all 0.15s; margin-left: 5px;
+    }
+    .act-btn:hover { border-color: var(--purple); color: var(--purple-light); background: rgba(124,58,237,0.1); }
+
+    .send-btn {
+      padding: 4px 11px; border-radius: 6px; border: 1px solid var(--border);
+      background: var(--input); font-size: 11px; font-weight: 600; color: var(--muted);
+      cursor: pointer; font-family: inherit; transition: all 0.15s; margin-left: 5px;
+      position: relative;
+    }
+    .send-btn:hover { border-color: var(--dim); color: var(--text); }
+
+    /* Dropdown */
+    .rev-dd {
+      background: #fff; border: 1px solid var(--border); border-radius: 8px;
+      box-shadow: 0 4px 16px rgba(0,0,0,.1); min-width: 160px; z-index: 100; overflow: hidden;
+    }
+    .rev-opt {
+      display: block; width: 100%; padding: 9px 14px; font-size: 13px;
+      font-weight: 600; text-align: left; border: none; background: none;
+      cursor: pointer; font-family: inherit; color: #1a1a1a; transition: background 0.1s;
+    }
+    .rev-opt:hover { background: #f9fafb; }
+    .rev-opt .sub { font-size: 11px; font-weight: 400; color: #9ca3af; display: block; }
+
+    /* Empty state */
+    .empty {
+      padding: 60px 24px; text-align: center; color: var(--dim);
+      font-size: 13px; background: var(--card); border-radius: 0 0 8px 8px;
+      display: none;
+    }
+
+    /* Pagination */
+    .pager {
+      display: flex; justify-content: space-between; align-items: center;
+      padding: 14px 0; font-size: 12px; color: var(--muted);
+    }
+    .pager-btns { display: flex; align-items: center; gap: 10px; }
+    .pager-btn {
+      padding: 5px 12px; border: 1px solid var(--border); border-radius: 6px;
+      background: var(--card); font-size: 12px; color: var(--muted); cursor: pointer;
+      font-family: inherit; transition: all 0.15s;
+    }
+    .pager-btn:hover:not(:disabled) { border-color: var(--dim); color: var(--text); }
+    .pager-btn:disabled { opacity: 0.3; cursor: default; }
+    .pager-indicator { font-weight: 600; color: var(--text); }
+
+    /* Toast */
+    .toast {
+      position: fixed; bottom: 24px; right: 24px;
+      background: #1a1a1a; color: #fff; font-size: 13px; font-weight: 600;
+      padding: 10px 18px; border-radius: 8px;
+      box-shadow: 0 4px 16px rgba(0,0,0,.2);
+      opacity: 0; transform: translateY(8px); transition: all 0.2s; pointer-events: none; z-index: 1000;
+    }
+    .toast.show { opacity: 1; transform: translateY(0); }
+    .toast.success { background: #00B5A3; }
+    .toast.error   { background: #ef4444; }
+  </style>
+</head>
+<body>
+
+<!-- Sidebar -->
+<aside class="dossier-sidebar">
+  <div class="ds-logo">
+    <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#7C3AED" stroke-width="2"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg>
+    <span>Article Studio</span>
+  </div>
+  <nav class="ds-nav">
+    <a href="/monitor" class="ds-nav-item">
+      <svg class="ds-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path stroke-linecap="round" stroke-linejoin="round" d="M9 19v-6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2zm0 0V9a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v10m-6 0a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2m0 0V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-2a2 2 0 0 1-2-2z"/></svg>
+      Monitor
+    </a>
+    <a href="/articles" class="ds-nav-item active">
+      <svg class="ds-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><rect x="3" y="3" width="8" height="8" rx="1.5"/><rect x="13" y="3" width="8" height="8" rx="1.5"/><rect x="3" y="13" width="8" height="8" rx="1.5"/><rect x="13" y="13" width="8" height="8" rx="1.5"/></svg>
+      Articles
+    </a>
+    <a href="/generate" class="ds-nav-item">
+      <svg class="ds-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path stroke-linecap="round" d="M11 5H6a2 2 0 0 0-2 2v11a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2v-5m-1.414-9.414a2 2 0 1 1 2.828 2.828L11.828 15H9v-2.828l8.586-8.586z"/></svg>
+      Generate
+    </a>
+    <a href="/pipeline" class="ds-nav-item">
+      <svg class="ds-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><circle cx="12" cy="12" r="9"/><polygon points="10,8 16,12 10,16"/></svg>
+      Pipeline
+    </a>
+    <a href="/history" class="ds-nav-item">
+      <svg class="ds-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><circle cx="12" cy="12" r="9"/><polyline points="12,7 12,12 15,15"/></svg>
+      History
+    </a>
+    <a href="/git" class="ds-nav-item">
+      <svg class="ds-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><circle cx="18" cy="18" r="3"/><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M6 9v6M9 6h3a3 3 0 0 1 3 3v3"/></svg>
+      Git
+    </a>
+  </nav>
+</aside>
+
+<!-- Main -->
+<div class="main">
+
+  <!-- Header -->
+  <div class="page-header">
+    <div>
+      <div class="page-title">Articles</div>
+      <div class="page-sub" id="page-sub">Browse and manage your articles</div>
+    </div>
+  </div>
+
+  <!-- Filter bar -->
+  <div class="filter-bar">
+    <input class="search-input" type="text" placeholder="Search by headline, title, tag..." id="search" autocomplete="off">
+    <div class="status-chips" id="status-tabs">
+      <button class="status-chip active" data-status="all">All <span class="cnt" id="c-all"></span></button>
+      <button class="status-chip" data-status="draft">In Draft <span class="cnt" id="c-draft"></span></button>
+      <button class="status-chip" data-status="waiting">Waiting Approval <span class="cnt" id="c-waiting"></span></button>
+      <button class="status-chip" data-status="approved">Approved <span class="cnt" id="c-approved"></span></button>
+    </div>
+  </div>
+
+  <!-- Table -->
+  <div class="table-section">
+    <div class="table-card">
+      <table>
+        <thead>
+          <tr>
+            <th data-col="headline" class="sorted">Headline <span class="si">↑↓</span></th>
+            <th data-col="type" class="no-sort" style="width:90px;">Type</th>
+            <th data-col="status" class="no-sort" style="width:120px;">Status</th>
+            <th data-col="date" style="width:110px;">Date <span class="si">↑↓</span></th>
+            <th class="no-sort" style="width:130px;">Out of window</th>
+            <th class="no-sort" style="width:160px;">Actions</th>
+          </tr>
+        </thead>
+        <tbody id="tbody"></tbody>
+      </table>
+      <div class="empty" id="empty" style="display:none;">No articles found</div>
+      <div class="table-footer">
+        <span id="page-info"></span>
+        <div style="display:flex;align-items:center;gap:10px;">
+          <span class="pager-indicator" id="page-indicator"></span>
+          <button class="pager-btn" id="prev-btn">&lsaquo; Prev</button>
+          <button class="pager-btn" id="next-btn">Next &rsaquo;</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script>
+  const API = 'http://localhost:3002';
+  let articles = [];
+  let filtered = [];
+  let statusFilter = 'all';
+  let currentSort = { col: 'date', asc: false };
+  let page = 0;
+  const PAGE_SIZE = 25;
+  let activeDropdown = null;
+
+  function esc(s) {
+    return (s || '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+  }
+
+  function statusBadge(status) {
+    const map = {
+      draft:              ['s-draft',       'Draft'],
+      ready:              ['s-ready',       'Ready to publish'],
+      'legal-review':     ['s-legal',       'Legal'],
+      'marketing-review': ['s-mkt',         'Marketing'],
+      approved:           ['s-approved',    'Published'],
+      unpublished:        ['s-unpublished', 'Unpublished'],
+    };
+    const [cls, label] = map[status] || ['s-draft', status];
+    return `<span class="status-badge ${cls}">${label}</span>`;
+  }
+
+  function formatDate(iso) {
+    if (!iso) return '';
+    return new Date(iso).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
+  }
+
+  function showToast(msg, type = '') {
+    const t = document.getElementById('toast');
+    t.textContent = msg;
+    t.className = 'toast show' + (type ? ' ' + type : '');
+    setTimeout(() => { t.className = 'toast'; }, 2800);
+  }
+
+  function closeDropdown() {
+    if (activeDropdown) { activeDropdown.remove(); activeDropdown = null; }
+  }
+
+  async function sendForReview(slug, reviewType) {
+    try {
+      const resp = await fetch(`${API}/api/articles/${slug}/send-review`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ reviewType }),
+      });
+      if (!resp.ok) throw new Error('Failed');
+      const data = await resp.json();
+      const a = articles.find(a => a.slug === slug);
+      if (a) a.status = data.article.status;
+      applyFilterAndSort();
+      showToast(`Sent to ${reviewType === 'legal' ? 'Legal Review' : 'Marketing'}`, 'success');
+    } catch {
+      showToast('Failed to send for review', 'error');
+    }
+  }
+
+  async function loadArticles() {
+    try {
+      const resp = await fetch(`${API}/api/articles`);
+      if (!resp.ok) throw new Error('Server error');
+      articles = await resp.json();
+
+      document.getElementById('c-all').textContent = articles.length;
+      const counts = {};
+      articles.forEach(a => { counts[a.status] = (counts[a.status] || 0) + 1; });
+      document.getElementById('c-draft').textContent    = counts['draft'] || 0;
+      document.getElementById('c-waiting').textContent  =
+        (counts['ready'] || 0) + (counts['legal-review'] || 0) + (counts['marketing-review'] || 0);
+      document.getElementById('c-approved').textContent = counts['approved'] || 0;
+
+      document.getElementById('page-sub').textContent =
+        `${articles.length} article${articles.length !== 1 ? 's' : ''} · Browse and manage your articles`;
+      applyFilterAndSort();
+    } catch (err) {
+      const empty = document.getElementById('empty');
+      empty.textContent = `Could not load articles: ${err.message}`;
+      empty.style.display = 'block';
+    }
+  }
+
+  function applyFilterAndSort() {
+    const query = document.getElementById('search').value.toLowerCase();
+    const waitingStatuses = ['ready', 'legal-review', 'marketing-review'];
+    filtered = articles.filter(a => {
+      if (statusFilter === 'waiting' && !waitingStatuses.includes(a.status)) return false;
+      if (statusFilter !== 'all' && statusFilter !== 'waiting' && a.status !== statusFilter) return false;
+      if (query) {
+        const s = [a.headline, a.subheadline, a.articleTitle, ...(a.tags || [])].filter(Boolean).join(' ').toLowerCase();
+        if (!s.includes(query)) return false;
+      }
+      return true;
+    });
+    filtered.sort((a, b) => {
+      const col = currentSort.col;
+      let va = col === 'headline' ? (a.headline || '') : (a.createdAt || '');
+      let vb = col === 'headline' ? (b.headline || '') : (b.createdAt || '');
+      return currentSort.asc ? va.localeCompare(vb) : vb.localeCompare(va);
+    });
+    page = 0;
+    render();
+  }
+
+  function render() {
+    const start = page * PAGE_SIZE;
+    const end   = Math.min(start + PAGE_SIZE, filtered.length);
+    const slice = filtered.slice(start, end);
+    const tbody = document.getElementById('tbody');
+    const empty = document.getElementById('empty');
+
+    if (filtered.length === 0) {
+      tbody.innerHTML = '';
+      empty.style.display = 'block';
+      empty.textContent = articles.length === 0
+        ? 'No articles yet — generate your first one!'
+        : 'No articles match your filters';
+      updatePager(); return;
+    }
+    empty.style.display = 'none';
+
+    tbody.innerHTML = slice.map(a => {
+      const tags = (a.tags || []).map(t => `<span class="tag">${esc(t)}</span>`).join('');
+      const typeBadge = `<span class="type-badge">${a.articleType === 'listicle' ? 'Listicle' : 'Single'}</span>`;
+      const reviewBtn = a.status === 'ready'
+        ? `<button class="send-btn" data-slug="${a.slug}">Send for review ▾</button>`
+        : '';
+      const legalLink = a.status === 'legal-review'
+        ? `<a href="/legal?slug=${a.slug}" class="act-btn" style="color:#f59e0b;border-color:rgba(245,158,11,0.3);">Review</a>`
+        : '';
+      const mktLink = a.status === 'marketing-review'
+        ? `<a href="/marketing?slug=${a.slug}" class="act-btn" style="color:#B073FF;border-color:rgba(124,58,237,0.3);">Review</a>`
+        : '';
+
+      return `<tr>
+        <td>
+          <a href="/editor?slug=${a.slug}" class="headline-text">${esc(a.headline || a.articleTitle)}</a>
+          ${a.subheadline ? `<div class="article-sub">${esc(a.subheadline)}</div>` : ''}
+          ${tags ? `<div class="tag-row">${tags}</div>` : ''}
+        </td>
+        <td>${typeBadge}</td>
+        <td>${statusBadge(a.status)}</td>
+        <td class="td-date">${formatDate(a.createdAt)}</td>
+        <td class="td-date" style="${a.outOfWindowDate && a.status === 'approved' && new Date(a.outOfWindowDate) < new Date() ? 'color:#ef4444;font-weight:600;' : 'color:#9ca3af;'}">${a.outOfWindowDate ? formatDate(a.outOfWindowDate) : '—'}</td>
+        <td class="td-act">
+          <a href="/editor?slug=${a.slug}" class="act-btn">View</a>
+          ${legalLink}${mktLink}${reviewBtn}
+        </td>
+      </tr>`;
+    }).join('');
+
+    updatePager();
+
+    tbody.querySelectorAll('.send-btn').forEach(btn => {
+      btn.addEventListener('click', e => {
+        e.stopPropagation();
+        closeDropdown();
+        const slug = btn.dataset.slug;
+        const rect = btn.getBoundingClientRect();
+        const dd = document.createElement('div');
+        dd.className = 'rev-dd';
+        dd.style.cssText = `position:fixed;top:${rect.bottom+4}px;right:${window.innerWidth-rect.right}px;`;
+        dd.innerHTML = `
+          <button class="rev-opt" data-type="legal">Legal Review<span class="sub">Flag legal concerns</span></button>
+          <button class="rev-opt" data-type="marketing">Marketing Review<span class="sub">Check brand alignment</span></button>`;
+        document.body.appendChild(dd);
+        activeDropdown = dd;
+        dd.querySelectorAll('.rev-opt').forEach(o => {
+          o.addEventListener('click', () => { closeDropdown(); sendForReview(slug, o.dataset.type); });
+        });
+      });
+    });
+  }
+
+  function updatePager() {
+    const total = filtered.length;
+    const start = page * PAGE_SIZE;
+    const end   = Math.min(start + PAGE_SIZE, total);
+    const totalPages = Math.ceil(total / PAGE_SIZE);
+    document.getElementById('page-info').textContent = total > 0 ? `Showing ${start+1}–${end} of ${total}` : '';
+    document.getElementById('page-indicator').textContent = totalPages > 0 ? `${page+1} / ${totalPages}` : '';
+    document.getElementById('prev-btn').disabled = page === 0;
+    document.getElementById('next-btn').disabled = end >= total;
+  }
+
+  document.addEventListener('click', () => closeDropdown());
+
+  document.getElementById('status-tabs').addEventListener('click', e => {
+    const chip = e.target.closest('.status-chip');
+    if (!chip) return;
+    statusFilter = chip.dataset.status;
+    document.querySelectorAll('.status-chip').forEach(c => c.classList.remove('active'));
+    chip.classList.add('active');
+    applyFilterAndSort();
+  });
+
+  document.getElementById('search').addEventListener('input', applyFilterAndSort);
+
+  document.querySelectorAll('thead th[data-col]').forEach(th => {
+    th.addEventListener('click', () => {
+      const col = th.dataset.col;
+      if (currentSort.col === col) currentSort.asc = !currentSort.asc;
+      else { currentSort.col = col; currentSort.asc = true; }
+      document.querySelectorAll('thead th').forEach(t => {
+        t.classList.remove('sorted');
+        const si = t.querySelector('.si');
+        if (si) si.textContent = '↑↓';
+      });
+      th.classList.add('sorted');
+      const si = th.querySelector('.si');
+      if (si) si.textContent = currentSort.asc ? '↑' : '↓';
+      render();
+    });
+  });
+
+  document.getElementById('prev-btn').addEventListener('click', () => { if (page > 0) { page--; render(); } });
+  document.getElementById('next-btn').addEventListener('click', () => {
+    if ((page+1) * PAGE_SIZE < filtered.length) { page++; render(); }
+  });
+
+  loadArticles();
+</script>
+</body>
+</html>

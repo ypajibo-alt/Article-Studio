@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pipeline — Article Studio</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #fff; color: #1a1a1a; min-height: 100vh; display: flex;
+    }
+
+    .dossier-sidebar {
+      width: 200px; min-width: 200px; background: #1E1E2D;
+      display: flex; flex-direction: column; padding: 12px;
+      height: 100vh; position: sticky; top: 0; flex-shrink: 0;
+    }
+    .ds-logo { display: flex; align-items: center; gap: 10px; padding: 14px 12px 22px; }
+    .ds-logo span { font-size: 18px; font-weight: 700; color: #fff; letter-spacing: -0.02em; }
+    .ds-nav { display: flex; flex-direction: column; gap: 2px; }
+    .ds-nav-item {
+      display: flex; align-items: center; gap: 10px; padding: 8px 12px; border-radius: 8px;
+      color: rgba(255,255,255,0.5); text-decoration: none; font-size: 14px; font-weight: 500;
+      transition: background 0.15s, color 0.15s;
+    }
+    .ds-nav-item:hover { background: rgba(255,255,255,0.07); color: rgba(255,255,255,0.85); }
+    .ds-nav-item.active { background: #7C3AED; color: #fff; }
+    .ds-icon { width: 18px; height: 18px; flex-shrink: 0; }
+
+    .main { flex: 1; min-width: 0; display: flex; flex-direction: column; min-height: 100vh; }
+
+    .topbar {
+      padding: 14px 32px; border-bottom: 1px solid #f0f1f3;
+      flex-shrink: 0;
+    }
+    .page-title { font-size: 22px; font-weight: 700; color: #1a1a1a; margin-bottom: 3px; }
+    .page-sub { font-size: 13px; color: #8b919a; }
+
+    .layout {
+      display: grid; grid-template-columns: 380px 1fr;
+      flex: 1; gap: 0;
+    }
+
+    .left-col {
+      border-right: 1px solid #f0f1f3;
+      padding: 28px 32px;
+      display: flex; flex-direction: column; gap: 20px;
+    }
+
+    .form-card {
+      background: #fff; border: 1px solid #e2e4e8; border-radius: 14px; padding: 24px;
+    }
+
+    .field { margin-bottom: 20px; }
+    .field:last-child { margin-bottom: 0; }
+    .field label { display: block; font-size: 13px; font-weight: 700; color: #1a1a1a; margin-bottom: 8px; }
+    .field label .hint { font-weight: 400; color: #9ca3af; font-size: 12px; margin-left: 6px; }
+    .field input[type="text"], .field textarea {
+      width: 100%; padding: 10px 13px; border: 1px solid #e2e4e8; border-radius: 8px;
+      font-size: 14px; font-family: inherit; color: #1a1a1a; outline: none;
+      transition: border-color 0.15s;
+    }
+    .field input[type="text"]:focus, .field textarea:focus { border-color: #00B5A3; }
+    .field input::placeholder, .field textarea::placeholder { color: #c0c4cb; }
+
+    .run-btn {
+      width: 100%; padding: 11px; border-radius: 8px; border: none;
+      background: #00B5A3; color: #fff; font-size: 14px; font-weight: 700;
+      cursor: pointer; font-family: inherit; transition: background 0.15s;
+      display: flex; align-items: center; justify-content: center; gap: 8px;
+    }
+    .run-btn:hover { background: #009e8e; }
+    .run-btn:disabled { background: #d1d5db; cursor: default; }
+
+    .run-btn .btn-spinner {
+      width: 14px; height: 14px; border: 2px solid rgba(255,255,255,0.3);
+      border-top-color: #fff; border-radius: 50%; animation: spin 0.7s linear infinite; display: none;
+    }
+    .run-btn.running .btn-spinner { display: block; }
+    @keyframes spin { to { transform: rotate(360deg); } }
+
+    .hint-note {
+      font-size: 12px; color: #9ca3af; line-height: 1.5;
+      background: #f9fafb; border-radius: 8px; padding: 10px 14px;
+      border: 1px solid #f0f1f3;
+    }
+
+    .right-col { display: flex; flex-direction: column; min-height: 0; }
+
+    .terminal-header {
+      padding: 14px 24px; border-bottom: 1px solid #f0f1f3;
+      display: flex; align-items: center; justify-content: space-between;
+      flex-shrink: 0;
+    }
+    .terminal-header-left { display: flex; align-items: center; gap: 10px; }
+    .terminal-title { font-size: 13px; font-weight: 700; color: #1a1a1a; }
+    .status-dot {
+      width: 8px; height: 8px; border-radius: 50%; background: #d1d5db; flex-shrink: 0;
+    }
+    .status-dot.running { background: #00B5A3; animation: pulse 1s ease-in-out infinite; }
+    .status-dot.done { background: #16a34a; animation: none; }
+    .status-dot.error { background: #ef4444; animation: none; }
+    @keyframes pulse { 0%,100% { opacity:1; } 50% { opacity:0.4; } }
+
+    .status-label { font-size: 12px; color: #9ca3af; }
+    .status-label.running { color: #00B5A3; }
+    .status-label.done { color: #16a34a; }
+    .status-label.error { color: #ef4444; }
+
+    .clear-btn {
+      font-size: 12px; font-weight: 600; color: #9ca3af; background: none;
+      border: 1px solid #e2e4e8; border-radius: 6px; padding: 4px 10px;
+      cursor: pointer; font-family: inherit; transition: all 0.15s;
+    }
+    .clear-btn:hover { border-color: #d1d5db; color: #374151; }
+
+    .terminal {
+      flex: 1; background: #0d0d14; padding: 20px 24px;
+      overflow-y: auto; font-family: 'SF Mono', 'Cascadia Code', 'Fira Code', monospace;
+      font-size: 12px; line-height: 1.6; min-height: 0;
+    }
+
+    .terminal-empty {
+      color: #3a3a5c; text-align: center; padding: 60px 0;
+      font-size: 13px; font-family: inherit;
+    }
+
+    .log-line { display: flex; gap: 10px; margin-bottom: 2px; }
+    .log-ts { color: #4a4a6a; flex-shrink: 0; }
+    .log-text { flex: 1; word-break: break-word; }
+    .log-stdout { color: #8bc4ff; }
+    .log-stderr { color: #ff8b8b; }
+    .log-done { color: #00B5A3; font-weight: 600; }
+    .log-err { color: #ff5555; font-weight: 600; }
+
+    .output-path {
+      margin: 0 24px 20px; padding: 12px 16px; background: rgba(0,181,163,0.08);
+      border: 1px solid rgba(0,181,163,0.2); border-radius: 8px;
+      font-size: 13px; color: #00B5A3; display: none;
+    }
+    .output-path strong { display: block; font-size: 11px; text-transform: uppercase; letter-spacing: .05em; margin-bottom: 4px; color: #009e8e; }
+    .output-path code { font-family: monospace; font-size: 12px; word-break: break-all; }
+  </style>
+</head>
+<body>
+
+<aside class="dossier-sidebar">
+  <div class="ds-logo">
+    <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#7C3AED" stroke-width="2"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg>
+    <span>Article Studio</span>
+  </div>
+  <nav class="ds-nav">
+    <a href="/monitor" class="ds-nav-item">
+      <svg class="ds-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path stroke-linecap="round" stroke-linejoin="round" d="M9 19v-6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2zm0 0V9a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v10m-6 0a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2m0 0V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-2a2 2 0 0 1-2-2z"/></svg>
+      Monitor
+    </a>
+    <a href="/articles" class="ds-nav-item">
+      <svg class="ds-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><rect x="3" y="3" width="8" height="8" rx="1.5"/><rect x="13" y="3" width="8" height="8" rx="1.5"/><rect x="3" y="13" width="8" height="8" rx="1.5"/><rect x="13" y="13" width="8" height="8" rx="1.5"/></svg>
+      Articles
+    </a>
+    <a href="/generate" class="ds-nav-item">
+      <svg class="ds-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path stroke-linecap="round" d="M11 5H6a2 2 0 0 0-2 2v11a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2v-5m-1.414-9.414a2 2 0 1 1 2.828 2.828L11.828 15H9v-2.828l8.586-8.586z"/></svg>
+      Generate
+    </a>
+    <a href="/pipeline" class="ds-nav-item active">
+      <svg class="ds-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><circle cx="12" cy="12" r="9"/><polygon points="10,8 16,12 10,16" fill="currentColor" stroke="none"/></svg>
+      Pipeline
+    </a>
+    <a href="/history" class="ds-nav-item">
+      <svg class="ds-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><circle cx="12" cy="12" r="9"/><polyline points="12,7 12,12 15,15"/></svg>
+      History
+    </a>
+    <a href="/git" class="ds-nav-item">
+      <svg class="ds-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><circle cx="18" cy="18" r="3"/><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M6 9v6M9 6h3a3 3 0 0 1 3 3v3"/></svg>
+      Git
+    </a>
+  </nav>
+</aside>
+
+<div class="main">
+  <div class="topbar">
+    <div class="page-title">Pipeline</div>
+    <div class="page-sub">Run the article generation pipeline and watch it live</div>
+  </div>
+
+  <div class="layout">
+    <div class="left-col">
+      <div class="form-card">
+        <div class="field">
+          <label for="article-name">Article name <span style="color:#ef4444;">*</span></label>
+          <input type="text" id="article-name" placeholder="e.g. Best Horror Movies on Tubi" autocomplete="off">
+        </div>
+      </div>
+
+      <button class="run-btn" id="run-btn" type="button">
+        <div class="btn-spinner"></div>
+        <span id="run-btn-label">Run Pipeline</span>
+      </button>
+
+      <div class="hint-note">
+        The pipeline runs <code style="font-size:11px;background:#f0f1f3;padding:1px 5px;border-radius:3px;">run-pipeline.ts</code> with your article name. Output is saved to <strong>V2-Blog-main/content/listicles/</strong>. This can take 2–5 minutes depending on discovery depth.
+      </div>
+    </div>
+
+    <div class="right-col">
+      <div class="terminal-header">
+        <div class="terminal-header-left">
+          <div class="status-dot" id="status-dot"></div>
+          <span class="terminal-title">Output</span>
+          <span class="status-label" id="status-label">Idle</span>
+        </div>
+        <button class="clear-btn" id="clear-btn">Clear</button>
+      </div>
+
+      <div class="terminal" id="terminal">
+        <div class="terminal-empty" id="terminal-empty">Enter an article name and click Run Pipeline to start.</div>
+      </div>
+
+      <div class="output-path" id="output-path">
+        <strong>Output file</strong>
+        <code id="output-path-text"></code>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  const API = 'http://localhost:3002';
+  let running = false;
+  let currentReader = null;
+
+  const terminal = document.getElementById('terminal');
+  const termEmpty = document.getElementById('terminal-empty');
+  const statusDot = document.getElementById('status-dot');
+  const statusLabel = document.getElementById('status-label');
+  const runBtn = document.getElementById('run-btn');
+  const runBtnLabel = document.getElementById('run-btn-label');
+  const outputPath = document.getElementById('output-path');
+
+  function setStatus(state, text) {
+    statusDot.className = 'status-dot' + (state ? ' ' + state : '');
+    statusLabel.className = 'status-label' + (state ? ' ' + state : '');
+    statusLabel.textContent = text;
+  }
+
+  function appendLog(ts, text, type) {
+    termEmpty.style.display = 'none';
+    const line = document.createElement('div');
+    line.className = 'log-line';
+    line.innerHTML = '<span class="log-ts">[' + ts + ']</span><span class="log-text ' + type + '">' + esc(text) + '</span>';
+    terminal.appendChild(line);
+    terminal.scrollTop = terminal.scrollHeight;
+  }
+
+  function esc(s) {
+    return (s || '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+  }
+
+  function clearTerminal() {
+    terminal.innerHTML = '';
+    terminal.appendChild(termEmpty);
+    termEmpty.style.display = '';
+    outputPath.style.display = 'none';
+    setStatus('', 'Idle');
+  }
+
+  document.getElementById('clear-btn').addEventListener('click', () => {
+    if (running) return;
+    clearTerminal();
+  });
+
+  document.getElementById('run-btn').addEventListener('click', async () => {
+    if (running) return;
+    const articleName = document.getElementById('article-name').value.trim();
+    if (!articleName) {
+      document.getElementById('article-name').focus();
+      document.getElementById('article-name').style.borderColor = '#ef4444';
+      setTimeout(() => document.getElementById('article-name').style.borderColor = '', 1500);
+      return;
+    }
+
+    running = true;
+    runBtn.disabled = true;
+    runBtn.classList.add('running');
+    runBtnLabel.textContent = 'Running...';
+    outputPath.style.display = 'none';
+    setStatus('running', 'Running...');
+    clearTerminal();
+
+    try {
+      const resp = await fetch(`${API}/api/pipeline/run`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ articleName }),
+      });
+
+      if (!resp.ok) {
+        const err = await resp.json().catch(() => ({ error: resp.statusText }));
+        appendLog(now(), err.error || 'Server error', 'log-err');
+        setStatus('error', 'Error');
+        return;
+      }
+
+      const reader = resp.body.getReader();
+      currentReader = reader;
+      const decoder = new TextDecoder();
+      let buf = '';
+
+      while (true) {
+        const { done, value } = await reader.read();
+        if (done) break;
+        buf += decoder.decode(value, { stream: true });
+        const lines = buf.split('\n');
+        buf = lines.pop();
+
+        for (const line of lines) {
+          if (!line.startsWith('data: ')) continue;
+          let event;
+          try { event = JSON.parse(line.slice(6)); } catch { continue; }
+
+          const ts = event.ts || now();
+          switch (event.type) {
+            case 'stdout':
+              appendLog(ts, event.data, 'log-stdout');
+              // Detect output file path in stdout
+              const match = event.data.match(/content\/[^\s]+\.json/);
+              if (match) {
+                document.getElementById('output-path-text').textContent = match[0];
+                outputPath.style.display = 'block';
+              }
+              break;
+            case 'stderr':
+              appendLog(ts, event.data, 'log-stderr');
+              break;
+            case 'done':
+              const code = event.exitCode;
+              if (code === 0) {
+                appendLog(ts, '✓ Pipeline completed successfully (exit 0)', 'log-done');
+                setStatus('done', 'Done');
+              } else {
+                appendLog(ts, `✗ Pipeline exited with code ${code}`, 'log-err');
+                setStatus('error', `Exited ${code}`);
+              }
+              break;
+            case 'error':
+              appendLog(ts, event.data, 'log-err');
+              setStatus('error', 'Error');
+              break;
+          }
+        }
+      }
+    } catch (err) {
+      appendLog(now(), err.message, 'log-err');
+      setStatus('error', 'Error');
+    } finally {
+      running = false;
+      runBtn.disabled = false;
+      runBtn.classList.remove('running');
+      runBtnLabel.textContent = 'Run Pipeline';
+      currentReader = null;
+    }
+  });
+
+  function now() {
+    return new Date().toTimeString().slice(0, 8);
+  }
+
+  document.getElementById('article-name').addEventListener('keydown', e => {
+    if (e.key === 'Enter') document.getElementById('run-btn').click();
+  });
+</script>
+</body>
+</html>

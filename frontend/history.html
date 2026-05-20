@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Version History — Article Studio</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #fff; color: #1a1a1a; min-height: 100vh; display: flex;
+    }
+
+    .dossier-sidebar {
+      width: 200px; min-width: 200px; background: #1E1E2D;
+      display: flex; flex-direction: column; padding: 12px;
+      height: 100vh; position: sticky; top: 0; flex-shrink: 0;
+    }
+    .ds-logo { display: flex; align-items: center; gap: 10px; padding: 14px 12px 22px; }
+    .ds-logo span { font-size: 18px; font-weight: 700; color: #fff; letter-spacing: -0.02em; }
+    .ds-nav { display: flex; flex-direction: column; gap: 2px; }
+    .ds-nav-item {
+      display: flex; align-items: center; gap: 10px; padding: 8px 12px; border-radius: 8px;
+      color: rgba(255,255,255,0.5); text-decoration: none; font-size: 14px; font-weight: 500;
+      transition: background 0.15s, color 0.15s;
+    }
+    .ds-nav-item:hover { background: rgba(255,255,255,0.07); color: rgba(255,255,255,0.85); }
+    .ds-nav-item.active { background: #7C3AED; color: #fff; }
+    .ds-icon { width: 18px; height: 18px; flex-shrink: 0; }
+
+    .main { flex: 1; min-width: 0; display: flex; flex-direction: column; min-height: 100vh; overflow: hidden; }
+
+    .layout {
+      display: grid; grid-template-columns: 300px 1fr;
+      flex: 1; min-height: 0;
+    }
+
+    /* Left panel */
+    .left-panel {
+      border-right: 1px solid #f0f1f3;
+      display: flex; flex-direction: column; overflow: hidden; height: 100vh;
+    }
+    .left-header {
+      padding: 20px 20px 14px;
+      border-bottom: 1px solid #f0f1f3; flex-shrink: 0;
+    }
+    .page-title { font-size: 18px; font-weight: 700; color: #1a1a1a; margin-bottom: 3px; }
+    .page-sub { font-size: 12px; color: #9ca3af; margin-bottom: 12px; }
+    .search-input {
+      width: 100%; padding: 8px 12px; border: 1px solid #e2e4e8; border-radius: 8px;
+      font-size: 13px; font-family: inherit; color: #1a1a1a; outline: none;
+      transition: border-color 0.15s;
+    }
+    .search-input:focus { border-color: #7C3AED; }
+    .search-input::placeholder { color: #c0c4cb; }
+
+    .article-list { flex: 1; overflow-y: auto; }
+    .article-item {
+      padding: 14px 20px; border-bottom: 1px solid #f9fafb;
+      cursor: pointer; transition: background 0.1s;
+    }
+    .article-item:hover { background: #fafbfc; }
+    .article-item.active { background: rgba(124,58,237,0.05); border-left: 3px solid #7C3AED; padding-left: 17px; }
+    .ai-title { font-size: 13px; font-weight: 700; color: #1a1a1a; line-height: 1.35; margin-bottom: 4px; }
+    .ai-meta { font-size: 11px; color: #9ca3af; display: flex; gap: 8px; align-items: center; }
+    .ai-count {
+      background: rgba(124,58,237,0.08); color: #7C3AED;
+      padding: 1px 6px; border-radius: 99px; font-size: 10px; font-weight: 700;
+    }
+    .ai-evergreen {
+      background: rgba(0,181,163,0.08); color: #00B5A3;
+      padding: 1px 6px; border-radius: 99px; font-size: 10px; font-weight: 700;
+    }
+    .list-empty { padding: 40px 20px; text-align: center; color: #c0c4cb; font-size: 13px; }
+
+    /* Right panel */
+    .right-panel { display: flex; flex-direction: column; overflow: hidden; height: 100vh; }
+
+    .right-header {
+      padding: 20px 28px 14px; border-bottom: 1px solid #f0f1f3; flex-shrink: 0;
+    }
+    .right-title { font-size: 18px; font-weight: 700; color: #1a1a1a; margin-bottom: 3px; }
+    .right-sub { font-size: 12px; color: #9ca3af; }
+
+    .compare-bar {
+      padding: 10px 28px; border-bottom: 1px solid #f0f1f3; flex-shrink: 0;
+      display: none; align-items: center; gap: 12px; background: #f9fafb;
+    }
+    .compare-bar.visible { display: flex; }
+    .compare-bar label { font-size: 12px; font-weight: 600; color: #374151; }
+    .compare-hint { font-size: 12px; color: #9ca3af; }
+    .compare-clear {
+      margin-left: auto; font-size: 12px; font-weight: 600; color: #9ca3af;
+      background: none; border: none; cursor: pointer; font-family: inherit;
+    }
+    .compare-clear:hover { color: #374151; }
+
+    .versions-scroll { flex: 1; overflow-y: auto; padding: 20px 28px; }
+
+    .version-card {
+      border: 1px solid #e2e4e8; border-radius: 12px; padding: 16px 18px;
+      margin-bottom: 12px; cursor: pointer; transition: border-color 0.15s, background 0.1s;
+      position: relative;
+    }
+    .version-card:hover { border-color: #c4b5fd; }
+    .version-card.active-version { border-color: #00B5A3; background: rgba(0,181,163,0.02); }
+    .version-card.selected-compare { border-color: #7C3AED; background: rgba(124,58,237,0.03); }
+
+    .vc-header { display: flex; align-items: flex-start; justify-content: space-between; margin-bottom: 8px; }
+    .vc-version { font-size: 11px; font-weight: 700; color: #9ca3af; text-transform: uppercase; letter-spacing: .05em; }
+    .vc-active-badge {
+      font-size: 10px; font-weight: 700; color: #00B5A3;
+      background: rgba(0,181,163,0.1); padding: 2px 7px; border-radius: 99px;
+    }
+    .vc-compare-badge {
+      font-size: 10px; font-weight: 700; color: #7C3AED;
+      background: rgba(124,58,237,0.1); padding: 2px 7px; border-radius: 99px;
+    }
+    .vc-date { font-size: 12px; color: #9ca3af; margin-bottom: 6px; }
+    .vc-headline { font-size: 14px; font-weight: 700; color: #1a1a1a; margin-bottom: 6px; line-height: 1.3; }
+    .vc-preview { font-size: 12px; color: #6b7280; line-height: 1.5; margin-bottom: 10px; }
+    .vc-score {
+      display: inline-flex; align-items: center; gap: 5px;
+      font-size: 11px; font-weight: 600; color: #00B5A3;
+      background: rgba(0,181,163,0.08); padding: 2px 7px; border-radius: 99px;
+      margin-bottom: 10px;
+    }
+    .vc-score.low { color: #f59e0b; background: rgba(245,158,11,0.08); }
+    .vc-actions { display: flex; gap: 8px; }
+    .vc-btn {
+      padding: 5px 13px; border-radius: 6px; border: 1px solid #e2e4e8;
+      background: #fff; font-size: 12px; font-weight: 600; color: #374151;
+      cursor: pointer; font-family: inherit; transition: all 0.15s;
+    }
+    .vc-btn:hover { border-color: #7C3AED; color: #7C3AED; }
+    .vc-btn.restore { background: #7C3AED; color: #fff; border-color: #7C3AED; }
+    .vc-btn.restore:hover { background: #6d28d9; }
+    .vc-btn.compare-sel { background: rgba(124,58,237,0.08); color: #7C3AED; border-color: #c4b5fd; }
+
+    /* Compare view */
+    .compare-view {
+      display: none; flex: 1; overflow: hidden;
+    }
+    .compare-view.visible { display: grid; grid-template-columns: 1fr 1fr; }
+    .compare-col { padding: 24px 28px; overflow-y: auto; border-right: 1px solid #f0f1f3; }
+    .compare-col:last-child { border-right: none; }
+    .compare-col-header { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: .05em; color: #9ca3af; margin-bottom: 16px; }
+    .compare-headline { font-size: 18px; font-weight: 800; line-height: 1.2; margin-bottom: 10px; color: #1a1a1a; }
+    .compare-intro { font-size: 14px; line-height: 1.75; color: #374151; }
+    .compare-intro p { margin-bottom: 10px; }
+
+    /* Preview modal */
+    .modal-overlay {
+      position: fixed; inset: 0; background: rgba(0,0,0,0.4);
+      display: none; align-items: center; justify-content: center; z-index: 1000;
+    }
+    .modal-overlay.open { display: flex; }
+    .modal {
+      background: #fff; border-radius: 16px; width: 680px; max-height: 80vh;
+      display: flex; flex-direction: column; overflow: hidden;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.2);
+    }
+    .modal-header {
+      padding: 20px 24px; border-bottom: 1px solid #f0f1f3;
+      display: flex; align-items: center; justify-content: space-between; flex-shrink: 0;
+    }
+    .modal-title { font-size: 16px; font-weight: 700; color: #1a1a1a; }
+    .modal-close {
+      width: 28px; height: 28px; border-radius: 6px; border: 1px solid #e2e4e8;
+      background: #fff; font-size: 16px; color: #9ca3af; cursor: pointer;
+      display: flex; align-items: center; justify-content: center;
+      font-family: inherit; line-height: 1; transition: all 0.15s;
+    }
+    .modal-close:hover { border-color: #d1d5db; color: #374151; }
+    .modal-body { padding: 24px; overflow-y: auto; flex: 1; }
+    .modal-headline { font-size: 20px; font-weight: 800; line-height: 1.2; margin-bottom: 8px; }
+    .modal-sub { font-size: 14px; color: #6b7280; margin-bottom: 16px; line-height: 1.4; }
+    .modal-divider { border: none; border-top: 1px solid #f0f1f3; margin: 16px 0; }
+    .modal-body-text { font-size: 14px; line-height: 1.75; color: #374151; }
+    .modal-body-text p { margin-bottom: 10px; }
+
+    /* Empty state */
+    .right-empty {
+      flex: 1; display: flex; align-items: center; justify-content: center;
+      color: #c0c4cb; font-size: 14px; text-align: center; padding: 40px;
+    }
+
+    /* Toast */
+    .toast {
+      position: fixed; bottom: 24px; right: 24px;
+      background: #1a1a1a; color: #fff; font-size: 13px; font-weight: 600;
+      padding: 10px 18px; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,.15);
+      opacity: 0; transform: translateY(8px); transition: all 0.2s; pointer-events: none; z-index: 2000;
+    }
+    .toast.show { opacity: 1; transform: translateY(0); }
+    .toast.success { background: #00B5A3; }
+    .toast.error { background: #ef4444; }
+  </style>
+</head>
+<body>
+
+<aside class="dossier-sidebar">
+  <div class="ds-logo">
+    <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#7C3AED" stroke-width="2"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg>
+    <span>Article Studio</span>
+  </div>
+  <nav class="ds-nav">
+    <a href="/monitor" class="ds-nav-item">
+      <svg class="ds-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path stroke-linecap="round" stroke-linejoin="round" d="M9 19v-6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2zm0 0V9a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v10m-6 0a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2m0 0V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-2a2 2 0 0 1-2-2z"/></svg>
+      Monitor
+    </a>
+    <a href="/articles" class="ds-nav-item">
+      <svg class="ds-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><rect x="3" y="3" width="8" height="8" rx="1.5"/><rect x="13" y="3" width="8" height="8" rx="1.5"/><rect x="3" y="13" width="8" height="8" rx="1.5"/><rect x="13" y="13" width="8" height="8" rx="1.5"/></svg>
+      Articles
+    </a>
+    <a href="/generate" class="ds-nav-item">
+      <svg class="ds-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path stroke-linecap="round" d="M11 5H6a2 2 0 0 0-2 2v11a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2v-5m-1.414-9.414a2 2 0 1 1 2.828 2.828L11.828 15H9v-2.828l8.586-8.586z"/></svg>
+      Generate
+    </a>
+    <a href="/pipeline" class="ds-nav-item">
+      <svg class="ds-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><circle cx="12" cy="12" r="9"/><polygon points="10,8 16,12 10,16" fill="currentColor" stroke="none"/></svg>
+      Pipeline
+    </a>
+    <a href="/history" class="ds-nav-item active">
+      <svg class="ds-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><circle cx="12" cy="12" r="9"/><polyline points="12,7 12,12 15,15"/></svg>
+      History
+    </a>
+    <a href="/git" class="ds-nav-item">
+      <svg class="ds-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><circle cx="18" cy="18" r="3"/><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M6 9v6M9 6h3a3 3 0 0 1 3 3v3"/></svg>
+      Git
+    </a>
+  </nav>
+</aside>
+
+<div class="main">
+  <div class="layout">
+    <!-- Left: article list -->
+    <div class="left-panel">
+      <div class="left-header">
+        <div class="page-title">Version History</div>
+        <div class="page-sub">Regenerated articles keep all past versions</div>
+        <input class="search-input" type="text" id="search" placeholder="Search articles..." autocomplete="off">
+      </div>
+      <div class="article-list" id="article-list">
+        <div class="list-empty">Loading...</div>
+      </div>
+    </div>
+
+    <!-- Right: version list -->
+    <div class="right-panel" id="right-panel">
+      <div class="right-empty" id="right-empty">
+        <div>
+          <svg width="40" height="40" fill="none" viewBox="0 0 24 24" style="margin:0 auto 12px;display:block;opacity:0.25;"><circle cx="12" cy="12" r="9" stroke="#9ca3af" stroke-width="1.5"/><polyline points="12,7 12,12 15,15" stroke="#9ca3af" stroke-width="1.5"/></svg>
+          Select an article to view its version history
+        </div>
+      </div>
+
+      <div id="right-content" style="display:none;flex:1;min-height:0;flex-direction:column;overflow:hidden;">
+        <div class="right-header">
+          <div class="right-title" id="right-title"></div>
+          <div class="right-sub" id="right-sub"></div>
+        </div>
+        <div class="compare-bar" id="compare-bar">
+          <label>Comparing 2 versions</label>
+          <span class="compare-hint" id="compare-hint"></span>
+          <button class="compare-clear" id="compare-clear">✕ Exit compare</button>
+        </div>
+        <div class="versions-scroll" id="versions-scroll">
+          <!-- version cards injected here -->
+        </div>
+        <div class="compare-view" id="compare-view">
+          <div class="compare-col" id="compare-col-a"></div>
+          <div class="compare-col" id="compare-col-b"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Preview modal -->
+<div class="modal-overlay" id="modal">
+  <div class="modal">
+    <div class="modal-header">
+      <div class="modal-title" id="modal-title">Version preview</div>
+      <button class="modal-close" id="modal-close">×</button>
+    </div>
+    <div class="modal-body" id="modal-body"></div>
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script>
+  const API = 'http://localhost:3002';
+  let articles = [];
+  let currentSlug = null;
+  let currentVersions = [];
+  let compareSet = [];
+
+  function esc(s) {
+    return (s || '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+  }
+
+  function showToast(msg, type = '') {
+    const t = document.getElementById('toast');
+    t.textContent = msg;
+    t.className = 'toast show' + (type ? ' ' + type : '');
+    setTimeout(() => t.className = 'toast', 2800);
+  }
+
+  function formatDate(iso) {
+    if (!iso) return '';
+    return new Date(iso).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric', hour: 'numeric', minute: '2-digit' });
+  }
+
+  async function loadArticles() {
+    try {
+      const resp = await fetch(`${API}/api/history`);
+      articles = await resp.json();
+      renderArticleList(articles);
+    } catch {
+      document.getElementById('article-list').innerHTML = '<div class="list-empty">Failed to load</div>';
+    }
+  }
+
+  function renderArticleList(list) {
+    const el = document.getElementById('article-list');
+    if (!list.length) {
+      el.innerHTML = '<div class="list-empty">No articles with version history yet.<br>Regenerate an article to create versions.</div>';
+      return;
+    }
+    el.innerHTML = list.map(a => `
+      <div class="article-item${currentSlug === a.slug ? ' active' : ''}" data-slug="${a.slug}">
+        <div class="ai-title">${esc(a.headline || a.title)}</div>
+        <div class="ai-meta">
+          <span>${formatDate(a.latestVersionDate)}</span>
+          <span class="ai-count">${a.versionCount} version${a.versionCount !== 1 ? 's' : ''}</span>
+          ${a.isEvergreen ? '<span class="ai-evergreen">Evergreen</span>' : ''}
+        </div>
+      </div>
+    `).join('');
+    el.querySelectorAll('.article-item').forEach(item => {
+      item.addEventListener('click', () => selectArticle(item.dataset.slug));
+    });
+  }
+
+  async function selectArticle(slug) {
+    currentSlug = slug;
+    compareSet = [];
+    document.querySelectorAll('.article-item').forEach(el => {
+      el.classList.toggle('active', el.dataset.slug === slug);
+    });
+
+    const a = articles.find(x => x.slug === slug);
+    document.getElementById('right-title').textContent = a ? (a.headline || a.title) : slug;
+    document.getElementById('right-sub').textContent = `${a ? a.versionCount : '?'} version${a && a.versionCount !== 1 ? 's' : ''}`;
+
+    document.getElementById('right-empty').style.display = 'none';
+    const rc = document.getElementById('right-content');
+    rc.style.display = 'flex';
+
+    try {
+      const resp = await fetch(`${API}/api/history/${slug}`);
+      currentVersions = await resp.json();
+      renderVersions();
+    } catch {
+      showToast('Failed to load versions', 'error');
+    }
+  }
+
+  function renderVersions() {
+    document.getElementById('compare-view').classList.remove('visible');
+    document.getElementById('compare-bar').classList.remove('visible');
+    document.getElementById('versions-scroll').style.display = 'block';
+
+    const scroll = document.getElementById('versions-scroll');
+    scroll.innerHTML = currentVersions.map((v, i) => {
+      const output = v.output || {};
+      const headline = output.headline || '(no headline)';
+      const intro = output.introduction || output.intro || '';
+      const preview = intro.replace(/\n+/g, ' ').slice(0, 120) + (intro.length > 120 ? '…' : '');
+      const score = v.brandScore;
+      const isActive = v.isActive;
+      const isCompareSelected = compareSet.includes(v.id);
+
+      return `<div class="version-card${isActive ? ' active-version' : ''}${isCompareSelected ? ' selected-compare' : ''}" data-id="${v.id}">
+        <div class="vc-header">
+          <span class="vc-version">Version ${currentVersions.length - i}</span>
+          <div style="display:flex;gap:6px;">
+            ${isActive ? '<span class="vc-active-badge">● Active</span>' : ''}
+            ${isCompareSelected ? '<span class="vc-compare-badge">Comparing</span>' : ''}
+          </div>
+        </div>
+        <div class="vc-date">${formatDate(v.createdAt)}</div>
+        <div class="vc-headline">${esc(headline)}</div>
+        ${preview ? `<div class="vc-preview">${esc(preview)}</div>` : ''}
+        ${score != null ? `<div class="vc-score${score < 3.5 ? ' low' : ''}">Brand ${score.toFixed(1)}/5</div>` : ''}
+        <div class="vc-actions">
+          <button class="vc-btn preview-btn" data-id="${v.id}">Preview</button>
+          <button class="vc-btn compare-btn ${isCompareSelected ? 'compare-sel' : ''}" data-id="${v.id}">${isCompareSelected ? '✓ Selected' : 'Compare'}</button>
+          ${!isActive ? `<button class="vc-btn restore" data-id="${v.id}">Restore</button>` : ''}
+        </div>
+      </div>`;
+    }).join('');
+
+    scroll.querySelectorAll('.preview-btn').forEach(btn => {
+      btn.addEventListener('click', e => { e.stopPropagation(); openPreview(btn.dataset.id); });
+    });
+    scroll.querySelectorAll('.restore').forEach(btn => {
+      btn.addEventListener('click', e => { e.stopPropagation(); restoreVersion(btn.dataset.id); });
+    });
+    scroll.querySelectorAll('.compare-btn').forEach(btn => {
+      btn.addEventListener('click', e => { e.stopPropagation(); toggleCompare(btn.dataset.id); });
+    });
+  }
+
+  function toggleCompare(id) {
+    if (compareSet.includes(id)) {
+      compareSet = compareSet.filter(x => x !== id);
+    } else if (compareSet.length < 2) {
+      compareSet.push(id);
+    } else {
+      compareSet = [compareSet[1], id];
+    }
+
+    if (compareSet.length === 2) {
+      showCompare();
+    } else {
+      renderVersions();
+    }
+  }
+
+  function showCompare() {
+    const [aId, bId] = compareSet;
+    const vA = currentVersions.find(v => v.id === aId);
+    const vB = currentVersions.find(v => v.id === bId);
+    if (!vA || !vB) return;
+
+    document.getElementById('versions-scroll').style.display = 'none';
+    const cv = document.getElementById('compare-view');
+    cv.classList.add('visible');
+
+    const bar = document.getElementById('compare-bar');
+    bar.classList.add('visible');
+
+    function colHtml(v, label) {
+      const o = v.output || {};
+      const headline = o.headline || '(no headline)';
+      const intro = o.introduction || o.intro || '';
+      return `<div class="compare-col-header">${esc(label)}</div>
+        <div class="compare-headline">${esc(headline)}</div>
+        <div class="compare-intro">${intro.split(/\n\n+/).map(p => `<p>${esc(p.trim())}</p>`).join('')}</div>`;
+    }
+
+    const idxA = currentVersions.findIndex(v => v.id === aId);
+    const idxB = currentVersions.findIndex(v => v.id === bId);
+    document.getElementById('compare-col-a').innerHTML = colHtml(vA, `Version ${currentVersions.length - idxA} · ${formatDate(vA.createdAt)}`);
+    document.getElementById('compare-col-b').innerHTML = colHtml(vB, `Version ${currentVersions.length - idxB} · ${formatDate(vB.createdAt)}`);
+  }
+
+  document.getElementById('compare-clear').addEventListener('click', () => {
+    compareSet = [];
+    renderVersions();
+  });
+
+  function openPreview(id) {
+    const v = currentVersions.find(x => x.id === id);
+    if (!v) return;
+    const o = v.output || {};
+    const headline = o.headline || '(no headline)';
+    const sub = o.subheadline || o.angle || '';
+    const intro = o.introduction || o.intro || '';
+
+    document.getElementById('modal-title').textContent = 'Version preview';
+    document.getElementById('modal-body').innerHTML = `
+      <div class="modal-headline">${esc(headline)}</div>
+      ${sub ? `<div class="modal-sub">${esc(sub)}</div>` : ''}
+      <hr class="modal-divider">
+      <div class="modal-body-text">${intro.split(/\n\n+/).map(p => `<p>${esc(p.trim())}</p>`).join('')}</div>
+    `;
+    document.getElementById('modal').classList.add('open');
+  }
+
+  document.getElementById('modal-close').addEventListener('click', () => {
+    document.getElementById('modal').classList.remove('open');
+  });
+  document.getElementById('modal').addEventListener('click', e => {
+    if (e.target === document.getElementById('modal')) document.getElementById('modal').classList.remove('open');
+  });
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape') document.getElementById('modal').classList.remove('open');
+  });
+
+  async function restoreVersion(id) {
+    if (!confirm('Restore this version? The article will be updated with this version\'s content.')) return;
+    try {
+      await fetch(`${API}/api/history/${currentSlug}/restore/${id}`, { method: 'POST' });
+      showToast('Version restored', 'success');
+      // Reload versions
+      const resp = await fetch(`${API}/api/history/${currentSlug}`);
+      currentVersions = await resp.json();
+      renderVersions();
+    } catch {
+      showToast('Failed to restore', 'error');
+    }
+  }
+
+  document.getElementById('search').addEventListener('input', e => {
+    const q = e.target.value.toLowerCase();
+    const filtered = q ? articles.filter(a => (a.headline || a.title || '').toLowerCase().includes(q)) : articles;
+    renderArticleList(filtered);
+  });
+
+  loadArticles();
+</script>
+</body>
+</html>

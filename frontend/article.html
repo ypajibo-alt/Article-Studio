@@ -1,0 +1,902 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Article</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #f5f6f8;
+      color: #1a1a1a;
+      min-height: 100vh;
+    }
+
+    .back {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 8px 14px;
+      font-size: 13px;
+      color: #6b7280;
+      text-decoration: none;
+      border-radius: 6px;
+      transition: all 0.15s;
+    }
+
+    .back:hover { color: #1a1a1a; background: rgba(0,0,0,0.04); }
+
+    .top-bar {
+      max-width: 1440px;
+      margin: 0 auto;
+      padding: 20px 40px 0;
+    }
+
+    /* Header */
+    .article-header {
+      max-width: 1440px;
+      margin: 0 auto;
+      padding: 28px 40px 24px;
+    }
+
+    .container-badge {
+      display: inline-block;
+      padding: 4px 12px;
+      border-radius: 4px;
+      font-size: 12px;
+      font-weight: 600;
+      background: rgba(0,181,163,0.1);
+      color: #00B5A3;
+      margin-bottom: 12px;
+    }
+
+    .article-header h1 {
+      font-size: 28px;
+      font-weight: 800;
+      line-height: 1.2;
+      letter-spacing: -0.02em;
+      margin-bottom: 8px;
+    }
+
+    .article-angle {
+      font-size: 15px;
+      color: #6b7280;
+      line-height: 1.5;
+      margin-bottom: 16px;
+    }
+
+    .meta-row {
+      display: flex;
+      gap: 24px;
+      font-size: 13px;
+      color: #9ca3af;
+    }
+
+    .meta-row strong { color: #4b5563; font-weight: 600; }
+
+    /* Two-column: 70/30 */
+    .two-col {
+      max-width: 1440px;
+      margin: 0 auto;
+      padding: 0 40px 80px;
+      display: grid;
+      grid-template-columns: 7fr 3.5fr;
+      gap: 28px;
+      align-items: start;
+    }
+
+    /* LEFT PANEL */
+    .left-panel {
+      background: #fff;
+      border: 1px solid #e8eaed;
+      border-radius: 14px;
+      overflow: hidden;
+    }
+
+    .panel-header {
+      padding: 18px 28px;
+      border-bottom: 1px solid #eef0f2;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .panel-title {
+      font-size: 13px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: #6b7280;
+    }
+
+    .save-btn {
+      padding: 7px 18px;
+      border-radius: 7px;
+      border: none;
+      background: #1a1a1a;
+      color: #fff;
+      font-size: 13px;
+      font-weight: 600;
+      cursor: pointer;
+      font-family: inherit;
+      transition: background 0.15s;
+      display: none;
+    }
+
+    .save-btn:hover { background: #333; }
+    .save-btn.visible { display: inline-block; }
+
+    .article-content { padding: 32px 28px 36px; }
+
+    /* Field groups with left accent */
+    .field-group {
+      margin-bottom: 32px;
+      padding-left: 16px;
+      border-left: 3px solid #e8eaed;
+      transition: border-color 0.2s;
+    }
+
+    .field-group:focus-within { border-left-color: #00B5A3; }
+
+    .field-group:last-child { margin-bottom: 0; }
+
+    .field-label {
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: #00B5A3;
+      margin-bottom: 10px;
+    }
+
+    .editable-field {
+      width: 100%;
+      border: 1px solid transparent;
+      border-radius: 8px;
+      padding: 10px 12px;
+      font-family: inherit;
+      font-size: 15px;
+      line-height: 1.65;
+      color: #1a1a1a;
+      outline: none;
+      resize: none;
+      transition: border-color 0.15s, background 0.15s, box-shadow 0.15s;
+      background: #fafbfc;
+    }
+
+    .editable-field:hover { background: #f5f6f8; }
+    .editable-field:focus { border-color: #00B5A3; background: #fff; box-shadow: 0 0 0 3px rgba(0,181,163,0.08); }
+
+    .editable-headline {
+      font-size: 22px;
+      font-weight: 700;
+      line-height: 1.25;
+    }
+
+    .editable-intro { min-height: 140px; }
+
+    /* Entry cards */
+    .entries-list { display: flex; flex-direction: column; gap: 10px; }
+
+    .entry-card {
+      padding: 18px 16px;
+      background: #fafbfc;
+      border: 1px solid #eef0f2;
+      border-radius: 10px;
+      transition: border-color 0.15s;
+    }
+
+    .entry-card:hover { border-color: #dde0e4; }
+
+    .entry-num {
+      display: inline-block;
+      width: 22px;
+      height: 22px;
+      border-radius: 6px;
+      background: rgba(0,181,163,0.1);
+      color: #00B5A3;
+      font-size: 11px;
+      font-weight: 800;
+      text-align: center;
+      line-height: 22px;
+      margin-bottom: 8px;
+    }
+
+    .entry-title-text {
+      font-size: 15px;
+      font-weight: 700;
+      margin-bottom: 8px;
+      color: #1a1a1a;
+    }
+
+    .entry-blurb-field {
+      width: 100%;
+      border: 1px solid transparent;
+      border-radius: 6px;
+      padding: 8px 10px;
+      font-family: inherit;
+      font-size: 14px;
+      line-height: 1.55;
+      color: #4b5563;
+      outline: none;
+      resize: none;
+      min-height: 52px;
+      background: #fff;
+      transition: border-color 0.15s, box-shadow 0.15s;
+    }
+
+    .entry-blurb-field:hover { border-color: #e8eaed; }
+    .entry-blurb-field:focus { border-color: #00B5A3; box-shadow: 0 0 0 2px rgba(0,181,163,0.08); }
+
+    /* Content ID as pill */
+    .content-id-pill {
+      display: inline-block;
+      margin-top: 8px;
+      padding: 2px 10px;
+      border-radius: 12px;
+      font-size: 11px;
+      font-weight: 600;
+      background: #f0f1f3;
+      color: #9ca3af;
+      letter-spacing: 0.02em;
+    }
+
+    .editable-closing {
+      min-height: 70px;
+      font-style: italic;
+      color: #6b7280;
+    }
+
+    /* RIGHT PANEL */
+    .right-panel {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      position: sticky;
+      top: 0;
+      height: 100vh;
+      overflow-y: auto;
+      padding: 20px 0 80px;
+      min-width: 0;
+      word-wrap: break-word;
+    }
+
+    .right-panel::-webkit-scrollbar { width: 4px; }
+    .right-panel::-webkit-scrollbar-thumb { background: #d1d5db; border-radius: 4px; }
+    .right-panel::-webkit-scrollbar-thumb:hover { background: #9ca3af; }
+
+    .pipeline-card {
+      background: #fff;
+      border: 1px solid #e8eaed;
+      border-radius: 12px;
+    }
+
+    .pipeline-card-header {
+      padding: 10px 14px;
+      font-size: 13px;
+      font-weight: 700;
+      color: #1a1a1a;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .pipeline-card-header .icon { font-size: 15px; }
+
+    .pipeline-card-body { padding: 0 14px 12px; }
+
+    /* Pipeline steps scrollable */
+    .pipeline-steps-scroll { max-height: 220px; overflow-y: auto; }
+    .pipeline-steps-scroll::-webkit-scrollbar { width: 3px; }
+    .pipeline-steps-scroll::-webkit-scrollbar-thumb { background: #d1d5db; border-radius: 3px; }
+
+    /* Collapsible cards */
+    .collapsible .pipeline-card-header {
+      cursor: pointer;
+      user-select: none;
+      border-bottom: none;
+      transition: color 0.15s;
+    }
+
+    .collapsible .pipeline-card-header:hover { color: #00B5A3; }
+
+    .collapsible .pipeline-card-header .chevron {
+      margin-left: auto;
+      font-size: 12px;
+      color: #9ca3af;
+      transition: transform 0.2s;
+    }
+
+    .collapsible .pipeline-card-body {
+      display: none;
+      border-top: 1px solid #f3f4f6;
+      padding-top: 14px;
+    }
+
+    .collapsible.open .pipeline-card-body { display: block; }
+    .collapsible.open .chevron { transform: rotate(180deg); }
+
+    /* Brand score inline */
+    .brand-inline {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .brand-inline .brand-val { font-size: 15px; font-weight: 800; }
+    .brand-inline .brand-val.high { color: #16a34a; }
+    .brand-inline .brand-val.mid { color: #d97706; }
+    .brand-inline .brand-val.low { color: #dc2626; }
+
+    /* Pipeline steps */
+    .step {
+      display: flex;
+      gap: 10px;
+      padding: 7px 0;
+      border-bottom: 1px solid #f3f4f6;
+    }
+
+    .step:last-child { border-bottom: none; }
+
+    .step-num {
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      background: #f3f4f6;
+      color: #6b7280;
+      font-size: 12px;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .step-num.done { background: rgba(0,181,163,0.12); color: #00B5A3; }
+
+    .step-info { flex: 1; }
+    .step-title { font-size: 13px; font-weight: 600; margin-bottom: 2px; }
+    .step-desc { font-size: 12px; color: #9ca3af; line-height: 1.4; }
+
+    /* Quality gate */
+    .qg-list { list-style: none; display: flex; flex-direction: column; gap: 6px; }
+
+    .qg-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+      font-size: 12px;
+      color: #6b7280;
+      line-height: 1.5;
+    }
+
+    .qg-icon {
+      flex-shrink: 0;
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      font-size: 10px;
+      font-weight: 800;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 1px;
+    }
+
+    .qg-pass { background: rgba(0,181,163,0.12); color: #00B5A3; }
+    .qg-fail { background: #fef2f2; color: #dc2626; }
+
+    /* Prompt viewer */
+    .prompt-toggle {
+      width: 100%;
+      padding: 8px 12px;
+      border: 1px solid #eef0f2;
+      border-radius: 6px;
+      background: #fafbfc;
+      font-size: 12px;
+      color: #6b7280;
+      cursor: pointer;
+      text-align: left;
+      font-family: inherit;
+      transition: all 0.15s;
+      margin-bottom: 6px;
+    }
+
+    .prompt-toggle:hover { border-color: #dde0e4; color: #1a1a1a; }
+
+    .prompt-content {
+      display: none;
+      background: #1a1a1a;
+      color: #d1d5db;
+      padding: 14px;
+      border-radius: 8px;
+      font-family: 'SF Mono', Monaco, Consolas, monospace;
+      font-size: 11px;
+      line-height: 1.6;
+      white-space: pre-wrap;
+      max-height: 280px;
+      overflow-y: auto;
+      margin-bottom: 6px;
+    }
+
+    .prompt-content.open { display: block; }
+
+    /* Meta card */
+    .meta-list { font-size: 13px; }
+
+    .meta-item {
+      display: flex;
+      justify-content: space-between;
+      padding: 7px 0;
+      border-bottom: 1px solid #f3f4f6;
+    }
+
+    .meta-item:last-child { border-bottom: none; }
+    .meta-item .key { color: #9ca3af; }
+    .meta-item .val { font-weight: 600; color: #1a1a1a; }
+
+    /* Storyblok button — sticky at bottom */
+    .storyblok-sticky {
+      position: fixed;
+      bottom: 0;
+      right: 0;
+      padding: 16px;
+      background: linear-gradient(to top, #f5f6f8 60%, transparent);
+      z-index: 50;
+      pointer-events: none;
+    }
+
+    .storyblok-btn {
+      width: 100%;
+      padding: 14px 20px;
+      border-radius: 10px;
+      border: none;
+      background: #00B5A3;
+      color: #fff;
+      font-size: 15px;
+      font-weight: 700;
+      cursor: pointer;
+      font-family: inherit;
+      transition: all 0.2s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      pointer-events: auto;
+      box-shadow: 0 4px 12px rgba(0,181,163,0.25);
+    }
+
+    .storyblok-btn:hover { background: #009e92; box-shadow: 0 4px 16px rgba(0,181,163,0.35); }
+
+    .storyblok-btn.sent {
+      background: #e5e7eb;
+      color: #9ca3af;
+      cursor: default;
+      pointer-events: none;
+      box-shadow: none;
+    }
+
+    .loading {
+      text-align: center;
+      padding: 80px 24px;
+      color: #9ca3af;
+      font-size: 15px;
+    }
+
+    footer {
+      max-width: 1440px;
+      margin: 0 auto;
+      padding: 24px 40px;
+      text-align: center;
+      font-size: 12px;
+      color: #d1d5db;
+    }
+  </style>
+</head>
+<body>
+
+<div class="top-bar">
+  <a href="articles.html" class="back">&larr; All articles</a>
+</div>
+
+<div id="content">
+  <div class="loading" id="loading">Loading article...</div>
+</div>
+
+<footer>Tubi Blog &middot; Article Generation Pipeline</footer>
+
+<script>
+  const OUTPUT_DIR = 'output';
+  let originalArticle = null;
+  let sentItems = {};
+  try { sentItems = JSON.parse(localStorage.getItem('storyblok-sent') || '{}'); } catch {}
+  function isSent(f) { return !!sentItems[f]; }
+  function markSent(f) { sentItems[f] = Date.now(); localStorage.setItem('storyblok-sent', JSON.stringify(sentItems)); }
+
+  function isSingleTitle(a) {
+    return !!(a.introduction || a.cast);
+  }
+
+  // Quality gate checks (run client-side to show pass/fail)
+  function runChecks(a) {
+    const BANNED = ['delve','meticulously','showcases','nuanced','multifaceted','tapestry','realm','robust','leverage','facilitate','underscore','elevate','landscape','journey','compelling','indulge'];
+    const NEG = ['stupid','bad','terrible','awful'];
+    const JARGON = ['binge-worthy','must-see','hidden gem'];
+    const headlineWords = (a.headline || '').trim().split(/\s+/).length;
+
+    if (isSingleTitle(a)) {
+      const cast = a.cast || [];
+      const allText = [a.headline, a.subheadline, a.introduction, ...cast.map(c => c.bio), a.pullQuote, a.whyWatchIt].filter(Boolean).join(' ');
+      const lower = allText.toLowerCase();
+      const wordCount = allText.split(/\s+/).filter(Boolean).length;
+      const introParagraphs = (a.introduction || '').split(/\n\n+/).filter(p => p.trim()).length;
+      const bioIssues = cast.filter(c => { const w = (c.bio||'').split(/\s+/).length; return w < 30 || w > 50; });
+      return [
+        { label: 'Headline: max 12 words, sentence case', pass: headlineWords <= 12 },
+        { label: `Word count: 500-800 (${wordCount})`, pass: wordCount >= 500 && wordCount <= 800 },
+        { label: `Introduction: 2-3 paragraphs (${introParagraphs})`, pass: introParagraphs >= 2 && introParagraphs <= 3 },
+        { label: 'No em dashes in body', pass: !/\u2014/.test(allText) },
+        { label: 'No AI slop words', pass: !BANNED.some(w => lower.includes(w)) },
+        { label: 'No negative brand words', pass: !NEG.some(w => lower.includes(w)) },
+        { label: 'No generic jargon', pass: !JARGON.some(w => lower.includes(w)) },
+        { label: `Cast bios: 30-50 words each${bioIssues.length ? ' (' + bioIssues.map(c=>c.name).join(', ') + ')' : ''}`, pass: bioIssues.length === 0 },
+      ];
+    }
+
+    const entries = a.entries || [];
+    const allText = [a.headline, a.intro, ...entries.map(e => e.blurb), a.closing].filter(Boolean).join(' ');
+    const lower = allText.toLowerCase();
+    const introParagraphs = (a.intro || '').split(/\n\n+/).filter(p => p.trim()).length;
+    const blurbIssues = entries.some(e => { const w = (e.blurb||'').split(/\s+/).length; return w < 20 || w > 35; });
+
+    return [
+      { label: 'Headline: max 12 words, sentence case', pass: headlineWords <= 12 },
+      { label: `Entries: 8-15 titles (${entries.length})`, pass: entries.length >= 8 && entries.length <= 15 },
+      { label: `Intro: 3 paragraphs min (${introParagraphs})`, pass: introParagraphs >= 3 },
+      { label: 'No em dashes in body', pass: !/\u2014/.test(allText) },
+      { label: 'No AI slop words', pass: !BANNED.some(w => lower.includes(w)) },
+      { label: 'No negative brand words', pass: !NEG.some(w => lower.includes(w)) },
+      { label: 'No generic jargon', pass: !JARGON.some(w => lower.includes(w)) },
+      { label: 'Blurbs: 20-35 words each', pass: !blurbIssues },
+    ];
+  }
+
+  async function load() {
+    const file = decodeURIComponent(window.location.hash.slice(1));
+
+    if (!file) {
+      document.getElementById('loading').textContent = 'No article specified.';
+      return;
+    }
+
+    let article;
+    try {
+      const resp = await fetch(`${OUTPUT_DIR}/${file}`);
+      if (!resp.ok) throw new Error();
+      article = await resp.json();
+    } catch {
+      document.getElementById('loading').textContent = 'Could not load article.';
+      return;
+    }
+
+    originalArticle = JSON.parse(JSON.stringify(article));
+    document.title = article.headline || 'Article';
+
+    const container = article.metadata?.containerName || article.metadata?.title || 'Unknown';
+    const containerId = article.metadata?.containerId || '';
+    const entries = article.entries || [];
+    const brand = article.metadata?.brandScore ?? '-';
+    const attempts = article.metadata?.attempts ?? '-';
+    const date = article.metadata?.generatedAt
+      ? new Date(article.metadata.generatedAt).toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric', hour: '2-digit', minute: '2-digit' })
+      : '';
+
+    const brandCls = brand >= 4 ? 'high' : brand >= 3 ? 'mid' : 'low';
+
+    const isSingle = isSingleTitle(article);
+    const cast = article.cast || [];
+    const allText = isSingle
+      ? [article.introduction, ...cast.map(c => c.bio), article.pullQuote, article.whyWatchIt].filter(Boolean).join(' ')
+      : [article.intro, ...entries.map(e => e.blurb), article.closing].filter(Boolean).join(' ');
+    const wordCount = allText.split(/\s+/).filter(Boolean).length;
+
+    const checks = runChecks(article);
+    const checksHTML = checks.map(c =>
+      `<li class="qg-item"><span class="qg-icon ${c.pass ? 'qg-pass' : 'qg-fail'}">${c.pass ? '&#10003;' : '&#10007;'}</span>${c.label}</li>`
+    ).join('');
+
+    const entriesHTML = entries.map((e, i) => `
+      <div class="entry-card">
+        <div class="entry-num">${i + 1}</div>
+        <div class="entry-title-text">${e.title}</div>
+        <textarea class="entry-blurb-field" data-idx="${i}">${e.blurb || ''}</textarea>
+        ${e.contentId ? `<span class="content-id-pill">ID: ${e.contentId}</span>` : ''}
+      </div>
+    `).join('');
+
+    document.getElementById('content').innerHTML = `
+      <div class="article-header">
+        <span class="container-badge">${isSingle ? (article.metadata?.title || '') : container}</span>
+        <h1 id="page-headline">${article.headline || 'Untitled'}</h1>
+        <div class="article-angle">${article.angle || ''}</div>
+        <div class="meta-row">
+          <span>Brand: <strong>${brand}/5</strong></span>
+          ${isSingle ? `<span>Cast: <strong>${cast.length}</strong></span>` : `<span>Titles: <strong>${entries.length}</strong></span>`}
+          <span>Words: <strong>${wordCount}</strong></span>
+          <span>${date}</span>
+        </div>
+      </div>
+
+      <div class="two-col">
+        <!-- LEFT -->
+        <div class="left-panel">
+          <div class="panel-header">
+            <span class="panel-title">Generated Article</span>
+            <button class="save-btn" id="save-btn">Save changes</button>
+          </div>
+          <div class="article-content">
+            <div class="field-group">
+              <div class="field-label">Headline</div>
+              <textarea class="editable-field editable-headline" id="ed-headline" rows="1">${article.headline || ''}</textarea>
+            </div>
+            ${isSingle ? `
+            <div class="field-group">
+              <div class="field-label">Subheadline</div>
+              <textarea class="editable-field" id="ed-subheadline" rows="2">${article.subheadline || ''}</textarea>
+            </div>
+            <div class="field-group">
+              <div class="field-label">Introduction</div>
+              <textarea class="editable-field editable-intro" id="ed-intro" style="min-height:160px">${article.introduction || ''}</textarea>
+            </div>
+            <div class="field-group">
+              <div class="field-label">Cast (${cast.length})</div>
+              ${cast.map((c, i) => `
+                <div class="entry-card">
+                  <div class="entry-title-text">${c.name}</div>
+                  <textarea class="entry-blurb-field" data-idx="${i}">${c.bio || ''}</textarea>
+                </div>
+              `).join('')}
+            </div>
+            <div class="field-group">
+              <div class="field-label">Pull Quote</div>
+              <textarea class="editable-field" id="ed-pullquote" rows="2">${article.pullQuote || ''}</textarea>
+            </div>
+            <div class="field-group">
+              <div class="field-label">Why Watch It</div>
+              <textarea class="editable-field" id="ed-whywatchit" style="min-height:160px">${article.whyWatchIt || ''}</textarea>
+            </div>
+            ` : `
+            <div class="field-group">
+              <div class="field-label">Intro</div>
+              <textarea class="editable-field editable-intro" id="ed-intro">${article.intro || ''}</textarea>
+            </div>
+            <div class="field-group">
+              <div class="field-label">${entries.length} Titles</div>
+              <div class="entries-list">${entriesHTML}</div>
+            </div>
+            <div class="field-group">
+              <div class="field-label">Closing</div>
+              <textarea class="editable-field editable-closing" id="ed-closing">${article.closing || ''}</textarea>
+            </div>
+            `}
+          </div>
+        </div>
+
+        <!-- RIGHT -->
+        <div class="right-panel">
+          <!-- Angle (internal only, listicles only) -->
+          ${!isSingle ? `<div class="pipeline-card">
+            <div class="pipeline-card-header"><span class="icon">&#9670;</span> Angle <span style="font-size:11px;font-weight:400;color:#9ca3af;margin-left:auto;">internal only</span></div>
+            <div class="pipeline-card-body" style="padding-bottom:8px;">
+              <div class="editable-field" id="ed-angle" contenteditable="true" style="font-size:12px;line-height:1.45;padding:6px 8px;min-height:unset;white-space:pre-wrap;">${article.angle || ''}</div>
+            </div>
+          </div>` : ''}
+
+          <!-- Brand Score -->
+          <div class="pipeline-card">
+            <div class="pipeline-card-header" style="padding-bottom:10px;">
+              <span class="icon">&#9733;</span> Brand Score
+              <span class="brand-val ${brandCls}" style="margin-left:auto;">${brand}/5</span>
+            </div>
+          </div>
+
+          <!-- Quality Gate -->
+          <div class="pipeline-card">
+            <div class="pipeline-card-header"><span class="icon">&#9888;</span> Quality Gate</div>
+            <div class="pipeline-card-body">
+              <ul class="qg-list">${checksHTML}</ul>
+            </div>
+          </div>
+
+          <!-- Pipeline Steps -->
+          <div class="pipeline-card">
+            <div class="pipeline-card-header"><span class="icon">&#9881;</span> Pipeline Steps</div>
+            <div class="pipeline-card-body">
+              <div class="pipeline-steps-scroll">
+              <div class="step">
+                <div class="step-num done">1</div>
+                <div class="step-info">
+                  <div class="step-title">Fetch container</div>
+                  <div class="step-desc">Pulled titles from "${container}" (${containerId})</div>
+                </div>
+              </div>
+              <div class="step">
+                <div class="step-num done">2</div>
+                <div class="step-info">
+                  <div class="step-title">Pre-filter titles</div>
+                  <div class="step-desc">Stratified by decade, dropped weak descriptions, capped at 50</div>
+                </div>
+              </div>
+              <div class="step">
+                <div class="step-num done">3</div>
+                <div class="step-info">
+                  <div class="step-title">Generate article</div>
+                  <div class="step-desc">Claude Sonnet 4.5 via Bedrock. ${attempts > 1 ? attempts + ' attempts' : 'First attempt'}</div>
+                </div>
+              </div>
+              <div class="step">
+                <div class="step-num done">4</div>
+                <div class="step-info">
+                  <div class="step-title">Quality gate</div>
+                  <div class="step-desc">Programmatic checks on headline, word count, banned words, content IDs</div>
+                </div>
+              </div>
+              <div class="step">
+                <div class="step-num done">5</div>
+                <div class="step-info">
+                  <div class="step-title">Brand alignment</div>
+                  <div class="step-desc">AI review scored voice, specificity, angle, energy, consistency (min 3.5/5)</div>
+                </div>
+              </div>
+              <div class="step">
+                <div class="step-num done">6</div>
+                <div class="step-info">
+                  <div class="step-title">Auto-fix &amp; save</div>
+                  <div class="step-desc">Replaced em dashes, removed exclamation marks, saved JSON + Markdown</div>
+                </div>
+              </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Prompts Used (collapsed) -->
+          <div class="pipeline-card collapsible" id="card-prompts">
+            <div class="pipeline-card-header"><span class="icon">&#128196;</span> Prompts Used <span class="chevron">&#9660;</span></div>
+            <div class="pipeline-card-body" id="prompts-body">
+              <button class="prompt-toggle" data-prompt="system">&#9654; System prompt</button>
+              <div class="prompt-content" id="prompt-system"></div>
+              <button class="prompt-toggle" data-prompt="user">&#9654; User prompt</button>
+              <div class="prompt-content" id="prompt-user"></div>
+              <button class="prompt-toggle" data-prompt="brand">&#9654; Brand alignment prompt</button>
+              <div class="prompt-content" id="prompt-brand"></div>
+            </div>
+          </div>
+
+          <!-- Metadata (collapsed) -->
+          <div class="pipeline-card collapsible" id="card-meta">
+            <div class="pipeline-card-header"><span class="icon">&#128200;</span> Metadata <span class="chevron">&#9660;</span></div>
+            <div class="pipeline-card-body">
+              <div class="meta-list">
+                <div class="meta-item"><span class="key">Container</span><span class="val">${container}</span></div>
+                <div class="meta-item"><span class="key">Container ID</span><span class="val">${containerId}</span></div>
+                <div class="meta-item"><span class="key">Attempts</span><span class="val">${attempts}</span></div>
+                <div class="meta-item"><span class="key">Titles</span><span class="val">${entries.length}</span></div>
+                <div class="meta-item"><span class="key">Words</span><span class="val">${wordCount}</span></div>
+                <div class="meta-item"><span class="key">Generated</span><span class="val">${date}</span></div>
+                <div class="meta-item"><span class="key">Model</span><span class="val">Claude Sonnet 4.5</span></div>
+                <div class="meta-item"><span class="key">File</span><span class="val" style="font-size:11px;word-break:break-all;">${file}</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sticky Storyblok button -->
+      <div class="storyblok-sticky" id="storyblok-wrap">
+        <button class="storyblok-btn ${isSent(file) ? 'sent' : ''}" id="storyblok-btn">
+          ${isSent(file) ? '&#10003; Sent to Storyblok' : 'Send to Storyblok'}
+        </button>
+      </div>
+    `;
+
+    // Position sticky button relative to sidebar
+    positionStickyBtn();
+    window.addEventListener('resize', positionStickyBtn);
+
+    loadPrompts();
+
+    // Track edits
+    document.querySelectorAll('.editable-field, .entry-blurb-field').forEach(el => {
+      el.addEventListener('input', () => {
+        document.getElementById('save-btn').classList.add('visible');
+      });
+    });
+
+    // Collapsible cards
+    document.querySelectorAll('.collapsible .pipeline-card-header').forEach(hdr => {
+      hdr.addEventListener('click', () => {
+        hdr.closest('.collapsible').classList.toggle('open');
+      });
+    });
+
+    // Prompt toggles
+    document.querySelectorAll('.prompt-toggle').forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const id = 'prompt-' + btn.dataset.prompt;
+        const el = document.getElementById(id);
+        el.classList.toggle('open');
+        btn.innerHTML = (el.classList.contains('open') ? '&#9660; ' : '&#9654; ') + btn.textContent.slice(2);
+      });
+    });
+
+    // Save
+    document.getElementById('save-btn').addEventListener('click', () => {
+      const edited = JSON.parse(JSON.stringify(originalArticle));
+      edited.headline = document.getElementById('ed-headline').value;
+      edited.angle = document.getElementById('ed-angle').innerText;
+      edited.intro = document.getElementById('ed-intro').value;
+      edited.closing = document.getElementById('ed-closing').value;
+      document.querySelectorAll('.entry-blurb-field').forEach(el => {
+        const idx = parseInt(el.dataset.idx);
+        if (edited.entries[idx]) edited.entries[idx].blurb = el.value;
+      });
+      const blob = new Blob([JSON.stringify(edited, null, 2)], { type: 'application/json' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = file;
+      a.click();
+      URL.revokeObjectURL(url);
+      document.getElementById('save-btn').classList.remove('visible');
+    });
+
+    // Storyblok
+    document.getElementById('storyblok-btn').addEventListener('click', () => {
+      const btn = document.getElementById('storyblok-btn');
+      if (isSent(file)) return;
+      markSent(file);
+      btn.classList.add('sent');
+      btn.innerHTML = '&#10003; Sent to Storyblok';
+    });
+  }
+
+  function positionStickyBtn() {
+    const sidebar = document.querySelector('.right-panel');
+    const wrap = document.getElementById('storyblok-wrap');
+    if (!sidebar || !wrap) return;
+    const rect = sidebar.getBoundingClientRect();
+    wrap.style.left = rect.left + 'px';
+    wrap.style.width = rect.width + 'px';
+    wrap.style.right = 'auto';
+  }
+
+  async function loadPrompts() {
+    const files = {
+      system: 'listicle-system-prompt.md',
+      user: 'listicle-user-prompt.md',
+      brand: 'brand-alignment-prompt.md',
+    };
+
+    for (const [key, filename] of Object.entries(files)) {
+      try {
+        const resp = await fetch(filename);
+        if (resp.ok) {
+          const text = await resp.text();
+          document.getElementById('prompt-' + key).textContent = text;
+        } else {
+          document.getElementById('prompt-' + key).textContent = `Could not load ${filename}`;
+        }
+      } catch {
+        document.getElementById('prompt-' + key).textContent = `Could not load ${filename}`;
+      }
+    }
+  }
+
+  load();
+</script>
+
+</body>
+</html>

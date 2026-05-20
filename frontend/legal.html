@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Legal Review — Article Studio</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #F5F6F7; color: #1a1a1a; height: 100vh;
+      display: flex; flex-direction: row; overflow: hidden;
+    }
+
+    /* Dossier sidebar */
+    .dossier-sidebar {
+      width: 200px; min-width: 200px; background: #1E1E2D;
+      display: flex; flex-direction: column; padding: 12px;
+      height: 100vh; flex-shrink: 0;
+    }
+    .ds-logo { display: flex; align-items: center; gap: 10px; padding: 14px 12px 22px; }
+    .ds-logo span { font-size: 18px; font-weight: 700; color: #fff; letter-spacing: -0.02em; }
+    .ds-nav { display: flex; flex-direction: column; gap: 2px; }
+    .ds-nav-item {
+      display: flex; align-items: center; gap: 10px; padding: 8px 12px; border-radius: 8px;
+      color: rgba(255,255,255,0.65); text-decoration: none; font-size: 14px; font-weight: 500;
+      transition: background 0.15s, color 0.15s;
+    }
+    .ds-nav-item:hover { background: rgba(255,255,255,0.08); color: rgba(255,255,255,0.9); }
+    .ds-nav-item.active { background: #7C3AED; color: #fff; }
+    .ds-icon { width: 18px; height: 18px; flex-shrink: 0; }
+
+    .legal-main { flex: 1; min-width: 0; display: flex; flex-direction: column; overflow: hidden; }
+
+    /* Main layout */
+    .layout {
+      display: grid;
+      grid-template-columns: 260px 1fr 300px;
+      flex: 1; min-height: 0; gap: 0;
+    }
+
+    /* Sidebar */
+    .sidebar {
+      background: #fff; border-right: 1px solid #e2e4e8;
+      display: flex; flex-direction: column; overflow: hidden;
+    }
+    .sidebar-header {
+      padding: 16px 20px; border-bottom: 1px solid #f0f1f3;
+      font-size: 11px; font-weight: 700; text-transform: uppercase;
+      letter-spacing: 0.06em; color: #9ca3af; flex-shrink: 0;
+      display: flex; align-items: center; gap: 8px;
+    }
+    .count-badge {
+      background: rgba(245,158,11,0.15); color: #d97706;
+      font-size: 11px; font-weight: 700; padding: 2px 7px;
+      border-radius: 99px;
+    }
+    .sidebar-list { flex: 1; overflow-y: auto; }
+    .sidebar-item {
+      padding: 14px 20px; border-bottom: 1px solid #f9fafb;
+      cursor: pointer; transition: background 0.1s;
+    }
+    .sidebar-item:hover { background: #fafbfc; }
+    .sidebar-item.active { background: rgba(245,158,11,0.06); border-left: 3px solid #d97706; padding-left: 17px; }
+    .sidebar-headline { font-size: 13px; font-weight: 700; line-height: 1.35; margin-bottom: 4px; color: #1a1a1a; }
+    .sidebar-meta { font-size: 11px; color: #9ca3af; display: flex; gap: 10px; }
+    .sidebar-flags {
+      display: inline-flex; align-items: center; gap: 3px;
+      font-size: 11px; font-weight: 700; color: #d97706;
+    }
+    .sidebar-empty { padding: 40px 20px; text-align: center; color: #c0c4cb; font-size: 13px; }
+
+    /* Article pane */
+    .article-pane {
+      display: flex; flex-direction: column; overflow: hidden;
+      border-right: 1px solid #e2e4e8;
+    }
+    .article-topbar {
+      padding: 14px 24px; background: #fff; border-bottom: 1px solid #e2e4e8;
+      display: flex; align-items: center; justify-content: space-between;
+      flex-shrink: 0; gap: 16px;
+    }
+    .article-topbar-title { font-size: 15px; font-weight: 700; line-height: 1.3; flex: 1; min-width: 0; }
+    .topbar-actions { display: flex; gap: 8px; flex-shrink: 0; }
+    .approve-btn {
+      padding: 7px 16px; border-radius: 8px; border: none;
+      background: rgba(34,197,94,0.12); color: #16a34a;
+      font-size: 13px; font-weight: 700; cursor: pointer; font-family: inherit;
+      transition: background 0.15s;
+    }
+    .approve-btn:hover { background: rgba(34,197,94,0.2); }
+    .return-btn {
+      padding: 7px 16px; border-radius: 8px; border: 1px solid #e2e4e8;
+      background: #fff; color: #6b7280; font-size: 13px; font-weight: 600;
+      cursor: pointer; font-family: inherit; transition: all 0.15s;
+    }
+    .return-btn:hover { border-color: #d1d5db; color: #1a1a1a; }
+    .status-badge {
+      display: inline-block; padding: 3px 8px; border-radius: 99px;
+      font-size: 11px; font-weight: 700; background: rgba(245,158,11,0.1); color: #d97706;
+      white-space: nowrap; flex-shrink: 0;
+    }
+
+    .article-scroll { flex: 1; overflow-y: auto; padding: 32px 40px; }
+
+    /* Article typography */
+    .article-body-render { max-width: 640px; }
+    .art-headline { font-size: 22px; font-weight: 800; line-height: 1.2; margin-bottom: 8px; }
+    .art-subheadline { font-size: 15px; color: #6b7280; line-height: 1.5; margin-bottom: 20px; }
+    .art-divider { border: none; border-top: 1px solid #f0f1f3; margin: 20px 0; }
+    .art-section-label {
+      font-size: 10px; font-weight: 700; text-transform: uppercase;
+      letter-spacing: 0.08em; color: #9ca3af; margin: 20px 0 8px;
+    }
+    .art-body { font-size: 15px; line-height: 1.75; color: #374151; }
+    .art-body p { margin-bottom: 12px; }
+    .art-pull-quote {
+      border-left: 3px solid #00B5A3; padding: 10px 16px;
+      margin: 16px 0; font-size: 15px; font-style: italic;
+      color: #1a1a1a; background: rgba(0,181,163,0.04); border-radius: 0 8px 8px 0;
+    }
+    .art-cast-name { font-weight: 700; font-size: 14px; margin-bottom: 3px; }
+    .art-cast-bio { font-size: 14px; color: #6b7280; line-height: 1.6; margin-bottom: 14px; }
+    .art-listicle-entry { margin-bottom: 16px; padding-bottom: 16px; border-bottom: 1px solid #f0f1f3; }
+    .art-listicle-entry:last-child { border-bottom: none; }
+    .art-listicle-title { font-weight: 700; font-size: 14px; margin-bottom: 4px; }
+    .art-listicle-blurb { font-size: 13px; color: #6b7280; line-height: 1.6; }
+
+    .pane-empty {
+      flex: 1; display: flex; align-items: center; justify-content: center;
+      color: #d1d5db; font-size: 14px; text-align: center; padding: 40px;
+    }
+
+    /* Comments panel */
+    .comments-pane {
+      background: #fff; display: flex; flex-direction: column; overflow: hidden;
+    }
+    .comments-header {
+      padding: 16px 20px; border-bottom: 1px solid #f0f1f3;
+      font-size: 11px; font-weight: 700; text-transform: uppercase;
+      letter-spacing: 0.06em; color: #9ca3af; flex-shrink: 0;
+      display: flex; align-items: center; gap: 8px;
+    }
+    .unresolved-count {
+      background: rgba(245,158,11,0.15); color: #d97706;
+      font-size: 11px; font-weight: 700; padding: 2px 7px;
+      border-radius: 99px;
+    }
+    .hint-text { font-weight: 400; font-size: 11px; color: #c0c4cb; letter-spacing: 0; margin-left: auto; }
+    .comments-list { flex: 1; overflow-y: auto; padding: 12px; }
+    .comment-card {
+      background: #fafbfc; border: 1px solid #f0f1f3; border-radius: 10px;
+      padding: 12px 14px; margin-bottom: 8px; cursor: pointer;
+      transition: border-color 0.15s;
+    }
+    .comment-card:hover { border-color: #d97706; }
+    .comment-card.resolved { opacity: 0.45; }
+    .comment-card.active { border-color: #d97706; background: rgba(245,158,11,0.04); }
+    .comment-selected-text {
+      font-size: 11px; color: #9ca3af; font-style: italic;
+      border-left: 2px solid #d97706; padding-left: 8px;
+      margin-bottom: 7px; line-height: 1.4;
+      white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+    }
+    .comment-body { font-size: 13px; color: #1a1a1a; line-height: 1.5; margin-bottom: 8px; }
+    .comment-meta { font-size: 11px; color: #9ca3af; display: flex; justify-content: space-between; align-items: center; }
+    .resolve-btn {
+      font-size: 11px; font-weight: 700; color: #00B5A3; background: none;
+      border: none; cursor: pointer; font-family: inherit; padding: 0;
+    }
+    .resolve-btn:hover { color: #009e8e; }
+    .comments-empty { padding: 32px 20px; text-align: center; color: #c0c4cb; font-size: 13px; }
+
+    /* Legal highlight */
+    mark.legal-highlight {
+      background: rgba(255,200,0,0.35);
+      border-radius: 2px; cursor: pointer;
+    }
+    mark.legal-highlight.active {
+      background: rgba(245,158,11,0.45);
+      outline: 2px solid #d97706;
+    }
+
+    /* Flag popup */
+    .flag-popup {
+      position: fixed; background: #fff; border: 1px solid #e2e4e8;
+      border-radius: 12px; box-shadow: 0 8px 24px rgba(0,0,0,.12);
+      padding: 16px; z-index: 500; width: 280px; display: none;
+    }
+    .flag-popup-label {
+      font-size: 11px; font-weight: 700; text-transform: uppercase;
+      letter-spacing: 0.06em; color: #9ca3af; margin-bottom: 8px;
+    }
+    .flag-popup textarea {
+      width: 100%; height: 80px; padding: 8px 10px;
+      border: 1px solid #e2e4e8; border-radius: 8px;
+      font-size: 13px; font-family: inherit; resize: none; outline: none;
+      color: #1a1a1a; line-height: 1.5;
+    }
+    .flag-popup textarea:focus { border-color: #d97706; }
+    .flag-popup-actions { display: flex; gap: 8px; margin-top: 10px; }
+    .flag-submit-btn {
+      flex: 1; padding: 8px; border-radius: 8px; border: none;
+      background: #d97706; color: #fff; font-size: 13px; font-weight: 700;
+      cursor: pointer; font-family: inherit;
+    }
+    .flag-submit-btn:hover { background: #b45309; }
+    .flag-cancel-btn {
+      padding: 8px 14px; border-radius: 8px; border: 1px solid #e2e4e8;
+      background: #fff; color: #6b7280; font-size: 13px; font-weight: 600;
+      cursor: pointer; font-family: inherit;
+    }
+
+    /* Toast */
+    .toast {
+      position: fixed; bottom: 24px; right: 24px;
+      background: #1a1a1a; color: #fff; font-size: 13px; font-weight: 600;
+      padding: 10px 18px; border-radius: 8px;
+      opacity: 0; transform: translateY(8px);
+      transition: all 0.2s; pointer-events: none; z-index: 1000;
+    }
+    .toast.show { opacity: 1; transform: translateY(0); }
+    .toast.success { background: #00B5A3; }
+    .toast.error { background: #ef4444; }
+  </style>
+</head>
+<body>
+
+<aside class="dossier-sidebar">
+  <div class="ds-logo">
+    <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#7C3AED" stroke-width="2"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg>
+    <span>Article Studio</span>
+  </div>
+  <nav class="ds-nav">
+    <a href="/articles" class="ds-nav-item">
+      <svg class="ds-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><rect x="3" y="3" width="8" height="8" rx="1.5"/><rect x="13" y="3" width="8" height="8" rx="1.5"/><rect x="3" y="13" width="8" height="8" rx="1.5"/><rect x="13" y="13" width="8" height="8" rx="1.5"/></svg>
+      Articles
+    </a>
+    <a href="/generate" class="ds-nav-item">
+      <svg class="ds-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path stroke-linecap="round" d="M11 5H6a2 2 0 0 0-2 2v11a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2v-5m-1.414-9.414a2 2 0 1 1 2.828 2.828L11.828 15H9v-2.828l8.586-8.586z"/></svg>
+      Generate
+    </a>
+    <a href="/pipeline" class="ds-nav-item">
+      <svg class="ds-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><circle cx="12" cy="12" r="9"/><polygon points="10,8 16,12 10,16"/></svg>
+      Pipeline
+    </a>
+    <a href="/history" class="ds-nav-item">
+      <svg class="ds-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><circle cx="12" cy="12" r="9"/><polyline points="12,7 12,12 15,15"/></svg>
+      History
+    </a>
+    <a href="/git" class="ds-nav-item">
+      <svg class="ds-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><circle cx="18" cy="18" r="3"/><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M6 9v6M9 6h3a3 3 0 0 1 3 3v3"/></svg>
+      Git
+    </a>
+    <a href="/legal" class="ds-nav-item active">
+      <svg class="ds-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0 1 12 2.944a11.955 11.955 0 0 1-8.618 3.04A12.02 12.02 0 0 0 3 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+      Legal Review
+    </a>
+    <a href="/marketing" class="ds-nav-item">
+      <svg class="ds-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path stroke-linecap="round" stroke-linejoin="round" d="M11 5.882V19.24a1.76 1.76 0 0 1-3.417.592l-2.147-6.15M18 13a3 3 0 1 0 0-6M5.436 13.683A4.001 4.001 0 0 1 7 6h1.832c4.1 0 7.625-1.234 9.168-3v14c-1.543-1.766-5.067-3-9.168-3H7a3.988 3.988 0 0 1-1.564-.317z"/></svg>
+      Marketing
+    </a>
+  </nav>
+</aside>
+
+<div class="legal-main">
+<div class="layout">
+
+  <!-- Sidebar: article list -->
+  <aside class="sidebar">
+    <div class="sidebar-header">
+      In Legal Review
+      <span class="count-badge" id="sidebar-count">0</span>
+    </div>
+    <div class="sidebar-list" id="sidebar-list">
+      <div class="sidebar-empty">Loading...</div>
+    </div>
+  </aside>
+
+  <!-- Article reader -->
+  <div class="article-pane">
+    <div id="article-topbar" class="article-topbar" style="display:none;">
+      <div class="article-topbar-title" id="topbar-headline"></div>
+      <span class="status-badge">Legal Review</span>
+      <div class="topbar-actions">
+        <button class="approve-btn" id="approve-btn">Approve</button>
+        <button class="return-btn" id="return-btn">Return to editor</button>
+      </div>
+    </div>
+    <div id="article-scroll" class="article-scroll">
+      <div class="pane-empty" id="pane-empty">
+        <div>
+          <svg width="40" height="40" fill="none" viewBox="0 0 24 24" style="margin:0 auto 12px;display:block;opacity:0.3;">
+            <path d="M9 12l2 2 4-4M7 18a5 5 0 110-10 5 5 0 010 10z" stroke="#9ca3af" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+          Select an article to review
+        </div>
+      </div>
+      <div id="article-render" class="article-body-render" style="display:none;"></div>
+    </div>
+  </div>
+
+  <!-- Comments panel -->
+  <div class="comments-pane">
+    <div class="comments-header">
+      Flags
+      <span class="unresolved-count" id="unresolved-count" style="display:none;"></span>
+      <span class="hint-text">Select text to flag</span>
+    </div>
+    <div class="comments-list" id="comments-list">
+      <div class="comments-empty" id="comments-empty">No flags yet</div>
+    </div>
+  </div>
+
+</div>
+</div><!-- /.legal-main -->
+
+<!-- Flag popup -->
+<div class="flag-popup" id="flag-popup">
+  <div class="flag-popup-label">Flag this text</div>
+  <div id="flag-quote" style="font-size:11px;color:#9ca3af;font-style:italic;border-left:2px solid #d97706;padding-left:8px;margin-bottom:8px;line-height:1.4;"></div>
+  <textarea id="flag-comment" placeholder="Describe the issue..."></textarea>
+  <div class="flag-popup-actions">
+    <button class="flag-submit-btn" id="flag-submit">Add flag</button>
+    <button class="flag-cancel-btn" id="flag-cancel">Cancel</button>
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script>
+  const API = 'http://localhost:3002';
+  let currentSlug = null;
+  let currentArticle = null;
+  let pendingSelection = null;
+
+  function esc(str) {
+    return (str || '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+  }
+
+  function showToast(msg, type = '') {
+    const t = document.getElementById('toast');
+    t.textContent = msg;
+    t.className = 'toast show' + (type ? ' ' + type : '');
+    setTimeout(() => { t.className = 'toast'; }, 2800);
+  }
+
+  function formatDate(iso) {
+    if (!iso) return '';
+    return new Date(iso).toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
+  }
+
+  // --- Sidebar ---
+
+  async function loadSidebar() {
+    try {
+      const resp = await fetch(`${API}/api/articles`);
+      const all = await resp.json();
+
+      const awaiting  = all.filter(a => a.status === 'legal-review');
+      const returned  = all.filter(a => a.status === 'draft' && a.commentCount > 0);
+      const approved  = all.filter(a => a.status === 'approved');
+
+      document.getElementById('sidebar-count').textContent = awaiting.length;
+
+      const list = document.getElementById('sidebar-list');
+
+      function articleItem(a) {
+        const unresolved = a.unresolvedCommentCount || 0;
+        return `<div class="sidebar-item" data-slug="${a.slug}">
+          <div class="sidebar-headline">${esc(a.headline || a.articleTitle)}</div>
+          <div class="sidebar-meta">
+            <span>${formatDate(a.createdAt)}</span>
+            ${unresolved ? `<span class="sidebar-flags">&#9873; ${unresolved}</span>` : ''}
+          </div>
+        </div>`;
+      }
+
+      function section(label, color, items) {
+        return `<div style="padding:10px 16px 4px;font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:${color};">${label} <span style="opacity:.7;">(${items.length})</span></div>`
+          + (items.length ? items.map(articleItem).join('') : `<div class="sidebar-empty" style="padding:8px 16px 12px;font-size:12px;">None</div>`);
+      }
+
+      list.innerHTML = section('Awaiting Review', '#d97706', awaiting)
+        + section('Sent to Editor', '#6b7280', returned)
+        + section('Approved', '#16a34a', approved);
+
+      list.querySelectorAll('.sidebar-item').forEach(item => {
+        item.addEventListener('click', () => loadArticle(item.dataset.slug));
+      });
+
+      const params = new URLSearchParams(window.location.search);
+      const slugParam = params.get('slug');
+      const allShown = [...awaiting, ...returned, ...approved];
+      if (slugParam && allShown.find(a => a.slug === slugParam)) {
+        loadArticle(slugParam);
+      } else if (awaiting.length) {
+        loadArticle(awaiting[0].slug);
+      }
+    } catch (err) {
+      document.getElementById('sidebar-list').innerHTML = '<div class="sidebar-empty">Failed to load</div>';
+    }
+  }
+
+  // --- Article loading & rendering ---
+
+  async function loadArticle(slug) {
+    currentSlug = slug;
+
+    // Update sidebar active state
+    document.querySelectorAll('.sidebar-item').forEach(item => {
+      item.classList.toggle('active', item.dataset.slug === slug);
+    });
+
+    try {
+      const resp = await fetch(`${API}/api/articles/${slug}`);
+      currentArticle = await resp.json();
+
+      document.getElementById('pane-empty').style.display = 'none';
+      document.getElementById('article-topbar').style.display = 'flex';
+      document.getElementById('topbar-headline').textContent = currentArticle.output?.headline || currentArticle.articleTitle;
+
+      const render = document.getElementById('article-render');
+      render.style.display = 'block';
+      render.innerHTML = renderArticle(currentArticle.output, currentArticle.articleType);
+
+      // Apply existing highlights
+      applyHighlights(render, currentArticle.comments || []);
+
+      // Attach highlight click handlers
+      render.querySelectorAll('.legal-highlight').forEach(mark => {
+        mark.addEventListener('click', () => focusComment(mark.dataset.commentId));
+      });
+
+      renderComments(currentArticle.comments || []);
+
+    } catch (err) {
+      showToast('Failed to load article', 'error');
+    }
+  }
+
+  function renderArticle(output, articleType) {
+    if (!output) return '<p style="color:#9ca3af;">No content</p>';
+    if (output.entries) return renderListicle(output);
+    return renderSingle(output);
+  }
+
+  function renderSingle(o) {
+    const paras = text => (text || '').split(/\n\n+/).map(p =>
+      `<p>${esc(p.trim())}</p>`).join('');
+
+    let html = `
+      <div class="art-headline">${esc(o.headline)}</div>
+      <div class="art-subheadline">${esc(o.subheadline)}</div>
+      <hr class="art-divider">
+      <div class="art-section-label">Introduction</div>
+      <div class="art-body">${paras(o.introduction)}</div>
+    `;
+    if (o.pullQuote) html += `<div class="art-pull-quote">${esc(o.pullQuote)}</div>`;
+    if (o.cast?.length) {
+      html += `<hr class="art-divider"><div class="art-section-label">Cast</div>`;
+      o.cast.forEach(c => {
+        html += `<div class="art-cast-name">${esc(c.name)}</div><div class="art-cast-bio">${esc(c.bio)}</div>`;
+      });
+    }
+    if (o.whyWatchIt) {
+      html += `<hr class="art-divider"><div class="art-section-label">Why watch it</div><div class="art-body">${paras(o.whyWatchIt)}</div>`;
+    }
+    if (o.moreDetails?.director) {
+      html += `<hr class="art-divider"><div class="art-section-label">Details</div><div class="art-body">
+        <p><strong>Director:</strong> ${esc(o.moreDetails.director)}</p>
+        ${o.moreDetails.fullCast?.length ? `<p><strong>Cast:</strong> ${esc(o.moreDetails.fullCast.join(', '))}</p>` : ''}
+      </div>`;
+    }
+    return html;
+  }
+
+  function renderListicle(o) {
+    const paras = text => (text || '').split(/\n\n+/).map(p => `<p>${esc(p.trim())}</p>`).join('');
+    let html = `
+      <div class="art-headline">${esc(o.headline)}</div>
+      ${o.angle ? `<div class="art-subheadline">${esc(o.angle)}</div>` : ''}
+      <hr class="art-divider">
+      <div class="art-body">${paras(o.intro)}</div>
+      <hr class="art-divider">
+    `;
+    (o.entries || []).forEach((e, i) => {
+      html += `<div class="art-listicle-entry">
+        <div class="art-listicle-title">${i + 1}. ${esc(e.title)}</div>
+        <div class="art-listicle-blurb">${esc(e.blurb)}</div>
+      </div>`;
+    });
+    if (o.closing) html += `<hr class="art-divider"><div class="art-body">${paras(o.closing)}</div>`;
+    return html;
+  }
+
+  // --- Highlighting ---
+
+  function applyHighlights(containerEl, comments) {
+    for (const c of comments.filter(c => !c.resolvedAt)) {
+      if (!c.selectedText) continue;
+      const walker = document.createTreeWalker(containerEl, NodeFilter.SHOW_TEXT);
+      let node;
+      while (node = walker.nextNode()) {
+        const idx = node.textContent.indexOf(c.selectedText);
+        if (idx === -1) continue;
+        // Check textBefore context for disambiguation
+        if (c.textBefore) {
+          const before = node.textContent.slice(Math.max(0, idx - 40), idx);
+          if (!before.includes(c.textBefore.slice(-15))) continue;
+        }
+        const range = document.createRange();
+        range.setStart(node, idx);
+        range.setEnd(node, idx + c.selectedText.length);
+        const mark = document.createElement('mark');
+        mark.className = 'legal-highlight';
+        mark.dataset.commentId = c.id;
+        try { range.surroundContents(mark); } catch { /* spans tags — skip visual */ }
+        break;
+      }
+    }
+  }
+
+  function focusComment(commentId) {
+    document.querySelectorAll('.comment-card').forEach(card => {
+      card.classList.toggle('active', card.dataset.commentId === commentId);
+    });
+    const card = document.querySelector(`.comment-card[data-comment-id="${commentId}"]`);
+    if (card) card.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+
+    document.querySelectorAll('.legal-highlight').forEach(mark => {
+      mark.classList.toggle('active', mark.dataset.commentId === commentId);
+    });
+  }
+
+  // --- Comments ---
+
+  function renderComments(comments) {
+    const list = document.getElementById('comments-list');
+    const unresolved = comments.filter(c => !c.resolvedAt).length;
+
+    const badge = document.getElementById('unresolved-count');
+    if (unresolved > 0) {
+      badge.textContent = unresolved;
+      badge.style.display = '';
+    } else {
+      badge.style.display = 'none';
+    }
+
+    if (!comments.length) {
+      list.innerHTML = '<div class="comments-empty">No flags yet.<br>Select text in the article to add one.</div>';
+      return;
+    }
+
+    list.innerHTML = comments.map(c => {
+      const isResolved = !!c.resolvedAt;
+      const truncatedText = (c.selectedText || '').slice(0, 80) + (c.selectedText?.length > 80 ? '…' : '');
+      return `<div class="comment-card ${isResolved ? 'resolved' : ''}" data-comment-id="${c.id}">
+        <div class="comment-selected-text">"${esc(truncatedText)}"</div>
+        <div class="comment-body">${esc(c.comment)}</div>
+        <div class="comment-meta">
+          <span>${c.author} · ${formatDate(c.createdAt)}</span>
+          <button class="resolve-btn" data-id="${c.id}" data-resolved="${isResolved ? '1' : '0'}">
+            ${isResolved ? 'Unresolve' : 'Resolve'}
+          </button>
+        </div>
+      </div>`;
+    }).join('');
+
+    list.querySelectorAll('.comment-card').forEach(card => {
+      card.addEventListener('click', e => {
+        if (e.target.classList.contains('resolve-btn')) return;
+        focusComment(card.dataset.commentId);
+      });
+    });
+
+    list.querySelectorAll('.resolve-btn').forEach(btn => {
+      btn.addEventListener('click', () => toggleResolve(btn.dataset.id, btn.dataset.resolved === '1'));
+    });
+  }
+
+  async function toggleResolve(commentId, isResolved) {
+    try {
+      const resp = await fetch(`${API}/api/articles/${currentSlug}/comments/${commentId}`, {
+        method: 'PUT',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ resolved: !isResolved, resolvedBy: 'Legal' }),
+      });
+      const data = await resp.json();
+      // Update local state
+      const c = currentArticle.comments.find(c => c.id === commentId);
+      if (c) {
+        c.resolvedAt = data.comment.resolvedAt;
+        c.resolvedBy = data.comment.resolvedBy;
+      }
+      // Re-render
+      const render = document.getElementById('article-render');
+      render.innerHTML = renderArticle(currentArticle.output, currentArticle.articleType);
+      applyHighlights(render, currentArticle.comments);
+      render.querySelectorAll('.legal-highlight').forEach(mark => {
+        mark.addEventListener('click', () => focusComment(mark.dataset.commentId));
+      });
+      renderComments(currentArticle.comments);
+    } catch {
+      showToast('Failed to update flag', 'error');
+    }
+  }
+
+  // --- Text selection → Flag popup ---
+
+  let flagTarget = null;
+
+  document.getElementById('article-render').addEventListener('mouseup', () => {
+    const sel = window.getSelection();
+    if (!sel || sel.isCollapsed) return;
+    const text = sel.toString().trim();
+    if (text.length < 3) return;
+
+    // Capture context
+    const range = sel.getRangeAt(0);
+    const preRange = range.cloneRange();
+    preRange.collapse(true);
+    const preNode = preRange.startContainer;
+    const preOffset = preRange.startOffset;
+    const textBefore = preNode.textContent
+      ? preNode.textContent.slice(Math.max(0, preOffset - 40), preOffset)
+      : '';
+
+    pendingSelection = { text, textBefore };
+
+    // Position popup
+    const rect = range.getBoundingClientRect();
+    const popup = document.getElementById('flag-popup');
+    document.getElementById('flag-quote').textContent = `"${text.slice(0, 60)}${text.length > 60 ? '…' : ''}"`;
+    document.getElementById('flag-comment').value = '';
+
+    const popupTop = rect.bottom + window.scrollY + 8;
+    const popupLeft = Math.min(rect.left + window.scrollX, window.innerWidth - 300);
+    popup.style.top = `${popupTop}px`;
+    popup.style.left = `${Math.max(8, popupLeft)}px`;
+    popup.style.display = 'block';
+    document.getElementById('flag-comment').focus();
+  });
+
+  document.getElementById('flag-submit').addEventListener('click', async () => {
+    const comment = document.getElementById('flag-comment').value.trim();
+    if (!comment || !pendingSelection || !currentSlug) return;
+
+    const btn = document.getElementById('flag-submit');
+    btn.disabled = true;
+    btn.textContent = 'Saving...';
+
+    try {
+      const resp = await fetch(`${API}/api/articles/${currentSlug}/comments`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          selectedText: pendingSelection.text,
+          textBefore: pendingSelection.textBefore,
+          comment,
+          author: 'Legal',
+        }),
+      });
+      const data = await resp.json();
+      currentArticle.comments = currentArticle.comments || [];
+      currentArticle.comments.push(data.comment);
+
+      // Re-render highlights and comments
+      const render = document.getElementById('article-render');
+      render.innerHTML = renderArticle(currentArticle.output, currentArticle.articleType);
+      applyHighlights(render, currentArticle.comments);
+      render.querySelectorAll('.legal-highlight').forEach(mark => {
+        mark.addEventListener('click', () => focusComment(mark.dataset.commentId));
+      });
+      renderComments(currentArticle.comments);
+
+      // Update sidebar count
+      const sidebarItem = document.querySelector(`.sidebar-item[data-slug="${currentSlug}"] .sidebar-flags`);
+      if (sidebarItem) {
+        const count = currentArticle.comments.filter(c => !c.resolvedAt).length;
+        sidebarItem.textContent = `⚑ ${count} flag${count !== 1 ? 's' : ''}`;
+      }
+
+      closePopup();
+      showToast('Flag added', 'success');
+    } catch {
+      showToast('Failed to save flag', 'error');
+    } finally {
+      btn.disabled = false;
+      btn.textContent = 'Add flag';
+    }
+  });
+
+  function closePopup() {
+    document.getElementById('flag-popup').style.display = 'none';
+    pendingSelection = null;
+    window.getSelection()?.removeAllRanges();
+  }
+
+  document.getElementById('flag-cancel').addEventListener('click', closePopup);
+  document.addEventListener('keydown', e => { if (e.key === 'Escape') closePopup(); });
+
+  // Close popup on click outside (but not inside it)
+  document.addEventListener('mousedown', e => {
+    const popup = document.getElementById('flag-popup');
+    if (popup.style.display === 'block' && !popup.contains(e.target)) closePopup();
+  });
+
+  // --- Approve / Return ---
+
+  document.getElementById('approve-btn').addEventListener('click', async () => {
+    if (!currentSlug) return;
+    try {
+      await fetch(`${API}/api/articles/${currentSlug}`, {
+        method: 'PUT',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ status: 'approved' }),
+      });
+      showToast('Article approved', 'success');
+      removeFromSidebar(currentSlug);
+    } catch {
+      showToast('Failed to approve', 'error');
+    }
+  });
+
+  document.getElementById('return-btn').addEventListener('click', async () => {
+    if (!currentSlug) return;
+    try {
+      await fetch(`${API}/api/articles/${currentSlug}`, {
+        method: 'PUT',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ status: 'draft' }),
+      });
+      showToast('Returned to editor', 'success');
+      removeFromSidebar(currentSlug);
+    } catch {
+      showToast('Failed to return article', 'error');
+    }
+  });
+
+  function removeFromSidebar(slug) {
+    const item = document.querySelector(`.sidebar-item[data-slug="${slug}"]`);
+    if (item) item.remove();
+
+    const remaining = document.querySelectorAll('.sidebar-item');
+    document.getElementById('sidebar-count').textContent = remaining.length;
+
+    if (!remaining.length) {
+      document.getElementById('sidebar-list').innerHTML = '<div class="sidebar-empty">No articles in legal review</div>';
+      document.getElementById('article-topbar').style.display = 'none';
+      document.getElementById('article-render').style.display = 'none';
+      document.getElementById('pane-empty').style.display = 'flex';
+      document.getElementById('comments-list').innerHTML = '<div class="comments-empty">No flags yet</div>';
+      currentSlug = null;
+    } else {
+      loadArticle(remaining[0].dataset.slug);
+    }
+  }
+
+  loadSidebar();
+</script>
+</body>
+</html>
