@@ -64,7 +64,7 @@ router.put('/articles/:slug', (req: Request, res: Response) => {
   }
 
   for (const key of ['status', 'tags', 'heroImageUrl', 'secondaryImageUrls', 'output', 'articleTitle', 'seo', 'publishAt', 'outOfWindowDate', 'blocks']) {
-    if (req.body[key] !== undefined) (article as Record<string, unknown>)[key] = req.body[key];
+    if (req.body[key] !== undefined) (article as unknown as Record<string, unknown>)[key] = req.body[key];
   }
   article.updatedAt = new Date().toISOString();
   writeArticle(article);

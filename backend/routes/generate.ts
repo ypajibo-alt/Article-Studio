@@ -134,7 +134,7 @@ async function generateSingle(
 async function generateListicle(
   res: Response,
   angle: string,
-  titles: { id: string; title: string; year?: number; posterart?: string }[],
+  titles: { id: string; title: string; year?: number; description?: string; posterart?: string }[],
 ): Promise<void> {
   sse(res, { type: 'stage', stage: 'metadata', label: `Building listicle for ${titles.length} titles…` });
   sse(res, { type: 'metadata', title: angle, year: null, contentType: 'Listicle' });
@@ -147,9 +147,13 @@ async function generateListicle(
     loadPrompt('brand-alignment-prompt.md'),
   ]);
 
-  const titlesList = titles.map((t, i) =>
-    `${i + 1}. id:${t.id} | ${t.title}${t.year ? ` (${t.year})` : ''}`
-  ).join('\n');
+  // Build a rich title list with descriptions so AI can write specific blurbs
+  const titlesList = titles.map(t => {
+    const parts = [`contentId:${t.id}`, t.title];
+    if (t.year) parts.push(`(${t.year})`);
+    if (t.description) parts.push(`— ${t.description.slice(0, 100)}`);
+    return `- ${parts.join(' ')}`;
+  }).join('\n');
 
   let output = null;
   let finalBrandScore: number | null = null;
@@ -162,8 +166,10 @@ async function generateListicle(
     let raw: string;
     try {
       raw = await callAI(systemPrompt, fillTemplate(userTemplate, {
-        angle: angle.trim(),
-        titles_list: titlesList,
+        container_name: angle.trim(),
+        container_description: `A curated watchlist based on: ${angle.trim()}`,
+        title_count: String(titles.length),
+        title_list: titlesList,
         retry_feedback: retryFeedback,
       }));
     } catch (err) {
@@ -174,8 +180,10 @@ async function generateListicle(
 
     let parsed;
     try { parsed = parseListicleJSON(raw); }
-    catch {
+    catch (err) {
       retryFeedback = '## Retry feedback\nPrevious response was not valid JSON. Return only a JSON object.';
+      sse(res, { type: 'quality_fail', issues: [`JSON parse error: ${(err as Error).message}. Raw length: ${raw.length}`], attempt });
+      if (attempt > MAX_RETRIES) { sse(res, { type: 'error', message: 'AI returned invalid JSON after all retries' }); res.end(); return; }
       continue;
     }
 
@@ -225,7 +233,7 @@ async function generateListicle(
     secondaryImageUrls: [],
     contentId: null, brandScore: finalBrandScore, brandNotes: finalBrandNotes,
     gscQueries: [],
-    seo: { metaTitle: output.headline, metaDescription: output.subheadline, canonicalUrl: '' },
+    seo: { metaTitle: output.headline, metaDescription: output.subtitle || output.angle, canonicalUrl: '' },
     output: output as unknown as Record<string, unknown>,
     blocks: [], comments: [],
   };
@@ -240,7 +248,7 @@ router.post('/generate', async (req: Request, res: Response) => {
     mode: string;
     contentId?: string;
     angle?: string;
-    titles?: { id: string; title: string; year?: number; posterart?: string }[];
+    titles?: { id: string; title: string; year?: number; description?: string; posterart?: string }[];
   };
 
   if (mode !== 'single' && mode !== 'listicle') {

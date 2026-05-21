@@ -52,9 +52,15 @@ export async function searchTubi(q: string, limit = 20): Promise<SearchResult[]>
   return Object.values(contents)
     .map(item => {
       const titleLower = String(item.title ?? '').toLowerCase();
-      let score = titleLower === qLower ? 100 : titleLower.startsWith(qLower) ? 80 : titleLower.includes(qLower) ? 60 : 10;
+      const descLower = String(item.description ?? '').toLowerCase();
+      let score = titleLower === qLower ? 100
+        : titleLower.startsWith(qLower) ? 80
+        : titleLower.includes(qLower) ? 60
+        : descLower.includes(qLower) ? 20
+        : 0;
       return { item, score };
     })
+    .filter(({ score }) => score > 0)
     .sort((a, b) => b.score - a.score)
     .slice(0, limit)
     .map(({ item }) => ({

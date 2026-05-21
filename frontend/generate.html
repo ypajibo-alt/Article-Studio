@@ -607,6 +607,8 @@
     .ct-item.selected .ct-check { background: #00B5A3; border-color: #00B5A3; }
     .ct-item-title { font-size: 13px; font-weight: 500; color: #1a1a1a; flex: 1; min-width: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
     .ct-item-year { font-size: 11px; color: #9ca3af; flex-shrink: 0; }
+    .ct-item.ct-unavailable { opacity: 0.4; cursor: not-allowed; }
+    .ct-item.ct-unavailable:hover { border-color: #e2e4e8; background: #fff; }
 
     .ct-angle-wrap { margin-top: 14px; }
   </style>
@@ -732,17 +734,29 @@
             id="container-search-input"
             class="container-input"
             type="text"
-            placeholder="Type to filter containers…"
+            placeholder="Type to search containers…"
             autocomplete="off"
           />
           <div class="search-spinner" id="container-search-spinner"></div>
           <div class="search-dropdown" id="container-dropdown"></div>
+        </div>
+        <div style="margin-top:6px;font-size:11px;color:#9ca3af;">Not finding it? <button id="use-slug-btn" style="background:none;border:none;color:#00B5A3;font-size:11px;cursor:pointer;padding:0;text-decoration:underline;">Use container ID/slug directly</button></div>
+        <div id="slug-input-wrap" style="display:none;margin-top:8px;">
+          <input id="slug-direct-input" type="text" placeholder="e.g. summer_of_santa" autocomplete="off"
+            style="width:100%;padding:9px 12px;border:1px solid #e2e4e8;border-radius:8px;font-size:13px;font-family:inherit;outline:none;box-sizing:border-box;"/>
         </div>
 
         <div class="selected-container" id="selected-container">
           <span id="selected-container-name"></span>
           <button class="sc-clear" id="sc-clear" title="Clear">×</button>
         </div>
+
+        <label class="sec-label" style="margin-top:12px;">Publish date<span class="hint">filters out titles expiring before this date</span></label>
+        <input
+          id="ct-publish-date"
+          type="date"
+          style="width:100%;padding:9px 12px;border:1px solid #e2e4e8;border-radius:8px;font-size:14px;font-family:inherit;outline:none;background:#fff;color:#1a1a1a;transition:border-color 0.15s;box-sizing:border-box;"
+        />
 
         <button class="load-container-btn" id="load-container-btn" disabled onclick="loadContainerTitles()">
           <div class="btn-spinner" id="load-spinner"></div>
@@ -1291,10 +1305,10 @@ function renderSwapDropdown(dropdown, results, row, oldTitle) {
 }
 
 function expiryBadge(ends) {
-  if (ends === undefined) return ''; // no availability data (e.g. swapped-in title)
-  if (!ends) return '<span class="ri-expiry open">Always available</span>';
+  if (ends === undefined) return '<span class="ri-expiry" style="background:#f3f4f6;color:#9ca3af;">Unknown</span>';
+  if (!ends) return '<span class="ri-expiry open">Open</span>';
   const days = Math.ceil((new Date(ends) - Date.now()) / (1000 * 60 * 60 * 24));
-  const label = `Expires ${new Date(ends).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}`;
+  const label = `Exp ${new Date(ends).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}`;
   const cls = days <= 7 ? 'critical' : days <= 30 ? 'warning' : 'open';
   return `<span class="ri-expiry ${cls}">${label}</span>`;
 }
@@ -1379,7 +1393,7 @@ async function runSSE_listicle(angle, titles) {
       body: JSON.stringify({
         mode: 'listicle',
         angle,
-        titles: titles.map(t => ({ id: t.id, title: t.title, year: t.year })),
+        titles: titles.map(t => ({ id: t.id, title: t.title, year: t.year, description: t.description })),
       }),
     });
   } catch (err) {
@@ -1663,13 +1677,34 @@ const containerDropdown = document.getElementById('container-dropdown');
 
 containerSearchInput.addEventListener('focus', () => ensureContainersLoaded());
 
+let containerSearchTimer = null;
 containerSearchInput.addEventListener('input', () => {
   const q = containerSearchInput.value.trim().toLowerCase();
   if (!q) { containerDropdown.classList.remove('open'); return; }
+
+  // Always show local matches immediately
   const matches = allContainers
     .filter(c => c.title.toLowerCase().includes(q) || (c.slug||'').toLowerCase().includes(q))
     .slice(0, 12);
   renderContainerDropdown(matches);
+
+  // If no local matches, try a live slug lookup after a short debounce
+  clearTimeout(containerSearchTimer);
+  if (!matches.length) {
+    containerSearchTimer = setTimeout(async () => {
+      const slug = containerSearchInput.value.trim().replace(/\s+/g, '_').toLowerCase();
+      if (!slug) return;
+      try {
+        const res = await fetch(`${API}/api/container-titles?id=${encodeURIComponent(slug)}&limit=1`);
+        if (res.ok) {
+          const data = await res.json();
+          if (data && data.containerTitle) {
+            renderContainerDropdown([{ id: slug, title: data.containerTitle, slug, subtitle: 'Live lookup' }]);
+          }
+        }
+      } catch {}
+    }, 600);
+  }
 });
 
 containerSearchInput.addEventListener('keydown', e => {
@@ -1716,10 +1751,30 @@ function renderContainerDropdown(containers) {
   containerDropdown.classList.add('open');
 }
 
+document.getElementById('use-slug-btn').addEventListener('click', () => {
+  const wrap = document.getElementById('slug-input-wrap');
+  wrap.style.display = wrap.style.display === 'none' ? 'block' : 'none';
+  if (wrap.style.display === 'block') document.getElementById('slug-direct-input').focus();
+});
+
+document.getElementById('slug-direct-input').addEventListener('keydown', e => {
+  if (e.key === 'Enter') {
+    const slug = e.target.value.trim();
+    if (slug) pickContainer({ id: slug, title: slug, slug, subtitle: '' });
+  }
+});
+
+document.getElementById('slug-direct-input').addEventListener('blur', e => {
+  const slug = e.target.value.trim();
+  if (slug) pickContainer({ id: slug, title: slug, slug, subtitle: '' });
+});
+
 function pickContainer(c) {
   selectedContainer = c;
   containerDropdown.classList.remove('open');
   containerSearchInput.value = '';
+  document.getElementById('slug-input-wrap').style.display = 'none';
+  document.getElementById('slug-direct-input').value = '';
   document.getElementById('selected-container-name').textContent = c.title;
   document.getElementById('selected-container').classList.add('visible');
   document.getElementById('load-container-btn').disabled = false;
@@ -1745,11 +1800,44 @@ async function loadContainerTitles() {
   spinner.classList.add('visible');
   label.textContent = 'Loading…';
 
+  const publishDate = document.getElementById('ct-publish-date').value;
+
   try {
-    const res = await fetch(`${API}/api/container-titles?id=${encodeURIComponent(selectedContainer.id)}`);
+    const res = await fetch(`${API}/api/container-titles?id=${encodeURIComponent(selectedContainer.id)}&limit=200`);
     const data = await res.json();
     if (!res.ok || !data.titles) throw new Error(data.error || 'Failed to load titles');
-    containerTitles = data.titles;
+
+    // Fetch availability for all titles
+    let availMap = {};
+    try {
+      const ids = data.titles.map(t => t.id);
+      const avRes = await fetch(`${API}/api/availability`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ contentIds: ids }),
+      });
+      if (avRes.ok) {
+        const avData = await avRes.json();
+        for (const a of avData) availMap[a.contentId] = a.availability_ends;
+      }
+    } catch {}
+
+    // Attach availability and filter by publish date
+    const cutoff = publishDate
+      ? new Date(new Date(publishDate).getTime() + 30 * 24 * 60 * 60 * 1000)
+      : null;
+
+    containerTitles = data.titles.map(t => ({
+      ...t,
+      availabilityEnds: t.id in availMap ? availMap[t.id] : undefined,
+      available: cutoff ? (() => {
+        const ends = availMap[t.id];
+        if (ends === undefined) return true; // unknown — keep
+        if (!ends) return true;              // always available
+        return new Date(ends) >= cutoff;
+      })() : true,
+    }));
+
     renderContainerTitles(containerTitles);
   } catch (err) {
     document.getElementById('ct-min-notice').textContent = err.message;
@@ -1767,19 +1855,28 @@ function renderContainerTitles(titles) {
   list.innerHTML = '';
   selectedContainerTitleIds.clear();
 
+  const publishDate = document.getElementById('ct-publish-date').value;
+
   titles.forEach(t => {
+    const unavailable = publishDate && t.available === false;
     const el = document.createElement('div');
-    el.className = 'ct-item';
+    el.className = 'ct-item' + (unavailable ? ' ct-unavailable' : '');
     el.dataset.id = t.id;
     el.innerHTML = `
       <div class="ct-check">✓</div>
       <span class="ct-item-title">${esc(t.title)}</span>
       <span class="ct-item-year">${t.year || ''}</span>
+      ${expiryBadge(t.availabilityEnds)}
     `;
-    el.addEventListener('click', () => toggleContainerTitle(el, t));
+    if (!unavailable) {
+      el.addEventListener('click', () => toggleContainerTitle(el, t));
+    } else {
+      el.title = 'Not available on selected publish date';
+    }
     list.appendChild(el);
   });
 
+  const availableCount = publishDate ? titles.filter(t => t.available !== false).length : titles.length;
   document.getElementById('ct-section').classList.add('visible');
   updateCtCount();
 }
@@ -1820,7 +1917,7 @@ function startContainerListicle() {
 
   const titles = containerTitles
     .filter(t => selectedContainerTitleIds.has(t.id))
-    .map(t => ({ id: t.id, title: t.title, year: t.year }));
+    .map(t => ({ id: t.id, title: t.title, year: t.year, description: t.description }));
 
   generating = true;
   const btn = document.getElementById('ct-generate-btn');

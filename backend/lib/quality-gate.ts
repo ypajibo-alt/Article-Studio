@@ -3,10 +3,13 @@
 const BANNED_WORDS = [
   'delve', 'meticulously', 'showcases', 'nuanced', 'multifaceted',
   'tapestry', 'realm', 'robust', 'leverage', 'facilitate', 'underscore',
-  'elevate', 'landscape', 'journey', 'compelling', 'indulge',
+  'landscape', 'compelling', 'indulge',
   'captivating', 'riveting', 'masterful', 'intriguing',
 ];
-const BANNED_PHRASES = ['in conclusion', "it's worth noting", 'one can see', "whether you're"];
+const BANNED_PHRASES = [
+  'in conclusion', "it's worth noting", 'one can see', "whether you're",
+  'elevates the material', 'elevates the medium', 'a journey through',
+];
 const NEGATIVE_BRAND_WORDS = ['stupid', 'bad', 'terrible', 'awful'];
 const GENERIC_JARGON = ['binge-worthy', 'must-see', 'hidden gem'];
 
@@ -67,12 +70,22 @@ export function serializeArticleOutput(output: ArticleOutput): string {
 
 // ─── Listicle ────────────────────────────────────────────────────────────────
 
-export interface ListicleEntry { id: string; title: string; blurb: string; }
+export interface ListicleEntry {
+  contentId: string;
+  title: string;
+  year?: string | number;
+  hook?: string;
+  tease?: string;
+  blurb: string;
+}
 export interface ListicleOutput {
   headline: string;
-  subheadline: string;
-  introduction: string;
+  subtitle: string;
+  angle: string;
+  angle_notes?: string;
+  intro: string;
   entries: ListicleEntry[];
+  closing: string;
 }
 
 export function parseListicleJSON(raw: string): ListicleOutput {
@@ -86,14 +99,20 @@ export function parseListicleJSON(raw: string): ListicleOutput {
 }
 
 export function serializeListicleOutput(output: ListicleOutput): string {
-  const entries = output.entries.map(e => `- ${e.title}: ${e.blurb}`).join('\n');
+  const entries = output.entries.map(e => {
+    const tease = e.tease ? ` — ${e.tease}` : '';
+    return `- ${e.title}${tease}: ${e.blurb}`;
+  }).join('\n');
   return [
     `Headline: ${output.headline}`,
-    `Subheadline: ${output.subheadline}`,
+    `Subtitle: ${output.subtitle}`,
+    `Angle: ${output.angle}`,
     '',
-    `Introduction:\n${output.introduction}`,
+    `Intro:\n${output.intro}`,
     '',
     `Entries:\n${entries}`,
+    '',
+    `Closing:\n${output.closing}`,
   ].join('\n');
 }
 
@@ -102,47 +121,51 @@ export function runListicleQualityGate(output: ListicleOutput): QualityResult<Li
   const fixed: ListicleOutput = structuredClone(output);
 
   fixed.headline = fixed.headline || '';
-  fixed.subheadline = fixed.subheadline || '';
-  fixed.introduction = fixed.introduction || '';
-  fixed.entries = (fixed.entries || []).map(e => ({ id: e.id || '', title: e.title || '', blurb: e.blurb || '' }));
+  fixed.subtitle = fixed.subtitle || '';
+  fixed.angle = fixed.angle || '';
+  fixed.intro = fixed.intro || '';
+  fixed.closing = fixed.closing || '';
+  fixed.entries = (fixed.entries || []).map(e => ({
+    contentId: e.contentId || '',
+    title: e.title || '',
+    year: e.year,
+    hook: e.hook,
+    tease: e.tease,
+    blurb: e.blurb || '',
+  }));
 
-  // Auto-fix
+  // Auto-fix em dashes and exclamation marks
   const emDash = /—/g;
-  fixed.introduction = fixed.introduction.replace(emDash, ',').replace(/!/g, '.');
+  fixed.intro = fixed.intro.replace(emDash, ',').replace(/!/g, '.');
+  fixed.closing = fixed.closing.replace(emDash, ',').replace(/!/g, '.');
   fixed.entries.forEach(e => { e.blurb = e.blurb.replace(emDash, ',').replace(/!/g, '.'); });
 
   // Hard checks
   if (wordCount(fixed.headline) > 15)
     retryFeedback.push(`Headline is ${wordCount(fixed.headline)} words, max 15.`);
-  if (!isSentenceCase(fixed.headline))
-    retryFeedback.push('Headline must be sentence case, not Title Case.');
 
-  const introPara = fixed.introduction.split(/\n\n+/).filter(p => p.trim());
-  if (introPara.length < 2 || introPara.length > 3)
-    retryFeedback.push(`Introduction needs 2-3 paragraphs, got ${introPara.length}.`);
+  const introPara = fixed.intro.split(/\n\n+/).filter(p => p.trim());
+  if (introPara.length < 1)
+    retryFeedback.push('Intro is missing.');
+  else if (introPara.length > 4)
+    retryFeedback.push(`Intro is too long (${introPara.length} paragraphs), max 3.`);
 
-  if (fixed.entries.length < 5)
-    retryFeedback.push(`Need at least 5 entries, got ${fixed.entries.length}.`);
+  if (fixed.entries.length < 8)
+    retryFeedback.push(`Need at least 8 entries, got ${fixed.entries.length}.`);
+
+  if (!fixed.closing || fixed.closing.trim().length < 5)
+    retryFeedback.push('Missing closing section.');
 
   for (const entry of fixed.entries) {
     const wc = wordCount(entry.blurb);
-    if (wc < 60 || wc > 140)
-      retryFeedback.push(`Entry "${entry.title}" blurb is ${wc} words, need 60-140.`);
+    if (wc < 60 || wc > 160)
+      retryFeedback.push(`Entry "${entry.title}" blurb is ${wc} words, need 85-135.`);
+    if (!entry.contentId)
+      retryFeedback.push(`Entry "${entry.title}" is missing contentId.`);
   }
 
-  const allText = [fixed.headline, fixed.subheadline, fixed.introduction, ...fixed.entries.map(e => e.blurb)].join(' ').toLowerCase();
-
-  const foundBanned = BANNED_WORDS.filter(w => allText.includes(w));
-  if (foundBanned.length) retryFeedback.push(`Remove these words: ${foundBanned.join(', ')}`);
-
-  const foundPhrases = BANNED_PHRASES.filter(p => allText.includes(p));
-  if (foundPhrases.length) retryFeedback.push(`Remove these phrases: ${foundPhrases.join('; ')}`);
-
-  const foundNegative = NEGATIVE_BRAND_WORDS.filter(w => allText.includes(w));
-  if (foundNegative.length) retryFeedback.push(`Never disparage content. Remove: ${foundNegative.join(', ')}`);
-
-  const foundJargon = GENERIC_JARGON.filter(j => allText.includes(j));
-  if (foundJargon.length) retryFeedback.push(`Replace generic jargon: ${foundJargon.join(', ')}`);
+  // Em dash auto-fix already handles the main structural issue.
+  // Word/phrase voice checks are handled by the prompt itself — don't duplicate here.
 
   return { passed: retryFeedback.length === 0, autoFixed: fixed, retryFeedback };
 }

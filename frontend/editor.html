@@ -413,15 +413,18 @@
   }
 
   function renderListicle(o) {
-    var html = '<div class="art-subheadline" contenteditable="true">' + esc(o.angle) + '</div>';
+    var sub = o.subtitle || o.subheadline || o.angle || '';
+    var intro = o.intro || o.introduction || '';
+    var html = '<div class="art-subheadline" contenteditable="true">' + esc(sub) + '</div>';
     html += '<hr class="art-divider">';
-    html += '<div class="art-body">' + (o.intro || '').split(/\n\n+/).map(function(p) {
+    html += '<div class="art-body">' + intro.split(/\n\n+/).map(function(p) {
       return '<p contenteditable="true">' + esc(p.trim()) + '</p>';
     }).join('') + '</div>';
     html += '<hr class="art-divider">';
     (o.entries || []).forEach(function(e, i) {
+      var tease = e.tease ? ' — ' + e.tease : '';
       html += '<div class="listicle-entry">'
-        + '<div class="listicle-title" contenteditable="true">' + (i+1) + '. ' + esc(e.title) + '</div>'
+        + '<div class="listicle-title" contenteditable="true">' + (i+1) + '. ' + esc(e.title) + esc(tease) + '</div>'
         + '<div class="listicle-blurb" contenteditable="true">' + esc(e.blurb) + '</div>'
         + '</div>';
     });
@@ -814,13 +817,32 @@
     if (!ws) return o;
     // Collect subheadline
     var sub = ws.querySelector('.art-subheadline');
-    if (sub) { if (o.entries) o.angle = sub.textContent; else o.subheadline = sub.textContent; }
-    // Collect introduction / intro
+    if (sub) {
+      if (o.entries) {
+        o.subtitle = sub.textContent; o.subheadline = sub.textContent; o.angle = sub.textContent;
+      } else {
+        o.subheadline = sub.textContent;
+      }
+    }
+    // Collect introduction
     var paras = ws.querySelectorAll('.art-body p[contenteditable]');
     if (paras.length) {
       var texts = Array.from(paras).map(function(p) { return p.textContent; });
-      if (o.entries) o.intro = texts.join('\n\n');
-      else o.introduction = texts.join('\n\n');
+      if (o.entries) {
+        // First art-body block is intro; last (after closing hr) is closing
+        var bodyBlocks = ws.querySelectorAll('.art-body');
+        if (bodyBlocks.length >= 2) {
+          var introParas = bodyBlocks[0].querySelectorAll('p[contenteditable]');
+          var closingParas = bodyBlocks[bodyBlocks.length - 1].querySelectorAll('p[contenteditable]');
+          o.intro = Array.from(introParas).map(function(p) { return p.textContent; }).join('\n\n');
+          o.introduction = o.intro;
+          o.closing = Array.from(closingParas).map(function(p) { return p.textContent; }).join('\n\n');
+        } else {
+          o.intro = texts.join('\n\n'); o.introduction = o.intro;
+        }
+      } else {
+        o.introduction = texts.join('\n\n');
+      }
     }
     // Pull quote
     var pq = ws.querySelector('.art-pull-quote');
@@ -837,7 +859,12 @@
       var titles = ws.querySelectorAll('.listicle-title');
       var blurbs = ws.querySelectorAll('.listicle-blurb');
       titles.forEach(function(el, i) {
-        if (o.entries[i]) o.entries[i].title = el.textContent.replace(/^\d+\.\s*/, '');
+        if (o.entries[i]) {
+          // Strip leading number and tease suffix (everything after " — ")
+          var raw = el.textContent.replace(/^\d+\.\s*/, '');
+          var dashIdx = raw.indexOf(' — ');
+          o.entries[i].title = dashIdx !== -1 ? raw.slice(0, dashIdx) : raw;
+        }
       });
       blurbs.forEach(function(el, i) {
         if (o.entries[i]) o.entries[i].blurb = el.textContent;

@@ -26,7 +26,7 @@ export async function callAI(system: string, user: string): Promise<string> {
       anthropic_version: 'bedrock-2023-05-31',
       system,
       messages: [{ role: 'user', content: user }],
-      max_tokens: 4096,
+      max_tokens: 8192,
       temperature: 0.7,
     }),
   });

@@ -57,8 +57,8 @@ router.post('/discover', async (req: Request, res: Response) => {
 
     // Fall back to first 3 if OpenAI returned nothing
     const toFetch = selectedIds.length
-      ? allContainers.filter(c => selectedIds.includes(c.id)).slice(0, 5)
-      : allContainers.slice(0, 3);
+      ? allContainers.filter(c => selectedIds.includes(c.id)).slice(0, 7)
+      : allContainers.slice(0, 5);
 
     sse(res, { type: 'matched', containers: toFetch.map(c => ({ id: c.id, title: c.title })) });
 
@@ -66,7 +66,7 @@ router.post('/discover', async (req: Request, res: Response) => {
     sse(res, { type: 'stage', stage: 'titles', label: `Fetching titles from ${toFetch.length} containers…` });
 
     const results = await Promise.all(
-      toFetch.map(c => fetchContainerTitles(c.id, 30).catch(() => null))
+      toFetch.map(c => fetchContainerTitles(c.id, 100).catch(() => null))
     );
 
     const seenIds = new Set<string>();
@@ -87,12 +87,22 @@ router.post('/discover', async (req: Request, res: Response) => {
       res.end(); return;
     }
 
+    // Filter by format if the angle is explicit — but only if enough candidates survive
+    const angleLower = angle.toLowerCase();
+    const wantsMovies = /\b(movie|movies|film|films)\b/.test(angleLower);
+    const wantsSeries = /\b(show|shows|series|tv)\b/.test(angleLower);
+    const filtered = wantsMovies
+      ? candidates.filter(t => t.type !== 's')
+      : wantsSeries
+        ? candidates.filter(t => t.type === 's')
+        : candidates;
+
     // Sort by year desc, then shuffle so repeated runs surface different titles
-    const preshuffle = candidates
+    const preshuffle = filtered
       .sort((a, b) => (b.year || 0) - (a.year || 0))
-      .slice(0, 60)
+      .slice(0, 150)
       .sort(() => Math.random() - 0.5)
-      .slice(0, 40);
+      .slice(0, 60);
 
     // ── Stage 3b: Fetch availability + filter by publish date ─────────────────
     sse(res, { type: 'stage', stage: 'titles', label: 'Checking title availability…' });
@@ -105,25 +115,24 @@ router.post('/discover', async (req: Request, res: Response) => {
       // non-fatal — proceed without availability data
     }
 
-    // Filter: must be available for at least 30 days after intended publish date
+    // Soft-filter by availability — if too few survive, fall back to full pool
+    // Availability is shown on cards regardless so editor can make final call
     const cutoff = publishDate
       ? new Date(new Date(publishDate).getTime() + 30 * 24 * 60 * 60 * 1000)
       : null;
 
-    const sorted = preshuffle.filter(t => {
-      if (!cutoff) return true;
-      const av = availMap.get(t.id);
-      if (!av) return true; // unknown — keep it
-      if (!av.ends) return true; // no expiry = always available
-      return new Date(av.ends) >= cutoff;
-    });
+    const available = cutoff
+      ? preshuffle.filter(t => {
+          const av = availMap.get(t.id);
+          if (!av) return true;       // unknown — keep
+          if (!av.ends) return true;  // always available
+          return new Date(av.ends) >= cutoff;
+        })
+      : preshuffle;
 
+    // Fall back to full pool if filter was too aggressive
+    const sorted = available.length >= 10 ? available : preshuffle;
     sse(res, { type: 'candidates', count: sorted.length });
-
-    if (sorted.length < 5) {
-      sse(res, { type: 'error', message: 'Not enough titles available for that publish date. Try an earlier date or broader angle.' });
-      res.end(); return;
-    }
 
     // ── Stage 4: OpenAI selects the best 10 titles ────────────────────────────
     sse(res, { type: 'stage', stage: 'select', label: 'Selecting best titles for angle…' });
