@@ -9,6 +9,7 @@ import pipelineRouter from './routes/pipeline.js';
 import historyRouter from './routes/history.js';
 import generateRouter from './routes/generate.js';
 import searchRouter from './routes/search.js';
+import discoverRouter from './routes/discover.js';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const FRONTEND_DIR = path.resolve(__dirname, '..', 'frontend');
@@ -46,6 +47,7 @@ app.use('/api', pipelineRouter);
 app.use('/api', historyRouter);
 app.use('/api', generateRouter);
 app.use('/api', searchRouter);
+app.use('/api', discoverRouter);
 
 const PORT = parseInt(process.env.PORT || '3002', 10);
 app.listen(PORT, () => console.log(`Article Studio running at http://localhost:${PORT}`));

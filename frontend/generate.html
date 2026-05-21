@@ -6,16 +6,15 @@
   <title>Generate Article</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
-
     body {
       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-      background: #ffffff;
+      background: #f5f5f7;
       color: #1a1a1a;
       min-height: 100vh;
       display: flex;
     }
 
-    /* Dossier sidebar */
+    /* Sidebar */
     .dossier-sidebar {
       width: 200px; min-width: 200px; background: #1E1E2D;
       display: flex; flex-direction: column; padding: 12px;
@@ -34,58 +33,394 @@
     .ds-nav-item.active { background: #7C3AED; color: #fff; }
     .ds-icon { width: 18px; height: 18px; flex-shrink: 0; }
 
-    /* Main content */
-    .main-content {
-      flex: 1; min-width: 0; display: flex; flex-direction: column;
-      padding: 32px 36px; min-height: 100vh;
-    }
+    /* Main */
+    .main-content { flex: 1; min-width: 0; padding: 32px 36px; }
 
-    .page-header { margin-bottom: 20px; flex-shrink: 0; }
+    .page-header { margin-bottom: 24px; }
     h1 { font-size: 22px; font-weight: 700; margin-bottom: 3px; }
     .subtitle { font-size: 14px; color: #8b919a; }
 
-    /* Two-column layout */
+    /* Layout */
     .layout {
       display: grid;
-      grid-template-columns: 420px 1fr;
-      gap: 24px;
-      flex: 1;
-      min-height: 0;
+      grid-template-columns: 400px 1fr;
+      gap: 20px;
+      align-items: start;
     }
 
-    /* Left: form */
-    .left-col {
-      display: flex;
-      flex-direction: column;
-      gap: 16px;
-      min-width: 0;
-      overflow-y: auto;
-      max-height: 100%;
-    }
-
+    /* Form card */
     .form-card {
       background: #fff;
       border: 1px solid #e2e4e8;
       border-radius: 14px;
-      padding: 28px;
+      padding: 24px;
+    }
+
+    /* Pathway selector */
+    .pathway-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+      margin-bottom: 24px;
+    }
+    .pathway-btn {
+      padding: 12px 10px;
+      border-radius: 10px;
+      border: 1.5px solid #e2e4e8;
+      background: #fff;
+      font-family: inherit;
+      cursor: pointer;
+      text-align: left;
+      transition: all 0.15s;
+    }
+    .pathway-btn:hover:not(:disabled) { border-color: #d1d5db; }
+    .pathway-btn.active {
+      border-color: #00B5A3;
+      background: rgba(0,181,163,0.05);
+    }
+    .pathway-btn:disabled { opacity: 0.4; cursor: not-allowed; }
+    .pathway-btn .pb-label {
+      font-size: 13px; font-weight: 600;
+      color: #1a1a1a; display: block; margin-bottom: 2px;
+    }
+    .pathway-btn.active .pb-label { color: #00B5A3; }
+    .pathway-btn .pb-desc {
+      font-size: 11px; color: #9ca3af; display: block;
+    }
+    .pathway-btn .pb-soon {
+      font-size: 10px; font-weight: 600; color: #9ca3af;
+      background: #f3f4f6; border-radius: 4px;
+      padding: 1px 5px; display: inline-block; margin-top: 4px;
+    }
+
+    /* Section label */
+    .sec-label {
+      font-size: 13px; font-weight: 700; color: #1a1a1a;
+      margin-bottom: 8px; display: block;
+    }
+    .sec-label .hint { font-weight: 400; color: #9ca3af; font-size: 12px; margin-left: 6px; }
+
+    /* Search */
+    .search-wrap { position: relative; }
+    .search-input {
+      width: 100%;
+      padding: 10px 13px 10px 36px;
+      border: 1px solid #e2e4e8;
+      border-radius: 8px;
+      font-size: 14px;
+      font-family: inherit;
+      color: #1a1a1a;
+      outline: none;
+      background: #fff;
+      transition: border-color 0.15s, box-shadow 0.15s;
+    }
+    .search-input:focus { border-color: #00B5A3; box-shadow: 0 0 0 3px rgba(0,181,163,0.1); }
+    .search-input::placeholder { color: #c0c4cb; }
+    .search-icon {
+      position: absolute; left: 11px; top: 50%; transform: translateY(-50%);
+      color: #9ca3af; pointer-events: none;
+    }
+    .search-spinner {
+      position: absolute; right: 11px; top: 50%; transform: translateY(-50%);
+      width: 14px; height: 14px;
+      border: 2px solid rgba(0,181,163,0.2);
+      border-top-color: #00B5A3;
+      border-radius: 50%;
+      animation: spin 0.7s linear infinite;
+      display: none;
+    }
+    .search-spinner.visible { display: block; }
+
+    /* Dropdown */
+    .search-dropdown {
+      display: none;
+      position: absolute;
+      top: calc(100% + 4px);
+      left: 0; right: 0;
+      background: #fff;
+      border: 1px solid #e2e4e8;
+      border-radius: 10px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+      z-index: 1000;
+      max-height: 280px;
       overflow-y: auto;
     }
-
-    .field { margin-bottom: 24px; }
-    .field:last-child { margin-bottom: 0; }
-
-    label {
-      display: block;
-      font-size: 13px;
-      font-weight: 700;
-      color: #1a1a1a;
-      margin-bottom: 8px;
+    .search-dropdown.open { display: block; }
+    .dd-item {
+      display: flex; align-items: center; gap: 10px;
+      padding: 10px 12px;
+      cursor: pointer;
+      border-bottom: 1px solid #f3f4f6;
+      transition: background 0.1s;
+    }
+    .dd-item:last-child { border-bottom: none; }
+    .dd-item:hover, .dd-item.highlighted { background: #f8fafb; }
+    .dd-poster {
+      width: 36px; height: 50px;
+      border-radius: 4px;
+      background: #f3f4f6;
+      flex-shrink: 0;
+      object-fit: cover;
+    }
+    .dd-poster-placeholder {
+      width: 36px; height: 50px;
+      border-radius: 4px;
+      background: #f3f4f6;
+      flex-shrink: 0;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 16px; color: #d1d5db;
+    }
+    .dd-info { flex: 1; min-width: 0; }
+    .dd-title { font-size: 13px; font-weight: 600; color: #1a1a1a; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .dd-meta { font-size: 11px; color: #9ca3af; margin-top: 1px; }
+    .dd-type-badge {
+      font-size: 10px; font-weight: 600;
+      padding: 2px 6px; border-radius: 4px;
+      flex-shrink: 0;
+    }
+    .dd-type-badge.movie { background: #ede9fe; color: #7C3AED; }
+    .dd-type-badge.series { background: #d1fae5; color: #059669; }
+    .dd-empty {
+      padding: 14px 12px; font-size: 13px; color: #9ca3af; text-align: center;
     }
 
-    label .required { color: #ef4444; margin-left: 2px; }
-    label .hint { font-weight: 400; color: #9ca3af; font-size: 12px; margin-left: 6px; }
+    /* Selected title card */
+    .title-card {
+      display: none;
+      margin-top: 12px;
+      border: 1.5px solid #00B5A3;
+      border-radius: 10px;
+      padding: 12px;
+      background: rgba(0,181,163,0.04);
+      gap: 12px;
+      align-items: center;
+    }
+    .title-card.visible { display: flex; }
+    .tc-poster {
+      width: 44px; height: 62px;
+      border-radius: 5px;
+      background: #f3f4f6;
+      flex-shrink: 0;
+      object-fit: cover;
+    }
+    .tc-poster-placeholder {
+      width: 44px; height: 62px;
+      border-radius: 5px;
+      background: #f3f4f6;
+      flex-shrink: 0;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 20px; color: #d1d5db;
+    }
+    .tc-info { flex: 1; min-width: 0; }
+    .tc-title { font-size: 14px; font-weight: 700; color: #1a1a1a; margin-bottom: 3px; }
+    .tc-meta { font-size: 12px; color: #6b7280; }
+    .tc-id { font-size: 11px; color: #9ca3af; margin-top: 3px; font-family: monospace; }
+    .tc-clear {
+      background: none; border: none; cursor: pointer;
+      color: #d1d5db; font-size: 18px; padding: 0 4px;
+      line-height: 1; transition: color 0.15s; flex-shrink: 0;
+    }
+    .tc-clear:hover { color: #ef4444; }
 
-    input[type="text"] {
+    /* Generate button */
+    .generate-btn {
+      width: 100%;
+      margin-top: 20px;
+      padding: 11px 22px;
+      border-radius: 8px;
+      border: none;
+      background: #00B5A3;
+      color: #fff;
+      font-size: 14px;
+      font-weight: 600;
+      cursor: pointer;
+      font-family: inherit;
+      transition: background 0.15s;
+      display: flex; align-items: center; justify-content: center; gap: 8px;
+    }
+    .generate-btn:hover:not(:disabled) { background: #009e8e; }
+    .generate-btn:disabled { background: #d1d5db; cursor: not-allowed; }
+    .btn-spinner {
+      width: 14px; height: 14px;
+      border: 2px solid rgba(255,255,255,0.3);
+      border-top-color: #fff;
+      border-radius: 50%;
+      animation: spin 0.7s linear infinite;
+      display: none;
+    }
+    .btn-spinner.visible { display: block; }
+    @keyframes spin { to { transform: rotate(360deg); } }
+
+    /* Right: progress panel */
+    .progress-panel {
+      background: #fff;
+      border: 1px solid #e2e4e8;
+      border-radius: 14px;
+      padding: 28px;
+      min-height: 400px;
+    }
+
+    .pp-idle {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 340px;
+      text-align: center;
+      color: #d1d5db;
+    }
+    .pp-idle svg { margin-bottom: 14px; opacity: 0.5; }
+    .pp-idle p { font-size: 14px; }
+
+    .pp-active { display: none; flex-direction: column; }
+    .pp-active.visible { display: flex; }
+
+    .pp-heading {
+      font-size: 16px; font-weight: 700; margin-bottom: 6px; color: #1a1a1a;
+    }
+    .pp-subheading {
+      font-size: 13px; color: #8b919a; margin-bottom: 20px;
+    }
+
+    /* Stage list */
+    .stage-list { display: flex; flex-direction: column; gap: 8px; margin-bottom: 20px; }
+    .stage-row {
+      display: flex; align-items: center; gap: 12px;
+      padding: 11px 14px;
+      border-radius: 9px;
+      border: 1px solid #f0f1f3;
+      background: #fafafa;
+      transition: all 0.2s;
+    }
+    .stage-row.active { border-color: #00B5A3; background: rgba(0,181,163,0.04); }
+    .stage-row.done { border-color: #d1fae5; background: #f0fdf4; }
+    .stage-row.fail { border-color: #fee2e2; background: #fff5f5; }
+    .stage-row.retry { border-color: #fef3c7; background: #fffbeb; }
+    .stage-icon { width: 20px; flex-shrink: 0; display: flex; align-items: center; justify-content: center; }
+    .stage-icon .s-spin {
+      width: 14px; height: 14px;
+      border: 2px solid rgba(0,181,163,0.2);
+      border-top-color: #00B5A3;
+      border-radius: 50%;
+      animation: spin 0.7s linear infinite;
+    }
+    .stage-icon .s-check { color: #10b981; font-size: 14px; }
+    .stage-icon .s-fail { color: #ef4444; font-size: 14px; }
+    .stage-icon .s-retry { color: #f59e0b; font-size: 14px; }
+    .stage-icon .s-dot { width: 8px; height: 8px; border-radius: 50%; background: #d1d5db; }
+    .stage-label { flex: 1; font-size: 13px; font-weight: 500; color: #6b7280; }
+    .stage-row.active .stage-label { color: #1a1a1a; }
+    .stage-row.done .stage-label { color: #059669; }
+    .stage-row.fail .stage-label { color: #ef4444; }
+    .stage-row.retry .stage-label { color: #d97706; }
+    .stage-note { font-size: 11px; color: #9ca3af; text-align: right; }
+
+    /* Attempt tracker */
+    .attempt-badge {
+      display: none;
+      align-items: center;
+      gap: 6px;
+      font-size: 12px;
+      color: #6b7280;
+      margin-bottom: 16px;
+    }
+    .attempt-badge.visible { display: flex; }
+    .attempt-dot {
+      width: 8px; height: 8px; border-radius: 50%;
+      background: #e2e4e8;
+      transition: background 0.2s;
+    }
+    .attempt-dot.done { background: #10b981; }
+    .attempt-dot.active { background: #00B5A3; }
+    .attempt-dot.fail { background: #ef4444; }
+
+    /* Issue list */
+    .issue-list {
+      display: none;
+      flex-direction: column;
+      gap: 4px;
+      margin-top: 12px;
+    }
+    .issue-list.visible { display: flex; }
+    .issue-item {
+      font-size: 12px; color: #dc2626;
+      background: #fff5f5; border: 1px solid #fee2e2;
+      border-radius: 6px; padding: 6px 10px;
+    }
+
+    /* Done state */
+    .done-card {
+      display: none;
+      border: 1.5px solid #10b981;
+      border-radius: 12px;
+      padding: 20px;
+      background: #f0fdf4;
+      margin-top: 8px;
+    }
+    .done-card.visible { display: block; }
+    .done-title { font-size: 15px; font-weight: 700; color: #059669; margin-bottom: 8px; }
+    .done-score { font-size: 13px; color: #6b7280; margin-bottom: 12px; }
+    .done-score strong { color: #1a1a1a; }
+    .done-actions { display: flex; gap: 8px; }
+    .editor-btn {
+      padding: 9px 18px;
+      border-radius: 8px;
+      border: none;
+      background: #00B5A3;
+      color: #fff;
+      font-size: 13px;
+      font-weight: 600;
+      cursor: pointer;
+      text-decoration: none;
+      font-family: inherit;
+      transition: background 0.15s;
+      display: inline-block;
+    }
+    .editor-btn:hover { background: #009e8e; }
+    .articles-btn {
+      padding: 9px 18px;
+      border-radius: 8px;
+      border: 1px solid #d1d5db;
+      background: #fff;
+      color: #6b7280;
+      font-size: 13px;
+      font-weight: 600;
+      cursor: pointer;
+      text-decoration: none;
+      font-family: inherit;
+      transition: all 0.15s;
+      display: inline-block;
+    }
+    .articles-btn:hover { border-color: #9ca3af; color: #1a1a1a; }
+
+    /* Error state */
+    .error-banner {
+      display: none;
+      padding: 12px 16px;
+      background: #fff5f5;
+      border: 1px solid #fee2e2;
+      border-radius: 10px;
+      color: #dc2626;
+      font-size: 13px;
+      margin-top: 12px;
+    }
+    .error-banner.visible { display: block; }
+    .error-banner strong { display: block; font-weight: 700; margin-bottom: 3px; }
+
+    /* Brand notes */
+    .brand-notes {
+      font-size: 12px;
+      color: #6b7280;
+      font-style: italic;
+      margin-top: 6px;
+    }
+
+    /* Pathway panels */
+    .pathway-panel { display: none; }
+    .pathway-panel.active { display: block; }
+
+    /* Angle input */
+    .angle-input {
       width: 100%;
       padding: 10px 13px;
       border: 1px solid #e2e4e8;
@@ -97,1610 +432,1424 @@
       transition: border-color 0.15s, box-shadow 0.15s;
       background: #fff;
     }
+    .angle-input:focus { border-color: #7C3AED; box-shadow: 0 0 0 3px rgba(124,58,237,0.08); }
+    .angle-input::placeholder { color: #c0c4cb; }
 
-    input[type="text"]:focus {
-      border-color: #00B5A3;
-      box-shadow: 0 0 0 3px rgba(0,181,163,0.08);
-    }
-
-    input[type="text"]::placeholder { color: #c0c4cb; }
-
-    .divider {
-      border: none;
-      border-top: 1px solid #f0f1f3;
-      margin: 4px 0 24px;
-    }
-
-    /* Type toggle */
-    .type-toggle { display: flex; gap: 10px; }
-
-    .type-option { flex: 1; position: relative; }
-
-    .type-option input[type="radio"] {
-      position: absolute; opacity: 0; width: 0; height: 0;
-    }
-
-    .type-option label {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 5px;
-      padding: 14px 10px;
-      border: 1px solid #e2e4e8;
-      border-radius: 10px;
-      cursor: pointer;
-      font-weight: 600;
-      font-size: 14px;
-      color: #6b7280;
-      transition: all 0.15s;
-      margin-bottom: 0;
-      text-align: center;
-    }
-
-    .type-option label .type-desc {
-      font-weight: 400;
-      font-size: 12px;
-      color: #9ca3af;
-    }
-
-    .type-option input:checked + label {
-      border-color: #00B5A3;
-      background: rgba(0,181,163,0.04);
-      color: #00B5A3;
-    }
-
-    .type-option label:hover { border-color: #d1d5db; }
-    .type-option input:checked + label:hover { border-color: #00B5A3; }
-
-    /* Titles */
-    #titles-section { display: none; }
-    #titles-section.visible { display: block; }
-
-    .titles-list { display: flex; flex-direction: column; gap: 7px; }
-
-    .title-row { display: flex; align-items: center; gap: 8px; }
-
-    .title-num {
-      font-size: 12px;
-      font-weight: 700;
-      color: #9ca3af;
-      width: 18px;
-      flex-shrink: 0;
-      text-align: right;
-    }
-
-    .remove-btn {
-      background: none;
-      border: none;
-      color: #d1d5db;
-      font-size: 16px;
-      cursor: pointer;
-      padding: 0 4px;
-      line-height: 1;
-      transition: color 0.15s;
-      flex-shrink: 0;
-    }
-
-    .remove-btn:hover { color: #ef4444; }
-    .remove-btn:disabled { opacity: 0; cursor: default; pointer-events: none; }
-
-    .mode-btn {
-      flex: 1; padding: 8px 10px; border-radius: 8px; border: 1px solid #e2e4e8;
-      background: #fff; font-size: 13px; font-weight: 500; color: #6b7280;
-      cursor: pointer; font-family: inherit; transition: all 0.15s; text-align: center;
-    }
-    .mode-btn:hover { border-color: #d1d5db; color: #1a1a1a; }
-    .mode-btn.active { border-color: #00B5A3; background: rgba(0,181,163,0.06); color: #00B5A3; font-weight: 600; }
-
-    .add-title-btn {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 6px;
-      margin-top: 8px;
-      background: none;
-      border: 1px dashed #d1d5db;
-      border-radius: 8px;
-      padding: 8px 16px;
-      font-size: 13px;
-      color: #9ca3af;
-      cursor: pointer;
-      font-family: inherit;
+    .discover-btn {
       width: 100%;
-      transition: all 0.15s;
-    }
-
-    .add-title-btn:hover { border-color: #00B5A3; color: #00B5A3; }
-
-    .min-notice { font-size: 12px; color: #9ca3af; margin-top: 7px; }
-    .min-notice.met { color: #00B5A3; }
-
-    .field-error {
-      font-size: 12px;
-      color: #ef4444;
-      margin-top: 6px;
-      display: none;
-    }
-    .field-error.visible { display: block; }
-
-    /* Submit row */
-    .submit-row {
-      display: flex;
-      align-items: center;
-      justify-content: flex-end;
-      gap: 12px;
-    }
-
-    .cancel-btn {
-      padding: 9px 18px;
-      border-radius: 8px;
-      border: 1px solid #e2e4e8;
-      background: #fff;
-      font-size: 14px;
-      font-weight: 600;
-      color: #6b7280;
-      cursor: pointer;
-      font-family: inherit;
-      text-decoration: none;
-      display: inline-block;
-      transition: all 0.15s;
-    }
-
-    .cancel-btn:hover { border-color: #d1d5db; color: #1a1a1a; }
-
-    .generate-btn {
-      padding: 9px 22px;
+      margin-top: 10px;
+      padding: 10px 18px;
       border-radius: 8px;
       border: none;
-      background: #00B5A3;
+      background: #7C3AED;
       color: #fff;
       font-size: 14px;
       font-weight: 600;
       cursor: pointer;
       font-family: inherit;
       transition: background 0.15s;
+      display: flex; align-items: center; justify-content: center; gap: 8px;
     }
+    .discover-btn:hover:not(:disabled) { background: #6d28d9; }
+    .discover-btn:disabled { background: #d1d5db; cursor: not-allowed; }
 
-    .generate-btn:hover { background: #009e8e; }
-    .generate-btn:disabled { background: #d1d5db; cursor: default; }
-
-    /* Right: preview panel */
-    .right-col { min-width: 0; }
-
-    .preview-panel {
-      background: #fff;
-      border: 1px solid #e2e4e8;
-      border-radius: 14px;
-      height: 100%;
-      min-height: 500px;
-      display: flex;
-      flex-direction: column;
-      overflow: hidden;
-    }
-
-    /* Dossier-style panel header */
-    .preview-header {
-      padding: 20px 24px 0;
-      flex-shrink: 0;
-      background: #fff;
-    }
-
-    .ph-title-row {
-      display: flex;
-      align-items: flex-start;
-      justify-content: space-between;
-      gap: 16px;
+    /* Title review grid */
+    .review-section { display: none; margin-top: 16px; }
+    .review-section.visible { display: block; }
+    .review-header {
+      display: flex; align-items: center; justify-content: space-between;
       margin-bottom: 10px;
     }
+    .review-header-label { font-size: 13px; font-weight: 700; color: #1a1a1a; }
+    .review-count { font-size: 12px; color: #9ca3af; }
 
-    .ph-label {
-      font-size: 12px;
-      color: #9ca3af;
-      margin-bottom: 4px;
-    }
-
-    .ph-title {
-      font-size: 20px;
-      font-weight: 700;
-      line-height: 1.3;
-      color: #c0c4cb;
-      flex: 1;
-      min-width: 0;
-    }
-
-    .ph-title.has-content { color: #1a1a1a; }
-
-    .ph-actions {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      flex-shrink: 0;
-      padding-top: 2px;
-    }
-
-    .ph-action-btn {
-      padding: 5px 12px;
-      border-radius: 7px;
+    .review-grid { display: flex; flex-direction: column; gap: 6px; }
+    .review-item {
+      display: flex; align-items: center; gap: 10px;
+      padding: 9px 10px;
       border: 1px solid #e2e4e8;
+      border-radius: 9px;
       background: #fff;
-      font-size: 12px;
-      font-weight: 600;
-      color: #6b7280;
-      text-decoration: none;
-      transition: all 0.15s;
-      display: inline-flex;
-      align-items: center;
-      gap: 5px;
+      transition: border-color 0.15s, background 0.15s;
     }
-    .ph-action-btn:hover { border-color: #00B5A3; color: #00B5A3; }
-
-    /* Metadata bar */
-    .ph-meta-bar {
-      display: flex;
-      align-items: center;
-      margin-bottom: 14px;
-      flex-wrap: wrap;
-      gap: 0;
+    .review-item.removing { opacity: 0.4; pointer-events: none; }
+    .ri-num { font-size: 12px; font-weight: 700; color: #d1d5db; width: 16px; flex-shrink: 0; text-align: center; }
+    .ri-info { flex: 1; min-width: 0; }
+    .ri-title { font-size: 13px; font-weight: 600; color: #1a1a1a; }
+    .ri-meta { font-size: 11px; color: #9ca3af; margin-top: 1px; }
+    .ri-reason { font-size: 11px; color: #7C3AED; margin-top: 3px; font-style: italic; line-height: 1.4; }
+    .ri-actions { display: flex; align-items: center; gap: 4px; flex-shrink: 0; }
+    .ri-swap {
+      background: none; border: 1px solid #e2e4e8; color: #9ca3af; font-size: 11px; font-weight: 600;
+      cursor: pointer; padding: 3px 7px; border-radius: 5px; font-family: inherit;
+      transition: all 0.15s; flex-shrink: 0;
     }
-
-    .ph-meta-item {
-      font-size: 13px;
-      color: #1a1a1a;
-      display: flex;
-      align-items: center;
-      gap: 5px;
+    .ri-swap:hover { border-color: #00B5A3; color: #00B5A3; }
+    .ri-remove {
+      background: none; border: none; color: #d1d5db; font-size: 16px;
+      cursor: pointer; padding: 0 4px; line-height: 1; transition: color 0.15s; flex-shrink: 0;
     }
+    .ri-remove:hover { color: #ef4444; }
 
-    .ph-meta-label { color: #6b7280; }
-
-    .ph-meta-div {
-      width: 1px;
-      height: 13px;
-      background: #e2e4e8;
-      margin: 0 12px;
-      flex-shrink: 0;
-    }
-
-    /* Outline tabs (Mantine variant="outline") */
-    .ph-tabs-row {
-      display: flex;
-      align-items: flex-end;
-      justify-content: space-between;
-      border-bottom: 1px solid #e2e4e8;
-    }
-
-    .pv-tab-bar { display: flex; gap: 0; margin-bottom: -1px; }
-
-    .pv-tab {
-      padding: 8px 16px;
-      border: 1px solid transparent;
-      border-bottom: none;
-      border-radius: 6px 6px 0 0;
-      background: none;
-      font-size: 13px;
-      font-weight: 500;
-      color: #6b7280;
-      cursor: pointer;
-      font-family: inherit;
-      transition: color 0.1s, background 0.1s;
-      display: flex;
-      align-items: center;
-      gap: 6px;
-    }
-    .pv-tab:hover { background: #f9fafb; color: #1a1a1a; }
-    .pv-tab.active {
-      color: #1a1a1a;
-      font-weight: 600;
-      background: #fff;
-      border-color: #e2e4e8;
-      border-bottom-color: #fff;
-    }
-
-    .tab-badge {
-      display: inline-block;
-      width: 6px;
-      height: 6px;
-      border-radius: 50%;
-      background: #00B5A3;
-      flex-shrink: 0;
-    }
-
-    .tab-pane {
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-      min-height: 0;
-      overflow: hidden;
-    }
-
-    .tab-pane.details-tab {
-      overflow-y: auto;
-      padding: 24px;
-      gap: 0;
-    }
-
-    .preview-status {
-      font-size: 12px;
-      color: #9ca3af;
-      padding-bottom: 10px;
-    }
-
-    .preview-status.generating {
-      color: #00B5A3;
-      display: flex;
-      align-items: center;
-      gap: 6px;
-    }
-
-    .spinner {
-      width: 12px;
-      height: 12px;
-      border: 2px solid rgba(0,181,163,0.2);
-      border-top-color: #00B5A3;
-      border-radius: 50%;
-      animation: spin 0.7s linear infinite;
+    /* Inline swap search */
+    .ri-swap-search {
       display: none;
-    }
-
-    .preview-status.generating .spinner { display: block; }
-
-    @keyframes spin { to { transform: rotate(360deg); } }
-
-    .preview-body {
-      flex: 1;
-      padding: 32px;
-      overflow-y: auto;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-    }
-
-    .preview-body:has(.preview-log.visible),
-    .preview-body:has(.preview-content.visible) {
-      justify-content: flex-start;
-    }
-
-    .preview-empty {
-      text-align: center;
-      color: #d1d5db;
-    }
-
-    .preview-empty svg {
-      display: block;
-      margin: 0 auto 14px;
-      opacity: 0.4;
-    }
-
-    .preview-empty p {
-      font-size: 14px;
-    }
-
-    .preview-content {
-      display: none;
-      width: 100%;
-      align-self: flex-start;
-    }
-
-    .preview-content.visible {
-      display: block;
-    }
-
-    .preview-content h2 {
-      font-size: 22px;
-      font-weight: 700;
-      line-height: 1.3;
-      margin-bottom: 10px;
-    }
-
-    .preview-content .preview-meta {
-      font-size: 12px;
-      color: #9ca3af;
-      margin-bottom: 20px;
-      display: flex;
-      gap: 16px;
-    }
-
-    /* Log */
-    .preview-log {
-      display: none;
-      flex-direction: column;
-      gap: 6px;
-      width: 100%;
-      align-self: flex-start;
-    }
-    .preview-log.visible { display: flex; }
-
-    .log-line {
-      font-size: 12px;
-      color: #9ca3af;
-      display: flex;
-      align-items: baseline;
-      gap: 8px;
-    }
-    .log-line.ok { color: #00B5A3; }
-    .log-line.err { color: #ef4444; }
-    .log-line::before { content: '›'; flex-shrink: 0; }
-
-    /* Article render */
-    .preview-content.visible { display: block; }
-
-    .article-headline {
-      font-size: 22px;
-      font-weight: 700;
-      line-height: 1.3;
-      margin-bottom: 6px;
-    }
-
-    .article-subheadline {
-      font-size: 15px;
-      color: #6b7280;
-      margin-bottom: 16px;
-      line-height: 1.4;
-    }
-
-    .article-section-label {
-      font-size: 10px;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-      color: #9ca3af;
-      margin: 20px 0 8px;
-    }
-
-    .article-body {
-      font-size: 14px;
-      line-height: 1.75;
-      color: #374151;
-    }
-
-    .article-body p { margin-bottom: 12px; }
-    .article-body p:last-child { margin-bottom: 0; }
-
-    .article-pull-quote {
-      border-left: 3px solid #00B5A3;
-      padding: 10px 16px;
-      margin: 16px 0;
-      font-size: 15px;
-      font-style: italic;
-      color: #1a1a1a;
-      background: rgba(0,181,163,0.04);
-      border-radius: 0 8px 8px 0;
-    }
-
-    .cast-entry { margin-bottom: 12px; }
-    .cast-name { font-weight: 700; font-size: 13px; margin-bottom: 3px; }
-    .cast-bio { font-size: 13px; color: #6b7280; line-height: 1.6; }
-
-    .listicle-entry { margin-bottom: 16px; padding-bottom: 16px; border-bottom: 1px solid #f0f1f3; }
-    .listicle-entry:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
-    .listicle-entry-title { font-weight: 700; font-size: 14px; margin-bottom: 4px; }
-    .listicle-entry-blurb { font-size: 13px; color: #6b7280; line-height: 1.6; }
-
-    .article-divider { border: none; border-top: 1px solid #f0f1f3; margin: 20px 0; }
-
-    .error-box {
-      background: #fff5f5;
-      border: 1px solid #fecaca;
-      border-radius: 10px;
-      padding: 16px 20px;
-      font-size: 13px;
-      color: #dc2626;
-      width: 100%;
-      align-self: flex-start;
-    }
-
-    /* Editable fields */
-    [contenteditable="true"] {
-      border-radius: 4px;
-      outline: none;
-      transition: background 0.15s, box-shadow 0.15s;
-      cursor: text;
-    }
-    [contenteditable="true"]:hover {
-      background: rgba(0,181,163,0.04);
-    }
-    [contenteditable="true"]:focus {
-      background: rgba(0,181,163,0.06);
-      box-shadow: 0 0 0 2px rgba(0,181,163,0.25);
-    }
-
-    /* Scores section */
-    .scores-section {
-      margin-top: 16px;
-      background: #fff;
-      border: 1px solid #e2e4e8;
-      border-radius: 14px;
-      padding: 20px 28px;
-    }
-    .scores-title {
-      font-size: 10px;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-      color: #9ca3af;
-      margin-bottom: 12px;
-    }
-    .score-row {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      margin-bottom: 8px;
-    }
-    .score-label {
-      font-size: 12px;
-      font-weight: 600;
-      color: #6b7280;
-      width: 110px;
-      flex-shrink: 0;
-    }
-    .score-bar-wrap {
-      flex: 1;
-      height: 6px;
-      background: #f0f1f3;
-      border-radius: 99px;
-      overflow: hidden;
-    }
-    .score-bar {
-      height: 100%;
-      border-radius: 99px;
-      background: #00B5A3;
-      transition: width 0.6s ease;
-    }
-    .score-bar.low { background: #f59e0b; }
-    .score-bar.fail { background: #ef4444; }
-    .score-value {
-      font-size: 12px;
-      font-weight: 700;
-      color: #1a1a1a;
-      width: 36px;
-      text-align: right;
-      flex-shrink: 0;
-    }
-    .score-notes {
-      font-size: 12px;
-      color: #9ca3af;
-      line-height: 1.5;
       margin-top: 8px;
-      font-style: italic;
+      position: relative;
     }
-    .quality-badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 4px;
-      font-size: 12px;
-      font-weight: 600;
-      padding: 3px 8px;
-      border-radius: 99px;
-      background: rgba(0,181,163,0.1);
-      color: #00B5A3;
-    }
-    .quality-badge.fail {
-      background: rgba(239,68,68,0.1);
-      color: #ef4444;
-    }
-
-    /* SEO table */
-    .seo-table {
+    .ri-swap-search.open { display: block; }
+    .ri-swap-input {
       width: 100%;
-      border-collapse: collapse;
-      font-size: 12px;
-      margin-top: 6px;
+      padding: 8px 12px 8px 30px;
+      border: 1px solid #00B5A3;
+      border-radius: 7px;
+      font-size: 13px;
+      font-family: inherit;
+      outline: none;
+      background: #fff;
     }
-    .seo-table th {
-      text-align: left;
-      font-weight: 700;
-      color: #9ca3af;
-      font-size: 11px;
-      padding: 4px 8px 6px 0;
-      border-bottom: 1px solid #f0f1f3;
+    .ri-swap-icon {
+      position: absolute; left: 9px; top: 50%; transform: translateY(-50%);
+      color: #9ca3af; pointer-events: none;
     }
-    .seo-table td {
-      padding: 6px 8px 6px 0;
-      color: #374151;
-      border-bottom: 1px solid #f9fafb;
+    .ri-swap-spinner {
+      position: absolute; right: 9px; top: 50%; transform: translateY(-50%);
+      width: 12px; height: 12px;
+      border: 2px solid rgba(0,181,163,0.2); border-top-color: #00B5A3;
+      border-radius: 50%; animation: spin 0.7s linear infinite; display: none;
     }
-    .seo-table td:first-child { font-weight: 500; }
-    .seo-table td:not(:first-child) { color: #6b7280; }
-    .pos-top { color: #00B5A3 !important; font-weight: 700 !important; }
-    .pos-mid { color: #f59e0b !important; font-weight: 600 !important; }
-    .pos-low { color: #9ca3af !important; }
+    .ri-swap-spinner.visible { display: block; }
+    .ri-swap-dropdown {
+      display: none; position: absolute; top: calc(100% + 4px); left: 0; right: 0;
+      background: #fff; border: 1px solid #e2e4e8; border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1); z-index: 500; max-height: 200px; overflow-y: auto;
+    }
+    .ri-swap-dropdown.open { display: block; }
+
+    /* Expiry badge */
+    .ri-expiry {
+      display: inline-block; margin-top: 4px;
+      font-size: 10px; font-weight: 600;
+      padding: 2px 6px; border-radius: 4px;
+    }
+    .ri-expiry.open { background: #f0fdf4; color: #059669; }
+    .ri-expiry.warning { background: #fef3c7; color: #d97706; }
+    .ri-expiry.critical { background: #fff5f5; color: #dc2626; }
+
+    .review-min-notice { font-size: 12px; color: #9ca3af; margin-top: 8px; }
+    .review-min-notice.met { color: #10b981; }
+
+    /* Container search (pathway 3) */
+    .container-search-wrap { position: relative; }
+    .container-input {
+      width: 100%;
+      padding: 10px 36px 10px 13px;
+      border: 1px solid #e2e4e8;
+      border-radius: 8px;
+      font-size: 14px;
+      font-family: inherit;
+      color: #1a1a1a;
+      outline: none;
+      background: #fff;
+      transition: border-color 0.15s, box-shadow 0.15s;
+    }
+    .container-input:focus { border-color: #00B5A3; box-shadow: 0 0 0 3px rgba(0,181,163,0.1); }
+    .container-input::placeholder { color: #c0c4cb; }
+
+    .selected-container {
+      display: none;
+      margin-top: 10px;
+      padding: 10px 12px;
+      background: rgba(0,181,163,0.05);
+      border: 1.5px solid #00B5A3;
+      border-radius: 9px;
+      font-size: 13px; font-weight: 600; color: #00B5A3;
+      align-items: center; justify-content: space-between; gap: 8px;
+    }
+    .selected-container.visible { display: flex; }
+    .sc-clear { background: none; border: none; color: #9ca3af; font-size: 16px; cursor: pointer; padding: 0; line-height: 1; transition: color 0.15s; }
+    .sc-clear:hover { color: #ef4444; }
+
+    .load-container-btn {
+      width: 100%;
+      margin-top: 10px;
+      padding: 9px 16px;
+      border-radius: 8px;
+      border: 1px solid #e2e4e8;
+      background: #fff;
+      font-size: 13px; font-weight: 600; color: #6b7280;
+      cursor: pointer; font-family: inherit;
+      transition: all 0.15s;
+      display: flex; align-items: center; justify-content: center; gap: 8px;
+    }
+    .load-container-btn:hover:not(:disabled) { border-color: #00B5A3; color: #00B5A3; }
+    .load-container-btn:disabled { opacity: 0.5; cursor: not-allowed; }
+
+    /* Container titles checklist */
+    .ct-section { display: none; margin-top: 16px; }
+    .ct-section.visible { display: block; }
+    .ct-list { display: flex; flex-direction: column; gap: 5px; max-height: 280px; overflow-y: auto; }
+    .ct-item {
+      display: flex; align-items: center; gap: 9px;
+      padding: 8px 10px;
+      border: 1px solid #e2e4e8; border-radius: 8px;
+      cursor: pointer; transition: all 0.12s; background: #fff;
+      user-select: none;
+    }
+    .ct-item:hover { border-color: #d1d5db; background: #fafafa; }
+    .ct-item.selected { border-color: #00B5A3; background: rgba(0,181,163,0.05); }
+    .ct-check {
+      width: 16px; height: 16px; border-radius: 4px;
+      border: 1.5px solid #d1d5db; flex-shrink: 0;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 10px; color: #fff; transition: all 0.12s;
+    }
+    .ct-item.selected .ct-check { background: #00B5A3; border-color: #00B5A3; }
+    .ct-item-title { font-size: 13px; font-weight: 500; color: #1a1a1a; flex: 1; min-width: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .ct-item-year { font-size: 11px; color: #9ca3af; flex-shrink: 0; }
+
+    .ct-angle-wrap { margin-top: 14px; }
   </style>
 </head>
 <body>
 
 <aside class="dossier-sidebar">
   <div class="ds-logo">
-    <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#7C3AED" stroke-width="2"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg>
     <span>Article Studio</span>
   </div>
   <nav class="ds-nav">
     <a href="/monitor" class="ds-nav-item">
-      <svg class="ds-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path stroke-linecap="round" stroke-linejoin="round" d="M9 19v-6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2zm0 0V9a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v10m-6 0a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2m0 0V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-2a2 2 0 0 1-2-2z"/></svg>
+      <svg class="ds-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
+      </svg>
       Monitor
     </a>
-    <a href="/articles" class="ds-nav-item">
-      <svg class="ds-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><rect x="3" y="3" width="8" height="8" rx="1.5"/><rect x="13" y="3" width="8" height="8" rx="1.5"/><rect x="3" y="13" width="8" height="8" rx="1.5"/><rect x="13" y="13" width="8" height="8" rx="1.5"/></svg>
-      Articles
-    </a>
     <a href="/generate" class="ds-nav-item active">
-      <svg class="ds-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path stroke-linecap="round" d="M11 5H6a2 2 0 0 0-2 2v11a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2v-5m-1.414-9.414a2 2 0 1 1 2.828 2.828L11.828 15H9v-2.828l8.586-8.586z"/></svg>
+      <svg class="ds-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4"/>
+      </svg>
       Generate
     </a>
-    <a href="/pipeline" class="ds-nav-item">
-      <svg class="ds-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><circle cx="12" cy="12" r="9"/><polygon points="10,8 16,12 10,16"/></svg>
-      Pipeline
+    <a href="/articles" class="ds-nav-item">
+      <svg class="ds-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+      </svg>
+      Articles
     </a>
     <a href="/history" class="ds-nav-item">
-      <svg class="ds-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><circle cx="12" cy="12" r="9"/><polyline points="12,7 12,12 15,15"/></svg>
+      <svg class="ds-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+      </svg>
       History
     </a>
     <a href="/git" class="ds-nav-item">
-      <svg class="ds-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><circle cx="18" cy="18" r="3"/><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M6 9v6M9 6h3a3 3 0 0 1 3 3v3"/></svg>
+      <svg class="ds-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"/>
+      </svg>
       Git
+    </a>
+    <a href="/pipeline" class="ds-nav-item">
+      <svg class="ds-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/>
+      </svg>
+      Pipeline
     </a>
   </nav>
 </aside>
 
 <div class="main-content">
-<div class="page-header">
-  <h1>Generate article</h1>
-  <p class="subtitle">Fill in the details below to generate a new article</p>
-</div>
+  <div class="page-header">
+    <h1>Generate Article</h1>
+    <p class="subtitle">Choose a pathway to generate a new article</p>
+  </div>
 
-<div class="layout">
+  <div class="layout">
 
-  <!-- Left: form -->
-  <div class="left-col">
+    <!-- Left: form -->
     <div class="form-card">
 
-      <div class="field">
-        <label for="article-title">Article title<span id="title-hint" class="hint" style="margin-left:6px;">Leave blank to auto-generate</span></label>
-        <input type="text" id="article-title" placeholder="Leave blank to auto-generate" autocomplete="off">
-        <div class="field-error" id="title-error">Please enter an article title</div>
+      <!-- Pathway selector -->
+      <div class="pathway-grid">
+        <button class="pathway-btn active" id="pw-single" onclick="setPathway('single')">
+          <span class="pb-label">Single Title</span>
+          <span class="pb-desc">One movie or series</span>
+        </button>
+        <button class="pathway-btn" id="pw-topic" onclick="setPathway('topic')">
+          <span class="pb-label">Discover by Angle</span>
+          <span class="pb-desc">AI picks titles for listicle</span>
+        </button>
+        <button class="pathway-btn" id="pw-container" onclick="setPathway('container')">
+          <span class="pb-label">From Container</span>
+          <span class="pb-desc">Pick from a Tubi category</span>
+        </button>
+        <button class="pathway-btn" id="pw-manual" disabled>
+          <span class="pb-label">Manual Selection</span>
+          <span class="pb-desc">Pick 5–10 titles</span>
+          <span class="pb-soon">Coming soon</span>
+        </button>
       </div>
 
-
-      <hr class="divider">
-
-      <div class="field">
-        <label>Article type <span class="required">*</span></label>
-        <div class="type-toggle">
-          <div class="type-option">
-            <input type="radio" name="article-type" id="type-single" value="single">
-            <label for="type-single">
-              Single title
-              <span class="type-desc">One featured title</span>
-            </label>
-          </div>
-          <div class="type-option">
-            <input type="radio" name="article-type" id="type-listicle" value="listicle">
-            <label for="type-listicle">
-              Listicle
-              <span class="type-desc">7+ titles ranked</span>
-            </label>
-          </div>
+      <!-- Pathway 1: Single title -->
+      <div id="pathway-single" class="pathway-panel active">
+        <label class="sec-label">Search title<span class="hint">or paste a content ID</span></label>
+        <div class="search-wrap">
+          <svg class="search-icon" width="15" height="15" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
+          </svg>
+          <input
+            id="search-input"
+            class="search-input"
+            type="text"
+            placeholder="e.g. John Wick or 100054992"
+            autocomplete="off"
+          />
+          <div class="search-spinner" id="search-spinner"></div>
+          <div class="search-dropdown" id="search-dropdown"></div>
         </div>
-        <div class="field-error" id="type-error">Please select an article type</div>
+
+        <!-- Selected title card -->
+        <div class="title-card" id="title-card">
+          <div id="tc-poster-wrap"></div>
+          <div class="tc-info">
+            <div class="tc-title" id="tc-title"></div>
+            <div class="tc-meta" id="tc-meta"></div>
+            <div class="tc-id" id="tc-id"></div>
+          </div>
+          <button class="tc-clear" id="tc-clear" title="Clear selection">×</button>
+        </div>
+
+        <button class="generate-btn" id="generate-btn" disabled onclick="startGenerate()">
+          <div class="btn-spinner" id="btn-spinner"></div>
+          <span id="btn-label">Generate Article</span>
+        </button>
       </div>
 
-      <div id="titles-section">
-        <hr class="divider">
-
-        <!-- Listicle mode selector (only shown for listicle) -->
-        <div id="listicle-mode-row" style="display:none;margin-bottom:20px;">
-          <label style="font-size:13px;font-weight:700;color:#1a1a1a;display:block;margin-bottom:10px;">How do you want to pick titles?</label>
-          <div style="display:flex;gap:8px;">
-            <button type="button" class="mode-btn active" data-mode="manual" id="mode-manual">Enter manually</button>
-            <button type="button" class="mode-btn" data-mode="keyword" id="mode-keyword">By keyword</button>
-            <button type="button" class="mode-btn" data-mode="container" id="mode-container">From container</button>
-          </div>
+      <!-- Pathway 3: From Container -->
+      <div id="pathway-container" class="pathway-panel">
+        <label class="sec-label">Search container<span class="hint">e.g. "New Arrivals" or "Horror"</span></label>
+        <div class="container-search-wrap">
+          <input
+            id="container-search-input"
+            class="container-input"
+            type="text"
+            placeholder="Type to filter containers…"
+            autocomplete="off"
+          />
+          <div class="search-spinner" id="container-search-spinner"></div>
+          <div class="search-dropdown" id="container-dropdown"></div>
         </div>
 
-        <!-- Keyword input (keyword mode) -->
-        <div id="keyword-suggest-row" style="display:none;margin-bottom:16px;">
-          <div style="display:flex;gap:8px;">
-            <input type="text" id="keyword-input" placeholder="e.g. slashers, horror comedy" style="flex:1;padding:10px 13px;border:1px solid #e2e4e8;border-radius:8px;font-size:14px;font-family:inherit;outline:none;" />
-            <button type="button" id="suggest-btn" style="padding:10px 16px;border-radius:8px;border:none;background:#1a1a1a;color:#fff;font-size:13px;font-weight:600;cursor:pointer;white-space:nowrap;font-family:inherit;">Suggest titles</button>
-          </div>
-          <div id="suggest-status" style="font-size:12px;color:#9ca3af;margin-top:6px;"></div>
+        <div class="selected-container" id="selected-container">
+          <span id="selected-container-name"></span>
+          <button class="sc-clear" id="sc-clear" title="Clear">×</button>
         </div>
 
-        <!-- Container input (container mode) -->
-        <div id="container-input-row" style="display:none;margin-bottom:16px;">
-          <div style="display:flex;gap:8px;">
-            <input type="text" id="container-name" placeholder="e.g. Cult Classics" autocomplete="off" style="flex:1;padding:10px 13px;border:1px solid #e2e4e8;border-radius:8px;font-size:14px;font-family:inherit;outline:none;" />
-            <button type="button" id="load-container-btn" style="padding:10px 16px;border-radius:8px;border:none;background:#1a1a1a;color:#fff;font-size:13px;font-weight:600;cursor:pointer;white-space:nowrap;font-family:inherit;">Load titles</button>
-          </div>
-          <div id="container-status" style="font-size:12px;color:#9ca3af;margin-top:6px;"></div>
-          <div class="field-error" id="container-error">Please enter a container name</div>
-        </div>
+        <button class="load-container-btn" id="load-container-btn" disabled onclick="loadContainerTitles()">
+          <div class="btn-spinner" id="load-spinner"></div>
+          <span id="load-label">Load Titles</span>
+        </button>
 
-        <div class="field" style="margin-bottom:0">
-          <label id="titles-label">Titles <span class="required">*</span></label>
-          <div class="titles-list" id="titles-list"></div>
-          <button class="add-title-btn" id="add-title-btn" type="button">+ Add title</button>
-          <div class="min-notice" id="min-notice"></div>
-          <div class="field-error" id="titles-error">Please fill in all title fields</div>
+        <!-- Titles checklist -->
+        <div class="ct-section" id="ct-section">
+          <div class="review-header">
+            <span class="review-header-label">Select titles</span>
+            <span class="review-count" id="ct-count"></span>
+          </div>
+          <div class="ct-list" id="ct-list"></div>
+          <div class="review-min-notice" id="ct-min-notice"></div>
+
+          <div class="ct-angle-wrap">
+            <label class="sec-label" style="margin-top:14px;">Article angle<span class="hint">optional — leave blank to auto-generate</span></label>
+            <input
+              id="ct-angle-input"
+              class="angle-input"
+              type="text"
+              placeholder="e.g. best new movies added to Tubi this month"
+              autocomplete="off"
+              maxlength="120"
+            />
+          </div>
+
+          <button class="generate-btn" id="ct-generate-btn" disabled onclick="startContainerListicle()" style="margin-top:14px;">
+            <div class="btn-spinner" id="ct-btn-spinner"></div>
+            <span id="ct-btn-label">Generate Listicle</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Pathway 2: Discover by angle -->
+      <div id="pathway-topic" class="pathway-panel">
+        <label class="sec-label">Article angle<span class="hint">e.g. "top movies to watch this summer"</span></label>
+        <input
+          id="angle-input"
+          class="angle-input"
+          type="text"
+          placeholder="e.g. best thriller movies on Tubi right now"
+          autocomplete="off"
+          maxlength="120"
+        />
+        <label class="sec-label" style="margin-top:14px;">Intended publish date<span class="hint">titles must be live through this date + 30 days</span></label>
+        <input
+          id="publish-date-input"
+          type="date"
+          style="width:100%;padding:9px 12px;border:1px solid #e2e4e8;border-radius:8px;font-size:14px;font-family:inherit;outline:none;background:#fff;color:#1a1a1a;transition:border-color 0.15s;"
+        />
+        <button class="discover-btn" id="discover-btn" onclick="startDiscover()" style="margin-top:10px;">
+          <div class="btn-spinner" id="discover-spinner"></div>
+          <span id="discover-label">Find Titles</span>
+        </button>
+
+        <!-- Review list (shown after discovery) -->
+        <div class="review-section" id="review-section">
+          <div class="review-header">
+            <span class="review-header-label">Selected titles</span>
+            <span class="review-count" id="review-count"></span>
+          </div>
+          <div class="review-grid" id="review-grid"></div>
+          <div class="review-min-notice" id="review-min-notice"></div>
+          <button class="generate-btn" id="listicle-generate-btn" disabled onclick="startListicleGenerate()" style="margin-top:14px;">
+            <div class="btn-spinner" id="listicle-btn-spinner"></div>
+            <span id="listicle-btn-label">Generate Listicle</span>
+          </button>
         </div>
       </div>
 
     </div>
 
-    <div class="submit-row">
-      <a href="/articles" class="cancel-btn">Cancel</a>
-      <button class="generate-btn" id="generate-btn" type="button">Generate</button>
+    <!-- Right: progress -->
+    <div class="progress-panel" id="progress-panel">
+
+      <div class="pp-idle" id="pp-idle">
+        <svg width="48" height="48" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/>
+        </svg>
+        <p>Select a title to generate an article</p>
+      </div>
+
+      <div class="pp-active" id="pp-active">
+        <div class="pp-heading" id="pp-heading">Generating…</div>
+        <div class="pp-subheading" id="pp-subheading">This usually takes 30–60 seconds</div>
+
+        <!-- Attempt dots -->
+        <div class="attempt-badge" id="attempt-badge">
+          <span style="font-size:11px;color:#9ca3af;">Attempt</span>
+          <div class="attempt-dot" id="dot-1"></div>
+          <div class="attempt-dot" id="dot-2"></div>
+          <div class="attempt-dot" id="dot-3"></div>
+          <div class="attempt-dot" id="dot-4"></div>
+          <div class="attempt-dot" id="dot-5"></div>
+          <span id="attempt-label" style="font-size:11px;color:#9ca3af;"></span>
+        </div>
+
+        <!-- Stages -->
+        <div class="stage-list" id="stage-list">
+          <div class="stage-row" id="stage-metadata">
+            <div class="stage-icon"><div class="s-dot"></div></div>
+            <div class="stage-label">Fetch title metadata</div>
+            <div class="stage-note" id="note-metadata"></div>
+          </div>
+          <div class="stage-row" id="stage-prompts">
+            <div class="stage-icon"><div class="s-dot"></div></div>
+            <div class="stage-label">Build prompt</div>
+            <div class="stage-note" id="note-prompts"></div>
+          </div>
+          <div class="stage-row" id="stage-generate">
+            <div class="stage-icon"><div class="s-dot"></div></div>
+            <div class="stage-label">Generate with AI</div>
+            <div class="stage-note" id="note-generate"></div>
+          </div>
+          <div class="stage-row" id="stage-quality">
+            <div class="stage-icon"><div class="s-dot"></div></div>
+            <div class="stage-label">Quality gate</div>
+            <div class="stage-note" id="note-quality"></div>
+          </div>
+          <div class="stage-row" id="stage-brand">
+            <div class="stage-icon"><div class="s-dot"></div></div>
+            <div class="stage-label">Brand voice check</div>
+            <div class="stage-note" id="note-brand"></div>
+          </div>
+          <div class="stage-row" id="stage-save">
+            <div class="stage-icon"><div class="s-dot"></div></div>
+            <div class="stage-label">Save article</div>
+            <div class="stage-note" id="note-save"></div>
+          </div>
+        </div>
+
+        <!-- Issue list (shown on quality/brand fail) -->
+        <div class="issue-list" id="issue-list"></div>
+
+        <!-- Done card -->
+        <div class="done-card" id="done-card">
+          <div class="done-title">Article saved</div>
+          <div class="done-score" id="done-score"></div>
+          <div class="brand-notes" id="done-brand-notes"></div>
+          <div class="done-actions" style="margin-top:14px;">
+            <a class="editor-btn" id="editor-link" href="#">Open in Editor</a>
+            <a class="articles-btn" href="/articles">View all articles</a>
+          </div>
+        </div>
+
+        <!-- Error -->
+        <div class="error-banner" id="error-banner">
+          <strong>Generation failed</strong>
+          <span id="error-message"></span>
+        </div>
+
+      </div>
     </div>
 
   </div>
-
-  <!-- Right: preview with tabs -->
-  <div class="right-col">
-    <div class="preview-panel">
-      <div class="preview-header">
-
-        <!-- Title row -->
-        <div class="ph-title-row">
-          <div>
-            <div class="ph-label">Article Studio</div>
-            <div class="ph-title" id="ph-title">New article</div>
-          </div>
-          <div class="ph-actions">
-            <a id="ph-tubi-btn" class="ph-action-btn" href="#" target="_blank" style="display:none;">
-              View on Tubi &#8599;
-            </a>
-          </div>
-        </div>
-
-        <!-- Metadata bar -->
-        <div class="ph-meta-bar" id="ph-meta-bar" style="display:none;">
-          <div class="ph-meta-item"><span class="ph-meta-label">Status</span>&nbsp;<span id="phm-status">Draft</span></div>
-          <div class="ph-meta-div"></div>
-          <div class="ph-meta-item"><span class="ph-meta-label">Content ID</span>&nbsp;<span id="phm-id">—</span></div>
-          <div class="ph-meta-div"></div>
-          <div class="ph-meta-item"><span class="ph-meta-label">Type</span>&nbsp;<span id="phm-type">—</span></div>
-          <div class="ph-meta-div"></div>
-          <div class="ph-meta-item"><span class="ph-meta-label">Brand score</span>&nbsp;<span id="phm-brand">—</span></div>
-          <div class="ph-meta-div"></div>
-          <div class="ph-meta-item"><span class="ph-meta-label">Generated</span>&nbsp;<span id="phm-date">—</span></div>
-        </div>
-
-        <!-- Tabs row -->
-        <div class="ph-tabs-row">
-          <div class="pv-tab-bar">
-            <button class="pv-tab active" data-tab="workspace" id="tab-workspace-btn">Workspace</button>
-            <button class="pv-tab" data-tab="details" id="tab-details-btn">Details</button>
-          </div>
-          <span class="preview-status" id="preview-status">Waiting for input</span>
-        </div>
-
-      </div>
-
-      <!-- Workspace tab -->
-      <div class="tab-pane" id="tab-workspace">
-        <div class="preview-body" id="preview-body">
-          <div class="preview-empty" id="preview-empty">
-            <svg width="40" height="40" fill="none" viewBox="0 0 24 24">
-              <rect x="4" y="4" width="16" height="3" rx="1.5" fill="currentColor"/>
-              <rect x="4" y="10" width="16" height="2" rx="1" fill="currentColor"/>
-              <rect x="4" y="15" width="10" height="2" rx="1" fill="currentColor"/>
-            </svg>
-            <p>Fill in the form and click Generate<br>to see your article here</p>
-          </div>
-          <div class="preview-log" id="preview-log"></div>
-          <div class="preview-content" id="preview-content"></div>
-        </div>
-      </div>
-
-      <!-- Details tab -->
-      <div class="tab-pane details-tab" id="tab-details" style="display:none;">
-        <div id="scores-container"></div>
-        <div id="save-container"></div>
-        <div id="details-empty" style="color:#d1d5db;font-size:13px;text-align:center;padding:60px 0;">
-          Generate an article to see scores and SEO data
-        </div>
-      </div>
-
-    </div>
-  </div>
-
 </div>
-</div><!-- /.main-content -->
-
-<!-- Single shared search dropdown -->
-<div id="search-dd" style="display:none;position:fixed;background:#fff;border:1px solid #e2e4e8;border-radius:8px;box-shadow:0 4px 16px rgba(0,0,0,.15);z-index:99999;max-height:260px;overflow-y:auto;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;"></div>
 
 <script>
-  const API = 'http://localhost:3002';
-  const MIN_LISTICLE = 7;
-  let articleType = null;
-  let generating = false;
-  let currentGenResult = null;
-  let selectedStatus = 'draft';
-  let selectedTags = new Set();
+const API = '';
+let selectedTitle = null;
+let generating = false;
 
-  const titlesList = document.getElementById('titles-list');
-  const addTitleBtn = document.getElementById('add-title-btn');
-  const minNotice = document.getElementById('min-notice');
-  const titlesSection = document.getElementById('titles-section');
-  const titlesLabel = document.getElementById('titles-label');
-  const previewLog = document.getElementById('preview-log');
-  const previewContent = document.getElementById('preview-content');
-  const previewEmpty = document.getElementById('preview-empty');
+// ── Search ─────────────────────────────────────────────────────────────────────
 
-  // --- Tab switching ---
+const searchInput = document.getElementById('search-input');
+const searchDropdown = document.getElementById('search-dropdown');
+const searchSpinner = document.getElementById('search-spinner');
 
-  document.querySelectorAll('.pv-tab').forEach(btn => {
-    btn.addEventListener('click', () => {
-      const tab = btn.dataset.tab;
-      document.querySelectorAll('.pv-tab').forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
-      // Remove badge when Details is viewed
-      if (tab === 'details') btn.querySelector('.tab-badge')?.remove();
-      document.getElementById('tab-workspace').style.display = tab === 'workspace' ? 'flex' : 'none';
-      document.getElementById('tab-details').style.display = tab === 'details' ? 'flex' : 'none';
-    });
-  });
+let searchTimer = null;
+let searchSeq = 0;
 
-  function updateArticleHeader(event) {
-    const headline = event.output?.headline || event.title || 'Untitled';
-    const isListicle = !!(event.output?.entries);
+searchInput.addEventListener('input', () => {
+  const q = searchInput.value.trim();
+  clearTimeout(searchTimer);
+  if (q.length < 2) { closeDropdown(); return; }
+  searchTimer = setTimeout(() => doSearch(q), 280);
+});
 
-    const titleEl = document.getElementById('ph-title');
-    titleEl.textContent = headline;
-    titleEl.classList.add('has-content');
-
-    document.getElementById('phm-status').textContent = 'Draft';
-    document.getElementById('phm-id').textContent = event.contentId || '—';
-    document.getElementById('phm-type').textContent = isListicle ? 'Listicle' : 'Single Title';
-    document.getElementById('phm-brand').textContent =
-      event.brandScore != null ? `${event.brandScore.toFixed(1)}/5` : '—';
-    document.getElementById('phm-date').textContent = new Date().toLocaleString('en-US', {
-      month: 'numeric', day: 'numeric', year: 'numeric',
-      hour: 'numeric', minute: '2-digit',
-    });
-
-    document.getElementById('ph-meta-bar').style.display = 'flex';
-
-    if (event.contentId) {
-      const btn = document.getElementById('ph-tubi-btn');
-      btn.href = `https://tubitv.com/movies/${event.contentId}`;
-      btn.style.display = 'inline-flex';
-    }
+searchInput.addEventListener('keydown', e => {
+  if (e.key === 'Escape') closeDropdown();
+  if (e.key === 'Enter') {
+    const hi = searchDropdown.querySelector('.highlighted');
+    if (hi) hi.click();
   }
-
-  function notifyDetailsReady() {
-    const btn = document.getElementById('tab-details-btn');
-    if (btn && !btn.querySelector('.tab-badge')) {
-      const badge = document.createElement('span');
-      badge.className = 'tab-badge';
-      btn.appendChild(badge);
-    }
+  if (e.key === 'ArrowDown' || e.key === 'ArrowUp') {
+    e.preventDefault();
+    const items = [...searchDropdown.querySelectorAll('.dd-item')];
+    const cur = items.findIndex(i => i.classList.contains('highlighted'));
+    const next = e.key === 'ArrowDown'
+      ? Math.min(cur + 1, items.length - 1)
+      : Math.max(cur - 1, 0);
+    items.forEach((i, idx) => i.classList.toggle('highlighted', idx === next));
   }
+});
 
-  // --- Form helpers ---
-
-  function updateMinNotice() {
-    if (articleType !== 'listicle') return;
-    const total = titlesList.children.length;
-    if (total >= MIN_LISTICLE) {
-      minNotice.textContent = `${total} titles added — minimum met`;
-      minNotice.classList.add('met');
-    } else {
-      minNotice.textContent = `Minimum ${MIN_LISTICLE} titles required (${total} added)`;
-      minNotice.classList.remove('met');
-    }
+document.addEventListener('click', e => {
+  if (!searchInput.contains(e.target) && !searchDropdown.contains(e.target)) {
+    closeDropdown();
   }
+});
 
-  function getTitles() {
-    return [...titlesList.querySelectorAll('input')].map(i => i.value.trim()).filter(Boolean);
+async function doSearch(q) {
+  const seq = ++searchSeq;
+  searchSpinner.classList.add('visible');
+  try {
+    const res = await fetch(`${API}/api/search?q=${encodeURIComponent(q)}`);
+    if (!res.ok || seq !== searchSeq) return;
+    const results = await res.json();
+    renderDropdown(results);
+  } catch {
+    if (seq === searchSeq) closeDropdown();
+  } finally {
+    if (seq === searchSeq) searchSpinner.classList.remove('visible');
   }
+}
 
-  function addTitleRow(index) {
-    const row = document.createElement('div');
-    row.className = 'title-row';
-
-    const num = document.createElement('span');
-    num.className = 'title-num';
-    num.textContent = index + 1;
-
-    const wrap = document.createElement('div');
-    wrap.style.cssText = 'flex:1;position:relative;';
-
-    const input = document.createElement('input');
-    input.type = 'text';
-    input.placeholder = 'Search title or paste content ID...';
-    input.autocomplete = 'off';
-    input.className = 'title-search-input';
-
-    wrap.appendChild(input);
-
-    const removeBtn = document.createElement('button');
-    removeBtn.type = 'button';
-    removeBtn.className = 'remove-btn';
-    removeBtn.textContent = '×';
-    removeBtn.addEventListener('click', () => { row.remove(); reindexTitles(); updateMinNotice(); });
-
-    row.appendChild(num); row.appendChild(wrap); row.appendChild(removeBtn);
-    titlesList.appendChild(row);
-    updateRemoveButtons(); updateMinNotice();
+function renderDropdown(results) {
+  searchDropdown.innerHTML = '';
+  if (!results.length) {
+    searchDropdown.innerHTML = '<div class="dd-empty">No results found</div>';
+    searchDropdown.classList.add('open');
+    return;
   }
-
-  function reindexTitles() {
-    [...titlesList.children].forEach((row, i) => {
-      row.querySelector('.title-num').textContent = i + 1;
-    });
-    updateRemoveButtons();
-  }
-
-  function updateRemoveButtons() {
-    const rows = titlesList.querySelectorAll('.title-row');
-    const minCount = articleType === 'listicle' ? MIN_LISTICLE : 1;
-    rows.forEach(row => { row.querySelector('.remove-btn').disabled = rows.length <= minCount; });
-  }
-
-  let listicleMode = 'manual'; // 'manual' | 'keyword' | 'container'
-
-  function setListicleMode(mode) {
-    listicleMode = mode;
-    document.querySelectorAll('.mode-btn').forEach(b => b.classList.toggle('active', b.dataset.mode === mode));
-    document.getElementById('keyword-suggest-row').style.display = mode === 'keyword' ? 'block' : 'none';
-    document.getElementById('container-input-row').style.display = mode === 'container' ? 'block' : 'none';
-    if (mode !== 'container') document.getElementById('container-name').value = '';
-    // Reset titles list when switching mode
-    titlesList.innerHTML = '';
-    if (mode !== 'container') {
-      for (let i = 0; i < MIN_LISTICLE; i++) addTitleRow(i);
-      updateMinNotice();
-    }
-    addTitleBtn.style.display = mode === 'container' ? 'none' : '';
-  }
-
-  function setType(type) {
-    articleType = type;
-    titlesList.innerHTML = '';
-    titlesSection.classList.add('visible');
-    document.getElementById('title-hint').textContent = 'Leave blank to auto-generate';
-    const modeRow = document.getElementById('listicle-mode-row');
-    if (type === 'single') {
-      titlesLabel.innerHTML = 'Content ID <span class="required">*</span><span class="hint">From tubitv.com URL — e.g. 100054992</span>';
-      addTitleRow(0);
-      addTitleBtn.style.display = 'none';
-      minNotice.textContent = '';
-      modeRow.style.display = 'none';
-      document.getElementById('keyword-suggest-row').style.display = 'none';
-      document.getElementById('container-input-row').style.display = 'none';
-    } else {
-      document.getElementById('title-hint').textContent = 'Leave blank to auto-generate';
-      titlesLabel.innerHTML = 'Titles <span class="required">*</span>';
-      modeRow.style.display = '';
-      setListicleMode('manual');
-    }
-  }
-
-  // Mode button clicks
-  document.querySelectorAll('.mode-btn').forEach(btn => {
-    btn.addEventListener('click', () => setListicleMode(btn.dataset.mode));
-  });
-
-  // Load titles from container
-  document.getElementById('load-container-btn').addEventListener('click', async () => {
-    const name = document.getElementById('container-name').value.trim();
-    if (!name) { showError('container-error'); return; }
-    hideError('container-error');
-    const status = document.getElementById('container-status');
-    const btn = document.getElementById('load-container-btn');
-    btn.disabled = true; btn.textContent = 'Loading...';
-    status.textContent = 'Looking up container...'; status.style.color = '#9ca3af';
-    try {
-      const resp = await fetch(`${API}/api/container-titles?name=${encodeURIComponent(name)}`);
-      const data = await resp.json();
-      if (!resp.ok || !data.titles || !data.titles.length) {
-        status.textContent = data.error || 'Container not found.'; status.style.color = '#ef4444';
-        return;
-      }
-      titlesList.innerHTML = '';
-      data.titles.forEach((t, i) => {
-        addTitleRow(i);
-        titlesList.querySelector('.title-row:last-child input').value = t.title;
-      });
-      addTitleBtn.style.display = '';
-      updateMinNotice();
-      status.textContent = `Loaded ${data.titles.length} titles from "${data.containerTitle}". Edit as needed.`;
-      status.style.color = '#00B5A3';
-    } catch (e) {
-      status.textContent = 'Error loading container.'; status.style.color = '#ef4444';
-    } finally {
-      btn.disabled = false; btn.textContent = 'Load titles';
-    }
-  });
-
-  // Keyword suggest
-  document.getElementById('suggest-btn').addEventListener('click', async () => {
-    const keywords = document.getElementById('keyword-input').value.trim();
-    if (!keywords) return;
-    const status = document.getElementById('suggest-status');
-    const btn = document.getElementById('suggest-btn');
-    btn.disabled = true;
-    btn.textContent = 'Finding titles...';
-    status.textContent = 'Searching Tubi catalog...';
-    try {
-      const resp = await fetch(`${API}/api/suggest-titles?keywords=${encodeURIComponent(keywords)}&count=${Math.max(titlesList.children.length, MIN_LISTICLE)}`);
-      const titles = await resp.json();
-      if (!titles.length) { status.textContent = 'No matching titles found. Try different keywords.'; return; }
-      // Fill existing rows, add more if needed
-      const rows = [...titlesList.querySelectorAll('input')];
-      titles.forEach((t, i) => {
-        if (i < rows.length) {
-          rows[i].value = t.title;
-        } else {
-          addTitleRow(titlesList.children.length);
-          titlesList.querySelector('.title-row:last-child input').value = t.title;
-        }
-      });
-      updateMinNotice();
-      status.textContent = `Suggested ${titles.length} titles from Tubi. Edit as needed.`;
-      status.style.color = '#00B5A3';
-    } catch (e) {
-      status.textContent = 'Error fetching suggestions.';
-    } finally {
-      btn.disabled = false;
-      btn.textContent = 'Suggest titles';
-    }
-  });
-
-  document.querySelectorAll('input[name="article-type"]').forEach(radio => {
-    radio.addEventListener('change', () => { setType(radio.value); hideError('type-error'); });
-  });
-  addTitleBtn.addEventListener('click', () => addTitleRow(titlesList.children.length));
-
-  function showError(id) { document.getElementById(id).classList.add('visible'); }
-  function hideError(id) { document.getElementById(id).classList.remove('visible'); }
-  document.getElementById('article-title').addEventListener('input', () => hideError('title-error'));
-
-  // --- Preview helpers ---
-
-  function setStatus(state, text) {
-    const el = document.getElementById('preview-status');
-    el.className = 'preview-status' + (state === 'generating' ? ' generating' : '');
-    el.style.color = state === 'done' ? '#00B5A3' : '';
-    el.innerHTML = state === 'generating'
-      ? `<div class="spinner"></div> ${text || 'Generating...'}`
-      : (text || (state === 'done' ? 'Done' : 'Waiting for input'));
-  }
-
-  function addLog(message, type = '') {
-    const line = document.createElement('div');
-    line.className = 'log-line' + (type ? ' ' + type : '');
-    line.textContent = message;
-    previewLog.appendChild(line);
-    previewLog.scrollTop = previewLog.scrollHeight;
-  }
-
-  function resetPreview() {
-    previewLog.innerHTML = '';
-    previewContent.innerHTML = '';
-    previewLog.classList.remove('visible');
-    previewContent.classList.remove('visible');
-    previewEmpty.style.display = '';
-    document.getElementById('scores-container').innerHTML = '';
-    document.getElementById('save-container').innerHTML = '';
-    document.getElementById('details-empty').style.display = '';
-    // Reset article header
-    const titleEl = document.getElementById('ph-title');
-    titleEl.textContent = 'New article';
-    titleEl.classList.remove('has-content');
-    document.getElementById('ph-meta-bar').style.display = 'none';
-    document.getElementById('ph-tubi-btn').style.display = 'none';
-    // Switch back to Workspace tab and remove badge
-    document.querySelectorAll('.pv-tab').forEach(b => b.classList.remove('active'));
-    document.getElementById('tab-workspace-btn').classList.add('active');
-    document.getElementById('tab-workspace').style.display = 'flex';
-    document.getElementById('tab-details').style.display = 'none';
-    document.getElementById('tab-details-btn').querySelector('.tab-badge')?.remove();
-  }
-
-  // --- Article rendering ---
-
-  function renderSingle(output) {
-    const paragraphs = (text, editable) => (text || '').split(/\n\n+/).map(p =>
-      `<p ${editable ? 'contenteditable="true"' : ''}>${p.trim()}</p>`).join('');
-
-    let html = `
-      <div class="article-headline" contenteditable="true">${esc(output.headline)}</div>
-      <div class="article-subheadline" contenteditable="true">${esc(output.subheadline)}</div>
-      <hr class="article-divider">
-      <div class="article-section-label">Introduction</div>
-      <div class="article-body">${paragraphs(output.introduction, true)}</div>
-    `;
-
-    if (output.pullQuote) {
-      html += `<div class="article-pull-quote" contenteditable="true">${esc(output.pullQuote)}</div>`;
-    }
-
-    if (output.cast?.length) {
-      html += `<div class="article-section-label">Cast</div>`;
-      output.cast.forEach(c => {
-        html += `<div class="cast-entry">
-          <div class="cast-name" contenteditable="true">${esc(c.name)}</div>
-          <div class="cast-bio" contenteditable="true">${esc(c.bio)}</div>
-        </div>`;
-      });
-    }
-
-    if (output.whyWatchIt) {
-      html += `
-        <hr class="article-divider">
-        <div class="article-section-label">Why watch it</div>
-        <div class="article-body">${paragraphs(output.whyWatchIt, true)}</div>
-      `;
-    }
-
-    if (output.moreDetails?.director) {
-      html += `
-        <hr class="article-divider">
-        <div class="article-section-label">Details</div>
-        <div class="article-body">
-          <p><strong>Director:</strong> <span contenteditable="true">${esc(output.moreDetails.director)}</span></p>
-          ${output.moreDetails.fullCast?.length ? `<p><strong>Cast:</strong> <span contenteditable="true">${esc(output.moreDetails.fullCast.join(', '))}</span></p>` : ''}
-        </div>
-      `;
-    }
-
-    return html;
-  }
-
-  function renderScores(brandScore, brandNotes, gscQueries, articleOutput) {
-    let html = '<div class="scores-section"><div class="scores-title">Quality scores</div>';
-
-    if (brandScore !== null) {
-      const pct = (brandScore / 5) * 100;
-      const barClass = brandScore >= 4 ? '' : brandScore >= 3.5 ? 'low' : 'fail';
-      html += `
-        <div class="score-row">
-          <span class="score-label">Brand alignment</span>
-          <div class="score-bar-wrap"><div class="score-bar ${barClass}" style="width:${pct}%"></div></div>
-          <span class="score-value">${brandScore.toFixed(1)}/5</span>
-        </div>`;
-    }
-
-    html += `
-      <div class="score-row">
-        <span class="score-label">Quality gate</span>
-        <span class="quality-badge">✓ Passed</span>
+  results.forEach(r => {
+    const el = document.createElement('div');
+    el.className = 'dd-item';
+    const typeClass = r.type === 'series' ? 'series' : 'movie';
+    const typeLabel = r.type === 'series' ? 'Series' : 'Movie';
+    const poster = r.posterart
+      ? `<img class="dd-poster" src="${esc(r.posterart)}" alt="" loading="lazy" onerror="this.style.display='none';this.nextSibling.style.display='flex'">`
+      + `<div class="dd-poster-placeholder" style="display:none">🎬</div>`
+      : `<div class="dd-poster-placeholder">🎬</div>`;
+    el.innerHTML = `
+      ${poster}
+      <div class="dd-info">
+        <div class="dd-title">${esc(r.title)}</div>
+        <div class="dd-meta">${r.year || '—'}</div>
       </div>
-      ${brandScore !== null && brandScore < 3.5 ? `<div class="score-notes" style="color:#f59e0b;">⚠ Brand score is below 3.5 — this draft may need editing before publishing.</div>` : ''}`;
-
-    if (brandNotes) {
-      html += `<div class="score-notes">${esc(brandNotes)}</div>`;
-    }
-
-    if (gscQueries && !gscQueries.length) {
-      html += `<div class="scores-title" style="margin-top:20px">SEO — top search queries</div>
-        <div style="font-size:12px;color:#9ca3af;margin-top:6px;">No GSC data found for this title. It may be too new or have low search volume.</div>`;
-    }
-    if (gscQueries && gscQueries.length) {
-      const articleText = articleOutput ? [
-        articleOutput.headline, articleOutput.subheadline, articleOutput.introduction,
-        articleOutput.pullQuote, articleOutput.whyWatchIt,
-        ...(articleOutput.cast || []).map(c => c.bio),
-      ].join(' ').toLowerCase() : '';
-
-      // Smarter matching: all meaningful words in the query must appear somewhere in the article
-      const stopWords = new Set(['a','an','the','to','on','in','is','it','of','for','and','or','i','can','where']);
-      function queryKeywords(q) {
-        return q.toLowerCase().split(/\s+/).filter(w => w.length > 1 && !stopWords.has(w));
-      }
-      function articleCoversQuery(q) {
-        return queryKeywords(q).every(word => articleText.includes(word));
-      }
-
-      // Classify query intent
-      function queryIntent(q) {
-        const lower = q.toLowerCase();
-        if (/where|how|watch|stream|free|tubi/.test(lower)) return 'navigational';
-        return 'informational';
-      }
-
-      // Check intent signals in article
-      const hasNavSignals = /tubi|free|stream|watch|available/i.test(articleText);
-      const navQueries = gscQueries.filter(q => queryIntent(q.query) === 'navigational');
-      const infoQueries = gscQueries.filter(q => queryIntent(q.query) === 'informational');
-      const coveredCount = gscQueries.filter(q => articleCoversQuery(q.query)).length;
-
-      html += `
-        <div class="scores-title" style="margin-top:20px">SEO — top search queries</div>
-        <div style="font-size:12px;color:#6b7280;margin-bottom:6px;line-height:1.5;">
-          Real search terms driving traffic to this title on Tubi. The article should address their intent — not just repeat the phrase.
-        </div>
-        <div style="display:flex;gap:10px;margin-bottom:12px;flex-wrap:wrap;">
-          <div style="flex:1;min-width:130px;background:#f9fafb;border-radius:8px;padding:10px 12px;">
-            <div style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:#9ca3af;margin-bottom:4px;">Keyword coverage</div>
-            <div style="font-size:20px;font-weight:700;color:${coveredCount >= gscQueries.length * 0.6 ? '#00B5A3' : coveredCount >= gscQueries.length * 0.3 ? '#f59e0b' : '#ef4444'}">${coveredCount}/${gscQueries.length}</div>
-            <div style="font-size:11px;color:#9ca3af;">key terms addressed</div>
-          </div>
-          <div style="flex:1;min-width:130px;background:#f9fafb;border-radius:8px;padding:10px 12px;">
-            <div style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:#9ca3af;margin-bottom:4px;">Where to watch</div>
-            <div style="font-size:20px;font-weight:700;color:${hasNavSignals ? '#00B5A3' : '#ef4444'}">${hasNavSignals ? '✓' : '✗'}</div>
-            <div style="font-size:11px;color:#9ca3af;">${navQueries.length} navigational quer${navQueries.length === 1 ? 'y' : 'ies'}</div>
-          </div>
-          <div style="flex:1;min-width:130px;background:#f9fafb;border-radius:8px;padding:10px 12px;">
-            <div style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:#9ca3af;margin-bottom:4px;">Title + context</div>
-            <div style="font-size:20px;font-weight:700;color:#00B5A3">${infoQueries.filter(q => articleCoversQuery(q.query)).length}/${infoQueries.length}</div>
-            <div style="font-size:11px;color:#9ca3af;">informational queries</div>
-          </div>
-        </div>
-        <table class="seo-table">
-          <thead>
-            <tr>
-              <th>Query</th>
-              <th>Intent</th>
-              <th>Impressions</th>
-              <th>Clicks</th>
-              <th>Pos</th>
-              <th>Addressed</th>
-            </tr>
-          </thead>
-          <tbody>
-            ${gscQueries.map(q => {
-              const covered = articleCoversQuery(q.query);
-              const intent = queryIntent(q.query);
-              return `<tr>
-                <td>${esc(q.query)}</td>
-                <td style="font-size:11px;color:#9ca3af;">${intent}</td>
-                <td>${q.impressions.toLocaleString()}</td>
-                <td>${q.clicks.toLocaleString()}</td>
-                <td class="pos-${q.position <= 3 ? 'top' : q.position <= 10 ? 'mid' : 'low'}">${q.position.toFixed(1)}</td>
-                <td style="font-size:13px;">${covered ? '<span style="color:#00B5A3;font-weight:700;">✓</span>' : '<span style="color:#d1d5db;">–</span>'}</td>
-              </tr>`;
-            }).join('')}
-          </tbody>
-        </table>
-        <div style="font-size:11px;color:#c0c4cb;margin-top:8px;">Source: Google Search Console · sc-domain:tubitv.com · Jan 1 – today</div>`;
-    }
-
-    html += '</div>';
-    return html;
-  }
-
-  function renderListicle(output) {
-    const paragraphs = text => (text || '').split(/\n\n+/).map(p =>
-      `<p>${p.trim()}</p>`).join('');
-
-    let html = `
-      <div class="article-headline">${esc(output.headline)}</div>
-      ${output.angle ? `<div class="article-subheadline">${esc(output.angle)}</div>` : ''}
-      <hr class="article-divider">
-      <div class="article-body">${paragraphs(output.intro)}</div>
-      <hr class="article-divider">
+      <span class="dd-type-badge ${typeClass}">${typeLabel}</span>
     `;
+    el.addEventListener('click', () => selectTitle(r));
+    searchDropdown.appendChild(el);
+  });
+  searchDropdown.classList.add('open');
+}
 
-    if (output.entries?.length) {
-      output.entries.forEach((e, i) => {
-        html += `<div class="listicle-entry">
-          <div class="listicle-entry-title">${i + 1}. ${esc(e.title)}</div>
-          <div class="listicle-entry-blurb">${esc(e.blurb)}</div>
-        </div>`;
-      });
-    }
+function closeDropdown() {
+  searchDropdown.classList.remove('open');
+}
 
-    if (output.closing) {
-      html += `<hr class="article-divider"><div class="article-body">${paragraphs(output.closing)}</div>`;
-    }
+function selectTitle(r) {
+  selectedTitle = r;
+  closeDropdown();
+  searchInput.value = '';
+  renderTitleCard(r);
+  document.getElementById('generate-btn').disabled = false;
+}
 
-    return html;
+function renderTitleCard(r) {
+  const card = document.getElementById('title-card');
+  document.getElementById('tc-title').textContent = r.title;
+  document.getElementById('tc-meta').textContent =
+    [r.year || null, r.type === 'series' ? 'TV Series' : 'Movie'].filter(Boolean).join(' · ');
+  document.getElementById('tc-id').textContent = `ID: ${r.id}`;
+
+  const wrap = document.getElementById('tc-poster-wrap');
+  if (r.posterart) {
+    wrap.innerHTML = `<img class="tc-poster" src="${esc(r.posterart)}" alt="" loading="lazy" onerror="this.outerHTML='<div class=tc-poster-placeholder>🎬</div>'">`;
+  } else {
+    wrap.innerHTML = `<div class="tc-poster-placeholder">🎬</div>`;
   }
 
-  function esc(str) {
-    return (str || '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+  card.classList.add('visible');
+}
+
+document.getElementById('tc-clear').addEventListener('click', () => {
+  selectedTitle = null;
+  document.getElementById('title-card').classList.remove('visible');
+  document.getElementById('generate-btn').disabled = true;
+  searchInput.value = '';
+  searchInput.focus();
+});
+
+// ── Pathway selector ───────────────────────────────────────────────────────────
+
+let currentPathway = 'single';
+
+function setPathway(pw) {
+  currentPathway = pw;
+  document.querySelectorAll('.pathway-btn').forEach(b => b.classList.remove('active'));
+  document.getElementById(`pw-${pw}`).classList.add('active');
+  document.querySelectorAll('.pathway-panel').forEach(p => p.classList.remove('active'));
+  document.getElementById(`pathway-${pw}`).classList.add('active');
+  // Reset progress panel
+  document.getElementById('pp-idle').style.display = '';
+  document.getElementById('pp-active').classList.remove('visible');
+  document.getElementById('done-card').classList.remove('visible');
+  document.getElementById('error-banner').classList.remove('visible');
+  if (pw === 'container') ensureContainersLoaded();
+}
+
+// ── Discover (Pathway 2) ───────────────────────────────────────────────────────
+
+let discoveredTitles = []; // { id, title, year, type, reason }
+
+// Default publish date to today
+document.addEventListener('DOMContentLoaded', () => {
+  const d = document.getElementById('publish-date-input');
+  if (d) d.value = new Date().toISOString().slice(0, 10);
+});
+
+async function startDiscover() {
+  const angle = document.getElementById('angle-input').value.trim();
+  if (angle.length < 5) return;
+  const publishDate = document.getElementById('publish-date-input').value || null;
+
+  const btn = document.getElementById('discover-btn');
+  const spinner = document.getElementById('discover-spinner');
+  const label = document.getElementById('discover-label');
+  btn.disabled = true;
+  spinner.classList.add('visible');
+  label.textContent = 'Searching…';
+
+  document.getElementById('review-section').classList.remove('visible');
+  document.getElementById('listicle-generate-btn').disabled = true;
+
+  // Show progress panel for discover stages
+  document.getElementById('pp-idle').style.display = 'none';
+  const ppActive = document.getElementById('pp-active');
+  ppActive.classList.add('visible');
+  document.getElementById('pp-heading').textContent = 'Discovering titles…';
+  document.getElementById('pp-subheading').textContent = 'Searching Tubi containers for your angle';
+  document.getElementById('done-card').classList.remove('visible');
+  document.getElementById('error-banner').classList.remove('visible');
+  document.getElementById('issue-list').innerHTML = '';
+  document.getElementById('issue-list').classList.remove('visible');
+  document.getElementById('attempt-badge').classList.remove('visible');
+  ['metadata','prompts','generate','quality','brand','save'].forEach(s => setStage(s, 'idle'));
+
+  // Repurpose stage rows for discover phases
+  setStage('metadata', 'active', 'Loading containers…');
+
+  let res;
+  try {
+    res = await fetch(`${API}/api/discover`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ angle, publishDate }),
+    });
+  } catch (err) {
+    onError(err.message || 'Network error');
+    resetDiscoverBtn();
+    return;
   }
 
-  // --- Save panel ---
+  const reader = res.body.getReader();
+  const decoder = new TextDecoder();
+  let buf = '';
 
-  function showSavePanel(event) {
-    currentGenResult = event;
-    selectedStatus = 'draft';
-    selectedTags = new Set();
+  while (true) {
+    const { done, value } = await reader.read();
+    if (done) break;
+    buf += decoder.decode(value, { stream: true });
+    const lines = buf.split('\n');
+    buf = lines.pop();
+    for (const line of lines) {
+      if (line.startsWith('data: ')) {
+        try { handleDiscoverEvent(JSON.parse(line.slice(6))); } catch {}
+      }
+    }
+  }
 
-    const allTags = ['Horror','Comedy','Drama','Action','Thriller','Sci-Fi','Romance','Documentary','Animation','Family','Crime','Originals','Latino','Sports','Classic'];
+  resetDiscoverBtn();
+}
 
-    document.getElementById('save-container').innerHTML = `
-      <div class="scores-section">
-        <div class="scores-title">Save article</div>
+function handleDiscoverEvent(evt) {
+  switch (evt.type) {
+    case 'stage': {
+      const map = { containers: 'metadata', match: 'prompts', titles: 'generate', select: 'quality' };
+      const stageId = map[evt.stage];
+      if (stageId) {
+        // mark prev done
+        const order = ['metadata','prompts','generate','quality'];
+        const idx = order.indexOf(stageId);
+        if (idx > 0) setStage(order[idx - 1], 'done');
+        setStage(stageId, 'active', evt.label);
+      }
+      break;
+    }
+    case 'containers_loaded':
+      document.getElementById('pp-subheading').textContent = `Found ${evt.count} containers`;
+      break;
+    case 'matched':
+      document.getElementById('pp-subheading').textContent =
+        `Matched: ${evt.containers.map(c => c.title).join(', ')}`;
+      break;
+    case 'candidates':
+      document.getElementById('pp-subheading').textContent = `${evt.count} candidate titles found`;
+      break;
+    case 'done': {
+      ['metadata','prompts','generate','quality'].forEach(s => setStage(s, 'done'));
+      discoveredTitles = evt.selected || [];
+      renderReviewGrid(discoveredTitles);
+      document.getElementById('pp-heading').textContent = 'Titles selected — review below';
+      document.getElementById('pp-subheading').textContent = `${discoveredTitles.length} titles ready. Remove any you don't want, then generate.`;
+      break;
+    }
+    case 'error':
+      onError(evt.message || 'Discovery failed');
+      break;
+  }
+}
 
-        <div style="margin-bottom:14px;">
-          <div style="font-size:12px;font-weight:700;color:#6b7280;margin-bottom:6px;">Tags</div>
-          <input type="text" id="save-tags" style="width:100%;padding:8px 12px;border:1px solid #e2e4e8;border-radius:8px;font-size:13px;font-family:inherit;outline:none;color:#1a1a1a;background:#fff;" placeholder="Type tags or click below..." />
-          <div style="margin-top:7px;display:flex;flex-wrap:wrap;gap:5px;" id="tag-chips">
-            ${allTags.map(t => `<button type="button" class="tag-chip" data-tag="${t}" style="padding:3px 10px;border:1px solid #e2e4e8;border-radius:99px;font-size:11px;font-weight:600;background:#fff;color:#6b7280;cursor:pointer;font-family:inherit;transition:all 0.1s;">${t}</button>`).join('')}
-          </div>
-        </div>
+function resetDiscoverBtn() {
+  const btn = document.getElementById('discover-btn');
+  const spinner = document.getElementById('discover-spinner');
+  const label = document.getElementById('discover-label');
+  btn.disabled = false;
+  spinner.classList.remove('visible');
+  label.textContent = 'Find Titles';
+}
 
-        <div style="margin-bottom:14px;">
-          <div style="font-size:12px;font-weight:700;color:#6b7280;margin-bottom:6px;">Hero image URL <span style="font-weight:400;color:#9ca3af;font-size:11px;">optional</span></div>
-          <input type="text" id="save-hero" style="width:100%;padding:8px 12px;border:1px solid #e2e4e8;border-radius:8px;font-size:13px;font-family:inherit;outline:none;color:#1a1a1a;background:#fff;" placeholder="https://..." />
-        </div>
+function renderReviewGrid(titles) {
+  const grid = document.getElementById('review-grid');
+  grid.innerHTML = '';
+  titles.forEach((t, i) => {
+    grid.appendChild(buildReviewItem(t, i));
+  });
+  document.getElementById('review-section').classList.add('visible');
+  updateReviewCount();
+}
 
-        <div style="margin-bottom:16px;">
-          <div style="font-size:12px;font-weight:700;color:#6b7280;margin-bottom:6px;">Status</div>
-          <div style="display:flex;gap:8px;">
-            <button type="button" id="save-status-draft" onclick="selectSaveStatus('draft')" style="flex:1;padding:8px;border:2px solid #00B5A3;border-radius:8px;font-size:12px;font-weight:600;background:rgba(0,181,163,0.08);color:#00B5A3;cursor:pointer;font-family:inherit;">Draft</button>
-            <button type="button" id="save-status-ready" onclick="selectSaveStatus('ready')" style="flex:1;padding:8px;border:2px solid #e2e4e8;border-radius:8px;font-size:12px;font-weight:600;background:#fff;color:#6b7280;cursor:pointer;font-family:inherit;">Ready for review</button>
-          </div>
-        </div>
-
-        <button type="button" onclick="saveArticle()" id="save-article-btn" style="width:100%;padding:10px 16px;border-radius:8px;border:none;background:#1a1a1a;color:#fff;font-size:14px;font-weight:600;cursor:pointer;font-family:inherit;transition:background 0.15s;">Save article</button>
-        <div id="save-msg" style="font-size:12px;margin-top:8px;text-align:center;min-height:18px;"></div>
+function buildReviewItem(t, i) {
+  const row = document.createElement('div');
+  row.className = 'review-item';
+  row.dataset.id = t.id;
+  const typeLabel = t.type === 'series' ? 'Series' : 'Movie';
+  row.innerHTML = `
+    <span class="ri-num">${i + 1}</span>
+    <div class="ri-info">
+      <div class="ri-title">${esc(t.title)}</div>
+      <div class="ri-meta">${t.year || '—'} · ${typeLabel}</div>
+      ${t.reason ? `<div class="ri-reason">${esc(t.reason)}</div>` : ''}
+      ${expiryBadge(t.availabilityEnds)}
+      <div class="ri-swap-search">
+        <svg class="ri-swap-icon" width="13" height="13" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+        <input class="ri-swap-input" type="text" placeholder="Search replacement…" autocomplete="off" />
+        <div class="ri-swap-spinner"></div>
+        <div class="ri-swap-dropdown"></div>
       </div>
-    `;
+    </div>
+    <div class="ri-actions">
+      <button class="ri-swap" title="Swap title">Swap</button>
+      <button class="ri-remove" title="Remove">×</button>
+    </div>
+  `;
 
-    document.getElementById('tag-chips').addEventListener('click', e => {
-      const chip = e.target.closest('.tag-chip');
-      if (!chip) return;
-      const tag = chip.dataset.tag;
-      if (selectedTags.has(tag)) {
-        selectedTags.delete(tag);
-        chip.style.background = '#fff';
-        chip.style.color = '#6b7280';
-        chip.style.borderColor = '#e2e4e8';
-      } else {
-        selectedTags.add(tag);
-        chip.style.background = '#1a1a1a';
-        chip.style.color = '#fff';
-        chip.style.borderColor = '#1a1a1a';
+  row.querySelector('.ri-swap').addEventListener('click', () => toggleSwapSearch(row));
+  row.querySelector('.ri-remove').addEventListener('click', () => {
+    discoveredTitles = discoveredTitles.filter(dt => dt.id !== t.id);
+    row.remove();
+    reindexReviewGrid();
+    updateReviewCount();
+  });
+
+  // Swap search logic
+  const swapInput = row.querySelector('.ri-swap-input');
+  const swapSpinner = row.querySelector('.ri-swap-spinner');
+  const swapDropdown = row.querySelector('.ri-swap-dropdown');
+  let swapTimer = null;
+  let swapSeq = 0;
+
+  swapInput.addEventListener('input', () => {
+    const q = swapInput.value.trim();
+    clearTimeout(swapTimer);
+    if (q.length < 2) { swapDropdown.classList.remove('open'); return; }
+    swapTimer = setTimeout(async () => {
+      const seq = ++swapSeq;
+      swapSpinner.classList.add('visible');
+      try {
+        const res = await fetch(`${API}/api/search?q=${encodeURIComponent(q)}`);
+        if (seq !== swapSeq) return;
+        const results = await res.json();
+        renderSwapDropdown(swapDropdown, results, row, t);
+      } catch {} finally {
+        if (seq === swapSeq) swapSpinner.classList.remove('visible');
       }
-      document.getElementById('save-tags').value = [...selectedTags].join(', ');
-    });
-  }
+    }, 280);
+  });
 
-  function selectSaveStatus(status) {
-    selectedStatus = status;
-    const dBtn = document.getElementById('save-status-draft');
-    const rBtn = document.getElementById('save-status-ready');
-    const onStyle = 'flex:1;padding:8px;border:2px solid #00B5A3;border-radius:8px;font-size:12px;font-weight:600;background:rgba(0,181,163,0.08);color:#00B5A3;cursor:pointer;font-family:inherit;';
-    const offStyle = 'flex:1;padding:8px;border:2px solid #e2e4e8;border-radius:8px;font-size:12px;font-weight:600;background:#fff;color:#6b7280;cursor:pointer;font-family:inherit;';
-    dBtn.style.cssText = status === 'draft' ? onStyle : offStyle;
-    rBtn.style.cssText = status === 'ready' ? onStyle : offStyle;
-  }
-
-  async function saveArticle() {
-    if (!currentGenResult) return;
-    const btn = document.getElementById('save-article-btn');
-    const msg = document.getElementById('save-msg');
-    btn.disabled = true;
-    btn.textContent = 'Saving...';
-    msg.textContent = '';
-
-    const tagsRaw = document.getElementById('save-tags').value;
-    const tags = tagsRaw.split(',').map(t => t.trim()).filter(Boolean);
-    const heroImageUrl = document.getElementById('save-hero').value.trim();
-
-    try {
-      const resp = await fetch(`${API}/api/articles/save`, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          articleTitle: currentGenResult.title || document.getElementById('article-title').value.trim(),
-          articleType,
-          output: currentGenResult.output,
-          contentId: currentGenResult.contentId || null,
-          brandScore: currentGenResult.brandScore ?? null,
-          brandNotes: currentGenResult.brandNotes || '',
-          gscQueries: currentGenResult.gscQueries || [],
-          tags,
-          heroImageUrl,
-          secondaryImageUrls: [],
-          status: selectedStatus,
-        }),
-      });
-      const data = await resp.json();
-      if (data.slug) {
-        msg.innerHTML = `Saved! <a href="/articles" style="color:#00B5A3;font-weight:700;text-decoration:none;">View all articles →</a>`;
-        btn.textContent = 'Saved';
-        btn.style.background = '#00B5A3';
-      } else {
-        throw new Error(data.error || 'Save failed');
-      }
-    } catch (e) {
-      msg.textContent = e.message || 'Save failed';
-      msg.style.color = '#ef4444';
-      btn.disabled = false;
-      btn.textContent = 'Save article';
-    }
-  }
-
-  // --- SSE generate ---
-
-  async function runGenerate(articleTitle, type, titles, containerName) {
-    generating = true;
-    const btn = document.getElementById('generate-btn');
-    btn.disabled = true;
-    btn.textContent = 'Generating...';
-
-    resetPreview();
-    previewEmpty.style.display = 'none';
-    previewLog.classList.add('visible');
-    setStatus('generating');
-
-    const outputs = [];
-
-    try {
-      const resp = await fetch(`${API}/api/generate`, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ articleTitle, articleType: type, titles, containerName }),
-      });
-
-      if (!resp.ok) {
-        const err = await resp.json().catch(() => ({ error: resp.statusText }));
-        addLog(err.error || 'Server error', 'err');
-        setStatus('', 'Error');
-        return;
-      }
-
-      const reader = resp.body.getReader();
-      const decoder = new TextDecoder();
-      let buf = '';
-
-      while (true) {
-        const { done, value } = await reader.read();
-        if (done) break;
-        buf += decoder.decode(value, { stream: true });
-        const lines = buf.split('\n');
-        buf = lines.pop(); // keep incomplete line
-
-        for (const line of lines) {
-          if (!line.startsWith('data: ')) continue;
-          let event;
-          try { event = JSON.parse(line.slice(6)); } catch { continue; }
-
-          switch (event.type) {
-            case 'status':
-              addLog(event.message);
-              break;
-
-            case 'match_result':
-              if (event.matched.length) {
-                event.matched.forEach(m => addLog(`Matched: "${m.query}" → "${m.found}"`, 'ok'));
-              }
-              if (event.unmatched.length) {
-                event.unmatched.forEach(u => addLog(`Not found: "${u}"`, 'err'));
-              }
-              break;
-
-            case 'attempt':
-              addLog(`Attempt ${event.attempt} of ${event.total}...`);
-              break;
-
-            case 'title_done': {
-              addLog(`Done: "${event.title}"`, 'ok');
-              outputs.push(event);
-              // Hide log, show article
-              previewLog.classList.remove('visible');
-              const articleHtml = event.output.entries
-                ? renderListicle(event.output)
-                : renderSingle(event.output);
-              previewContent.innerHTML = articleHtml;
-              previewContent.classList.add('visible');
-              document.getElementById('preview-body').scrollTop = 0;
-              // Update Dossier-style article header
-              updateArticleHeader(event);
-              // Scores + save panel in Details tab
-              document.getElementById('details-empty').style.display = 'none';
-              document.getElementById('scores-container').innerHTML =
-                renderScores(event.brandScore ?? null, event.brandNotes ?? '', event.gscQueries ?? [], event.output);
-              currentGenResult = event;
-              showSavePanel(event);
-              // Badge the Details tab to signal it has content
-              notifyDetailsReady();
-              break;
-            }
-
-            case 'title_failed':
-              addLog(`Failed: "${event.title}" — ${event.reason}`, 'err');
-              break;
-
-            case 'done':
-              setStatus('done', `Done — ${event.succeeded} succeeded, ${event.failed} failed`);
-              break;
-
-            case 'error':
-              addLog(event.message, 'err');
-              // Show error box if nothing was generated yet
-              if (outputs.length === 0) {
-                previewContent.innerHTML = `<div class="error-box">${esc(event.message)}</div>`;
-                previewContent.classList.add('visible');
-              }
-              setStatus('', 'Error');
-              break;
-          }
-        }
-      }
-    } catch (err) {
-      addLog(err.message, 'err');
-      setStatus('', 'Error');
-    } finally {
-      generating = false;
-      btn.disabled = false;
-      btn.textContent = 'Generate';
-    }
-  }
-
-  // --- Shared title search dropdown ---
-  (function() {
-    const dd = document.getElementById('search-dd');
-    let activeInput = null;
-    let timer = null;
-
-    document.addEventListener('input', function(e) {
-      if (!e.target.classList.contains('title-search-input')) return;
-      activeInput = e.target;
-      clearTimeout(timer);
-      const q = activeInput.value.trim();
-      if (q.length < 2 || /^\d+$/.test(q)) { dd.style.display = 'none'; return; }
-      timer = setTimeout(function() {
-        fetch(API + '/api/search?q=' + encodeURIComponent(q))
-          .then(function(r) { return r.json(); })
-          .then(function(data) {
-            if (!data || !data.length) { dd.style.display = 'none'; return; }
-            const rect = activeInput.getBoundingClientRect();
-            dd.style.top   = (rect.bottom + window.scrollY + 4) + 'px';
-            dd.style.left  = rect.left + 'px';
-            dd.style.width = rect.width + 'px';
-            dd.innerHTML = data.slice(0, 10).map(function(r) {
-              const t = String(r.title || '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
-              return '<div data-id="' + r.id + '" style="padding:9px 14px;cursor:pointer;font-size:13px;border-bottom:1px solid #f3f4f6;display:flex;align-items:center;justify-content:space-between;">'
-                + '<span style="font-weight:600;color:#1a1a1a;">' + t + '</span>'
-                + '<span style="color:#9ca3af;font-size:11px;margin-left:10px;white-space:nowrap;">' + (r.year || '') + ' · ' + (r.type || '') + '</span>'
-                + '</div>';
-            }).join('');
-            dd.style.display = 'block';
-          })
-          .catch(function(err) { console.error('Search error:', err); dd.style.display = 'none'; });
-      }, 300);
-    });
-
-    dd.addEventListener('mousedown', function(e) {
-      const item = e.target.closest('[data-id]');
-      if (!item || !activeInput) return;
+  swapInput.addEventListener('keydown', e => {
+    if (e.key === 'Escape') { swapDropdown.classList.remove('open'); toggleSwapSearch(row, false); }
+    if (e.key === 'Enter') { const hi = swapDropdown.querySelector('.highlighted'); if (hi) hi.click(); }
+    if (e.key === 'ArrowDown' || e.key === 'ArrowUp') {
       e.preventDefault();
-      activeInput.value = item.dataset.id;
-      dd.style.display = 'none';
-      updateMinNotice();
-    });
-
-    document.addEventListener('focusout', function(e) {
-      if (e.target.classList.contains('title-search-input')) {
-        setTimeout(function() { dd.style.display = 'none'; }, 200);
-      }
-    });
-  })();
-
-  // --- Submit ---
-
-  document.getElementById('generate-btn').addEventListener('click', () => {
-    if (generating) return;
-
-    let valid = true;
-    const title = document.getElementById('article-title').value.trim();
-    if (!articleType) { showError('type-error'); valid = false; }
-    if (articleType === 'listicle' && listicleMode === 'container') {
-      const containerName = document.getElementById('container-name').value.trim();
-      if (!containerName) { showError('container-error'); valid = false; }
+      const items = [...swapDropdown.querySelectorAll('.dd-item')];
+      const cur = items.findIndex(i => i.classList.contains('highlighted'));
+      const next = e.key === 'ArrowDown' ? Math.min(cur + 1, items.length - 1) : Math.max(cur - 1, 0);
+      items.forEach((item, idx) => item.classList.toggle('highlighted', idx === next));
     }
-    if (articleType) {
-      const titles = getTitles();
-      const minCount = articleType === 'listicle' ? MIN_LISTICLE : 1;
-      if (titles.length < minCount) { showError('titles-error'); valid = false; }
-    }
-    if (!valid) return;
-
-    const containerName = (articleType === 'listicle' && listicleMode === 'container')
-      ? document.getElementById('container-name').value.trim()
-      : null;
-    runGenerate(title, articleType, getTitles(), containerName);
   });
-</script>
 
+  document.addEventListener('click', e => {
+    if (!row.contains(e.target)) swapDropdown.classList.remove('open');
+  });
+
+  return row;
+}
+
+function toggleSwapSearch(row, forceOpen) {
+  const wrap = row.querySelector('.ri-swap-search');
+  const input = row.querySelector('.ri-swap-input');
+  const isOpen = wrap.classList.contains('open');
+  const open = forceOpen !== undefined ? forceOpen : !isOpen;
+  wrap.classList.toggle('open', open);
+  if (open) { input.value = ''; input.focus(); }
+}
+
+function renderSwapDropdown(dropdown, results, row, oldTitle) {
+  dropdown.innerHTML = '';
+  if (!results.length) {
+    dropdown.innerHTML = '<div class="dd-empty">No results</div>';
+    dropdown.classList.add('open');
+    return;
+  }
+  results.slice(0, 8).forEach(r => {
+    // Don't show titles already in the list
+    if (discoveredTitles.some(dt => dt.id === r.id)) return;
+    const el = document.createElement('div');
+    el.className = 'dd-item';
+    const typeClass = r.type === 'series' ? 'series' : 'movie';
+    const typeLabel = r.type === 'series' ? 'Series' : 'Movie';
+    el.innerHTML = `
+      <div class="dd-poster-placeholder">🎬</div>
+      <div class="dd-info">
+        <div class="dd-title">${esc(r.title)}</div>
+        <div class="dd-meta">${r.year || '—'}</div>
+      </div>
+      <span class="dd-type-badge ${typeClass}">${typeLabel}</span>
+    `;
+    el.addEventListener('click', () => swapTitle(row, oldTitle, r));
+    dropdown.appendChild(el);
+  });
+  dropdown.classList.add('open');
+}
+
+function expiryBadge(ends) {
+  if (ends === undefined) return ''; // no availability data (e.g. swapped-in title)
+  if (!ends) return '<span class="ri-expiry open">Always available</span>';
+  const days = Math.ceil((new Date(ends) - Date.now()) / (1000 * 60 * 60 * 24));
+  const label = `Expires ${new Date(ends).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}`;
+  const cls = days <= 7 ? 'critical' : days <= 30 ? 'warning' : 'open';
+  return `<span class="ri-expiry ${cls}">${label}</span>`;
+}
+
+function swapTitle(row, oldTitle, newTitle) {
+  const idx = discoveredTitles.findIndex(t => t.id === oldTitle.id);
+  if (idx === -1) return;
+  const replacement = { id: newTitle.id, title: newTitle.title, year: newTitle.year, type: newTitle.type, reason: 'Manually added', availabilityEnds: undefined };
+  discoveredTitles[idx] = replacement;
+  const newRow = buildReviewItem(replacement, idx);
+  row.replaceWith(newRow);
+  reindexReviewGrid();
+  updateReviewCount();
+}
+
+function removeReviewItem(btn, id) {
+  discoveredTitles = discoveredTitles.filter(t => t.id !== id);
+  btn.closest('.review-item').remove();
+  reindexReviewGrid();
+  updateReviewCount();
+}
+
+function reindexReviewGrid() {
+  document.querySelectorAll('#review-grid .review-item').forEach((row, i) => {
+    row.querySelector('.ri-num').textContent = i + 1;
+  });
+}
+
+function updateReviewCount() {
+  const count = discoveredTitles.length;
+  document.getElementById('review-count').textContent = `${count} title${count !== 1 ? 's' : ''}`;
+  const notice = document.getElementById('review-min-notice');
+  const btn = document.getElementById('listicle-generate-btn');
+  if (count >= 5) {
+    notice.textContent = `${count} titles — ready to generate`;
+    notice.classList.add('met');
+    btn.disabled = false;
+  } else {
+    notice.textContent = `Need at least 5 titles (${count} selected)`;
+    notice.classList.remove('met');
+    btn.disabled = true;
+  }
+}
+
+function startListicleGenerate() {
+  if (discoveredTitles.length < 5 || generating) return;
+  const angle = document.getElementById('angle-input').value.trim();
+  if (!angle) return;
+
+  generating = true;
+  const btn = document.getElementById('listicle-generate-btn');
+  const spinner = document.getElementById('listicle-btn-spinner');
+  const label = document.getElementById('listicle-btn-label');
+  btn.disabled = true;
+  spinner.classList.add('visible');
+  label.textContent = 'Generating…';
+
+  document.getElementById('pp-idle').style.display = 'none';
+  const ppActive = document.getElementById('pp-active');
+  ppActive.classList.add('visible');
+  document.getElementById('pp-heading').textContent = `Generating listicle…`;
+  document.getElementById('pp-subheading').textContent = angle;
+
+  ['metadata','prompts','generate','quality','brand','save'].forEach(s => setStage(s, 'idle'));
+  document.getElementById('issue-list').innerHTML = '';
+  document.getElementById('issue-list').classList.remove('visible');
+  document.getElementById('done-card').classList.remove('visible');
+  document.getElementById('error-banner').classList.remove('visible');
+  document.getElementById('attempt-badge').classList.remove('visible');
+  currentAttempt = 0;
+  for (let i = 1; i <= 5; i++) setDotState(i, '');
+
+  runSSE_listicle(angle, discoveredTitles);
+}
+
+async function runSSE_listicle(angle, titles) {
+  let res;
+  try {
+    res = await fetch(`${API}/api/generate`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        mode: 'listicle',
+        angle,
+        titles: titles.map(t => ({ id: t.id, title: t.title, year: t.year })),
+      }),
+    });
+  } catch (err) {
+    onError(err.message || 'Network error');
+    finishListicleGenerate();
+    return;
+  }
+
+  const reader = res.body.getReader();
+  const decoder = new TextDecoder();
+  let buf = '';
+
+  while (true) {
+    const { done, value } = await reader.read();
+    if (done) break;
+    buf += decoder.decode(value, { stream: true });
+    const lines = buf.split('\n');
+    buf = lines.pop();
+    for (const line of lines) {
+      if (line.startsWith('data: ')) {
+        try { handleEvent(JSON.parse(line.slice(6))); } catch {}
+      }
+    }
+  }
+
+  finishListicleGenerate();
+}
+
+function finishListicleGenerate() {
+  generating = false;
+  const btn = document.getElementById('listicle-generate-btn');
+  const spinner = document.getElementById('listicle-btn-spinner');
+  const label = document.getElementById('listicle-btn-label');
+  if (btn) {
+    spinner.classList.remove('visible');
+    label.textContent = 'Generate Listicle';
+    btn.disabled = discoveredTitles.length < 5;
+  }
+}
+
+// ── Generation ─────────────────────────────────────────────────────────────────
+
+function esc(s) {
+  return String(s == null ? '' : s)
+    .replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')
+    .replace(/"/g,'&quot;');
+}
+
+function setStage(stageId, state, note) {
+  const row = document.getElementById(`stage-${stageId}`);
+  if (!row) return;
+  row.className = `stage-row ${state}`;
+  const icon = row.querySelector('.stage-icon');
+  if (state === 'active') {
+    icon.innerHTML = '<div class="s-spin"></div>';
+  } else if (state === 'done') {
+    icon.innerHTML = '<span class="s-check">✓</span>';
+  } else if (state === 'fail') {
+    icon.innerHTML = '<span class="s-fail">✗</span>';
+  } else if (state === 'retry') {
+    icon.innerHTML = '<span class="s-retry">↺</span>';
+  } else {
+    icon.innerHTML = '<div class="s-dot"></div>';
+  }
+  if (note !== undefined) {
+    document.getElementById(`note-${stageId}`).textContent = note || '';
+  }
+}
+
+function setDotState(attempt, state) {
+  const dot = document.getElementById(`dot-${attempt}`);
+  if (dot) {
+    dot.className = `attempt-dot ${state}`;
+  }
+}
+
+let currentAttempt = 0;
+
+function startGenerate() {
+  if (!selectedTitle || generating) return;
+  generating = true;
+
+  // UI: show generating state
+  document.getElementById('generate-btn').disabled = true;
+  document.getElementById('btn-spinner').classList.add('visible');
+  document.getElementById('btn-label').textContent = 'Generating…';
+
+  document.getElementById('pp-idle').style.display = 'none';
+  const ppActive = document.getElementById('pp-active');
+  ppActive.classList.add('visible');
+  document.getElementById('pp-heading').textContent = `Generating: ${selectedTitle.title}`;
+  document.getElementById('pp-subheading').textContent = 'This usually takes 30–60 seconds';
+
+  // Reset stages
+  ['metadata','prompts','generate','quality','brand','save'].forEach(s => setStage(s, 'idle'));
+  document.getElementById('issue-list').innerHTML = '';
+  document.getElementById('issue-list').classList.remove('visible');
+  document.getElementById('done-card').classList.remove('visible');
+  document.getElementById('error-banner').classList.remove('visible');
+  document.getElementById('attempt-badge').classList.remove('visible');
+  currentAttempt = 0;
+
+  for (let i = 1; i <= 5; i++) setDotState(i, '');
+
+  const es = new EventSource(`/api/generate-stream?contentId=${encodeURIComponent(selectedTitle.id)}`);
+  // We need POST not GET — use fetch + manual SSE reader
+  es.close();
+  runSSE(selectedTitle.id);
+}
+
+async function runSSE(contentId) {
+  let res;
+  try {
+    res = await fetch(`${API}/api/generate`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ mode: 'single', contentId }),
+    });
+  } catch (err) {
+    onError(err.message || 'Network error');
+    return;
+  }
+
+  const reader = res.body.getReader();
+  const decoder = new TextDecoder();
+  let buf = '';
+
+  while (true) {
+    const { done, value } = await reader.read();
+    if (done) break;
+    buf += decoder.decode(value, { stream: true });
+    const lines = buf.split('\n');
+    buf = lines.pop();
+    for (const line of lines) {
+      if (line.startsWith('data: ')) {
+        try {
+          const evt = JSON.parse(line.slice(6));
+          handleEvent(evt);
+        } catch {}
+      }
+    }
+  }
+
+  // Process any remaining
+  if (buf.startsWith('data: ')) {
+    try { handleEvent(JSON.parse(buf.slice(6))); } catch {}
+  }
+
+  finishGenerate();
+}
+
+function handleEvent(evt) {
+  switch (evt.type) {
+    case 'stage': {
+      const stageMap = {
+        metadata: 'metadata',
+        prompts: 'prompts',
+        generate: 'generate',
+        quality: 'quality',
+        brand: 'brand',
+        save: 'save',
+      };
+      // Mark previous stage done
+      const stages = ['metadata','prompts','generate','quality','brand','save'];
+      const cur = stageMap[evt.stage];
+      const curIdx = stages.indexOf(cur);
+      if (curIdx > 0) {
+        setStage(stages[curIdx - 1], 'done');
+      }
+      setStage(cur, 'active', evt.label || '');
+
+      if (evt.stage === 'generate') {
+        // Parse attempt number
+        const m = (evt.label || '').match(/attempt (\d+)/i);
+        if (m) {
+          const attempt = parseInt(m[1]);
+          if (attempt > currentAttempt) {
+            if (currentAttempt > 0) setDotState(currentAttempt, 'fail');
+            currentAttempt = attempt;
+            setDotState(attempt, 'active');
+            document.getElementById('attempt-label').textContent = `${attempt}/5`;
+          }
+          document.getElementById('attempt-badge').classList.add('visible');
+        }
+      }
+      break;
+    }
+    case 'metadata': {
+      document.getElementById('pp-subheading').textContent =
+        `${evt.title} (${evt.year || '—'}) · ${evt.contentType || ''}`;
+      break;
+    }
+    case 'quality_fail': {
+      setStage('quality', 'retry');
+      if (currentAttempt > 0) setDotState(currentAttempt, 'fail');
+      showIssues(evt.issues || []);
+      break;
+    }
+    case 'brand_fail': {
+      setStage('brand', 'retry');
+      if (currentAttempt > 0) setDotState(currentAttempt, 'fail');
+      showIssues([`Brand score ${evt.score?.toFixed(1) || '?'}/5.0 (need 3.5+). ${evt.notes || ''}`]);
+      break;
+    }
+    case 'done': {
+      // Mark all remaining stages done
+      ['metadata','prompts','generate','quality','brand','save'].forEach(s => setStage(s, 'done'));
+      if (currentAttempt > 0) setDotState(currentAttempt, 'done');
+      document.getElementById('issue-list').classList.remove('visible');
+
+      const scoreText = evt.brandScore != null
+        ? `Brand score: ${Number(evt.brandScore).toFixed(1)}/5.0`
+        : 'Brand score: N/A';
+      document.getElementById('done-score').innerHTML = `<strong>${scoreText}</strong>`;
+      if (evt.brandNotes) {
+        document.getElementById('done-brand-notes').textContent = evt.brandNotes;
+      }
+      const editorLink = document.getElementById('editor-link');
+      editorLink.href = `/editor?slug=${encodeURIComponent(evt.slug)}`;
+
+      document.getElementById('done-card').classList.add('visible');
+      document.getElementById('pp-heading').textContent = 'Article generated';
+      document.getElementById('pp-subheading').textContent = `Saved as "${evt.slug}"`;
+
+      // Auto-redirect after 2s
+      setTimeout(() => {
+        window.location.href = `/editor?slug=${encodeURIComponent(evt.slug)}`;
+      }, 2000);
+      break;
+    }
+    case 'error': {
+      onError(evt.message || 'Unknown error');
+      break;
+    }
+  }
+}
+
+function showIssues(issues) {
+  const list = document.getElementById('issue-list');
+  list.innerHTML = issues.map(i => `<div class="issue-item">${esc(i)}</div>`).join('');
+  list.classList.add('visible');
+}
+
+function onError(msg) {
+  ['metadata','prompts','generate','quality','brand','save'].forEach(s => {
+    const row = document.getElementById(`stage-${s}`);
+    if (row && row.classList.contains('active')) setStage(s, 'fail');
+  });
+  document.getElementById('error-message').textContent = msg;
+  document.getElementById('error-banner').classList.add('visible');
+  finishGenerate();
+}
+
+function finishGenerate() {
+  generating = false;
+  document.getElementById('btn-spinner').classList.remove('visible');
+  document.getElementById('btn-label').textContent = 'Generate Article';
+  document.getElementById('generate-btn').disabled = !selectedTitle;
+}
+
+// ── Pathway 3: From Container ──────────────────────────────────────────────────
+
+let allContainers = [];
+let selectedContainer = null;
+let containerTitles = []; // all titles from container
+let selectedContainerTitleIds = new Set();
+
+// Load container list once when pathway 3 is first activated
+async function ensureContainersLoaded() {
+  if (allContainers.length) return;
+  document.getElementById('container-search-input').placeholder = 'Loading containers…';
+  try {
+    const res = await fetch(`${API}/api/containers`);
+    allContainers = await res.json();
+  } catch {}
+  document.getElementById('container-search-input').placeholder = 'Type to filter containers…';
+}
+
+const containerSearchInput = document.getElementById('container-search-input');
+const containerDropdown = document.getElementById('container-dropdown');
+
+containerSearchInput.addEventListener('focus', () => ensureContainersLoaded());
+
+containerSearchInput.addEventListener('input', () => {
+  const q = containerSearchInput.value.trim().toLowerCase();
+  if (!q) { containerDropdown.classList.remove('open'); return; }
+  const matches = allContainers
+    .filter(c => c.title.toLowerCase().includes(q) || (c.slug||'').toLowerCase().includes(q))
+    .slice(0, 12);
+  renderContainerDropdown(matches);
+});
+
+containerSearchInput.addEventListener('keydown', e => {
+  if (e.key === 'Escape') containerDropdown.classList.remove('open');
+  if (e.key === 'Enter') {
+    const hi = containerDropdown.querySelector('.highlighted');
+    if (hi) hi.click();
+  }
+  if (e.key === 'ArrowDown' || e.key === 'ArrowUp') {
+    e.preventDefault();
+    const items = [...containerDropdown.querySelectorAll('.dd-item')];
+    const cur = items.findIndex(i => i.classList.contains('highlighted'));
+    const next = e.key === 'ArrowDown' ? Math.min(cur + 1, items.length - 1) : Math.max(cur - 1, 0);
+    items.forEach((i, idx) => i.classList.toggle('highlighted', idx === next));
+  }
+});
+
+document.addEventListener('click', e => {
+  if (!containerSearchInput.contains(e.target) && !containerDropdown.contains(e.target)) {
+    containerDropdown.classList.remove('open');
+  }
+});
+
+function renderContainerDropdown(containers) {
+  containerDropdown.innerHTML = '';
+  if (!containers.length) {
+    containerDropdown.innerHTML = '<div class="dd-empty">No containers found</div>';
+    containerDropdown.classList.add('open');
+    return;
+  }
+  containers.forEach(c => {
+    const el = document.createElement('div');
+    el.className = 'dd-item';
+    el.innerHTML = `
+      <div class="dd-poster-placeholder" style="height:36px;width:36px;">📦</div>
+      <div class="dd-info">
+        <div class="dd-title">${esc(c.title)}</div>
+        <div class="dd-meta">${esc(c.subtitle || c.slug || '')}</div>
+      </div>
+    `;
+    el.addEventListener('click', () => pickContainer(c));
+    containerDropdown.appendChild(el);
+  });
+  containerDropdown.classList.add('open');
+}
+
+function pickContainer(c) {
+  selectedContainer = c;
+  containerDropdown.classList.remove('open');
+  containerSearchInput.value = '';
+  document.getElementById('selected-container-name').textContent = c.title;
+  document.getElementById('selected-container').classList.add('visible');
+  document.getElementById('load-container-btn').disabled = false;
+  document.getElementById('ct-section').classList.remove('visible');
+  selectedContainerTitleIds.clear();
+}
+
+document.getElementById('sc-clear').addEventListener('click', () => {
+  selectedContainer = null;
+  document.getElementById('selected-container').classList.remove('visible');
+  document.getElementById('load-container-btn').disabled = true;
+  document.getElementById('ct-section').classList.remove('visible');
+  containerTitles = [];
+  selectedContainerTitleIds.clear();
+});
+
+async function loadContainerTitles() {
+  if (!selectedContainer) return;
+  const btn = document.getElementById('load-container-btn');
+  const spinner = document.getElementById('load-spinner');
+  const label = document.getElementById('load-label');
+  btn.disabled = true;
+  spinner.classList.add('visible');
+  label.textContent = 'Loading…';
+
+  try {
+    const res = await fetch(`${API}/api/container-titles?id=${encodeURIComponent(selectedContainer.id)}`);
+    const data = await res.json();
+    if (!res.ok || !data.titles) throw new Error(data.error || 'Failed to load titles');
+    containerTitles = data.titles;
+    renderContainerTitles(containerTitles);
+  } catch (err) {
+    document.getElementById('ct-min-notice').textContent = err.message;
+    document.getElementById('ct-min-notice').classList.remove('met');
+    document.getElementById('ct-section').classList.add('visible');
+  } finally {
+    spinner.classList.remove('visible');
+    label.textContent = 'Reload';
+    btn.disabled = false;
+  }
+}
+
+function renderContainerTitles(titles) {
+  const list = document.getElementById('ct-list');
+  list.innerHTML = '';
+  selectedContainerTitleIds.clear();
+
+  titles.forEach(t => {
+    const el = document.createElement('div');
+    el.className = 'ct-item';
+    el.dataset.id = t.id;
+    el.innerHTML = `
+      <div class="ct-check">✓</div>
+      <span class="ct-item-title">${esc(t.title)}</span>
+      <span class="ct-item-year">${t.year || ''}</span>
+    `;
+    el.addEventListener('click', () => toggleContainerTitle(el, t));
+    list.appendChild(el);
+  });
+
+  document.getElementById('ct-section').classList.add('visible');
+  updateCtCount();
+}
+
+function toggleContainerTitle(el, t) {
+  const id = t.id;
+  if (selectedContainerTitleIds.has(id)) {
+    selectedContainerTitleIds.delete(id);
+    el.classList.remove('selected');
+  } else {
+    if (selectedContainerTitleIds.size >= 10) return; // max 10
+    selectedContainerTitleIds.add(id);
+    el.classList.add('selected');
+  }
+  updateCtCount();
+}
+
+function updateCtCount() {
+  const count = selectedContainerTitleIds.size;
+  const notice = document.getElementById('ct-min-notice');
+  const btn = document.getElementById('ct-generate-btn');
+  document.getElementById('ct-count').textContent = `${count}/10 selected`;
+  if (count >= 5) {
+    notice.textContent = `${count} titles selected — ready to generate`;
+    notice.classList.add('met');
+    btn.disabled = false;
+  } else {
+    notice.textContent = `Select at least 5 titles (${count} selected)`;
+    notice.classList.remove('met');
+    btn.disabled = true;
+  }
+}
+
+function startContainerListicle() {
+  if (selectedContainerTitleIds.size < 5 || generating) return;
+  const angle = document.getElementById('ct-angle-input').value.trim()
+    || `Best titles from ${selectedContainer?.title || 'Tubi'}`;
+
+  const titles = containerTitles
+    .filter(t => selectedContainerTitleIds.has(t.id))
+    .map(t => ({ id: t.id, title: t.title, year: t.year }));
+
+  generating = true;
+  const btn = document.getElementById('ct-generate-btn');
+  const spinner = document.getElementById('ct-btn-spinner');
+  const label = document.getElementById('ct-btn-label');
+  btn.disabled = true;
+  spinner.classList.add('visible');
+  label.textContent = 'Generating…';
+
+  document.getElementById('pp-idle').style.display = 'none';
+  document.getElementById('pp-active').classList.add('visible');
+  document.getElementById('pp-heading').textContent = 'Generating listicle…';
+  document.getElementById('pp-subheading').textContent = angle;
+  document.getElementById('done-card').classList.remove('visible');
+  document.getElementById('error-banner').classList.remove('visible');
+  document.getElementById('issue-list').innerHTML = '';
+  document.getElementById('issue-list').classList.remove('visible');
+  document.getElementById('attempt-badge').classList.remove('visible');
+  currentAttempt = 0;
+  for (let i = 1; i <= 5; i++) setDotState(i, '');
+  ['metadata','prompts','generate','quality','brand','save'].forEach(s => setStage(s, 'idle'));
+
+  runSSE_listicle(angle, titles).then(() => {
+    generating = false;
+    spinner.classList.remove('visible');
+    label.textContent = 'Generate Listicle';
+    btn.disabled = selectedContainerTitleIds.size < 5;
+  });
+}
+</script>
 </body>
 </html>

@@ -56,8 +56,60 @@ export async function runBrandCheck(
     const overall = (result.voice + result.specificity + result.angle + result.energy + result.consistency) / 5;
     return { passed: overall >= 3.5, overall, notes: result.notes || 'No notes' };
   } catch (err) {
-    return { passed: false, overall: 0, notes: `Brand check error: ${(err as Error).message}` };
+    throw err;
   }
+}
+
+export async function selectContainersWithOpenAI(
+  angle: string,
+  containers: { id: string; title: string; subtitle: string; position: number }[],
+): Promise<string[]> {
+  const list = containers.map(c =>
+    `pos:${c.position} id:${c.id} — ${c.title}${c.subtitle ? ` (${c.subtitle})` : ''}`
+  ).join('\n');
+
+  const prompt = `You are a Tubi blog editor choosing which Tubi content containers to pull titles from for a listicle article.
+
+Article angle: "${angle}"
+
+Below is the current list of Tubi containers, in the order they appear on Tubi's homepage today (position 1 = most featured/newest). Choose the 3 to 5 containers most likely to contain titles that fit the angle. Prefer lower position numbers (more current/featured) when relevance is similar.
+
+Return valid JSON only: { "ids": ["id1", "id2", ...] }
+
+Containers:
+${list}`;
+
+  const response = await openaiClient().chat.completions.create({
+    model: 'gpt-4o-mini',
+    response_format: { type: 'json_object' },
+    messages: [
+      { role: 'system', content: 'You are a Tubi blog editor. Return only valid JSON.' },
+      { role: 'user', content: prompt },
+    ],
+  });
+  const result = JSON.parse(response.choices[0]?.message?.content || '{}');
+  return result.ids || [];
+}
+
+export async function selectTitlesWithOpenAI(
+  angle: string,
+  candidatesList: string,
+  promptTemplate: string,
+): Promise<{ id: string; title: string; reason: string }[]> {
+  const prompt = promptTemplate
+    .replace('{{angle}}', angle)
+    .replace('{{candidates}}', candidatesList);
+  const response = await openaiClient().chat.completions.create({
+    model: 'gpt-4o-mini',
+    response_format: { type: 'json_object' },
+    temperature: 1.2,
+    messages: [
+      { role: 'system', content: 'You are a Tubi blog editor. Return only valid JSON.' },
+      { role: 'user', content: prompt },
+    ],
+  });
+  const result = JSON.parse(response.choices[0]?.message?.content || '{}');
+  return result.selected || [];
 }
 
 // Regenerate a single listicle blurb entry
