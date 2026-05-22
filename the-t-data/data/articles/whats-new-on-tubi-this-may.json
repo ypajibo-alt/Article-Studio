@@ -1,0 +1,289 @@
+{
+  "nav": {
+    "logoLabel": "The T",
+    "links": [
+      {
+        "label": "Home",
+        "href": "/the-t"
+      },
+      {
+        "label": "Coming Soon",
+        "href": "/the-t/coming-soon"
+      },
+      {
+        "label": "Shows",
+        "href": "/the-t/shows"
+      },
+      {
+        "label": "Movies",
+        "href": "/the-t/movies"
+      }
+    ],
+    "explore": {
+      "label": "Explore",
+      "items": [
+        {
+          "label": "FIFA World Cup 2026",
+          "href": "/the-t/fifa-world-cup"
+        },
+        {
+          "label": "Horror",
+          "href": "/the-t/horror"
+        },
+        {
+          "label": "Tubi Originals",
+          "href": "/the-t/originals"
+        },
+        {
+          "label": "Sports",
+          "href": "/the-t/sports"
+        }
+      ],
+      "moreGenresLabel": "More genres",
+      "moreGenresHref": "/the-t/genres"
+    },
+    "mobileMenu": {
+      "open": "Open menu",
+      "close": "Close menu"
+    }
+  },
+  "id": "004",
+  "slug": "whats-new-on-tubi-this-may",
+  "categoryTag": "Movies",
+  "type": "listicle",
+  "title": "What's New on Tubi This May",
+  "subtitle": "Not sure what you're in the mood for? This month makes it easy.",
+  "intro": "May on Tubi is not a slow month.\n\nElle Woods walks into Harvard Law with a pink resume and absolutely no intention of losing. Gordon Ramsay is back in the Hell's Kitchen kitchen, making grown adults cry over risotto. And somewhere in the late 19th century, two retired Texas Rangers are about to make a very bad decision involving a cattle drive.\n\nHere's everything new this May that's actually worth pressing play on.",
+  "images": {
+    "thumbnail": "/static/blog/the-t/thumbnails/004_thumbnail.jpg",
+    "og": "/static/blog/the-t/og/004_og.jpg"
+  },
+  "items": [
+    {
+      "position": 1,
+      "title": "Legally Blonde",
+      "description": "Elle Woods gets dumped because her boyfriend thinks she's not serious enough for law school. So she applies to Harvard Law. Gets in. And then stays completely, entirely herself the whole way through.\n\nThe bend-and-snap is iconic, obviously. But the courtroom sequence in the third act is where the film actually earns everything it set up. Reese Witherspoon plays Elle completely straight - no winking, no irony - and that's the whole reason it works.\n\nIt came out in 2001. The argument it's making hasn't aged a day.",
+      "contentTitle": "Legally Blonde (2001)",
+      "tubiLink": "https://tubitv.com/movies/358573",
+      "contentId": "358573",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/004_title_1_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/004_title_1_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/004_title_1_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Comedy",
+      "year": "2001",
+      "runtime": "1h 36m",
+      "rating": "PG-13"
+    },
+    {
+      "position": 2,
+      "title": "Lonesome Dove",
+      "description": "Robert Duvall and Tommy Lee Jones play two retired Texas Rangers who decide, mostly out of stubbornness, to drive a herd of cattle from Texas to Montana. That's the setup. What follows is six hours of the best Western television ever made.\n\nThere's a scene early on where Gus explains his entire philosophy of life while eating a biscuit, and it tells you everything you need to know. These aren't mythic heroes. They're complicated, funny, and occasionally rough to the people who love them.\n\nWon four Emmy Awards in 1989. Still the standard.",
+      "contentTitle": "Lonesome Dove (1989)",
+      "tubiLink": "https://tubitv.com/series/300001070",
+      "contentId": "300001070",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/004_title_2_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/004_title_2_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/004_title_2_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Western",
+      "year": "1989",
+      "runtime": "1 Season",
+      "rating": "TV-14"
+    },
+    {
+      "position": 3,
+      "title": "Hell's Kitchen",
+      "description": "Season 23 is here and Gordon Ramsay has lost exactly zero percent of his intensity. Hell's Kitchen is not really a cooking show - it's a pressure test disguised as one, the kind where someone plates a beautiful dish and you hold your breath waiting for Ramsay to materialize behind them.\n\nThe format works because the stakes feel real. These aren't hobbyists. They're chefs who actually want the job, and Ramsay treats them like it.\n\nIf you've been watching MasterChef and want something with more heat, this is the natural next step.",
+      "contentTitle": "Hell's Kitchen (2025)",
+      "tubiLink": "https://tubitv.com/series/3320",
+      "contentId": "3320",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/004_title_3_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/004_title_3_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/004_title_3_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Reality",
+      "year": "2025",
+      "runtime": "23 Seasons",
+      "rating": "TV-MA"
+    },
+    {
+      "position": 4,
+      "title": "MasterChef",
+      "description": "MasterChef Season 14 isn't a season of first-timers figuring out the kitchen. These are returning contestants - people who've already been through the competition, already know what it costs, and came back anyway.\n\nThat changes everything. The nerves hit differently when you know exactly what you're walking back into. There's a specific kind of determination in a returning competitor that's harder to watch than a rookie's excitement.\n\nPair this with Hell's Kitchen for a full evening of competitive cooking and food that will genuinely make you hungry.",
+      "contentTitle": "MasterChef (2024)",
+      "tubiLink": "https://tubitv.com/series/300009344",
+      "contentId": "300009344",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/004_title_4_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/004_title_4_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/004_title_4_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Reality",
+      "year": "2024",
+      "runtime": "13 Seasons",
+      "rating": "TV-14"
+    },
+    {
+      "position": 5,
+      "title": "Miami Vice",
+      "description": "Before Michael Mann made Heat, he made this. Miami Vice premiered in 1984 and immediately broke every rule about what a cop show was supposed to look like - pastel suits, no socks, synth-heavy soundtrack, cinematography that felt more like a music video than network television.\n\nDon Johnson and Philip Michael Thomas play Crockett and Tubbs like they invented the genre. The South Florida drug trade backdrop isn't just atmosphere. Mann shoots it like it's eating the city alive.\n\nFive seasons, all of it here. Start from the beginning and you'll understand where half the '80s aesthetic actually came from.",
+      "contentTitle": "Miami Vice (1984)",
+      "tubiLink": "https://tubitv.com/series/300010244",
+      "contentId": "300010244",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/004_title_5_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/004_title_5_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/004_title_5_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Crime",
+      "year": "1984",
+      "runtime": "5 Seasons",
+      "rating": "TV-14"
+    },
+    {
+      "position": 6,
+      "title": "Shameless",
+      "description": "This is the original UK Shameless, and if you only know the American version, prepare yourself. The Manchester Gallaghers are louder, more chaotic, and shot with a rawness that the US remake smoothed out considerably.\n\nDavid Threlfall plays Frank Gallagher - the family patriarch who is mostly a catastrophe - with a specific committed shamelessness the character absolutely requires. There's an episode in the first series where the entire family has to solve a problem Frank created, and the solution is somehow worse than the problem.\n\nEleven series. Start at the beginning and give it three episodes before you make any decisions.",
+      "contentTitle": "Shameless (2013)",
+      "tubiLink": "https://tubitv.com/series/300006342",
+      "contentId": "300006342",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/004_title_6_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/004_title_6_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/004_title_6_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Comedy",
+      "year": "2013",
+      "runtime": "11 Seasons",
+      "rating": "TV-MA"
+    },
+    {
+      "position": 7,
+      "title": "Everybody Hates Chris",
+      "description": "Chris Rock narrates his own adolescence from a safe distance, and that gap is the whole joke. Young Chris is living through it. Adult Chris already knows how it ends. Everything funny lives in the space between those two people.\n\nTerry Crews plays the father, and every scene he's in is better for it - a man who loves his family deeply and is also absolutely terrified of wasting money on anything, both at the same time.\n\nFour seasons of this. It holds up completely.",
+      "contentTitle": "Everybody Hates Chris (2009)",
+      "tubiLink": "https://tubitv.com/series/300015509",
+      "contentId": "300015509",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/004_title_7_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/004_title_7_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/004_title_7_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Comedy",
+      "year": "2009",
+      "runtime": "4 Seasons",
+      "rating": "TV-PG"
+    },
+    {
+      "position": 8,
+      "title": "Lie to Me",
+      "description": "Tim Roth plays Dr. Cal Lightman, a deception expert who reads microexpressions - the involuntary facial movements people make in fractions of a second before they can control them. The show freezes on the exact moment someone's face gives them away and shows you what he's seeing.\n\nIt makes you complicit in a way most procedurals don't bother with. You're not just watching him solve it. You're watching the evidence stack up in real time.\n\nRoth plays Lightman as someone who is very good at his job and genuinely unpleasant to be around. Three seasons. The first is the strongest.",
+      "contentTitle": "Lie to Me (2011)",
+      "tubiLink": "https://tubitv.com/series/300010743",
+      "contentId": "300010743",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/004_title_8_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/004_title_8_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/004_title_8_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Drama",
+      "year": "2011",
+      "runtime": "3 Seasons",
+      "rating": "TV-14"
+    },
+    {
+      "position": 9,
+      "title": "Married... with Children",
+      "description": "Married... with Children premiered in 1987 as a deliberate counterprogram to everything warm and lesson-teaching on network television. Al Bundy hates his job, tolerates his family, and has strong opinions about the Chicago Bears. Nobody learns anything. No one grows.\n\nThat was the point, and it ran for eleven seasons.\n\nEd O'Neill plays Al with a defeated dignity that makes him funnier than he should be. There's an episode where he wins a bet and the victory is somehow still a loss. Every dysfunctional family comedy since has been driving in the lane this show invented.",
+      "contentTitle": "Married... with Children (1987)",
+      "tubiLink": "https://tubitv.com/series/300018574",
+      "contentId": "300018574",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/004_title_9_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/004_title_9_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/004_title_9_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Comedy",
+      "year": "1987",
+      "runtime": "3 Seasons",
+      "rating": "TV-PG"
+    },
+    {
+      "position": 10,
+      "title": "Looney Tunes",
+      "description": "Looney Tunes wasn't originally a children's property. These shorts ran before feature films in movie theaters starting in the 1930s, aimed at adults who wanted something fast and mean and funny before the main event.\n\nBugs Bunny wins by being smarter than everyone around him, and he knows it. Daffy Duck loses for the same reason Wile E. Coyote loses - total commitment to a bad plan.\n\nPut this on for the kids. You'll end up watching more of it than they do.",
+      "contentTitle": "Looney Tunes (2003)",
+      "tubiLink": "https://tubitv.com/series/300016553",
+      "contentId": "300016553",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/004_title_10_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/004_title_10_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/004_title_10_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Kids & Family",
+      "year": "2003",
+      "runtime": "13 Seasons",
+      "rating": "TV-PG"
+    }
+  ],
+  "keepReading": {
+    "header": {
+      "title": "Keep Reading",
+      "subtitle": "More articles to explore"
+    },
+    "items": [
+      {
+        "id": "009",
+        "slug": "the-best-tubi-movies-of-the-summer",
+        "eyebrow": "What to Watch",
+        "title": "The Best Tubi Movies of the Summer",
+        "subtitle": "Hot tubs, sharks, con artists, and one very important Nantucket summer.",
+        "categoryTag": "Movies",
+        "thumbnail": "/static/blog/the-t/thumbnails/009_thumbnail.jpg"
+      },
+      {
+        "id": "006",
+        "slug": "best-free-movies-to-watch-this-weekend",
+        "eyebrow": "What to Watch",
+        "title": "Best Free Movies to Watch This Weekend",
+        "subtitle": "If you want a good pick without digging, start here.",
+        "categoryTag": "Movies",
+        "thumbnail": "/static/blog/the-t/thumbnails/006_thumbnail.jpg"
+      },
+      {
+        "id": "013",
+        "slug": "top-10-movies-to-stream-free-on-tubi",
+        "eyebrow": "What to Watch",
+        "title": "Weekend Watchlist: Top 10 Movies to Stream Free on Tubi",
+        "subtitle": "A tight list when you don't have time to scroll through everything else.",
+        "categoryTag": "Movies",
+        "thumbnail": "/static/blog/the-t/thumbnails/013_thumbnail.jpg"
+      }
+    ]
+  },
+  "datePosted": "2026-05-26"
+}

@@ -1,0 +1,289 @@
+{
+  "nav": {
+    "logoLabel": "The T",
+    "links": [
+      {
+        "label": "Home",
+        "href": "/the-t"
+      },
+      {
+        "label": "Coming Soon",
+        "href": "/the-t/coming-soon"
+      },
+      {
+        "label": "Shows",
+        "href": "/the-t/shows"
+      },
+      {
+        "label": "Movies",
+        "href": "/the-t/movies"
+      }
+    ],
+    "explore": {
+      "label": "Explore",
+      "items": [
+        {
+          "label": "FIFA World Cup 2026",
+          "href": "/the-t/fifa-world-cup"
+        },
+        {
+          "label": "Horror",
+          "href": "/the-t/horror"
+        },
+        {
+          "label": "Tubi Originals",
+          "href": "/the-t/originals"
+        },
+        {
+          "label": "Sports",
+          "href": "/the-t/sports"
+        }
+      ],
+      "moreGenresLabel": "More genres",
+      "moreGenresHref": "/the-t/genres"
+    },
+    "mobileMenu": {
+      "open": "Open menu",
+      "close": "Close menu"
+    }
+  },
+  "id": "073",
+  "slug": "if-you-grew-up-on-degrassi-these-teen-dramas-on-tubi-are-for-you",
+  "categoryTag": "Shows",
+  "type": "listicle",
+  "title": "If You Grew Up on Degrassi, These Teen Dramas on Tubi Are for You",
+  "subtitle": "Same emotional chaos, different hallways.",
+  "intro": "Degrassi didn't do easy. That was the whole point.\n\nWhile other teen shows were tying everything up with a lesson and a hug, Degrassi was letting an eating disorder spiral for three episodes before anyone noticed. Was letting a pregnancy blow up two families at once. Was showing you the part of growing up that actually stays with you - where things get complicated before they get better, and sometimes they just don't get better.\n\nIf that's the version of teenage storytelling you grew up on, here's what's waiting for you on Tubi.",
+  "images": {
+    "thumbnail": "/static/blog/the-t/thumbnails/073_thumbnail.jpg",
+    "og": "/static/blog/the-t/og/073_og.jpg"
+  },
+  "items": [
+    {
+      "position": 1,
+      "title": "Degrassi High",
+      "description": "Before The Next Generation, before any of the reboots, there was this. A group of Toronto teenagers navigating high school in real time, with all the mess that implies.\n\nDegrassi High didn't have the production polish that came later, and honestly that's part of what makes it land. These feel like actual kids in actual hallways - unwanted pregnancies, substance abuse, the specific cruelty of high school social dynamics. There's an episode where a character gets an HIV diagnosis and the show doesn't look away from what that meant in 1991.\n\nFor longtime fans, this is where everything started. You can feel it.",
+      "contentTitle": "Degrassi High (1991)",
+      "tubiLink": "https://tubitv.com/series/300001492",
+      "contentId": "300001492",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/073_title_1_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/073_title_1_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/073_title_1_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Drama",
+      "year": "1991",
+      "runtime": "2 Seasons",
+      "rating": "TV-PG"
+    },
+    {
+      "position": 2,
+      "title": "Degrassi: The Next Generation",
+      "description": "New students, some of them kids of the original Degrassi cast, same hallways, same refusal to let anything be simple.\n\nThe Next Generation updated the issues - school shootings, online predators, self-harm - but kept the original's whole philosophy: if something is happening to teenagers, it belongs on screen. Drake was in this show. There's a school shooting arc that aired years before it felt inescapable on American TV.\n\nIt ran 14 seasons because it kept finding new ways to mean it.",
+      "contentTitle": "Degrassi: The Next Generation (2015)",
+      "tubiLink": "https://tubitv.com/series/4631",
+      "contentId": "4631",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/073_title_2_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/073_title_2_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/073_title_2_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Drama",
+      "year": "2015",
+      "runtime": "14 Seasons",
+      "rating": "TV-PG"
+    },
+    {
+      "position": 3,
+      "title": "School's Out",
+      "description": "Pool parties and cottage trips sound like a breather. For about twenty minutes, School's Out actually feels like one.\n\nThen it doesn't. This TV movie follow-up to Degrassi High takes the same characters out of the classroom, puts them somewhere with less structure and more room for things to go sideways - and they do, in ways the show hadn't gone before. There's a sexual assault storyline that was genuinely ahead of what most teen content was willing to touch in 1992.\n\nIf you watched Degrassi High and wanted to know what happened next: the answer is it got heavier.",
+      "contentTitle": "School's Out (1992)",
+      "tubiLink": "https://tubitv.com/movies/100014312",
+      "contentId": "100014312",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/073_title_3_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/073_title_3_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/073_title_3_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Drama",
+      "year": "1992",
+      "runtime": "1h 32m",
+      "rating": "TV-MA"
+    },
+    {
+      "position": 4,
+      "title": "Dawson's Creek",
+      "description": "Dawson Leery is the kind of teenager who processes his feelings in full paragraphs, out loud, in real time. That's either the show's greatest flaw or its entire personality, depending on who you ask.\n\nBut underneath all the famous verbosity, Dawson's Creek was doing something Degrassi fans will recognize immediately - taking the emotional interior of teenage life completely seriously. Joey Potter choosing between two futures. Pacey Witter being the smartest person in every room he's told he doesn't belong in.\n\nThe show ran six seasons because those characters felt real enough to follow. The small-town setting makes everything feel contained, which somehow makes the stakes feel bigger.",
+      "contentTitle": "Dawson's Creek (2003)",
+      "tubiLink": "https://tubitv.com/series/300013803",
+      "contentId": "300013803",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/073_title_4_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/073_title_4_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/073_title_4_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Drama",
+      "year": "2003",
+      "runtime": "6 Seasons",
+      "rating": "TV-14"
+    },
+    {
+      "position": 5,
+      "title": "Skins",
+      "description": "If you came in expecting the British teen ensemble, this is a completely different film - and worth adjusting for.\n\nTwo Sioux brothers on the Pine Ridge Indian Reservation: one a tribal police officer trying to hold things together, one drinking himself sideways. Their relationship is the whole engine. Director Chris Eyre, who made Smoke Signals, shoots the reservation without romanticizing it or flattening it into backdrop.\n\nThere's a scene where the older brother's sense of justice and the law he's supposed to enforce pull in opposite directions, and the film just sits in that tension without cleaning it up. Degrassi fans who remember the show refusing easy answers will feel right at home.",
+      "contentTitle": "Skins (2002)",
+      "tubiLink": "https://tubitv.com/movies/489699",
+      "contentId": "489699",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/073_title_5_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/073_title_5_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/073_title_5_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Drama",
+      "year": "2002",
+      "runtime": "1h 27m",
+      "rating": "R"
+    },
+    {
+      "position": 6,
+      "title": "Mom at Sixteen",
+      "description": "Jacey is sixteen and pregnant, and her mother's solution is to keep the baby and raise it as her own - which means Jacey goes back to school pretending none of it happened.\n\nThat premise is already more complicated than most TV movies are willing to be. The guidance counselor who starts piecing things together is the pressure valve, but the film stays focused on what the secret actually costs both women. The mother carrying a lie she thought was kindness. The daughter carrying something she can't name yet.\n\nDegrassi did this exact territory - the pregnancy that doesn't resolve, the adults making choices that create new problems. This one fits right alongside it.",
+      "contentTitle": "Mom at Sixteen (2005)",
+      "tubiLink": "https://tubitv.com/movies/675102",
+      "contentId": "675102",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/073_title_6_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/073_title_6_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/073_title_6_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Drama",
+      "year": "2005",
+      "runtime": "1h 30m",
+      "rating": "TV-14"
+    },
+    {
+      "position": 7,
+      "title": "Sharing the Secret",
+      "description": "Her parents' divorce is the destabilizing event. The bulimia is how she tries to stay in control of something.\n\nSharing the Secret earns its place here because it doesn't treat the eating disorder as a sudden crisis - it shows the logic of it, the way it becomes a private solution before it becomes a visible problem. There's a scene where she's at a family dinner, performing completely normal, and you can see exactly what's happening underneath.\n\nThe recovery arc doesn't pretend the first step fixes everything. For a 2000 TV movie, the care it takes is genuinely surprising.",
+      "contentTitle": "Sharing the Secret (2000)",
+      "tubiLink": "https://tubitv.com/movies/100002194",
+      "contentId": "100002194",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/073_title_7_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/073_title_7_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/073_title_7_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Drama",
+      "year": "2000",
+      "runtime": "1h 30m",
+      "rating": "TV-14"
+    },
+    {
+      "position": 8,
+      "title": "Thinspiration",
+      "description": "A young woman already struggling with an eating disorder finds the founder of a pro-thinness website and starts to fixate on her. What follows is part recovery story, part psychological thriller, and the combination is genuinely uncomfortable.\n\nThinspiration understands something earlier films about eating disorders didn't have to reckon with: the internet doesn't just reflect these patterns, it amplifies and organizes them. The obsession with the website founder gives the film somewhere to go beyond the internal spiral.\n\nDegrassi fans will recognize the move - take a real issue, find its sharpest contemporary edge, and follow it somewhere most shows won't go.",
+      "contentTitle": "Thinspiration (2014)",
+      "tubiLink": "https://tubitv.com/movies/506534",
+      "contentId": "506534",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/073_title_8_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/073_title_8_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/073_title_8_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Drama",
+      "year": "2014",
+      "runtime": "1h 29m",
+      "rating": "TV-14"
+    },
+    {
+      "position": 9,
+      "title": "Zoe Valentine",
+      "description": "Zoe has spent her whole life being the younger one, the one not in the spotlight. Then her older sister dies, and suddenly she's visible in a way she never asked to be.\n\nThe grief here isn't dramatic, crying-in-the-rain stuff. It's quieter and more disorienting - the kind where you're figuring out who you are without the person who defined your whole context. The short-form format keeps the episodes tight and the emotional beats direct. It doesn't rush past the hard parts.\n\nDegrassi always understood that growing up and losing someone are sometimes the same event. This one gets that.",
+      "contentTitle": "Zoe Valentine (2019)",
+      "tubiLink": "https://tubitv.com/series/4527",
+      "contentId": "4527",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/073_title_9_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/073_title_9_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/073_title_9_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Kids & Family",
+      "year": "2019",
+      "runtime": "2 Seasons",
+      "rating": "TV-14"
+    },
+    {
+      "position": 10,
+      "title": "LOL",
+      "description": "Miley Cyrus plays Lola, doing everything teenagers do when they think no one's paying attention. Demi Moore plays her mother, who is paying a lot of attention and understanding almost none of it.\n\nThe film cuts between them - Lola's first real relationship falling apart, her mom's second attempt at love going sideways - and the parallel is actually the point. Both of them are figuring out the same things at completely different speeds.\n\nIt's lighter than most of what's on this list, but the mother-daughter tension underneath is real. Degrassi fans who remember the adult characters trying and failing to connect with the kids will find something familiar here.",
+      "contentTitle": "LOL (2012)",
+      "tubiLink": "https://tubitv.com/movies/604291",
+      "contentId": "604291",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/073_title_10_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/073_title_10_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/073_title_10_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Comedy",
+      "year": "2012",
+      "runtime": "1h 37m",
+      "rating": "PG-13"
+    }
+  ],
+  "keepReading": {
+    "header": {
+      "title": "Keep Reading",
+      "subtitle": "More articles to explore"
+    },
+    "items": [
+      {
+        "id": "071",
+        "slug": "kissing-is-the-easy-part-gets-first-love-more-right-than-most",
+        "eyebrow": "What to Watch",
+        "title": "Kissing Is the Easy Part Gets First Love More Right Than Most",
+        "subtitle": "One secret deal, two people with completely different plans, and neither of them saw this coming.",
+        "categoryTag": "Originals",
+        "thumbnail": "/static/blog/the-t/thumbnails/071_thumbnail.jpg"
+      },
+      {
+        "id": "078",
+        "slug": "saved-by-the-bell-and-the-classic-shows-on-tubi",
+        "eyebrow": "What to Watch",
+        "title": "Saved by the Bell and the Classic Shows on Tubi",
+        "subtitle": "Comfort watches that still hold up when you go back to them.",
+        "categoryTag": "Shows",
+        "thumbnail": "/static/blog/the-t/thumbnails/078_thumbnail.jpg"
+      },
+      {
+        "id": "037",
+        "slug": "the-best-dramas-on-tubi",
+        "eyebrow": "What to Watch",
+        "title": "The Best Dramas on Tubi",
+        "subtitle": "Stories that take their time and let things actually land.",
+        "categoryTag": "Movies",
+        "thumbnail": "/static/blog/the-t/thumbnails/037_thumbnail.jpg"
+      }
+    ]
+  },
+  "datePosted": "2026-05-26"
+}

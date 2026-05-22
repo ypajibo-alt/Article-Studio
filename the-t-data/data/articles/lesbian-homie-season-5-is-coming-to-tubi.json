@@ -1,0 +1,161 @@
+{
+  "nav": {
+    "logoLabel": "The T",
+    "links": [
+      {
+        "label": "Home",
+        "href": "/the-t"
+      },
+      {
+        "label": "Coming Soon",
+        "href": "/the-t/coming-soon"
+      },
+      {
+        "label": "Shows",
+        "href": "/the-t/shows"
+      },
+      {
+        "label": "Movies",
+        "href": "/the-t/movies"
+      }
+    ],
+    "explore": {
+      "label": "Explore",
+      "items": [
+        {
+          "label": "FIFA World Cup 2026",
+          "href": "/the-t/fifa-world-cup"
+        },
+        {
+          "label": "Horror",
+          "href": "/the-t/horror"
+        },
+        {
+          "label": "Tubi Originals",
+          "href": "/the-t/originals"
+        },
+        {
+          "label": "Sports",
+          "href": "/the-t/sports"
+        }
+      ],
+      "moreGenresLabel": "More genres",
+      "moreGenresHref": "/the-t/genres"
+    },
+    "mobileMenu": {
+      "open": "Open menu",
+      "close": "Close menu"
+    }
+  },
+  "id": "047",
+  "slug": "lesbian-homie-season-5-is-coming-to-tubi",
+  "categoryTag": "Originals",
+  "type": "article",
+  "title": "Lesbian Homie Season 5 Is Coming to Tubi",
+  "subtitle": "He swore he was done with complicated. Complicated had other plans.",
+  "datePosted": "2026-05-26",
+  "intro": "Bruce has been here before. He fell for someone who wasn't available to him in the way he needed, got his heart wrecked, did the work, moved on. Season 5 of Lesbian Homie picks up exactly where that hard-won peace starts to crack — because he's found someone new, and somehow the pickle is different this time and also exactly the same. That tension, between a man who genuinely tries and a romantic life that refuses to cooperate, is what has kept this show running for five seasons and what makes this one worth clearing your schedule for.",
+  "cast": {
+    "header": {
+      "title": "The Cast"
+    },
+    "items": [
+      {
+        "name": "Cast details unavailable",
+        "bio": "The cast list for Lesbian Homie Season 5 was not provided. Check Tubi for the full lineup when the season drops in 2026."
+      },
+      {
+        "name": "Ciera Angelia",
+        "bio": "Angelia brings a presence that keeps you guessing in the best way. Her role sits at the center of Bruce's new romantic situation, and she plays it with the kind of specificity that makes a character feel real rather than just a plot device dropped into someone else's story."
+      },
+      {
+        "name": "Lisa Yaro",
+        "bio": "Yaro adds texture to a cast that could easily get overshadowed by the central premise. She knows how to hold a scene without taking it over, which in an ensemble like this is exactly the kind of skill that makes everything around her land harder."
+      },
+      {
+        "name": "Marché Howell",
+        "bio": "Howell brings energy and timing that the show leans on when it needs to shift gears between the comedy and the heavier emotional beats. There's a naturalness to the performance that makes even the wildest moments feel like something that could genuinely happen to someone you know."
+      }
+    ]
+  },
+  "quote": "I did the healing. I did the work. So why is this happening again?",
+  "faq": {
+    "header": {
+      "title": "More details"
+    },
+    "items": [
+      {
+        "question": "Who directed the film?",
+        "answer": "Director information is unavailable."
+      },
+      {
+        "question": "Who is in the cast?",
+        "answer": "Cast details unavailable"
+      },
+      {
+        "question": "Where can I stream this?",
+        "answer": "Free on Tubi, available 2026."
+      }
+    ]
+  },
+  "images": {
+    "thumbnail": "/static/blog/the-t/thumbnails/047_thumbnail.jpg",
+    "hero": "/static/blog/the-t/heroes/047_hero.jpg",
+    "og": "/static/blog/the-t/og/047_og.jpg"
+  },
+  "keepReading": {
+    "header": {
+      "title": "Keep Reading",
+      "subtitle": "More articles to explore"
+    },
+    "items": [
+      {
+        "id": "007",
+        "slug": "best-lgbtq-movies-on-tubi",
+        "eyebrow": "What to Watch",
+        "title": "Best LGBTQ+ Movies on Tubi for Pride Month",
+        "subtitle": "The Inspection, Priscilla, Summer of 85, and more worth your full attention.",
+        "categoryTag": "Movies",
+        "thumbnail": "/static/blog/the-t/thumbnails/007_thumbnail.jpg"
+      },
+      {
+        "id": "027",
+        "slug": "the-funniest-comedy-shows-streaming-now",
+        "eyebrow": "What to Watch",
+        "title": "The Funniest Comedy Shows Streaming Now",
+        "subtitle": "The ones that actually hold up past the first episode.",
+        "categoryTag": "Shows",
+        "thumbnail": "/static/blog/the-t/thumbnails/027_thumbnail.jpg"
+      },
+      {
+        "id": "014",
+        "slug": "the-most-addictive-shows-on-tubi",
+        "eyebrow": "What to Watch",
+        "title": "Binge-Worthy TV: The Most Addictive Shows on Tubi",
+        "subtitle": "Shows that stack quickly and are harder to stop than you expect.",
+        "categoryTag": "Shows",
+        "thumbnail": "/static/blog/the-t/thumbnails/014_thumbnail.jpg"
+      }
+    ]
+  },
+  "hero": {
+    "watchLink": "https://tubitv.com/series/300000797/the-lesbian-homie",
+    "contentId": "300000797",
+    "watchNowLabel": "Watch Now"
+  },
+  "whyWatch": {
+    "header": {
+      "title": "Why Watch It"
+    },
+    "body": "Five seasons in, Lesbian Homie has figured out something a lot of romantic comedies never do: the funniest thing about love is not the misunderstanding, it's the pattern. Bruce is not a fool. He's a man who keeps walking into situations that look different on the outside and feel identical on the inside, and watching him clock that in real time is where the show lives. Season 5 leans into that self-awareness without letting him off the hook for it."
+  },
+  "gallery": {
+    "header": {
+      "title": "Media Shots"
+    },
+    "items": [
+      "/static/blog/the-t/media/047_media_1.jpg",
+      "/static/blog/the-t/media/047_media_2.jpg"
+    ]
+  }
+}

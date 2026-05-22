@@ -1,0 +1,289 @@
+{
+  "nav": {
+    "logoLabel": "The T",
+    "links": [
+      {
+        "label": "Home",
+        "href": "/the-t"
+      },
+      {
+        "label": "Coming Soon",
+        "href": "/the-t/coming-soon"
+      },
+      {
+        "label": "Shows",
+        "href": "/the-t/shows"
+      },
+      {
+        "label": "Movies",
+        "href": "/the-t/movies"
+      }
+    ],
+    "explore": {
+      "label": "Explore",
+      "items": [
+        {
+          "label": "FIFA World Cup 2026",
+          "href": "/the-t/fifa-world-cup"
+        },
+        {
+          "label": "Horror",
+          "href": "/the-t/horror"
+        },
+        {
+          "label": "Tubi Originals",
+          "href": "/the-t/originals"
+        },
+        {
+          "label": "Sports",
+          "href": "/the-t/sports"
+        }
+      ],
+      "moreGenresLabel": "More genres",
+      "moreGenresHref": "/the-t/genres"
+    },
+    "mobileMenu": {
+      "open": "Open menu",
+      "close": "Close menu"
+    }
+  },
+  "id": "036",
+  "slug": "the-funniest-movies-streaming-on-tubi-now",
+  "categoryTag": "Movies",
+  "type": "listicle",
+  "title": "The Funniest Movies Streaming on Tubi Now",
+  "subtitle": "Easy watches that still land when you need them to.",
+  "intro": "The funniest movies streaming on Tubi right now have one thing in common: nobody blinked.\n\nElle Woods walks into Harvard Law with a pink resume and proceeds to outwork everyone who underestimated her. Leslie Nielsen plays a bumbling detective who has to save the president from aliens on the moon, and he treats every second of it like a serious procedural. Ringo Starr plays a caveman trying to woo the most beautiful woman in his tribe away from a guy who could crush him with one hand.\n\nPick something. You're not leaving early.",
+  "images": {
+    "thumbnail": "/static/blog/the-t/thumbnails/036_thumbnail.jpg",
+    "og": "/static/blog/the-t/og/036_og.jpg"
+  },
+  "items": [
+    {
+      "position": 1,
+      "title": "Legally Blonde",
+      "description": "Elle Woods enrolls in Harvard Law to get her ex-boyfriend back. Wrong goal. She doesn't know it yet.\n\nThe comedy isn't fish-out-of-water humiliation - it's watching everyone in that building be completely wrong about her, over and over, while she just keeps doing the work. There's a scene where she cracks a case using her knowledge of perms, and she delivers it with total confidence in a courtroom full of people who still think she's a joke.\n\nReese Witherspoon plays it completely straight, which is the only reason any of it lands. The ex becomes irrelevant about forty minutes in. The film doesn't make a big deal of that, and neither should you.",
+      "contentTitle": "Legally Blonde (2001)",
+      "tubiLink": "https://tubitv.com/movies/358573",
+      "contentId": "358573",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/036_title_1_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/036_title_1_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/036_title_1_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Comedy",
+      "year": "2001",
+      "runtime": "1h 36m",
+      "rating": "PG-13"
+    },
+    {
+      "position": 2,
+      "title": "Kung Fu Hustle",
+      "description": "The Axe Gang arrives in matching suits, top hats, and synchronized choreography - and they are also genuinely terrifying. That's the trick Stephen Chow pulls off for the entire runtime: the comedy and the action are the same thing, not taking turns.\n\nA landlady in hair curlers turns out to be one of the most dangerous fighters in Shanghai. A guy who looks like a complete loser turns out to be something else entirely. The animation-style fight sequences have no business working inside a live-action film.\n\nThey absolutely work. And for a movie this cartoonishly absurd, the emotional stakes at the end will sneak up on you.",
+      "contentTitle": "Kung Fu Hustle (2005)",
+      "tubiLink": "https://tubitv.com/movies/663471",
+      "contentId": "663471",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/036_title_2_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/036_title_2_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/036_title_2_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Action",
+      "year": "2005",
+      "runtime": "1h 39m",
+      "rating": "R"
+    },
+    {
+      "position": 3,
+      "title": "National Lampoon's Loaded Weapon 1",
+      "description": "Someone is using Girl Scout cookies to distribute narcotics, and the only people standing between America and that threat are a mismatched pair of detectives who can barely function.\n\nLoaded Weapon 1 is a Lethal Weapon spoof that commits harder than most actual Lethal Weapon sequels. Emilio Estevez and Samuel L. Jackson play it completely deadpan while the film disintegrates around them - wrong film clips, impossible sight gags, cameos that make no sense and land perfectly.\n\nJon Lovitz shows up as the villain and treats the role like he's auditioning for an Oscar. The cookie plot is never not funny.",
+      "contentTitle": "National Lampoon's Loaded Weapon 1 (1993)",
+      "tubiLink": "https://tubitv.com/movies/100038704",
+      "contentId": "100038704",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/036_title_3_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/036_title_3_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/036_title_3_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Comedy",
+      "year": "1993",
+      "runtime": "1h 22m",
+      "rating": "PG-13"
+    },
+    {
+      "position": 4,
+      "title": "Wrongfully Accused",
+      "description": "Leslie Nielsen plays a concert violinist framed for murder who escapes custody and goes looking for the real killer - described only as a one-eyed, one-armed, one-legged man. That's the premise. Nielsen runs with it like his life depends on it.\n\nThe film also parodies The Fugitive, Braveheart, and The Usual Suspects in the same ninety minutes, and somehow none of it feels crowded. The bus accident escape sequence escalates into something that has no right to keep escalating, and then it does again.\n\nNielsen never once suggests he knows this is ridiculous. That's the move, and he perfected it decades ago.",
+      "contentTitle": "Wrongfully Accused (1998)",
+      "tubiLink": "https://tubitv.com/movies/100014488",
+      "contentId": "100014488",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/036_title_4_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/036_title_4_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/036_title_4_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Comedy",
+      "year": "1998",
+      "runtime": "1h 26m",
+      "rating": "PG-13"
+    },
+    {
+      "position": 5,
+      "title": "Meatballs",
+      "description": "This is where Bill Murray became Bill Murray.\n\nTripper is technically a camp counselor, which means he's technically the responsible adult, which the film treats as a complete fiction. He leads a pre-game speech before a competition against the rich camp across the lake, and it builds into something genuinely rousing before he undercuts it with one line.\n\nMurray improvised a lot of it, and you can tell - not because it feels loose, but because it feels alive in a way scripted comedy rarely does. The campers around him are real kids reacting to a real person being very funny right in front of them. That's the whole movie, and it's enough.",
+      "contentTitle": "Meatballs (1979)",
+      "tubiLink": "https://tubitv.com/movies/400850",
+      "contentId": "400850",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/036_title_5_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/036_title_5_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/036_title_5_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Comedy",
+      "year": "1979",
+      "runtime": "1h 34m",
+      "rating": "PG"
+    },
+    {
+      "position": 6,
+      "title": "The Kentucky Fried Movie",
+      "description": "John Landis directed it. Zucker, Abrahams, and Zucker wrote it before Airplane! existed.\n\nThe Kentucky Fried Movie is a sketch film that runs at full sprint from the first frame - fake commercials, fake newscasts, a thirty-minute blaxploitation parody called 'A Fistful of Yen' that somehow has its own complete arc. Some of it hasn't aged. A lot of it is still genuinely strange in a way that bigger-budget comedy rarely allows itself to be.\n\nThe budget was almost nothing and you can feel it, which turns out to be part of the energy. This is what the team was doing before anyone gave them money to do it properly.",
+      "contentTitle": "The Kentucky Fried Movie (1977)",
+      "tubiLink": "https://tubitv.com/movies/255766",
+      "contentId": "255766",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/036_title_6_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/036_title_6_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/036_title_6_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Comedy",
+      "year": "1977",
+      "runtime": "1h 23m",
+      "rating": "R"
+    },
+    {
+      "position": 7,
+      "title": "Caveman",
+      "description": "Ringo Starr plays Atouk, a scrawny caveman in love with the most beautiful woman in the tribe, who is already with the biggest, dumbest guy around.\n\nThe film invents its own prehistoric language - about fifteen words total - and builds every joke inside those constraints. There's a dinosaur sequence involving a tar pit that escalates through three different punchlines. Ringo plays it with complete sincerity, which is the only way the character works. He's not winking. He's just a guy trying to figure out fire and impress someone who doesn't notice him yet.\n\nThe physical comedy here predates CGI by two decades and it's more inventive for it.",
+      "contentTitle": "Caveman (1981)",
+      "tubiLink": "https://tubitv.com/movies/448828",
+      "contentId": "448828",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/036_title_7_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/036_title_7_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/036_title_7_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Comedy",
+      "year": "1981",
+      "runtime": "1h 32m",
+      "rating": "PG"
+    },
+    {
+      "position": 8,
+      "title": "2001: A Space Travesty",
+      "description": "The U.S. president has been replaced by an alien clone and is being held on a secret moon base. Leslie Nielsen is the detective sent to sort it out. He treats this information the same way he treats all information: with complete, unshakeable calm.\n\nThe 2001: A Space Odyssey parody sequences go places the original Kubrick film absolutely did not. Nielsen's character introduces himself in the first scene and immediately walks into a wall.\n\nIf you're already a fan, this is late-period Nielsen doing exactly what he does best. If you're new to him, this is a perfectly reasonable place to start.",
+      "contentTitle": "2001: A Space Travesty (2000)",
+      "tubiLink": "https://tubitv.com/movies/100047859",
+      "contentId": "100047859",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/036_title_8_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/036_title_8_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/036_title_8_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Comedy",
+      "year": "2000",
+      "runtime": "1h 38m",
+      "rating": "R"
+    },
+    {
+      "position": 9,
+      "title": "Ernest Goes to School",
+      "description": "Ernest P. Worrell works as a janitor at the school where he never graduated, and the film treats obtaining his diploma as a mission of genuine importance.\n\nJim Varney built an entire career on a character with zero self-awareness and total sincerity, and Ernest Goes to School is that formula in its purest form. There's a sequence involving a science experiment and Ernest's brain that escalates into something that could only exist in a children's comedy from 1994.\n\nVarney plays every scene like the stakes are real. The kids in the audience believed him. A grown man in overalls who never once suspects he's funny - and somehow that's the funniest thing about him.",
+      "contentTitle": "Ernest Goes to School (1994)",
+      "tubiLink": "https://tubitv.com/movies/449506",
+      "contentId": "449506",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/036_title_9_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/036_title_9_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/036_title_9_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Comedy",
+      "year": "1994",
+      "runtime": "1h 29m",
+      "rating": "PG"
+    },
+    {
+      "position": 10,
+      "title": "Superhero Movie",
+      "description": "Rick Riker gets bitten by a radioactive dragonfly and gains superpowers, except the ability to fly - which is the one he really needs.\n\nSuperhero Movie is a spoof of the Sam Raimi Spider-Man films made at the exact moment those films were still culturally dominant, which gives it a target worth hitting. Drake Bell plays Rick completely straight while Leslie Nielsen - yes, him again - plays his uncle as a man slowly dying in increasingly elaborate ways across the runtime.\n\nThe film is funnier when it's being specific about what it's parodying. The dragonfly detail is the film announcing it's going to be specific. It follows through.",
+      "contentTitle": "Superhero Movie (2008)",
+      "tubiLink": "https://tubitv.com/movies/589323",
+      "contentId": "589323",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/036_title_10_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/036_title_10_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/036_title_10_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Comedy",
+      "year": "2008",
+      "runtime": "1h 26m",
+      "rating": "PG-13"
+    }
+  ],
+  "keepReading": {
+    "header": {
+      "title": "Keep Reading",
+      "subtitle": "More articles to explore"
+    },
+    "items": [
+      {
+        "id": "027",
+        "slug": "the-funniest-comedy-shows-streaming-now",
+        "eyebrow": "What to Watch",
+        "title": "The Funniest Comedy Shows Streaming Now",
+        "subtitle": "The ones that actually hold up past the first episode.",
+        "categoryTag": "Shows",
+        "thumbnail": "/static/blog/the-t/thumbnails/027_thumbnail.jpg"
+      },
+      {
+        "id": "012",
+        "slug": "from-cult-classics-to-hidden-gems-the-best-of-tubi",
+        "eyebrow": "What to Watch",
+        "title": "From Cult Classics to Hidden Gems: The Best of Tubi",
+        "subtitle": "The ones people keep finding, recommending, and coming back to.",
+        "categoryTag": "Movies",
+        "thumbnail": "/static/blog/the-t/thumbnails/012_thumbnail.jpg"
+      },
+      {
+        "id": "006",
+        "slug": "best-free-movies-to-watch-this-weekend",
+        "eyebrow": "What to Watch",
+        "title": "Best Free Movies to Watch This Weekend",
+        "subtitle": "If you want a good pick without digging, start here.",
+        "categoryTag": "Movies",
+        "thumbnail": "/static/blog/the-t/thumbnails/006_thumbnail.jpg"
+      }
+    ]
+  },
+  "datePosted": "2026-05-26"
+}

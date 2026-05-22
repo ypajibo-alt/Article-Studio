@@ -1,0 +1,289 @@
+{
+  "nav": {
+    "logoLabel": "The T",
+    "links": [
+      {
+        "label": "Home",
+        "href": "/the-t"
+      },
+      {
+        "label": "Coming Soon",
+        "href": "/the-t/coming-soon"
+      },
+      {
+        "label": "Shows",
+        "href": "/the-t/shows"
+      },
+      {
+        "label": "Movies",
+        "href": "/the-t/movies"
+      }
+    ],
+    "explore": {
+      "label": "Explore",
+      "items": [
+        {
+          "label": "FIFA World Cup 2026",
+          "href": "/the-t/fifa-world-cup"
+        },
+        {
+          "label": "Horror",
+          "href": "/the-t/horror"
+        },
+        {
+          "label": "Tubi Originals",
+          "href": "/the-t/originals"
+        },
+        {
+          "label": "Sports",
+          "href": "/the-t/sports"
+        }
+      ],
+      "moreGenresLabel": "More genres",
+      "moreGenresHref": "/the-t/genres"
+    },
+    "mobileMenu": {
+      "open": "Open menu",
+      "close": "Close menu"
+    }
+  },
+  "id": "045",
+  "slug": "zombie-movies-on-tubi-ranked",
+  "categoryTag": "Horror",
+  "type": "listicle",
+  "title": "Zombie Movies on Tubi Ranked",
+  "subtitle": "From Romero's farmhouse to a Nazi zombie tank - here's what actually holds up.",
+  "intro": "The zombie genre has been stretched every direction imaginable. Politics, grief, body horror that gets so specific it stops being horror and starts being something else entirely. The best zombie movies on Tubi know exactly what they're doing with it.\n\nGeorge Romero started it in a Pennsylvania farmhouse with strangers who couldn't stop fighting each other long enough to survive. Decades later, a little girl carries a fungal infection and possibly the last hope for humanity. Somewhere in between, a medical student in a New England basement decides death is just a problem that hasn't been solved yet.\n\nHere's how the ranked list shakes out - and why these ones specifically are worth your time.",
+  "images": {
+    "thumbnail": "/static/blog/the-t/thumbnails/045_thumbnail.jpg",
+    "og": "/static/blog/the-t/og/045_og.jpg"
+  },
+  "items": [
+    {
+      "position": 1,
+      "title": "Night of the Living Dead (In Color)",
+      "description": "Ben is the most competent person in that farmhouse. He boards the windows, makes the decisions, keeps people alive. The others fight him on nearly every call.\n\nRomero shot this in 1968 and cast Duane Jones - a Black man - as the lead without making a single explicit comment about it. He didn't have to. The ending does all the talking.\n\nThis colorized version makes it easier for new viewers to get in the door. Prefer the original black-and-white? Completely valid. But the film underneath is the same either way: the blueprint for every zombie movie that followed, and still one of the few that understood the real threat was always inside the house.",
+      "contentTitle": "Night of the Living Dead (In Color) (1968)",
+      "tubiLink": "https://tubitv.com/movies/624927",
+      "contentId": "624927",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/045_title_1_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/045_title_1_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/045_title_1_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Horror",
+      "year": "1968",
+      "runtime": "1h 35m",
+      "rating": "TV-MA"
+    },
+    {
+      "position": 2,
+      "title": "The Girl with All the Gifts",
+      "description": "Melanie sits in a wheelchair, strapped down, escorted by armed guards to a classroom where she learns about Greek myths and raises her hand politely. She's also second-generation infected - born hungry, not turned. Sennia Nanua plays her with this stillness that makes every scene feel like the room is holding its breath.\n\nThe film gets to the Cordyceps fungus before The Last of Us made it a whole thing, and it goes somewhere different with it. Glenn Close plays the scientist who sees Melanie as a specimen. Gemma Arterton plays the teacher who sees her as a child. That argument runs underneath every scene.\n\nThe ending doesn't wrap it up cleanly. It just follows the logic all the way through and lets you sit with it.",
+      "contentTitle": "The Girl with All the Gifts (2016)",
+      "tubiLink": "https://tubitv.com/movies/642254",
+      "contentId": "642254",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/045_title_2_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/045_title_2_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/045_title_2_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Action",
+      "year": "2016",
+      "runtime": "1h 51m",
+      "rating": "R"
+    },
+    {
+      "position": 3,
+      "title": "Re-Animator",
+      "description": "Herbert West arrives at Miskatonic University with a glowing green syringe and the absolute conviction that death is an engineering problem. Jeffrey Combs plays him without a single moment of doubt - no tortured conscience, no dramatic breakdown. West is annoyed by death the way a programmer is annoyed by a bug. He's going to fix it.\n\nBased on H.P. Lovecraft's serial, this one goes places the source material only gestured at, and it does it with a pitch-black comic commitment that never once winks at you. There's a scene involving a severed head that should not work at all.\n\nIt absolutely works. Stuart Gordon made this for $900,000 and it feels like a dare.",
+      "contentTitle": "Re-Animator (1985)",
+      "tubiLink": "https://tubitv.com/movies/100041704",
+      "contentId": "100041704",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/045_title_3_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/045_title_3_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/045_title_3_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Horror",
+      "year": "1985",
+      "runtime": "1h 26m",
+      "rating": "TV-MA"
+    },
+    {
+      "position": 4,
+      "title": "The Return of the Living Dead",
+      "description": "Ask one of these zombies why it's eating brains and it will tell you: it hurts to be dead, and the brains make it stop. That detail - zombies as suffering creatures, not just hungry ones - came from this film.\n\nDan O'Bannon wrote and directed it as a direct sequel to Romero's universe and then broke every rule Romero established. These things don't go down when you shoot the head. They don't go down at all.\n\nThe punk rock kids partying in the cemetery next door are the real heart of it - specifically Linnea Quigley, who ends up being the most memorable human in the movie by a wide margin. For 1985 horror-comedy, the nihilism lands harder than it has any right to.",
+      "contentTitle": "The Return of the Living Dead (1985)",
+      "tubiLink": "https://tubitv.com/movies/334159",
+      "contentId": "334159",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/045_title_4_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/045_title_4_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/045_title_4_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Horror",
+      "year": "1985",
+      "runtime": "1h 31m",
+      "rating": "R"
+    },
+    {
+      "position": 5,
+      "title": "Diary of the Dead",
+      "description": "A film student keeps shooting while his friends die. That's the premise and also the indictment. Romero made this in 2007 at the exact moment YouTube was changing what it meant to document something, and he was not optimistic.\n\nThe found-footage format isn't a budget workaround here - it's the whole argument. The student can't put the camera down even when putting it down would save someone. There's a sequence where a deaf Amish farmer dispatches a zombie with a scythe in total silence while the camera rolls, and the contrast between his quiet competence and the students' paralyzed filming says everything the movie is trying to say.\n\nLate-period Romero gets dismissed too fast. This one deserves a second look.",
+      "contentTitle": "Diary of the Dead (2007)",
+      "tubiLink": "https://tubitv.com/movies/578000",
+      "contentId": "578000",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/045_title_5_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/045_title_5_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/045_title_5_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Horror",
+      "year": "2007",
+      "runtime": "1h 36m",
+      "rating": "R"
+    },
+    {
+      "position": 6,
+      "title": "Dead Snow 2: Red vs. Dead",
+      "description": "Martin wakes up in a hospital with a Nazi zombie's arm sewn onto his body. The arm has its own agenda. This is the least strange thing that happens in the next ninety minutes.\n\nThe original Dead Snow was a competent Norwegian horror-comedy. The sequel decided competence was boring and doubled everything. Director Tommy Wirkola brings in a trio of American zombie enthusiasts - the Zombie Squad - who have trained their whole lives for exactly this scenario and are completely useless in it.\n\nUnderneath the gallons of fake blood and a reanimated tank, there's actual satirical weight the first film never bothered with. It's ridiculous. It earns every bit of it.",
+      "contentTitle": "Dead Snow 2: Red vs. Dead (2014)",
+      "tubiLink": "https://tubitv.com/movies/505019",
+      "contentId": "505019",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/045_title_6_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/045_title_6_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/045_title_6_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Horror",
+      "year": "2014",
+      "runtime": "1h 40m",
+      "rating": "R"
+    },
+    {
+      "position": 7,
+      "title": "Frankenstein's Army",
+      "description": "A squad of Russian soldiers follows a radio signal to a German laboratory and finds a scientist who has been building soldiers out of corpses and machinery - propeller blades for hands, surgical equipment fused to faces, bodies rewired like broken appliances.\n\nThe creature design is the reason to watch. Director Richard Raaphorst spent years developing these things before the film existed, and it shows in every frame. The found-footage format keeps the camera close enough that you're never quite sure what you're looking at until it's too late.\n\nThe Nazi mad scientist angle could easily tip into parody. It doesn't. The laboratory feels genuinely wrong - like a place where the rules of biology were repealed and nobody filed a complaint.",
+      "contentTitle": "Frankenstein's Army (2013)",
+      "tubiLink": "https://tubitv.com/movies/614966",
+      "contentId": "614966",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/045_title_7_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/045_title_7_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/045_title_7_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Horror",
+      "year": "2013",
+      "runtime": "1h 24m",
+      "rating": "R"
+    },
+    {
+      "position": 8,
+      "title": "Dead Rising: Watchtower",
+      "description": "You don't need to know the games. The setup does the work on its own: the zombie virus is controllable with a drug called Zombrex, which means the outbreak in this quarantine zone isn't a natural disaster - it's a decision. Someone pulled the medication supply. Jesse Metcalfe plays a journalist inside the zone trying to figure out who.\n\nThe makeshift weapons from the game make it in, and the film treats them with exactly the right amount of absurd seriousness. But the pharmaceutical conspiracy underneath gives the survival plot actual stakes beyond just getting out alive.\n\nFor a video game adaptation, the political premise is sharper than most films that weren't adapted from anything.",
+      "contentTitle": "Dead Rising: Watchtower (2015)",
+      "tubiLink": "https://tubitv.com/movies/456106",
+      "contentId": "456106",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/045_title_8_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/045_title_8_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/045_title_8_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Horror",
+      "year": "2015",
+      "runtime": "1h 58m",
+      "rating": "TV-MA"
+    },
+    {
+      "position": 9,
+      "title": "Dead Don't Die in Dallas",
+      "description": "The zombie plague hits a small Texas town, but the miracle pill that slows infection has side effects - and the real conflict isn't between the living and the dead. It's between the people who think God sent the outbreak and the people who were already being treated like the enemy before any of this started.\n\nThis one is messy in ways that feel intentional. Low-budget and aware of it. But the specific cultural friction it drops the zombie premise into gives it more texture than a dozen cleaner productions.\n\nA gay bar becomes a fortress. A preacher decides the infected are sinners. The zombies are almost beside the point - which is exactly the point.",
+      "contentTitle": "Dead Don't Die in Dallas (2019)",
+      "tubiLink": "https://tubitv.com/movies/504899",
+      "contentId": "504899",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/045_title_9_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/045_title_9_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/045_title_9_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Comedy",
+      "year": "2019",
+      "runtime": "1h 31m",
+      "rating": "TV-MA"
+    },
+    {
+      "position": 10,
+      "title": "Day of the Dead: Bloodline",
+      "description": "Most zombie remakes swap out the original's ideas for bigger production value and call it an upgrade. This one at least keeps the most unsettling element: a zombie who isn't fully gone.\n\nMax was a predatory creep before the outbreak. Now he's half-turned and can think just enough to be dangerous in a very specific, very targeted way - he's fixated on Dr. Zoe Parker, who he was already fixating on when he was alive. Sophia Myles plays Zoe with enough grounded urgency to sell the bunker sequences.\n\nIt doesn't come close to Romero's 1985 original in ambition. But the Max dynamic gives it a psychological thread that most zombie sequels don't even attempt.",
+      "contentTitle": "Day of the Dead: Bloodline (2017)",
+      "tubiLink": "https://tubitv.com/movies/100028734",
+      "contentId": "100028734",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/045_title_10_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/045_title_10_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/045_title_10_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Horror",
+      "year": "2017",
+      "runtime": "1h 31m",
+      "rating": "R"
+    }
+  ],
+  "keepReading": {
+    "header": {
+      "title": "Keep Reading",
+      "subtitle": "More articles to explore"
+    },
+    "items": [
+      {
+        "id": "040",
+        "slug": "best-horror-shows-on-tubi-right-now",
+        "eyebrow": "Binge-Worthy",
+        "title": "Best Horror Shows on Tubi Right Now",
+        "subtitle": "A range of horror that goes beyond the obvious picks.",
+        "categoryTag": "Horror",
+        "thumbnail": "/static/blog/the-t/thumbnails/040_thumbnail.jpg"
+      },
+      {
+        "id": "041",
+        "slug": "the-slasher-movies-that-defined-the-genre",
+        "eyebrow": "Binge-Worthy",
+        "title": "The Slasher Movies That Defined the Genre",
+        "subtitle": "The films that wrote the rules - and the ones still collecting royalties on them.",
+        "categoryTag": "Horror",
+        "thumbnail": "/static/blog/the-t/thumbnails/041_thumbnail.jpg"
+      },
+      {
+        "id": "033",
+        "slug": "tubis-best-action-movie-collection",
+        "eyebrow": "What to Watch",
+        "title": "Tubi's Best Action Movie Collection",
+        "subtitle": "Fast-moving stories with just enough weight behind the action.",
+        "categoryTag": "Movies",
+        "thumbnail": "/static/blog/the-t/thumbnails/033_thumbnail.jpg"
+      }
+    ]
+  },
+  "datePosted": "2026-05-26"
+}

@@ -1,0 +1,289 @@
+{
+  "nav": {
+    "logoLabel": "The T",
+    "links": [
+      {
+        "label": "Home",
+        "href": "/the-t"
+      },
+      {
+        "label": "Coming Soon",
+        "href": "/the-t/coming-soon"
+      },
+      {
+        "label": "Shows",
+        "href": "/the-t/shows"
+      },
+      {
+        "label": "Movies",
+        "href": "/the-t/movies"
+      }
+    ],
+    "explore": {
+      "label": "Explore",
+      "items": [
+        {
+          "label": "FIFA World Cup 2026",
+          "href": "/the-t/fifa-world-cup"
+        },
+        {
+          "label": "Horror",
+          "href": "/the-t/horror"
+        },
+        {
+          "label": "Tubi Originals",
+          "href": "/the-t/originals"
+        },
+        {
+          "label": "Sports",
+          "href": "/the-t/sports"
+        }
+      ],
+      "moreGenresLabel": "More genres",
+      "moreGenresHref": "/the-t/genres"
+    },
+    "mobileMenu": {
+      "open": "Open menu",
+      "close": "Close menu"
+    }
+  },
+  "id": "065",
+  "slug": "fox-sports-on-tubi-whats-streaming-live-right-now",
+  "categoryTag": "Sports",
+  "type": "listicle",
+  "title": "Fox Sports on Tubi: What's Streaming Live Right Now",
+  "subtitle": "What's live, what's next, and what's worth tuning into.",
+  "intro": "Fox Sports on Tubi means the games are already on. No subscription, no cable package, no negotiating with a sports bar over the remote.\n\nA 16-team basketball tournament in Las Vegas with Big Ten and Big 12 programs going at each other. Boise State running through the Mountain West in front of a home crowd that never sits down. Big East basketball from the era when those rivalries were genuinely personal.\n\nHere's everything that's streaming right now.",
+  "images": {
+    "thumbnail": "/static/blog/the-t/thumbnails/065_thumbnail.jpg",
+    "og": "/static/blog/the-t/og/065_og.jpg"
+  },
+  "items": [
+    {
+      "position": 1,
+      "title": "FOX Sports College Basketball Classics: College Basketball Crown",
+      "description": "The College Basketball Crown is not a retrospective. It's a 16-team tournament built from scratch, pulling top programs from the Big Ten, Big 12, and other at-large contenders and dropping them all in Las Vegas.\n\nThat means real bracket pressure with none of the March familiarity. You don't already know how this ends. The matchups are fresh, the conference pride is very much intact, and nobody is playing it safe.\n\nIf you've been waiting for a college basketball event that feels like it was designed for people who actually watch college basketball, start here.",
+      "contentTitle": "FOX Sports College Basketball Classics: College Basketball Crown (2025)",
+      "tubiLink": "https://tubitv.com/series/300017534",
+      "contentId": "300017534",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/065_title_1_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/065_title_1_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/065_title_1_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "",
+      "year": "2025",
+      "runtime": "1 Season",
+      "rating": "TV-PG"
+    },
+    {
+      "position": 2,
+      "title": "FOX SPORTS College Football Classics: Mountain West",
+      "description": "Boise State's home games have a specific energy that a box score cannot capture. The blue turf disorients visiting teams before the opening kickoff, the crowd is genuinely loud, and the Broncos have spent years turning the Mountain West into their personal proving ground.\n\nThis channel covers those home games alongside the Mountain West Football Championship - so you get the regular season dominance and the moment where it either holds or doesn't.\n\nFor a conference that doesn't always get the national spotlight, the football here is worth your full attention.",
+      "contentTitle": "FOX SPORTS College Football Classics: Mountain West (2024)",
+      "tubiLink": "https://tubitv.com/series/300008263",
+      "contentId": "300008263",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/065_title_2_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/065_title_2_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/065_title_2_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Sport",
+      "year": "2024",
+      "runtime": "5 Seasons",
+      "rating": "TV-PG"
+    },
+    {
+      "position": 3,
+      "title": "FOX Sports College Football Classics: BIG TEN",
+      "description": "Big Ten football has a specific gravity to it. These programs have been playing each other for over a century, and the classic games on this channel carry that history in every snap.\n\nOhio State-Michigan. Penn State in a white-out. Wisconsin grinding out a fourth-quarter lead. These aren't novelty matchups - they're the games that defined what the conference is.\n\nIf you grew up watching Big Ten football, some of these will feel like muscle memory. If you didn't, this is a solid education in why the rivalry games hit differently here than anywhere else.",
+      "contentTitle": "FOX Sports College Football Classics: BIG TEN (2024)",
+      "tubiLink": "https://tubitv.com/series/4738",
+      "contentId": "4738",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/065_title_3_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/065_title_3_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/065_title_3_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Sport",
+      "year": "2024",
+      "runtime": "8 Seasons",
+      "rating": "TV-PG"
+    },
+    {
+      "position": 4,
+      "title": "FOX Sports College Football Classics: Big 12",
+      "description": "Big 12 football has a reputation, and this channel earns it. The conference has always prioritized offense in a way that makes every game feel like it could end 52-48, and the classics here reflect exactly that.\n\nOklahoma in a shootout. Texas when the stakes are impossibly high. Quarterbacks making decisions at full speed with zero margin for error.\n\nIf you want physical, grind-it-out football, there are other channels on this list. If you want to watch two offenses try to outscore each other until someone blinks, Big 12 classics are exactly where you should be.",
+      "contentTitle": "FOX Sports College Football Classics: Big 12 (2024)",
+      "tubiLink": "https://tubitv.com/series/4741",
+      "contentId": "4741",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/065_title_4_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/065_title_4_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/065_title_4_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Sport",
+      "year": "2024",
+      "runtime": "9 Seasons",
+      "rating": "TV-PG"
+    },
+    {
+      "position": 5,
+      "title": "FOX Sports College Basketball Classics: Big East",
+      "description": "There was a stretch when Big East basketball was the most watched college hoops in the country. Georgetown, Syracuse, St. John's - these programs played a brand of basketball that was physical, loud, and genuinely hostile.\n\nThe classic games on this channel pull from that history. Crowds where the noise was a real factor. Coaches who were as much a part of the story as the players on the floor.\n\nBig East basketball at its peak didn't look like anything else in college hoops. These games are the reason why.",
+      "contentTitle": "FOX Sports College Basketball Classics: Big East (2025)",
+      "tubiLink": "https://tubitv.com/series/4714",
+      "contentId": "4714",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/065_title_5_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/065_title_5_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/065_title_5_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Sport",
+      "year": "2025",
+      "runtime": "10 Seasons",
+      "rating": "TV-PG"
+    },
+    {
+      "position": 6,
+      "title": "FOX Sports College Basketball Classics: BIG TEN",
+      "description": "Big Ten basketball doesn't get the same cultural noise as the ACC or Big East, but the classic games here make a case.\n\nMichigan State's tournament runs. Indiana in an era when that program was still the standard. Purdue in a game where the size advantage was the entire strategy. The conference plays a style where possessions matter and defense is real - and the games that end up in the classics archive are usually the ones where something broke the right way at the worst possible moment for the other team.\n\nWorth the time if you respect the craft.",
+      "contentTitle": "FOX Sports College Basketball Classics: BIG TEN (2025)",
+      "tubiLink": "https://tubitv.com/series/4740",
+      "contentId": "4740",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/065_title_6_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/065_title_6_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/065_title_6_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Sport",
+      "year": "2025",
+      "runtime": "6 Seasons",
+      "rating": "TV-PG"
+    },
+    {
+      "position": 7,
+      "title": "FOX SPORTS College Basketball Classics: Fort Myers Tip-Off",
+      "description": "The Fort Myers Tip-Off runs in November at Suncoast Credit Union Arena in Florida, which means these are early-season games where rosters are still figuring themselves out and coaches are still deciding what they actually have.\n\nThat makes the matchups unpredictable in a way late-season games never are. A rivalry game in November hits differently when neither team has established anything yet. Programs from different conferences meet before the conference schedule locks in, and occasionally you get a result that shapes the entire season's narrative before January even starts.\n\nEarly chaos. Genuinely fun.",
+      "contentTitle": "FOX SPORTS College Basketball Classics: Fort Myers Tip-Off (2024)",
+      "tubiLink": "https://tubitv.com/series/300008264",
+      "contentId": "300008264",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/065_title_7_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/065_title_7_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/065_title_7_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Sport",
+      "year": "2024",
+      "runtime": "4 Seasons",
+      "rating": "TV-PG"
+    },
+    {
+      "position": 8,
+      "title": "FOX Sports College Basketball Classics: Mountain West",
+      "description": "Mountain West basketball has a specific personality. Programs that don't recruit five-stars, play in arenas that visiting teams genuinely dislike, and then show up in March and beat someone they have no business beating.\n\nSan Diego State, Nevada, UNLV - built on system and toughness over individual talent. The classic games here reflect that. Crowds that are loud and invested. Defenses that make the game ugly on purpose.\n\nAnd occasionally a performance that makes you wonder why this conference doesn't get more attention during the regular season.",
+      "contentTitle": "FOX Sports College Basketball Classics: Mountain West (2025)",
+      "tubiLink": "https://tubitv.com/series/300000069",
+      "contentId": "300000069",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/065_title_8_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/065_title_8_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/065_title_8_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Sport",
+      "year": "2025",
+      "runtime": "3 Seasons",
+      "rating": "TV-G"
+    },
+    {
+      "position": 9,
+      "title": "FOX SPORTS COLLEGE BASKETBALL CLASSICS",
+      "description": "This is the broad channel - FOX's college basketball archive without a conference filter. What that means in practice is games that surface players before anyone knew what they'd become.\n\nA freshman performance that, in retrospect, announced something. A tournament run from a program that doesn't usually make runs.\n\nThe conference-specific channels on this list are great for deep dives into a particular rivalry or style of play. This one is better for discovery. Put it on, let it run, and see what the FOX archives have been holding onto.",
+      "contentTitle": "FOX SPORTS COLLEGE BASKETBALL CLASSICS (2024)",
+      "tubiLink": "https://tubitv.com/series/300016557",
+      "contentId": "300016557",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/065_title_9_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/065_title_9_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/065_title_9_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "",
+      "year": "2024",
+      "runtime": "4 Seasons",
+      "rating": "TV-PG"
+    },
+    {
+      "position": 10,
+      "title": "Fox Sports Women's Volleyball Classics",
+      "description": "Women's college volleyball at the top level is faster than most people expect the first time they actually watch it. The sets happen in fractions of a second, the attacks come from angles that shouldn't be possible, and the defensive digs that keep a rally alive require the kind of anticipation that takes years to develop.\n\nThis channel pulls from the biggest classic games in the FOX archive - the matchups where that athleticism was fully on display. Nebraska, Stanford, Wisconsin - programs that have made volleyball one of the most watchable sports in the college calendar.\n\nIf you've been sleeping on it, this is a good place to wake up.",
+      "contentTitle": "Fox Sports Women's Volleyball Classics (2024)",
+      "tubiLink": "https://tubitv.com/series/300015145",
+      "contentId": "300015145",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/065_title_10_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/065_title_10_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/065_title_10_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "",
+      "year": "2024",
+      "runtime": "4 Seasons",
+      "rating": "TV-PG"
+    }
+  ],
+  "keepReading": {
+    "header": {
+      "title": "Keep Reading",
+      "subtitle": "More articles to explore"
+    },
+    "items": [
+      {
+        "id": "063",
+        "slug": "watch-football-movies-and-documentaries-free-on-tubi",
+        "eyebrow": "What to Watch",
+        "title": "Watch Football Movies and Documentaries Free on Tubi",
+        "subtitle": "A Football Life, Undefeated, Blue Mountain State, and more, no subscription required.",
+        "categoryTag": "Sports",
+        "thumbnail": "/static/blog/the-t/thumbnails/063_thumbnail.jpg"
+      },
+      {
+        "id": "067",
+        "slug": "every-nascar-race-and-replay-you-can-stream-on-tubi",
+        "eyebrow": "What to Watch",
+        "title": "Every NASCAR Race and Replay You Can Stream on Tubi",
+        "subtitle": "From moonshine runners to Hendrick Motorsports, all of it, free.",
+        "categoryTag": "Sports",
+        "thumbnail": "/static/blog/the-t/thumbnails/067_thumbnail.png"
+      },
+      {
+        "id": "060",
+        "slug": "best-soccer-stories-to-stream",
+        "eyebrow": "What to Watch",
+        "title": "Beyond the Pitch: The Best Soccer Stories to Stream Now",
+        "subtitle": "The stories behind the game, before the World Cup begins",
+        "categoryTag": "Sports",
+        "thumbnail": "/static/blog/the-t/thumbnails/060_thumbnail.jpg"
+      }
+    ]
+  },
+  "datePosted": "2026-05-26"
+}

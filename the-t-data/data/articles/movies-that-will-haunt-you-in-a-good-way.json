@@ -1,0 +1,289 @@
+{
+  "nav": {
+    "logoLabel": "The T",
+    "links": [
+      {
+        "label": "Home",
+        "href": "/the-t"
+      },
+      {
+        "label": "Coming Soon",
+        "href": "/the-t/coming-soon"
+      },
+      {
+        "label": "Shows",
+        "href": "/the-t/shows"
+      },
+      {
+        "label": "Movies",
+        "href": "/the-t/movies"
+      }
+    ],
+    "explore": {
+      "label": "Explore",
+      "items": [
+        {
+          "label": "FIFA World Cup 2026",
+          "href": "/the-t/fifa-world-cup"
+        },
+        {
+          "label": "Horror",
+          "href": "/the-t/horror"
+        },
+        {
+          "label": "Tubi Originals",
+          "href": "/the-t/originals"
+        },
+        {
+          "label": "Sports",
+          "href": "/the-t/sports"
+        }
+      ],
+      "moreGenresLabel": "More genres",
+      "moreGenresHref": "/the-t/genres"
+    },
+    "mobileMenu": {
+      "open": "Open menu",
+      "close": "Close menu"
+    }
+  },
+  "id": "038",
+  "slug": "movies-that-will-haunt-you-in-a-good-way",
+  "categoryTag": "Movies",
+  "type": "listicle",
+  "title": "Movies That Will Haunt You (In a Good Way)",
+  "subtitle": "The kind that linger a little after the credits.",
+  "intro": "Some movies end. Others just keep going, inside you, at 2am, when a door creaks and you remember that one scene.\n\nThe films that haunt you in a good way aren't always the loudest ones. A pregnant woman in a rental house starts hearing things no one else believes. A disgraced puppeteer drags a puppet he can't bring himself to destroy back to the home that made him. Two children wake up and their parents are simply gone, and the house has started rearranging itself.\n\nHere's the list. Sleep well.",
+  "images": {
+    "thumbnail": "/static/blog/the-t/thumbnails/038_thumbnail.jpg",
+    "og": "/static/blog/the-t/og/038_og.jpg"
+  },
+  "items": [
+    {
+      "position": 1,
+      "title": "Skinamarink",
+      "description": "Two kids wake up at 4am. Their parents are gone. The doors and windows are gone too. What's left is a house filmed from floor level, mostly in the dark, with a cartoon playing on a TV in the corner.\n\nSkinamarink has almost no plot in the traditional sense. It has dread instead, the specific, irrational dread of being small and alone in a house that used to be safe. Director Kyle Edward Ball shot it for $15,000 and somehow made something that feels like a memory you can't place, a nightmare you had once and mostly forgot.\n\nThere's a moment where a voice asks one of the children to do something. The child does it. You won't stop thinking about it.",
+      "contentTitle": "Skinamarink (2022)",
+      "tubiLink": "https://tubitv.com/movies/100044384",
+      "contentId": "100044384",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/038_title_1_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/038_title_1_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/038_title_1_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Horror",
+      "year": "2022",
+      "runtime": "1h 40m",
+      "rating": "TV-MA"
+    },
+    {
+      "position": 2,
+      "title": "Possum",
+      "description": "Philip, a disgraced puppeteer, has come home to burn the puppet. It's in a bag. He takes it to different places and tries to leave it or destroy it. He can't. The bag keeps coming back.\n\nThe puppet, a spider with a pale human face, is genuinely one of the most disturbing objects in recent horror. But Possum isn't really about a puppet. It's about what happens to a child when the adults who should protect them don't. Sean Harris plays Philip with a stillness that reads like a man holding himself together by a single thread.\n\nThe film moves slowly and gives you very little comfort. The ending doesn't resolve so much as arrive.",
+      "contentTitle": "Possum (2018)",
+      "tubiLink": "https://tubitv.com/movies/614964",
+      "contentId": "614964",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/038_title_2_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/038_title_2_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/038_title_2_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Thriller",
+      "year": "2018",
+      "runtime": "1h 25m",
+      "rating": "TV-14"
+    },
+    {
+      "position": 3,
+      "title": "Stir of Echoes",
+      "description": "Tom Witzky is a Chicago lineman who gets hypnotized at a party as a joke. Then the visions start. Kevin Bacon plays Tom not as a man descending into madness but as a man who can't stop digging, literally. He starts tearing up his backyard because something down there needs to be found.\n\nStir of Echoes is grounded in a way that a lot of ghost movies aren't. The neighborhood is real, the marriage is under real pressure, and the haunting feels like it's happening to someone who doesn't have the vocabulary for it. There's a scene in a movie theater that will make you flinch at the wrong moment. The film knows exactly when to show you something and when to pull back.",
+      "contentTitle": "Stir of Echoes (1999)",
+      "tubiLink": "https://tubitv.com/movies/313931",
+      "contentId": "313931",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/038_title_3_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/038_title_3_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/038_title_3_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Thriller",
+      "year": "1999",
+      "runtime": "1h 39m",
+      "rating": "R"
+    },
+    {
+      "position": 4,
+      "title": "The House on Pine Street",
+      "description": "Jennifer is pregnant, newly moved back to Kansas, and something in the rental house is off. The doors, the sounds, the feeling of being watched. Her husband doesn't feel it. Her mother doesn't feel it. A friend with an interest in the paranormal is the only one who takes her seriously, and that comes with its own complications.\n\nThe House on Pine Street earns its scares by making the isolation feel real before the supernatural does. Emily Goss plays Jennifer with the specific exhaustion of someone who has stopped expecting to be heard. A scene where she wakes up and finds all the kitchen cabinet doors open, slowly, quietly, with no music, is more effective than most horror films manage with a full score.\n\nThe pregnancy isn't incidental. It's the whole pressure point.",
+      "contentTitle": "The House on Pine Street (2015)",
+      "tubiLink": "https://tubitv.com/movies/491646",
+      "contentId": "491646",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/038_title_4_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/038_title_4_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/038_title_4_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Horror",
+      "year": "2015",
+      "runtime": "1h 52m",
+      "rating": "TV-MA"
+    },
+    {
+      "position": 5,
+      "title": "The Antichrist",
+      "description": "Ippolita is paralyzed and undergoing hypnosis to treat her condition. The session works, in the worst possible way. It surfaces a past life as a witch, and what comes back with those memories isn't healing.\n\nAlberto De Martino's Italian horror film arrived in the wake of The Exorcist and gets dismissed as imitation. That's not quite right. The Antichrist is more interested in what's already broken inside its protagonist, the guilt, the repression, the father she can't reach, than in the demon itself. Carla Gravina's performance goes places that are genuinely uncomfortable to watch.\n\nFor a 1974 exploitation film, the psychological architecture underneath is more careful than it has any obligation to be.",
+      "contentTitle": "The Antichrist (1974)",
+      "tubiLink": "https://tubitv.com/movies/671671",
+      "contentId": "671671",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/038_title_5_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/038_title_5_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/038_title_5_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Horror",
+      "year": "1974",
+      "runtime": "1h 52m",
+      "rating": "TV-MA"
+    },
+    {
+      "position": 6,
+      "title": "The Funeral Home",
+      "description": "Bernardo runs a funeral home out of his house. His family lives upstairs. The entities that linger after the bodies come through are, for them, an occupational nuisance, something to manage, not fear. This is the setup, and it's a good one.\n\nThe Funeral Home, an Argentine horror film, earns its dread by establishing the rules carefully and then breaking them. When something starts behaving in ways that even Bernardo can't explain, the shift registers because you've already accepted the baseline. Luis Machin plays Bernardo with a dry pragmatism that makes the cracks, when they appear, feel genuinely alarming.\n\nThe film is quieter than its premise suggests. That's the right call.",
+      "contentTitle": "The Funeral Home (2021)",
+      "tubiLink": "https://tubitv.com/movies/611281",
+      "contentId": "611281",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/038_title_6_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/038_title_6_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/038_title_6_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Horror",
+      "year": "2021",
+      "runtime": "1h 26m",
+      "rating": "TV-14"
+    },
+    {
+      "position": 7,
+      "title": "The Possession",
+      "description": "The dybbuk box at the center of this film is based on an actual object, a wine cabinet sold on eBay in 2003 whose owners reported nightmares, illness, and the smell of cat urine. The Possession takes that starting point seriously.\n\nEm finds the box at a yard sale. She becomes attached to it in the way children become attached to things that aren't good for them. Jeffrey Dean Morgan plays her father, recently divorced, trying to stay present in his daughter's life while something in the box makes that harder every day. The film's most effective moments are the small ones, a tooth, a moth, a meal that goes wrong in a specific way.\n\nKyra Sedgwick plays the skeptical mother with enough precision that when her skepticism starts to crack, you feel it.",
+      "contentTitle": "The Possession (2012)",
+      "tubiLink": "https://tubitv.com/movies/348949",
+      "contentId": "348949",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/038_title_7_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/038_title_7_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/038_title_7_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Horror",
+      "year": "2012",
+      "runtime": "1h 32m",
+      "rating": "PG-13"
+    },
+    {
+      "position": 8,
+      "title": "Pay the Ghost",
+      "description": "Mike Lawford's son Charlie disappears at a Halloween carnival. A year later, Mike starts seeing things, a crow, a woman in white, children who shouldn't be where they are. The messages seem to be coming from Charlie.\n\nNicolas Cage plays Mike not as a man losing his mind but as a man who has decided that losing his mind is preferable to accepting that his son is gone. There's a desperation in the performance that keeps the film grounded even when the mythology gets complicated.\n\nThe Halloween setting does real work here. The one night a year when the dead can reach back is also the night Mike failed to hold on. The film doesn't let that coincidence sit quietly.",
+      "contentTitle": "Pay the Ghost (2015)",
+      "tubiLink": "https://tubitv.com/movies/520995",
+      "contentId": "520995",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/038_title_8_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/038_title_8_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/038_title_8_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Thriller",
+      "year": "2015",
+      "runtime": "1h 34m",
+      "rating": "TV-MA"
+    },
+    {
+      "position": 9,
+      "title": "The Messengers",
+      "description": "The Solomon family moves to a sunflower farm in North Dakota that they cannot afford to walk away from. The farm is failing. The marriage is strained. The teenage daughter has a past nobody wants to discuss.\n\nThe infant and the crows know something is wrong before anyone else does. The Pang Brothers, directing their first American film, use that gap, between what the vulnerable can perceive and what the adults are willing to acknowledge, as the film's main engine. Kristen Stewart plays the daughter with a wariness that reads less like a horror movie performance and more like someone who has learned that being believed is not guaranteed.\n\nThe sunflowers are beautiful. The film knows exactly how to use that against you.",
+      "contentTitle": "The Messengers (2007)",
+      "tubiLink": "https://tubitv.com/movies/100046550",
+      "contentId": "100046550",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/038_title_9_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/038_title_9_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/038_title_9_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Horror",
+      "year": "2007",
+      "runtime": "1h 30m",
+      "rating": "PG-13"
+    },
+    {
+      "position": 10,
+      "title": "The Orphanage",
+      "description": "Laura returns to the orphanage where she grew up, planning to open it as a home for disabled children. Her son Simón starts talking about invisible friends. Then Simón disappears.\n\nThe Orphanage holds two explanations open simultaneously, supernatural and psychological, and the film's real cruelty is that by the end, both are true in different ways. Belén Rueda plays Laura with the specific ferocity of a mother who has decided that reality is negotiable. There's a scene involving a medium and a dark room that is one of the most effectively staged sequences in modern horror.\n\nThe film is devastating in a way that most horror films don't attempt. It earns the feeling it's after.",
+      "contentTitle": "El orfanato (Sub Esp) (2013)",
+      "tubiLink": "https://tubitv.com/movies/545908",
+      "contentId": "545908",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/038_title_10_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/038_title_10_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/038_title_10_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Horror",
+      "year": "2013",
+      "runtime": "1h 31m",
+      "rating": "TV-MA"
+    }
+  ],
+  "keepReading": {
+    "header": {
+      "title": "Keep Reading",
+      "subtitle": "More articles to explore"
+    },
+    "items": [
+      {
+        "id": "046",
+        "slug": "the-psychological-horror-films-that-mess-with-your-head",
+        "eyebrow": "What to Watch",
+        "title": "The Psychological Horror Films That Mess With Your Head",
+        "subtitle": "More about tension and perspective than anything physical.",
+        "categoryTag": "Horror",
+        "thumbnail": "/static/blog/the-t/thumbnails/046_thumbnail.jpg"
+      },
+      {
+        "id": "031",
+        "slug": "tubis-most-intense-thriller-series",
+        "eyebrow": "What to Watch",
+        "title": "Tubi's Most Intense Thriller Series",
+        "subtitle": "The Fall, Damages, The Killing, and seven more that will wreck your sleep schedule.",
+        "categoryTag": "Shows",
+        "thumbnail": "/static/blog/the-t/thumbnails/031_thumbnail.jpg"
+      },
+      {
+        "id": "037",
+        "slug": "the-best-dramas-on-tubi",
+        "eyebrow": "What to Watch",
+        "title": "The Best Dramas on Tubi",
+        "subtitle": "Stories that take their time and let things actually land.",
+        "categoryTag": "Movies",
+        "thumbnail": "/static/blog/the-t/thumbnails/037_thumbnail.jpg"
+      }
+    ]
+  },
+  "datePosted": "2026-05-26"
+}

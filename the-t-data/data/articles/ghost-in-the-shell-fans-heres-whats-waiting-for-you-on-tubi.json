@@ -1,0 +1,289 @@
+{
+  "nav": {
+    "logoLabel": "The T",
+    "links": [
+      {
+        "label": "Home",
+        "href": "/the-t"
+      },
+      {
+        "label": "Coming Soon",
+        "href": "/the-t/coming-soon"
+      },
+      {
+        "label": "Shows",
+        "href": "/the-t/shows"
+      },
+      {
+        "label": "Movies",
+        "href": "/the-t/movies"
+      }
+    ],
+    "explore": {
+      "label": "Explore",
+      "items": [
+        {
+          "label": "FIFA World Cup 2026",
+          "href": "/the-t/fifa-world-cup"
+        },
+        {
+          "label": "Horror",
+          "href": "/the-t/horror"
+        },
+        {
+          "label": "Tubi Originals",
+          "href": "/the-t/originals"
+        },
+        {
+          "label": "Sports",
+          "href": "/the-t/sports"
+        }
+      ],
+      "moreGenresLabel": "More genres",
+      "moreGenresHref": "/the-t/genres"
+    },
+    "mobileMenu": {
+      "open": "Open menu",
+      "close": "Close menu"
+    }
+  },
+  "id": "070",
+  "slug": "ghost-in-the-shell-fans-heres-whats-waiting-for-you-on-tubi",
+  "categoryTag": "Movies",
+  "type": "listicle",
+  "title": "Ghost in the Shell Fans: Here's What's Waiting for You on Tubi",
+  "subtitle": "More worlds like that one are already waiting for you.",
+  "intro": "If Ghost in the Shell wrecked you a little - the good kind of wrecked - you already know the feeling. Action that's real, questions underneath it that won't leave you alone, and a city that feels like it's thinking about you while you're thinking about it.\n\nThe titles waiting for you on Tubi go to the same places. A kid in 1980s Tokyo has no idea he's living inside a spaceship running a fake city. Two high school boys stumble into a café where androids and humans sit side by side and nobody mentions it. Section 9 chases a conspiracy that keeps eating its own tail.\n\nHere's where to start.",
+  "images": {
+    "thumbnail": "/static/blog/the-t/thumbnails/070_thumbnail.jpg",
+    "og": "/static/blog/the-t/og/070_og.jpg"
+  },
+  "items": [
+    {
+      "position": 1,
+      "title": "Ghost In The Shell",
+      "description": "Major Motoko Kusanagi is built to close cases. She's also not entirely sure she's a person.\n\nThe hacker she's chasing - the Puppet Master - doesn't steal data. He overwrites human memory. Plants false lives. Makes people believe they were someone they never were. By the time Motoko catches up to him, the line between hunter and target has dissolved and the film doesn't clean it up for you.\n\nMamoru Oshii keeps letting the city breathe between action sequences: rain on canals, crowds that don't notice her, a face reflected in water that might not belong to anyone. The philosophy isn't set dressing. It's the pressure the whole thing runs on.",
+      "contentTitle": "Ghost In The Shell (1995)",
+      "tubiLink": "https://tubitv.com/movies/289816",
+      "contentId": "289816",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/070_title_1_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/070_title_1_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/070_title_1_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Anime",
+      "year": "1995",
+      "runtime": "1h 23m",
+      "rating": "TV-14"
+    },
+    {
+      "position": 2,
+      "title": "Ghost In The Shell 2.0",
+      "description": "Oshii went back into his own film and changed it. New CGI composited over the hand-drawn sequences, a remixed score, updated color grading. Purists have feelings about this.\n\nBut there's something almost poetic about a film obsessed with memory and identity being revised by its own creator - the same way the Puppet Master rewrites the people he inhabits. The bones are identical to the 1995 original. What changed is the texture.\n\nWatch it as a companion, not a replacement. Texture is exactly what this film is about.",
+      "contentTitle": "Ghost In The Shell 2.0 (2008)",
+      "tubiLink": "https://tubitv.com/movies/283906",
+      "contentId": "283906",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/070_title_2_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/070_title_2_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/070_title_2_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Anime",
+      "year": "2008",
+      "runtime": "1h 23m",
+      "rating": "TV-MA"
+    },
+    {
+      "position": 3,
+      "title": "Ghost in the Shell: Stand Alone Complex",
+      "description": "The case that defines Season 1 is one of the most elegant sci-fi premises in anime: a hacker called the Laughing Man who can edit himself out of live surveillance footage in real time. You watch him on camera and see a logo where his face should be. He's been doing it for years.\n\nStand Alone Complex runs longer and looser than the films, which means it has room for the kind of procedural texture GitS always implied but never had time for. Motoko leads. Batou grumbles. The conspiracy underneath the Laughing Man case goes deeper than anyone wants it to.\n\nSection 9 is back, and the show earns every episode.",
+      "contentTitle": "Ghost in the Shell: Stand Alone Complex (2006)",
+      "tubiLink": "https://tubitv.com/series/300015461",
+      "contentId": "300015461",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/070_title_3_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/070_title_3_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/070_title_3_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Sci-Fi",
+      "year": "2006",
+      "runtime": "2 Seasons",
+      "rating": "TV-PG"
+    },
+    {
+      "position": 4,
+      "title": "Ghost in the Shell: S.A.C. 2nd GIG - Individual Eleven",
+      "description": "Second GIG puts Section 9 inside a political situation that doesn't resolve into a villain you can shoot. A refugee group has turned to terrorism. The government's response is generating its own atrocities. The Individual Eleven - a cell of seemingly unconnected people acting on the same ideology - may not be acting freely at all.\n\nThis compilation film condenses the second season's arc and hits harder for it. The action is sharp. But what sticks is watching Motoko operate inside a system she increasingly doesn't trust, doing the job anyway, because the alternative is worse.\n\nShe never stops. The film doesn't pretend that's simple.",
+      "contentTitle": "Ghost in the Shell: S.A.C. 2nd GIG - Individual Eleven (2006)",
+      "tubiLink": "https://tubitv.com/movies/283907",
+      "contentId": "283907",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/070_title_4_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/070_title_4_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/070_title_4_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Anime",
+      "year": "2006",
+      "runtime": "2h 42m",
+      "rating": "TV-MA"
+    },
+    {
+      "position": 5,
+      "title": "Megazone 23 (English Dubbed)",
+      "description": "Shogo Yahagi is a regular guy: motorcycle, girlfriend, vague ambitions. Then he gets hold of a prototype vehicle the government wants back badly enough to kill for, and the reason why is the film's whole gut punch - he's not living in Tokyo. He's living inside a simulation of Tokyo, running on a massive spaceship, and nobody is supposed to know.\n\nThis came out in 1985. It's doing the same thing The Matrix would do fourteen years later, with less budget and more neon.\n\nThe idol singer at the center of the city's media landscape is also the ship's AI. That detail lands harder the second time you think about it.",
+      "contentTitle": "Megazone 23 (English Dubbed) (1985)",
+      "tubiLink": "https://tubitv.com/movies/664933",
+      "contentId": "664933",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/070_title_5_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/070_title_5_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/070_title_5_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Anime",
+      "year": "1985",
+      "runtime": "1h 21m",
+      "rating": "TV-14"
+    },
+    {
+      "position": 6,
+      "title": "Megazone 23: Part II (Dubbed)",
+      "description": "The aliens threatening to destroy Megazone 23 don't care that the city inside it isn't real. The people living there don't know it isn't real. Shogo does now, and Part II makes him sit with what that means before it lets him do anything about it.\n\nDarker and more violent than the original, with a noticeable jump in animation quality. The EVE program - the AI running the simulation - becomes something closer to a character here. She's not just infrastructure. She has something like a relationship with Shogo, and the film doesn't pretend that's easy to categorize.",
+      "contentTitle": "Megazone 23: Part II (Dubbed) (1986)",
+      "tubiLink": "https://tubitv.com/movies/664927",
+      "contentId": "664927",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/070_title_6_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/070_title_6_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/070_title_6_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Action",
+      "year": "1986",
+      "runtime": "1h 22m",
+      "rating": "TV-14"
+    },
+    {
+      "position": 7,
+      "title": "Time of Eve (English Dub)",
+      "description": "In a near-future where androids are household appliances, two high school boys find a café with one posted rule: inside these walls, no distinction is made between humans and androids. No halos, no deference, no asking.\n\nRegulars come back. Relationships form. You start reading every patron for signs of which side of the line they're on - which is exactly the point.\n\nTime of Eve doesn't argue that androids deserve rights. It just shows you what happens when the question gets temporarily suspended, and lets you sit with how much that one rule changes the whole room.",
+      "contentTitle": "Time of Eve (English Dub) (2010)",
+      "tubiLink": "https://tubitv.com/movies/100028804",
+      "contentId": "100028804",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/070_title_7_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/070_title_7_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/070_title_7_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Anime",
+      "year": "2010",
+      "runtime": "1h 47m",
+      "rating": "TV-PG"
+    },
+    {
+      "position": 8,
+      "title": "Appleseed",
+      "description": "Deunan Knute gets pulled out of a post-war wasteland and dropped into Olympus - a gleaming city managed by bioroids, synthetic humans engineered without aggression. Crime is low. People are stable. A terrorist plot is already running underneath all of it.\n\nAppleseed is one of the direct ancestors of Ghost in the Shell. Same Masamune Shirow source material, same preoccupation with what you give up when a system optimizes you for peace. The 1988 OVA is rougher than the later CGI films, but the argument is right there from the start.\n\nDeunan doesn't trust the city. She's not wrong. She's also not entirely right.",
+      "contentTitle": "Appleseed (1988)",
+      "tubiLink": "https://tubitv.com/movies/590321",
+      "contentId": "590321",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/070_title_8_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/070_title_8_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/070_title_8_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Anime",
+      "year": "1988",
+      "runtime": "1h 8m",
+      "rating": "TV-14"
+    },
+    {
+      "position": 9,
+      "title": "Jin-Roh (Dubbed)",
+      "description": "Kazuki Fuse is a soldier in an elite counter-terrorism unit - armored, militarized, trained not to hesitate. He hesitates. A young girl courier detonates a bomb in front of him rather than be captured, and Fuse can't stop thinking about her.\n\nJin-Roh runs Little Red Riding Hood underneath a story about state surveillance, internal politics, and what happens to soldiers who start feeling things they're not supposed to feel. The wolf metaphor is explicit and the film earns every bit of it.\n\nWritten by Mamoru Oshii, directed by Hiroyuki Okiura. It has the same cold-city atmosphere as Ghost in the Shell and none of its hope.",
+      "contentTitle": "Jin-Roh (Dubbed) (2001)",
+      "tubiLink": "https://tubitv.com/movies/460471",
+      "contentId": "460471",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/070_title_9_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/070_title_9_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/070_title_9_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Drama",
+      "year": "2001",
+      "runtime": "1h 42m",
+      "rating": "TV-MA"
+    },
+    {
+      "position": 10,
+      "title": "Dead Leaves",
+      "description": "Pandy and Retro wake up naked on Earth with no memory of who they are, immediately start stealing to survive, get arrested inside of twenty minutes, and spend the rest of the film tearing apart a lunar prison that has been doing things to its inmates that nobody sanctioned.\n\nDead Leaves is thirty minutes long and uses every second. The animation is deliberately chaotic - thick outlines, colors that have no business being next to each other, violence that reads more cartoon than brutal.\n\nIt's not trying to be Ghost in the Shell. It takes the body-modification anxiety and the institutional horror and runs them at full sprint with zero philosophical pit stops. Sometimes that's exactly what you need.",
+      "contentTitle": "Dead Leaves (2004)",
+      "tubiLink": "https://tubitv.com/movies/283888",
+      "contentId": "283888",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/070_title_10_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/070_title_10_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/070_title_10_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Anime",
+      "year": "2004",
+      "runtime": "53m",
+      "rating": "TV-MA"
+    }
+  ],
+  "keepReading": {
+    "header": {
+      "title": "Keep Reading",
+      "subtitle": "More articles to explore"
+    },
+    "items": [
+      {
+        "id": "001",
+        "slug": "best-anime-on-tubi",
+        "eyebrow": "What to Watch",
+        "title": "Best Anime on Tubi Right Now",
+        "subtitle": "If you want something that grabs you fast and doesn't let go, start here.",
+        "categoryTag": "Shows",
+        "thumbnail": "/static/blog/the-t/thumbnails/001_thumbnail.jpg"
+      },
+      {
+        "id": "033",
+        "slug": "tubis-best-action-movie-collection",
+        "eyebrow": "What to Watch",
+        "title": "Tubi's Best Action Movie Collection",
+        "subtitle": "Fast-moving stories with just enough weight behind the action.",
+        "categoryTag": "Movies",
+        "thumbnail": "/static/blog/the-t/thumbnails/033_thumbnail.jpg"
+      },
+      {
+        "id": "031",
+        "slug": "tubis-most-intense-thriller-series",
+        "eyebrow": "What to Watch",
+        "title": "Tubi's Most Intense Thriller Series",
+        "subtitle": "The Fall, Damages, The Killing, and seven more that will wreck your sleep schedule.",
+        "categoryTag": "Shows",
+        "thumbnail": "/static/blog/the-t/thumbnails/031_thumbnail.jpg"
+      }
+    ]
+  },
+  "datePosted": "2026-05-26"
+}

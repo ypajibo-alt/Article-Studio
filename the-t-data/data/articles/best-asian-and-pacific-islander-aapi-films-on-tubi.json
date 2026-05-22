@@ -1,0 +1,289 @@
+{
+  "nav": {
+    "logoLabel": "The T",
+    "links": [
+      {
+        "label": "Home",
+        "href": "/the-t"
+      },
+      {
+        "label": "Coming Soon",
+        "href": "/the-t/coming-soon"
+      },
+      {
+        "label": "Shows",
+        "href": "/the-t/shows"
+      },
+      {
+        "label": "Movies",
+        "href": "/the-t/movies"
+      }
+    ],
+    "explore": {
+      "label": "Explore",
+      "items": [
+        {
+          "label": "FIFA World Cup 2026",
+          "href": "/the-t/fifa-world-cup"
+        },
+        {
+          "label": "Horror",
+          "href": "/the-t/horror"
+        },
+        {
+          "label": "Tubi Originals",
+          "href": "/the-t/originals"
+        },
+        {
+          "label": "Sports",
+          "href": "/the-t/sports"
+        }
+      ],
+      "moreGenresLabel": "More genres",
+      "moreGenresHref": "/the-t/genres"
+    },
+    "mobileMenu": {
+      "open": "Open menu",
+      "close": "Close menu"
+    }
+  },
+  "id": "002",
+  "slug": "best-asian-and-pacific-islander-aapi-films-on-tubi",
+  "categoryTag": "Movies",
+  "type": "listicle",
+  "title": "Best Asian American & Pacific Islander (AAPI) Films on Tubi",
+  "subtitle": "Whale Rider, Lucky Grandma, Bad Axe, and the films that earn their feelings.",
+  "intro": "The best AAPI films don't ask you to read them as representative. They're too busy being specific.\n\nA Korean American son learns his mother's recipes while she's still alive to teach them. A Māori girl born to lead a people whose elders won't look at her. Two brothers in Los Angeles trying to hold something together while the city burns around them. A Hawaiian family haunted by the dead in ways that feel more like love than grief.\n\nThese are some of the best AAPI films streaming on Tubi right now. Pick one and stay a while.",
+  "images": {
+    "thumbnail": "/static/blog/the-t/thumbnails/002_thumbnail.jpg",
+    "og": "/static/blog/the-t/og/002_og.jpg"
+  },
+  "items": [
+    {
+      "position": 1,
+      "title": "Coming Home Again",
+      "description": "If grief had a texture, it might feel like this film. A Korean American man moves back to San Francisco to care for his dying mother, and the way they spend that time is in the kitchen. She teaches him the recipes she's carried her whole life, him learning them with the urgency of someone who understands this is the last chance.\n\nThere's a scene where he prepares a dish she taught him and the camera just stays on his hands. No score, no dialogue. You feel the weight of it without the film ever telling you to.\n\nWriter-director Wayne Wang shoots it quietly, without sentimentality. The love here is practical and enormous.",
+      "contentTitle": "Coming Home Again (2020)",
+      "tubiLink": "https://tubitv.com/movies/650799",
+      "contentId": "650799",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/002_title_1_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/002_title_1_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/002_title_1_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Drama",
+      "year": "2020",
+      "runtime": "1h 26m",
+      "rating": "TV-14"
+    },
+    {
+      "position": 2,
+      "title": "Lucky Grandma",
+      "description": "A stubborn, chain-smoking Chinese grandma goes to the casino, wins big, then loses almost all of it. What she keeps puts her directly in the middle of a Chinatown gang dispute, and her solution is to hire her own bodyguard.\n\nThe film plays this completely straight, which is exactly why it's funny. Tsai Chin doesn't perform chaos. She performs someone who has survived too much to be rattled by a couple of gangsters. There's a standoff scene late in the film where she doesn't flinch and the gangster does, and it earns every second of setup that came before it.\n\nStylish, dark, and genuinely surprising.",
+      "contentTitle": "Lucky Grandma (2019)",
+      "tubiLink": "https://tubitv.com/movies/100002795",
+      "contentId": "100002795",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/002_title_2_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/002_title_2_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/002_title_2_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Comedy",
+      "year": "2019",
+      "runtime": "1h 27m",
+      "rating": "TV-MA"
+    },
+    {
+      "position": 3,
+      "title": "Gook",
+      "description": "Set during the 1992 LA uprising, this one drops you in without ceremony. Two Korean American brothers are running a failing shoe store when Kamilla, a young Black girl from the neighborhood, shows up and inserts herself into their day. The friendship that forms between the three of them is the whole film: tender, specific, and increasingly fragile as the city outside deteriorates.\n\nDirector Justin Chon shot it in black and white, which strips away any distance you might use to keep the film at arm's length. The riots aren't backdrop. They're pressure, tightening around something that was already delicate.\n\nRaw in the best sense.",
+      "contentTitle": "Gook (2017)",
+      "tubiLink": "https://tubitv.com/movies/507690",
+      "contentId": "507690",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/002_title_3_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/002_title_3_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/002_title_3_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Drama",
+      "year": "2017",
+      "runtime": "1h 34m",
+      "rating": "TV-MA"
+    },
+    {
+      "position": 4,
+      "title": "Whale Rider",
+      "description": "Pai knows what she is. The problem is her grandfather Koro, who believes the next leader of their Māori community must be male, and who cannot bring himself to see what's standing right in front of him.\n\nKeisha Castle-Hughes was thirteen when she made this film and plays Pai with a patience that doesn't read as resignation. It reads as someone who has decided to outlast the doubt. The scene where she performs at a school ceremony and Koro doesn't show up, then watches the recording alone later, is the kind of moment that stays in your chest.\n\nRooted completely in Māori culture. Resonant far beyond it.",
+      "contentTitle": "Whale Rider (2002)",
+      "tubiLink": "https://tubitv.com/movies/100014858",
+      "contentId": "100014858",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/002_title_4_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/002_title_4_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/002_title_4_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Drama",
+      "year": "2002",
+      "runtime": "1h 41m",
+      "rating": "PG-13"
+    },
+    {
+      "position": 5,
+      "title": "I Was a Simple Man",
+      "description": "An elderly Hawaiian man is dying, and the people he's lost over the course of his life come back to sit with him. Not as horror, not as guilt. Just presence. His first wife. Others he loved. The film moves between pre-war Oahu and contemporary Honolulu with the ease of memory, and the past doesn't feel like the past so much as something still breathing.\n\nChristopher Kahunahana directs with a stillness that matches the field. There's a scene on a porch near the end where almost nothing happens and it's the most emotionally complete moment in the film.\n\nHaunting is the wrong word. Tender is closer.",
+      "contentTitle": "I Was a Simple Man (2021)",
+      "tubiLink": "https://tubitv.com/movies/100024591",
+      "contentId": "100024591",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/002_title_5_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/002_title_5_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/002_title_5_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Drama",
+      "year": "2021",
+      "runtime": "1h 40m",
+      "rating": "TV-MA"
+    },
+    {
+      "position": 6,
+      "title": "The Wedding Banquet",
+      "description": "Wai-Tung has built a life in New York with his partner Simon. His Taiwanese parents have been waiting for him to get married. The solution is a sham wedding with a friend who needs a green card, and it seems manageable until his parents fly in and turn it into a full celebration.\n\nAng Lee directs this with real warmth, but he doesn't let anyone off the hook. There's a scene where Wai-Tung's father privately reveals how much he actually understands, and it reframes everything that came before it without resolving any of the tension. That's the film's whole move: funnier than you expect, then more honest than you're ready for.\n\nStill sharp thirty years later.",
+      "contentTitle": "The Wedding Banquet (1993)",
+      "tubiLink": "https://tubitv.com/movies/303018",
+      "contentId": "303018",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/002_title_6_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/002_title_6_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/002_title_6_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Comedy",
+      "year": "1993",
+      "runtime": "1h 48m",
+      "rating": "R"
+    },
+    {
+      "position": 7,
+      "title": "Bad Axe",
+      "description": "David Siev came home to Bad Axe, Michigan during the pandemic and started filming his family: his parents running their restaurant, his sisters navigating the town they grew up in, the community around them that doesn't always feel like it belongs to them.\n\nWhat he caught is a document of a specific American year that also happens to be a portrait of what it takes to stay somewhere. His mother runs the kitchen with an intensity that makes you understand exactly how much is riding on every service. His father talks about the restaurant like it's the family itself.\n\nThis is about resilience, yes. It's also about what belonging costs when belonging was never guaranteed.",
+      "contentTitle": "Bad Axe (2022)",
+      "tubiLink": "https://tubitv.com/movies/100040159",
+      "contentId": "100040159",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/002_title_7_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/002_title_7_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/002_title_7_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Documentary",
+      "year": "2022",
+      "runtime": "1h 41m",
+      "rating": "TV-MA"
+    },
+    {
+      "position": 8,
+      "title": "Columbus",
+      "description": "Jin is in Columbus, Indiana waiting for his architect father to wake up from a coma. Casey is a local who has quietly put her own ambitions on hold to stay near her recovering mother. They meet and start walking through the city together, talking about buildings.\n\nKogonada's film uses the architecture of Columbus, genuinely one of the most remarkable collections of modernist buildings in America, as a way for two people to have conversations about things they can't approach directly. John Cho plays Jin with a flatness that isn't coldness; it's someone who hasn't figured out how to feel the thing in front of him yet.\n\nQuiet in a way that accumulates. You notice it after.",
+      "contentTitle": "Columbus (2017)",
+      "tubiLink": "https://tubitv.com/movies/100040500",
+      "contentId": "100040500",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/002_title_8_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/002_title_8_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/002_title_8_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Drama",
+      "year": "2017",
+      "runtime": "1h 44m",
+      "rating": "TV-MA"
+    },
+    {
+      "position": 9,
+      "title": "Driveways",
+      "description": "Kathy brings her son Cody to clean out her late sister's house. A woman she barely knew, in a town she's never been to. While she sorts through a stranger's life, Cody wanders next door and starts spending time with Del, a retired veteran who has his own reasons for keeping to himself.\n\nBrian Dennehy plays Del in what turned out to be one of his final performances, and he brings a weight to the character that the film earns slowly. There's a scene where Del takes Cody to bingo night at the VFW hall and the camera just watches them sitting together in the noise, and it's the most human thing in the film.\n\nAndrew Ahn directs with patience. The connection between these two doesn't announce itself. It just happens.",
+      "contentTitle": "Driveways (2019)",
+      "tubiLink": "https://tubitv.com/movies/659926",
+      "contentId": "659926",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/002_title_9_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/002_title_9_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/002_title_9_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Drama",
+      "year": "2019",
+      "runtime": "1h 23m",
+      "rating": "TV-14"
+    },
+    {
+      "position": 10,
+      "title": "Worth the Wait",
+      "description": "Yes, it's a romantic ensemble comedy. It's also one of the few recent examples of the genre where the Asian American characters aren't navigating their identity as a subplot. It's just the world the film lives in.\n\nThe structure weaves together several storylines: new love, old flames, grief that hasn't finished arriving. Some threads land harder than others, but the film has genuine feeling in the quieter moments, particularly in the storyline about loss, where the comedy earns its right to be present by not flinching from what's underneath it.\n\nLight in tone, honest underneath. A good one to watch when you want to feel something without being leveled by it.",
+      "contentTitle": "Worth the Wait (2025)",
+      "tubiLink": "https://tubitv.com/movies/100039535",
+      "contentId": "100039535",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/002_title_10_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/002_title_10_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/002_title_10_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Romance",
+      "year": "2025",
+      "runtime": "1h 41m",
+      "rating": "TV-PG"
+    }
+  ],
+  "keepReading": {
+    "header": {
+      "title": "Keep Reading",
+      "subtitle": "More articles to explore"
+    },
+    "items": [
+      {
+        "id": "007",
+        "slug": "best-lgbtq-movies-on-tubi",
+        "eyebrow": "What to Watch",
+        "title": "Best LGBTQ+ Movies on Tubi for Pride Month",
+        "subtitle": "The Inspection, Priscilla, Summer of 85, and more worth your full attention.",
+        "categoryTag": "Movies",
+        "thumbnail": "/static/blog/the-t/thumbnails/007_thumbnail.jpg"
+      },
+      {
+        "id": "037",
+        "slug": "the-best-dramas-on-tubi",
+        "eyebrow": "What to Watch",
+        "title": "The Best Dramas on Tubi",
+        "subtitle": "Stories that take their time and let things actually land.",
+        "categoryTag": "Movies",
+        "thumbnail": "/static/blog/the-t/thumbnails/037_thumbnail.jpg"
+      },
+      {
+        "id": "030",
+        "slug": "the-best-docuseries-on-tubi",
+        "eyebrow": "What to Watch",
+        "title": "The Best Docuseries on Tubi You Need to Watch",
+        "subtitle": "Real stories that are built to keep you watching longer than planned.",
+        "categoryTag": "Shows",
+        "thumbnail": "/static/blog/the-t/thumbnails/030_thumbnail.jpg"
+      }
+    ]
+  },
+  "datePosted": "2026-05-26"
+}

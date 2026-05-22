@@ -1,0 +1,289 @@
+{
+  "nav": {
+    "logoLabel": "The T",
+    "links": [
+      {
+        "label": "Home",
+        "href": "/the-t"
+      },
+      {
+        "label": "Coming Soon",
+        "href": "/the-t/coming-soon"
+      },
+      {
+        "label": "Shows",
+        "href": "/the-t/shows"
+      },
+      {
+        "label": "Movies",
+        "href": "/the-t/movies"
+      }
+    ],
+    "explore": {
+      "label": "Explore",
+      "items": [
+        {
+          "label": "FIFA World Cup 2026",
+          "href": "/the-t/fifa-world-cup"
+        },
+        {
+          "label": "Horror",
+          "href": "/the-t/horror"
+        },
+        {
+          "label": "Tubi Originals",
+          "href": "/the-t/originals"
+        },
+        {
+          "label": "Sports",
+          "href": "/the-t/sports"
+        }
+      ],
+      "moreGenresLabel": "More genres",
+      "moreGenresHref": "/the-t/genres"
+    },
+    "mobileMenu": {
+      "open": "Open menu",
+      "close": "Close menu"
+    }
+  },
+  "id": "069",
+  "slug": "the-best-anime-on-tubi-to-watch-completely-free",
+  "categoryTag": "Shows",
+  "type": "listicle",
+  "title": "The Best Anime on Tubi to Watch Completely Free",
+  "subtitle": "Whether you're brand new or already deep in the rabbit hole.",
+  "intro": "The best anime on Tubi to watch completely free is not a short list, and that's the whole point.\n\nLight Yagami finds a notebook that can kill anyone whose name he writes in it, and immediately starts playing God. Gon Freecss wants to become a Hunter like the father who abandoned him, and the exam to get there involves things that should not be legal. Rock Lee can't use ninjutsu or genjutsu and still shows up every single day.\n\nPick your entry point. There are several.",
+  "images": {
+    "thumbnail": "/static/blog/the-t/thumbnails/069_thumbnail.jpg",
+    "og": "/static/blog/the-t/og/069_og.jpg"
+  },
+  "items": [
+    {
+      "position": 1,
+      "title": "Death Note (Subtitled)",
+      "description": "Light Yagami is a genius who is bored, which turns out to be genuinely dangerous. The Death Note falls into his hands and within a few episodes he's already built an entire ideology around why mass murder is actually justice.\n\nThe real tension isn't whether he'll get caught. It's watching someone smart enough to know exactly what he's doing choose to do it anyway.\n\nThe cat-and-mouse between Light and the detective known only as L is some of the tightest writing in anime. Two people who've never met, sitting across from each other, both already knowing. If you've never watched anime before, this is a reasonable place to start. It hooks fast and doesn't let go.",
+      "contentTitle": "Death Note (Subtitled) (2007)",
+      "tubiLink": "https://tubitv.com/series/1630",
+      "contentId": "1630",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/069_title_1_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/069_title_1_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/069_title_1_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Anime",
+      "year": "2007",
+      "runtime": "1 Season",
+      "rating": "TV-14"
+    },
+    {
+      "position": 2,
+      "title": "Naruto (Subtitled)",
+      "description": "A nine-tailed demon fox was sealed inside Naruto the day he was born, and the village has never let him forget it. He grows up without parents, without friends, with everyone around him treating him like a threat. His response is to decide he'll become Hokage - the most respected ninja in the village - and mean it completely.\n\nThe early arcs earn every emotional beat they land. The training sequences are genuinely exciting. And the friendships, when they finally form, feel like they cost something to get there.\n\nHundreds of episodes. Worth it.",
+      "contentTitle": "Naruto (Subtitled) (2006)",
+      "tubiLink": "https://tubitv.com/series/1622",
+      "contentId": "1622",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/069_title_2_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/069_title_2_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/069_title_2_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Anime",
+      "year": "2006",
+      "runtime": "4 Seasons",
+      "rating": "TV-14"
+    },
+    {
+      "position": 3,
+      "title": "Hunter × Hunter (Subbed)",
+      "description": "Gon Freecss is twelve years old and relentlessly cheerful about the fact that his father abandoned him to pursue the most dangerous profession in the world. His plan: become a Hunter too, find the man, and ask him why.\n\nThe Hunter Qualification Exam that opens the series is brutal in the best way. The test isn't fighting - it's endurance, psychology, and knowing when to stop. The friendship Gon builds with the assassin-trained Killua is the emotional core of everything that follows.\n\nThe Chimera Ant arc alone justifies the whole watch.",
+      "contentTitle": "Hunter × Hunter (Subbed) (2014)",
+      "tubiLink": "https://tubitv.com/series/1627",
+      "contentId": "1627",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/069_title_3_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/069_title_3_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/069_title_3_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Anime",
+      "year": "2014",
+      "runtime": "3 Seasons",
+      "rating": "TV-14"
+    },
+    {
+      "position": 4,
+      "title": "JoJo's Bizarre Adventure",
+      "description": "Yes, the poses are intentional. Yes, the villain's name is Dio. Yes, there is a character whose stand ability is essentially just being very sticky.\n\nJoJo's Bizarre Adventure commits to its own logic completely, and that's the only reason any of it works - and it works. Each arc follows a different member of the Joestar bloodline across different eras, different genres, and different levels of absolute chaos. Part 1 is Gothic horror. Part 2 is Aztec sun gods and Nazi cyborgs. Part 3 is a road trip across Egypt to punch a vampire.\n\nOnce you're in, the references start appearing everywhere.",
+      "contentTitle": "JoJo's Bizarre Adventure (2019)",
+      "tubiLink": "https://tubitv.com/series/1823",
+      "contentId": "1823",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/069_title_4_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/069_title_4_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/069_title_4_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Anime",
+      "year": "2019",
+      "runtime": "4 Seasons",
+      "rating": "TV-MA"
+    },
+    {
+      "position": 5,
+      "title": "Yu-Gi-Oh!",
+      "description": "Yugi Muto solves an ancient Egyptian puzzle and wakes up a spirit that has been sealed inside it for five thousand years. The spirit is a pharaoh with no memory of his past, and his primary mode of conflict resolution is card games - which the show treats with the full seriousness of actual combat.\n\nThis is not a criticism. The duels have real stakes, the villains are genuinely threatening, and the friendship between Yugi and his other self is the emotional engine of the whole series.\n\nIf you watched this as a kid and haven't revisited it, the nostalgia is real. If you never did, the first episode will explain everything.",
+      "contentTitle": "Yu-Gi-Oh! (2006)",
+      "tubiLink": "https://tubitv.com/series/2067",
+      "contentId": "2067",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/069_title_5_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/069_title_5_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/069_title_5_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Anime",
+      "year": "2006",
+      "runtime": "5 Seasons",
+      "rating": "TV-Y7"
+    },
+    {
+      "position": 6,
+      "title": "Captain Tsubasa: Junior Youth Arc (English Subbed)",
+      "description": "Captain Tsubasa takes soccer and applies full shonen logic to it. Shots that bend through the air like they're alive. Goalkeepers who treat a save like a life-or-death stand. A kid who has loved the ball since before he could walk and treats every match like it's the only thing that matters.\n\nThe Junior Youth Arc follows Tsubasa and his team heading to Paris for an international youth tournament, and the animation is sharper than it has any right to be for a soccer series aimed at kids.\n\nIf you've ever wondered why a penalty kick in sports anime feels more tense than most action sequences - this is the one that explains it.",
+      "contentTitle": "Captain Tsubasa: Junior Youth Arc (English Subbed) (2024)",
+      "tubiLink": "https://tubitv.com/series/300013824",
+      "contentId": "300013824",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/069_title_6_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/069_title_6_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/069_title_6_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Anime",
+      "year": "2024",
+      "runtime": "1 Season",
+      "rating": "TV-14"
+    },
+    {
+      "position": 7,
+      "title": "Tougen Anki",
+      "description": "Shiki Ichinose is a delinquent with anger management problems and a father who just got killed. The explanation involves Oni bloodlines, a secret war between demons and heroes, and an academy that apparently exists specifically for people like him.\n\nTougen Anki is a 2025 series, and the fight sequences move fast and hit hard. The demon-world mythology has enough internal logic to feel like a real system rather than an excuse for power-ups - which, if you've watched enough action anime, you know is not a given.\n\nIf you've burned through the classics and want something newer, this is a solid place to land.",
+      "contentTitle": "Tougen Anki (2025)",
+      "tubiLink": "https://tubitv.com/series/300019230",
+      "contentId": "300019230",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/069_title_7_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/069_title_7_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/069_title_7_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Anime",
+      "year": "2025",
+      "runtime": "1 Season",
+      "rating": "TV-MA"
+    },
+    {
+      "position": 8,
+      "title": "Haigakura",
+      "description": "Ichiyo and Tenko don't choose each other - they get pulled together in the middle of something already going wrong. The impending catastrophe they're trying to stop isn't explained all at once, which is the right call. The mystery of what's actually coming is part of what keeps the early episodes moving.\n\nAnother 2025 entry, and the action-fantasy genre is where newer anime tends to push hardest on visual ambition. Haigakura delivers on that. The choreography in the fight sequences has real weight - hits feel like they land.\n\nGood pick if you want something you can get in on the ground floor of.",
+      "contentTitle": "Haigakura (2025)",
+      "tubiLink": "https://tubitv.com/series/300013862",
+      "contentId": "300013862",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/069_title_8_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/069_title_8_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/069_title_8_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Anime",
+      "year": "2025",
+      "runtime": "1 Season",
+      "rating": "TV-PG"
+    },
+    {
+      "position": 9,
+      "title": "Naruto Spin-Off: Rock Lee & His Ninja Pals",
+      "description": "Rock Lee is, canonically, a ninja who cannot use ninjutsu or genjutsu - the two things that make being a ninja useful. His response is to train harder than everyone else and never once act like it's a disadvantage. This spin-off takes that energy and runs it straight into comedy.\n\nIt's a chibi-style parody, meaning the characters are exaggerated, the situations are absurd, and the jokes land best if you already know the Naruto universe well enough to catch the references.\n\nIf you've finished the main series and need a palate cleanser, this is it. Lee's enthusiasm is genuinely difficult to dislike.",
+      "contentTitle": "Naruto Spin-Off: Rock Lee & His Ninja Pals (2012)",
+      "tubiLink": "https://tubitv.com/series/2043",
+      "contentId": "2043",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/069_title_9_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/069_title_9_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/069_title_9_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Anime",
+      "year": "2012",
+      "runtime": "1 Season",
+      "rating": "TV-PG"
+    },
+    {
+      "position": 10,
+      "title": "World War Blue (Dubbed)",
+      "description": "The Segua Kingdom is fighting the Ninteldo Empire for control of the land of Consume. The characters are named after classic video game characters. The color schemes are exactly what you think they are.\n\nWorld War Blue takes the 1990s console wars and plays them completely straight as a fantasy action series - which is either the most niche premise in anime history or a stroke of genius depending on your relationship to retro gaming. It's both, actually. The parody works because it never winks at the camera. It just builds the world and lets you catch the references yourself.\n\nA 2012 anime that is fully, completely committed to its own bit.",
+      "contentTitle": "World War Blue (Dubbed) (2012)",
+      "tubiLink": "https://tubitv.com/series/300011139",
+      "contentId": "300011139",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/069_title_10_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/069_title_10_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/069_title_10_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Anime",
+      "year": "2012",
+      "runtime": "1 Season",
+      "rating": "TV-MA"
+    }
+  ],
+  "keepReading": {
+    "header": {
+      "title": "Keep Reading",
+      "subtitle": "More articles to explore"
+    },
+    "items": [
+      {
+        "id": "001",
+        "slug": "best-anime-on-tubi",
+        "eyebrow": "What to Watch",
+        "title": "Best Anime on Tubi Right Now",
+        "subtitle": "If you want something that grabs you fast and doesn't let go, start here.",
+        "categoryTag": "Shows",
+        "thumbnail": "/static/blog/the-t/thumbnails/001_thumbnail.jpg"
+      },
+      {
+        "id": "011",
+        "slug": "epic-mecha-battles-the-best-giant-robot-anime-on-tubi",
+        "eyebrow": "What to Watch",
+        "title": "Epic Mecha Battles: The Best Giant Robot Anime on Tubi",
+        "subtitle": "Big fights, high stakes, and just enough story to make it land.",
+        "categoryTag": "Shows",
+        "thumbnail": "/static/blog/the-t/thumbnails/011_thumbnail.jpg"
+      },
+      {
+        "id": "074",
+        "slug": "the-classic-cartoons-every-90s-kid-needs-to-revisit",
+        "eyebrow": "What to Watch",
+        "title": "The Classic Cartoons Every 90s Kid Needs to Revisit",
+        "subtitle": "The ones that were doing more than you realized.",
+        "categoryTag": "Shows",
+        "thumbnail": "/static/blog/the-t/thumbnails/074_thumbnail.jpg"
+      }
+    ]
+  },
+  "datePosted": "2026-05-26"
+}

@@ -1,0 +1,161 @@
+{
+  "nav": {
+    "logoLabel": "The T",
+    "links": [
+      {
+        "label": "Home",
+        "href": "/the-t"
+      },
+      {
+        "label": "Coming Soon",
+        "href": "/the-t/coming-soon"
+      },
+      {
+        "label": "Shows",
+        "href": "/the-t/shows"
+      },
+      {
+        "label": "Movies",
+        "href": "/the-t/movies"
+      }
+    ],
+    "explore": {
+      "label": "Explore",
+      "items": [
+        {
+          "label": "FIFA World Cup 2026",
+          "href": "/the-t/fifa-world-cup"
+        },
+        {
+          "label": "Horror",
+          "href": "/the-t/horror"
+        },
+        {
+          "label": "Tubi Originals",
+          "href": "/the-t/originals"
+        },
+        {
+          "label": "Sports",
+          "href": "/the-t/sports"
+        }
+      ],
+      "moreGenresLabel": "More genres",
+      "moreGenresHref": "/the-t/genres"
+    },
+    "mobileMenu": {
+      "open": "Open menu",
+      "close": "Close menu"
+    }
+  },
+  "id": "071",
+  "slug": "kissing-is-the-easy-part-gets-first-love-more-right-than-most",
+  "categoryTag": "Originals",
+  "type": "article",
+  "title": "Kissing Is the Easy Part Gets First Love More Right Than Most",
+  "subtitle": "One secret deal, two people with completely different plans, and neither of them saw this coming.",
+  "datePosted": "2026-05-26",
+  "intro": "Sean has a five-year plan and MIT at the end of it. Flora has decided the SAT is someone else's problem. The only way they end up in the same room is through a deal —she gets his academic help, he gets something he hasn't figured out yet. What happens next is not a surprise, but the way it happens is. First love stories live or die on whether the two people feel real, and these two do: specific, stubborn, and genuinely changed by each other in ways that don't resolve cleanly.",
+  "cast": {
+    "header": {
+      "title": "The Cast"
+    },
+    "items": [
+      {
+        "name": "Asher Angel as Sean",
+        "bio": "Sean walks into this film with a plan so airtight he hasn't left room for anything else. Watching that certainty crack, not dramatically, but slowly, in the way real things crack, is the engine of the whole story. He's not wrong about what he wants. He just hasn't met anyone who made him question whether he was asking the right questions."
+      },
+      {
+        "name": "Paris Berelc as Flora",
+        "bio": "Flora isn't drifting, she's made a deliberate choice to opt out of a system she doesn't believe in, and she'll argue the case if you push her. She's the one who makes the deal, which means she's the one who set everything in motion. That matters. She's not waiting to be discovered. She already knows who she is."
+      },
+      {
+        "name": "Jennifer Robertson as Erin Foster",
+        "bio": "Erin is what Sean's future is supposed to look like — stable, successful, and already mapped out. She's not there to guide him so much as to reinforce the version of life he thinks he's choosing. The more Sean starts to shift, the more that version stops feeling inevitable."
+      },
+      {
+        "name": "Tom Keat as Denny",
+        "bio": "Denny sits just outside the main story but sees more than he lets on. He's the kind of friend who calls things out a beat earlier than everyone else, not to interfere, but because he knows how these dynamics play out."
+      }
+    ]
+  },
+  "quote": "You wanted a tutor. I wanted out. Neither of us planned the rest.",
+  "faq": {
+    "header": {
+      "title": "More details"
+    },
+    "items": [
+      {
+        "question": "Who directed the film?",
+        "answer": "Fawzia Mirza"
+      },
+      {
+        "question": "Who is in the cast?",
+        "answer": "Asher Angel, Paris Berelc, Tom Keat, Hayley Festeryga, Roshahn Dhoré, Mark Ballantyne, Rosalie Turmel, Jennifer Robertson, Sorika Wolf, Daniel Falk"
+      },
+      {
+        "question": "Where can I stream this?",
+        "answer": "Free on Tubi"
+      }
+    ]
+  },
+  "images": {
+    "thumbnail": "/static/blog/the-t/thumbnails/071_thumbnail.jpg",
+    "hero": "/static/blog/the-t/heroes/071_hero.jpg",
+    "og": "/static/blog/the-t/og/071_og.jpg"
+  },
+  "keepReading": {
+    "header": {
+      "title": "Keep Reading",
+      "subtitle": "More articles to explore"
+    },
+    "items": [
+      {
+        "id": "053",
+        "slug": "how-to-lose-a-popularity-contest-on-tubi",
+        "eyebrow": "What to Watch",
+        "title": "How to Lose a Popularity Contest Is the YA Film You Never Knew You Needed",
+        "subtitle": "A rigged election, a reluctant alliance, and feelings that absolutely were not part of the plan.",
+        "categoryTag": "Originals",
+        "thumbnail": "/static/blog/the-t/thumbnails/053_thumbnail.jpg"
+      },
+      {
+        "id": "073",
+        "slug": "if-you-grew-up-on-degrassi-these-teen-dramas-on-tubi-are-for-you",
+        "eyebrow": "What to Watch",
+        "title": "If You Grew Up on Degrassi, These Teen Dramas on Tubi Are for You",
+        "subtitle": "Same emotional chaos, different hallways.",
+        "categoryTag": "Shows",
+        "thumbnail": "/static/blog/the-t/thumbnails/073_thumbnail.jpg"
+      },
+      {
+        "id": "007",
+        "slug": "best-lgbtq-movies-on-tubi",
+        "eyebrow": "What to Watch",
+        "title": "Best LGBTQ+ Movies on Tubi for Pride Month",
+        "subtitle": "The Inspection, Priscilla, Summer of 85, and more worth your full attention.",
+        "categoryTag": "Movies",
+        "thumbnail": "/static/blog/the-t/thumbnails/007_thumbnail.jpg"
+      }
+    ]
+  },
+  "hero": {
+    "watchLink": "https://tubitv.com/movies/100050541/kissing-is-the-easy-part",
+    "contentId": "100050541",
+    "watchNowLabel": "Watch Now"
+  },
+  "whyWatch": {
+    "header": {
+      "title": "Why Watch It"
+    },
+    "body": "The secret-deal-turned-romance setup has been done before, but this film earns it by refusing to make either character the obvious one. Sean isn't just the uptight overachiever waiting to loosen up, and Flora isn't just the free spirit here to teach him lessons. They push back on each other in specific ways — the kind of arguments that only happen when two people are actually paying attention."
+  },
+  "gallery": {
+    "header": {
+      "title": "Media Shots"
+    },
+    "items": [
+      "/static/blog/the-t/media/071_media_1.jpg",
+      "/static/blog/the-t/media/071_media_2.jpg"
+    ]
+  }
+}

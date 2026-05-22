@@ -1,0 +1,289 @@
+{
+  "nav": {
+    "logoLabel": "The T",
+    "links": [
+      {
+        "label": "Home",
+        "href": "/the-t"
+      },
+      {
+        "label": "Coming Soon",
+        "href": "/the-t/coming-soon"
+      },
+      {
+        "label": "Shows",
+        "href": "/the-t/shows"
+      },
+      {
+        "label": "Movies",
+        "href": "/the-t/movies"
+      }
+    ],
+    "explore": {
+      "label": "Explore",
+      "items": [
+        {
+          "label": "FIFA World Cup 2026",
+          "href": "/the-t/fifa-world-cup"
+        },
+        {
+          "label": "Horror",
+          "href": "/the-t/horror"
+        },
+        {
+          "label": "Tubi Originals",
+          "href": "/the-t/originals"
+        },
+        {
+          "label": "Sports",
+          "href": "/the-t/sports"
+        }
+      ],
+      "moreGenresLabel": "More genres",
+      "moreGenresHref": "/the-t/genres"
+    },
+    "mobileMenu": {
+      "open": "Open menu",
+      "close": "Close menu"
+    }
+  },
+  "id": "006",
+  "slug": "best-free-movies-to-watch-this-weekend",
+  "categoryTag": "Movies",
+  "type": "listicle",
+  "title": "Best Free Movies to Watch This Weekend",
+  "subtitle": "If you want a good pick without digging, start here.",
+  "intro": "The best free movies to watch this weekend aren't the ones you've been meaning to get to. They're the ones you didn't know you needed until you're already twenty minutes in and fully committed.\n\nA loan shark touches down in LA and immediately realizes he could run a movie studio better than anyone who actually works there. A burned-out detective starts nosing around a pawn shop that has very Pulp Fiction energy and absolutely no interest in answering questions. A college kid gets his luggage stolen on day one in New York and somehow ends up working for a man who is, unmistakably, Marlon Brando.\n\nHere are our best weekend picks. Let's go.",
+  "images": {
+    "thumbnail": "/static/blog/the-t/thumbnails/006_thumbnail.jpg",
+    "og": "/static/blog/the-t/og/006_og.jpg"
+  },
+  "items": [
+    {
+      "position": 1,
+      "title": "Get Shorty",
+      "description": "Chili Palmer flies to LA to collect a debt and realizes, almost immediately, that he's more qualified to run a movie studio than anyone who works there.\n\nJohn Travolta plays him with this unhurried confidence - the guy who's always the most relaxed person in the room, which turns out to be the most threatening thing possible. There's a scene where he pitches his own life story as a film concept and the room goes quiet in the exact wrong way.\n\nBarry Sonnenfeld directed it, Elmore Leonard wrote the book, and Gene Hackman plays a B-movie producer who is absolutely not equipped for any of this. He's doing his best work here and it shows.",
+      "contentTitle": "Get Shorty (1995)",
+      "tubiLink": "https://tubitv.com/movies/312179",
+      "contentId": "312179",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/006_title_1_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/006_title_1_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/006_title_1_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Comedy",
+      "year": "1995",
+      "runtime": "1h 45m",
+      "rating": "R"
+    },
+    {
+      "position": 2,
+      "title": "Spun",
+      "description": "Jonas Åkerlund directed this like he was trying to put a panic attack on film. Jason Schwartzman plays Ross, a guy who gets pulled into the orbit of a meth cook played by Mickey Rourke, and the next seventy-two hours are exactly as chaotic as that sounds.\n\nThe editing is aggressive - quick cuts, overlapping audio, visual distortion that mirrors where the characters' heads are at. Brittany Murphy shows up and is genuinely unsettling. John Leguizamo shows up and is genuinely unhinged.\n\nIt's not glamorizing anything, but it's also not a lecture. It just drops you in and lets you figure out where the exits are.",
+      "contentTitle": "Spun (2002)",
+      "tubiLink": "https://tubitv.com/movies/460473",
+      "contentId": "460473",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/006_title_2_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/006_title_2_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/006_title_2_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Crime",
+      "year": "2002",
+      "runtime": "1h 41m",
+      "rating": "R"
+    },
+    {
+      "position": 3,
+      "title": "The Freshman",
+      "description": "Matthew Broderick plays a film student who gets his luggage stolen on his first day in New York, then somehow ends up working for a man who looks and sounds exactly like the Godfather.\n\nMarlon Brando plays that man, and the remarkable thing is how straight he plays it. No wink, no nudge - just full commitment to the bit. The endangered species dinner club subplot should not work at all. It does.\n\nAndrew Bergman wrote and directed it, and the whole thing has this loose, confident energy, like everyone on set knew they were making something weird and decided to just enjoy it.",
+      "contentTitle": "The Freshman (1990)",
+      "tubiLink": "https://tubitv.com/movies/100044608",
+      "contentId": "100044608",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/006_title_3_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/006_title_3_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/006_title_3_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Comedy",
+      "year": "1990",
+      "runtime": "1h 43m",
+      "rating": "PG"
+    },
+    {
+      "position": 4,
+      "title": "Zed's Dead",
+      "description": "Yes, this picks up where Pulp Fiction left off. Yes, that's a lot to promise.\n\nWhat you actually get is a contained crime-comedy built around the pawn shop from that film - same sordid, fluorescent-lit world, now with a burned-out detective nosing around and nobody wanting to answer questions. It's not trying to be Tarantino. It's more interested in the people who work in places like that, the ones who've seen too much to be shocked by anything.\n\nThe tone is dark and a little dry. Swinging for cool would've been the wrong move, and it knows that.",
+      "contentTitle": "Zed's Dead (2021)",
+      "tubiLink": "https://tubitv.com/movies/679477",
+      "contentId": "679477",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/006_title_4_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/006_title_4_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/006_title_4_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Comedy",
+      "year": "2021",
+      "runtime": "1h 11m",
+      "rating": "TV-MA"
+    },
+    {
+      "position": 5,
+      "title": "Lansky",
+      "description": "Harvey Keitel plays Meyer Lansky at the end of his life - an old man sitting across from a reporter who thinks he's getting the real story. The film cuts between Lansky as a young man building the National Crime Syndicate and Lansky now, watching someone try to trap him and deciding how much rope to give them.\n\nSam Worthington plays the younger version, and watching the two performances side by side is where the film earns its runtime.\n\nWhat Keitel does with a pause - the slight recalibration, the decision not to answer - tells you more about who this man actually was than anything the script says out loud.",
+      "contentTitle": "Lansky (2021)",
+      "tubiLink": "https://tubitv.com/movies/100025243",
+      "contentId": "100025243",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/006_title_5_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/006_title_5_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/006_title_5_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Drama",
+      "year": "2021",
+      "runtime": "1h 59m",
+      "rating": "R"
+    },
+    {
+      "position": 6,
+      "title": "Gotti",
+      "description": "John Travolta commits completely, which is the only way to play someone like Gotti. The film covers the full arc - Gambino crew to boss of bosses to federal target - and it moves fast enough that you don't feel the runtime.\n\nThere's a version of this story that's pure hagiography, and this one skirts close to that line. Travolta keeps it from tipping over by playing the vanity honestly. Gotti believed his own mythology. The film lets him have it, and then shows you exactly what that mythology cost the people around him.\n\nKelly Preston plays Victoria Gotti and has more going on in her scenes than the script probably intended.",
+      "contentTitle": "Gotti (2018)",
+      "tubiLink": "https://tubitv.com/movies/616772",
+      "contentId": "616772",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/006_title_6_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/006_title_6_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/006_title_6_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Drama",
+      "year": "2018",
+      "runtime": "1h 44m",
+      "rating": "R"
+    },
+    {
+      "position": 7,
+      "title": "Capone",
+      "description": "Tom Hardy plays Capone at 47 - post-Alcatraz, his mind going, living in a Florida mansion surrounded by people who are either protecting him or waiting for him to die. This is not a rise-and-fall story. It starts at the fall and goes further down.\n\nHardy does things with his voice and his physicality that are genuinely strange. Not actorly strange. Just strange. Director Josh Trank lets the film get uncomfortable in ways a conventional biopic wouldn't allow.\n\nThere's a scene with a tommy gun made of gold that shouldn't make sense and somehow makes perfect sense. It's a weird film. That's the recommendation.",
+      "contentTitle": "Capone (2020)",
+      "tubiLink": "https://tubitv.com/movies/100008277",
+      "contentId": "100008277",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/006_title_7_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/006_title_7_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/006_title_7_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Drama",
+      "year": "2020",
+      "runtime": "1h 44m",
+      "rating": "R"
+    },
+    {
+      "position": 8,
+      "title": 187,
+      "description": "Samuel L. Jackson plays Trevor Garfield, a science teacher who was stabbed by a student in New York and spent fifteen months recovering - physically and otherwise. He takes a substitute job in LA thinking it'll be different. It isn't.\n\nJackson doesn't play Garfield as a hero building toward a triumphant moment. The man is damaged, and the damage is visible in every scene.\n\nKevin Reynolds directed it, and the film keeps putting Garfield in situations where there's no clean answer - where what he does next is understandable and also not okay. It doesn't let him off the hook for any of it.",
+      "contentTitle": "187 (1997)",
+      "tubiLink": "https://tubitv.com/movies/100018430",
+      "contentId": "100018430",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/006_title_8_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/006_title_8_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/006_title_8_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Drama",
+      "year": "1997",
+      "runtime": "1h 59m",
+      "rating": "R"
+    },
+    {
+      "position": 9,
+      "title": "The Crush",
+      "description": "Alicia Silverstone was sixteen when she made this, and she's the reason to watch it. Her performance as Adrian - the teenager who fixates on a journalist renting a cottage from her parents - has a stillness to it that's more unsettling than anything the script provides.\n\nCary Elwes plays the journalist trying to extricate himself without making it worse, and the film is at its best when it's just those two in a scene together, the politeness getting thinner by the minute.\n\nIt leans into thriller mechanics in the third act. Fine. But the first two-thirds, where it's mostly just dread and social discomfort, are better.",
+      "contentTitle": "The Crush (1993)",
+      "tubiLink": "https://tubitv.com/movies/391131",
+      "contentId": "391131",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/006_title_9_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/006_title_9_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/006_title_9_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Thriller",
+      "year": "1993",
+      "runtime": "1h 29m",
+      "rating": "R"
+    },
+    {
+      "position": 10,
+      "title": "Of Mice and Men",
+      "description": "Gary Sinise and John Malkovich had already performed this on stage together before they made the film, and that history is in every scene.\n\nMalkovich plays Lennie with a gentleness that never tips into caricature - the man is large, he doesn't understand his own strength, he loves soft things, and Malkovich holds all of that without underlining it. Sinise as George carries the weight of knowing, and there's a specific weariness in how he watches Lennie that tells you everything about how long they've been at this together.\n\nSteinbeck's ending hasn't gotten easier. This version doesn't try to make it so.",
+      "contentTitle": "Of Mice and Men (1992)",
+      "tubiLink": "https://tubitv.com/movies/306938",
+      "contentId": "306938",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/006_title_10_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/006_title_10_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/006_title_10_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Drama",
+      "year": "1992",
+      "runtime": "1h 51m",
+      "rating": "PG-13"
+    }
+  ],
+  "keepReading": {
+    "header": {
+      "title": "Keep Reading",
+      "subtitle": "More articles to explore"
+    },
+    "items": [
+      {
+        "id": "013",
+        "slug": "top-10-movies-to-stream-free-on-tubi",
+        "eyebrow": "What to Watch",
+        "title": "Weekend Watchlist: Top 10 Movies to Stream Free on Tubi",
+        "subtitle": "A tight list when you don't have time to scroll through everything else.",
+        "categoryTag": "Movies",
+        "thumbnail": "/static/blog/the-t/thumbnails/013_thumbnail.jpg"
+      },
+      {
+        "id": "034",
+        "slug": "how-to-watch-great-movies-for-free",
+        "eyebrow": "What to Watch",
+        "title": "How to Watch Great Movies for Free",
+        "subtitle": "A simple way to find something worth your time without overthinking it.",
+        "categoryTag": "Movies",
+        "thumbnail": "/static/blog/the-t/thumbnails/034_thumbnail.jpg"
+      },
+      {
+        "id": "012",
+        "slug": "from-cult-classics-to-hidden-gems-the-best-of-tubi",
+        "eyebrow": "What to Watch",
+        "title": "From Cult Classics to Hidden Gems: The Best of Tubi",
+        "subtitle": "The ones people keep finding, recommending, and coming back to.",
+        "categoryTag": "Movies",
+        "thumbnail": "/static/blog/the-t/thumbnails/012_thumbnail.jpg"
+      }
+    ]
+  },
+  "datePosted": "2026-05-26"
+}

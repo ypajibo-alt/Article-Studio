@@ -1,0 +1,273 @@
+{
+  "_doc": {
+    "description": "Homepage-only slice of The T content. Rendered by src/web/features/theT/components/TheTHome.tsx. Field names mirror the canonical Static Upload Tubi Blog data — `eyebrow`, `subtitle`, `categoryTag`, `genreTag`, `watchLink`, etc. — so this file can be regenerated from the source JSONs without renaming. Section chrome (`{section}.header.title` + `{section}.header.subtitle`) is editorial copy authored alongside the slot data so the same JSON drives both the section heading and its content.",
+    "source": "Article slots: ~/Desktop/Static Upload Tubi Blog/{listicles,single-titles,world-cup}.json. Watchlist rail: ~/Desktop/Watchlist/watchlist.json (`home` section), with poster art mirrored into `static/blog/the-t/watchlist/home_{1..6}_poster.jpg`.",
+    "doNotInclude": "intro, items[], cast[], whatsComing[], full keepReading[] — only the fields the homepage actually renders should ship in this chunk.",
+    "linking": "Every article card / hero uses the canonical URL `/the-t/articles/<slug>`. Each slot stores just the bare `slug` (e.g. `best-anime-on-tubi`); the renderer (`homePageData.ts → buildArticleHref`) prepends the prefix. The article route (`containers/Article.tsx`) fetches the matching JSON under `static/blog/the-t/data/articles/` and branches on its `type` field (`'article'` vs `'listicle'`) to dispatch to ArticleDetailsPage (single) or ArticleListPage (listicle), so the article kind is NOT duplicated here. The optional `watchLink` on some slots is reserved for CTAs that bypass the article and route straight into the Tubi catalog (e.g. the Watchlist row → catalog title); it does NOT influence the article href."
+  },
+  "nav": {
+    "logoLabel": "The T",
+    "links": [
+      {
+        "label": "Home",
+        "href": "/the-t"
+      },
+      {
+        "label": "Coming Soon",
+        "href": "/the-t/coming-soon"
+      },
+      {
+        "label": "Shows",
+        "href": "/the-t/shows"
+      },
+      {
+        "label": "Movies",
+        "href": "/the-t/movies"
+      }
+    ],
+    "explore": {
+      "label": "Explore",
+      "items": [
+        {
+          "label": "FIFA World Cup 2026",
+          "href": "/the-t/fifa-world-cup"
+        },
+        {
+          "label": "Horror",
+          "href": "/the-t/horror"
+        },
+        {
+          "label": "Tubi Originals",
+          "href": "/the-t/originals"
+        },
+        {
+          "label": "Sports",
+          "href": "/the-t/sports"
+        }
+      ],
+      "moreGenresLabel": "More genres",
+      "moreGenresHref": "/the-t/genres"
+    },
+    "mobileMenu": {
+      "open": "Open menu",
+      "close": "Close menu"
+    }
+  },
+  "dashboard": {
+    "heading": "Featured",
+    "leftCards": [
+      {
+        "id": "001",
+        "slug": "best-anime-on-tubi",
+        "title": "Best Anime on Tubi Right Now",
+        "categoryTag": "Shows",
+        "thumbnail": "/static/blog/the-t/thumbnails/001_thumbnail.jpg"
+      },
+      {
+        "id": "002",
+        "slug": "best-asian-and-pacific-islander-aapi-films-on-tubi",
+        "title": "Best Asian American & Pacific Islander (AAPI) Films on Tubi",
+        "categoryTag": "Movies",
+        "thumbnail": "/static/blog/the-t/thumbnails/002_thumbnail.jpg"
+      }
+    ],
+    "featured": {
+      "id": "061",
+      "slug": "destination-world-cup-2026-full-guide",
+      "eyebrow": "Guide",
+      "title": "Destination World Cup 2026: Full Guide",
+      "subtitle": "Start with Destination World Cup 2026, then follow Weston McKennie from the documentary to the USMNT's live match on June 12.",
+      "categoryTag": "Sports",
+      "hero": "/static/blog/the-t/heroes/061_hero.jpg",
+      "watchLink": "https://tubitv.com/hubs/fifa-world-cup-fox-hub",
+      "contentId": "300019838",
+      "hasVideoPlaybackSupport": true,
+      "shouldUseVideoPreviewFallback": true
+    },
+    "rightCards": [
+      {
+        "id": "004",
+        "slug": "whats-new-on-tubi-this-may",
+        "title": "What's New on Tubi This May",
+        "categoryTag": "Movies",
+        "thumbnail": "/static/blog/the-t/thumbnails/004_thumbnail.jpg"
+      },
+      {
+        "id": "005",
+        "slug": "best-true-crime-shows-and-documentaries-on-tubi",
+        "title": "Best True Crime Shows & Documentaries on Tubi Right Now",
+        "categoryTag": "Shows",
+        "thumbnail": "/static/blog/the-t/thumbnails/005_thumbnail.jpg"
+      }
+    ]
+  },
+  "watchlist": {
+    "header": {
+      "title": "Watchlist",
+      "subtitle": "A handpicked list of films and shows to watch next"
+    },
+    "items": [
+      {
+        "id": "wl-1",
+        "title": "MasterChef",
+        "year": "2026",
+        "description": "Home cooks bring the heat, chasing one title and a shot at culinary glory.",
+        "genreTag": "Reality",
+        "poster": "/static/blog/the-t/watchlist/home_1_poster.jpg",
+        "watchLink": "https://tubitv.com/series/300009157",
+        "contentId": "300009157"
+      },
+      {
+        "id": "wl-2",
+        "title": "Bear Grylls Is Running Wild",
+        "year": "2026",
+        "description": "Bear Grylls drops celebs into the wild for 48 hours of survival and no shortcuts.",
+        "genreTag": "Adventure",
+        "poster": "/static/blog/the-t/watchlist/home_2_poster.jpg",
+        "watchLink": "https://tubitv.com/series/300020584",
+        "contentId": "300020584"
+      },
+      {
+        "id": "wl-3",
+        "title": "Boarders",
+        "year": "2026",
+        "description": "Five scholarship students land at an elite school and flip the script on who belongs.",
+        "genreTag": "Drama",
+        "poster": "/static/blog/the-t/watchlist/home_3_poster.jpg",
+        "watchLink": "https://tubitv.com/series/300002557",
+        "contentId": "300002557"
+      },
+      {
+        "id": "wl-4",
+        "title": "Crime Junkie",
+        "year": "2026",
+        "description": "The hit true crime podcast digging into murders, missing cases, and mysteries that stick.",
+        "genreTag": "True Crime",
+        "poster": "/static/blog/the-t/watchlist/home_4_poster.jpg",
+        "watchLink": "https://tubitv.com/series/300019308",
+        "contentId": "300019308"
+      },
+      {
+        "id": "wl-5",
+        "title": "Twenty Twenty Six",
+        "year": "2026",
+        "description": "A World Cup mockumentary where big stakes meet bigger egos behind the scenes.",
+        "genreTag": "Comedy",
+        "poster": "/static/blog/the-t/watchlist/home_5_poster.jpg",
+        "watchLink": "https://tubitv.com/series/300020273",
+        "contentId": "300020273"
+      },
+      {
+        "id": "wl-6",
+        "title": "Big Mood",
+        "year": "2026",
+        "description": "Ten years inseparable. Now life, love, and the future start pulling Maggie and Eddie apart.",
+        "genreTag": "Comedy",
+        "poster": "/static/blog/the-t/watchlist/home_6_poster.jpg",
+        "watchLink": "https://tubitv.com/series/300002663",
+        "contentId": "300002663"
+      }
+    ]
+  },
+  "latest": {
+    "header": {
+      "title": "The Latest",
+      "subtitle": "Our newest stories, all in one place"
+    },
+    "featured": {
+      "id": "050",
+      "slug": "boarders-season-3-is-coming-to-tubi",
+      "eyebrow": "New Season",
+      "title": "Boarders Season 3 on Tubi",
+      "subtitle": "The culture clash is real, the comedy is sharp, and the stakes are higher than any grade.",
+      "categoryTag": "Originals",
+      "hero": "/static/blog/the-t/heroes/050_hero.jpg",
+      "watchLink": "https://tubitv.com/series/300002557/boarders",
+      "contentId": "300002557",
+      "hasVideoPlaybackSupport": true
+    },
+    "rightCards": [
+      {
+        "id": "006",
+        "slug": "best-free-movies-to-watch-this-weekend",
+        "title": "Best Free Movies to Watch This Weekend",
+        "categoryTag": "Movies",
+        "thumbnail": "/static/blog/the-t/thumbnails/006_thumbnail.jpg"
+      },
+      {
+        "id": "008",
+        "slug": "the-best-black-movies-and-shows-on-tubi",
+        "title": "The Best Black Movies & Shows on Tubi Right Now",
+        "categoryTag": "Movies",
+        "thumbnail": "/static/blog/the-t/thumbnails/008_thumbnail.jpg"
+      },
+      {
+        "id": "009",
+        "slug": "the-best-tubi-movies-of-the-summer",
+        "title": "The Best Tubi Movies of the Summer",
+        "categoryTag": "Movies",
+        "thumbnail": "/static/blog/the-t/thumbnails/009_thumbnail.jpg"
+      },
+      {
+        "id": "010",
+        "slug": "best-animation-on-tubi",
+        "title": "Best Animation on Tubi",
+        "categoryTag": "Shows",
+        "thumbnail": "/static/blog/the-t/thumbnails/010_thumbnail.jpg"
+      }
+    ]
+  },
+  "spotlight": {
+    "header": {
+      "title": "Spotlight",
+      "subtitle": "One film getting our full attention"
+    },
+    "article": {
+      "id": "053",
+      "slug": "how-to-lose-a-popularity-contest-on-tubi",
+      "contentId": "100049581",
+      "eyebrow": "What to Watch",
+      "title": "How to Lose a Popularity Contest Is the YA Film You Never Knew You Needed",
+      "subtitle": "A rigged election, a reluctant alliance, and feelings that absolutely were not part of the plan.",
+      "categoryTag": "Originals",
+      "hero": "/static/blog/the-t/heroes/053_hero.jpg",
+      "hasVideoPlaybackSupport": true
+    }
+  },
+  "keepReading": {
+    "header": {
+      "title": "Keep Reading",
+      "subtitle": "More articles to explore"
+    },
+    "items": [
+      {
+        "id": "012",
+        "slug": "from-cult-classics-to-hidden-gems-the-best-of-tubi",
+        "eyebrow": "What to Watch",
+        "title": "From Cult Classics to Hidden Gems: The Best of Tubi",
+        "subtitle": "The ones people keep finding, recommending, and coming back to.",
+        "categoryTag": "Movies",
+        "thumbnail": "/static/blog/the-t/thumbnails/012_thumbnail.jpg"
+      },
+      {
+        "id": "013",
+        "slug": "top-10-movies-to-stream-free-on-tubi",
+        "eyebrow": "What to Watch",
+        "title": "Weekend Watchlist: Top 10 Movies to Stream Free on Tubi",
+        "subtitle": "A tight list when you don't have time to scroll through everything else.",
+        "categoryTag": "Movies",
+        "thumbnail": "/static/blog/the-t/thumbnails/013_thumbnail.jpg"
+      },
+      {
+        "id": "014",
+        "slug": "the-most-addictive-shows-on-tubi",
+        "eyebrow": "What to Watch",
+        "title": "Binge-Worthy TV: The Most Addictive Shows on Tubi",
+        "subtitle": "Shows that stack quickly and are harder to stop than you expect.",
+        "categoryTag": "Shows",
+        "thumbnail": "/static/blog/the-t/thumbnails/014_thumbnail.jpg"
+      }
+    ]
+  },
+  "pageTitle": "Tubi's The T – Find Your Favorite Streams For Free"
+}

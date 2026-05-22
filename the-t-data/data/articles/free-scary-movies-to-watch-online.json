@@ -1,0 +1,289 @@
+{
+  "nav": {
+    "logoLabel": "The T",
+    "links": [
+      {
+        "label": "Home",
+        "href": "/the-t"
+      },
+      {
+        "label": "Coming Soon",
+        "href": "/the-t/coming-soon"
+      },
+      {
+        "label": "Shows",
+        "href": "/the-t/shows"
+      },
+      {
+        "label": "Movies",
+        "href": "/the-t/movies"
+      }
+    ],
+    "explore": {
+      "label": "Explore",
+      "items": [
+        {
+          "label": "FIFA World Cup 2026",
+          "href": "/the-t/fifa-world-cup"
+        },
+        {
+          "label": "Horror",
+          "href": "/the-t/horror"
+        },
+        {
+          "label": "Tubi Originals",
+          "href": "/the-t/originals"
+        },
+        {
+          "label": "Sports",
+          "href": "/the-t/sports"
+        }
+      ],
+      "moreGenresLabel": "More genres",
+      "moreGenresHref": "/the-t/genres"
+    },
+    "mobileMenu": {
+      "open": "Open menu",
+      "close": "Close menu"
+    }
+  },
+  "id": "042",
+  "slug": "free-scary-movies-to-watch-online",
+  "categoryTag": "Horror",
+  "type": "listicle",
+  "title": "Free Scary Movies to Watch Online — No Subscription Needed",
+  "subtitle": "Straightforward picks when you want something unsettling without the extra steps.",
+  "intro": "No subscription. No trial period. No excuses not to be scared tonight.\n\nChucky gets handed to a six-year-old in Chicago and immediately starts making threats. Art the Clown shows up on Christmas Eve with absolutely no good intentions. A documentary crew investigates a haunted house attraction where people actually died, and they go in anyway. Jason gets thawed out in the year 2455 because apparently the future has not learned anything.\n\nHere's the full lineup. Pick your poison.",
+  "images": {
+    "thumbnail": "/static/blog/the-t/thumbnails/042_thumbnail.jpg",
+    "og": "/static/blog/the-t/og/042_og.jpg"
+  },
+  "items": [
+    {
+      "position": 1,
+      "title": "Terrifier 3",
+      "description": "Art the Clown doesn't talk, doesn't rush, and absolutely does not care about your comfort level. The third Terrifier puts him loose on Christmas Eve, which sounds like a gimmick until you realize the holiday trappings make everything worse. The warmth and safety of the season is exactly what he's working against.\n\nThere's no redemption arc. No backstory that explains him. No moment where you're meant to understand. He just arrives.\n\nDirector Damien Leone shoots it with a practical effects commitment that feels almost confrontational. If you've seen the first two, you know what you're signing up for. If you haven't, this is not the gentlest entry point - but it is a free one.",
+      "contentTitle": "Terrifier 3 (2024)",
+      "tubiLink": "https://tubitv.com/movies/100047776",
+      "contentId": "100047776",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/042_title_1_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/042_title_1_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/042_title_1_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Horror",
+      "year": "2024",
+      "runtime": "2h 6m",
+      "rating": "TV-MA"
+    },
+    {
+      "position": 2,
+      "title": "Child's Play",
+      "description": "Karen Barclay buys her son Andy a Good Guy doll from a street vendor in an alley, which is already a bad sign.\n\nWhat makes the original Child's Play hold up is that nobody winks at the camera. Brad Dourif voices Chucky with genuine menace - not cartoon menace, actual menace - and the film treats the premise with the same seriousness it would give any other serial killer story. There's a scene early on where Andy tries to tell his mother that Chucky is alive and she doesn't believe him, and the film sits in that helplessness long enough to make it genuinely uncomfortable.\n\nThe 1988 version is still the one.",
+      "contentTitle": "Child's Play (1988)",
+      "tubiLink": "https://tubitv.com/movies/438117",
+      "contentId": "438117",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/042_title_2_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/042_title_2_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/042_title_2_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Horror",
+      "year": "1988",
+      "runtime": "1h 27m",
+      "rating": "R"
+    },
+    {
+      "position": 3,
+      "title": "Hell House LLC",
+      "description": "A documentary crew goes back to the haunted house attraction where fifteen people died on opening night, five years after the fact, and pieces together what happened through recovered footage. The layering is what gets you: you're watching a documentary about footage of a haunted house rehearsal inside an actual haunted house.\n\nThe clowns placed around the basement are the specific detail that will stay with you. One of them moves.\n\nYou'll go back and rewatch to figure out exactly when.",
+      "contentTitle": "Hell House LLC (2015)",
+      "tubiLink": "https://tubitv.com/movies/491715",
+      "contentId": "491715",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/042_title_3_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/042_title_3_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/042_title_3_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Horror",
+      "year": "2015",
+      "runtime": "1h 31m",
+      "rating": "R"
+    },
+    {
+      "position": 4,
+      "title": "The Texas Chainsaw Massacre",
+      "description": "Five friends break down in rural Texas and the local law enforcement is R. Lee Ermey, who plays Sheriff Hoyt with the kind of calm authority that makes Leatherface feel like the second-worst thing in the county.\n\nThe 2003 remake is slicker than Tobe Hooper's original, which some people hold against it, but director Marcus Nispel commits hard to the dread. There's a scene in a slaughterhouse where the geography of the space becomes part of the threat - the production design alone earns its keep.\n\nIt's a chase movie that keeps shrinking the safe zones until there aren't any.",
+      "contentTitle": "The Texas Chainsaw Massacre (2003)",
+      "tubiLink": "https://tubitv.com/movies/100048007",
+      "contentId": "100048007",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/042_title_4_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/042_title_4_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/042_title_4_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Horror",
+      "year": "2003",
+      "runtime": "1h 38m",
+      "rating": "R"
+    },
+    {
+      "position": 5,
+      "title": "Jason X",
+      "description": "Yes, Jason is in space. The film knows this and does not apologize.\n\nCryogenically frozen and thawed four hundred years later aboard a research vessel, Jason X leans fully into the sci-fi slasher hybrid with a cheerfulness that's genuinely disarming. There's a kill involving a liquid nitrogen tank that became one of the more quoted moments in the franchise for good reason - it's inventive in a way that only works because the film has completely committed to its own logic.\n\nKane Hodder plays Jason for the fourth time and brings the same physical presence he always does. For a movie this ridiculous, it's surprisingly hard to stop watching.",
+      "contentTitle": "Jason X (2001)",
+      "tubiLink": "https://tubitv.com/movies/100048012",
+      "contentId": "100048012",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/042_title_5_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/042_title_5_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/042_title_5_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Horror",
+      "year": "2001",
+      "runtime": "1h 32m",
+      "rating": "R"
+    },
+    {
+      "position": 6,
+      "title": "Child's Play",
+      "description": "The 2019 remake replaces voodoo with a malfunctioning AI, which sounds like a downgrade until you realize it's actually more unsettling. Chucky here isn't possessed - he's a Buddi doll with his safety protocols removed, and he learns what loyalty means from the movies he watches with Andy.\n\nMark Hamill voices him and plays the warmth and the wrongness at the same time, which is harder than it sounds.\n\nChucky isn't malicious in a human way. He's helpful. He's protecting Andy. The violence follows a logic that makes complete sense to him, and the film never lets you forget that.",
+      "contentTitle": "Child's Play (2019)",
+      "tubiLink": "https://tubitv.com/movies/100030681",
+      "contentId": "100030681",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/042_title_6_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/042_title_6_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/042_title_6_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Horror",
+      "year": "2019",
+      "runtime": "1h 30m",
+      "rating": "R"
+    },
+    {
+      "position": 7,
+      "title": "Grave Encounters 2",
+      "description": "Grave Encounters 2 opens with a film student named Alex who is convinced the first Grave Encounters documentary was real. So he goes to the psychiatric hospital where it was filmed.\n\nThe fact that the characters have seen the original film and treat it as evidence gives this one a specific energy that straight sequels don't have. The asylum itself does most of the work - long corridors, locked wards, a geography that keeps shifting.\n\nThere's a point where the characters realize they can't find the exit and the film stops feeling like a game. It takes a while to get there. The wait is part of it.",
+      "contentTitle": "Grave Encounters 2 (2012)",
+      "tubiLink": "https://tubitv.com/movies/512265",
+      "contentId": "512265",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/042_title_7_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/042_title_7_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/042_title_7_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Horror",
+      "year": "2012",
+      "runtime": "1h 39m",
+      "rating": "TV-MA"
+    },
+    {
+      "position": 8,
+      "title": "The Messengers",
+      "description": "The Solomon family moves to a sunflower farm in North Dakota and the youngest child immediately starts seeing things the adults can't. Directors Oxide and Danny Pang treat those wide open fields with the same unease they give the dark basement. The sunflower fields are not peaceful.\n\nKristen Stewart plays the older daughter and carries most of the film's tension on her own while the adults refuse to believe her. The things that crawl through the house are shot mostly in glimpses.\n\nWhat you don't fully see is doing more work than what you do.",
+      "contentTitle": "The Messengers (2007)",
+      "tubiLink": "https://tubitv.com/movies/100046550",
+      "contentId": "100046550",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/042_title_8_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/042_title_8_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/042_title_8_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Horror",
+      "year": "2007",
+      "runtime": "1h 30m",
+      "rating": "PG-13"
+    },
+    {
+      "position": 9,
+      "title": "Scream Returns (Subbed)",
+      "description": "Scream Returns was made by ultra-fans of the franchise, and that's not a caveat - that's the whole pitch. These are people who studied what makes Ghostface terrifying and built a new story around those mechanics. A group of friends, a masked killer, the specific dread of a phone ringing at the wrong moment.\n\nIt's subtitled, which means you're reading while watching, which means you can't look away.\n\nThis one is a specific kind of find among free scary movies online: a labor of love from the horror community, not a studio calculation. It plays like it was made by someone who actually got scared watching the original.",
+      "contentTitle": "Scream Returns (Subbed) (2018)",
+      "tubiLink": "https://tubitv.com/movies/608509",
+      "contentId": "608509",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/042_title_9_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/042_title_9_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/042_title_9_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Horror",
+      "year": "2018",
+      "runtime": "48m",
+      "rating": "TV-MA"
+    },
+    {
+      "position": 10,
+      "title": "Indigenous",
+      "description": "A group of Americans traveling in Panama get pointed toward a beautiful waterfall in the jungle and told, clearly, not to go. They go.\n\nIndigenous leans into the Chupacabra legend without over-explaining it - the creature works better as a presence than as a mythology lecture. Darkness comes fast out there, the terrain is disorienting, and the film uses both to keep the threat feeling immediate.\n\nThe warnings at the beginning stop feeling like setup about halfway through. They start feeling like something the characters really should have taken seriously.",
+      "contentTitle": "Indigenous (2016)",
+      "tubiLink": "https://tubitv.com/movies/419047",
+      "contentId": "419047",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/042_title_10_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/042_title_10_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/042_title_10_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Horror",
+      "year": "2016",
+      "runtime": "1h 26m",
+      "rating": "R"
+    }
+  ],
+  "keepReading": {
+    "header": {
+      "title": "Keep Reading",
+      "subtitle": "More articles to explore"
+    },
+    "items": [
+      {
+        "id": "035",
+        "slug": "the-scariest-horror-movies-to-watch-right-now",
+        "eyebrow": "What to Watch",
+        "title": "The Scariest Horror Movies to Watch Right Now",
+        "subtitle": "Not just loud scares. The kind that stay with you after.",
+        "categoryTag": "Movies",
+        "thumbnail": "/static/blog/the-t/thumbnails/035_thumbnail.jpg"
+      },
+      {
+        "id": "045",
+        "slug": "zombie-movies-on-tubi-ranked",
+        "eyebrow": "What to Watch",
+        "title": "Zombie Movies on Tubi Ranked",
+        "subtitle": "From Romero's farmhouse to a Nazi zombie tank - here's what actually holds up.",
+        "categoryTag": "Horror",
+        "thumbnail": "/static/blog/the-t/thumbnails/045_thumbnail.jpg"
+      },
+      {
+        "id": "034",
+        "slug": "how-to-watch-great-movies-for-free",
+        "eyebrow": "What to Watch",
+        "title": "How to Watch Great Movies for Free",
+        "subtitle": "A simple way to find something worth your time without overthinking it.",
+        "categoryTag": "Movies",
+        "thumbnail": "/static/blog/the-t/thumbnails/034_thumbnail.jpg"
+      }
+    ]
+  },
+  "datePosted": "2026-05-26"
+}

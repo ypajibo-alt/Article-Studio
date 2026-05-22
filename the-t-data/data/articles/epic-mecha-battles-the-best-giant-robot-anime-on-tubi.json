@@ -1,0 +1,289 @@
+{
+  "nav": {
+    "logoLabel": "The T",
+    "links": [
+      {
+        "label": "Home",
+        "href": "/the-t"
+      },
+      {
+        "label": "Coming Soon",
+        "href": "/the-t/coming-soon"
+      },
+      {
+        "label": "Shows",
+        "href": "/the-t/shows"
+      },
+      {
+        "label": "Movies",
+        "href": "/the-t/movies"
+      }
+    ],
+    "explore": {
+      "label": "Explore",
+      "items": [
+        {
+          "label": "FIFA World Cup 2026",
+          "href": "/the-t/fifa-world-cup"
+        },
+        {
+          "label": "Horror",
+          "href": "/the-t/horror"
+        },
+        {
+          "label": "Tubi Originals",
+          "href": "/the-t/originals"
+        },
+        {
+          "label": "Sports",
+          "href": "/the-t/sports"
+        }
+      ],
+      "moreGenresLabel": "More genres",
+      "moreGenresHref": "/the-t/genres"
+    },
+    "mobileMenu": {
+      "open": "Open menu",
+      "close": "Close menu"
+    }
+  },
+  "id": "011",
+  "slug": "epic-mecha-battles-the-best-giant-robot-anime-on-tubi",
+  "categoryTag": "Shows",
+  "type": "listicle",
+  "title": "Epic Mecha Battles: The Best Giant Robot Anime on Tubi",
+  "subtitle": "Big fights, high stakes, and just enough story to make it land.",
+  "intro": "Giant robots are only as good as the people inside them.\n\nThe best giant robot anime on Tubi aren't really about the machines. Garrod Ran steals mobile suits to survive and ends up responsible for the fate of what's left of humanity. Nono leaves home to become a space pilot and winds up standing between Earth and something that shouldn't exist. A kid in Tokyo rides a motorcycle and has no idea he's living inside a spaceship.\n\nHere's where to start.",
+  "images": {
+    "thumbnail": "/static/blog/the-t/thumbnails/011_thumbnail.jpg",
+    "og": "/static/blog/the-t/og/011_og.jpg"
+  },
+  "items": [
+    {
+      "position": 1,
+      "title": "Megazone 23 (English Dubbed)",
+      "description": "Shogo Yahagi thinks he's just a guy in 1980s Tokyo with a fast motorcycle and a cool secret: a transforming mech called the Garland that he definitely shouldn't have. Then the layers start peeling back. The city isn't a city. The pop idol everyone loves isn't real. And the truth about Megazone 23, the massive ship he's actually been living on, changes what every scene before it meant.\n\nFor a 1985 OVA, the paranoia hits hard. The pop music is genuinely catchy. And the Garland transformation sequence has no business looking that good for its era.\n\nThis is the one that proves the robot doesn't have to be the biggest thing in the frame to be the most interesting thing in the story.",
+      "contentTitle": "Megazone 23 (English Dubbed) (1985)",
+      "tubiLink": "https://tubitv.com/movies/664933",
+      "contentId": "664933",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/011_title_1_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/011_title_1_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/011_title_1_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Anime",
+      "year": "1985",
+      "runtime": "1h 21m",
+      "rating": "TV-14"
+    },
+    {
+      "position": 2,
+      "title": "After War Gundam X",
+      "description": "Most Gundam series drop you into a war in progress. After War Gundam X starts fifteen years after the colonies fell and humanity nearly wiped itself out. Garrod Ran isn't a soldier. He's a scavenger who steals mobile suits for money, until a rescue job puts him inside the cockpit of the most powerful Gundam ever built, chasing a girl named Tiffa who can hear the voices of the dead colonies.\n\nThe show never lets you forget what the mobile suits actually cost. Every battle happens in a world still covered in the wreckage of the last one.\n\nGarrod is one of the most genuinely likable protagonists in the franchise, which makes it hurt more when things go wrong.",
+      "contentTitle": "After War Gundam X (1996)",
+      "tubiLink": "https://tubitv.com/series/300014179",
+      "contentId": "300014179",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/011_title_2_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/011_title_2_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/011_title_2_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Anime",
+      "year": "1996",
+      "runtime": "1 Season",
+      "rating": "TV-PG"
+    },
+    {
+      "position": 3,
+      "title": "Mobile Suit Gundam AGE",
+      "description": "Flit Asuno builds the Gundam as a child because his mother was killed in an attack no one can explain. That's just the first arc. Mobile Suit Gundam AGE spans a century, following Flit's son and then his grandson into the same war, each of them shaped differently by what the one before them became.\n\nWatching Flit age from a grieving kid into something harder and more complicated is the most interesting thing the series does. The Gundam gets upgraded every generation. The people do too, but not always in the right direction.\n\nIt's designed to be accessible, but the emotional throughline across all three arcs earns its runtime.",
+      "contentTitle": "Mobile Suit Gundam AGE (2012)",
+      "tubiLink": "https://tubitv.com/series/300013974",
+      "contentId": "300013974",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/011_title_3_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/011_title_3_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/011_title_3_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Anime",
+      "year": "2012",
+      "runtime": "1 Season",
+      "rating": "TV-PG"
+    },
+    {
+      "position": 4,
+      "title": "DieBuster: The Movie",
+      "description": "Nono shows up at the capital with no money, no connections, and no apparent talent. She wants to be a space pilot like her idol, Lal'C. She gets a job waiting tables. Then the Buster Machines launch and Nono runs toward the battle instead of away from it.\n\nDieBuster is the sequel to the legendary Gunbuster, and it earns that lineage by doing something unexpected: making its protagonist look ordinary for as long as possible before the reveal lands. When it does, the scale shifts completely.\n\nThe final act is the kind of thing you rewind. Director Kazuya Tsurumaki and Gainax understood that the best mech payoffs aren't about the robot, they're about the moment the person inside it finally stops holding back.",
+      "contentTitle": "DieBuster: The Movie (2006)",
+      "tubiLink": "https://tubitv.com/movies/352004",
+      "contentId": "352004",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/011_title_4_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/011_title_4_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/011_title_4_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Anime",
+      "year": "2006",
+      "runtime": "1h 36m",
+      "rating": "TV-14"
+    },
+    {
+      "position": 5,
+      "title": "Transformers: Armada",
+      "description": "Yes, it's Transformers. Yes, it's technically for kids. Armada still slaps.\n\nThe hook here is the Mini-Cons, small Transformers that supercharge whichever side gets to them first. Megatron wants them. Optimus needs them. Three human kids accidentally become the most important people in the war because they can find them first.\n\nThe animation is rougher than you remember, but the toy-commercial origins don't stop Armada from going to some genuinely dark places by the end. Megatron in this series is written as someone who believes he's right, which makes the conflict land differently than a standard villain-wants-to-win setup.\n\nGood gateway mecha. Better than its reputation.",
+      "contentTitle": "Transformers: Armada (2002)",
+      "tubiLink": "https://tubitv.com/series/10",
+      "contentId": "10",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/011_title_5_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/011_title_5_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/011_title_5_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Anime",
+      "year": "2002",
+      "runtime": "4 Seasons",
+      "rating": "TV-Y7"
+    },
+    {
+      "position": 6,
+      "title": "Melty Lancer (Subbed)",
+      "description": "The setup sounds like a joke: a giant robot threatens 22nd-century Earth, and the people sent to stop it are a special unit of security immigration officers. Melty Lancer plays this completely straight, which is the only reason it works.\n\nThe six-episode OVA doesn't have the budget to be spectacular, but it has enough personality to be worth the watch. The unit dynamic carries the show, each member has a specific role and the series takes time to establish why that matters before the action kicks in.\n\nFor a late-90s mecha OVA, the pacing is tighter than expected. It's not trying to be Gundam. It's trying to be a good time, and it mostly succeeds.",
+      "contentTitle": "Melty Lancer (Subbed) (2000)",
+      "tubiLink": "https://tubitv.com/series/300005929",
+      "contentId": "300005929",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/011_title_6_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/011_title_6_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/011_title_6_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Anime",
+      "year": "2000",
+      "runtime": "1 Season",
+      "rating": "TV-14"
+    },
+    {
+      "position": 7,
+      "title": "Godzilla, Mothra, and King Ghidorah: Giant Monsters All-Out Attack",
+      "description": "Godzilla is the villain here. Not misunderstood, not a force of nature you root for, an actual threat that the other monsters exist to stop. Ghidorah, Mothra, and Baragon are resurrected as guardian spirits to protect Japan, and they are losing.\n\nDirector Shusuke Kaneko's version of Godzilla moves wrong. Blank white eyes, deliberate pacing, zero interest in anything that isn't destruction. There's a scene where Godzilla surfaces near a hospital ship and the film doesn't cut away. It just shows you what happens.\n\nKaiju films are the direct ancestor of mecha anime, the same scale, the same question of what humans do when the thing attacking them is too big to fight on human terms. This is the best version of that question on Tubi.",
+      "contentTitle": "Godzilla, Mothra, and King Ghidorah: Giant Monsters All-Out Attack (2001)",
+      "tubiLink": "https://tubitv.com/movies/100039782",
+      "contentId": "100039782",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/011_title_7_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/011_title_7_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/011_title_7_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Sci-Fi",
+      "year": "2001",
+      "runtime": "1h 45m",
+      "rating": "TV-PG"
+    },
+    {
+      "position": 8,
+      "title": "World War Blue (Dubbed)",
+      "description": "Two nations at war: the Segua Kingdom and the Ninteldo Empire, locked in a struggle for dominance over the land of Consume. If you caught those references immediately, this show was made for you.\n\nWorld War Blue is a parody of the 90s console wars dressed up as high fantasy action, and it commits to the bit harder than it has any right to. The character designs are lifted directly from classic game mascots, the battle tactics mirror actual market strategies, and the emotional stakes are played completely straight against a backdrop of obvious jokes.\n\nIt's not a mecha show in the traditional sense, no giant robots, but the battle scale and the anime-epic framing earn it a spot on any list about outsized combat and the people who fight it. Niche as it gets. Genuinely fun if you're in the right headspace.",
+      "contentTitle": "World War Blue (Dubbed) (2012)",
+      "tubiLink": "https://tubitv.com/series/300011139",
+      "contentId": "300011139",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/011_title_8_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/011_title_8_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/011_title_8_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Anime",
+      "year": "2012",
+      "runtime": "1 Season",
+      "rating": "TV-MA"
+    },
+    {
+      "position": 9,
+      "title": "Dante's Inferno",
+      "description": "Dante's Inferno the anime adaptation was produced by six different animation studios simultaneously, each assigned a different circle of Hell. The result is a film that visually shifts every fifteen minutes, from grotesque and painterly to kinetic and brutal, while the story stays continuous.\n\nThe combat here isn't mecha in the traditional sense, but the scale is. Dante fights things the size of buildings. The architecture of Hell is treated as an opponent. And the Scythe of Death, which Dante takes from the Grim Reaper in the opening minutes, functions exactly like a mech weapon, an oversized instrument of destruction that makes one person capable of fighting at a completely different scale.\n\nStrange, violent, and more ambitious than the source material probably deserved.",
+      "contentTitle": "Dante's Inferno (2010)",
+      "tubiLink": "https://tubitv.com/movies/283884",
+      "contentId": "283884",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/011_title_9_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/011_title_9_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/011_title_9_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Action",
+      "year": "2010",
+      "runtime": "1h 28m",
+      "rating": "R"
+    },
+    {
+      "position": 10,
+      "title": "Doomed Megalopolis (Dubbed)",
+      "description": "Kato doesn't want to rule Tokyo. He wants to destroy it by waking Masakado, the ancient spirit buried beneath the city, and the occultists trying to stop him have to figure out how to fight something that isn't fully physical.\n\nDoomed Megalopolis is dark in a way that 1992 OVAs were allowed to be, no softening, no redemption arcs, consequences that actually stick. The supernatural threat operates at the scale of a kaiju attack, but the weapons against it are spiritual, which makes the 'battle' sequences genuinely strange to watch.\n\nFour episodes, multi-decade timeline, and a villain whose motivation is more tragic than evil once you understand it. The dub is of its era, but the story underneath it holds.",
+      "contentTitle": "Doomed Megalopolis (Dubbed) (1992)",
+      "tubiLink": "https://tubitv.com/series/300009215",
+      "contentId": "300009215",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/011_title_10_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/011_title_10_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/011_title_10_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Anime",
+      "year": "1992",
+      "runtime": "1 Season",
+      "rating": "TV-MA"
+    }
+  ],
+  "keepReading": {
+    "header": {
+      "title": "Keep Reading",
+      "subtitle": "More articles to explore"
+    },
+    "items": [
+      {
+        "id": "001",
+        "slug": "best-anime-on-tubi",
+        "eyebrow": "What to Watch",
+        "title": "Best Anime on Tubi Right Now",
+        "subtitle": "If you want something that grabs you fast and doesn't let go, start here.",
+        "categoryTag": "Shows",
+        "thumbnail": "/static/blog/the-t/thumbnails/001_thumbnail.jpg"
+      },
+      {
+        "id": "070",
+        "slug": "ghost-in-the-shell-fans-heres-whats-waiting-for-you-on-tubi",
+        "eyebrow": "What to Watch",
+        "title": "Ghost in the Shell Fans: Here's What's Waiting for You on Tubi",
+        "subtitle": "More worlds like that one are already waiting for you.",
+        "categoryTag": "Movies",
+        "thumbnail": "/static/blog/the-t/thumbnails/070_thumbnail.jpg"
+      },
+      {
+        "id": "075",
+        "slug": "archer-and-the-adult-animation-on-tubi-that-earns-its-rating",
+        "eyebrow": "What to Watch",
+        "title": "Archer and the Adult Animation on Tubi That Earns Its Rating",
+        "subtitle": "Sharp, weird, and very aware of what it's doing.",
+        "categoryTag": "Shows",
+        "thumbnail": "/static/blog/the-t/thumbnails/075_thumbnail.jpg"
+      }
+    ]
+  },
+  "datePosted": "2026-05-26"
+}

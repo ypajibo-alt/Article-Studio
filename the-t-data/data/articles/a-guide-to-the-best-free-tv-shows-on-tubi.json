@@ -1,0 +1,289 @@
+{
+  "nav": {
+    "logoLabel": "The T",
+    "links": [
+      {
+        "label": "Home",
+        "href": "/the-t"
+      },
+      {
+        "label": "Coming Soon",
+        "href": "/the-t/coming-soon"
+      },
+      {
+        "label": "Shows",
+        "href": "/the-t/shows"
+      },
+      {
+        "label": "Movies",
+        "href": "/the-t/movies"
+      }
+    ],
+    "explore": {
+      "label": "Explore",
+      "items": [
+        {
+          "label": "FIFA World Cup 2026",
+          "href": "/the-t/fifa-world-cup"
+        },
+        {
+          "label": "Horror",
+          "href": "/the-t/horror"
+        },
+        {
+          "label": "Tubi Originals",
+          "href": "/the-t/originals"
+        },
+        {
+          "label": "Sports",
+          "href": "/the-t/sports"
+        }
+      ],
+      "moreGenresLabel": "More genres",
+      "moreGenresHref": "/the-t/genres"
+    },
+    "mobileMenu": {
+      "open": "Open menu",
+      "close": "Close menu"
+    }
+  },
+  "id": "026",
+  "slug": "a-guide-to-the-best-free-tv-shows-on-tubi",
+  "categoryTag": "Shows",
+  "type": "listicle",
+  "title": "A Guide to the Best Free TV Shows on Tubi",
+  "subtitle": "A starting point when you want something easy to settle into.",
+  "intro": "Free doesn't mean you're settling. Some of the best TV shows ever made are sitting right here, no subscription required.\n\nA cynical shoe salesman wars with his couch-potato wife while their kids circle the drain. A rumpled detective in a trench coat already knows you did it, he just wants to watch you sweat. Rod Serling drops ordinary people into impossible situations and lets the irony do the rest.\n\nThis is a guide to the best free TV on Tubi, the shows worth clearing your evening for. Here's where to start.",
+  "images": {
+    "thumbnail": "/static/blog/the-t/thumbnails/026_thumbnail.jpg",
+    "og": "/static/blog/the-t/og/026_og.jpg"
+  },
+  "items": [
+    {
+      "position": 1,
+      "title": "The Twilight Zone",
+      "description": "Rod Serling built a show where the twist isn't a trick. It's a verdict.\n\nEvery episode drops a regular person into a situation that reveals exactly who they are, and the ending makes sure they can't look away from it. The man who just wants to be left alone to read gets exactly that. The soldier who can't accept the war is over keeps fighting it.\n\nSerling wrote a lot of these himself, and you can feel the moral weight behind every setup. This wasn't a sci-fi show that happened to have ideas. The ideas were always the point. Everything that came after it is still catching up.",
+      "contentTitle": "The Twilight Zone (1959)",
+      "tubiLink": "https://tubitv.com/series/300017350",
+      "contentId": "300017350",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/026_title_1_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/026_title_1_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/026_title_1_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Sci-Fi",
+      "year": "1959",
+      "runtime": "5 Seasons",
+      "rating": "TV-PG"
+    },
+    {
+      "position": 2,
+      "title": "Columbo",
+      "description": "The show tells you who the murderer is in the first five minutes. That's the whole gimmick, and it never gets old.\n\nPeter Falk's Columbo shuffles in with his wrinkled raincoat and his 'just one more thing,' and the killer always makes the same mistake - they underestimate him. There's a specific pleasure in watching someone brilliant and arrogant slowly realize they've already lost. Falk plays the detective's faux-confusion so precisely that you can clock the exact moment a suspect's confidence turns to dread.\n\nThe format is a formula. The execution is something else entirely.",
+      "contentTitle": "Columbo (2003)",
+      "tubiLink": "https://tubitv.com/series/300006728",
+      "contentId": "300006728",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/026_title_2_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/026_title_2_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/026_title_2_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Crime",
+      "year": "2003",
+      "runtime": "16 Seasons",
+      "rating": "TV-PG"
+    },
+    {
+      "position": 3,
+      "title": "Shameless",
+      "description": "Frank Gallagher is one of the great TV disasters - a father so comprehensively checked out that his kids had to build a functional household around his absence.\n\nThe UK version is where this started, and it's nastier, funnier, and more willing to let everyone be genuinely rough. There's an episode early on where the older kids pull off a scam just to keep the electricity on while Frank is passed out somewhere. The competence they've developed out of pure necessity is both impressive and quietly devastating.\n\nThe show never asks you to forgive Frank. It just shows you what his kids had to become because of him.",
+      "contentTitle": "Shameless (2013)",
+      "tubiLink": "https://tubitv.com/series/300006342",
+      "contentId": "300006342",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/026_title_3_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/026_title_3_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/026_title_3_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Comedy",
+      "year": "2013",
+      "runtime": "11 Seasons",
+      "rating": "TV-MA"
+    },
+    {
+      "position": 4,
+      "title": "Miami Vice",
+      "description": "No socks. Pastel suits. Phil Collins on the soundtrack. Miami Vice sounds like a parody of the '80s until you actually watch it.\n\nMichael Mann was making something closer to film noir than network television. Crockett and Tubbs spend so much time inside the drug trade that the line between them and the people they're hunting starts to blur. There's a season two episode where Crockett goes so deep undercover he forgets who he is, and the show treats it with the same gravity it would a war story.\n\nFor a network cop show from 1984, the existential weight is genuinely unexpected.",
+      "contentTitle": "Miami Vice (1984)",
+      "tubiLink": "https://tubitv.com/series/300010244",
+      "contentId": "300010244",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/026_title_4_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/026_title_4_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/026_title_4_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Crime",
+      "year": "1984",
+      "runtime": "5 Seasons",
+      "rating": "TV-14"
+    },
+    {
+      "position": 5,
+      "title": "Married... with Children",
+      "description": "Al Bundy hates his job, his couch, his life, and he will tell you about it at length.\n\nWhen Married... with Children debuted, it was a direct rebuke to the warm, functional TV families of the era. The Bundys were broke, petty, and deeply unkind to each other in ways that felt more honest than anything else on at the time. Ed O'Neill plays Al's misery so specifically that it becomes its own kind of performance art.\n\nNobody learns a lesson. The credits roll and the Bundys are exactly as bad as they were before. Somehow that's the most comforting thing about it.",
+      "contentTitle": "Married... with Children (1987)",
+      "tubiLink": "https://tubitv.com/series/300018574",
+      "contentId": "300018574",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/026_title_5_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/026_title_5_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/026_title_5_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Comedy",
+      "year": "1987",
+      "runtime": "3 Seasons",
+      "rating": "TV-PG"
+    },
+    {
+      "position": 6,
+      "title": "Everybody Hates Chris",
+      "description": "Terry Crews as Julius Everybody-Is-Wasting-My-Money Rock is one of the great sitcom performances of the 2000s. The man calculates the cost of leaving a light on. He has opinions about how much electricity a sneeze uses.\n\nMeanwhile Tichina Arnold's Rochelle runs the household with a specific brand of terrifying warmth - she loves you and she will also end you. Chris Rock narrates from a safe distance, but the show's real subject is what it costs to raise a family in Bed-Stuy in the '80s on two incomes that are never quite enough.\n\nThe humor comes from specificity. Not from jokes.",
+      "contentTitle": "Everybody Hates Chris (2009)",
+      "tubiLink": "https://tubitv.com/series/300015509",
+      "contentId": "300015509",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/026_title_6_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/026_title_6_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/026_title_6_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Comedy",
+      "year": "2009",
+      "runtime": "4 Seasons",
+      "rating": "TV-PG"
+    },
+    {
+      "position": 7,
+      "title": "Lonesome Dove",
+      "description": "Robert Duvall and Tommy Lee Jones play former Texas Rangers who've been running a cattle operation so long that the routine has become the point. Then Gus talks Call into one more drive to Montana, and what follows is four hours of TV that earns every minute.\n\nThe West here isn't romantic. It's indifferent. People die badly and without warning, and the survivors keep moving because stopping means thinking about it.\n\nThere's a scene late in the miniseries where Call finally says something honest to Gus, and Duvall receives it the way someone does when they've been waiting years to hear it.",
+      "contentTitle": "Lonesome Dove (1989)",
+      "tubiLink": "https://tubitv.com/series/300001070",
+      "contentId": "300001070",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/026_title_7_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/026_title_7_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/026_title_7_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Western",
+      "year": "1989",
+      "runtime": "1 Season",
+      "rating": "TV-14"
+    },
+    {
+      "position": 8,
+      "title": "Lie to Me",
+      "description": "Tim Roth plays Cal Lightman, a deception expert who reads microexpressions - the involuntary flickers of emotion that cross a face in a fraction of a second before the mask goes back up. The show is based on actual research by psychologist Paul Ekman, so when Lightman clocks a liar, the methodology behind it is real.\n\nRoth plays him as someone who can't turn it off. Lousy at relationships. Extremely good at his job.\n\nThe procedural cases are fine. The better show is watching Lightman interact with people he actually cares about, knowing he sees everything they're trying to hide.",
+      "contentTitle": "Lie to Me (2011)",
+      "tubiLink": "https://tubitv.com/series/300010743",
+      "contentId": "300010743",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/026_title_8_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/026_title_8_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/026_title_8_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Drama",
+      "year": "2011",
+      "runtime": "3 Seasons",
+      "rating": "TV-14"
+    },
+    {
+      "position": 9,
+      "title": "Soap",
+      "description": "Soap premiered in 1977 to protests from religious groups who'd read the scripts and decided America wasn't ready. They weren't entirely wrong.\n\nThe show had a gay main character played with genuine warmth, a possessed priest, an alien abduction, and a murder mystery that ran across multiple seasons - all played as farce. What made it work was that the cast treated every absurd development with complete sincerity. Billy Crystal's Jodie Dallas wasn't a punchline. He was a person navigating something real inside a show that was otherwise completely unhinged.\n\nFor a network comedy from the late '70s, it took more swings than most shows on TV today.",
+      "contentTitle": "Soap (1981)",
+      "tubiLink": "https://tubitv.com/series/300007078",
+      "contentId": "300007078",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/026_title_9_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/026_title_9_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/026_title_9_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Comedy",
+      "year": "1981",
+      "runtime": "4 Seasons",
+      "rating": "TV-PG"
+    },
+    {
+      "position": 10,
+      "title": "Degrassi: The Next Generation",
+      "description": "Degrassi earned its reputation by refusing to look away. School shooting. Sexual assault. Self-harm. Eating disorders. The show addressed all of it while other teen dramas were still worried about prom drama, and it did it with enough specificity that the episodes felt like they were actually about something.\n\nThe famous two-part episode 'Time Stands Still' aired in 2004 and handled a school shooting with a directness no American network would have touched.\n\nThe show ran for over 500 episodes because it kept finding new things to be honest about. It's not always comfortable viewing. It was never supposed to be.",
+      "contentTitle": "Degrassi: The Next Generation (2015)",
+      "tubiLink": "https://tubitv.com/series/4631",
+      "contentId": "4631",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/026_title_10_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/026_title_10_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/026_title_10_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Drama",
+      "year": "2015",
+      "runtime": "14 Seasons",
+      "rating": "TV-PG"
+    }
+  ],
+  "keepReading": {
+    "header": {
+      "title": "Keep Reading",
+      "subtitle": "More articles to explore"
+    },
+    "items": [
+      {
+        "id": "014",
+        "slug": "the-most-addictive-shows-on-tubi",
+        "eyebrow": "What to Watch",
+        "title": "Binge-Worthy TV: The Most Addictive Shows on Tubi",
+        "subtitle": "Shows that stack quickly and are harder to stop than you expect.",
+        "categoryTag": "Shows",
+        "thumbnail": "/static/blog/the-t/thumbnails/014_thumbnail.jpg"
+      },
+      {
+        "id": "029",
+        "slug": "top-crime-series-on-tubi",
+        "eyebrow": "What to Watch",
+        "title": "Top Crime Series on Tubi Today",
+        "subtitle": "Where the cases pull you in because they get personal fast.",
+        "categoryTag": "Shows",
+        "thumbnail": "/static/blog/the-t/thumbnails/029_thumbnail.jpg"
+      },
+      {
+        "id": "028",
+        "slug": "the-best-reality-shows-streaming-free-on-tubi",
+        "eyebrow": "What to Watch",
+        "title": "The Best Reality Shows Streaming Free on Tubi",
+        "subtitle": "Low stakes, high chaos, and easy to lose an entire evening to.",
+        "categoryTag": "Shows",
+        "thumbnail": "/static/blog/the-t/thumbnails/028_thumbnail.jpg"
+      }
+    ]
+  },
+  "datePosted": "2026-05-26"
+}

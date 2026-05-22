@@ -1,0 +1,220 @@
+{
+  "_doc": {
+    "description": "Tubi Originals hub slice of The T content. Rendered by src/web/features/theT/components/HubPage.tsx via the `originals` entry in `SLUG_RENDERERS` in src/web/features/theT/containers/Hub.tsx. Same shape as ./movies.json / ./shows.json / ./horror.json — every section (`hero`, `featured`, `storyHero`, `watchlist`, `keepReading`) carries its own `header.{title,subtitle}` + items so the JSON drives both heading and content.",
+    "source": "Shell placeholder. Hero label + lede land first; Featured rail, Story Hero, Watchlist rail, and Keep Reading rail get authored section by section against the upstream `~/Desktop/Static Upload Tubi Blog/{listicles,single-titles,watchlist}.json` slices for `pageLocation: Tubi Originals` records.",
+    "doNotInclude": "intro, items[], cast[], whatsComing[] — only the fields the Tubi Originals hub actually renders should ship in this chunk.",
+    "linking": "Every article card / hero uses the canonical URL `/the-t/articles/<slug>`. Each slot stores just the bare `slug`; the renderer (`homePageData.ts → buildArticleHref`) prepends the prefix. The optional `watchLink` on some slots is reserved for CTAs that bypass the article and route straight into the Tubi catalog; it does NOT influence the article href."
+  },
+  "nav": {
+    "logoLabel": "The T",
+    "links": [
+      {
+        "label": "Home",
+        "href": "/the-t"
+      },
+      {
+        "label": "Coming Soon",
+        "href": "/the-t/coming-soon"
+      },
+      {
+        "label": "Shows",
+        "href": "/the-t/shows"
+      },
+      {
+        "label": "Movies",
+        "href": "/the-t/movies"
+      }
+    ],
+    "explore": {
+      "label": "Explore",
+      "items": [
+        {
+          "label": "FIFA World Cup 2026",
+          "href": "/the-t/fifa-world-cup"
+        },
+        {
+          "label": "Horror",
+          "href": "/the-t/horror"
+        },
+        {
+          "label": "Tubi Originals",
+          "href": "/the-t/originals"
+        },
+        {
+          "label": "Sports",
+          "href": "/the-t/sports"
+        }
+      ],
+      "moreGenresLabel": "More genres",
+      "moreGenresHref": "/the-t/genres"
+    },
+    "mobileMenu": {
+      "open": "Open menu",
+      "close": "Close menu"
+    }
+  },
+  "hero": {
+    "label": "Tubi Originals",
+    "description": "From bold new voices to fresh takes on familiar stories, we cover the originals made right here at home. Whether you're looking for something unexpected or a new favorite, our picks are exclusive to us. New titles added regularly.",
+    "image": "/static/blog/the-t/heroes/originals-hub_hero.jpg"
+  },
+  "featured": {
+    "header": {
+      "title": "Featured",
+      "subtitle": "Stories and recommendations from our team"
+    },
+    "items": [
+      {
+        "id": "047",
+        "slug": "lesbian-homie-season-5-is-coming-to-tubi",
+        "contentId": "300000797",
+        "eyebrow": "New Season",
+        "title": "Lesbian Homie Season 5 Is Coming to Tubi",
+        "subtitle": "He swore he was done with complicated. Complicated had other plans.",
+        "categoryTag": "Originals",
+        "thumbnail": "/static/blog/the-t/thumbnails/047_thumbnail.jpg"
+      },
+      {
+        "id": "048",
+        "slug": "battle-for-castle-itter-on-tubi",
+        "contentId": "100029743",
+        "eyebrow": "What to Watch",
+        "title": "Battle for Castle Itter: The True Story Behind Tubi's New Action Film",
+        "subtitle": "American soldiers and German Wehrmacht troops fighting side by side — against the SS — and it's all based on real events.",
+        "categoryTag": "Originals",
+        "thumbnail": "/static/blog/the-t/thumbnails/048_thumbnail.jpg"
+      },
+      {
+        "id": "049",
+        "slug": "hijacked-on-tubi",
+        "contentId": "100052744",
+        "eyebrow": "What to Watch",
+        "title": "Hijacked on Tubi: Everything You Need to Know",
+        "subtitle": "One wrong ride and everything a father loves is suddenly on the line.",
+        "categoryTag": "Originals",
+        "thumbnail": "/static/blog/the-t/thumbnails/049_thumbnail.jpg"
+      }
+    ]
+  },
+  "storyHero": {
+    "id": "050",
+    "slug": "boarders-season-3-is-coming-to-tubi",
+    "contentId": "300002557",
+    "eyebrow": "New Season",
+    "title": "Boarders Season 3 on Tubi",
+    "subtitle": "The culture clash is real, the comedy is sharp, and the stakes are higher than any grade.",
+    "categoryTag": "Originals",
+    "hero": "/static/blog/the-t/thumbnails/050_thumbnail.jpg",
+    "hasVideoPlaybackSupport": true
+  },
+  "watchlist": {
+    "header": {
+      "title": "Watchlist",
+      "subtitle": "A handpicked list of originals to watch next"
+    },
+    "items": [
+      {
+        "id": "wl-originals-1",
+        "title": "Rockabye",
+        "year": "2026",
+        "description": "Danger, deception, and a woman caught in the middle of something she didn't choose.",
+        "genreTag": "Thriller",
+        "poster": "/static/blog/the-t/watchlist/tubi_originals_1_poster.jpg",
+        "watchLink": "https://tubitv.com/movies/100049583",
+        "contentId": "100049583"
+      },
+      {
+        "id": "wl-originals-2",
+        "title": "Twin",
+        "year": "2026",
+        "description": "Fresh out of prison for murder, a ruthless woman schemes to replace her twin sister and claim her flawless life.",
+        "genreTag": "Thriller",
+        "poster": "/static/blog/the-t/watchlist/tubi_originals_2_poster.jpg",
+        "watchLink": "https://tubitv.com/movies/100049195",
+        "contentId": "100049195"
+      },
+      {
+        "id": "wl-originals-3",
+        "title": "Unrequited",
+        "year": "2026",
+        "description": "A quiet crush turns into something far more dangerous.",
+        "genreTag": "Thriller",
+        "poster": "/static/blog/the-t/watchlist/tubi_originals_3_poster.jpg",
+        "watchLink": "https://tubitv.com/movies/100045155",
+        "contentId": "100045155"
+      },
+      {
+        "id": "wl-originals-4",
+        "title": "Woman to Woman",
+        "year": "2026",
+        "description": "Two mothers face the past to protect what matters most.",
+        "genreTag": "Thriller",
+        "poster": "/static/blog/the-t/watchlist/tubi_originals_4_poster.jpg",
+        "watchLink": "https://tubitv.com/movies/100046434",
+        "contentId": "100046434"
+      },
+      {
+        "id": "wl-originals-5",
+        "title": "Broken Bonds",
+        "year": "2026",
+        "description": "Easy money never stays easy. Three friends learn that fast.",
+        "genreTag": "Thriller/Mystery",
+        "poster": "/static/blog/the-t/watchlist/tubi_originals_5_poster.jpg",
+        "watchLink": "https://tubitv.com/movies/100046436",
+        "contentId": "100046436"
+      },
+      {
+        "id": "wl-originals-6",
+        "title": "Death Name",
+        "year": "2026",
+        "description": "A search for identity uncovers something that should have stayed buried.",
+        "genreTag": "Horror",
+        "poster": "/static/blog/the-t/watchlist/tubi_originals_6_poster.jpg",
+        "watchLink": "https://tubitv.com/movies/100025002",
+        "contentId": "100025002"
+      }
+    ]
+  },
+  "keepReading": {
+    "header": {
+      "title": "Keep Reading",
+      "subtitle": "More articles to explore"
+    },
+    "items": [
+      {
+        "id": "051",
+        "slug": "i-didnt-do-it-tubis-new-true-crime-documentary",
+        "contentId": "331",
+        "eyebrow": "What to Watch",
+        "title": "I Didn't Do It: Tubi's New True Crime Documentary",
+        "subtitle": "These aren't cold case puzzles — they're people, and the system failed them.",
+        "categoryTag": "Originals",
+        "thumbnail": "/static/blog/the-t/thumbnails/051_thumbnail.png"
+      },
+      {
+        "id": "052",
+        "slug": "between-the-cheats-season-3-is-coming-to-tubi",
+        "contentId": "300018074",
+        "eyebrow": "New Season",
+        "title": "Between the Cheats Season 3 Is Coming to Tubi",
+        "subtitle": "When infidelity ends in murder, the receipts are all real.",
+        "categoryTag": "Originals",
+        "thumbnail": "/static/blog/the-t/thumbnails/052_thumbnail.jpg"
+      },
+      {
+        "id": "053",
+        "slug": "how-to-lose-a-popularity-contest-on-tubi",
+        "contentId": "100049581",
+        "eyebrow": "What to Watch",
+        "title": "How to Lose a Popularity Contest Is the YA Film You Never Knew You Needed",
+        "subtitle": "A rigged election, a reluctant alliance, and feelings that absolutely were not part of the plan.",
+        "categoryTag": "Originals",
+        "thumbnail": "/static/blog/the-t/thumbnails/053_thumbnail.jpg"
+      }
+    ]
+  },
+  "images": {
+    "og": "/static/blog/the-t/og/tubi_originals_hub_og.jpg"
+  },
+  "pageTitle": "Discover Exclusive Tubi Originals for Free"
+}

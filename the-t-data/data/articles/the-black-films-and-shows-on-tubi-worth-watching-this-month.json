@@ -1,0 +1,289 @@
+{
+  "nav": {
+    "logoLabel": "The T",
+    "links": [
+      {
+        "label": "Home",
+        "href": "/the-t"
+      },
+      {
+        "label": "Coming Soon",
+        "href": "/the-t/coming-soon"
+      },
+      {
+        "label": "Shows",
+        "href": "/the-t/shows"
+      },
+      {
+        "label": "Movies",
+        "href": "/the-t/movies"
+      }
+    ],
+    "explore": {
+      "label": "Explore",
+      "items": [
+        {
+          "label": "FIFA World Cup 2026",
+          "href": "/the-t/fifa-world-cup"
+        },
+        {
+          "label": "Horror",
+          "href": "/the-t/horror"
+        },
+        {
+          "label": "Tubi Originals",
+          "href": "/the-t/originals"
+        },
+        {
+          "label": "Sports",
+          "href": "/the-t/sports"
+        }
+      ],
+      "moreGenresLabel": "More genres",
+      "moreGenresHref": "/the-t/genres"
+    },
+    "mobileMenu": {
+      "open": "Open menu",
+      "close": "Close menu"
+    }
+  },
+  "id": "079",
+  "slug": "the-black-films-and-shows-on-tubi-worth-watching-this-month",
+  "categoryTag": "Shows",
+  "type": "listicle",
+  "title": "The Black Films and Shows on Tubi Worth Watching This Month",
+  "subtitle": "A monthly lineup that moves across genres instead of staying in one lane.",
+  "intro": "The Black films and shows on Tubi worth watching this month aren't here to be representative. They're here because they're good.\n\nA Memphis megachurch is hiding something, and the one person who might expose it just came home after twenty years. Three women in Atlanta are navigating the music industry with talent, ambition, and absolutely no safety net. Bernie Mac is raising three kids he didn't plan on, and somehow that's the funniest thing on television.\n\nHere's the full list.",
+  "images": {
+    "thumbnail": "/static/blog/the-t/thumbnails/079_thumbnail.jpg",
+    "og": "/static/blog/the-t/og/079_og.png"
+  },
+  "items": [
+    {
+      "position": 1,
+      "title": "Greenleaf",
+      "description": "Grace Greenleaf walked away from her family's Memphis megachurch twenty years ago. She comes back for a funeral and can't leave, because the more she looks, the worse it gets.\n\nHere's what most church dramas miss: the people running the institution aren't cynics. They believe. That's what makes the secrets so heavy. When the cracks start showing, nobody can write it off as corruption. It's personal for everyone in the building.\n\nOprah Winfrey produces and appears in it, but this is Merle Dandridge's show. She plays Grace with the specific exhaustion of someone who already knew something was wrong and came back anyway.",
+      "contentTitle": "Greenleaf (2020)",
+      "tubiLink": "https://tubitv.com/series/300019455",
+      "contentId": "300019455",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/079_title_1_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/079_title_1_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/079_title_1_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Drama",
+      "year": "2020",
+      "runtime": "5 Seasons",
+      "rating": "TV-14"
+    },
+    {
+      "position": 2,
+      "title": "Empire",
+      "description": "Lucious Lyon built a hip-hop empire from nothing. Now he's sick, and the question of who takes over is tearing his family apart in real time.\n\nTaraji P. Henson plays Cookie, who spent seventeen years in prison while Lucious built the thing she helped start. She does not come back quietly. There's a scene in the first season where she walks into a board meeting she wasn't invited to and simply sits down. The room shifts.\n\nThe show is operatic on purpose - the music, the betrayals, the alliances that flip episode to episode. It commits completely to the register it's playing in, and that's the only reason any of it works.",
+      "contentTitle": "Empire (2020)",
+      "tubiLink": "https://tubitv.com/series/300011089",
+      "contentId": "300011089",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/079_title_2_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/079_title_2_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/079_title_2_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Drama",
+      "year": "2020",
+      "runtime": "6 Seasons",
+      "rating": "TV-14"
+    },
+    {
+      "position": 3,
+      "title": "Girlfriends",
+      "description": "Joan, Maya, Lynn, and Toni have been friends long enough to know exactly how to get on each other's nerves. They do, regularly, with real specificity.\n\nWhat makes Girlfriends hold up is that the four of them don't always agree, and the show doesn't smooth that over. Joan's ambition reads differently to Maya than it does to Lynn. Toni's bluntness lands differently depending on the episode. The friendships feel real because they're occasionally uncomfortable.\n\nTracee Ellis Ross plays Joan like someone who has her life extremely together and is constantly surprised when it isn't. Eight seasons. The back half gets even sharper.",
+      "contentTitle": "Girlfriends (2008)",
+      "tubiLink": "https://tubitv.com/series/300015867",
+      "contentId": "300015867",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/079_title_3_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/079_title_3_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/079_title_3_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Comedy",
+      "year": "2008",
+      "runtime": "8 Seasons",
+      "rating": "TV-PG"
+    },
+    {
+      "position": 4,
+      "title": "Everybody Hates Chris",
+      "description": "Chris Rock narrates his own adolescence and the joke is that he remembers all of it - every humiliation, every bad call, every moment his parents' extreme frugality made his life harder.\n\nTerry Crews plays Julius, his father, as a man who has calculated the exact cost of every household item and will tell you what it is. There's a running gag where Julius reacts to wasted food with genuine grief. It shouldn't be that funny. It is.\n\nThe show is set in Bed-Stuy in the early '80s and it actually looks like it - the clothes, the apartment, the specific texture of being the only kid from the neighborhood bused to a school across town where nobody looks like you.",
+      "contentTitle": "Everybody Hates Chris (2009)",
+      "tubiLink": "https://tubitv.com/series/300015509",
+      "contentId": "300015509",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/079_title_4_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/079_title_4_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/079_title_4_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Comedy",
+      "year": "2009",
+      "runtime": "4 Seasons",
+      "rating": "TV-PG"
+    },
+    {
+      "position": 5,
+      "title": "Roots",
+      "description": "The 2016 retelling starts with Kunta Kinte in West Africa. Not on a ship, not on a plantation. You see who he is before any of it happens, and that choice is doing a lot of work.\n\nThe show follows his family across generations, and what carries through isn't just survival - it's the specific act of remembering. Names get taken. Languages get forbidden. The family keeps passing things down anyway, in whatever form they can.\n\nForest Whitaker, Laurence Fishburne, and Anika Noni Rose are all in it, but the casting that lands hardest is Malachi Kirby as Kunta. He plays the first episode with a kind of dignity that makes everything that follows feel like a specific loss, not an abstract one.",
+      "contentTitle": "Roots (2016)",
+      "tubiLink": "https://tubitv.com/series/300001925",
+      "contentId": "300001925",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/079_title_5_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/079_title_5_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/079_title_5_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Drama",
+      "year": "2016",
+      "runtime": "1 Season",
+      "rating": "TV-MA"
+    },
+    {
+      "position": 6,
+      "title": "The Bernie Mac Show",
+      "description": "Bernie Mac breaks the fourth wall constantly - mid-episode, mid-argument, sometimes mid-sentence - to explain to the audience exactly what's wrong with the situation he's in.\n\nThe setup is that he and his wife take in his sister's three kids while she's in rehab. Bernie is not patient by nature. He's not soft-spoken. He has opinions about children that he delivers directly to camera with complete conviction.\n\nWhat saves it from being one note is that the kids aren't props. They have their own angles, their own ways of getting under his skin, and the show lets them win sometimes. Bernie Mac played the character frustrated and fully present at the same time, and that combination is harder to pull off than it looks.",
+      "contentTitle": "The Bernie Mac Show (2006)",
+      "tubiLink": "https://tubitv.com/series/300008079",
+      "contentId": "300008079",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/079_title_6_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/079_title_6_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/079_title_6_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Comedy",
+      "year": "2006",
+      "runtime": "5 Seasons",
+      "rating": "TV-PG"
+    },
+    {
+      "position": 7,
+      "title": "The Haves and the Have Nots",
+      "description": "A judge with political ambitions and a mountain of secrets finds himself in an impossible position when his housekeeper's estranged daughter shows up and starts pulling threads.\n\nTyler Perry created and writes this, and it moves the way a soap opera should - fast, with reversals you didn't see coming and characters who make decisions that are completely wrong and completely understandable at the same time. The class dynamics are the engine. Everyone in the show is performing a version of themselves for someone else's benefit.\n\nIf you've never watched a Tyler Perry series, this is the one that shows you what he's actually doing with the format. It's not subtle, and it's not trying to be.",
+      "contentTitle": "The Haves and the Have Nots (2021)",
+      "tubiLink": "https://tubitv.com/series/300015022",
+      "contentId": "300015022",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/079_title_7_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/079_title_7_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/079_title_7_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Drama",
+      "year": "2021",
+      "runtime": "8 Seasons",
+      "rating": "TV-14"
+    },
+    {
+      "position": 8,
+      "title": "Star",
+      "description": "Star and Simone grew up in foster care. Alexandra grew up wealthy. The three of them end up in Atlanta trying to make it in the music industry, and the show is honest about the fact that they want different things from the same dream.\n\nLee Daniels created it, so the tone swings hard - musical numbers, real violence, scenes that feel like they're from three different shows. It holds together because the performances hold it together. Queen Latifah plays Carlotta, who manages the group and has her own history with the industry, and she plays every scene like someone who already knows how this ends.\n\nThe Atlanta setting isn't decoration. The city has its own rules about who gets to win.",
+      "contentTitle": "Star (2019)",
+      "tubiLink": "https://tubitv.com/series/300002098",
+      "contentId": "300002098",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/079_title_8_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/079_title_8_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/079_title_8_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Drama",
+      "year": "2019",
+      "runtime": "3 Seasons",
+      "rating": "TV-14"
+    },
+    {
+      "position": 9,
+      "title": "Our Kind of People",
+      "description": "Angela Vaughn arrives in Oak Bluffs - the historically Black enclave on Martha's Vineyard - not as an outsider trying to climb, but as someone who believes her family belongs there and was written out.\n\nYaya DaCosta plays Angela with the specific energy of someone who has rehearsed this moment and is still surprised by what she finds. The secret she uncovers doesn't just threaten her - it implicates the community she's trying to reclaim, which is where things get genuinely complicated.\n\nOak Bluffs has a real history as a space for Black wealth and Black leisure that predates most of what the show dramatizes. The series uses that history as pressure, not backdrop.",
+      "contentTitle": "Our Kind of People (2022)",
+      "tubiLink": "https://tubitv.com/series/300001461",
+      "contentId": "300001461",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/079_title_9_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/079_title_9_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/079_title_9_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Drama",
+      "year": "2022",
+      "runtime": "1 Season",
+      "rating": "TV-14"
+    },
+    {
+      "position": 10,
+      "title": "The PJs",
+      "description": "Eddie Murphy created and voices Thurgood Stubbs, the superintendent of a high-rise housing project in an unnamed city. The show uses stop-motion animation to do something live action couldn't - make the building itself a character.\n\nThe satire is specific. Thurgood deals with a city bureaucracy that doesn't work, residents with problems that don't have clean solutions, and a wife who is significantly more competent than he is. The show doesn't romanticize the projects or condescend to them. It just lives there.\n\nIt ran on Fox and WB in the late '90s and early 2000s and got completely overlooked in every conversation about animated sitcoms from that era. That's worth correcting.",
+      "contentTitle": "The PJs (2018)",
+      "tubiLink": "https://tubitv.com/series/300008591",
+      "contentId": "300008591",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/079_title_10_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/079_title_10_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/079_title_10_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Comedy",
+      "year": "2018",
+      "runtime": "3 Seasons",
+      "rating": "TV-14"
+    }
+  ],
+  "keepReading": {
+    "header": {
+      "title": "Keep Reading",
+      "subtitle": "More articles to explore"
+    },
+    "items": [
+      {
+        "id": "008",
+        "slug": "the-best-black-movies-and-shows-on-tubi",
+        "eyebrow": "What to Watch",
+        "title": "The Best Black Movies & Shows on Tubi Right Now",
+        "subtitle": "A range of stories that hit across genres without feeling one-note.",
+        "categoryTag": "Movies",
+        "thumbnail": "/static/blog/the-t/thumbnails/008_thumbnail.jpg"
+      },
+      {
+        "id": "077",
+        "slug": "girlfriends-good-times-and-the-black-sitcoms-on-tubi",
+        "eyebrow": "What to Watch",
+        "title": "Girlfriends, Good Times, and the Black Sitcoms on Tubi",
+        "subtitle": "Decades of laughs, real rent, and friendships that don't let you off easy.",
+        "categoryTag": "Shows",
+        "thumbnail": "/static/blog/the-t/thumbnails/077_thumbnail.jpg"
+      },
+      {
+        "id": "078",
+        "slug": "saved-by-the-bell-and-the-classic-shows-on-tubi",
+        "eyebrow": "What to Watch",
+        "title": "Saved by the Bell and the Classic Shows on Tubi",
+        "subtitle": "Comfort watches that still hold up when you go back to them.",
+        "categoryTag": "Shows",
+        "thumbnail": "/static/blog/the-t/thumbnails/078_thumbnail.jpg"
+      }
+    ]
+  },
+  "datePosted": "2026-05-26"
+}

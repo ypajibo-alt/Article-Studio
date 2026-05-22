@@ -1,0 +1,160 @@
+{
+  "nav": {
+    "logoLabel": "The T",
+    "links": [
+      {
+        "label": "Home",
+        "href": "/the-t"
+      },
+      {
+        "label": "Coming Soon",
+        "href": "/the-t/coming-soon"
+      },
+      {
+        "label": "Shows",
+        "href": "/the-t/shows"
+      },
+      {
+        "label": "Movies",
+        "href": "/the-t/movies"
+      }
+    ],
+    "explore": {
+      "label": "Explore",
+      "items": [
+        {
+          "label": "FIFA World Cup 2026",
+          "href": "/the-t/fifa-world-cup"
+        },
+        {
+          "label": "Horror",
+          "href": "/the-t/horror"
+        },
+        {
+          "label": "Tubi Originals",
+          "href": "/the-t/originals"
+        },
+        {
+          "label": "Sports",
+          "href": "/the-t/sports"
+        }
+      ],
+      "moreGenresLabel": "More genres",
+      "moreGenresHref": "/the-t/genres"
+    },
+    "mobileMenu": {
+      "open": "Open menu",
+      "close": "Close menu"
+    }
+  },
+  "id": "019",
+  "slug": "the-grudge-2020-on-tubi",
+  "categoryTag": "Coming Soon",
+  "type": "article",
+  "title": "The Grudge (2020) Hits Tubi This Month",
+  "subtitle": "The curse doesn't follow rules, and neither does this version of it.",
+  "datePosted": "2026-05-26",
+  "intro": "The Grudge was never really about a haunted house. It was about the idea that some pain doesn't stay put, it spreads, it waits, it finds you wherever you moved to get away from it. The 2020 reboot doesn't restart the mythology so much as drag it into a new address, a new family, a new set of people who had nothing to do with any of it and are going to suffer anyway. That's the premise, and it commits to it without apology. Now it's on Tubi, which means you have no more excuses to keep putting it off.",
+  "cast": {
+    "header": {
+      "title": "The Cast"
+    },
+    "items": [
+      {
+        "name": "Andrea Riseborough",
+        "bio": "Riseborough plays Detective Muldoon, a single mother who pulls a case she should have walked away from. She doesn't panic when things get strange. She keeps working, keeps pushing, which is exactly the wrong instinct in a film like this. Her composure is what makes the unraveling land."
+      },
+      {
+        "name": "Demián Bichir",
+        "bio": "Bichir plays Detective Goodman, Muldoon's partner, someone who already knows more about this case than he's saying. There's a scene early on where he tries to warn her off the file without actually explaining why. He knows she won't listen. He's right."
+      },
+      {
+        "name": "John Cho",
+        "bio": "Cho plays Peter Spencer, a real estate agent whose family moves into the wrong house at the wrong time. He's the film's most ordinary character, which is the point. The curse doesn't pick interesting people. It picks whoever is closest."
+      },
+      {
+        "name": "Lin Shaye",
+        "bio": "Shaye plays Faith Matheson, a woman the curse has already finished with by the time we meet her. She's in a care facility. She's not well. The scenes with her are the film's most unsettling, not because of what she does, but because of what she's clearly already seen."
+      }
+    ]
+  },
+  "quote": "You moved. You changed the locks. It doesn't matter.",
+  "faq": {
+    "header": {
+      "title": "More details"
+    },
+    "items": [
+      {
+        "question": "Who directed the film?",
+        "answer": "Nicolas Pesce"
+      },
+      {
+        "question": "Who is in the cast?",
+        "answer": "Andrea Riseborough, Demián Bichir, John Cho, Betty Gilpin, Lin Shaye, Jacki Weaver, David Lawrence Brown, Frankie Faison, William Sadler, Zoe Fish"
+      },
+      {
+        "question": "Where can I stream this?",
+        "answer": "Watch free on Tubi"
+      }
+    ]
+  },
+  "images": {
+    "thumbnail": "/static/blog/the-t/thumbnails/019_thumbnail.jpg",
+    "hero": "/static/blog/the-t/heroes/019_hero.png",
+    "og": "/static/blog/the-t/og/019_og.jpg"
+  },
+  "keepReading": {
+    "header": {
+      "title": "Keep Reading",
+      "subtitle": "More articles to explore"
+    },
+    "items": [
+      {
+        "id": "040",
+        "slug": "best-horror-shows-on-tubi-right-now",
+        "eyebrow": "Binge-Worthy",
+        "title": "Best Horror Shows on Tubi Right Now",
+        "subtitle": "A range of horror that goes beyond the obvious picks.",
+        "categoryTag": "Horror",
+        "thumbnail": "/static/blog/the-t/thumbnails/040_thumbnail.jpg"
+      },
+      {
+        "id": "044",
+        "slug": "best-supernatural-horror-shows-on-tubi",
+        "eyebrow": "What to Watch",
+        "title": "Best Supernatural Horror Shows on Tubi",
+        "subtitle": "Stories where the threat feels just out of reach.",
+        "categoryTag": "Horror",
+        "thumbnail": "/static/blog/the-t/thumbnails/044_thumbnail.jpg"
+      },
+      {
+        "id": "017",
+        "slug": "the-night-shift-on-tubi",
+        "eyebrow": "Available 6/5",
+        "title": "The Night Shift: What You Need to Know Before It Hits Tubi",
+        "subtitle": "Same night, same killer, same dead end.",
+        "categoryTag": "Coming Soon",
+        "thumbnail": "/static/blog/the-t/thumbnails/017_thumbnail.jpg"
+      }
+    ]
+  },
+  "hero": {
+    "watchLink": "https://tubitv.com/movies/100032111/the-grudge",
+    "contentId": "100032111",
+    "watchNowLabel": "Watch Now"
+  },
+  "whyWatch": {
+    "header": {
+      "title": "Why Watch It"
+    },
+    "body": "The 2020 Grudge is not trying to be the J-horror original or the 2004 remake. It's doing something narrower and colder, a procedural about a curse, told from the outside in, where the detectives investigating the deaths are just the next set of victims waiting to be processed. That's a genuinely bleak structural choice, and the film is honest enough to follow it all the way through."
+  },
+  "gallery": {
+    "header": {
+      "title": "Media Shots"
+    },
+    "items": [
+      "/static/blog/the-t/media/019_media_1.jpg"
+    ]
+  }
+}

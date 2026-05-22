@@ -1,0 +1,289 @@
+{
+  "nav": {
+    "logoLabel": "The T",
+    "links": [
+      {
+        "label": "Home",
+        "href": "/the-t"
+      },
+      {
+        "label": "Coming Soon",
+        "href": "/the-t/coming-soon"
+      },
+      {
+        "label": "Shows",
+        "href": "/the-t/shows"
+      },
+      {
+        "label": "Movies",
+        "href": "/the-t/movies"
+      }
+    ],
+    "explore": {
+      "label": "Explore",
+      "items": [
+        {
+          "label": "FIFA World Cup 2026",
+          "href": "/the-t/fifa-world-cup"
+        },
+        {
+          "label": "Horror",
+          "href": "/the-t/horror"
+        },
+        {
+          "label": "Tubi Originals",
+          "href": "/the-t/originals"
+        },
+        {
+          "label": "Sports",
+          "href": "/the-t/sports"
+        }
+      ],
+      "moreGenresLabel": "More genres",
+      "moreGenresHref": "/the-t/genres"
+    },
+    "mobileMenu": {
+      "open": "Open menu",
+      "close": "Close menu"
+    }
+  },
+  "id": "076",
+  "slug": "looney-tunes-is-free-on-tubi-and-it-holds-up-better-than-you-think",
+  "categoryTag": "Shows",
+  "type": "listicle",
+  "title": "Bugs, Scooby, Courage, and the Cartoons Tubi Has for Free",
+  "subtitle": "Still funny, still fast, still free on Tubi.",
+  "intro": "The cartoons you grew up with were doing more than you knew.\n\nYour favorites are on Tubi right now, and the first thing you'll notice rewatching is how little of it was actually aimed at you as a kid. Bugs Bunny dressed in drag and quoted Wagner. Daffy Duck had an existential breakdown about being a cartoon character. Courage the Cowardly Dog scared children so badly that parents complained. Animaniacs snuck in a Bill Clinton joke and then immediately cut to a gag about the French Revolution.\n\nHere's where to start.",
+  "images": {
+    "thumbnail": "/static/blog/the-t/thumbnails/076_thumbnail.jpg",
+    "og": "/static/blog/the-t/og/076_og.jpg"
+  },
+  "items": [
+    {
+      "position": 1,
+      "title": "Looney Tunes",
+      "description": "These shorts ran in movie theaters before features. Not Saturday morning TV - actual cinemas, for adults who paid admission. That context explains everything: the opera parodies, the wartime propaganda, the jokes that assume you've read something.\n\nBugs Bunny's whole thing is that he's the smartest person in any room and he knows it. Elmer Fudd and Yosemite Sam exist to be humiliated by someone who doesn't even break a sweat.\n\nChuck Jones was doing visual comedy with the precision of a Swiss watch. There's a reason animation professors still teach these. The timing hasn't aged a day.",
+      "contentTitle": "Looney Tunes (2003)",
+      "tubiLink": "https://tubitv.com/series/300016553",
+      "contentId": "300016553",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/076_title_1_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/076_title_1_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/076_title_1_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Kids & Family",
+      "year": "2003",
+      "runtime": "13 Seasons",
+      "rating": "TV-PG"
+    },
+    {
+      "position": 2,
+      "title": "The Looney Tunes Show",
+      "description": "Yes, they moved Bugs Bunny to the suburbs. Yes, Daffy Duck is now a freeloading roommate who watches too much TV. This sounds like a rough idea.\n\nIt isn't.\n\nThe show leans into the dynamic that was always there - Bugs is patient and competent, Daffy is a disaster who refuses to acknowledge it - and builds actual sitcom plots around it. Porky Pig shows up as Daffy's long-suffering best friend and gets some of the best lines in the whole series. The slapstick is gone, replaced by dry wit. Turns out that's a surprisingly good trade.",
+      "contentTitle": "The Looney Tunes Show (2013)",
+      "tubiLink": "https://tubitv.com/series/300015103",
+      "contentId": "300015103",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/076_title_2_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/076_title_2_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/076_title_2_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Animation",
+      "year": "2013",
+      "runtime": "2 Seasons",
+      "rating": "TV-PG"
+    },
+    {
+      "position": 3,
+      "title": "Animaniacs",
+      "description": "Yakko, Wakko, and Dot were technically children's entertainment. Technically. Every sketch had two floors: a physical gag that worked for a seven-year-old and a reference underneath it that only landed if you knew who Orson Welles was.\n\nThen there's Pinky and the Brain - a lab mouse with genuine megalomania and his sweet, useless friend - which ran so dark it eventually got its own show.\n\nThe celebrity cameos were relentless. The political jokes were sharp. And the theme song alone explains more about how cartoons work than most of what you'd find in a film school lecture.",
+      "contentTitle": "Animaniacs (1998)",
+      "tubiLink": "https://tubitv.com/series/300019067",
+      "contentId": "300019067",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/076_title_3_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/076_title_3_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/076_title_3_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Kids & Family",
+      "year": "1998",
+      "runtime": "5 Seasons",
+      "rating": "TV-G"
+    },
+    {
+      "position": 4,
+      "title": "Courage the Cowardly Dog",
+      "description": "This is a horror cartoon. Not horror-adjacent, not spooky - actual horror, with nightmare imagery and genuine dread, wrapped in a format that somehow got it onto Cartoon Network.\n\nCourage is a small pink dog living with an elderly couple in a place called the Middle of Nowhere. Something deeply wrong arrives at their door in almost every episode. The monsters aren't just scary - they're wrong in ways that are hard to put into words.\n\nThere's an episode involving a violin that still unsettles people who watched it as kids. John R. Dilworth made something that had no business getting greenlit. It ran for four seasons.",
+      "contentTitle": "Courage the Cowardly Dog (2002)",
+      "tubiLink": "https://tubitv.com/series/300019075",
+      "contentId": "300019075",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/076_title_4_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/076_title_4_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/076_title_4_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Comedy",
+      "year": "2002",
+      "runtime": "4 Seasons",
+      "rating": "TV-PG"
+    },
+    {
+      "position": 5,
+      "title": "Cow and Chicken",
+      "description": "The parents in Cow and Chicken are never shown above the waist. Just legs, wandering through the frame, delivering dialogue. The show never explains this. It doesn't need to.\n\nCow is a 400-pound cow. Chicken is her 11-year-old brother. The logic of their world operates on a frequency that's slightly off from everything else. The Red Guy - the recurring villain - is a demon who shows up in elaborate disguises that always involve his bare red behind, and Cartoon Network aired this for children.\n\nIt's chaotic in a way that feels completely intentional, like someone was testing exactly how far they could push it.",
+      "contentTitle": "Cow and Chicken (1999)",
+      "tubiLink": "https://tubitv.com/series/300019212",
+      "contentId": "300019212",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/076_title_5_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/076_title_5_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/076_title_5_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Kids & Family",
+      "year": "1999",
+      "runtime": "4 Seasons",
+      "rating": "TV-Y7"
+    },
+    {
+      "position": 6,
+      "title": "Tom and Jerry Theatricals",
+      "description": "Tom and Jerry runs almost entirely without dialogue. No setup lines, no punchlines delivered out loud - just two characters and the physics of what happens to them.\n\nThat constraint forces the comedy to live entirely in timing and visual invention, which is genuinely hard to sustain. William Hanna and Joseph Barbera built the original theatrical shorts with a precision that holds up on frame-by-frame inspection: the anticipation beat before the impact, the pause before the scream, the moment Tom registers exactly what's about to happen and cannot stop it.\n\nKids watch it for the chaos. Adults rewatch it and start noticing the craft.",
+      "contentTitle": "Tom and Jerry Theatricals (1964)",
+      "tubiLink": "https://tubitv.com/series/300000610",
+      "contentId": "300000610",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/076_title_6_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/076_title_6_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/076_title_6_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Kids & Family",
+      "year": "1964",
+      "runtime": "9 Seasons",
+      "rating": "TV-PG"
+    },
+    {
+      "position": 7,
+      "title": "The Yogi Bear Show",
+      "description": "Yogi Bear lives in Jellystone Park, refuses to follow the rules, and steals picnic baskets from tourists while outwitting the ranger assigned to stop him. He is, technically, a petty criminal. The show treats him as the hero.\n\nRanger Smith is competent and correct and loses every single time, which is a strange moral to build a children's cartoon around. Boo-Boo, Yogi's smaller companion, represents the conscience Yogi actively ignores.\n\n'Smarter than the average bear' is delivered with genuine self-satisfaction every time. Yogi is charming and completely unreliable, and the show is completely honest about both.",
+      "contentTitle": "The Yogi Bear Show (1961)",
+      "tubiLink": "https://tubitv.com/series/300000613",
+      "contentId": "300000613",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/076_title_7_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/076_title_7_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/076_title_7_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Kids & Family",
+      "year": "1961",
+      "runtime": "1 Season",
+      "rating": "TV-G"
+    },
+    {
+      "position": 8,
+      "title": "Scooby-Doo Where Are You?",
+      "description": "Every single Scooby-Doo mystery ends the same way: the ghost is a real estate developer, the phantom is a disgruntled employee, the monster is someone with a financial motive who thought a costume would scare people off. The show has been running this same joke since 1969 and it never stops being satisfying.\n\nFred, Daphne, and Velma do the actual detective work. Shaggy and Scooby eat everything and get chased. The formula is airtight.\n\nVelma figures it out before anyone else, every time. She's been the smartest person in the room for over fifty years and somehow still doesn't get enough credit.",
+      "contentTitle": "Scooby-Doo Where Are You? (1976)",
+      "tubiLink": "https://tubitv.com/series/300006854",
+      "contentId": "300006854",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/076_title_8_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/076_title_8_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/076_title_8_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Kids & Family",
+      "year": "1976",
+      "runtime": "2 Seasons",
+      "rating": "TV-G"
+    },
+    {
+      "position": 9,
+      "title": "Woody Woodpecker",
+      "description": "Early Woody Woodpecker is not the cheerful bird you might remember. The original design - angular, manic, with that specific laugh - was created by Ben Hardaway and reads as genuinely unsettling. Walter Lantz softened him over time, made him rounder and friendlier, but the early shorts have an edge the later ones don't.\n\nWoody doesn't have a reason for what he does. He's not protecting something or chasing something. He just shows up and causes problems because that's what he does.\n\nThe laugh was designed to be irritating. It works.",
+      "contentTitle": "Woody Woodpecker (1941)",
+      "tubiLink": "https://tubitv.com/series/300009464",
+      "contentId": "300009464",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/076_title_9_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/076_title_9_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/076_title_9_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Animation",
+      "year": "1941",
+      "runtime": "1 Season",
+      "rating": "TV-G"
+    },
+    {
+      "position": 10,
+      "title": "The Pink Panther",
+      "description": "The original Pink Panther is a heist comedy where the bumbling detective investigating the theft is genuinely less interesting than the thief committing it. David Niven plays Sir Charles Lytton - 'the Phantom' - with a lightness that makes Peter Sellers' Clouseau look like he wandered in from a different movie.\n\nSellers is brilliant, but the film keeps cutting away from him to remind you that the actual plot involves a charming criminal and a stolen diamond. Blake Edwards directed it as a sophisticated comedy that happened to have a slapstick inspector in it.\n\nThe sequels leaned all the way into Clouseau and mostly abandoned the elegance. The original has both.",
+      "contentTitle": "The Pink Panther (1963)",
+      "tubiLink": "https://tubitv.com/movies/689650",
+      "contentId": "689650",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/076_title_10_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/076_title_10_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/076_title_10_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Comedy",
+      "year": "1963",
+      "runtime": "1h 55m",
+      "rating": "TV-14"
+    }
+  ],
+  "keepReading": {
+    "header": {
+      "title": "Keep Reading",
+      "subtitle": "More articles to explore"
+    },
+    "items": [
+      {
+        "id": "074",
+        "slug": "the-classic-cartoons-every-90s-kid-needs-to-revisit",
+        "eyebrow": "What to Watch",
+        "title": "The Classic Cartoons Every 90s Kid Needs to Revisit",
+        "subtitle": "The ones that were doing more than you realized.",
+        "categoryTag": "Shows",
+        "thumbnail": "/static/blog/the-t/thumbnails/074_thumbnail.jpg"
+      },
+      {
+        "id": "010",
+        "slug": "best-animation-on-tubi",
+        "eyebrow": "What to Watch",
+        "title": "Best Animation on Tubi",
+        "subtitle": "The kind of animation that always felt a step outside the usual.",
+        "categoryTag": "Shows",
+        "thumbnail": "/static/blog/the-t/thumbnails/010_thumbnail.jpg"
+      },
+      {
+        "id": "078",
+        "slug": "saved-by-the-bell-and-the-classic-shows-on-tubi",
+        "eyebrow": "What to Watch",
+        "title": "Saved by the Bell and the Classic Shows on Tubi",
+        "subtitle": "Comfort watches that still hold up when you go back to them.",
+        "categoryTag": "Shows",
+        "thumbnail": "/static/blog/the-t/thumbnails/078_thumbnail.jpg"
+      }
+    ]
+  },
+  "datePosted": "2026-05-26"
+}

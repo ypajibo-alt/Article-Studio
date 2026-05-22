@@ -1,0 +1,161 @@
+{
+  "nav": {
+    "logoLabel": "The T",
+    "links": [
+      {
+        "label": "Home",
+        "href": "/the-t"
+      },
+      {
+        "label": "Coming Soon",
+        "href": "/the-t/coming-soon"
+      },
+      {
+        "label": "Shows",
+        "href": "/the-t/shows"
+      },
+      {
+        "label": "Movies",
+        "href": "/the-t/movies"
+      }
+    ],
+    "explore": {
+      "label": "Explore",
+      "items": [
+        {
+          "label": "FIFA World Cup 2026",
+          "href": "/the-t/fifa-world-cup"
+        },
+        {
+          "label": "Horror",
+          "href": "/the-t/horror"
+        },
+        {
+          "label": "Tubi Originals",
+          "href": "/the-t/originals"
+        },
+        {
+          "label": "Sports",
+          "href": "/the-t/sports"
+        }
+      ],
+      "moreGenresLabel": "More genres",
+      "moreGenresHref": "/the-t/genres"
+    },
+    "mobileMenu": {
+      "open": "Open menu",
+      "close": "Close menu"
+    }
+  },
+  "id": "016",
+  "slug": "men-in-black-international-on-tubi",
+  "categoryTag": "Coming Soon",
+  "type": "article",
+  "title": "Men in Black: International Coming Soon",
+  "subtitle": "Tessa Thompson and Chris Hemsworth are the new agents, and the threats are not getting smaller.",
+  "datePosted": "2026-05-26",
+  "intro": "The Men in Black don't recruit, they find you. Tessa Thompson's Molly has spent her whole life trying to get found, tracking down the agency that wiped her parents' memories when she was a kid and never looked back. She finally gets in. Then she gets partnered with Agent H, the MIB's most decorated and least reliable operative, and sent to London, where something inside the organization is very wrong. The universe is expanding, and not everyone protecting it can be trusted.",
+  "cast": {
+    "header": {
+      "title": "The Cast"
+    },
+    "items": [
+      {
+        "name": "Tessa Thompson as Agent M",
+        "bio": "Thompson plays Molly as someone who has been preparing for this her entire life, and still isn't ready for what she finds. She's the audience's anchor in a world of alien tech and institutional secrets. Sharp, determined, and watching everything."
+      },
+      {
+        "name": "Chris Hemsworth as Agent H",
+        "bio": "H is the MIB's golden boy who coasted on one legendary mission and hasn't done much since. Hemsworth plays him as charming, reckless, and just self-aware enough to be dangerous. He and Thompson have a rhythm that carries the whole film."
+      },
+      {
+        "name": "Liam Neeson as High T",
+        "bio": "Head of the MIB's London branch and the man who made Agent H's reputation. Neeson brings the kind of institutional authority that makes you trust him immediately, which is exactly the problem."
+      },
+      {
+        "name": "Kumail Nanjiani as Pawny",
+        "bio": "A tiny alien warrior who pledges his life to Agent M after his queen falls in battle. Nanjiani voices him with complete sincerity, and Pawny ends up being the film's most reliable character, which says something about everyone else."
+      }
+    ]
+  },
+  "quote": "The universe has a mole. Congratulations on your first week.",
+  "faq": {
+    "header": {
+      "title": "More details"
+    },
+    "items": [
+      {
+        "question": "Who directed the film?",
+        "answer": "F. Gary Gray"
+      },
+      {
+        "question": "Who is in the cast?",
+        "answer": "Tessa Thompson, Chris Hemsworth, Liam Neeson, Kumail Nanjiani, Rebecca Ferguson, Rafe Spall, Laurent Bourgeois, Larry Bourgeois, Emma Thompson"
+      },
+      {
+        "question": "Where can I stream this?",
+        "answer": "Watch free on Tubi"
+      }
+    ]
+  },
+  "images": {
+    "thumbnail": "/static/blog/the-t/thumbnails/016_thumbnail.png",
+    "hero": "/static/blog/the-t/heroes/016_hero.png",
+    "og": "/static/blog/the-t/og/016_og.png"
+  },
+  "keepReading": {
+    "header": {
+      "title": "Keep Reading",
+      "subtitle": "More articles to explore"
+    },
+    "items": [
+      {
+        "id": "022",
+        "slug": "watch-jurassic-world-free-on-tubi",
+        "eyebrow": "Available 6/1",
+        "title": "Watch Jurassic World Free on Tubi",
+        "subtitle": "Chris Pratt, a genetically engineered nightmare, and twenty years of not learning anything.",
+        "categoryTag": "Coming Soon",
+        "thumbnail": "/static/blog/the-t/thumbnails/022_thumbnail.jpg"
+      },
+      {
+        "id": "033",
+        "slug": "tubis-best-action-movie-collection",
+        "eyebrow": "What to Watch",
+        "title": "Tubi's Best Action Movie Collection",
+        "subtitle": "Fast-moving stories with just enough weight behind the action.",
+        "categoryTag": "Movies",
+        "thumbnail": "/static/blog/the-t/thumbnails/033_thumbnail.jpg"
+      },
+      {
+        "id": "036",
+        "slug": "the-funniest-movies-streaming-on-tubi-now",
+        "eyebrow": "What to Watch",
+        "title": "The Funniest Movies Streaming on Tubi Now",
+        "subtitle": "Easy watches that still land when you need them to.",
+        "categoryTag": "Movies",
+        "thumbnail": "/static/blog/the-t/thumbnails/036_thumbnail.jpg"
+      }
+    ]
+  },
+  "hero": {
+    "watchLink": "https://tubitv.com/movies/100058315/men-in-black-international",
+    "contentId": "100058315",
+    "watchNowLabel": "Watch Now"
+  },
+  "whyWatch": {
+    "header": {
+      "title": "Why Watch It"
+    },
+    "body": "Men in Black International doesn't pretend the original trilogy didn't happen, it just moves the operation to a new city with new agents and a conspiracy that runs deeper than any alien threat the franchise has touched before. The London setting gives it a different texture: colder, older, more paranoid. There's a sequence in Marrakech that shifts the whole film's tone in about ninety seconds, and it's the moment you realize this isn't just a buddy comedy in black suits."
+  },
+  "gallery": {
+    "header": {
+      "title": "Media Shots"
+    },
+    "items": [
+      "/static/blog/the-t/media/016_media_1.jpg",
+      "/static/blog/the-t/media/016_media_2.jpg"
+    ]
+  }
+}

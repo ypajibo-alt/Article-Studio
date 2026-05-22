@@ -1,0 +1,289 @@
+{
+  "nav": {
+    "logoLabel": "The T",
+    "links": [
+      {
+        "label": "Home",
+        "href": "/the-t"
+      },
+      {
+        "label": "Coming Soon",
+        "href": "/the-t/coming-soon"
+      },
+      {
+        "label": "Shows",
+        "href": "/the-t/shows"
+      },
+      {
+        "label": "Movies",
+        "href": "/the-t/movies"
+      }
+    ],
+    "explore": {
+      "label": "Explore",
+      "items": [
+        {
+          "label": "FIFA World Cup 2026",
+          "href": "/the-t/fifa-world-cup"
+        },
+        {
+          "label": "Horror",
+          "href": "/the-t/horror"
+        },
+        {
+          "label": "Tubi Originals",
+          "href": "/the-t/originals"
+        },
+        {
+          "label": "Sports",
+          "href": "/the-t/sports"
+        }
+      ],
+      "moreGenresLabel": "More genres",
+      "moreGenresHref": "/the-t/genres"
+    },
+    "mobileMenu": {
+      "open": "Open menu",
+      "close": "Close menu"
+    }
+  },
+  "id": "012",
+  "slug": "from-cult-classics-to-hidden-gems-the-best-of-tubi",
+  "categoryTag": "Movies",
+  "type": "listicle",
+  "title": "From Cult Classics to Hidden Gems: The Best of Tubi",
+  "subtitle": "The ones people keep finding, recommending, and coming back to.",
+  "intro": "Some of the best films on Tubi are the ones nobody told you to watch.\n\nA teenager in 1988 suburbia gets visited by a six-foot rabbit with the end of the world on its mind. A factory worker tries to survive a mutant baby and the particular dread of a world that won't explain itself. A retiring professor tells his farewell party he's been alive for 14,000 years, and the whole film is just watching everyone decide whether to believe him.\n\nThis is the list for people who want to find something. Start anywhere.",
+  "images": {
+    "thumbnail": "/static/blog/the-t/thumbnails/012_thumbnail.jpg",
+    "og": "/static/blog/the-t/og/012_og.jpg"
+  },
+  "items": [
+    {
+      "position": 1,
+      "title": "Donnie Darko (Director's Cut)",
+      "description": "Frank shows up in a Halloween mask and tells Donnie the world ends in 28 days. That's the whole engine. What Richard Kelly built around it - jet engines falling from the sky, a motivational speaker whose self-help tapes hide something genuinely sinister, a high school classroom where Graham Greene gets taught alongside Watership Down - is one of the stranger and more precise visions American cinema produced in the early 2000s.\n\nThe Director's Cut adds time travel mechanics that some people find clarifying and others find reductive. Either way, Jake Gyllenhaal plays Donnie as someone who already knew something was wrong with the world and just needed a rabbit to confirm it.\n\nThe film came out, disappeared, found its audience on DVD, and never let go.",
+      "contentTitle": "Donnie Darko (Director's Cut) (2001)",
+      "tubiLink": "https://tubitv.com/movies/100010422",
+      "contentId": "100010422",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/012_title_1_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/012_title_1_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/012_title_1_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Thriller",
+      "year": "2001",
+      "runtime": "2h 14m",
+      "rating": "R"
+    },
+    {
+      "position": 2,
+      "title": "Eraserhead",
+      "description": "Still one of the nastiest-feeling movies ever made, and that's not a complaint. David Lynch shot Eraserhead over five years in a stable on the AFI campus, and the film has that texture: patient, obsessive, built from the inside out.\n\nHenry Spencer lives in an industrial wasteland that hisses and churns at all hours. His girlfriend leaves him with a premature infant that looks like nothing born of this earth, and the baby cries constantly. There's a scene where Henry finally approaches the crib and you understand, without any dialogue, exactly what he's thinking.\n\nLynch made this before anyone was watching. It shows.",
+      "contentTitle": "Eraserhead (1977)",
+      "tubiLink": "https://tubitv.com/movies/100046650",
+      "contentId": "100046650",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/012_title_2_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/012_title_2_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/012_title_2_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Fantasy",
+      "year": "1977",
+      "runtime": "1h 29m",
+      "rating": "TV-MA"
+    },
+    {
+      "position": 3,
+      "title": "Moon",
+      "description": "Sam Rockwell is the only person on screen for almost the entire runtime, and then he's on screen twice. That's not a spoiler - it's the premise - and Moon earns it within the first twenty minutes.\n\nSam Bell has been mining helium-3 on the lunar surface for three years, alone except for a robot assistant voiced by Kevin Spacey in his most unsettling register. When a second Sam Bell shows up, the film doesn't play it as horror. It plays it as grief. The two of them have to figure out what they are to each other, and the answer is genuinely uncomfortable.\n\nDuncan Jones made this on a $5 million budget. It doesn't look it, and it doesn't feel it.",
+      "contentTitle": "Moon (2009)",
+      "tubiLink": "https://tubitv.com/movies/586480",
+      "contentId": "586480",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/012_title_3_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/012_title_3_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/012_title_3_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Sci-Fi",
+      "year": "2009",
+      "runtime": "1h 37m",
+      "rating": "R"
+    },
+    {
+      "position": 4,
+      "title": "Ghost World",
+      "description": "Enid and Rebecca post a fake personal ad to humiliate a stranger. Seymour shows up at the diner, waits, gets stood up, and goes home. Enid can't stop thinking about him.\n\nThora Birch plays Enid as someone who uses contempt as a survival mechanism. Steve Buscemi plays Seymour as someone who does the same thing with record collecting. They're the same person and they're completely incompatible, and Terry Zwigoff and Daniel Clowes are sharp enough to let that be funny and devastating at the same time.\n\nThe ending doesn't resolve anything. That's the whole point.",
+      "contentTitle": "Ghost World (2001)",
+      "tubiLink": "https://tubitv.com/movies/394492",
+      "contentId": "394492",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/012_title_4_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/012_title_4_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/012_title_4_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Comedy",
+      "year": "2001",
+      "runtime": "1h 51m",
+      "rating": "R"
+    },
+    {
+      "position": 5,
+      "title": "Blue Velvet",
+      "description": "Jeffrey Beaumont finds a human ear in a vacant lot and brings it to the detective next door like a normal person would. That's the last normal thing that happens.\n\nDennis Hopper's Frank Booth is the thing rotting underneath the picket fences, and there's a scene in an apartment with a red lamp where Hopper performs a kind of violence that's still hard to watch - not because of what's shown, but because of how completely he means it.\n\nIsabella Rossellini plays Dorothy Vallens as someone who has already survived the worst and is just waiting to see what comes next. Lynch never explains her. He just lets her be.",
+      "contentTitle": "Blue Velvet (1986)",
+      "tubiLink": "https://tubitv.com/movies/356527",
+      "contentId": "356527",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/012_title_5_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/012_title_5_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/012_title_5_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Thriller",
+      "year": "1986",
+      "runtime": "2h 1m",
+      "rating": "R"
+    },
+    {
+      "position": 6,
+      "title": "The Man From Earth",
+      "description": "John Oldman tells his colleagues he's been alive since the Cro-Magnon era. Then the film just watches them respond to that for 87 minutes.\n\nNo special effects. No flashbacks. Jerome Bixby wrote the script over the last forty years of his life and finished it on his deathbed, and that patience is in every scene. The colleagues - historians, a biologist, a psychiatrist - cycle through skepticism, hostility, curiosity, and something close to belief, and the film is sharp enough to know that none of those responses are wrong.\n\nJohn never raises his voice. He answers every question carefully, with the weariness of someone who has had this conversation before and already knows how it ends.",
+      "contentTitle": "The Man From Earth (2007)",
+      "tubiLink": "https://tubitv.com/movies/467588",
+      "contentId": "467588",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/012_title_6_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/012_title_6_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/012_title_6_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Fantasy",
+      "year": "2007",
+      "runtime": "1h 27m",
+      "rating": "TV-PG"
+    },
+    {
+      "position": 7,
+      "title": "Vivarium",
+      "description": "Gemma and Tom follow a real estate agent to a development of identical green houses and can't find their way out. That's day one.\n\nThe child arrives in a box. He grows at an unnatural rate, mimics their voices back at them with no affect, and screams at a frequency that makes the walls feel closer. Jesse Eisenberg and Imogen Poots play two people slowly coming apart because they can't agree on how to survive the same trap, and their conflict gets just as suffocating as the neighborhood around them.\n\nVivarium is a horror film about domestic life. It does not bother being subtle about it.",
+      "contentTitle": "Vivarium (2019)",
+      "tubiLink": "https://tubitv.com/movies/100033590",
+      "contentId": "100033590",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/012_title_7_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/012_title_7_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/012_title_7_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Sci-Fi",
+      "year": "2019",
+      "runtime": "1h 39m",
+      "rating": "R"
+    },
+    {
+      "position": 8,
+      "title": "Time Lapse",
+      "description": "Three roommates find a camera in their dead neighbor's apartment that photographs exactly 24 hours into the future. The first photo shows them holding a sign. They hold the sign.\n\nThat's the trap, and Time Lapse knows exactly what it is. The film is really about three people who start staging their own futures and then can't stop - because stopping would mean the photos were wrong, and the photos are never wrong. There's a specific moment where one of them realizes what they've been doing and the film lets it land quietly, without music.\n\nMade for almost nothing. Tighter than most studio thrillers twice its budget.",
+      "contentTitle": "Time Lapse (2014)",
+      "tubiLink": "https://tubitv.com/movies/514216",
+      "contentId": "514216",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/012_title_8_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/012_title_8_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/012_title_8_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Horror",
+      "year": "2014",
+      "runtime": "1h 44m",
+      "rating": "TV-MA"
+    },
+    {
+      "position": 9,
+      "title": "The Lost Room",
+      "description": "The key fits any door and opens onto Room 10 of a motel that no longer exists. Step through, close the door, and you're somewhere else entirely. Lose the key and the people who collect these objects - a comb that stops time, a pen that burns, a bus ticket that does something nobody has fully tested - will come for you.\n\nPeter Krause plays a detective whose daughter disappears into the room, and the miniseries around him is one of the better pieces of American sci-fi television from the mid-2000s: mythology-dense, genuinely weird, and emotionally grounded in a way the premise has no right to allow.\n\nSix episodes. The ending is earned.",
+      "contentTitle": "The Lost Room (2006)",
+      "tubiLink": "https://tubitv.com/series/1114",
+      "contentId": "1114",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/012_title_9_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/012_title_9_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/012_title_9_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Sci-Fi",
+      "year": "2006",
+      "runtime": "1 Season",
+      "rating": "TV-14"
+    },
+    {
+      "position": 10,
+      "title": "Inland Empire",
+      "description": "Lynch shot Inland Empire on consumer digital video over years, without a completed script, and the result is either the most ambitious or the most indulgent thing he's ever made. Probably both.\n\nLaura Dern plays Nikki Grace, an actress cast in a film that may be a remake of an unfinished Polish production that may have been cursed. At a certain point the layers stop being layers and start being the same thing. There's a scene shot in a hallway that runs for several minutes where Dern cycles through grief, terror, and something that doesn't have a name, and the camera just stays with her the whole time.\n\nNot a film to put on casually. A film to commit to.",
+      "contentTitle": "Inland Empire (2006)",
+      "tubiLink": "https://tubitv.com/movies/100049507",
+      "contentId": "100049507",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/012_title_10_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/012_title_10_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/012_title_10_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Thriller",
+      "year": "2006",
+      "runtime": "3h",
+      "rating": "R"
+    }
+  ],
+  "keepReading": {
+    "header": {
+      "title": "Keep Reading",
+      "subtitle": "More articles to explore"
+    },
+    "items": [
+      {
+        "id": "006",
+        "slug": "best-free-movies-to-watch-this-weekend",
+        "eyebrow": "What to Watch",
+        "title": "Best Free Movies to Watch This Weekend",
+        "subtitle": "If you want a good pick without digging, start here.",
+        "categoryTag": "Movies",
+        "thumbnail": "/static/blog/the-t/thumbnails/006_thumbnail.jpg"
+      },
+      {
+        "id": "033",
+        "slug": "tubis-best-action-movie-collection",
+        "eyebrow": "What to Watch",
+        "title": "Tubi's Best Action Movie Collection",
+        "subtitle": "Fast-moving stories with just enough weight behind the action.",
+        "categoryTag": "Movies",
+        "thumbnail": "/static/blog/the-t/thumbnails/033_thumbnail.jpg"
+      },
+      {
+        "id": "038",
+        "slug": "movies-that-will-haunt-you-in-a-good-way",
+        "eyebrow": "What to Watch",
+        "title": "Movies That Will Haunt You (In a Good Way)",
+        "subtitle": "The kind that linger a little after the credits.",
+        "categoryTag": "Movies",
+        "thumbnail": "/static/blog/the-t/thumbnails/038_thumbnail.jpg"
+      }
+    ]
+  },
+  "datePosted": "2026-05-26"
+}

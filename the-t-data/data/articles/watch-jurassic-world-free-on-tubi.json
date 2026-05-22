@@ -1,0 +1,163 @@
+{
+  "nav": {
+    "logoLabel": "The T",
+    "links": [
+      {
+        "label": "Home",
+        "href": "/the-t"
+      },
+      {
+        "label": "Coming Soon",
+        "href": "/the-t/coming-soon"
+      },
+      {
+        "label": "Shows",
+        "href": "/the-t/shows"
+      },
+      {
+        "label": "Movies",
+        "href": "/the-t/movies"
+      }
+    ],
+    "explore": {
+      "label": "Explore",
+      "items": [
+        {
+          "label": "FIFA World Cup 2026",
+          "href": "/the-t/fifa-world-cup"
+        },
+        {
+          "label": "Horror",
+          "href": "/the-t/horror"
+        },
+        {
+          "label": "Tubi Originals",
+          "href": "/the-t/originals"
+        },
+        {
+          "label": "Sports",
+          "href": "/the-t/sports"
+        }
+      ],
+      "moreGenresLabel": "More genres",
+      "moreGenresHref": "/the-t/genres"
+    },
+    "mobileMenu": {
+      "open": "Open menu",
+      "close": "Close menu"
+    }
+  },
+  "id": "022",
+  "slug": "watch-jurassic-world-free-on-tubi",
+  "categoryTag": "Coming Soon",
+  "type": "article",
+  "title": "Watch Jurassic World Free on Tubi",
+  "subtitle": "Chris Pratt, a genetically engineered nightmare, and twenty years of not learning anything.",
+  "datePosted": "2026-05-26",
+  "intro": "They built the park. They opened it to the public. They had 20,000 visitors on the island the day everything went wrong. Jurassic World (2015) is the movie where the lesson from the first three films — don't do this — gets ignored completely, and the results are exactly what you'd expect from a theme park that decided the real dinosaurs weren't exciting enough and made a new one.\n\nThe Indominus Rex was engineered to be bigger, scarier, and better at filling seats. It escaped in the first act. The park had a bad weekend.",
+  "cast": {
+    "header": {
+      "title": "The Cast"
+    },
+    "items": [
+      {
+        "name": "Chris Pratt as Owen Grady",
+        "bio": "Owen trains raptors, which sounds insane until you watch him do it and it looks completely reasonable, which is the film's best trick. He's the one person on the island who treats the animals like animals instead of attractions, and that gap between him and everyone else is where most of the tension lives."
+      },
+      {
+        "name": "Bryce Dallas Howard as Claire Dearing",
+        "bio": "Claire runs the park with a spreadsheet where the dinosaurs should be. When her nephews go missing and a hybrid predator is loose on the island, she has to recalibrate fast. Howard plays the transition from corporate to survival mode without making it a joke, which is harder than it sounds."
+      },
+      {
+        "name": "Vincent D'Onofrio as Hoskins",
+        "bio": "Hoskins is the guy who looks at trained raptors and thinks: military application. He's wrong about everything and completely confident about it the whole time. D'Onofrio makes him the most plausible kind of villain — not evil, just very committed to a bad idea."
+      },
+      {
+        "name": "Irrfan Khan as Simon Masrani",
+        "bio": "Masrani owns the park and genuinely loves it, which is almost worse than if he were just greedy. Khan plays him as someone who built something magnificent and can't quite see what it's doing. The park's failures are his blind spots made physical."
+      }
+    ]
+  },
+  "quote": "Something's wrong. They're communicating.",
+  "faq": {
+    "header": {
+      "title": "More details"
+    },
+    "items": [
+      {
+        "question": "Who directed the film?",
+        "answer": "Colin Trevorrow"
+      },
+      {
+        "question": "Who is in the cast?",
+        "answer": "Chris Pratt, Bryce Dallas Howard, Vincent D'Onofrio, Irrfan Khan, Nick Robinson, Ty Simpkins, Omar Sy, BD Wong"
+      },
+      {
+        "question": "Where can I stream this?",
+        "answer": "Watch free on Tubi"
+      }
+    ]
+  },
+  "images": {
+    "thumbnail": "/static/blog/the-t/thumbnails/022_thumbnail.jpg",
+    "hero": "/static/blog/the-t/heroes/022_hero.jpg",
+    "og": "/static/blog/the-t/og/022_og.jpg"
+  },
+  "keepReading": {
+    "header": {
+      "title": "Keep Reading",
+      "subtitle": "More articles to explore"
+    },
+    "items": [
+      {
+        "id": "033",
+        "slug": "tubis-best-action-movie-collection",
+        "eyebrow": "What to Watch",
+        "title": "Tubi's Best Action Movie Collection",
+        "subtitle": "Fast-moving stories with just enough weight behind the action.",
+        "categoryTag": "Movies",
+        "thumbnail": "/static/blog/the-t/thumbnails/033_thumbnail.jpg"
+      },
+      {
+        "id": "016",
+        "slug": "men-in-black-international-on-tubi",
+        "eyebrow": "Available 6/1",
+        "title": "Men in Black: International Coming Soon",
+        "subtitle": "Tessa Thompson and Chris Hemsworth are the new agents, and the threats are not getting smaller.",
+        "categoryTag": "Coming Soon",
+        "thumbnail": "/static/blog/the-t/thumbnails/016_thumbnail.png",
+        "watchLink": "https://tubitv.com/movies/100058315/men-in-black-international",
+        "contentId": "100058315"
+      },
+      {
+        "id": "006",
+        "slug": "best-free-movies-to-watch-this-weekend",
+        "eyebrow": "What to Watch",
+        "title": "Best Free Movies to Watch This Weekend",
+        "subtitle": "If you want a good pick without digging, start here.",
+        "categoryTag": "Movies",
+        "thumbnail": "/static/blog/the-t/thumbnails/006_thumbnail.jpg"
+      }
+    ]
+  },
+  "hero": {
+    "watchLink": "https://tubitv.com/movies/100003573/jurassic-world",
+    "contentId": "100003573",
+    "watchNowLabel": "Watch Now"
+  },
+  "whyWatch": {
+    "header": {
+      "title": "Why Watch It"
+    },
+    "body": "Watch this if you want a blockbuster that commits to its own logic and delivers a third act that actually pays off the setup. The T-rex and Mosasaurus ending is ridiculous in the best possible way. Not for you if you need the horror grounded and small — this one swings for the fences and mostly connects."
+  },
+  "gallery": {
+    "header": {
+      "title": "Media Shots"
+    },
+    "items": [
+      "/static/blog/the-t/media/022_media_1.jpg",
+      "/static/blog/the-t/media/022_media_2.jpg"
+    ]
+  }
+}

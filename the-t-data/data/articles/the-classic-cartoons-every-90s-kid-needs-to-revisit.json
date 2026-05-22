@@ -1,0 +1,289 @@
+{
+  "nav": {
+    "logoLabel": "The T",
+    "links": [
+      {
+        "label": "Home",
+        "href": "/the-t"
+      },
+      {
+        "label": "Coming Soon",
+        "href": "/the-t/coming-soon"
+      },
+      {
+        "label": "Shows",
+        "href": "/the-t/shows"
+      },
+      {
+        "label": "Movies",
+        "href": "/the-t/movies"
+      }
+    ],
+    "explore": {
+      "label": "Explore",
+      "items": [
+        {
+          "label": "FIFA World Cup 2026",
+          "href": "/the-t/fifa-world-cup"
+        },
+        {
+          "label": "Horror",
+          "href": "/the-t/horror"
+        },
+        {
+          "label": "Tubi Originals",
+          "href": "/the-t/originals"
+        },
+        {
+          "label": "Sports",
+          "href": "/the-t/sports"
+        }
+      ],
+      "moreGenresLabel": "More genres",
+      "moreGenresHref": "/the-t/genres"
+    },
+    "mobileMenu": {
+      "open": "Open menu",
+      "close": "Close menu"
+    }
+  },
+  "id": "074",
+  "slug": "the-classic-cartoons-every-90s-kid-needs-to-revisit",
+  "categoryTag": "Shows",
+  "type": "listicle",
+  "title": "The Classic Cartoons Every 90s Kid Needs to Revisit",
+  "subtitle": "The ones that were doing more than you realized.",
+  "intro": "The classic cartoons every 90s kid grew up on were doing things you absolutely did not clock at the time.\n\nCourage the Cowardly Dog was a horror show about isolation and unconditional love dressed up as a kids comedy. Animaniacs was sneaking political satire past the Saturday morning gatekeepers while you were just there for the chaos. The Powerpuff Girls were fighting crime and also, quietly, every conversation about whether girls could lead.\n\nThey're all here. Go find out what you actually watched.",
+  "images": {
+    "thumbnail": "/static/blog/the-t/thumbnails/074_thumbnail.jpg",
+    "og": "/static/blog/the-t/og/074_og.jpg"
+  },
+  "items": [
+    {
+      "position": 1,
+      "title": "Courage the Cowardly Dog",
+      "description": "Courage lives in the Middle of Nowhere, and the show means that literally. The nearest town is miles away. Nobody's coming to help. Every episode drops a small pink dog into something genuinely terrifying, and his owners barely notice.\n\nAs a kid you watched it for the monsters. As an adult you realize the monsters aren't the point. Courage is always afraid. He goes anyway. Every time, for two people who don't fully understand what he does for them.\n\nThere's an episode where Courage meets a spirit who tells him he's not odd, he's just not understood. Sit with that one for a second.",
+      "contentTitle": "Courage the Cowardly Dog (2002)",
+      "tubiLink": "https://tubitv.com/series/300019075",
+      "contentId": "300019075",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/074_title_1_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/074_title_1_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/074_title_1_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Comedy",
+      "year": "2002",
+      "runtime": "4 Seasons",
+      "rating": "TV-PG"
+    },
+    {
+      "position": 2,
+      "title": "Animaniacs",
+      "description": "Yakko, Wakko, and Dot were locked in a water tower on the Warner Bros. lot because the studio couldn't handle them. That's the premise - three chaotic kids running circles around every adult institution they encounter.\n\nThe show was mocking politicians by name, lampooning network executives, and sneaking in jokes that sailed completely over the heads of anyone under twelve. The Goodfeathers bit is a full Goodfellas parody. For children.\n\nYou laughed at the slapstick. The writers were doing something else entirely. Go back and watch it knowing that.",
+      "contentTitle": "Animaniacs (1998)",
+      "tubiLink": "https://tubitv.com/series/300019067",
+      "contentId": "300019067",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/074_title_2_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/074_title_2_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/074_title_2_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Kids & Family",
+      "year": "1998",
+      "runtime": "5 Seasons",
+      "rating": "TV-G"
+    },
+    {
+      "position": 3,
+      "title": "Dexter's Laboratory",
+      "description": "Dexter has a secret lab the size of a city block hidden behind his bookshelf. He is eight years old, speaks with an accent nobody questions, and is, genuinely, insufferable.\n\nDee Dee waltzes in and breaks everything every episode, and as a kid you sided with Dexter automatically. Watching it now: Dee Dee is just curious. Dexter's ego is so enormous he built an entire fortress to protect it from his sister.\n\nHe keeps failing because of himself. That lands a lot differently at thirty than it did at eight.",
+      "contentTitle": "Dexter's Laboratory (2003)",
+      "tubiLink": "https://tubitv.com/series/300019090",
+      "contentId": "300019090",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/074_title_3_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/074_title_3_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/074_title_3_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Kids & Family",
+      "year": "2003",
+      "runtime": "4 Seasons",
+      "rating": "TV-G"
+    },
+    {
+      "position": 4,
+      "title": "Codename: Kids Next Door",
+      "description": "The villains in this show are adults who want to make children eat vegetables, do homework, and eventually, grow up. Sector V treats that as an existential threat worth fighting.\n\nIt sounds absurd. It kind of is. But there's a real argument underneath it about autonomy and what gets taken from you when adults decide they know better. The show treats childhood as something worth defending, not just something to survive.\n\nThe arc about operatives who age out of the organization - and what happens to them after - hits harder than any kids show has a right to.",
+      "contentTitle": "Codename: Kids Next Door (2007)",
+      "tubiLink": "https://tubitv.com/series/300019082",
+      "contentId": "300019082",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/074_title_4_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/074_title_4_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/074_title_4_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Kids & Family",
+      "year": "2007",
+      "runtime": "6 Seasons",
+      "rating": "TV-Y7"
+    },
+    {
+      "position": 5,
+      "title": "The Powerpuff Girls",
+      "description": "Blossom, Bubbles, and Buttercup were literally created in a lab - sugar, spice, Chemical X - and then spent every episode being underestimated by the villains they were about to destroy.\n\nMojo Jojo never once saw them coming. Neither did Him, or Fuzzy Lumpkins, or the Mayor who called them in a panic every single episode and still somehow seemed surprised they showed up.\n\nThe girls don't angst about being powerful. They just are. The show never made a big speech about it, which is probably why it got in so clean. You absorbed the whole argument without realizing that's what it was.",
+      "contentTitle": "The Powerpuff Girls (2005)",
+      "tubiLink": "https://tubitv.com/series/300019078",
+      "contentId": "300019078",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/074_title_5_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/074_title_5_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/074_title_5_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Animation",
+      "year": "2005",
+      "runtime": "6 Seasons",
+      "rating": "TV-Y7"
+    },
+    {
+      "position": 6,
+      "title": "Pinky and the Brain",
+      "description": "Same thing every episode: Brain has a plan to take over the world, Pinky derails it, they go back to the cage.\n\nAs a kid, Brain's frustration was the joke. Watching it now, it's a pretty precise portrait of someone whose intelligence doesn't protect him from his own blind spots. Brain never considers that Pinky might be the thing making any of this survivable.\n\nThere's an episode where Brain almost succeeds, and the show makes it clear that winning would cost him the one thing that actually matters. He doesn't notice. That's the whole bit, and it's genuinely melancholy if you're paying attention.",
+      "contentTitle": "Pinky and the Brain (1998)",
+      "tubiLink": "https://tubitv.com/series/300019196",
+      "contentId": "300019196",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/074_title_6_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/074_title_6_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/074_title_6_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Kids & Family",
+      "year": "1998",
+      "runtime": "4 Seasons",
+      "rating": "TV-Y7"
+    },
+    {
+      "position": 7,
+      "title": "Ed, Edd n Eddy",
+      "description": "The Eds want one thing: jawbreakers. They don't have money. Every scam they run to get some fails spectacularly, and the other kids on the cul-de-sac treat them like a minor infestation.\n\nThe show is extremely loud and extremely physical, and underneath all of it is a pretty specific portrait of what it feels like to want in. The Eds aren't villains. They're just broke and weird and trying.\n\nEddy's whole personality is a performance of confidence he doesn't have. Ed is genuinely strange in a way nobody accommodates. Double D is the only one with any self-awareness, and it doesn't help him at all. That cul-de-sac was never going to let them in, and the show knew it.",
+      "contentTitle": "Ed, Edd n Eddy (2008)",
+      "tubiLink": "https://tubitv.com/series/300019095",
+      "contentId": "300019095",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/074_title_7_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/074_title_7_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/074_title_7_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Kids & Family",
+      "year": "2008",
+      "runtime": "6 Seasons",
+      "rating": "TV-G"
+    },
+    {
+      "position": 8,
+      "title": "Looney Tunes",
+      "description": "Bugs Bunny never panics. That's the whole engine. Elmer Fudd has a gun and Bugs is eating a carrot and asking if this is the right turn at Albuquerque, and the joke works because Bugs has already won before the scene starts.\n\nThe timing in these shorts is genuinely surgical. There's a beat before the anvil lands, and that beat is doing more work than most modern comedies manage in two hours.\n\nThese were made for adults who happened to be in theaters with their kids. The double-layer was always there. You were just too young to know which layer you were in.",
+      "contentTitle": "Looney Tunes (2003)",
+      "tubiLink": "https://tubitv.com/series/300016553",
+      "contentId": "300016553",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/074_title_8_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/074_title_8_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/074_title_8_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Kids & Family",
+      "year": "2003",
+      "runtime": "13 Seasons",
+      "rating": "TV-PG"
+    },
+    {
+      "position": 9,
+      "title": "Scooby-Doo Where Are You?",
+      "description": "Every mystery has the same shape: strange location, local legend, masked villain, Scooby Snack, confession. You know the formula before the opening credits end. The show never pretended otherwise.\n\nRewatching it, the formula is kind of the point. The gang isn't surprised when the monster turns out to be a guy in a suit. Neither are you. The pleasure is watching the machine run, not finding out the answer.\n\nAlso: Scooby and Shaggy are cowards who solve crimes anyway, every single time, usually by accident. Most shows with twelve episodes and a full writers' room don't pull off a character arc that clean.",
+      "contentTitle": "Scooby-Doo Where Are You? (1976)",
+      "tubiLink": "https://tubitv.com/series/300006854",
+      "contentId": "300006854",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/074_title_9_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/074_title_9_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/074_title_9_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Kids & Family",
+      "year": "1976",
+      "runtime": "2 Seasons",
+      "rating": "TV-G"
+    },
+    {
+      "position": 10,
+      "title": "Sailor Moon",
+      "description": "Usagi is fourteen, chronically late, bad at school, and the first thing she does when she finds out she's Sailor Moon is burst into tears. She does not want this.\n\nMost magical girl shows hand the protagonist confidence as part of the transformation. Sailor Moon makes Usagi earn it slowly, over dozens of episodes, while still being a mess in her regular life. The gap between who she is and what she's asked to be is where the whole show lives.\n\nThe friendships are the actual spine of it. The romance is loud, but Usagi becomes who she becomes because of the other Scouts. That part hits differently when you're old enough to know what it actually costs to show up for people.",
+      "contentTitle": "Sailor Moon (1997)",
+      "tubiLink": "https://tubitv.com/series/1628",
+      "contentId": "1628",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/074_title_10_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/074_title_10_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/074_title_10_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Anime",
+      "year": "1997",
+      "runtime": "5 Seasons",
+      "rating": "TV-14"
+    }
+  ],
+  "keepReading": {
+    "header": {
+      "title": "Keep Reading",
+      "subtitle": "More articles to explore"
+    },
+    "items": [
+      {
+        "id": "076",
+        "slug": "looney-tunes-is-free-on-tubi-and-it-holds-up-better-than-you-think",
+        "eyebrow": "What to Watch",
+        "title": "Bugs, Scooby, Courage, and the Cartoons Tubi Has for Free",
+        "subtitle": "Still funny, still fast, still free on Tubi.",
+        "categoryTag": "Shows",
+        "thumbnail": "/static/blog/the-t/thumbnails/076_thumbnail.jpg"
+      },
+      {
+        "id": "010",
+        "slug": "best-animation-on-tubi",
+        "eyebrow": "What to Watch",
+        "title": "Best Animation on Tubi",
+        "subtitle": "The kind of animation that always felt a step outside the usual.",
+        "categoryTag": "Shows",
+        "thumbnail": "/static/blog/the-t/thumbnails/010_thumbnail.jpg"
+      },
+      {
+        "id": "069",
+        "slug": "the-best-anime-on-tubi-to-watch-completely-free",
+        "eyebrow": "What to Watch",
+        "title": "The Best Anime on Tubi to Watch Completely Free",
+        "subtitle": "Whether you're brand new or already deep in the rabbit hole.",
+        "categoryTag": "Shows",
+        "thumbnail": "/static/blog/the-t/thumbnails/069_thumbnail.jpg"
+      }
+    ]
+  },
+  "datePosted": "2026-05-26"
+}

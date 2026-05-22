@@ -1,0 +1,161 @@
+{
+  "nav": {
+    "logoLabel": "The T",
+    "links": [
+      {
+        "label": "Home",
+        "href": "/the-t"
+      },
+      {
+        "label": "Coming Soon",
+        "href": "/the-t/coming-soon"
+      },
+      {
+        "label": "Shows",
+        "href": "/the-t/shows"
+      },
+      {
+        "label": "Movies",
+        "href": "/the-t/movies"
+      }
+    ],
+    "explore": {
+      "label": "Explore",
+      "items": [
+        {
+          "label": "FIFA World Cup 2026",
+          "href": "/the-t/fifa-world-cup"
+        },
+        {
+          "label": "Horror",
+          "href": "/the-t/horror"
+        },
+        {
+          "label": "Tubi Originals",
+          "href": "/the-t/originals"
+        },
+        {
+          "label": "Sports",
+          "href": "/the-t/sports"
+        }
+      ],
+      "moreGenresLabel": "More genres",
+      "moreGenresHref": "/the-t/genres"
+    },
+    "mobileMenu": {
+      "open": "Open menu",
+      "close": "Close menu"
+    }
+  },
+  "id": "053",
+  "slug": "how-to-lose-a-popularity-contest-on-tubi",
+  "categoryTag": "Originals",
+  "type": "article",
+  "title": "How to Lose a Popularity Contest Is the YA Film You Never Knew You Needed",
+  "subtitle": "A rigged election, a reluctant alliance, and feelings that absolutely were not part of the plan.",
+  "datePosted": "2026-05-26",
+  "intro": "Teen comedies live or die by their central pairing, and How to Lose a Popularity Contest gets it right where it counts. Ellie is the kind of overachiever who color-codes her calendar. Nate is the kind of slacker who loses the calendar entirely. Putting them in a room together and handing them a shared agenda is the whole game, and this movie plays it well.\n\nThe class election premise is a perfect container for this kind of story. It has stakes that feel enormous when you're seventeen and absurd when you're not, which is exactly the tension good teen comedies need. The sabotage angle adds a layer of scheming that keeps things moving, and the inevitable pivot toward genuine feeling lands harder because of it.\n\nThis one is for anyone who has ever made a plan, watched it fall apart, and ended up somewhere better anyway. It's warm, it's funny, and it knows exactly what it is.",
+  "cast": {
+    "header": {
+      "title": "The Cast"
+    },
+    "items": [
+      {
+        "name": "Chase Hudson",
+        "bio": "Hudson plays Nate, the slacker half of this unlikely duo, and he brings a loose, easy charm that makes you understand immediately why Ellie can't fully write him off. He's funny without trying to be, which is the hardest kind of funny to pull off."
+      },
+      {
+        "name": "Sara Waisglass",
+        "bio": "Waisglass carries the film as Ellie, and she makes the overachiever archetype feel like a real person rather than a type. Her comic timing is sharp and her emotional beats land clean. She's the reason you stay invested when the plot starts complicating itself."
+      },
+      {
+        "name": "Graham Verchere",
+        "bio": "Verchere plays the ex at the center of the sabotage scheme, and he threads a tricky needle here. The role needs to be believable as someone worth plotting against without tipping into cartoonish territory, and he keeps it grounded enough to serve the story."
+      },
+      {
+        "name": "Lillian Doucet-Roche",
+        "bio": "Doucet-Roche brings real energy to the supporting orbit around Ellie, adding texture to the social world the film builds. She's the kind of scene presence that makes the ensemble feel lived-in rather than assembled."
+      }
+    ]
+  },
+  "quote": "The plan was foolproof. The plan did not account for him.",
+  "faq": {
+    "header": {
+      "title": "More details"
+    },
+    "items": [
+      {
+        "question": "Who directed the film?",
+        "answer": "Stephen S. Campanelli"
+      },
+      {
+        "question": "Who is in the cast?",
+        "answer": "Chase Hudson, Sara Waisglass, Lillian Doucet-Roche, Graham Verchere, Aiden Howard, Kyra Leroux"
+      },
+      {
+        "question": "Where can I stream this?",
+        "answer": "Watch free on Tubi"
+      }
+    ]
+  },
+  "images": {
+    "thumbnail": "/static/blog/the-t/thumbnails/053_thumbnail.jpg",
+    "hero": "/static/blog/the-t/heroes/053_hero.jpg",
+    "og": "/static/blog/the-t/og/053_og.jpg"
+  },
+  "keepReading": {
+    "header": {
+      "title": "Keep Reading",
+      "subtitle": "More articles to explore"
+    },
+    "items": [
+      {
+        "id": "071",
+        "slug": "kissing-is-the-easy-part-gets-first-love-more-right-than-most",
+        "eyebrow": "What to Watch",
+        "title": "Kissing Is the Easy Part Gets First Love More Right Than Most",
+        "subtitle": "One secret deal, two people with completely different plans, and neither of them saw this coming.",
+        "categoryTag": "Originals",
+        "thumbnail": "/static/blog/the-t/thumbnails/071_thumbnail.jpg"
+      },
+      {
+        "id": "073",
+        "slug": "if-you-grew-up-on-degrassi-these-teen-dramas-on-tubi-are-for-you",
+        "eyebrow": "What to Watch",
+        "title": "If You Grew Up on Degrassi, These Teen Dramas on Tubi Are for You",
+        "subtitle": "Same emotional chaos, different hallways.",
+        "categoryTag": "Shows",
+        "thumbnail": "/static/blog/the-t/thumbnails/073_thumbnail.jpg"
+      },
+      {
+        "id": "050",
+        "slug": "boarders-season-3-is-coming-to-tubi",
+        "eyebrow": "What to Watch",
+        "title": "Boarders Season 3 on Tubi",
+        "subtitle": "The culture clash is real, the comedy is sharp, and the stakes are higher than any grade.",
+        "categoryTag": "Originals",
+        "thumbnail": "/static/blog/the-t/thumbnails/050_thumbnail.jpg"
+      }
+    ]
+  },
+  "hero": {
+    "watchLink": "https://tubitv.com/movies/100049581/how-to-lose-a-popularity-contest",
+    "contentId": "100049581",
+    "watchNowLabel": "Watch Now"
+  },
+  "whyWatch": {
+    "header": {
+      "title": "Why Watch It"
+    },
+    "body": "If you want something that delivers exactly what it promises and then surprises you anyway, this is it. It's the kind of film you put on for a Friday night and find yourself actually watching instead of half-watching, which is its own kind of recommendation."
+  },
+  "gallery": {
+    "header": {
+      "title": "Media Shots"
+    },
+    "items": [
+      "/static/blog/the-t/media/053_media_1.jpg",
+      "/static/blog/the-t/media/053_media_2.jpg"
+    ]
+  }
+}

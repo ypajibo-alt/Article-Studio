@@ -1,0 +1,212 @@
+{
+  "_doc": {
+    "description": "Shows hub slice of The T content. Rendered by src/web/features/theT/components/HubPage.tsx via the `shows` entry in `SLUG_RENDERERS` in src/web/features/theT/containers/Hub.tsx. Mirrors the conventions in homePage.json / comingSoon.json — field names mirror the canonical Static Upload Tubi Blog data so this file can be regenerated from the source JSONs without renaming, and section chrome (`{section}.header.title` + `{section}.header.subtitle`) is authored alongside the slot data so the same JSON drives both heading and content.",
+    "source": "Hero copy is editorial, authored alongside the Shows hub Figma mockup — no upstream record carries this lede yet. Article-driven sections (added in subsequent passes) will pull from the same `~/Desktop/Static Upload Tubi Blog/{listicles,single-titles}.json` slices the other surfaces use.",
+    "doNotInclude": "intro, items[], cast[], whatsComing[] — only the fields the Shows hub actually renders should ship in this chunk.",
+    "linking": "Every article card / hero uses the canonical URL `/the-t/articles/<slug>`. Each slot stores just the bare `slug`; the renderer (`homePageData.ts → buildArticleHref`) prepends the prefix. The optional `watchLink` on some slots is reserved for CTAs that bypass the article and route straight into the Tubi catalog; it does NOT influence the article href."
+  },
+  "nav": {
+    "logoLabel": "The T",
+    "links": [
+      {
+        "label": "Home",
+        "href": "/the-t"
+      },
+      {
+        "label": "Coming Soon",
+        "href": "/the-t/coming-soon"
+      },
+      {
+        "label": "Shows",
+        "href": "/the-t/shows"
+      },
+      {
+        "label": "Movies",
+        "href": "/the-t/movies"
+      }
+    ],
+    "explore": {
+      "label": "Explore",
+      "items": [
+        {
+          "label": "FIFA World Cup 2026",
+          "href": "/the-t/fifa-world-cup"
+        },
+        {
+          "label": "Horror",
+          "href": "/the-t/horror"
+        },
+        {
+          "label": "Tubi Originals",
+          "href": "/the-t/originals"
+        },
+        {
+          "label": "Sports",
+          "href": "/the-t/sports"
+        }
+      ],
+      "moreGenresLabel": "More genres",
+      "moreGenresHref": "/the-t/genres"
+    },
+    "mobileMenu": {
+      "open": "Open menu",
+      "close": "Close menu"
+    }
+  },
+  "hero": {
+    "label": "Shows",
+    "description": "From prestige dramas to cult anime, we cover the shows worth making time for. Whether you're looking for your next binge or a hidden gem, our picks span every genre. New recommendations added regularly.",
+    "image": "/static/blog/the-t/heroes/shows-hub_hero.jpg"
+  },
+  "featured": {
+    "header": {
+      "title": "Featured",
+      "subtitle": "Stories and recommendations from our team"
+    },
+    "items": [
+      {
+        "id": "026",
+        "slug": "a-guide-to-the-best-free-tv-shows-on-tubi",
+        "eyebrow": "Guide",
+        "title": "A Guide to the Best Free TV Shows on Tubi",
+        "subtitle": "A starting point when you want something easy to settle into.",
+        "categoryTag": "Shows",
+        "thumbnail": "/static/blog/the-t/thumbnails/026_thumbnail.jpg"
+      },
+      {
+        "id": "027",
+        "slug": "the-funniest-comedy-shows-streaming-now",
+        "eyebrow": "What to Watch",
+        "title": "The Funniest Comedy Shows Streaming Now",
+        "subtitle": "The ones that actually hold up past the first episode.",
+        "categoryTag": "Shows",
+        "thumbnail": "/static/blog/the-t/thumbnails/027_thumbnail.jpg"
+      },
+      {
+        "id": "028",
+        "slug": "the-best-reality-shows-streaming-free-on-tubi",
+        "eyebrow": "What to Watch",
+        "title": "The Best Reality Shows Streaming Free on Tubi",
+        "subtitle": "Low stakes, high chaos, and easy to lose an entire evening to.",
+        "categoryTag": "Shows",
+        "thumbnail": "/static/blog/the-t/thumbnails/028_thumbnail.jpg"
+      }
+    ]
+  },
+  "storyHero": {
+    "id": "029",
+    "slug": "top-crime-series-on-tubi",
+    "eyebrow": "What to Watch",
+    "title": "Top Crime Series on Tubi Today",
+    "subtitle": "Where the cases pull you in because they get personal fast.",
+    "categoryTag": "Shows",
+    "hero": "/static/blog/the-t/thumbnails/029_thumbnail.jpg"
+  },
+  "watchlist": {
+    "header": {
+      "title": "Watchlist",
+      "subtitle": "A handpicked list of shows to watch next"
+    },
+    "items": [
+      {
+        "id": "wl-shows-1",
+        "title": "Surviving Sasha",
+        "year": "2025",
+        "description": "A former inmate is back in therapy when the ex she thought was gone shows up alive and complicated.",
+        "genreTag": "Drama",
+        "poster": "/static/blog/the-t/watchlist/shows_1_poster.jpg",
+        "watchLink": "https://tubitv.com/series/300019228",
+        "contentId": "300019228"
+      },
+      {
+        "id": "wl-shows-2",
+        "title": "The Lesbian Homie",
+        "year": "2026",
+        "description": "Bruce moved on from his toxic ex. Or so he thought.",
+        "genreTag": "Comedy/Drama",
+        "poster": "/static/blog/the-t/watchlist/shows_2_poster.jpg",
+        "watchLink": "https://tubitv.com/series/300000797",
+        "contentId": "300000797"
+      },
+      {
+        "id": "wl-shows-3",
+        "title": "Abigail",
+        "year": "2026",
+        "description": "Thirteen years old, a vampire, and just trying to fit in without losing herself.",
+        "genreTag": "Horror/Drama",
+        "poster": "/static/blog/the-t/watchlist/shows_3_poster.jpg",
+        "watchLink": "https://tubitv.com/series/300019600",
+        "contentId": "300019600"
+      },
+      {
+        "id": "wl-shows-4",
+        "title": "Cover Up",
+        "year": "2025",
+        "description": "One cover up. Too many secrets. Nothing stays buried for long.",
+        "genreTag": "Crime/Drama",
+        "poster": "/static/blog/the-t/watchlist/shows_4_poster.jpg",
+        "watchLink": "https://tubitv.com/series/300017301",
+        "contentId": "300017301"
+      },
+      {
+        "id": "wl-shows-5",
+        "title": "Demascus",
+        "year": "2025",
+        "description": "A 33-year-old man dives into experimental therapy and lives entirely different lives to figure himself out.",
+        "genreTag": "Sci-Fi/Comedy",
+        "poster": "/static/blog/the-t/watchlist/shows_5_poster.jpg",
+        "watchLink": "https://tubitv.com/series/300016343",
+        "contentId": "300016343"
+      },
+      {
+        "id": "wl-shows-6",
+        "title": "Body Cam Cops",
+        "year": "2026",
+        "description": "Real surveillance footage puts you inside high-speed chases and moments that can turn in an instant.",
+        "genreTag": "Documentary/Crime",
+        "poster": "/static/blog/the-t/watchlist/shows_6_poster.jpg",
+        "watchLink": "https://tubitv.com/series/300005802",
+        "contentId": "300005802"
+      }
+    ]
+  },
+  "keepReading": {
+    "header": {
+      "title": "Keep Reading",
+      "subtitle": "More articles to explore"
+    },
+    "items": [
+      {
+        "id": "030",
+        "slug": "the-best-docuseries-on-tubi",
+        "eyebrow": "What to Watch",
+        "title": "The Best Docuseries on Tubi You Need to Watch",
+        "subtitle": "Real stories that are built to keep you watching longer than planned.",
+        "categoryTag": "Shows",
+        "thumbnail": "/static/blog/the-t/thumbnails/030_thumbnail.png"
+      },
+      {
+        "id": "031",
+        "slug": "tubis-most-intense-thriller-series",
+        "eyebrow": "What to Watch",
+        "title": "Tubi's Most Intense Thriller Series",
+        "subtitle": "The Fall, Damages, The Killing, and seven more that will wreck your sleep schedule.",
+        "categoryTag": "Shows",
+        "thumbnail": "/static/blog/the-t/thumbnails/031_thumbnail.png"
+      },
+      {
+        "id": "032",
+        "slug": "true-crime-cases-on-tubi",
+        "eyebrow": "What to Watch",
+        "title": "Unravel These True Crime Cases on Tubi",
+        "subtitle": "The cases that get heavier the more you understand them.",
+        "categoryTag": "Shows",
+        "thumbnail": "/static/blog/the-t/thumbnails/032_thumbnail.png"
+      }
+    ]
+  },
+  "images": {
+    "og": "/static/blog/the-t/og/shows_hub_og.jpg"
+  },
+  "pageTitle": "Discover Free TV Shows Online on Tubi"
+}

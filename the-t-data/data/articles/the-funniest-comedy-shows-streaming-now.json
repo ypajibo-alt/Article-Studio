@@ -1,0 +1,289 @@
+{
+  "nav": {
+    "logoLabel": "The T",
+    "links": [
+      {
+        "label": "Home",
+        "href": "/the-t"
+      },
+      {
+        "label": "Coming Soon",
+        "href": "/the-t/coming-soon"
+      },
+      {
+        "label": "Shows",
+        "href": "/the-t/shows"
+      },
+      {
+        "label": "Movies",
+        "href": "/the-t/movies"
+      }
+    ],
+    "explore": {
+      "label": "Explore",
+      "items": [
+        {
+          "label": "FIFA World Cup 2026",
+          "href": "/the-t/fifa-world-cup"
+        },
+        {
+          "label": "Horror",
+          "href": "/the-t/horror"
+        },
+        {
+          "label": "Tubi Originals",
+          "href": "/the-t/originals"
+        },
+        {
+          "label": "Sports",
+          "href": "/the-t/sports"
+        }
+      ],
+      "moreGenresLabel": "More genres",
+      "moreGenresHref": "/the-t/genres"
+    },
+    "mobileMenu": {
+      "open": "Open menu",
+      "close": "Close menu"
+    }
+  },
+  "id": "027",
+  "slug": "the-funniest-comedy-shows-streaming-now",
+  "categoryTag": "Shows",
+  "type": "listicle",
+  "title": "The Funniest Comedy Shows Streaming Now",
+  "subtitle": "The ones that actually hold up past the first episode.",
+  "intro": "Some comedies are funny. The funniest comedy shows are funny and slightly uncomfortable, because the people in them remind you of someone you know, or, worse, yourself.\n\nSterling Archer is the most competent spy in the room and also the most insufferable person alive. Mark from Peep Show narrates his own social disasters in real time and still can't stop making them. Chris Rock's teenage stand-in gets the worst of everything 1980s Brooklyn has to offer, and somehow that's the warmest show on this list.\n\nHere's where to start.",
+  "images": {
+    "thumbnail": "/static/blog/the-t/thumbnails/027_thumbnail.jpg",
+    "og": "/static/blog/the-t/og/027_og.jpg"
+  },
+  "items": [
+    {
+      "position": 1,
+      "title": "Archer",
+      "description": "Sterling Archer is, technically, a great spy. He's also a raging narcissist who burns every relationship he has and then acts genuinely baffled by the wreckage.\n\nThe jokes are dense, the callbacks are relentless, and the voice cast commits completely. There's an episode where Archer gets trapped in a building and spends most of it arguing about a bar tab from three years ago. That's the whole show in miniature.\n\nThe later seasons experiment with format in ways that don't always stick, but when it's firing, nothing else sounds like it.",
+      "contentTitle": "Archer (2023)",
+      "tubiLink": "https://tubitv.com/series/300015980",
+      "contentId": "300015980",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/027_title_1_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/027_title_1_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/027_title_1_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Comedy",
+      "year": "2023",
+      "runtime": "14 Seasons",
+      "rating": "TV-MA"
+    },
+    {
+      "position": 2,
+      "title": "Peep Show",
+      "description": "The camera is always someone's eyes. You're inside Mark's head while he's lying to a woman he likes. Inside Jeremy's head while he's convinced a breakthrough is coming. You hear every rationalization as it forms, which means you watch two people talk themselves into disasters in real time.\n\nMark is a risk-averse, socially paralyzed office worker who wants desperately to be normal and keeps making it worse. Jeremy is his freeloading flatmate who genuinely believes he's one opportunity away from being great. Together they are a catastrophe.\n\nThe British cringe here is specific and merciless, and neither of them ever gets let off the hook.",
+      "contentTitle": "Peep Show (2015)",
+      "tubiLink": "https://tubitv.com/series/300006337",
+      "contentId": "300006337",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/027_title_2_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/027_title_2_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/027_title_2_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Comedy",
+      "year": "2015",
+      "runtime": "9 Seasons",
+      "rating": "TV-MA"
+    },
+    {
+      "position": 3,
+      "title": "Everybody Hates Chris",
+      "description": "Chris Rock narrates his own rough adolescence with the calm of someone who survived it and eventually found it funny. Young Chris gets bused to a school where he's the only Black kid, gets bullied constantly, and comes home to a father who counts every grain of rice in the pot.\n\nThe show shouldn't be this warm. Rock's narration keeps landing the gap between what's happening on screen and how it looks from thirty years out, and that distance is where all the warmth lives.\n\nTerry Crews as Julius is one of the great sitcom dads - a man so committed to not wasting money that it becomes its own running philosophy. Genuinely one of the best family comedies of the 2000s.",
+      "contentTitle": "Everybody Hates Chris (2009)",
+      "tubiLink": "https://tubitv.com/series/300015509",
+      "contentId": "300015509",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/027_title_3_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/027_title_3_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/027_title_3_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Comedy",
+      "year": "2009",
+      "runtime": "4 Seasons",
+      "rating": "TV-PG"
+    },
+    {
+      "position": 4,
+      "title": "Black Books",
+      "description": "Bernard Black does not want to sell you a book. He does not want you to touch the books, browse the books, or stand near the books. He tolerates Manny, his accidental employee, the way someone tolerates a loud neighbor - with periodic rage and occasional, reluctant affection.\n\nDylan Moran plays Bernard as a man who has fully committed to misanthropy as a lifestyle, and every episode is about watching that commitment get tested. Bill Bailey as Manny is the perfect foil: enthusiastic, chaotic, somehow even less competent.\n\nIt ran three seasons and ended before it had a chance to go wrong. Every episode is about twenty-five minutes and none of them drag.",
+      "contentTitle": "Black Books (2004)",
+      "tubiLink": "https://tubitv.com/series/300006343",
+      "contentId": "300006343",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/027_title_4_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/027_title_4_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/027_title_4_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Comedy",
+      "year": "2004",
+      "runtime": "3 Seasons",
+      "rating": "TV-PG"
+    },
+    {
+      "position": 5,
+      "title": "Married... with Children",
+      "description": "Al Bundy sells shoes. He hates selling shoes. He hates most things, including, frequently, his family, and they return the favor.\n\nThis was the first show on Fox, and it aired as a direct rebuke to the Cosby era of television: no lessons, no hugs, no growth. Al and Peg trade insults across a couch that looks like it hasn't been cleaned since 1974. Ed O'Neill plays Al's exhaustion so completely that it stops being a performance and starts being a condition.\n\nThe show ran eleven seasons. It's cruder than you remember and funnier than you'd expect.",
+      "contentTitle": "Married... with Children (1987)",
+      "tubiLink": "https://tubitv.com/series/300018574",
+      "contentId": "300018574",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/027_title_5_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/027_title_5_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/027_title_5_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Comedy",
+      "year": "1987",
+      "runtime": "3 Seasons",
+      "rating": "TV-PG"
+    },
+    {
+      "position": 6,
+      "title": "The Goes Wrong Show",
+      "description": "The Cornley Polytechnic Drama Society is putting on a show. The set is already broken. The lead actor doesn't know his lines. Something is on fire. None of this will stop the production.\n\nThe whole thing runs on one very specific joke: theater people will commit to the performance no matter what. There's a murder mystery episode where the body keeps rolling off the table and the cast has to keep pretending it didn't happen.\n\nIt's the kind of comedy that makes you pause it because you're laughing too hard to hear the next line.",
+      "contentTitle": "The Goes Wrong Show (2021)",
+      "tubiLink": "https://tubitv.com/series/300005991",
+      "contentId": "300005991",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/027_title_6_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/027_title_6_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/027_title_6_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Comedy",
+      "year": "2021",
+      "runtime": "2 Seasons",
+      "rating": "TV-14"
+    },
+    {
+      "position": 7,
+      "title": "Don't Trust the B---- in Apartment 23",
+      "description": "Chloe doesn't stumble into chaos. She engineers it. When June shows up as her new roommate, full of Midwestern optimism and a five-year plan, Chloe sees an opportunity.\n\nKrysten Ritter plays her without a single redemption arc in sight - selfish, calculating, and the show treats that as a feature, not a problem to solve. James Van Der Beek plays a fictional version of himself as Chloe's best friend, and his complete willingness to be the punchline is what makes those scenes work.\n\nThe show got cancelled too soon, which is exactly what happens to shows that refuse to sand down their edges.",
+      "contentTitle": "Don't Trust the B---- in Apartment 23 (2013)",
+      "tubiLink": "https://tubitv.com/series/300019384",
+      "contentId": "300019384",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/027_title_7_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/027_title_7_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/027_title_7_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Comedy",
+      "year": "2013",
+      "runtime": "2 Seasons",
+      "rating": "TV-14"
+    },
+    {
+      "position": 8,
+      "title": "Whose Line is it Anyway?",
+      "description": "Clive Anderson hosts four comedians through games with no script, no safety net, and no editing. Ryan Stiles and Colin Mochrie are the constants, and watching them build something out of nothing in real time is the whole appeal.\n\nThe British version has a slightly rougher energy than the American remake - less polished, more willing to sit in the awkward pause before the joke lands. There's a game called \"Scenes from a Hat\" where the prompts are pure chaos and the comedians have about two seconds to respond.\n\nWhat they come up with in those two seconds is usually funnier than anything a writers' room would have produced.",
+      "contentTitle": "Whose Line is it Anyway? (1998)",
+      "tubiLink": "https://tubitv.com/series/300005124",
+      "contentId": "300005124",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/027_title_8_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/027_title_8_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/027_title_8_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Comedy",
+      "year": "1998",
+      "runtime": "5 Seasons",
+      "rating": "TV-PG"
+    },
+    {
+      "position": 9,
+      "title": "Soap",
+      "description": "Soap premiered in 1977 to actual protests from groups who hadn't seen it yet. The content was too much: a gay character, a possessed character, an alien abduction, a murder mystery, and two families whose drama kept escalating past any point of plausibility.\n\nIt was a soap opera parody that committed so hard to the soap opera format that it basically became one. Billy Crystal's Jodie Dallas was one of the first openly gay recurring characters on American television, and the show treated him with more complexity than most dramas were managing at the time.\n\nEach episode ends with a narrator recapping the chaos in a tone of complete bewilderment. That's the correct tone.",
+      "contentTitle": "Soap (1981)",
+      "tubiLink": "https://tubitv.com/series/300007078",
+      "contentId": "300007078",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/027_title_9_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/027_title_9_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/027_title_9_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Comedy",
+      "year": "1981",
+      "runtime": "4 Seasons",
+      "rating": "TV-PG"
+    },
+    {
+      "position": 10,
+      "title": "Undateable",
+      "description": "Most of Undateable is a standard multi-camera sitcom about a group of friends hanging around a bar. Then it started doing live episodes, and something shifted.\n\nThe cast plays looser, the jokes land differently with a real audience in the room, and the occasional flub becomes part of the show instead of a cut point. Ron Funches as Shelly is the secret weapon: a large, gentle man who delivers absurdist lines with complete sincerity.\n\nThe live format didn't save it from cancellation, but it's exactly why the later seasons are the ones worth watching.",
+      "contentTitle": "Undateable (2016)",
+      "tubiLink": "https://tubitv.com/series/300017691",
+      "contentId": "300017691",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/027_title_10_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/027_title_10_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/027_title_10_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Comedy",
+      "year": "2016",
+      "runtime": "3 Seasons",
+      "rating": "TV-14"
+    }
+  ],
+  "keepReading": {
+    "header": {
+      "title": "Keep Reading",
+      "subtitle": "More articles to explore"
+    },
+    "items": [
+      {
+        "id": "036",
+        "slug": "the-funniest-movies-streaming-on-tubi-now",
+        "eyebrow": "What to Watch",
+        "title": "The Funniest Movies Streaming on Tubi Now",
+        "subtitle": "Easy watches that still land when you need them to.",
+        "categoryTag": "Movies",
+        "thumbnail": "/static/blog/the-t/thumbnails/036_thumbnail.jpg"
+      },
+      {
+        "id": "028",
+        "slug": "the-best-reality-shows-streaming-free-on-tubi",
+        "eyebrow": "What to Watch",
+        "title": "The Best Reality Shows Streaming Free on Tubi",
+        "subtitle": "Low stakes, high chaos, and easy to lose an entire evening to.",
+        "categoryTag": "Shows",
+        "thumbnail": "/static/blog/the-t/thumbnails/028_thumbnail.jpg"
+      },
+      {
+        "id": "014",
+        "slug": "the-most-addictive-shows-on-tubi",
+        "eyebrow": "What to Watch",
+        "title": "Binge-Worthy TV: The Most Addictive Shows on Tubi",
+        "subtitle": "Shows that stack quickly and are harder to stop than you expect.",
+        "categoryTag": "Shows",
+        "thumbnail": "/static/blog/the-t/thumbnails/014_thumbnail.jpg"
+      }
+    ]
+  },
+  "datePosted": "2026-05-26"
+}

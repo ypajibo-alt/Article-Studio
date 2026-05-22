@@ -1,0 +1,289 @@
+{
+  "nav": {
+    "logoLabel": "The T",
+    "links": [
+      {
+        "label": "Home",
+        "href": "/the-t"
+      },
+      {
+        "label": "Coming Soon",
+        "href": "/the-t/coming-soon"
+      },
+      {
+        "label": "Shows",
+        "href": "/the-t/shows"
+      },
+      {
+        "label": "Movies",
+        "href": "/the-t/movies"
+      }
+    ],
+    "explore": {
+      "label": "Explore",
+      "items": [
+        {
+          "label": "FIFA World Cup 2026",
+          "href": "/the-t/fifa-world-cup"
+        },
+        {
+          "label": "Horror",
+          "href": "/the-t/horror"
+        },
+        {
+          "label": "Tubi Originals",
+          "href": "/the-t/originals"
+        },
+        {
+          "label": "Sports",
+          "href": "/the-t/sports"
+        }
+      ],
+      "moreGenresLabel": "More genres",
+      "moreGenresHref": "/the-t/genres"
+    },
+    "mobileMenu": {
+      "open": "Open menu",
+      "close": "Close menu"
+    }
+  },
+  "id": "035",
+  "slug": "the-scariest-horror-movies-to-watch-right-now",
+  "categoryTag": "Movies",
+  "type": "listicle",
+  "title": "The Scariest Horror Movies to Watch Right Now",
+  "subtitle": "Not just loud scares. The kind that stay with you after.",
+  "intro": "Some horror movies ask you to think. The scariest horror movies just come for you.\n\nArt the Clown shows up on Christmas Eve and does not knock. A little girl buys a wooden box at a yard sale and something inside it starts getting comfortable. Two kids wake up in the middle of the night and their parents are just… gone. The doors are gone too.\n\nTen films. All of them on Tubi right now. Pick one and turn the lights off.",
+  "images": {
+    "thumbnail": "/static/blog/the-t/thumbnails/035_thumbnail.jpg",
+    "og": "/static/blog/the-t/og/035_og.jpg"
+  },
+  "items": [
+    {
+      "position": 1,
+      "title": "Terrifier 3",
+      "description": "Christmas lights. Wrapping paper. Art the Clown with a garbage bag full of things you do not want to see.\n\nTerrifier 3 does something genuinely cruel: it takes the warmest night of the year and fills it with the most merciless killer in modern horror. Art doesn't talk, doesn't rush, and absolutely does not care about your comfort level. The holiday setting isn't a gimmick - it makes every scene feel more wrong than it should.\n\nThis is the one people are still texting their friends about the morning after. You'll know the scene when you get to it.",
+      "contentTitle": "Terrifier 3 (2024)",
+      "tubiLink": "https://tubitv.com/movies/100047776",
+      "contentId": "100047776",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/035_title_1_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/035_title_1_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/035_title_1_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Horror",
+      "year": "2024",
+      "runtime": "2h 6m",
+      "rating": "TV-MA"
+    },
+    {
+      "position": 2,
+      "title": "Skinamarink",
+      "description": "Two kids wake up at 4 a.m. Their parents aren't home. Then the windows disappear. Then the doors.\n\nSkinamarink was shot for $15,000 and it might be the most unsettling film on this list. There's no monster to track, no rules to figure out. Just a house that's quietly, methodically wrong - shot in grainy dark, at floor level, like a child hiding under a blanket. The voice that starts talking to the kids doesn't explain itself.\n\nPeople either can't finish it or can't stop thinking about it. Honestly, both reactions track.",
+      "contentTitle": "Skinamarink (2022)",
+      "tubiLink": "https://tubitv.com/movies/100044384",
+      "contentId": "100044384",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/035_title_2_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/035_title_2_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/035_title_2_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Horror",
+      "year": "2022",
+      "runtime": "1h 40m",
+      "rating": "TV-MA"
+    },
+    {
+      "position": 3,
+      "title": "The Exorcist III",
+      "description": "There is a scene in a hospital corridor in this film. The camera holds on it for what feels like forever. Then something happens at the far end of the frame, and it will stay with you.\n\nThe Exorcist III is a genuine sequel to the original - George C. Scott plays a detective who keeps finding bodies that shouldn't connect, and he plays it like a man who already knows the answer and doesn't want to be right. Brad Dourif shows up in a psychiatric ward and delivers a monologue that has nothing to do with special effects and is frightening anyway.\n\nIt got buried when it came out. Horror fans found it eventually. Now you will too.",
+      "contentTitle": "The Exorcist III (1990)",
+      "tubiLink": "https://tubitv.com/movies/466963",
+      "contentId": "466963",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/035_title_3_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/035_title_3_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/035_title_3_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Horror",
+      "year": "1990",
+      "runtime": "1h 50m",
+      "rating": "R"
+    },
+    {
+      "position": 4,
+      "title": "The Possession",
+      "description": "The box is based on a real thing. A Jewish wine cabinet, sold on eBay in 2003, with a documented history of nightmares and nosebleeds and people getting rid of it as fast as they could.\n\nIn The Possession, a little girl buys one at a yard sale and immediately doesn't want to let it go. The way she protects it, the way she changes - that attachment is scarier than anything the film does with lighting or sound. Jeffrey Dean Morgan plays her father like a man who keeps hoping there's a rational explanation.\n\nThere isn't one.",
+      "contentTitle": "The Possession (2012)",
+      "tubiLink": "https://tubitv.com/movies/348949",
+      "contentId": "348949",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/035_title_4_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/035_title_4_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/035_title_4_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Horror",
+      "year": "2012",
+      "runtime": "1h 32m",
+      "rating": "PG-13"
+    },
+    {
+      "position": 5,
+      "title": "The Exorcist III: Legion (Director's Cut)",
+      "description": "William Peter Blatty wrote The Exorcist. Then he wrote the novel Legion, directed this film, and then the studio took it apart.\n\nThe director's cut restores footage that was thought to be gone, and what comes back shifts the whole film. Less action, more dread. The psychiatric ward sequences feel longer and more suffocating. Brad Dourif's performance hits differently when it isn't being interrupted by the studio's idea of what an Exorcist sequel should look like.\n\nIf you've only seen the theatrical version, this is not the same movie.",
+      "contentTitle": "The Exorcist III: Legion (Director's Cut) (1990)",
+      "tubiLink": "https://tubitv.com/movies/100025249",
+      "contentId": "100025249",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/035_title_5_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/035_title_5_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/035_title_5_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Horror",
+      "year": "1990",
+      "runtime": "1h 47m",
+      "rating": "TV-MA"
+    },
+    {
+      "position": 6,
+      "title": "Child's Play (1988)",
+      "description": "You know the premise. Serial killer transfers his soul into a Good Guy doll. Six-year-old Andy gets it for his birthday.\n\nWhat still works, thirty-six years later, is the moment Andy's mom realizes the doll has been talking without batteries. She grabs it, pops open the back, looks inside. Nothing. And the doll is looking back at her.\n\nChucky is genuinely frightening in this film in a way the sequels mostly traded for comedy. That's Brad Dourif's voice work - there's real menace in it, not camp. The movie plays it completely straight, which is the only way it could have worked.",
+      "contentTitle": "Child's Play (1988) (1988)",
+      "tubiLink": "https://tubitv.com/movies/438117",
+      "contentId": "438117",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/035_title_6_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/035_title_6_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/035_title_6_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Horror",
+      "year": "1988",
+      "runtime": "1h 27m",
+      "rating": "R"
+    },
+    {
+      "position": 7,
+      "title": "Silent Hill",
+      "description": "Silent Hill has two versions of itself. There's the foggy, ash-covered town a mother drives into looking for her missing daughter. Then the sirens go off, the lights die, and the other version arrives.\n\nThe creature design is still some of the most genuinely disturbing imagery in mainstream horror - Pyramid Head, the nurses, the things that live in the dark. Director Christophe Gans shot it like a nightmare that knows it's a nightmare and keeps going anyway.\n\nIt's based on the video game, but you don't need to know the game. The dread arrives on its own.",
+      "contentTitle": "Silent Hill (2006)",
+      "tubiLink": "https://tubitv.com/movies/522072",
+      "contentId": "522072",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/035_title_7_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/035_title_7_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/035_title_7_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Horror",
+      "year": "2006",
+      "runtime": "2h 6m",
+      "rating": "R"
+    },
+    {
+      "position": 8,
+      "title": "The Exorcism of God",
+      "description": "An American priest in Mexico attempts an exorcism and the demon wins. That's the backstory. The film picks up eighteen years later, when the consequences of that night come back.\n\nThe Exorcism of God earns its scares by making the protagonist the compromised one. Father Peter isn't a clean hero trying to save someone - he's a man carrying something he can't name, and the film slowly makes clear what it cost him. Joseph Marcell plays it with enough restraint that the moments when it breaks through land harder than expected.\n\nFor a mid-budget possession film, it takes its own mythology seriously, and you feel the difference.",
+      "contentTitle": "The Exorcism of God (2021)",
+      "tubiLink": "https://tubitv.com/movies/100001704",
+      "contentId": "100001704",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/035_title_8_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/035_title_8_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/035_title_8_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Horror",
+      "year": "2021",
+      "runtime": "1h 39m",
+      "rating": "R"
+    },
+    {
+      "position": 9,
+      "title": "Carrie (2013)",
+      "description": "Julianne Moore plays Margaret White as someone who genuinely believes she's saving her daughter. That's what makes her frightening.\n\nThe 2013 remake gets dismissed because the original exists, but Moore's performance is doing something the film around it almost can't contain. The scenes between her and Chloë Grace Moretz - the closet, the kitchen, the way Margaret touches her own skin when she's praying - are deeply uncomfortable in a way that has nothing to do with telekinesis.\n\nThe prom scene delivers. But the real horror starts in the first ten minutes, inside that house, before any powers show up.",
+      "contentTitle": "Carrie (2013) (2013)",
+      "tubiLink": "https://tubitv.com/movies/100006401",
+      "contentId": "100006401",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/035_title_9_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/035_title_9_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/035_title_9_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Horror",
+      "year": "2013",
+      "runtime": "1h 40m",
+      "rating": "R"
+    },
+    {
+      "position": 10,
+      "title": "The Exorcists",
+      "description": "Most possession movies give you a priest. The Exorcists gives you a team - three people hired by a desperate father who doesn't have time for the church's process.\n\nThat framing changes everything. These aren't true believers operating on faith. They're professionals with a job, and the demon knows the difference. The scenes where the possession starts pushing back against their methods have a specific kind of tension - less spiritual, more procedural, and somehow worse for it.\n\nIt's a 2023 film that understands what makes possession horror work and doesn't waste the setup.",
+      "contentTitle": "The Exorcists (2023)",
+      "tubiLink": "https://tubitv.com/movies/100026543",
+      "contentId": "100026543",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/035_title_10_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/035_title_10_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/035_title_10_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Horror",
+      "year": "2023",
+      "runtime": "1h 25m",
+      "rating": "TV-MA"
+    }
+  ],
+  "keepReading": {
+    "header": {
+      "title": "Keep Reading",
+      "subtitle": "More articles to explore"
+    },
+    "items": [
+      {
+        "id": "040",
+        "slug": "best-horror-shows-on-tubi-right-now",
+        "eyebrow": "Binge-Worthy",
+        "title": "Best Horror Shows on Tubi Right Now",
+        "subtitle": "A range of horror that goes beyond the obvious picks.",
+        "categoryTag": "Horror",
+        "thumbnail": "/static/blog/the-t/thumbnails/040_thumbnail.jpg"
+      },
+      {
+        "id": "041",
+        "slug": "the-slasher-movies-that-defined-the-genre",
+        "eyebrow": "Binge-Worthy",
+        "title": "The Slasher Movies That Defined the Genre",
+        "subtitle": "The films that wrote the rules - and the ones still collecting royalties on them.",
+        "categoryTag": "Horror",
+        "thumbnail": "/static/blog/the-t/thumbnails/041_thumbnail.jpg"
+      },
+      {
+        "id": "046",
+        "slug": "the-psychological-horror-films-that-mess-with-your-head",
+        "eyebrow": "What to Watch",
+        "title": "The Psychological Horror Films That Mess With Your Head",
+        "subtitle": "More about tension and perspective than anything physical.",
+        "categoryTag": "Horror",
+        "thumbnail": "/static/blog/the-t/thumbnails/046_thumbnail.jpg"
+      }
+    ]
+  },
+  "datePosted": "2026-05-26"
+}

@@ -1,0 +1,289 @@
+{
+  "nav": {
+    "logoLabel": "The T",
+    "links": [
+      {
+        "label": "Home",
+        "href": "/the-t"
+      },
+      {
+        "label": "Coming Soon",
+        "href": "/the-t/coming-soon"
+      },
+      {
+        "label": "Shows",
+        "href": "/the-t/shows"
+      },
+      {
+        "label": "Movies",
+        "href": "/the-t/movies"
+      }
+    ],
+    "explore": {
+      "label": "Explore",
+      "items": [
+        {
+          "label": "FIFA World Cup 2026",
+          "href": "/the-t/fifa-world-cup"
+        },
+        {
+          "label": "Horror",
+          "href": "/the-t/horror"
+        },
+        {
+          "label": "Tubi Originals",
+          "href": "/the-t/originals"
+        },
+        {
+          "label": "Sports",
+          "href": "/the-t/sports"
+        }
+      ],
+      "moreGenresLabel": "More genres",
+      "moreGenresHref": "/the-t/genres"
+    },
+    "mobileMenu": {
+      "open": "Open menu",
+      "close": "Close menu"
+    }
+  },
+  "id": "008",
+  "slug": "the-best-black-movies-and-shows-on-tubi",
+  "categoryTag": "Movies",
+  "type": "listicle",
+  "title": "The Best Black Movies & Shows on Tubi Right Now",
+  "subtitle": "A range of stories that hit across genres without feeling one-note.",
+  "intro": "The best Black movies and shows don't fit in one box.\n\nA Harlem teenager finds a way out through an alternative school that sees her when no one else does. Three brothers fight over who inherits a hip-hop empire while their mother tries to take it from all of them. A family's survival through American slavery across generations, retold with the weight it deserves. An 8-year-old boy in a housing project navigates the 1980s Atlanta Child Murders with no one to protect him.\n\nHere's where to start.",
+  "images": {
+    "thumbnail": "/static/blog/the-t/thumbnails/008_thumbnail.jpg",
+    "og": "/static/blog/the-t/og/008_og.jpg"
+  },
+  "items": [
+    {
+      "position": 1,
+      "title": "Roots",
+      "description": "This isn't background watching.\n\nThe 2016 retelling of Alex Haley's story follows Kunta Kinte from West Africa through generations of his family's survival under American slavery, and it doesn't soften a single thing. The show stays close to specific people - their names, their choices, what they held onto and what got taken.\n\nThere's a scene early on where Kunta refuses to answer to the name they give him, and the show just holds on that refusal. Sits with it. The entire lineage that follows is built on that one act of keeping himself whole.",
+      "contentTitle": "Roots (2016)",
+      "tubiLink": "https://tubitv.com/series/300001925",
+      "contentId": "300001925",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/008_title_1_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/008_title_1_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/008_title_1_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Drama",
+      "year": "2016",
+      "runtime": "1 Season",
+      "rating": "TV-MA"
+    },
+    {
+      "position": 2,
+      "title": "Precious",
+      "description": "Precious Jones is sixteen, pregnant for the second time by her own father, and being failed by every system around her - except one teacher who refuses to look away.\n\nGabourey Sidibe plays Precious with a stillness that makes every small moment hit harder than it should. There's a scene where she reads something she wrote aloud in class for the first time and the room goes quiet in exactly the right way. Mo'Nique won the Oscar for a reason, but this film belongs to Sidibe.\n\nDirector Lee Daniels shoots Harlem without romanticizing it, and what you get is one of the most specific portraits of a young woman deciding she is worth something.",
+      "contentTitle": "Precious (2009)",
+      "tubiLink": "https://tubitv.com/movies/100016659",
+      "contentId": "100016659",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/008_title_2_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/008_title_2_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/008_title_2_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Drama",
+      "year": "2009",
+      "runtime": "1h 50m",
+      "rating": "R"
+    },
+    {
+      "position": 3,
+      "title": "Empire",
+      "description": "Lucious Lyon is dying - or says he is - and the scramble to inherit his hip-hop empire turns his family into a war zone inside a penthouse.\n\nTaraji P. Henson plays Cookie, who co-built the empire, did seventeen years in prison for it, and came home to find her name on nothing. She does not ask for it back politely. The show runs hot - melodrama, music, money, betrayal - and earns every bit of it because Henson never lets Cookie be just a villain or just a victim. She's calculating and funny and genuinely dangerous, sometimes in the same scene.\n\nThe pilot alone has more plot than most shows manage in a full season.",
+      "contentTitle": "Empire (2020)",
+      "tubiLink": "https://tubitv.com/series/300011089",
+      "contentId": "300011089",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/008_title_3_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/008_title_3_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/008_title_3_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Drama",
+      "year": "2020",
+      "runtime": "6 Seasons",
+      "rating": "TV-14"
+    },
+    {
+      "position": 4,
+      "title": "Our Kind of People",
+      "description": "Angela Vaughn arrives in Oak Bluffs - the historically Black enclave on Martha's Vineyard - with a haircare business and a plan to restore her family's standing. The community she's trying to enter has its own old money, its own hierarchies, and its own buried secrets.\n\nThis isn't a story about Black people navigating white spaces. It's about the tensions inside a Black elite world with its own gatekeepers, and that distinction is what makes it interesting. Yaya DaCosta plays Angela with ambition that never tips into naivety - she knows exactly what she's walking into.\n\nThe dark secret underneath the community's polished surface is the kind that gets worse the closer you look.",
+      "contentTitle": "Our Kind of People (2022)",
+      "tubiLink": "https://tubitv.com/series/300001461",
+      "contentId": "300001461",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/008_title_4_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/008_title_4_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/008_title_4_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Drama",
+      "year": "2022",
+      "runtime": "1 Season",
+      "rating": "TV-14"
+    },
+    {
+      "position": 5,
+      "title": "Girlfriends",
+      "description": "Joan, Maya, Lynn, and Toni are best friends in Los Angeles who have absolutely nothing figured out. The show is completely honest about that.\n\nWhat Girlfriends does that a lot of ensemble comedies don't is let each woman be specific - Joan's overachieving anxiety, Maya's sharp mouth and big heart, Lynn's creative chaos, Toni's unapologetic materialism - without any of them being the butt of the joke. The writing gives them real arguments, real career problems, real romantic disasters.\n\nEight seasons is a long run. The show earns it by never letting the friendships feel easy. These women genuinely irritate each other sometimes. That's why you believe them.",
+      "contentTitle": "Girlfriends (2008)",
+      "tubiLink": "https://tubitv.com/series/300015867",
+      "contentId": "300015867",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/008_title_5_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/008_title_5_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/008_title_5_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Comedy",
+      "year": "2008",
+      "runtime": "8 Seasons",
+      "rating": "TV-PG"
+    },
+    {
+      "position": 6,
+      "title": "Star",
+      "description": "Star and Simone grew up in foster care and got out the only way they could imagine: talent and audacity. They link up with Alexandra, a wealthy New Yorker with her own reasons to run, and the three of them try to build something real in Atlanta's music industry - which is not interested in making it easy.\n\nLee Daniels created this one too, and like Empire it runs on heat. But Star has its own texture: the girls are younger, the stakes feel more precarious, and the music industry here isn't glamorous so much as it's a machine that eats people.\n\nQueen Latifah plays a salon owner who becomes their anchor. She's the reason the show has any warmth at all.",
+      "contentTitle": "Star (2019)",
+      "tubiLink": "https://tubitv.com/series/300002098",
+      "contentId": "300002098",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/008_title_6_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/008_title_6_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/008_title_6_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Drama",
+      "year": "2019",
+      "runtime": "3 Seasons",
+      "rating": "TV-14"
+    },
+    {
+      "position": 7,
+      "title": "Jason's Lyric",
+      "description": "Jason Alexander grew up in inner-city Houston with a father who came back from Vietnam broken and a brother, Joshua, who chose a different path - not broken, just dangerous.\n\nAllen Payne plays Jason with a quiet determination. He works the electronics store, keeps his head down, tries not to want too much. Then he meets Lyric, played by Jada Pinkett, and wanting too much becomes unavoidable.\n\nThe love story only works because of what it's up against. Joshua's choices keep pulling Jason back toward a version of his life he's been trying to leave since childhood, and the film doesn't pretend those forces are easy to outrun.",
+      "contentTitle": "Jason's Lyric (1994)",
+      "tubiLink": "https://tubitv.com/movies/312182",
+      "contentId": "312182",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/008_title_7_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/008_title_7_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/008_title_7_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Romance",
+      "year": "1994",
+      "runtime": "1h 59m",
+      "rating": "R"
+    },
+    {
+      "position": 8,
+      "title": "The Haves and the Have Nots",
+      "description": "Judge Jim Cryer has political ambitions, a pile of secrets, and a family that is slowly detonating around him.\n\nThe pressure comes from an unexpected direction: Candace Young, the estranged daughter of his housekeeper, who is smart enough to see exactly what he has and exactly what he'd pay to keep it quiet. Tyler Perry created this one, and it runs on escalating soap opera logic where every secret leads to a worse secret.\n\nWhat keeps it watchable is Tika Sumpter as Candace. She's not a villain - she's a survivor playing the only game available to her, and the show is honest about what made her that way.",
+      "contentTitle": "The Haves and the Have Nots (2021)",
+      "tubiLink": "https://tubitv.com/series/300015022",
+      "contentId": "300015022",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/008_title_8_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/008_title_8_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/008_title_8_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Drama",
+      "year": "2021",
+      "runtime": "8 Seasons",
+      "rating": "TV-14"
+    },
+    {
+      "position": 9,
+      "title": "Greenleaf",
+      "description": "Grace Greenleaf left Memphis and her family's megachurch twenty years ago. She comes back for a funeral and stays because something underneath the prosperity gospel surface doesn't add up.\n\nLynn Whitfield plays her mother, Lady Mae, with a kind of controlled ferocity - every scene with her is a negotiation where you're never quite sure who's winning. The show is genuinely interested in faith, not just as hypocrisy to expose but as something people actually need and sometimes use to survive.\n\nThe secrets Grace uncovers have been kept so long they've become load-bearing walls. Pulling them out is going to bring something down.",
+      "contentTitle": "Greenleaf (2020)",
+      "tubiLink": "https://tubitv.com/series/300019000",
+      "contentId": "300019000",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/008_title_9_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/008_title_9_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/008_title_9_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Drama",
+      "year": "2020",
+      "runtime": "1 Season",
+      "rating": "TV-14"
+    },
+    {
+      "position": 10,
+      "title": "The Products of the American Ghetto",
+      "description": "An 8-year-old boy in an Atlanta housing project is selling drugs to keep his mother and sister alive during the years of the Atlanta Child Murders - a period when Black children were disappearing and no one in power seemed to be in a hurry.\n\nThe film doesn't soften what it costs a child to grow up inside that specific combination of poverty, danger, and abandonment. It's not an easy watch. But the historical backdrop isn't decoration - it's the pressure the whole story is built under.\n\nChildren were disappearing from these same streets. The adults around this boy are too consumed by their own survival to protect him from becoming something he can't come back from.",
+      "contentTitle": "The Products of the American Ghetto (2018)",
+      "tubiLink": "https://tubitv.com/movies/619893",
+      "contentId": "619893",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/008_title_10_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/008_title_10_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/008_title_10_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Drama",
+      "year": "2018",
+      "runtime": "2h 5m",
+      "rating": "TV-MA"
+    }
+  ],
+  "keepReading": {
+    "header": {
+      "title": "Keep Reading",
+      "subtitle": "More articles to explore"
+    },
+    "items": [
+      {
+        "id": "039",
+        "slug": "the-black-movies-worth-watching-this-month",
+        "eyebrow": "What to Watch",
+        "title": "The Black Movies Worth Watching This Month",
+        "subtitle": "Beat Street, Finding Fela, Dolemite, and nine more reasons to clear your evening.",
+        "categoryTag": "Movies",
+        "thumbnail": "/static/blog/the-t/thumbnails/039_thumbnail.jpg"
+      },
+      {
+        "id": "079",
+        "slug": "the-black-films-and-shows-on-tubi-worth-watching-this-month",
+        "eyebrow": "What to Watch",
+        "title": "The Black Films and Shows on Tubi Worth Watching This Month",
+        "subtitle": "A monthly lineup that moves across genres instead of staying in one lane.",
+        "categoryTag": "Shows",
+        "thumbnail": "/static/blog/the-t/thumbnails/079_thumbnail.jpg"
+      },
+      {
+        "id": "077",
+        "slug": "girlfriends-good-times-and-the-black-sitcoms-on-tubi",
+        "eyebrow": "What to Watch",
+        "title": "Girlfriends, Good Times, and the Black Sitcoms on Tubi",
+        "subtitle": "Decades of laughs, real rent, and friendships that don't let you off easy.",
+        "categoryTag": "Shows",
+        "thumbnail": "/static/blog/the-t/thumbnails/077_thumbnail.jpg"
+      }
+    ]
+  },
+  "datePosted": "2026-05-26"
+}

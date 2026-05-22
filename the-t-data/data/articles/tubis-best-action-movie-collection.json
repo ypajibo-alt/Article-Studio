@@ -1,0 +1,289 @@
+{
+  "nav": {
+    "logoLabel": "The T",
+    "links": [
+      {
+        "label": "Home",
+        "href": "/the-t"
+      },
+      {
+        "label": "Coming Soon",
+        "href": "/the-t/coming-soon"
+      },
+      {
+        "label": "Shows",
+        "href": "/the-t/shows"
+      },
+      {
+        "label": "Movies",
+        "href": "/the-t/movies"
+      }
+    ],
+    "explore": {
+      "label": "Explore",
+      "items": [
+        {
+          "label": "FIFA World Cup 2026",
+          "href": "/the-t/fifa-world-cup"
+        },
+        {
+          "label": "Horror",
+          "href": "/the-t/horror"
+        },
+        {
+          "label": "Tubi Originals",
+          "href": "/the-t/originals"
+        },
+        {
+          "label": "Sports",
+          "href": "/the-t/sports"
+        }
+      ],
+      "moreGenresLabel": "More genres",
+      "moreGenresHref": "/the-t/genres"
+    },
+    "mobileMenu": {
+      "open": "Open menu",
+      "close": "Close menu"
+    }
+  },
+  "id": "033",
+  "slug": "tubis-best-action-movie-collection",
+  "categoryTag": "Movies",
+  "type": "listicle",
+  "title": "Tubi's Best Action Movie Collection",
+  "subtitle": "Fast-moving stories with just enough weight behind the action.",
+  "intro": "The best action movies aren't really about the explosions. They're about the moment someone decides they're done playing by the rules.\n\nA disgraced Secret Service agent holds the White House against an army with nothing but his hands and a grudge. A quiet new guy on a cash truck crew turns a routine heist into something nobody saw coming. A doctor in Chicago decides the legal system isn't moving fast enough and starts moving himself.\n\nTubi's best action movie collection has range, from Van Damme in a secret underground tournament to Mel Gibson in a post-apocalyptic wasteland, and every one of them earns the chaos. Here's where to start.",
+  "images": {
+    "thumbnail": "/static/blog/the-t/thumbnails/033_thumbnail.jpg",
+    "og": "/static/blog/the-t/og/033_og.jpg"
+  },
+  "items": [
+    {
+      "position": 1,
+      "title": "Wrath of Man",
+      "description": "Jason Statham takes a job as a cash truck guard and immediately does not act like someone who needs the work. His coworkers notice. The audience notices. Guy Ritchie spends the first half of the film letting that tension build - who is this person, and why is he here - before the answer reframes everything you've already seen.\n\nThere's a sequence in the second act where Statham stops a heist so efficiently and so quietly that the other guards don't fully understand what just happened. Neither do you, at first.\n\nThe violence is precise and cold. Statham plays H like a man who has already decided how this ends and is just working through the steps.",
+      "contentTitle": "Wrath of Man (2021)",
+      "tubiLink": "https://tubitv.com/movies/100030038",
+      "contentId": "100030038",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/033_title_1_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/033_title_1_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/033_title_1_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Action",
+      "year": "2021",
+      "runtime": "1h 59m",
+      "rating": "R"
+    },
+    {
+      "position": 2,
+      "title": "Olympus Has Fallen",
+      "description": "The premise sounds like a pitch someone made as a joke. Terrorists seize the White House, take the President hostage, and the entire U.S. military is locked out. The only person left inside is a disgraced Secret Service agent who wasn't even supposed to be there.\n\nGerard Butler plays Mike Banning completely straight - no winking at the camera, no acknowledgment of how insane this is. Antoine Fuqua directs it like a war film, which is why it works.\n\nThere's a scene early on where Banning fights his way through the front lawn of the White House against a coordinated assault and it's genuinely brutal. The film earns its stakes before the real story even starts.",
+      "contentTitle": "Olympus Has Fallen (2013)",
+      "tubiLink": "https://tubitv.com/movies/100046654",
+      "contentId": "100046654",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/033_title_2_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/033_title_2_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/033_title_2_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Action",
+      "year": "2013",
+      "runtime": "1h 59m",
+      "rating": "TV-14"
+    },
+    {
+      "position": 3,
+      "title": "Bloodsport",
+      "description": "You already know this one. It's still better than you remember.\n\nJean-Claude Van Damme plays Frank Dux, a martial artist who goes AWOL from the U.S. Army to compete in the Kumite - a secret, underground, full-contact tournament in Hong Kong where fighters from every discipline show up and the bracket thins out fast. The film treats all of this with complete seriousness, which is the correct choice.\n\nBolo Yeung plays Chong Li, the reigning champion, and he is enormous and terrifying and appears to genuinely enjoy hurting people. The final fight between him and Van Damme is the whole reason this film exists. The splits scene alone explains why Van Damme became a star.",
+      "contentTitle": "Bloodsport (1988)",
+      "tubiLink": "https://tubitv.com/movies/516375",
+      "contentId": "516375",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/033_title_3_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/033_title_3_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/033_title_3_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Action",
+      "year": "1988",
+      "runtime": "1h 32m",
+      "rating": "R"
+    },
+    {
+      "position": 4,
+      "title": "Mad Max",
+      "description": "George Miller doesn't explain the world. You piece it together from what's falling apart around the edges - fuel shortages, empty highways, a police force barely holding together. The collapse is background noise. The foreground is Max, a cop who is very good at his job and trying to stay human in a place that keeps making that harder.\n\nMel Gibson was 22 when this filmed and plays Max with a stillness that makes the moments when he breaks feel earned. The motorcycle gang led by Toecutter isn't cartoonish - they're cruel in a specific, casual way that makes the film uncomfortable before it becomes a revenge story.\n\nFor a low-budget Australian film from 1979, it invented an entire genre.",
+      "contentTitle": "Mad Max (1979)",
+      "tubiLink": "https://tubitv.com/movies/334156",
+      "contentId": "334156",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/033_title_4_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/033_title_4_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/033_title_4_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Action",
+      "year": "1979",
+      "runtime": "1h 33m",
+      "rating": "R"
+    },
+    {
+      "position": 5,
+      "title": "Death Wish",
+      "description": "Eli Roth's remake makes one smart change to the original premise: Paul Kersey is a trauma surgeon. He spends his days trying to save the people Chicago's gun violence sends through his ER. Then his wife is killed and his daughter is left in a coma, and the man who knows exactly how a body breaks down decides to use that knowledge differently.\n\nBruce Willis plays it quieter than you'd expect. There's a scene where he watches YouTube tutorials to understand how a gun works, and it's more unsettling than the action sequences that follow. A man methodically teaching himself something he was never supposed to know.\n\nChicago is everywhere in this film - the city isn't just a setting, it's the pressure Kersey is responding to. That's what gives it more weight than a straightforward revenge thriller.",
+      "contentTitle": "Death Wish (2018)",
+      "tubiLink": "https://tubitv.com/movies/100028640",
+      "contentId": "100028640",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/033_title_5_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/033_title_5_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/033_title_5_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Action",
+      "year": "2018",
+      "runtime": "1h 47m",
+      "rating": "R"
+    },
+    {
+      "position": 6,
+      "title": "Fist of Fury",
+      "description": "Bruce Lee plays Chen Zhen, who arrives at his martial arts school to find his beloved instructor has died under suspicious circumstances. The rival Japanese school next door is not subtle about their role in it. Neither is the sign outside the park that reads 'No Dogs or Chinese Allowed.'\n\nLee doesn't play Chen Zhen as a man looking for a fight. He plays him as a man trying to hold himself together while every institution around him tells him to accept the humiliation and move on. The moment he stops trying is one of the most satisfying pivots in martial arts film history.\n\nThe fight choreography is Lee at his most controlled and most explosive. The political anger underneath it is what separates this from a tournament film.",
+      "contentTitle": "Fist of Fury (1972)",
+      "tubiLink": "https://tubitv.com/movies/497642",
+      "contentId": "497642",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/033_title_6_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/033_title_6_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/033_title_6_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Action",
+      "year": "1972",
+      "runtime": "1h 46m",
+      "rating": "R"
+    },
+    {
+      "position": 7,
+      "title": "Death Wish 2",
+      "description": "Charles Bronson's Paul Kersey relocated to Los Angeles to get out from under what he became in New York. The film gives him maybe twenty minutes of peace before taking everything from him again.\n\nMichael Winner directs this one darker and meaner than the original. The violence against Kersey's family is harder to watch, which means his response lands harder too. Bronson was in his late fifties during filming and plays Kersey with a real exhaustion - this is not a man who enjoys what he's doing.\n\nThe Jimmy Page score is genuinely strange and genuinely effective. It gives the Los Angeles night scenes a texture that feels wrong in exactly the right way.",
+      "contentTitle": "Death Wish 2 (1982)",
+      "tubiLink": "https://tubitv.com/movies/302155",
+      "contentId": "302155",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/033_title_7_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/033_title_7_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/033_title_7_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Action",
+      "year": "1982",
+      "runtime": "1h 29m",
+      "rating": "R"
+    },
+    {
+      "position": 8,
+      "title": "American Ninja",
+      "description": "Michael Dudikoff plays Joe Armstrong, a soldier stationed in the Philippines with no memory of his past and a skill set that becomes very apparent when his convoy gets ambushed. He doesn't explain himself. He doesn't fully understand himself. He just handles the situation.\n\nThe film is a perfect artifact of 1985 - gun runners, jungle bases, a shadowy arms dealer, enough ninjutsu to fill a Cannon Films highlight reel. It doesn't take itself too seriously, but it never winks at the audience either.\n\nThere's a sequence in the third act where Joe infiltrates the villain's compound alone, in full ninja gear, and the film treats it with the same gravity as a special forces operation. That commitment is what makes it work.",
+      "contentTitle": "American Ninja (1985)",
+      "tubiLink": "https://tubitv.com/movies/466020",
+      "contentId": "466020",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/033_title_8_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/033_title_8_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/033_title_8_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Action",
+      "year": "1985",
+      "runtime": "1h 36m",
+      "rating": "R"
+    },
+    {
+      "position": 9,
+      "title": "London Has Fallen",
+      "description": "If you watched Olympus Has Fallen and thought Mike Banning's job couldn't get harder, London Has Fallen has a counterargument.\n\nWorld leaders gather in London for a state funeral and coordinated terrorist attacks hit every major landmark simultaneously. Multiple heads of state are killed in the opening sequence. The President is alive, Banning is with him, and they are very much alone in a city that has just been turned into a kill zone.\n\nGerard Butler and Aaron Eckhart have genuine chemistry by this point and the film leans into it - there's a dark humor between them that keeps the relentless action from becoming numbing. The set pieces are bigger than the first film. Banning is still not interested in waiting for backup.",
+      "contentTitle": "London Has Fallen (2016)",
+      "tubiLink": "https://tubitv.com/movies/100046653",
+      "contentId": "100046653",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/033_title_9_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/033_title_9_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/033_title_9_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Action",
+      "year": "2016",
+      "runtime": "1h 39m",
+      "rating": "TV-14"
+    },
+    {
+      "position": 10,
+      "title": "Today You Die",
+      "description": "Steven Seagal plays Harlan Banks, a thief who gave up the life because his wife asked him to. He takes one last job - an armored car gig that's supposed to be clean - and gets double-crossed and framed for a robbery he didn't plan.\n\nHarlan ends up in prison, teams up with a fellow inmate, and the two of them work their way back toward the $20 million and the people who set him up. Seagal plays it with the low-energy menace he does best. Not explosive. Just inevitable.\n\nFor a mid-2000s direct-to-video action film, the heist mechanics are actually thought through, and the double-cross has a second layer that lands better than you'd expect.",
+      "contentTitle": "Today You Die (2005)",
+      "tubiLink": "https://tubitv.com/movies/100044772",
+      "contentId": "100044772",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/033_title_10_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/033_title_10_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/033_title_10_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Action",
+      "year": "2005",
+      "runtime": "1h 31m",
+      "rating": "R"
+    }
+  ],
+  "keepReading": {
+    "header": {
+      "title": "Keep Reading",
+      "subtitle": "More articles to explore"
+    },
+    "items": [
+      {
+        "id": "012",
+        "slug": "from-cult-classics-to-hidden-gems-the-best-of-tubi",
+        "eyebrow": "What to Watch",
+        "title": "From Cult Classics to Hidden Gems: The Best of Tubi",
+        "subtitle": "The ones people keep finding, recommending, and coming back to.",
+        "categoryTag": "Movies",
+        "thumbnail": "/static/blog/the-t/thumbnails/012_thumbnail.jpg"
+      },
+      {
+        "id": "025",
+        "slug": "overlord-2018-free-on-tubi",
+        "eyebrow": "Available 6/1",
+        "title": "Overlord (2018): Watch J.J. Abrams' WWII Horror Free on Tubi",
+        "subtitle": "They were supposed to blow up a radio tower. Then they found what was in the basement.",
+        "categoryTag": "Coming Soon",
+        "thumbnail": "/static/blog/the-t/thumbnails/025_thumbnail.jpg"
+      },
+      {
+        "id": "035",
+        "slug": "the-scariest-horror-movies-to-watch-right-now",
+        "eyebrow": "What to Watch",
+        "title": "The Scariest Horror Movies to Watch Right Now",
+        "subtitle": "Not just loud scares. The kind that stay with you after.",
+        "categoryTag": "Movies",
+        "thumbnail": "/static/blog/the-t/thumbnails/035_thumbnail.jpg"
+      }
+    ]
+  },
+  "datePosted": "2026-05-26"
+}

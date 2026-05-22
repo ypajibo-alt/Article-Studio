@@ -1,0 +1,160 @@
+{
+  "nav": {
+    "logoLabel": "The T",
+    "links": [
+      {
+        "label": "Home",
+        "href": "/the-t"
+      },
+      {
+        "label": "Coming Soon",
+        "href": "/the-t/coming-soon"
+      },
+      {
+        "label": "Shows",
+        "href": "/the-t/shows"
+      },
+      {
+        "label": "Movies",
+        "href": "/the-t/movies"
+      }
+    ],
+    "explore": {
+      "label": "Explore",
+      "items": [
+        {
+          "label": "FIFA World Cup 2026",
+          "href": "/the-t/fifa-world-cup"
+        },
+        {
+          "label": "Horror",
+          "href": "/the-t/horror"
+        },
+        {
+          "label": "Tubi Originals",
+          "href": "/the-t/originals"
+        },
+        {
+          "label": "Sports",
+          "href": "/the-t/sports"
+        }
+      ],
+      "moreGenresLabel": "More genres",
+      "moreGenresHref": "/the-t/genres"
+    },
+    "mobileMenu": {
+      "open": "Open menu",
+      "close": "Close menu"
+    }
+  },
+  "id": "056",
+  "slug": "world-cup-opening-weekend-match-schedule-on-tubi",
+  "categoryTag": "Sports",
+  "type": "article",
+  "title": "Your Guide to the World Cup Opening Weekend: Match Schedule on Tubi",
+  "subtitle": "The full match schedule for opening weekend, plus how to stream every game on Tubi.",
+  "datePosted": "2026-05-26",
+  "intro": "The 2026 FIFA World Cup opens across 2 days, and Tubi has live coverage of both. Mexico kicks things off on June 11 against South Africa at 1 PM CT in Mexico City. The next day, the USMNT opens Group D against Paraguay at 6 PM PT in Inglewood. Both matches are free to stream live with a Tubi account, with VOD replays available after the final whistle. It is a big opening weekend, and you do not need a cable subscription to catch any of it.",
+  "quote": "Opening weekend starts in Mexico City, moves to Los Angeles, and streams free on Tubi.",
+  "faq": {
+    "header": {
+      "title": "More details"
+    },
+    "items": [
+      {
+        "question": "When does the FIFA World Cup 2026™ start?",
+        "answer": "FIFA World Cup 2026™ kicks off with an opening ceremony and match on Thursday, June 11. Pregame 1:00 PM ET. Kickoff 3:00 PM ET. You can stream both events LIVE & FREE in 4K* on Tubi with a free account."
+      },
+      {
+        "question": "Do I need an account to watch FIFA World Cup 2026™ on Tubi?",
+        "answer": "Yes. You need to register for a free account and sign in, but it’s quick and easy. We promise."
+      },
+      {
+        "question": "What devices can I use to stream FIFA World Cup 2026™ on Tubi?",
+        "answer": "Tubi works on most smart TVs, mobile devices, streaming devices, gaming consoles, and web browsers. Visit the Help Center for a complete list of supported devices. Don’t wanna miss a gooooooal? Get the Tubi mobile app to stream on the go."
+      }
+    ]
+  },
+  "images": {
+    "thumbnail": "/static/blog/the-t/thumbnails/056_thumbnail.png",
+    "hero": "/static/blog/the-t/heroes/056_hero.png",
+    "og": "/static/blog/the-t/og/056_og.jpg"
+  },
+  "keepReading": {
+    "header": {
+      "title": "Keep Reading",
+      "subtitle": "More articles to explore"
+    },
+    "items": [
+      {
+        "id": "055",
+        "slug": "how-to-watch-the-world-cup-live-and-free-on-tubi",
+        "eyebrow": "Guide",
+        "title": "USA vs. Paraguay: How to Watch the World Cup Live and Free on Tubi",
+        "subtitle": "Catch every minute of USA vs. Paraguay live on Tubi, with full replays on demand after the final whistle.",
+        "categoryTag": "Sports",
+        "thumbnail": "/static/blog/the-t/thumbnails/055_thumbnail.png"
+      },
+      {
+        "id": "058",
+        "slug": "the-teams-to-watch-in-the-world-cup",
+        "eyebrow": "Guide",
+        "title": "Road to 2026: The Teams to Watch in the World Cup",
+        "subtitle": "From the favorites to the dark horses, the squads worth tracking all the way to the final.",
+        "categoryTag": "Sports",
+        "thumbnail": "/static/blog/the-t/thumbnails/058_thumbnail.png"
+      },
+      {
+        "id": "059",
+        "slug": "the-ultimate-guide-to-streaming-world-cup-games-for-free-on-tubi",
+        "eyebrow": "Guide",
+        "title": "The Ultimate Guide to Streaming World Cup Games for Free on Tubi",
+        "subtitle": "Everything you need to know to watch every match, every angle, every weekend — all on Tubi.",
+        "categoryTag": "Sports",
+        "thumbnail": "/static/blog/the-t/thumbnails/059_thumbnail.png"
+      }
+    ]
+  },
+  "hero": {
+    "watchLink": "https://tubitv.com/hubs/fifa-world-cup-fox-hub",
+    "watchNowLabel": "Watch Now"
+  },
+  "whyWatch": {
+    "header": {
+      "title": "Why Watch It"
+    },
+    "body": "Opening weekend is where the tournament starts to take shape.\n\nThis is the first 48-team World Cup, the first co-hosted across 3 countries, and the first time the USMNT has played at home in the tournament since 1994. Mexico carries the weight of opening the whole thing on home soil. The US carries the emotion of a generation of fans who have been waiting for this. Both opponents arrive with something to prove, and neither match is a formality.\n\nWatch live if you can. Both matches are free with a Tubi account. Miss one? The replay goes up the same night, no sign-in required."
+  },
+  "gallery": {
+    "header": {
+      "title": "Media Shots"
+    },
+    "items": [
+      "/static/blog/the-t/media/056_media_1.jpg",
+      "/static/blog/the-t/media/056_media_2.png"
+    ]
+  },
+  "whatsComing": {
+    "header": {
+      "title": "What's Coming"
+    },
+    "items": [
+      {
+        "heading": "June 11, Opening Ceremony, Mexico City Stadium",
+        "paragraph": "The tournament opens in Mexico City, where a host nation gets to feel the full weight of that first match day at home. Before Mexico and South Africa step onto the field, there is a ceremony, an atmosphere, and the particular electricity that only comes from the very beginning of something this big."
+      },
+      {
+        "heading": "June 11, Fox Pregame, then Mexico vs. South Africa, 1:00 PM CT",
+        "paragraph": "Mexico opens Group A against South Africa, with Fox Pregame leading into kickoff. The crowd will be loud and entirely behind Mexico, but that kind of pressure is its own kind of trap. South Africa can make this uncomfortable in a hurry, which is exactly why opening matches are worth watching live instead of checking the score after."
+      },
+      {
+        "heading": "June 12, US Opening Moment, Los Angeles Stadium",
+        "paragraph": "The tournament moves to Inglewood on June 12, where the USMNT plays its first home World Cup match since 1994. For fans who have spent decades waiting for this to happen again on American soil, the pre-match atmosphere at Los Angeles Stadium is not just a warmup. It is part of the moment."
+      },
+      {
+        "heading": "June 12, Fox Pregame, then USA vs. Paraguay, 6:00 PM PT",
+        "paragraph": "The USMNT opens Group D against Paraguay at Los Angeles Stadium, with Fox Pregame running before kickoff and post-game coverage following the final whistle. The full broadcast block is on Tubi, free with an account."
+      }
+    ]
+  }
+}

@@ -1,0 +1,289 @@
+{
+  "nav": {
+    "logoLabel": "The T",
+    "links": [
+      {
+        "label": "Home",
+        "href": "/the-t"
+      },
+      {
+        "label": "Coming Soon",
+        "href": "/the-t/coming-soon"
+      },
+      {
+        "label": "Shows",
+        "href": "/the-t/shows"
+      },
+      {
+        "label": "Movies",
+        "href": "/the-t/movies"
+      }
+    ],
+    "explore": {
+      "label": "Explore",
+      "items": [
+        {
+          "label": "FIFA World Cup 2026",
+          "href": "/the-t/fifa-world-cup"
+        },
+        {
+          "label": "Horror",
+          "href": "/the-t/horror"
+        },
+        {
+          "label": "Tubi Originals",
+          "href": "/the-t/originals"
+        },
+        {
+          "label": "Sports",
+          "href": "/the-t/sports"
+        }
+      ],
+      "moreGenresLabel": "More genres",
+      "moreGenresHref": "/the-t/genres"
+    },
+    "mobileMenu": {
+      "open": "Open menu",
+      "close": "Close menu"
+    }
+  },
+  "id": "067",
+  "slug": "every-nascar-race-and-replay-you-can-stream-on-tubi",
+  "categoryTag": "Sports",
+  "type": "listicle",
+  "title": "Every NASCAR Race and Replay You Can Stream on Tubi",
+  "subtitle": "From moonshine runners to Hendrick Motorsports, all of it, free.",
+  "intro": "Every NASCAR fan has that one race they still talk about. The one where everything went sideways on the final lap, or the wreck nobody walked away from clean, or the moment a driver nobody believed in crossed the finish line first.\n\nTubi has a full lane of NASCAR content streaming free right now - 24 legends reliving the crashes that built the sport, the inside story of how Hendrick Motorsports became the most dominant team in history, a countdown of the 75 greatest moments in NASCAR's existence, and Burt Reynolds playing a driver forced to race in a giant chicken suit because of a contract he can't escape.\n\nHere's everything worth watching.",
+  "images": {
+    "thumbnail": "/static/blog/the-t/thumbnails/067_thumbnail.png",
+    "og": "/static/blog/the-t/og/067_og.jpg"
+  },
+  "items": [
+    {
+      "position": 1,
+      "title": "NASCAR Race Classics",
+      "description": "Not highlights. Full live broadcast presentations of some of the greatest races in NASCAR history - the original feed, the original commentary, the original chaos - with on-screen fun facts and pop culture trivia dropping in real time as the race unfolds.\n\nWatching the broadcast as it aired puts you back inside the moment in a way a retrospective never does. You know how it ends. You still feel it.\n\nIf you only watch one thing on this list, start here.",
+      "contentTitle": "NASCAR Race Classics (2021)",
+      "tubiLink": "https://tubitv.com/series/300007525",
+      "contentId": "300007525",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/067_title_1_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/067_title_1_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/067_title_1_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Documentary",
+      "year": "2021",
+      "runtime": "1 Season",
+      "rating": "TV-PG"
+    },
+    {
+      "position": 2,
+      "title": "NASCAR 75: The Greatest Countdown Show Ever!",
+      "description": "NASCAR turned 75 and someone had to rank it all. The greatest moments, the craziest finishes, the ones nobody saw coming - stacked into a single countdown special.\n\nHalf the fun is yelling at your screen when something lands too high or gets left off entirely. This one earns that reaction.\n\nGood for a rewatch night. Better with someone who has very strong opinions about the order.",
+      "contentTitle": "NASCAR 75: The Greatest Countdown Show Ever! (2023)",
+      "tubiLink": "https://tubitv.com/movies/100010299",
+      "contentId": "100010299",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/067_title_2_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/067_title_2_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/067_title_2_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Sport",
+      "year": "2023",
+      "runtime": "44m",
+      "rating": "TV-PG"
+    },
+    {
+      "position": 3,
+      "title": "NASCAR on FOX Films",
+      "description": "This one zeroes in on Charlotte Motor Speedway specifically - the people, the events, the marquee moments that made it what it is - produced by FOX Films and NASCAR Productions together.\n\nFOX has been in the broadcast booth for decades, and that access shows. The footage is sharp, the stories are specific, and the focus on one track means nothing gets glossed over.\n\nFor Charlotte fans, this one's personal.",
+      "contentTitle": "NASCAR on FOX Films (2023)",
+      "tubiLink": "https://tubitv.com/series/300007526",
+      "contentId": "300007526",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/067_title_3_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/067_title_3_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/067_title_3_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Documentary",
+      "year": "2023",
+      "runtime": "10 Seasons",
+      "rating": "TV-PG"
+    },
+    {
+      "position": 4,
+      "title": "NASCAR Presents: Beyond the Wheel",
+      "description": "Three short documentaries, one through-line: the stories behind the sport that never show up on the leaderboard.\n\nThe centerpiece is Hendrick Motorsports' 40th anniversary - the most successful team in NASCAR history, full stop. Fourteen championships. Drivers whose names are on the Mount Rushmore of the sport. A team culture that figured out something most organizations spend decades chasing and never find.\n\nEach doc is tight and specific and doesn't overstay its welcome. Good for a night when you want substance without a two-hour commitment.",
+      "contentTitle": "NASCAR Presents: Beyond the Wheel (2024)",
+      "tubiLink": "https://tubitv.com/series/300014778",
+      "contentId": "300014778",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/067_title_4_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/067_title_4_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/067_title_4_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Sport",
+      "year": "2024",
+      "runtime": "1 Season",
+      "rating": "TV-G"
+    },
+    {
+      "position": 5,
+      "title": "Stock Car Legends Reunion",
+      "description": "Get 24 NASCAR legends together and ask them to relive the moments that built the sport. What you get isn't a highlight reel - it's the stories behind the highlights, told by the people who were actually inside the cars.\n\nThe crashes are part of it. So are the iconic machines and the moments that didn't make the official history books. Shot in 1999, this one has the texture of a time when the sport was still figuring out what it was becoming.\n\nThese are not people reciting talking points. They remember exactly what happened, and it shows.",
+      "contentTitle": "Stock Car Legends Reunion (1999)",
+      "tubiLink": "https://tubitv.com/series/300019608",
+      "contentId": "300019608",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/067_title_5_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/067_title_5_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/067_title_5_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Documentary",
+      "year": "1999",
+      "runtime": "1 Season",
+      "rating": "TV-PG"
+    },
+    {
+      "position": 6,
+      "title": "NASCAR: Lead Legacy",
+      "description": "Before the sponsorships and the superspeedways, there were moonshiners who needed to outrun federal agents and figured out that a faster car was the whole solution. That's where stock car racing actually comes from.\n\nThis documentary traces the full arc - from the beaches of Daytona where it started to the televised sport it became worldwide. The origin story is the best part, and it doesn't rush past it to get to the modern era.\n\nIf you've ever wondered why NASCAR culture runs so deep in the South, this is where you find out.",
+      "contentTitle": "NASCAR: Lead Legacy (2022)",
+      "tubiLink": "https://tubitv.com/movies/100031991",
+      "contentId": "100031991",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/067_title_6_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/067_title_6_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/067_title_6_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Documentary",
+      "year": "2022",
+      "runtime": "48m",
+      "rating": "TV-14"
+    },
+    {
+      "position": 7,
+      "title": "Classic Stock Car Racing (Vintage NASCAR)",
+      "description": "This is the footage from the beginning. Not a documentary looking back at early NASCAR - the actual races, the actual cars, the actual tracks from when the sport was still working out what it was.\n\nThe cars look nothing like what you see today. The safety infrastructure looks nothing like today. The whole operation has the feel of something being invented in real time by people who were making it up as they went.\n\nEverything else on this list came from somewhere. This is where it came from.",
+      "contentTitle": "Classic Stock Car Racing (Vintage NASCAR) (1960)",
+      "tubiLink": "https://tubitv.com/series/300008685",
+      "contentId": "300008685",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/067_title_7_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/067_title_7_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/067_title_7_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Documentary",
+      "year": "1960",
+      "runtime": "1 Season",
+      "rating": "TV-14"
+    },
+    {
+      "position": 8,
+      "title": "3 Weeks to Daytona",
+      "description": "A stock car racer gets one more shot and three weeks to make it count. The premise is simple, but anyone who's watched a driver claw back from a bad season knows that feeling doesn't need to be dressed up.\n\nThe racing is the backdrop. The comeback is the story. It leans into the drama and doesn't apologize for it.\n\nWhen you want the emotional side of the sport without sitting through a full documentary, this is the move.",
+      "contentTitle": "3 Weeks to Daytona (2011)",
+      "tubiLink": "https://tubitv.com/movies/543197",
+      "contentId": "543197",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/067_title_8_landscape.png",
+        "poster": "/static/blog/the-t/listicles/067_title_8_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/067_title_8_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Drama",
+      "year": "2011",
+      "runtime": "1h 27m",
+      "rating": "TV-14"
+    },
+    {
+      "position": 9,
+      "title": "Stroker Ace",
+      "description": "Stroker Ace burns bridges with his sponsor and ends up locked into the worst contract in motorsports history - racing for a fried chicken chain, in a chicken suit, with absolutely no way out.\n\nBurt Reynolds plays it exactly the way you'd want him to. Loni Anderson is there. Ned Beatty plays the fried chicken magnate with full commitment. The whole thing is a 1983 action-comedy that knows exactly what it is and has zero interest in being anything else.\n\nNot every NASCAR night needs to be serious. Sometimes it needs to be this.",
+      "contentTitle": "Stroker Ace (1983)",
+      "tubiLink": "https://tubitv.com/movies/100028539",
+      "contentId": "100028539",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/067_title_9_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/067_title_9_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/067_title_9_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Action",
+      "year": "1983",
+      "runtime": "1h 34m",
+      "rating": "PG"
+    },
+    {
+      "position": 10,
+      "title": "NASCAR: Lead Legacy",
+      "description": "The beaches of Daytona are where it started - actual beach racing, on actual sand, before there was a speedway or a broadcast deal or a points system worth arguing about.\n\nThis version of the Lead Legacy story puts the visual contrast front and center: where the cars ran then versus the superspeedways they run now. The distance between those two images is the whole history of the sport in one frame.\n\nWatch it back-to-back with the Vintage NASCAR footage. One gives you the archive. This one gives you the arc.",
+      "contentTitle": "NASCAR: Lead Legacy (2022)",
+      "tubiLink": "https://tubitv.com/movies/100029241",
+      "contentId": "100029241",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/067_title_10_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/067_title_10_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/067_title_10_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Documentary",
+      "year": "2022",
+      "runtime": "48m",
+      "rating": "TV-14"
+    }
+  ],
+  "keepReading": {
+    "header": {
+      "title": "Keep Reading",
+      "subtitle": "More articles to explore"
+    },
+    "items": [
+      {
+        "id": "065",
+        "slug": "fox-sports-on-tubi-whats-streaming-live-right-now",
+        "eyebrow": "What to Watch",
+        "title": "Fox Sports on Tubi: What's Streaming Live Right Now",
+        "subtitle": "What's live, what's next, and what's worth tuning into.",
+        "categoryTag": "Sports",
+        "thumbnail": "/static/blog/the-t/thumbnails/065_thumbnail.jpg"
+      },
+      {
+        "id": "063",
+        "slug": "watch-football-movies-and-documentaries-free-on-tubi",
+        "eyebrow": "What to Watch",
+        "title": "Watch Football Movies and Documentaries Free on Tubi",
+        "subtitle": "A Football Life, Undefeated, Blue Mountain State, and more, no subscription required.",
+        "categoryTag": "Sports",
+        "thumbnail": "/static/blog/the-t/thumbnails/063_thumbnail.jpg"
+      },
+      {
+        "id": "033",
+        "slug": "tubis-best-action-movie-collection",
+        "eyebrow": "What to Watch",
+        "title": "Tubi's Best Action Movie Collection",
+        "subtitle": "Fast-moving stories with just enough weight behind the action.",
+        "categoryTag": "Movies",
+        "thumbnail": "/static/blog/the-t/thumbnails/033_thumbnail.jpg"
+      }
+    ]
+  },
+  "datePosted": "2026-05-26"
+}

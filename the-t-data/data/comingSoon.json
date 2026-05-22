@@ -1,0 +1,199 @@
+{
+  "_doc": {
+    "description": "Coming Soon-only slice of The T content. Rendered by src/web/features/theT/components/ComingSoonPage.tsx. Field names mirror the canonical Static Upload Tubi Blog data — `eyebrow`, `subtitle`, `categoryTag`, `curatorTag`, `hero`, `slug` — so this file can be regenerated from the source JSONs without renaming. Section chrome (`{section}.header.title` + `{section}.header.subtitle`) is editorial copy authored alongside the slot data so the same JSON drives both the section heading and its content.",
+    "source": "~/Desktop/Static Upload Tubi Blog/{world-cup,single-titles}.json — every entry with `pageLocation: \"Coming Soon\"`. Top story is id 015 (world-cup.json), second story is id 019 (single-titles.json); the Arriving Soon rail draws from ids 016–018, the unlabeled More Titles rail from 020–022, and the closing Keep Reading rail from 023–025 (all single-titles.json).",
+    "doNotInclude": "intro, whatsComing[], quote, whyWatchIt, whenToWatch, needAccount, whatDevices, datePosted, type, pageLocation — only the fields the Coming Soon page actually renders should ship in this chunk.",
+    "linking": "Every article card / hero uses the canonical URL `/the-t/articles/<slug>`. Each slot stores just the bare `slug` (e.g. `fifa-world-cup-2026-on-tubi`); the renderer (`homePageData.ts → buildArticleHref`) prepends the prefix. The article route (`containers/Article.tsx`) fetches the matching JSON under `static/blog/the-t/data/articles/` and branches on its `type` field (`'article'` vs `'listicle'`) to dispatch to ArticleDetailsPage (single) or ArticleListPage (listicle), so the article kind is NOT duplicated here. The optional `watchLink` on some slots is reserved for future CTAs that route directly into the Tubi catalog; it does NOT influence the article href."
+  },
+  "nav": {
+    "logoLabel": "The T",
+    "links": [
+      {
+        "label": "Home",
+        "href": "/the-t"
+      },
+      {
+        "label": "Coming Soon",
+        "href": "/the-t/coming-soon"
+      },
+      {
+        "label": "Shows",
+        "href": "/the-t/shows"
+      },
+      {
+        "label": "Movies",
+        "href": "/the-t/movies"
+      }
+    ],
+    "explore": {
+      "label": "Explore",
+      "items": [
+        {
+          "label": "FIFA World Cup 2026",
+          "href": "/the-t/fifa-world-cup"
+        },
+        {
+          "label": "Horror",
+          "href": "/the-t/horror"
+        },
+        {
+          "label": "Tubi Originals",
+          "href": "/the-t/originals"
+        },
+        {
+          "label": "Sports",
+          "href": "/the-t/sports"
+        }
+      ],
+      "moreGenresLabel": "More genres",
+      "moreGenresHref": "/the-t/genres"
+    },
+    "mobileMenu": {
+      "open": "Open menu",
+      "close": "Close menu"
+    }
+  },
+  "topStory": {
+    "id": "016",
+    "slug": "men-in-black-international-on-tubi",
+    "eyebrow": "Available 6/1",
+    "title": "Men in Black: International Coming Soon",
+    "subtitle": "Tessa Thompson and Chris Hemsworth are the new agents, and the threats are not getting smaller.",
+    "categoryTag": "Coming Soon",
+    "hero": "/static/blog/the-t/heroes/016_hero.png",
+    "watchLink": "https://tubitv.com/movies/100058315/men-in-black-international",
+    "contentId": "100058315",
+    "hasVideoPlaybackSupport": true
+  },
+  "secondStory": {
+    "id": "019",
+    "slug": "the-grudge-2020-on-tubi",
+    "eyebrow": "Available 6/1",
+    "title": "The Grudge (2020) Hits Tubi This Month",
+    "subtitle": "The curse doesn't follow rules, and neither does this version of it.",
+    "categoryTag": "Coming Soon",
+    "hero": "/static/blog/the-t/heroes/019_hero.png",
+    "watchLink": "https://tubitv.com/movies/100032111/the-grudge",
+    "contentId": "100032111",
+    "hasVideoPlaybackSupport": true
+  },
+  "arrivingSoon": {
+    "header": {
+      "title": "Arriving Soon",
+      "subtitle": "New titles making their way to you soon"
+    },
+    "items": [
+      {
+        "id": "015",
+        "slug": "fifa-world-cup-2026-on-tubi",
+        "eyebrow": "Available 6/11",
+        "title": "FIFA World Cup 2026 on Tubi",
+        "subtitle": "Start with the documentary already streaming, then come back for Mexico and the USMNT kicking off live on Tubi in June.",
+        "categoryTag": "Coming Soon",
+        "thumbnail": "/static/blog/the-t/thumbnails/015_thumbnail.jpg",
+        "watchLink": "https://tubitv.com/hubs/fifa-world-cup-fox-hub"
+      },
+      {
+        "id": "017",
+        "slug": "the-night-shift-on-tubi",
+        "eyebrow": "Available 6/5",
+        "title": "The Night Shift: What You Need to Know Before It Hits Tubi",
+        "subtitle": "Same night, same killer, same dead end.",
+        "categoryTag": "Coming Soon",
+        "thumbnail": "/static/blog/the-t/thumbnails/017_thumbnail.jpg",
+        "watchLink": "https://tubitv.com/movies/463617/nightshift",
+        "contentId": "463617"
+      },
+      {
+        "id": "018",
+        "slug": "i-didnt-do-it-tubis-new-true-crime-original",
+        "eyebrow": "Available 5/22",
+        "title": "I Didn't Do It: Tubi's New True-Crime Original",
+        "subtitle": "They lost everything. Now they're taking the truth back.",
+        "categoryTag": "Coming Soon",
+        "thumbnail": "/static/blog/the-t/thumbnails/018_thumbnail.png",
+        "watchLink": "https://tubitv.com/series/331/i-didnt-do-it",
+        "contentId": "331"
+      }
+    ]
+  },
+  "moreTitles": {
+    "items": [
+      {
+        "id": "020",
+        "slug": "a-new-episode-of-the-goal-ahead",
+        "eyebrow": "Available 5/28",
+        "title": "A New Episode of 'The Goal Ahead' Arrives Soon",
+        "subtitle": "Three football stars. One global stage.",
+        "categoryTag": "Coming Soon",
+        "thumbnail": "/static/blog/the-t/thumbnails/020_thumbnail.jpg",
+        "watchLink": "https://tubitv.com/series/300020292/the-goal-ahead",
+        "contentId": "300020292"
+      },
+      {
+        "id": "021",
+        "slug": "emoji-movie-on-tubi",
+        "eyebrow": "Available 6/1",
+        "title": "Emoji Movie Is Back and Better Than Ever",
+        "subtitle": "Gene just wants to feel something. Turns out that's a lot to ask of a phone.",
+        "categoryTag": "Coming Soon",
+        "thumbnail": "/static/blog/the-t/thumbnails/021_thumbnail.jpg",
+        "watchLink": "https://tubitv.com/movies/100015286/the-emoji-movie",
+        "contentId": "100015286"
+      },
+      {
+        "id": "022",
+        "slug": "watch-jurassic-world-free-on-tubi",
+        "eyebrow": "Available 6/1",
+        "title": "Watch Jurassic World Free on Tubi",
+        "subtitle": "Chris Pratt, a genetically engineered nightmare, and twenty years of not learning anything.",
+        "categoryTag": "Coming Soon",
+        "thumbnail": "/static/blog/the-t/thumbnails/022_thumbnail.jpg",
+        "watchLink": "https://tubitv.com/movies/100003573/jurassic-world",
+        "contentId": "100003573"
+      }
+    ]
+  },
+  "keepReading": {
+    "header": {
+      "title": "Keep Reading",
+      "subtitle": "More articles to explore"
+    },
+    "items": [
+      {
+        "id": "023",
+        "slug": "the-stepfather-comes-to-tubi-june-19",
+        "eyebrow": "Available 6/19",
+        "title": "The Stepfather Comes to Tubi June 19",
+        "subtitle": "He wants a perfect family. The last one didn't work out.",
+        "categoryTag": "Coming Soon",
+        "thumbnail": "/static/blog/the-t/thumbnails/023_thumbnail.jpg",
+        "watchLink": "https://tubitv.com/movies/100040185/the-stepfather",
+        "contentId": "100040185"
+      },
+      {
+        "id": "052",
+        "slug": "between-the-cheats-season-3-is-coming-to-tubi",
+        "eyebrow": "Available 6/17",
+        "title": "Between the Cheats Season 3 Is Coming to Tubi",
+        "subtitle": "When infidelity ends in murder, the receipts are all real.",
+        "categoryTag": "Originals",
+        "thumbnail": "/static/blog/the-t/thumbnails/052_thumbnail.jpg",
+        "watchLink": "https://tubitv.com/series/300018074/between-the-cheats",
+        "contentId": "300018074"
+      },
+      {
+        "id": "025",
+        "slug": "overlord-2018-free-on-tubi",
+        "eyebrow": "Available 6/1",
+        "title": "Overlord (2018): Watch J.J. Abrams' WWII Horror Free on Tubi",
+        "subtitle": "They were supposed to blow up a radio tower. Then they found what was in the basement.",
+        "categoryTag": "Coming Soon",
+        "thumbnail": "/static/blog/the-t/thumbnails/025_thumbnail.jpg",
+        "watchLink": "https://tubitv.com/movies/100053677/overlord",
+        "contentId": "100053677"
+      }
+    ]
+  },
+  "pageTitle": "Discover Upcoming Movies, TV Shows, and Trailers on Tubi"
+}

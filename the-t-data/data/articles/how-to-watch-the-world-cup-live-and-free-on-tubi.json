@@ -1,0 +1,160 @@
+{
+  "nav": {
+    "logoLabel": "The T",
+    "links": [
+      {
+        "label": "Home",
+        "href": "/the-t"
+      },
+      {
+        "label": "Coming Soon",
+        "href": "/the-t/coming-soon"
+      },
+      {
+        "label": "Shows",
+        "href": "/the-t/shows"
+      },
+      {
+        "label": "Movies",
+        "href": "/the-t/movies"
+      }
+    ],
+    "explore": {
+      "label": "Explore",
+      "items": [
+        {
+          "label": "FIFA World Cup 2026",
+          "href": "/the-t/fifa-world-cup"
+        },
+        {
+          "label": "Horror",
+          "href": "/the-t/horror"
+        },
+        {
+          "label": "Tubi Originals",
+          "href": "/the-t/originals"
+        },
+        {
+          "label": "Sports",
+          "href": "/the-t/sports"
+        }
+      ],
+      "moreGenresLabel": "More genres",
+      "moreGenresHref": "/the-t/genres"
+    },
+    "mobileMenu": {
+      "open": "Open menu",
+      "close": "Close menu"
+    }
+  },
+  "id": "055",
+  "slug": "how-to-watch-the-world-cup-live-and-free-on-tubi",
+  "categoryTag": "Sports",
+  "type": "article",
+  "title": "USA vs. Paraguay: How to Watch the World Cup Live and Free on Tubi",
+  "subtitle": "Catch every minute of USA vs. Paraguay live on Tubi, with full replays on demand after the final whistle.",
+  "datePosted": "2026-05-26",
+  "intro": "The USMNT has not played a World Cup match on home soil since 1994. That changes on June 12, 2026. The team opens Group D against Paraguay at Los Angeles Stadium in Inglewood, kickoff at 6 PM PT. Weston McKennie is part of the squad, and he is also featured in Destination World Cup 2026, which is already streaming on Tubi. Watch the road to the match now, then come back to stream the match itself live, free, with a Tubi account.",
+  "quote": "The road to Los Angeles is already streaming, and the match arrives June 12.",
+  "faq": {
+    "header": {
+      "title": "More details"
+    },
+    "items": [
+      {
+        "question": "When does the FIFA World Cup 2026™ start?",
+        "answer": "FIFA World Cup 2026™ kicks off with an opening ceremony and match on Thursday, June 11. Pregame 1:00 PM ET. Kickoff 3:00 PM ET. You can stream both events LIVE & FREE in 4K* on Tubi with a free account."
+      },
+      {
+        "question": "Do I need an account to watch FIFA World Cup 2026™ on Tubi?",
+        "answer": "Yes. You need to register for a free account and sign in, but it’s quick and easy. We promise."
+      },
+      {
+        "question": "What devices can I use to stream FIFA World Cup 2026™ on Tubi?",
+        "answer": "Tubi works on most smart TVs, mobile devices, streaming devices, gaming consoles, and web browsers. Visit the Help Center for a complete list of supported devices. Don’t wanna miss a gooooooal? Get the Tubi mobile app to stream on the go."
+      }
+    ]
+  },
+  "images": {
+    "thumbnail": "/static/blog/the-t/thumbnails/055_thumbnail.png",
+    "hero": "/static/blog/the-t/heroes/055_hero.png",
+    "og": "/static/blog/the-t/og/055_og.png"
+  },
+  "keepReading": {
+    "header": {
+      "title": "Keep Reading",
+      "subtitle": "More articles to explore"
+    },
+    "items": [
+      {
+        "id": "003",
+        "slug": "how-to-watch-2026-world-cup-matches-live-for-free-on-tubi",
+        "eyebrow": "Guide",
+        "title": "How to Watch 2026 World Cup Matches Live for Free on Tubi",
+        "subtitle": "The World Cup hub is live on Tubi now. Stream Mexico and the USMNT free during opening week.",
+        "categoryTag": "Sports",
+        "thumbnail": "/static/blog/the-t/thumbnails/003_thumbnail.png"
+      },
+      {
+        "id": "057",
+        "slug": "how-to-stream-key-world-cup-matches-and-pre-game-shows-online",
+        "eyebrow": "Guide",
+        "title": "How to Stream Key World Cup Matches and Pre-Game Shows Online",
+        "subtitle": "Your full guide to the can't-miss matches, the pre-game shows worth tuning in for, and how to stream it all free on Tubi.",
+        "categoryTag": "Sports",
+        "thumbnail": "/static/blog/the-t/thumbnails/057_thumbnail.jpg"
+      },
+      {
+        "id": "060",
+        "slug": "best-soccer-stories-to-stream",
+        "eyebrow": "What to Watch",
+        "title": "Beyond the Pitch: The Best Soccer Stories to Stream Now",
+        "subtitle": "The stories behind the game, before the World Cup begins",
+        "categoryTag": "Sports",
+        "thumbnail": "/static/blog/the-t/thumbnails/060_thumbnail.jpg"
+      }
+    ]
+  },
+  "hero": {
+    "watchLink": "https://tubitv.com/hubs/fifa-world-cup-fox-hub",
+    "watchNowLabel": "Watch Now"
+  },
+  "whyWatch": {
+    "header": {
+      "title": "Why Watch It"
+    },
+    "body": "Thirty-two years is a long time to wait to host a World Cup match again. This is not just a group stage opener.\n\nParaguay came through one of the toughest qualification paths in soccer and has no interest in making Los Angeles a comfortable night for the US. This match will tell you a lot about where this team actually stands, especially with Australia and Türkiye still waiting in Group D."
+  },
+  "gallery": {
+    "header": {
+      "title": "Media Shots"
+    },
+    "items": [
+      "/static/blog/the-t/media/055_media_1.png",
+      "/static/blog/the-t/media/055_media_2.png"
+    ]
+  },
+  "whatsComing": {
+    "header": {
+      "title": "What's Coming"
+    },
+    "items": [
+      {
+        "heading": "Fox Pregame",
+        "paragraph": "The broadcast starts before kickoff with Fox Pregame, where you get team news, lineup context, and a real feel for the atmosphere building inside Los Angeles Stadium. For a home World Cup opener, the buildup is not filler. It is part of what makes the night feel as big as it is."
+      },
+      {
+        "heading": "USA vs. Paraguay, 6:00 PM PT, June 12",
+        "paragraph": "This is Match 4 of the tournament and the USMNT's first game of the group stage. Paraguay qualified through CONMEBOL and brings a serious challenge into Inglewood. Ricardo Pepi leads the attack, Weston McKennie anchors the midfield, and the US will need to handle both the pressure of a home crowd and a team that earned its spot the hard way."
+      },
+      {
+        "heading": "Post-game coverage",
+        "paragraph": "After the final whistle, Fox's post-match show breaks down the result live on Tubi. Whether the US starts strong or leaves fans with more questions than answers, the post-game coverage helps you make sense of what just happened before the rest of Group D starts moving."
+      },
+      {
+        "heading": "VOD replay",
+        "paragraph": "Miss the live match? The full 90-minute replay goes up on Tubi within 1 to 2 hours after the final whistle. No sign-in required. It includes match footage only, without pregame or post-game coverage."
+      }
+    ]
+  }
+}

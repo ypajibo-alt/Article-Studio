@@ -1,0 +1,289 @@
+{
+  "nav": {
+    "logoLabel": "The T",
+    "links": [
+      {
+        "label": "Home",
+        "href": "/the-t"
+      },
+      {
+        "label": "Coming Soon",
+        "href": "/the-t/coming-soon"
+      },
+      {
+        "label": "Shows",
+        "href": "/the-t/shows"
+      },
+      {
+        "label": "Movies",
+        "href": "/the-t/movies"
+      }
+    ],
+    "explore": {
+      "label": "Explore",
+      "items": [
+        {
+          "label": "FIFA World Cup 2026",
+          "href": "/the-t/fifa-world-cup"
+        },
+        {
+          "label": "Horror",
+          "href": "/the-t/horror"
+        },
+        {
+          "label": "Tubi Originals",
+          "href": "/the-t/originals"
+        },
+        {
+          "label": "Sports",
+          "href": "/the-t/sports"
+        }
+      ],
+      "moreGenresLabel": "More genres",
+      "moreGenresHref": "/the-t/genres"
+    },
+    "mobileMenu": {
+      "open": "Open menu",
+      "close": "Close menu"
+    }
+  },
+  "id": "066",
+  "slug": "mlb-games-and-recaps-on-tubi",
+  "categoryTag": "Sports",
+  "type": "listicle",
+  "title": "MLB Games and Recaps on Tubi",
+  "subtitle": "The walk-offs, the weirdos, the World Series. All free.",
+  "intro": "Baseball doesn't just have great games. It has moments that live in your chest for decades.\n\nTim Wakefield and R.A. Dickey throwing a pitch so unpredictable it ends careers. The World Series, revisited through the people who were actually there. A countdown of defensive plays so absurd they barely seem real. All of it on Tubi, all of it free.\n\nHere's everything worth watching.",
+  "images": {
+    "thumbnail": "/static/blog/the-t/thumbnails/066_thumbnail.jpg",
+    "og": "/static/blog/the-t/og/066_og.jpg"
+  },
+  "items": [
+    {
+      "position": 1,
+      "title": "Knuckleball!",
+      "description": "The knuckleball doesn't spin. Nobody fully controls it - not the pitcher, not the catcher, not the batter. It just goes where it wants.\n\nThis documentary follows Tim Wakefield and R.A. Dickey through an MLB season built entirely around a pitch that has no business working at the major league level. What makes it stick is how isolated these guys are. Knuckleball pitchers are their own fraternity, and the film captures what it costs to build a career on something that unreliable.\n\nDickey's season in particular is something else. He's 37, running out of time, and betting everything on a pitch that could embarrass him on any given night.",
+      "contentTitle": "Knuckleball! (2012)",
+      "tubiLink": "https://tubitv.com/movies/100041838",
+      "contentId": "100041838",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/066_title_1_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/066_title_1_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/066_title_1_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Documentary",
+      "year": "2012",
+      "runtime": "1h 34m",
+      "rating": "TV-PG"
+    },
+    {
+      "position": 2,
+      "title": "MLB World Series Films",
+      "description": "You watched the games. This is what was happening when the cameras weren't pointed at the field.\n\nMLB Productions has been inside the World Series for years - the locker rooms, the manager's office, the moments between innings when everything is on the line and nobody looks composed. Each film covers a different championship run, and the range is the whole point: dynasties, upsets, series that went to seven games and left everyone wrecked.\n\nIf you want to know what a World Series actually feels like from the inside, this is the closest you're getting without a credential.",
+      "contentTitle": "MLB World Series Films (2022)",
+      "tubiLink": "https://tubitv.com/series/300007554",
+      "contentId": "300007554",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/066_title_2_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/066_title_2_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/066_title_2_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Reality",
+      "year": "2022",
+      "runtime": "1 Season",
+      "rating": "TV-G"
+    },
+    {
+      "position": 3,
+      "title": "Great Games",
+      "description": "Some games you forget by the next morning. These are the ones you're still thinking about twenty years later.\n\nWalk-off grand slams. Comebacks that had no business happening. Postseason thrillers where the outcome wasn't settled until the last possible moment. Full game recaps with context, reconstructing the feeling of watching something you couldn't believe was real.\n\nFor fans who were there live, it's a time machine. For fans who weren't, it's a crash course in why baseball has the most dramatic endings in professional sports.",
+      "contentTitle": "Great Games (2011)",
+      "tubiLink": "https://tubitv.com/series/300000078",
+      "contentId": "300000078",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/066_title_3_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/066_title_3_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/066_title_3_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Sport",
+      "year": "2011",
+      "runtime": "8 Seasons",
+      "rating": "TV-G"
+    },
+    {
+      "position": 4,
+      "title": "MLB Network Countdown",
+      "description": "Defensive rankings are fun. Bizarre moments are better. MLB Network Countdown covers both, and the weird stuff is where this series really earns your time.\n\nBaseball has a higher concentration of genuinely strange plays than any other sport - the ball that goes through someone's legs, the call that changes a perfect game, the catch that shouldn't have been physically possible. The countdown format means you're always waiting to see what lands at the top.\n\nSatisfying if the order feels right. Infuriating if it doesn't. Either way, you'll have opinions.",
+      "contentTitle": "MLB Network Countdown (2010)",
+      "tubiLink": "https://tubitv.com/series/300000075",
+      "contentId": "300000075",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/066_title_4_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/066_title_4_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/066_title_4_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Sport",
+      "year": "2010",
+      "runtime": "1 Season",
+      "rating": "TV-G"
+    },
+    {
+      "position": 5,
+      "title": "MLB on FOX Films",
+      "description": "FOX has been broadcasting baseball for thirty years. This is their version of what mattered.\n\nA broadcaster's retrospective isn't the same as a league's retrospective, and that distinction is more interesting than it sounds. FOX was in the production truck for the moments that defined the modern game, and the athletes and events they chose to center say something about how the sport looked to the people putting it on national television.\n\nRecent enough to cover the current era, specific enough to have a real point of view. If you want the broadcast history alongside the game history, start here.",
+      "contentTitle": "MLB on FOX Films (2023)",
+      "tubiLink": "https://tubitv.com/series/300007555",
+      "contentId": "300007555",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/066_title_5_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/066_title_5_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/066_title_5_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Reality",
+      "year": "2023",
+      "runtime": "6 Seasons",
+      "rating": "TV-PG"
+    },
+    {
+      "position": 6,
+      "title": "MLB Originals",
+      "description": "Stats don't explain why certain games still matter. The context does - the season-long pressure, the player who wasn't supposed to be there, the franchise that had been waiting thirty years.\n\nMLB Originals treats baseball history as narrative, not just record-keeping. Each piece focuses on a specific storyline or game and builds out the full picture of what made it significant. The range covers decades of major league history, so there's no single era this series belongs to.\n\nPick the game you remember most and watch it again with everything you didn't know at the time.",
+      "contentTitle": "MLB Originals (2015)",
+      "tubiLink": "https://tubitv.com/series/300000030",
+      "contentId": "300000030",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/066_title_6_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/066_title_6_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/066_title_6_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Documentary",
+      "year": "2015",
+      "runtime": "2 Seasons",
+      "rating": "TV-G"
+    },
+    {
+      "position": 7,
+      "title": "MLB Ultimate Lineup",
+      "description": "Big leaguers remembering a season they just lived through hits differently than a ten-year retrospective. The details are sharper. The opinions are less polished.\n\nMLB Ultimate Lineup pulls players and insiders back through the 2014 season - the strikeouts, the tirades, the postseason catches, the clutch moments that decided games. The recall is specific enough to feel like being in the room.\n\nIf 2014 was your year, this is the full picture. If you missed it, this is a solid argument for why it was worth paying attention to.",
+      "contentTitle": "MLB Ultimate Lineup (2015)",
+      "tubiLink": "https://tubitv.com/series/300000076",
+      "contentId": "300000076",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/066_title_7_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/066_title_7_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/066_title_7_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Sport",
+      "year": "2015",
+      "runtime": "1 Season",
+      "rating": "TV-G"
+    },
+    {
+      "position": 8,
+      "title": "All-Star Highlights",
+      "description": "1980. The All-Star Game looked different, the uniforms looked different, and the players on the field were the ones your parents argued about.\n\nAll-Star Highlights is straight archival footage from MLB's best at the Midsummer Classic, and the age of the material is the point. No modern production polish - just the game as it was, captured in the era when it happened.\n\nFor fans who want to see what the best in baseball looked like before the highlight era, this is the time capsule. For everyone else, it's a reminder that the arguments about who belongs in the game are as old as the game itself.",
+      "contentTitle": "All-Star Highlights (1980)",
+      "tubiLink": "https://tubitv.com/series/300004043",
+      "contentId": "300004043",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/066_title_8_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/066_title_8_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/066_title_8_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Sport",
+      "year": "1980",
+      "runtime": "1 Season",
+      "rating": "TV-PG"
+    },
+    {
+      "position": 9,
+      "title": "The Natural: The Best There Ever Was",
+      "description": "Most sports movies get the sport wrong. The Natural got something right, and baseball people have been saying so for forty years.\n\nThis documentary celebrates the film with never-before-seen footage and interviews from the original cast and crew. But the real question it's asking is how a fictional story became part of baseball's actual mythology. Robert Redford never played professionally. The stadium doesn't exist. None of it happened. And yet that home run is as embedded in baseball culture as any real one.\n\nThe interviews with the people who made it get into exactly how that happened, and they're more interesting than you'd expect.",
+      "contentTitle": "The Natural: The Best There Ever Was (2015)",
+      "tubiLink": "https://tubitv.com/movies/437590",
+      "contentId": "437590",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/066_title_9_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/066_title_9_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/066_title_9_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Documentary",
+      "year": "2015",
+      "runtime": "1h 28m",
+      "rating": "TV-PG"
+    },
+    {
+      "position": 10,
+      "title": "Major League: Back to the Minors",
+      "description": "Yes, this is the third Major League movie. No, it doesn't have Charlie Sheen.\n\nWhat it does have is a minor league roster full of guys who are one bad season away from selling insurance, a manager trying to build something out of nothing, and a rivalry with a major league snob that goes exactly as petty as you'd hope. The minor league setting is what makes it work - there's a specific kind of desperation in the bus rides and the small stadiums that the original film never had to deal with.\n\nIt's loose, it's funny, and it knows exactly what it is.",
+      "contentTitle": "Major League: Back to the Minors (1998)",
+      "tubiLink": "https://tubitv.com/movies/100039098",
+      "contentId": "100039098",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/066_title_10_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/066_title_10_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/066_title_10_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Comedy",
+      "year": "1998",
+      "runtime": "1h 40m",
+      "rating": "PG-13"
+    }
+  ],
+  "keepReading": {
+    "header": {
+      "title": "Keep Reading",
+      "subtitle": "More articles to explore"
+    },
+    "items": [
+      {
+        "id": "064",
+        "slug": "watch-nba-game-and-highlights-worth-watching-on-tubi",
+        "eyebrow": "What to Watch",
+        "title": "College Basketball Classics and Live Hoops on Tubi",
+        "subtitle": "Big Ten, Big 12, March Madness energy, all free, all on Tubi.",
+        "categoryTag": "Sports",
+        "thumbnail": "/static/blog/the-t/thumbnails/064_thumbnail.jpg"
+      },
+      {
+        "id": "067",
+        "slug": "every-nascar-race-and-replay-you-can-stream-on-tubi",
+        "eyebrow": "What to Watch",
+        "title": "Every NASCAR Race and Replay You Can Stream on Tubi",
+        "subtitle": "From moonshine runners to Hendrick Motorsports, all of it, free.",
+        "categoryTag": "Sports",
+        "thumbnail": "/static/blog/the-t/thumbnails/067_thumbnail.png"
+      },
+      {
+        "id": "030",
+        "slug": "the-best-docuseries-on-tubi",
+        "eyebrow": "What to Watch",
+        "title": "The Best Docuseries on Tubi You Need to Watch",
+        "subtitle": "Real stories that are built to keep you watching longer than planned.",
+        "categoryTag": "Shows",
+        "thumbnail": "/static/blog/the-t/thumbnails/030_thumbnail.jpg"
+      }
+    ]
+  },
+  "datePosted": "2026-05-26"
+}

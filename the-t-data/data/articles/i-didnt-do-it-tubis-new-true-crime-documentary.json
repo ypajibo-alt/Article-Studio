@@ -1,0 +1,148 @@
+{
+  "nav": {
+    "logoLabel": "The T",
+    "links": [
+      {
+        "label": "Home",
+        "href": "/the-t"
+      },
+      {
+        "label": "Coming Soon",
+        "href": "/the-t/coming-soon"
+      },
+      {
+        "label": "Shows",
+        "href": "/the-t/shows"
+      },
+      {
+        "label": "Movies",
+        "href": "/the-t/movies"
+      }
+    ],
+    "explore": {
+      "label": "Explore",
+      "items": [
+        {
+          "label": "FIFA World Cup 2026",
+          "href": "/the-t/fifa-world-cup"
+        },
+        {
+          "label": "Horror",
+          "href": "/the-t/horror"
+        },
+        {
+          "label": "Tubi Originals",
+          "href": "/the-t/originals"
+        },
+        {
+          "label": "Sports",
+          "href": "/the-t/sports"
+        }
+      ],
+      "moreGenresLabel": "More genres",
+      "moreGenresHref": "/the-t/genres"
+    },
+    "mobileMenu": {
+      "open": "Open menu",
+      "close": "Close menu"
+    }
+  },
+  "id": "051",
+  "slug": "i-didnt-do-it-tubis-new-true-crime-documentary",
+  "categoryTag": "Originals",
+  "type": "article",
+  "title": "I Didn't Do It: Tubi's New True Crime Documentary",
+  "subtitle": "These aren't cold case puzzles — they're people, and the system failed them.",
+  "datePosted": "2026-05-26",
+  "intro": "Wrongful conviction stories have a way of hitting different when the news cycle is full of them. I Didn't Do It doesn't treat these cases as entertainment fodder. It treats them as what they are: real people, real time lost, real fights to get their names back.\n\nThe timing of a show like this never really goes stale. Every year brings new exonerations, new scandals, new reasons to ask how this keeps happening. This series sits inside that question and doesn't let you look away.\n\nIt's the kind of documentary television that earns its place in the crime genre by refusing to sensationalize the crime itself. The real story here is always the aftermath, what happens to a person when the system decides it's done with them, whether it's right or not.",
+  "cast": {
+    "header": {
+      "title": "The Cast"
+    },
+    "items": [
+      {
+        "name": "Chris Noth",
+        "bio": "Noth brings a weight to this material that goes beyond narration duty. He's spent years playing men inside the legal system on screen, which means he knows exactly how hollow the phrase 'justice was served' can sound. That skepticism reads in every word he delivers here."
+      }
+    ]
+  },
+  "quote": "They took years. They're not getting the apology. Watch anyway.",
+  "faq": {
+    "header": {
+      "title": "More details"
+    },
+    "items": [
+      {
+        "question": "Who directed the film?",
+        "answer": "Director information is unavailable."
+      },
+      {
+        "question": "Who is in the cast?",
+        "answer": "Chris Noth"
+      },
+      {
+        "question": "Where can I stream this?",
+        "answer": "Watch free on Tubi"
+      }
+    ]
+  },
+  "images": {
+    "thumbnail": "/static/blog/the-t/thumbnails/051_thumbnail.png",
+    "hero": "/static/blog/the-t/heroes/051_hero.png",
+    "og": "/static/blog/the-t/og/051_og.jpg"
+  },
+  "keepReading": {
+    "header": {
+      "title": "Keep Reading",
+      "subtitle": "More articles to explore"
+    },
+    "items": [
+      {
+        "id": "018",
+        "slug": "i-didnt-do-it-tubis-new-true-crime-original",
+        "eyebrow": "Available 5/22",
+        "title": "I Didn't Do It: Tubi's New True-Crime Original",
+        "subtitle": "They lost everything. Now they're taking the truth back.",
+        "categoryTag": "Coming Soon",
+        "thumbnail": "/static/blog/the-t/thumbnails/018_thumbnail.png"
+      },
+      {
+        "id": "005",
+        "slug": "best-true-crime-shows-and-documentaries-on-tubi",
+        "eyebrow": "What to Watch",
+        "title": "Best True Crime Shows & Documentaries on Tubi Right Now",
+        "subtitle": "Some cases seem simple. These only get more complicated.",
+        "categoryTag": "Shows",
+        "thumbnail": "/static/blog/the-t/thumbnails/005_thumbnail.jpg"
+      },
+      {
+        "id": "030",
+        "slug": "the-best-docuseries-on-tubi",
+        "eyebrow": "What to Watch",
+        "title": "The Best Docuseries on Tubi You Need to Watch",
+        "subtitle": "Real stories that are built to keep you watching longer than planned.",
+        "categoryTag": "Shows",
+        "thumbnail": "/static/blog/the-t/thumbnails/030_thumbnail.png"
+      }
+    ]
+  },
+  "hero": {
+    "watchLink": "https://tubitv.com/series/331/i-didnt-do-it",
+    "contentId": "331",
+    "watchNowLabel": "Watch Now"
+  },
+  "whyWatch": {
+    "header": {
+      "title": "Why Watch It"
+    },
+    "body": "This one is for anyone who's ever watched a courtroom drama and wondered what happens when the drama is real and the stakes don't reset after the credits. It's not easy viewing, but it's the kind of thing that stays with you, and probably should."
+  },
+  "gallery": {
+    "header": {
+      "title": "Media Shots"
+    },
+    "items": [
+      "/static/blog/the-t/media/051_media_1.png"
+    ]
+  }
+}

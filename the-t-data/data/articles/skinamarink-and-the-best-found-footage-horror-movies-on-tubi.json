@@ -1,0 +1,289 @@
+{
+  "nav": {
+    "logoLabel": "The T",
+    "links": [
+      {
+        "label": "Home",
+        "href": "/the-t"
+      },
+      {
+        "label": "Coming Soon",
+        "href": "/the-t/coming-soon"
+      },
+      {
+        "label": "Shows",
+        "href": "/the-t/shows"
+      },
+      {
+        "label": "Movies",
+        "href": "/the-t/movies"
+      }
+    ],
+    "explore": {
+      "label": "Explore",
+      "items": [
+        {
+          "label": "FIFA World Cup 2026",
+          "href": "/the-t/fifa-world-cup"
+        },
+        {
+          "label": "Horror",
+          "href": "/the-t/horror"
+        },
+        {
+          "label": "Tubi Originals",
+          "href": "/the-t/originals"
+        },
+        {
+          "label": "Sports",
+          "href": "/the-t/sports"
+        }
+      ],
+      "moreGenresLabel": "More genres",
+      "moreGenresHref": "/the-t/genres"
+    },
+    "mobileMenu": {
+      "open": "Open menu",
+      "close": "Close menu"
+    }
+  },
+  "id": "043",
+  "slug": "skinamarink-and-the-best-found-footage-horror-movies-on-tubi",
+  "categoryTag": "Horror",
+  "type": "listicle",
+  "title": "Skinamarink and the Best Found Footage Horror on Tubi",
+  "subtitle": "Minimal, eerie, and built around what you don't see.",
+  "intro": "The best found footage horror isn't about the monster. It's about the moment you realize the camera has been pointed at something wrong this whole time.\n\nSkinamarink puts two kids in a house where the doors and windows have disappeared, and then refuses to show you anything clearly. The Taking of Deborah Logan starts as a medical documentary about an elderly woman with Alzheimer's and becomes something you will not be able to explain to anyone who hasn't seen it. REC seals a TV crew inside an apartment building and does not let them out.\n\nHere's everything worth watching.",
+  "images": {
+    "thumbnail": "/static/blog/the-t/thumbnails/043_thumbnail.jpg",
+    "og": "/static/blog/the-t/og/043_og.jpg"
+  },
+  "items": [
+    {
+      "position": 1,
+      "title": "Skinamarink",
+      "description": "Two kids wake up at 3am and their father is gone. Then the doors are gone. Then the windows.\n\nSkinamarink doesn't explain any of this. It just holds on corners, on ceilings, on the static glow of a cartoon playing on a TV in an empty room. Director Kyle Edward Ball shot it for $15,000 and somehow made it feel like a memory of a nightmare you had as a child - the kind where the geometry of your house was slightly off and you couldn't find anyone.\n\nThere's a moment where a voice comes from somewhere in the dark and asks one of the kids to do something, and the camera stays on the floor. That single choice tells you exactly what kind of film this is.",
+      "contentTitle": "Skinamarink (2022)",
+      "tubiLink": "https://tubitv.com/movies/100044384",
+      "contentId": "100044384",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/043_title_1_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/043_title_1_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/043_title_1_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Horror",
+      "year": "2022",
+      "runtime": "1h 40m",
+      "rating": "TV-MA"
+    },
+    {
+      "position": 2,
+      "title": "REC",
+      "description": "A TV reporter and her cameraman follow a fire crew into an apartment building on a routine call. Then the government seals the building from outside and stops answering questions.\n\nJaume Balagueró and Paco Plaza shot REC in sequence, which means the cast's panic in the final act is real escalation - they didn't know what the ending looked like until they got there. The camera isn't just a format choice here. It's the only light source on the building's top floor, and when it goes out, the film switches to night vision.\n\nWhat you see in those last two minutes has no business being that effective. It still is.",
+      "contentTitle": "REC (2007)",
+      "tubiLink": "https://tubitv.com/movies/685449",
+      "contentId": "685449",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/043_title_2_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/043_title_2_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/043_title_2_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Horror",
+      "year": "2007",
+      "runtime": "1h 19m",
+      "rating": "R"
+    },
+    {
+      "position": 3,
+      "title": "The Taking of Deborah Logan",
+      "description": "A film crew gets permission to document an elderly woman's Alzheimer's progression for a medical research project. For the first thirty minutes, that's exactly what this is, and it's genuinely moving.\n\nThen the footage starts showing things that Alzheimer's doesn't explain.\n\nJill Larson plays Deborah Logan and commits so completely to both the disease and what comes after it that the film's pivot never feels cheap. There's a scene involving a snake and a child that is one of the most purely disturbing images in found footage horror - and it lands entirely because the previous hour made you care about the person doing it.",
+      "contentTitle": "The Taking of Deborah Logan (2014)",
+      "tubiLink": "https://tubitv.com/movies/521444",
+      "contentId": "521444",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/043_title_3_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/043_title_3_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/043_title_3_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Horror",
+      "year": "2014",
+      "runtime": "1h 30m",
+      "rating": "R"
+    },
+    {
+      "position": 4,
+      "title": "Hell House LLC",
+      "description": "Fifteen people died on opening night of a Halloween haunted house in upstate New York. Hell House LLC opens with that fact, then builds the entire film around the behind-the-scenes footage the crew shot while setting it up.\n\nYou're watching people hang props and rehearse scares in a hotel basement. Because you know what's coming, every dark hallway and malfunctioning clown mannequin lands differently than it should.\n\nDirector Stephen Cognetti gets a lot of mileage out of one specific prop - a clown that keeps appearing in places no one put it. He has the discipline to not over-explain it. The less he says about it, the worse it gets.",
+      "contentTitle": "Hell House LLC (2015)",
+      "tubiLink": "https://tubitv.com/movies/491715",
+      "contentId": "491715",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/043_title_4_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/043_title_4_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/043_title_4_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Horror",
+      "year": "2015",
+      "runtime": "1h 31m",
+      "rating": "R"
+    },
+    {
+      "position": 5,
+      "title": "Lake Mungo",
+      "description": "The Palmer family is interviewed about the death of their sixteen-year-old daughter Alice. It's structured like a true-crime documentary - talking heads, home video, police footage - and for a long stretch it just feels like a very sad film about a family trying to understand what happened.\n\nThen they find footage on Alice's phone they weren't supposed to find.\n\nDirector Joel Anderson uses the documentary format to do something most horror films can't: make you feel the loss first, so that what gets revealed afterward carries actual weight. The final ten minutes recontextualize everything you watched. Not in a twist-movie way. In a genuinely mournful one.",
+      "contentTitle": "Lake Mungo (2008)",
+      "tubiLink": "https://tubitv.com/movies/332936",
+      "contentId": "332936",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/043_title_5_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/043_title_5_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/043_title_5_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Mystery",
+      "year": "2008",
+      "runtime": "1h 27m",
+      "rating": "R"
+    },
+    {
+      "position": 6,
+      "title": "The Poughkeepsie Tapes",
+      "description": "Investigators discover hundreds of hours of video shot by a serial killer - footage he made intentionally, as part of how he operated. The Poughkeepsie Tapes is structured as a true crime documentary, and director John Erick Dowdle loads it with enough procedural detail that the line between fiction and real keeps blurring.\n\nThe film was pulled from theatrical release in 2007 and spent years unavailable, which only added to its reputation.\n\nWhat makes it genuinely unsettling isn't the violence. It's the composure. The killer on camera is methodical, almost cheerful, and the documentary framing means you're watching law enforcement try to understand someone who clearly understood exactly what he was doing.",
+      "contentTitle": "The Poughkeepsie Tapes (2007)",
+      "tubiLink": "https://tubitv.com/movies/486922",
+      "contentId": "486922",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/043_title_6_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/043_title_6_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/043_title_6_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Horror",
+      "year": "2007",
+      "runtime": "1h 21m",
+      "rating": "R"
+    },
+    {
+      "position": 7,
+      "title": "Noroi: The Curse",
+      "description": "A paranormal documentary filmmaker named Kobayashi investigates a series of unrelated incidents - a strange sound, a missing psychic, a child with unusual behavior - and spends most of the film's two-hour runtime adding threads to a web you can't quite see yet.\n\nJapanese director Koji Shiraishi builds the mythology of an ancient demon called Kagutaba across interviews, news footage, and recovered video in a way that feels genuinely researched. This is one of the most patient horror films you'll sit through, and the patience is doing real work.\n\nThe film ends with Kobayashi having vanished. The footage is presented as what his crew left behind. By then you've spent enough time with him that the absence actually lands.",
+      "contentTitle": "Noroi: The Curse (2005)",
+      "tubiLink": "https://tubitv.com/movies/100052628",
+      "contentId": "100052628",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/043_title_7_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/043_title_7_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/043_title_7_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Horror",
+      "year": "2005",
+      "runtime": "1h 55m",
+      "rating": "TV-14"
+    },
+    {
+      "position": 8,
+      "title": "Be My Cat: A Film for Anne",
+      "description": "Adrian Tofei plays a Romanian filmmaker named Adrian who wants Anne Hathaway to star in his next movie. To convince her, he's filming a demo reel. He's hired local actresses to help him.\n\nBe My Cat is one of the most uncomfortable films in the found footage canon because the horror isn't supernatural. It's a man with a camera who has decided that what he wants matters more than anyone else's safety, and you watch the escalation happen in real time.\n\nTofei wrote, directed, and starred in it. The commitment to the character is total - no winking at the audience, no moment where the film lets you off the hook. That's exactly why it's so hard to shake.",
+      "contentTitle": "Be My Cat: A Film for Anne (2015)",
+      "tubiLink": "https://tubitv.com/movies/491721",
+      "contentId": "491721",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/043_title_8_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/043_title_8_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/043_title_8_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Horror",
+      "year": "2015",
+      "runtime": "1h 31m",
+      "rating": "R"
+    },
+    {
+      "position": 9,
+      "title": "Dark Web: Descent Into Hell",
+      "description": "A YouTuber with a history he won't talk about decides to livestream his way through the levels of the dark web, each one supposedly more dangerous than the last.\n\nDark Web uses the screen-recording format, which means you're watching a monitor watching a monitor. The layering creates a specific kind of dread - the feeling that someone on the other side knows you're watching.\n\nThere's a sequence in the later levels where the content being shown stops being clearly fictional. The film leaves it ambiguous on purpose, and that ambiguity is the thing that follows you out.",
+      "contentTitle": "Dark Web: Descent Into Hell (2022)",
+      "tubiLink": "https://tubitv.com/movies/100001845",
+      "contentId": "100001845",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/043_title_9_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/043_title_9_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/043_title_9_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Horror",
+      "year": "2022",
+      "runtime": "1h 19m",
+      "rating": "TV-MA"
+    },
+    {
+      "position": 10,
+      "title": "Grave Encounters 2",
+      "description": "A film student obsessed with the original Grave Encounters decides the footage was too good to be fake and starts investigating whether the asylum is real.\n\nGrave Encounters 2 earns its existence by committing to the meta-premise instead of just repeating the first film's beats. The early sections - the protagonist digging through online forums, interviewing people connected to the production - work better than they have any right to. By the time he actually gets to the asylum, the film has built enough genuine unease that the haunted house mechanics hit harder than expected.\n\nKnowing it's a trap going in doesn't help. The sequel is honest about that.",
+      "contentTitle": "Grave Encounters 2 (2012)",
+      "tubiLink": "https://tubitv.com/movies/512265",
+      "contentId": "512265",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/043_title_10_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/043_title_10_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/043_title_10_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Horror",
+      "year": "2012",
+      "runtime": "1h 39m",
+      "rating": "TV-MA"
+    }
+  ],
+  "keepReading": {
+    "header": {
+      "title": "Keep Reading",
+      "subtitle": "More articles to explore"
+    },
+    "items": [
+      {
+        "id": "041",
+        "slug": "the-slasher-movies-that-defined-the-genre",
+        "eyebrow": "Binge-Worthy",
+        "title": "The Slasher Movies That Defined the Genre",
+        "subtitle": "The films that wrote the rules - and the ones still collecting royalties on them.",
+        "categoryTag": "Horror",
+        "thumbnail": "/static/blog/the-t/thumbnails/041_thumbnail.jpg"
+      },
+      {
+        "id": "046",
+        "slug": "the-psychological-horror-films-that-mess-with-your-head",
+        "eyebrow": "What to Watch",
+        "title": "The Psychological Horror Films That Mess With Your Head",
+        "subtitle": "More about tension and perspective than anything physical.",
+        "categoryTag": "Horror",
+        "thumbnail": "/static/blog/the-t/thumbnails/046_thumbnail.jpg"
+      },
+      {
+        "id": "031",
+        "slug": "tubis-most-intense-thriller-series",
+        "eyebrow": "What to Watch",
+        "title": "Tubi's Most Intense Thriller Series",
+        "subtitle": "The Fall, Damages, The Killing, and seven more that will wreck your sleep schedule.",
+        "categoryTag": "Shows",
+        "thumbnail": "/static/blog/the-t/thumbnails/031_thumbnail.jpg"
+      }
+    ]
+  },
+  "datePosted": "2026-05-26"
+}

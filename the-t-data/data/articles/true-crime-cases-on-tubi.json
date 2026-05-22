@@ -1,0 +1,289 @@
+{
+  "nav": {
+    "logoLabel": "The T",
+    "links": [
+      {
+        "label": "Home",
+        "href": "/the-t"
+      },
+      {
+        "label": "Coming Soon",
+        "href": "/the-t/coming-soon"
+      },
+      {
+        "label": "Shows",
+        "href": "/the-t/shows"
+      },
+      {
+        "label": "Movies",
+        "href": "/the-t/movies"
+      }
+    ],
+    "explore": {
+      "label": "Explore",
+      "items": [
+        {
+          "label": "FIFA World Cup 2026",
+          "href": "/the-t/fifa-world-cup"
+        },
+        {
+          "label": "Horror",
+          "href": "/the-t/horror"
+        },
+        {
+          "label": "Tubi Originals",
+          "href": "/the-t/originals"
+        },
+        {
+          "label": "Sports",
+          "href": "/the-t/sports"
+        }
+      ],
+      "moreGenresLabel": "More genres",
+      "moreGenresHref": "/the-t/genres"
+    },
+    "mobileMenu": {
+      "open": "Open menu",
+      "close": "Close menu"
+    }
+  },
+  "id": "032",
+  "slug": "true-crime-cases-on-tubi",
+  "categoryTag": "Shows",
+  "type": "listicle",
+  "title": "Unravel These True Crime Cases on Tubi",
+  "subtitle": "The cases that get heavier the more you understand them.",
+  "intro": "Some cases close fast. Others sit in a file drawer for twenty years until one piece of evidence changes everything.\n\nOn this list: a Florida double murder where the killer's own face became evidence, a serial killer who went undetected in Los Angeles for decades until a DNA database finally caught him, and cold cases where modern forensics handed families the answers they'd been waiting on for years.\n\nIf you're ready to go deep, here's where to start.",
+  "images": {
+    "thumbnail": "/static/blog/the-t/thumbnails/032_thumbnail.jpg",
+    "og": "/static/blog/the-t/og/032_og.jpg"
+  },
+  "items": [
+    {
+      "position": 1,
+      "title": "Forensic Files",
+      "description": "This is the one that started the obsession for a generation of true crime fans. Every episode drops you into a case where the killer seemed to have gotten away with it - until a fiber, a soil sample, or a bite mark said otherwise.\n\nThere's a specific pleasure in watching investigators zero in on evidence the suspect never even thought to worry about. Forensic Files doesn't need confessions or cooperative witnesses. It has mass spectrometers, and those don't take bribes.\n\nOver 400 episodes in, the formula holds because the cases never stop being genuinely surprising. You think you've seen every variation. Then you haven't.",
+      "contentTitle": "Forensic Files (2011)",
+      "tubiLink": "https://tubitv.com/series/2914",
+      "contentId": "2914",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/032_title_1_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/032_title_1_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/032_title_1_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Documentary",
+      "year": "2011",
+      "runtime": "14 Seasons",
+      "rating": "TV-14"
+    },
+    {
+      "position": 2,
+      "title": "The First 48",
+      "description": "Homicide detectives will tell you: no lead in the first 48 hours, the case goes cold. This series plants a camera in the room while that clock runs.\n\nYou watch detectives canvass neighborhoods at 3 a.m., sit across from witnesses who very much do not want to talk, and piece together a timeline from almost nothing. No reconstruction, no narrator smoothing things over - just the actual work, in real time, with real pressure.\n\nSome episodes crack wide open. Others end with a detective staring at a whiteboard and not much else. Both kinds are worth your time.",
+      "contentTitle": "The First 48 (2023)",
+      "tubiLink": "https://tubitv.com/series/300001901",
+      "contentId": "300001901",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/032_title_2_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/032_title_2_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/032_title_2_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Documentary",
+      "year": "2023",
+      "runtime": "13 Seasons",
+      "rating": "TV-14"
+    },
+    {
+      "position": 3,
+      "title": "Evil Among Us: The Grim Sleeper",
+      "description": "Lonnie Franklin Jr. killed women in South Los Angeles for over two decades. Police knew someone was doing it. They couldn't find him.\n\nWhat finally broke the case wasn't a witness or a tip - it was a partial DNA match through a familial search of a criminal database, a method so new at the time it was still controversial. A relative's DNA led investigators to Franklin's door.\n\nThis documentary doesn't just cover the murders. It covers why it took so long, what that delay cost the victims' families, and how those families had to fight to get law enforcement to take the case seriously at all. That part is its own story.",
+      "contentTitle": "Evil Among Us: The Grim Sleeper (2024)",
+      "tubiLink": "https://tubitv.com/movies/100027590",
+      "contentId": "100027590",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/032_title_3_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/032_title_3_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/032_title_3_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Documentary",
+      "year": "2024",
+      "runtime": "1h 22m",
+      "rating": "TV-MA"
+    },
+    {
+      "position": 4,
+      "title": "Killer Looks: The Trial of Wade Wilson",
+      "description": "Wade Wilson killed two women in Cape Coral, Florida, within hours of each other. That alone would make this a significant case.\n\nWhat made it nationally strange was the trial. Wilson's defense argued that his conventionally attractive appearance was being used against him - that jurors were more disturbed by a good-looking killer than they would have been otherwise. The prosecution had surveillance footage, DNA, and a confession. The defense had a theory about bias.\n\nWatching both sides make their arguments, and watching the jury sit with all of it, is the kind of courtroom tension that's genuinely hard to script.",
+      "contentTitle": "Killer Looks: The Trial of Wade Wilson (2024)",
+      "tubiLink": "https://tubitv.com/series/300016020",
+      "contentId": "300016020",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/032_title_4_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/032_title_4_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/032_title_4_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Documentary",
+      "year": "2024",
+      "runtime": "1 Season",
+      "rating": "TV-14"
+    },
+    {
+      "position": 5,
+      "title": "Cold Case Files Classic",
+      "description": "Cold cases hit differently. The urgency is gone. Witnesses have moved, forgotten, or died. The physical evidence has been sitting in storage for years.\n\nWhat Cold Case Files Classic does well is hold both things at once: the procedural story of how investigators finally cracked it, and the human story of what it cost the families to wait that long. There's an episode involving a woman whose murder went unsolved for over a decade until a detective pulled her file on a slow week and noticed something everyone else had missed.\n\nOne detective. One slow week. That detail is the thing that stays with you.",
+      "contentTitle": "Cold Case Files Classic (2007)",
+      "tubiLink": "https://tubitv.com/series/300016771",
+      "contentId": "300016771",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/032_title_5_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/032_title_5_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/032_title_5_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Documentary",
+      "year": "2007",
+      "runtime": "7 Seasons",
+      "rating": "TV-14"
+    },
+    {
+      "position": 6,
+      "title": "Lizzie",
+      "description": "Almost everyone thinks they know the Borden story. Chloë Sevigny plays Lizzie not as a mystery to be solved but as a person pushed to a breaking point by a very specific set of circumstances inside that house.\n\nKristen Stewart plays Bridget, the Irish maid, and the film builds the relationship between them slowly - deliberately. By the time it reaches the night of the murders, you understand the logic of what happened. Not as a defense. Just as context.\n\nIt's the kind of film that sends you straight to the actual case files afterward, which is maybe the highest compliment a true crime drama can get.",
+      "contentTitle": "Lizzie (2018)",
+      "tubiLink": "https://tubitv.com/movies/642268",
+      "contentId": "642268",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/032_title_6_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/032_title_6_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/032_title_6_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Thriller",
+      "year": "2018",
+      "runtime": "1h 46m",
+      "rating": "R"
+    },
+    {
+      "position": 7,
+      "title": "Suburban Nightmare: Chris Watts",
+      "description": "Before Chris Watts confessed to killing his pregnant wife Shanann and their two daughters, he stood on his front lawn and gave a local news interview asking for his family to come home safely.\n\nInvestigators watched that interview carefully. Body language analysts watched it. The internet watched it. Within days, he confessed.\n\nThis documentary walks through how investigators read that interview, what the neighbors noticed, and how a man who appeared to have a perfect life had been quietly dismantling it for months. The gap between the performance and the reality is what makes it so hard to look away from.",
+      "contentTitle": "Suburban Nightmare: Chris Watts (2022)",
+      "tubiLink": "https://tubitv.com/movies/642415",
+      "contentId": "642415",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/032_title_7_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/032_title_7_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/032_title_7_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Documentary",
+      "year": "2022",
+      "runtime": "1h 25m",
+      "rating": "TV-14"
+    },
+    {
+      "position": 8,
+      "title": "Forensic Investigators",
+      "description": "Most American true crime series cycle through the same famous cases. Forensic Investigators pulls from Australian crime files - heroin heists, targeted assassinations, kidnappings - and the unfamiliarity of the cases makes the forensic detail land harder.\n\nYou're not waiting to see if you remember how it ends. You're actually following the investigation.\n\nThe series is methodical in the best way: here's the crime scene, here's what the evidence said, here's what investigators had to figure out before any of it made sense. If you've burned through the American catalog and need somewhere to go next, this is it.",
+      "contentTitle": "Forensic Investigators (2006)",
+      "tubiLink": "https://tubitv.com/series/300005171",
+      "contentId": "300005171",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/032_title_8_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/032_title_8_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/032_title_8_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Documentary",
+      "year": "2006",
+      "runtime": "3 Seasons",
+      "rating": "TV-MA"
+    },
+    {
+      "position": 9,
+      "title": "Forensic Justice",
+      "description": "Espionage. Insider trading. Treason. Forensic Justice covers the cases where nobody ends up dead but the stakes are just as high - and the investigative methods are completely different.\n\nThe forensic work here involves financial records, encrypted communications, and paper trails that took years to untangle. There's an episode on corporate espionage where the key piece of evidence was a single email someone thought they'd deleted.\n\nIt's a good reminder that forensic science isn't only DNA and fingerprints. Sometimes it's a forensic accountant in a conference room for six months, looking for the one number that doesn't add up.",
+      "contentTitle": "Forensic Justice (2016)",
+      "tubiLink": "https://tubitv.com/series/300006195",
+      "contentId": "300006195",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/032_title_9_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/032_title_9_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/032_title_9_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Documentary",
+      "year": "2016",
+      "runtime": "1 Season",
+      "rating": "TV-14"
+    },
+    {
+      "position": 10,
+      "title": "See No Evil",
+      "description": "Surveillance footage is everywhere now. It's also almost never as clear as people assume.\n\nSee No Evil follows cases where CCTV, doorbell cameras, or phone footage existed from the start - and investigators still spent weeks figuring out what they were actually looking at. One case hinges on footage of a suspect who appears in the background of a convenience store video for less than three seconds. That three seconds broke the case.\n\nThe series is sharp about showing the gap between having footage and understanding it. Turns out that gap is much larger than most people think, and closing it is its own kind of detective work.",
+      "contentTitle": "See No Evil (2022)",
+      "tubiLink": "https://tubitv.com/series/300015200",
+      "contentId": "300015200",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/032_title_10_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/032_title_10_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/032_title_10_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Crime",
+      "year": "2022",
+      "runtime": "7 Seasons",
+      "rating": "TV-14"
+    }
+  ],
+  "keepReading": {
+    "header": {
+      "title": "Keep Reading",
+      "subtitle": "More articles to explore"
+    },
+    "items": [
+      {
+        "id": "005",
+        "slug": "best-true-crime-shows-and-documentaries-on-tubi",
+        "eyebrow": "What to Watch",
+        "title": "Best True Crime Shows & Documentaries on Tubi Right Now",
+        "subtitle": "Some cases seem simple. These only get more complicated.",
+        "categoryTag": "Shows",
+        "thumbnail": "/static/blog/the-t/thumbnails/005_thumbnail.jpg"
+      },
+      {
+        "id": "029",
+        "slug": "top-crime-series-on-tubi",
+        "eyebrow": "What to Watch",
+        "title": "Top Crime Series on Tubi Today",
+        "subtitle": "Where the cases pull you in because they get personal fast.",
+        "categoryTag": "Shows",
+        "thumbnail": "/static/blog/the-t/thumbnails/029_thumbnail.jpg"
+      },
+      {
+        "id": "030",
+        "slug": "the-best-docuseries-on-tubi",
+        "eyebrow": "What to Watch",
+        "title": "The Best Docuseries on Tubi You Need to Watch",
+        "subtitle": "Real stories that are built to keep you watching longer than planned.",
+        "categoryTag": "Shows",
+        "thumbnail": "/static/blog/the-t/thumbnails/030_thumbnail.jpg"
+      }
+    ]
+  },
+  "datePosted": "2026-05-26"
+}

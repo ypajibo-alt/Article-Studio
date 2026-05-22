@@ -1,0 +1,212 @@
+{
+  "_doc": {
+    "description": "Movies hub slice of The T content. Rendered by src/web/features/theT/components/HubPage.tsx via the `movies` entry in `SLUG_RENDERERS` in src/web/features/theT/containers/Hub.tsx. Same shape as ./shows.json — every section (`hero`, `featured`, `storyHero`, `watchlist`, `keepReading`) carries its own `header.{title,subtitle}` + items so the JSON drives both heading and content.",
+    "source": "Shell placeholder. Hero copy, Featured rail, Story Hero, Watchlist rail, and Keep Reading rail are all TBD — they'll get authored section by section against the upstream `~/Desktop/Static Upload Tubi Blog/{listicles,single-titles,watchlist}.json` slices for `pageLocation: Movies` records.",
+    "doNotInclude": "intro, items[], cast[], whatsComing[] — only the fields the Movies hub actually renders should ship in this chunk.",
+    "linking": "Every article card / hero uses the canonical URL `/the-t/articles/<slug>`. Each slot stores just the bare `slug`; the renderer (`homePageData.ts → buildArticleHref`) prepends the prefix. The optional `watchLink` on some slots is reserved for CTAs that bypass the article and route straight into the Tubi catalog; it does NOT influence the article href."
+  },
+  "nav": {
+    "logoLabel": "The T",
+    "links": [
+      {
+        "label": "Home",
+        "href": "/the-t"
+      },
+      {
+        "label": "Coming Soon",
+        "href": "/the-t/coming-soon"
+      },
+      {
+        "label": "Shows",
+        "href": "/the-t/shows"
+      },
+      {
+        "label": "Movies",
+        "href": "/the-t/movies"
+      }
+    ],
+    "explore": {
+      "label": "Explore",
+      "items": [
+        {
+          "label": "FIFA World Cup 2026",
+          "href": "/the-t/fifa-world-cup"
+        },
+        {
+          "label": "Horror",
+          "href": "/the-t/horror"
+        },
+        {
+          "label": "Tubi Originals",
+          "href": "/the-t/originals"
+        },
+        {
+          "label": "Sports",
+          "href": "/the-t/sports"
+        }
+      ],
+      "moreGenresLabel": "More genres",
+      "moreGenresHref": "/the-t/genres"
+    },
+    "mobileMenu": {
+      "open": "Open menu",
+      "close": "Close menu"
+    }
+  },
+  "hero": {
+    "label": "Movies",
+    "description": "From blockbusters to indie darlings, we cover the films worth watching on any given night. Whether you're in the mood for something light or something that'll stick with you, our picks span every genre. New recommendations added regularly.",
+    "image": "/static/blog/the-t/heroes/movies-hub_hero.png"
+  },
+  "featured": {
+    "header": {
+      "title": "Featured",
+      "subtitle": "Stories and recommendations from our team"
+    },
+    "items": [
+      {
+        "id": "033",
+        "slug": "tubis-best-action-movie-collection",
+        "eyebrow": "What to Watch",
+        "title": "Tubi's Best Action Movie Collection",
+        "subtitle": "Fast-moving stories with just enough weight behind the action.",
+        "categoryTag": "Movies",
+        "thumbnail": "/static/blog/the-t/thumbnails/033_thumbnail.jpg"
+      },
+      {
+        "id": "034",
+        "slug": "how-to-watch-great-movies-for-free",
+        "eyebrow": "What to Watch",
+        "title": "How to Watch Great Movies for Free",
+        "subtitle": "A simple way to find something worth your time without overthinking it.",
+        "categoryTag": "Movies",
+        "thumbnail": "/static/blog/the-t/thumbnails/034_thumbnail.jpg"
+      },
+      {
+        "id": "035",
+        "slug": "the-scariest-horror-movies-to-watch-right-now",
+        "eyebrow": "What to Watch",
+        "title": "The Scariest Horror Movies to Watch Right Now",
+        "subtitle": "Not just loud scares. The kind that stay with you after.",
+        "categoryTag": "Movies",
+        "thumbnail": "/static/blog/the-t/thumbnails/035_thumbnail.jpg"
+      }
+    ]
+  },
+  "storyHero": {
+    "id": "036",
+    "slug": "the-funniest-movies-streaming-on-tubi-now",
+    "eyebrow": "What to Watch",
+    "title": "The Funniest Movies Streaming on Tubi Now",
+    "subtitle": "Easy watches that still land when you need them to.",
+    "categoryTag": "Movies",
+    "hero": "/static/blog/the-t/thumbnails/036_thumbnail.jpg"
+  },
+  "watchlist": {
+    "header": {
+      "title": "Watchlist",
+      "subtitle": "A handpicked list of movies to watch next"
+    },
+    "items": [
+      {
+        "id": "wl-movies-1",
+        "title": "The Apprentice",
+        "year": "2024",
+        "description": "In 70s New York, aspiring mogul Donald Trump meets the man who will shape his rise to power.",
+        "genreTag": "Drama/Biography",
+        "poster": "/static/blog/the-t/watchlist/movies_1_poster.jpg",
+        "watchLink": "https://tubitv.com/movies/100049049",
+        "contentId": "100049049"
+      },
+      {
+        "id": "wl-movies-2",
+        "title": "Hijacked",
+        "year": "2026",
+        "description": "A rideshare abduction sparks a deadly race as a father hunts to rescue his influencer daughter.",
+        "genreTag": "Thriller",
+        "poster": "/static/blog/the-t/watchlist/movies_2_poster.jpg",
+        "watchLink": "https://tubitv.com/movies/100052744",
+        "contentId": "100052744"
+      },
+      {
+        "id": "wl-movies-3",
+        "title": "How to Lose a Popularity Contest",
+        "year": "2026",
+        "description": "Overachiever Ellie teams with slacker Nate to sabotage her ex — unexpected sparks follow.",
+        "genreTag": "Romance/Comedy",
+        "poster": "/static/blog/the-t/watchlist/movies_3_poster.jpg",
+        "watchLink": "https://tubitv.com/movies/100049581",
+        "contentId": "100049581"
+      },
+      {
+        "id": "wl-movies-4",
+        "title": "Kissing Is the Easy Part",
+        "year": "2026",
+        "description": "Sean's gunning for MIT. Flora's ditching the SAT. A secret deal sparks a romance neither planned.",
+        "genreTag": "Romance",
+        "poster": "/static/blog/the-t/watchlist/movies_4_poster.jpg",
+        "watchLink": "https://tubitv.com/movies/100050541",
+        "contentId": "100050541"
+      },
+      {
+        "id": "wl-movies-5",
+        "title": "Hive",
+        "year": "2026",
+        "description": "An anxious teenager loses the child she's babysitting and must brave a sinister force hiding in plain sight.",
+        "genreTag": "Horror/Thriller",
+        "poster": "/static/blog/the-t/watchlist/movies_5_poster.jpg",
+        "watchLink": "https://tubitv.com/movies/100048957",
+        "contentId": "100048957"
+      },
+      {
+        "id": "wl-movies-6",
+        "title": "Chaperone",
+        "year": "2025",
+        "description": "A drama-romance about what happens when the past catches up with the present.",
+        "genreTag": "Drama/Romance",
+        "poster": "/static/blog/the-t/watchlist/movies_6_poster.jpg",
+        "watchLink": "https://tubitv.com/movies/100054446",
+        "contentId": "100054446"
+      }
+    ]
+  },
+  "keepReading": {
+    "header": {
+      "title": "Keep Reading",
+      "subtitle": "More articles to explore"
+    },
+    "items": [
+      {
+        "id": "037",
+        "slug": "the-best-dramas-on-tubi",
+        "eyebrow": "What to Watch",
+        "title": "The Best Dramas on Tubi",
+        "subtitle": "Stories that take their time and let things actually land.",
+        "categoryTag": "Movies",
+        "thumbnail": "/static/blog/the-t/thumbnails/037_thumbnail.jpg"
+      },
+      {
+        "id": "038",
+        "slug": "movies-that-will-haunt-you-in-a-good-way",
+        "eyebrow": "What to Watch",
+        "title": "Movies That Will Haunt You (In a Good Way)",
+        "subtitle": "The kind that linger a little after the credits.",
+        "categoryTag": "Movies",
+        "thumbnail": "/static/blog/the-t/thumbnails/038_thumbnail.jpg"
+      },
+      {
+        "id": "039",
+        "slug": "the-black-movies-worth-watching-this-month",
+        "eyebrow": "What to Watch",
+        "title": "The Black Movies Worth Watching This Month",
+        "subtitle": "Beat Street, Finding Fela, Dolemite, and nine more reasons to clear your evening.",
+        "categoryTag": "Movies",
+        "thumbnail": "/static/blog/the-t/thumbnails/039_thumbnail.jpg"
+      }
+    ]
+  },
+  "images": {
+    "og": "/static/blog/the-t/og/movies_hub_og.jpg"
+  },
+  "pageTitle": "Discover Free Movies Online on Tubi"
+}

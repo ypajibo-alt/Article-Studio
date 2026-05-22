@@ -1,0 +1,156 @@
+{
+  "nav": {
+    "logoLabel": "The T",
+    "links": [
+      {
+        "label": "Home",
+        "href": "/the-t"
+      },
+      {
+        "label": "Coming Soon",
+        "href": "/the-t/coming-soon"
+      },
+      {
+        "label": "Shows",
+        "href": "/the-t/shows"
+      },
+      {
+        "label": "Movies",
+        "href": "/the-t/movies"
+      }
+    ],
+    "explore": {
+      "label": "Explore",
+      "items": [
+        {
+          "label": "FIFA World Cup 2026",
+          "href": "/the-t/fifa-world-cup"
+        },
+        {
+          "label": "Horror",
+          "href": "/the-t/horror"
+        },
+        {
+          "label": "Tubi Originals",
+          "href": "/the-t/originals"
+        },
+        {
+          "label": "Sports",
+          "href": "/the-t/sports"
+        }
+      ],
+      "moreGenresLabel": "More genres",
+      "moreGenresHref": "/the-t/genres"
+    },
+    "mobileMenu": {
+      "open": "Open menu",
+      "close": "Close menu"
+    }
+  },
+  "id": "020",
+  "slug": "a-new-episode-of-the-goal-ahead",
+  "categoryTag": "Coming Soon",
+  "type": "article",
+  "title": "A New Episode of 'The Goal Ahead' Arrives Soon",
+  "subtitle": "Three football stars. One global stage.",
+  "datePosted": "2026-05-26",
+  "intro": "Marc Cucurella, Harry Wilson, and Weston McKennie are not the same kind of player, not from the same country, not on the same path. What they share is a single fixed point on the horizon: the 2026 World Cup. The Goal Ahead drops a camera into the middle of that chase and doesn't look away. No soft-focus retrospectives, no trophy ceremonies. Just three careers at the exact moment when everything is still undecided.",
+  "cast": {
+    "header": {
+      "title": "The Cast"
+    },
+    "items": [
+      {
+        "name": "Marc Cucurella",
+        "bio": "The Chelsea left-back who went from villain to vital in the space of one tournament cycle. Cucurella carries the weight of a public narrative that got ahead of him — and the series watches him push back against it, one match at a time."
+      },
+      {
+        "name": "Harry Wilson",
+        "bio": "Wales's most technically gifted player and, for years, its most patient one. Wilson has spent a career being almost there. The 2026 cycle is the one where almost doesn't cut it anymore, and the series doesn't let him forget it."
+      },
+      {
+        "name": "Weston McKennie",
+        "bio": "The American midfielder who plays like he has something to prove in every single game, because he does. McKennie's spot on the USMNT roster is never guaranteed, and the series catches him in that permanent state of controlled urgency."
+      }
+    ]
+  },
+  "quote": "The World Cup doesn't wait. Neither does this.",
+  "faq": {
+    "header": {
+      "title": "More details"
+    },
+    "items": [
+      {
+        "question": "Who directed the film?",
+        "answer": "Nick Emmerson"
+      },
+      {
+        "question": "Who is in the cast?",
+        "answer": "Marc Cucurella, Harry Wilson, Weston McKennie"
+      },
+      {
+        "question": "Where can I stream this?",
+        "answer": "Free on Tubi"
+      }
+    ]
+  },
+  "images": {
+    "thumbnail": "/static/blog/the-t/thumbnails/020_thumbnail.jpg",
+    "hero": "/static/blog/the-t/heroes/020_hero.jpg",
+    "og": "/static/blog/the-t/og/020_og.jpg"
+  },
+  "keepReading": {
+    "header": {
+      "title": "Keep Reading",
+      "subtitle": "More articles to explore"
+    },
+    "items": [
+      {
+        "id": "060",
+        "slug": "best-soccer-stories-to-stream",
+        "eyebrow": "What to Watch",
+        "title": "Beyond the Pitch: The Best Soccer Stories to Stream Now",
+        "subtitle": "The stories behind the game, before the World Cup begins",
+        "categoryTag": "Sports",
+        "thumbnail": "/static/blog/the-t/thumbnails/060_thumbnail.jpg"
+      },
+      {
+        "id": "030",
+        "slug": "the-best-docuseries-on-tubi",
+        "eyebrow": "What to Watch",
+        "title": "The Best Docuseries on Tubi You Need to Watch",
+        "subtitle": "Real stories that are built to keep you watching longer than planned.",
+        "categoryTag": "Shows",
+        "thumbnail": "/static/blog/the-t/thumbnails/030_thumbnail.png"
+      },
+      {
+        "id": "073",
+        "slug": "if-you-grew-up-on-degrassi-these-teen-dramas-on-tubi-are-for-you",
+        "eyebrow": "What to Watch",
+        "title": "If You Grew Up on Degrassi, These Teen Dramas on Tubi Are for You",
+        "subtitle": "Same emotional chaos, different hallways.",
+        "categoryTag": "Shows",
+        "thumbnail": "/static/blog/the-t/thumbnails/073_thumbnail.jpg"
+      }
+    ]
+  },
+  "hero": {
+    "watchLink": "https://tubitv.com/series/300020292/the-goal-ahead",
+    "contentId": "300020292",
+    "watchNowLabel": "Watch Now"
+  },
+  "whyWatch": {
+    "header": {
+      "title": "Why Watch It"
+    },
+    "body": "What makes The Goal Ahead work is the specificity of its subjects. These are not generational superstars with locked-in legacies. They are elite players operating in the register where talent alone stopped being enough a long time ago. Every selection decision, every injury update, every training ground moment carries actual stakes, and the series knows it. It doesn't manufacture tension. The tension is already there."
+  },
+  "gallery": {
+    "header": {
+      "title": "Media Shots"
+    },
+    "items": [
+      "/static/blog/the-t/media/020_media_1.jpg"
+    ]
+  }
+}

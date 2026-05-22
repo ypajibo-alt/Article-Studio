@@ -1,0 +1,289 @@
+{
+  "nav": {
+    "logoLabel": "The T",
+    "links": [
+      {
+        "label": "Home",
+        "href": "/the-t"
+      },
+      {
+        "label": "Coming Soon",
+        "href": "/the-t/coming-soon"
+      },
+      {
+        "label": "Shows",
+        "href": "/the-t/shows"
+      },
+      {
+        "label": "Movies",
+        "href": "/the-t/movies"
+      }
+    ],
+    "explore": {
+      "label": "Explore",
+      "items": [
+        {
+          "label": "FIFA World Cup 2026",
+          "href": "/the-t/fifa-world-cup"
+        },
+        {
+          "label": "Horror",
+          "href": "/the-t/horror"
+        },
+        {
+          "label": "Tubi Originals",
+          "href": "/the-t/originals"
+        },
+        {
+          "label": "Sports",
+          "href": "/the-t/sports"
+        }
+      ],
+      "moreGenresLabel": "More genres",
+      "moreGenresHref": "/the-t/genres"
+    },
+    "mobileMenu": {
+      "open": "Open menu",
+      "close": "Close menu"
+    }
+  },
+  "id": "028",
+  "slug": "the-best-reality-shows-streaming-free-on-tubi",
+  "categoryTag": "Shows",
+  "type": "listicle",
+  "title": "The Best Reality Shows Streaming Free on Tubi",
+  "subtitle": "Low stakes, high chaos, and easy to lose an entire evening to.",
+  "intro": "The best reality shows don't let you look away.\n\nOn this list: amateur cooks watching a career materialize or evaporate in real time while Gordon Ramsay watches from two feet away. Fugitives sitting down to explain, with surprising calm, exactly how close they came to never being caught. Les Stroud alone in the wilderness, carrying his own cameras, eating things you don't want to think about. Contestants on Extracted falling apart in front of a live feed their families are watching at home.\n\nThe best reality TV streaming free on Tubi is right here. Pick one and see where the night goes.",
+  "images": {
+    "thumbnail": "/static/blog/the-t/thumbnails/028_thumbnail.jpg",
+    "og": "/static/blog/the-t/og/028_og.jpg"
+  },
+  "items": [
+    {
+      "position": 1,
+      "title": "Hell's Kitchen",
+      "description": "The prize isn't a trophy. It's an actual head chef position at one of Gordon Ramsay's restaurants, which means every eliminated contestant goes home knowing they lost a career, not just a competition.\n\nRamsay runs the kitchen like it's already open for service, because it is. Real diners eat the food these contestants cook. When a dish goes wrong, a real table finds out.\n\nThe yelling is what people know about. What keeps you watching is the gap between how confident someone walks in and how fast the pressure reorganizes their entire understanding of themselves.",
+      "contentTitle": "Hell's Kitchen (2025)",
+      "tubiLink": "https://tubitv.com/series/3320",
+      "contentId": "3320",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/028_title_1_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/028_title_1_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/028_title_1_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Reality",
+      "year": "2025",
+      "runtime": "23 Seasons",
+      "rating": "TV-MA"
+    },
+    {
+      "position": 2,
+      "title": "MasterChef",
+      "description": "This isn't a fresh crop of hopefuls. MasterChef brings back some of the most memorable cooks from the show's history - people who've already been through the elimination pressure, already know the judges' standards, and signed up again anyway.\n\nThat changes everything. There's no wide-eyed optimism here. Just unfinished business.\n\nWatch someone who came close the first time recalibrate every single decision with the weight of knowing exactly what they missed. The cooking is sharper. So is the desperation.",
+      "contentTitle": "MasterChef (2024)",
+      "tubiLink": "https://tubitv.com/series/300009344",
+      "contentId": "300009344",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/028_title_2_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/028_title_2_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/028_title_2_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Reality",
+      "year": "2024",
+      "runtime": "13 Seasons",
+      "rating": "TV-14"
+    },
+    {
+      "position": 3,
+      "title": "Next Level Chef",
+      "description": "Gordon Ramsay builds the inequality directly into the architecture. Three floors, three kitchens: one stocked with premium ingredients and professional equipment, one with less, one with almost nothing.\n\nContestants don't all start from the same place, and the show doesn't pretend they do.\n\nThe chef who turns out something brilliant from the bottom floor isn't just winning a round - they're making a point. Ramsay hosts, but the real drama is watching someone problem-solve their way out of a situation that was designed to be unfair.",
+      "contentTitle": "Next Level Chef (2026)",
+      "tubiLink": "https://tubitv.com/series/300008306",
+      "contentId": "300008306",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/028_title_3_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/028_title_3_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/028_title_3_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Reality",
+      "year": "2026",
+      "runtime": "5 Seasons",
+      "rating": "TV-14"
+    },
+    {
+      "position": 4,
+      "title": "Survivorman",
+      "description": "Les Stroud doesn't bring a camera crew. He carries the cameras himself, which means every shot you see, he set up, walked away from, and retrieved. Alone. Hungry. Somewhere genuinely hostile.\n\nThat detail sounds small until you're watching him film himself building a shelter in the rain and you realize there is nothing on the other side of that lens.\n\nOther survival shows have someone nearby. Stroud films the thing that could kill him, then figures out how not to let it. Seven days, no support, no pretense.",
+      "contentTitle": "Survivorman (2016)",
+      "tubiLink": "https://tubitv.com/series/300001749",
+      "contentId": "300001749",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/028_title_4_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/028_title_4_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/028_title_4_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Reality",
+      "year": "2016",
+      "runtime": "7 Seasons",
+      "rating": "TV-PG"
+    },
+    {
+      "position": 5,
+      "title": "Alone Australia",
+      "description": "Ten contestants drop into remote Australian wilderness with a limited kit and zero contact with each other. Last one left wins.\n\nThe survival skills matter. But they're not what breaks people. The silence does.\n\nAlone Australia spends as much time inside contestants' heads as it does on fire-starting and foraging. You watch someone who is genuinely competent at staying alive slowly lose the argument with themselves about whether any of this is worth it. Most of them tap out before the wilderness even gets a chance.",
+      "contentTitle": "Alone Australia (2023)",
+      "tubiLink": "https://tubitv.com/series/300016886",
+      "contentId": "300016886",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/028_title_5_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/028_title_5_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/028_title_5_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Reality",
+      "year": "2023",
+      "runtime": "1 Season",
+      "rating": "TV-14"
+    },
+    {
+      "position": 6,
+      "title": "The Island With Bear Grylls",
+      "description": "Bear Grylls drops thirteen British men and women on a remote Pacific island and leaves. No challenges, no eliminations, no production interference. Just six weeks and whatever they can build together.\n\nThe island isn't the antagonist. The group dynamics are.\n\nWatch someone who is perfectly capable of surviving alone discover they cannot survive the person they become when they're hungry and outvoted. The social negotiation that happens around a fire with no food and no exit is more revealing than any confessional booth.",
+      "contentTitle": "The Island With Bear Grylls (2015)",
+      "tubiLink": "https://tubitv.com/series/300005274",
+      "contentId": "300005274",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/028_title_6_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/028_title_6_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/028_title_6_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Reality",
+      "year": "2015",
+      "runtime": "5 Seasons",
+      "rating": "TV-14"
+    },
+    {
+      "position": 7,
+      "title": "Extracted",
+      "description": "Competitors face extreme wilderness conditions while their families watch via live feed at home.\n\nThe contestant in the field doesn't know exactly what their family is seeing - but they know they're being watched. Which means every breakdown, every moment of wanting to quit, happens in front of the people they most want to protect from knowing how close they came.\n\nThe families can't help. They can only watch. That power imbalance is what makes Extracted harder to shake than most survival formats.",
+      "contentTitle": "Extracted (2026)",
+      "tubiLink": "https://tubitv.com/series/300015020",
+      "contentId": "300015020",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/028_title_7_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/028_title_7_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/028_title_7_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Reality",
+      "year": "2026",
+      "runtime": "2 Seasons",
+      "rating": "TV-14"
+    },
+    {
+      "position": 8,
+      "title": "Fear Factor",
+      "description": "Fear Factor isn't really about heights or insects or being submerged in something unpleasant. It's about the gap between what a person believes they can do and what their nervous system will actually allow.\n\nThe stunts are engineered to find that gap. Contestants who are physically capable of completing a challenge still fail because the body overrides the decision.\n\nWatching someone negotiate with their own instincts in real time, in front of a camera, for prize money - that's the show. The gross-out moments are just how it gets there.",
+      "contentTitle": "Fear Factor (2026)",
+      "tubiLink": "https://tubitv.com/series/2040",
+      "contentId": "2040",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/028_title_8_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/028_title_8_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/028_title_8_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Reality",
+      "year": "2026",
+      "runtime": "6 Seasons",
+      "rating": "TV-14"
+    },
+    {
+      "position": 9,
+      "title": "I (Almost) Got Away With It",
+      "description": "Fugitives sit down and walk you through it. The escape. The close calls. The moments when they were completely certain they'd gotten away.\n\nThe first-person narration is what makes it genuinely strange. These are people reconstructing the logic of their own decisions, often with a clarity that only comes from already being caught.\n\nYou're not watching a chase. You're watching someone explain, in detail, exactly why they thought they were untouchable. The gap between their confidence and where they ended up is where the whole show lives.",
+      "contentTitle": "I (Almost) Got Away With It (2016)",
+      "tubiLink": "https://tubitv.com/series/300017443",
+      "contentId": "300017443",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/028_title_9_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/028_title_9_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/028_title_9_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Reality",
+      "year": "2016",
+      "runtime": "8 Seasons",
+      "rating": "TV-14"
+    },
+    {
+      "position": 10,
+      "title": "The Floor",
+      "description": "Yes, it's a trivia show. But the format is nastier than that sounds.\n\nContestants stand on individual squares on a massive floor. Answer correctly and you claim your opponent's territory. Answer wrong and you lose yours. The grand prize only exists because the board keeps shrinking - every correct answer is also an eviction.\n\nWhat starts as a knowledge competition turns into a map of who's been eliminated and who's been doing the eliminating, and the floor tracks all of it in real time. Surprisingly tense for something that is, at its core, just geography.",
+      "contentTitle": "The Floor (2026)",
+      "tubiLink": "https://tubitv.com/series/300002258",
+      "contentId": "300002258",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/028_title_10_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/028_title_10_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/028_title_10_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Reality",
+      "year": "2026",
+      "runtime": "5 Seasons",
+      "rating": "TV-PG"
+    }
+  ],
+  "keepReading": {
+    "header": {
+      "title": "Keep Reading",
+      "subtitle": "More articles to explore"
+    },
+    "items": [
+      {
+        "id": "027",
+        "slug": "the-funniest-comedy-shows-streaming-now",
+        "eyebrow": "What to Watch",
+        "title": "The Funniest Comedy Shows Streaming Now",
+        "subtitle": "The ones that actually hold up past the first episode.",
+        "categoryTag": "Shows",
+        "thumbnail": "/static/blog/the-t/thumbnails/027_thumbnail.jpg"
+      },
+      {
+        "id": "014",
+        "slug": "the-most-addictive-shows-on-tubi",
+        "eyebrow": "What to Watch",
+        "title": "Binge-Worthy TV: The Most Addictive Shows on Tubi",
+        "subtitle": "Shows that stack quickly and are harder to stop than you expect.",
+        "categoryTag": "Shows",
+        "thumbnail": "/static/blog/the-t/thumbnails/014_thumbnail.jpg"
+      },
+      {
+        "id": "052",
+        "slug": "between-the-cheats-season-3-is-coming-to-tubi",
+        "eyebrow": "Available 6/17",
+        "title": "Between the Cheats Season 3 Is Coming to Tubi",
+        "subtitle": "When infidelity ends in murder, the receipts are all real.",
+        "categoryTag": "Originals",
+        "thumbnail": "/static/blog/the-t/thumbnails/052_thumbnail.jpg"
+      }
+    ]
+  },
+  "datePosted": "2026-05-26"
+}

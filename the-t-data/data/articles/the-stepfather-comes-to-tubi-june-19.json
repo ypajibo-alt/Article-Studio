@@ -1,0 +1,161 @@
+{
+  "nav": {
+    "logoLabel": "The T",
+    "links": [
+      {
+        "label": "Home",
+        "href": "/the-t"
+      },
+      {
+        "label": "Coming Soon",
+        "href": "/the-t/coming-soon"
+      },
+      {
+        "label": "Shows",
+        "href": "/the-t/shows"
+      },
+      {
+        "label": "Movies",
+        "href": "/the-t/movies"
+      }
+    ],
+    "explore": {
+      "label": "Explore",
+      "items": [
+        {
+          "label": "FIFA World Cup 2026",
+          "href": "/the-t/fifa-world-cup"
+        },
+        {
+          "label": "Horror",
+          "href": "/the-t/horror"
+        },
+        {
+          "label": "Tubi Originals",
+          "href": "/the-t/originals"
+        },
+        {
+          "label": "Sports",
+          "href": "/the-t/sports"
+        }
+      ],
+      "moreGenresLabel": "More genres",
+      "moreGenresHref": "/the-t/genres"
+    },
+    "mobileMenu": {
+      "open": "Open menu",
+      "close": "Close menu"
+    }
+  },
+  "id": "023",
+  "slug": "the-stepfather-comes-to-tubi-june-19",
+  "categoryTag": "Coming Soon",
+  "type": "article",
+  "title": "The Stepfather Comes to Tubi June 19",
+  "subtitle": "He wants a perfect family. The last one didn't work out.",
+  "datePosted": "2026-05-27",
+  "intro": "There's a specific kind of dread that comes from someone being too pleasant, too present, too invested in making everything work. The Stepfather (1987) runs entirely on that feeling. Terry O'Quinn plays a man who moves into a new family's life with a smile, a handshake, and a vision of domestic perfection so intense it becomes its own kind of threat. The horror isn't a monster in the dark. It's a man at the dinner table asking about your day. The Stepfather arrives on Tubi June 19, and it's exactly the film you want to watch with every light in the house on.",
+  "cast": {
+    "header": {
+      "title": "The Cast"
+    },
+    "items": [
+      {
+        "name": "Terry O'Quinn as Jerry Blake",
+        "bio": "O'Quinn carries this entire film on the strength of one performance. Jerry Blake is cheerful, helpful, reasonable, right up until he isn't. There's a scene early on where he catches himself mid-breakdown, resets, and walks back into the kitchen like nothing happened. That moment is the whole movie."
+      },
+      {
+        "name": "Jill Schoelen as Stephanie Maine",
+        "bio": "Stephanie is the stepdaughter who doesn't buy it. While everyone else settles into the new normal, she watches. She's the only one asking the right questions, which makes her the most dangerous person in the house, and the one in the most trouble."
+      },
+      {
+        "name": "Shelley Hack as Susan Maine",
+        "bio": "Susan is the reason Jerry is there. She wants stability, a partner, a fresh start. Hack plays her as someone genuinely trying, which makes the tension worse. She's not naive. She's hopeful. Those are different things, and the film knows it."
+      },
+      {
+        "name": "Charles Lanyer as Dr. Bondurant",
+        "bio": "Stephanie's therapist, and the film's outside perspective on everything building inside the house. He's skeptical in the right direction, which puts him exactly where you don't want to be in a film like this."
+      }
+    ]
+  },
+  "quote": "Who am I here? Wait, I'll remember.",
+  "faq": {
+    "header": {
+      "title": "More details"
+    },
+    "items": [
+      {
+        "question": "Who directed the film?",
+        "answer": "Joseph Ruben directed The Stepfather with a focus on suburban realism over stylized horror, which is exactly what makes it work. He keeps the camera close to ordinary life so that when things break, the contrast hits harder."
+      },
+      {
+        "question": "Who is in the cast?",
+        "answer": "Terry O'Quinn, Jill Schoelen, Shelley Hack, Charles Lanyer, Stephen Shellen, Robyn Stevan, Jeff Schulman, Lindsay Bourne"
+      },
+      {
+        "question": "Where can I stream this?",
+        "answer": "Free on Tubi, available June 19, 2026"
+      }
+    ]
+  },
+  "images": {
+    "thumbnail": "/static/blog/the-t/thumbnails/023_thumbnail.jpg",
+    "hero": "/static/blog/the-t/heroes/023_hero.jpg",
+    "og": "/static/blog/the-t/og/023_og.jpg"
+  },
+  "keepReading": {
+    "header": {
+      "title": "Keep Reading",
+      "subtitle": "More articles to explore"
+    },
+    "items": [
+      {
+        "id": "019",
+        "slug": "the-grudge-2020-on-tubi",
+        "eyebrow": "Available 6/1",
+        "title": "The Grudge (2020) Hits Tubi This Month",
+        "subtitle": "The curse doesn't follow rules, and neither does this version of it.",
+        "categoryTag": "Coming Soon",
+        "thumbnail": "/static/blog/the-t/thumbnails/019_thumbnail.jpg"
+      },
+      {
+        "id": "040",
+        "slug": "best-horror-shows-on-tubi-right-now",
+        "eyebrow": "Binge-Worthy",
+        "title": "Best Horror Shows on Tubi Right Now",
+        "subtitle": "A range of horror that goes beyond the obvious picks.",
+        "categoryTag": "Horror",
+        "thumbnail": "/static/blog/the-t/thumbnails/040_thumbnail.jpg"
+      },
+      {
+        "id": "031",
+        "slug": "tubis-most-intense-thriller-series",
+        "eyebrow": "What to Watch",
+        "title": "Tubi's Most Intense Thriller Series",
+        "subtitle": "The Fall, Damages, The Killing, and seven more that will wreck your sleep schedule.",
+        "categoryTag": "Shows",
+        "thumbnail": "/static/blog/the-t/thumbnails/031_thumbnail.png"
+      }
+    ]
+  },
+  "hero": {
+    "watchLink": "https://tubitv.com/movies/100040185/the-stepfather",
+    "contentId": "100040185",
+    "watchNowLabel": "Watch Now"
+  },
+  "whyWatch": {
+    "header": {
+      "title": "Why Watch It"
+    },
+    "body": "What makes The Stepfather land harder than most horror from this era is that it never hides what it is. The opening scene tells you exactly who Jerry Blake is and what he's done. The dread that follows isn't about discovery, it's about watching everyone around him not see what you already know. That gap between the audience and the characters is where the film lives, and it is deeply uncomfortable in the best way."
+  },
+  "gallery": {
+    "header": {
+      "title": "Media Shots"
+    },
+    "items": [
+      "/static/blog/the-t/media/023_media_1.jpg",
+      "/static/blog/the-t/media/023_media_2.jpg"
+    ]
+  }
+}

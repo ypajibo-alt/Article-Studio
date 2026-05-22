@@ -136,27 +136,22 @@ export async function fetchContentAvailability(contentIds: string[]): Promise<Tu
   const token = await getToken();
   if (!token) throw new Error('Could not obtain Tubi token');
 
-  // Batch in groups of 50
-  const results: TubiContentAvailability[] = [];
   const batchSize = 50;
-
+  const batches: string[][] = [];
   for (let i = 0; i < contentIds.length; i += batchSize) {
-    const batch = contentIds.slice(i, i + batchSize);
+    batches.push(contentIds.slice(i, i + batchSize));
+  }
+
+  const fetchBatch = async (batch: string[]): Promise<TubiContentAvailability[]> => {
     const url = `${CONTENT_API_BASE}?content_ids=${batch.join(',')}`;
-    const res = await fetchWithTimeout(url, {
-      headers: { Authorization: `Bearer ${token}` },
-    });
-    if (!res.ok) {
-      console.error(`Tubi content API failed: ${res.status}`);
-      continue;
-    }
+    const res = await fetchWithTimeout(url, { headers: { Authorization: `Bearer ${token}` } });
+    if (!res.ok) { console.error(`Tubi content API failed: ${res.status}`); return []; }
     const data = await res.json() as Record<string, Record<string, unknown> | null>;
-    // Response is a dict keyed by content ID: { "650799": {...}, "01630": {...} }
-    // Series IDs may be zero-padded in response keys — normalize by stripping leading zeros
+    const out: TubiContentAvailability[] = [];
     for (const [rawKey, item] of Object.entries(data)) {
       if (!item) continue;
-      const contentId = String(parseInt(rawKey, 10)); // strip leading zeros
-      results.push({
+      const contentId = String(parseInt(rawKey, 10));
+      out.push({
         contentId,
         title: String(item.title ?? ''),
         availability_starts: (item.availability_starts as string) ?? null,
@@ -164,8 +159,10 @@ export async function fetchContentAvailability(contentIds: string[]): Promise<Tu
         type: String(item.type ?? ''),
       });
     }
-  }
+    return out;
+  };
 
+  const results = (await Promise.all(batches.map(fetchBatch))).flat();
   return results;
 }
 

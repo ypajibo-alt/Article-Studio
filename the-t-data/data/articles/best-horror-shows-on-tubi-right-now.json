@@ -1,0 +1,289 @@
+{
+  "nav": {
+    "logoLabel": "The T",
+    "links": [
+      {
+        "label": "Home",
+        "href": "/the-t"
+      },
+      {
+        "label": "Coming Soon",
+        "href": "/the-t/coming-soon"
+      },
+      {
+        "label": "Shows",
+        "href": "/the-t/shows"
+      },
+      {
+        "label": "Movies",
+        "href": "/the-t/movies"
+      }
+    ],
+    "explore": {
+      "label": "Explore",
+      "items": [
+        {
+          "label": "FIFA World Cup 2026",
+          "href": "/the-t/fifa-world-cup"
+        },
+        {
+          "label": "Horror",
+          "href": "/the-t/horror"
+        },
+        {
+          "label": "Tubi Originals",
+          "href": "/the-t/originals"
+        },
+        {
+          "label": "Sports",
+          "href": "/the-t/sports"
+        }
+      ],
+      "moreGenresLabel": "More genres",
+      "moreGenresHref": "/the-t/genres"
+    },
+    "mobileMenu": {
+      "open": "Open menu",
+      "close": "Close menu"
+    }
+  },
+  "id": "040",
+  "slug": "best-horror-shows-on-tubi-right-now",
+  "categoryTag": "Horror",
+  "type": "listicle",
+  "title": "Best Horror Shows on Tubi Right Now",
+  "subtitle": "A range of horror that goes beyond the obvious picks.",
+  "intro": "The best horror shows on Tubi don't waste time earning your trust. They just start.\n\nJohn Carpenter and Dario Argento making hour-long nightmares with no studio notes. Freddy Krueger loose from Elm Street with a whole anthology to terrorize. A zombie road trip where the apocalypse is somehow also funny. A 1959 black-and-white series that still hasn't been topped for making you feel like the world is slightly wrong.\n\nPick your poison. Here's where to start.",
+  "images": {
+    "thumbnail": "/static/blog/the-t/thumbnails/040_thumbnail.jpg",
+    "og": "/static/blog/the-t/og/040_og.jpg"
+  },
+  "items": [
+    {
+      "position": 1,
+      "title": "The Twilight Zone",
+      "description": "Sixty-five years old and it still gets under your skin faster than anything made last year.\n\nRod Serling figured out early that the most effective horror isn't a monster - it's the moment a character realizes they've been the problem the whole time. The twist endings are famous, but what people forget is how much dread builds before you get there.\n\nAn astronaut lands on a strange planet. A man survives a nuclear blast with nothing but time and books. A woman in a hospital fears what the doctors aren't telling her. The setup is always mundane. Then the floor disappears.",
+      "contentTitle": "The Twilight Zone (1959)",
+      "tubiLink": "https://tubitv.com/series/300017350",
+      "contentId": "300017350",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/040_title_1_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/040_title_1_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/040_title_1_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Sci-Fi",
+      "year": "1959",
+      "runtime": "5 Seasons",
+      "rating": "TV-PG"
+    },
+    {
+      "position": 2,
+      "title": "Masters of Horror",
+      "description": "The premise alone is worth your time: give the biggest names in horror an hour, a budget, and zero interference, then see what they make when nobody can say no.\n\nJohn Carpenter delivers something that feels like a lost feature. Dario Argento goes full color-drenched nightmare. Takashi Miike's episode was so disturbing that Showtime refused to air it - which tells you everything you need to know about what he turned in.\n\nSome episodes are uneven. That's what happens when you let auteurs loose. The ones that land, land hard.",
+      "contentTitle": "Masters of Horror (2005)",
+      "tubiLink": "https://tubitv.com/series/924",
+      "contentId": "924",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/040_title_2_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/040_title_2_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/040_title_2_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Horror",
+      "year": "2005",
+      "runtime": "2 Seasons",
+      "rating": "TV-MA"
+    },
+    {
+      "position": 3,
+      "title": "Z Nation",
+      "description": "Yes, zombies. But also: a team of genuinely weird people, a cross-country mission with no guarantee anyone survives it, and a show that treats the apocalypse as both terrifying and completely absurd without ever apologizing for it.\n\nThere's a recurring bit involving a zombie baby that should not work and absolutely does. The horror is real, people die, stakes are actual stakes - but Z Nation never forgets that the end of the world is also kind of ridiculous.\n\nIt ran five seasons. That means it figured out how to keep that balance going long after most shows would have collapsed under it.",
+      "contentTitle": "Z Nation (2018)",
+      "tubiLink": "https://tubitv.com/series/300012615",
+      "contentId": "300012615",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/040_title_3_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/040_title_3_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/040_title_3_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Action",
+      "year": "2018",
+      "runtime": "5 Seasons",
+      "rating": "TV-14"
+    },
+    {
+      "position": 4,
+      "title": "Freddy's Nightmares",
+      "description": "Robert Englund hosts. Freddy doesn't always kill. That's the move this show makes, and it's weirder and more interesting than it sounds.\n\nFreed from the Elm Street mythology, the series uses Krueger as a Crypt Keeper type - introducing stories that spiral into psychological territory the movies never had time to sit in. The first episode, directed by Tobe Hooper, covers Freddy's actual trial and acquittal. It reframes everything you thought you knew about the character.\n\nAfter that, the anthology format takes over and the quality swings wildly. But the high points are genuinely unsettling in a way that has nothing to do with a glove.",
+      "contentTitle": "Freddy's Nightmares (1990)",
+      "tubiLink": "https://tubitv.com/series/300017478",
+      "contentId": "300017478",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/040_title_4_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/040_title_4_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/040_title_4_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Horror",
+      "year": "1990",
+      "runtime": "2 Seasons",
+      "rating": "TV-14"
+    },
+    {
+      "position": 5,
+      "title": "Fear Itself",
+      "description": "Same anthology format as Masters of Horror, same idea of pairing strong writers with strong directors - but made for NBC, which meant no explicit gore and a lot more pressure to scare you with what you don't see.\n\nStuart Gordon, Darren Lynn Bousman, and Breck Eisner all directed episodes. The cast across the season includes Brendan Fletcher, Elizabeth Moss, and Nick Stahl.\n\nThe standout is \"In Sickness and in Health\": a bride receives an anonymous note on her wedding day saying she's marrying a serial killer. It sounds like a simple premise. It is genuinely unbearable.",
+      "contentTitle": "Fear Itself (2009)",
+      "tubiLink": "https://tubitv.com/series/300005654",
+      "contentId": "300005654",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/040_title_5_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/040_title_5_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/040_title_5_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Horror",
+      "year": "2009",
+      "runtime": "1 Season",
+      "rating": "TV-14"
+    },
+    {
+      "position": 6,
+      "title": "Two Sentence Horror Stories",
+      "description": "Each episode starts from a two-sentence horror premise and builds outward. Half-hour runtime, no room to stall. It has to get to the point fast - and what it does with that efficiency is interesting.\n\nA lot of the premises aren't supernatural. They're about being followed. Being watched. Being in a situation where no one believes you. The CW series leans into social horror - race, gender, technology - without letting the subtext get so loud it breaks the episode.\n\nSome entries are stronger than others. The ones that work feel like something that actually happened to someone.",
+      "contentTitle": "Two Sentence Horror Stories (2017)",
+      "tubiLink": "https://tubitv.com/series/300017707",
+      "contentId": "300017707",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/040_title_6_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/040_title_6_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/040_title_6_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Horror",
+      "year": "2017",
+      "runtime": "1 Season",
+      "rating": "TV-MA"
+    },
+    {
+      "position": 7,
+      "title": "Goosebumps",
+      "description": "R.L. Stine's books worked because they treated kids as capable of handling real fear. Not cartoon fear - the specific dread of something being wrong in a familiar place. The show does the same thing.\n\nA camera that predicts death. A mask that won't come off. A ventriloquist's dummy with his own agenda. The effects are dated and the budgets were clearly tight, but the premises are solid enough that the atmosphere carries.\n\n\"The Haunted Mask\" two-parter is still uncomfortable to watch as an adult. That says something about what Stine understood about the thing underneath the monster.",
+      "contentTitle": "Goosebumps (1998)",
+      "tubiLink": "https://tubitv.com/series/300013625",
+      "contentId": "300013625",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/040_title_7_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/040_title_7_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/040_title_7_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Horror",
+      "year": "1998",
+      "runtime": "4 Seasons",
+      "rating": "TV-G"
+    },
+    {
+      "position": 8,
+      "title": "Night Visions",
+      "description": "Henry Rollins introducing horror anthology segments is a casting choice that tells you exactly what kind of show this is before a single story starts. Not warm. Not campy. Direct.\n\nThe Fox series ran one season and got quietly buried, which is a shame - the psychological episodes hold up better than most of what was on television at the time. Bill Pullman, Aidan Quinn, and Bridget Fonda all appear across the season.\n\nThe best episodes are about paranoia. Characters who can't trust their own perception of events. Rollins plays the host segments completely straight, which is exactly right.",
+      "contentTitle": "Night Visions (2001)",
+      "tubiLink": "https://tubitv.com/series/300017578",
+      "contentId": "300017578",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/040_title_8_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/040_title_8_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/040_title_8_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Thriller",
+      "year": "2001",
+      "runtime": "1 Season",
+      "rating": "TV-14"
+    },
+    {
+      "position": 9,
+      "title": "Horror Candy",
+      "description": "This is the newest thing on this list by a wide margin, and that matters. Horror Candy is a 2025 anthology working with fears that didn't exist when The Twilight Zone was made - or even when Masters of Horror was running.\n\nThe settings stretch from dystopian futures to haunted space stations. The anthology format means no single premise has to carry the whole season. If one episode doesn't land, the next one is a completely different nightmare.\n\nEarly episodes suggest the show knows what it wants to be: eclectic, dark, and not interested in playing it safe.",
+      "contentTitle": "Horror Candy (2025)",
+      "tubiLink": "https://tubitv.com/series/300013250",
+      "contentId": "300013250",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/040_title_9_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/040_title_9_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/040_title_9_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Horror",
+      "year": "2025",
+      "runtime": "1 Season",
+      "rating": "TV-MA"
+    },
+    {
+      "position": 10,
+      "title": "Freaky Stories",
+      "description": "Every episode starts the same way: \"This is a true story.\" It isn't. But the urban myths Freaky Stories animates are the kind that stick anyway - the hook on the car door, the spider eggs in the bubblegum, the babysitter and the phone call.\n\nCanadian animated anthology series from 1997, aimed at kids, hosted by a cockroach and a maggot. That sentence sounds like a joke. It is not.\n\nThe animation style is deliberately low-fi, which makes the stories feel more unsettling. If you grew up passing these around at school, this show is where a lot of them lived.",
+      "contentTitle": "Freaky Stories (1998)",
+      "tubiLink": "https://tubitv.com/series/4376",
+      "contentId": "4376",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/040_title_10_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/040_title_10_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/040_title_10_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Kids & Family",
+      "year": "1998",
+      "runtime": "2 Seasons",
+      "rating": "TV-Y7"
+    }
+  ],
+  "keepReading": {
+    "header": {
+      "title": "Keep Reading",
+      "subtitle": "More articles to explore"
+    },
+    "items": [
+      {
+        "id": "042",
+        "slug": "free-scary-movies-to-watch-online",
+        "eyebrow": "Binge-Worthy",
+        "title": "Free Scary Movies to Watch Online — No Subscription Needed",
+        "subtitle": "Straightforward picks when you want something unsettling without the extra steps.",
+        "categoryTag": "Horror",
+        "thumbnail": "/static/blog/the-t/thumbnails/042_thumbnail.jpg"
+      },
+      {
+        "id": "043",
+        "slug": "skinamarink-and-the-best-found-footage-horror-movies-on-tubi",
+        "eyebrow": "What to Watch",
+        "title": "Skinamarink and the Best Found Footage Horror on Tubi",
+        "subtitle": "Minimal, eerie, and built around what you don't see.",
+        "categoryTag": "Horror",
+        "thumbnail": "/static/blog/the-t/thumbnails/043_thumbnail.jpg"
+      },
+      {
+        "id": "038",
+        "slug": "movies-that-will-haunt-you-in-a-good-way",
+        "eyebrow": "What to Watch",
+        "title": "Movies That Will Haunt You (In a Good Way)",
+        "subtitle": "The kind that linger a little after the credits.",
+        "categoryTag": "Movies",
+        "thumbnail": "/static/blog/the-t/thumbnails/038_thumbnail.jpg"
+      }
+    ]
+  },
+  "datePosted": "2026-05-26"
+}

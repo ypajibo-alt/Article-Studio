@@ -1,0 +1,289 @@
+{
+  "nav": {
+    "logoLabel": "The T",
+    "links": [
+      {
+        "label": "Home",
+        "href": "/the-t"
+      },
+      {
+        "label": "Coming Soon",
+        "href": "/the-t/coming-soon"
+      },
+      {
+        "label": "Shows",
+        "href": "/the-t/shows"
+      },
+      {
+        "label": "Movies",
+        "href": "/the-t/movies"
+      }
+    ],
+    "explore": {
+      "label": "Explore",
+      "items": [
+        {
+          "label": "FIFA World Cup 2026",
+          "href": "/the-t/fifa-world-cup"
+        },
+        {
+          "label": "Horror",
+          "href": "/the-t/horror"
+        },
+        {
+          "label": "Tubi Originals",
+          "href": "/the-t/originals"
+        },
+        {
+          "label": "Sports",
+          "href": "/the-t/sports"
+        }
+      ],
+      "moreGenresLabel": "More genres",
+      "moreGenresHref": "/the-t/genres"
+    },
+    "mobileMenu": {
+      "open": "Open menu",
+      "close": "Close menu"
+    }
+  },
+  "id": "063",
+  "slug": "watch-football-movies-and-documentaries-free-on-tubi",
+  "categoryTag": "Sports",
+  "type": "listicle",
+  "title": "Watch Football Movies and Documentaries Free on Tubi",
+  "subtitle": "A Football Life, Undefeated, Blue Mountain State, and more, no subscription required.",
+  "intro": "The game doesn't stop when the final whistle blows.\n\nA Football Life pulls back the curtain on the legends who built the NFL - the untold stuff, not the highlight reel. Undefeated follows three kids in Memphis who need one volunteer coach and one season to change what's possible for them. And Blue Mountain State is exactly as unhinged as college football culture deserves.\n\nAll of it, free on Tubi. Here's where to start.",
+  "images": {
+    "thumbnail": "/static/blog/the-t/thumbnails/063_thumbnail.jpg",
+    "og": "/static/blog/the-t/og/063_og.jpg"
+  },
+  "items": [
+    {
+      "position": 1,
+      "title": "A Football Life",
+      "description": "You know the names. You've seen the stats. This is everything else.\n\nA Football Life goes behind the careers of the players, coaches, and executives who shaped the NFL - not the touchdowns, but the decisions, the setbacks, the moments that never make the broadcast. Each episode zeroes in on one figure and actually stays there long enough to find something real.\n\nIf you've ever watched a Hall of Fame induction speech and thought, I want to know what it actually cost them to get there - this is the show that answers that.",
+      "contentTitle": "A Football Life (2023)",
+      "tubiLink": "https://tubitv.com/series/300008898",
+      "contentId": "300008898",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/063_title_1_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/063_title_1_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/063_title_1_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Documentary",
+      "year": "2023",
+      "runtime": "4 Seasons",
+      "rating": "TV-PG"
+    },
+    {
+      "position": 2,
+      "title": "Undefeated",
+      "description": "This one won the Oscar for Best Documentary Feature, and once you watch it, that makes complete sense.\n\nThree players on an inner-city Memphis team. A volunteer coach named Bill Courtney who had no obligation to show up. A season where the real stakes have nothing to do with a trophy - they're about whether these kids get a future that looks different from what the neighborhood has already mapped out for them.\n\nCourtney loses his temper. Players push back. The team drops games they shouldn't lose. None of it is cleaned up for the camera, and that's exactly why the moments that hit actually hit.",
+      "contentTitle": "Undefeated (2012)",
+      "tubiLink": "https://tubitv.com/movies/100006940",
+      "contentId": "100006940",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/063_title_2_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/063_title_2_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/063_title_2_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Documentary",
+      "year": "2012",
+      "runtime": "1h 53m",
+      "rating": "PG-13"
+    },
+    {
+      "position": 3,
+      "title": "4th and Forever: Muck City",
+      "description": "Belle Glade, Florida is a small agricultural town that has produced an almost absurd number of NFL players - Santonio Holmes, Rickey Jackson, Fred Taylor. The pipeline is real. So is the pressure.\n\nMuck City follows two local high schools going head-to-head in a community where football isn't extracurricular, it's the primary exit route. Every kid on the field knows what a scholarship means. Every coach knows what's riding on the next snap.\n\nThe football is good. The weight of everything surrounding it is what makes this one stay with you.",
+      "contentTitle": "4th and Forever: Muck City (2020)",
+      "tubiLink": "https://tubitv.com/series/300001234",
+      "contentId": "300001234",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/063_title_3_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/063_title_3_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/063_title_3_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Documentary",
+      "year": "2020",
+      "runtime": "1 Season",
+      "rating": "TV-PG"
+    },
+    {
+      "position": 4,
+      "title": "4th and Forever: DeSoto",
+      "description": "DeSoto is a suburb of Dallas with a football program that knows exactly what winning looks like - and knows exactly how long it's been since they had it.\n\nThis documentary follows a full season with a team trying to get back to the championship, and it captures the specific texture of Texas high school football: the film sessions, the community pressure, the parents in the stands who still remember the good years. There's a stretch mid-season where the losses start stacking and you can watch the coaching staff recalibrating in real time.\n\nWatch it back-to-back with Muck City and you've got a full picture of what the game means before anyone ever goes pro.",
+      "contentTitle": "4th and Forever: DeSoto (2022)",
+      "tubiLink": "https://tubitv.com/series/300001727",
+      "contentId": "300001727",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/063_title_4_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/063_title_4_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/063_title_4_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Documentary",
+      "year": "2022",
+      "runtime": "1 Season",
+      "rating": "TV-MA"
+    },
+    {
+      "position": 5,
+      "title": "Brian's Song",
+      "description": "Gale Sayers and Brian Piccolo were Chicago Bears teammates who became something rarer than friends - they became proof that the locker room could be something different.\n\nThis remake of the 1971 original follows their bond from training camp through Piccolo's illness, and it doesn't lean on sentimentality to get there. The competition between them is real. The respect underneath it is just as real.\n\nMacon Hinton and Sean Maher play it with enough restraint that the emotional weight builds slowly, and by the time you feel it, it's already settled in.",
+      "contentTitle": "Brian's Song (2001)",
+      "tubiLink": "https://tubitv.com/movies/635465",
+      "contentId": "635465",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/063_title_5_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/063_title_5_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/063_title_5_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Drama",
+      "year": "2001",
+      "runtime": "1h 29m",
+      "rating": "TV-14"
+    },
+    {
+      "position": 6,
+      "title": "Greater",
+      "description": "Brandon Burlsworth walked on at the University of Arkansas - no scholarship, no guaranteed spot, no real reason to expect he'd survive the first week. He got cut. He came back anyway.\n\nGreater tells his story without over-explaining what made him different, which is exactly the right call. You just watch him outwork everyone around him in the specific, unglamorous ways that actually build a football player: film study, weight room, repetition, until the coaches run out of reasons to keep him off the field.\n\nThe true story is strange enough on its own that the film doesn't need to dress it up.",
+      "contentTitle": "Greater (2016)",
+      "tubiLink": "https://tubitv.com/movies/649961",
+      "contentId": "649961",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/063_title_6_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/063_title_6_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/063_title_6_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Drama",
+      "year": "2016",
+      "runtime": "2h 11m",
+      "rating": "PG"
+    },
+    {
+      "position": 7,
+      "title": "Carter High",
+      "description": "The 1988 Carter High Panthers were a dynasty. Undefeated. State champions. Several players headed straight to the NFL.\n\nThen a string of armed robberies changed everything.\n\nThe film earns the football first - so when the consequences arrive, you actually feel the weight of what's being lost. The performances are grounded, the Dallas setting feels specific in a way a lot of high school football movies don't bother with, and the story never lets the crimes flatten the kids who had nothing to do with them.\n\nThe team's championship title was eventually stripped. The film doesn't let you forget what that meant for the ones who only ever showed up and played.",
+      "contentTitle": "Carter High (2015)",
+      "tubiLink": "https://tubitv.com/movies/704523",
+      "contentId": "704523",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/063_title_7_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/063_title_7_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/063_title_7_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Drama",
+      "year": "2015",
+      "runtime": "1h 48m",
+      "rating": "PG-13"
+    },
+    {
+      "position": 8,
+      "title": "When the Game Stands Tall",
+      "description": "De La Salle High School in Concord, California won 151 consecutive football games over twelve years. That's not a dynasty - that's a statistical anomaly.\n\nJim Caviezel plays Bob Ladouceur, the coach who built it, and the film opens with the streak already broken, which is a smarter move than it sounds. The question was never whether they'd keep winning. It's whether a program built on something bigger than wins can survive losing.\n\nThere are a lot of film sessions, a lot of conversations about what football is actually for, and at least one scene where Ladouceur is clearly the most exhausted person in the room.",
+      "contentTitle": "When the Game Stands Tall (2014)",
+      "tubiLink": "https://tubitv.com/movies/100013609",
+      "contentId": "100013609",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/063_title_8_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/063_title_8_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/063_title_8_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Drama",
+      "year": "2014",
+      "runtime": "1h 55m",
+      "rating": "PG"
+    },
+    {
+      "position": 9,
+      "title": "Gridiron Gang",
+      "description": "Most people know Gridiron Gang as the 2006 Dwayne Johnson movie. This is the 1992 documentary it was based on.\n\nA probation officer at a juvenile detention center in California starts a football team - not as a feel-good experiment, but as a genuine attempt to give kids a structure they've never had access to. The games against outside schools are real games with real stakes, and the camera doesn't soften where these kids are coming from.\n\nIf you've already seen the remake, watching this one is its own experience - you see exactly what Hollywood kept and exactly what it decided to sand down.",
+      "contentTitle": "Gridiron Gang (1992)",
+      "tubiLink": "https://tubitv.com/movies/699336",
+      "contentId": "699336",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/063_title_9_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/063_title_9_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/063_title_9_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Documentary",
+      "year": "1992",
+      "runtime": "1h 37m",
+      "rating": "TV-PG"
+    },
+    {
+      "position": 10,
+      "title": "Blue Mountain State",
+      "description": "Yes, it's chaotic. That's entirely the point.\n\nBlue Mountain State follows three freshmen navigating life on a top college football team - the worship, the hazing, the parties, the brutal politics of the depth chart. It plays the whole thing as broad comedy and has zero interest in apologizing for it.\n\nDax Shepard's quarterback is genuinely rough at being a person, and the show leans into that instead of trying to redeem him every episode. If you've ever watched the way college football programs get treated like minor deities on campus and thought someone should make fun of this - someone did.",
+      "contentTitle": "Blue Mountain State (2011)",
+      "tubiLink": "https://tubitv.com/series/300007799",
+      "contentId": "300007799",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/063_title_10_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/063_title_10_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/063_title_10_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Comedy",
+      "year": "2011",
+      "runtime": "3 Seasons",
+      "rating": "TV-MA"
+    }
+  ],
+  "keepReading": {
+    "header": {
+      "title": "Keep Reading",
+      "subtitle": "More articles to explore"
+    },
+    "items": [
+      {
+        "id": "064",
+        "slug": "watch-nba-game-and-highlights-worth-watching-on-tubi",
+        "eyebrow": "What to Watch",
+        "title": "College Basketball Classics and Live Hoops on Tubi",
+        "subtitle": "Big Ten, Big 12, March Madness energy, all free, all on Tubi.",
+        "categoryTag": "Sports",
+        "thumbnail": "/static/blog/the-t/thumbnails/064_thumbnail.jpg"
+      },
+      {
+        "id": "065",
+        "slug": "fox-sports-on-tubi-whats-streaming-live-right-now",
+        "eyebrow": "What to Watch",
+        "title": "Fox Sports on Tubi: What's Streaming Live Right Now",
+        "subtitle": "What's live, what's next, and what's worth tuning into.",
+        "categoryTag": "Sports",
+        "thumbnail": "/static/blog/the-t/thumbnails/065_thumbnail.jpg"
+      },
+      {
+        "id": "060",
+        "slug": "best-soccer-stories-to-stream",
+        "eyebrow": "What to Watch",
+        "title": "Beyond the Pitch: The Best Soccer Stories to Stream Now",
+        "subtitle": "The stories behind the game, before the World Cup begins",
+        "categoryTag": "Sports",
+        "thumbnail": "/static/blog/the-t/thumbnails/060_thumbnail.jpg"
+      }
+    ]
+  },
+  "datePosted": "2026-05-26"
+}

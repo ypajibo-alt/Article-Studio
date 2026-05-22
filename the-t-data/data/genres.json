@@ -1,0 +1,200 @@
+{
+  "nav": {
+    "logoLabel": "The T",
+    "links": [
+      {
+        "label": "Home",
+        "href": "/the-t"
+      },
+      {
+        "label": "Coming Soon",
+        "href": "/the-t/coming-soon"
+      },
+      {
+        "label": "Shows",
+        "href": "/the-t/shows"
+      },
+      {
+        "label": "Movies",
+        "href": "/the-t/movies"
+      }
+    ],
+    "explore": {
+      "label": "Explore",
+      "items": [
+        {
+          "label": "FIFA World Cup 2026",
+          "href": "/the-t/fifa-world-cup"
+        },
+        {
+          "label": "Horror",
+          "href": "/the-t/horror"
+        },
+        {
+          "label": "Tubi Originals",
+          "href": "/the-t/originals"
+        },
+        {
+          "label": "Sports",
+          "href": "/the-t/sports"
+        }
+      ],
+      "moreGenresLabel": "More genres",
+      "moreGenresHref": "/the-t/genres"
+    },
+    "mobileMenu": {
+      "open": "Open menu",
+      "close": "Close menu"
+    }
+  },
+  "hero": {
+    "title": "Explore More Genres"
+  },
+  "sections": [
+    {
+      "id": "genre-anime",
+      "header": {
+        "title": "Anime",
+        "subtitle": "The best anime streaming on Tubi right now"
+      },
+      "items": [
+        {
+          "id": "068",
+          "slug": "epic-mecha-battles-anime-on-tubi",
+          "eyebrow": "What to Watch",
+          "title": "Anime’s Biggest Machines: Top Mecha Picks on Tubi",
+          "subtitle": "Big robots, bigger feelings, and the stories that make you actually care.",
+          "categoryTag": "Shows",
+          "thumbnail": "/static/blog/the-t/thumbnails/068_thumbnail.jpg"
+        },
+        {
+          "id": "069",
+          "slug": "the-best-anime-on-tubi-to-watch-completely-free",
+          "eyebrow": "What to Watch",
+          "title": "The Best Anime on Tubi to Watch Completely Free",
+          "subtitle": "Whether you're brand new or already deep in the rabbit hole.",
+          "categoryTag": "Shows",
+          "thumbnail": "/static/blog/the-t/thumbnails/069_thumbnail.jpg"
+        },
+        {
+          "id": "070",
+          "slug": "ghost-in-the-shell-fans-heres-whats-waiting-for-you-on-tubi",
+          "eyebrow": "What to Watch",
+          "title": "Ghost in the Shell Fans: Here's What's Waiting for You on Tubi",
+          "subtitle": "More worlds like that one are already waiting for you.",
+          "categoryTag": "Movies",
+          "thumbnail": "/static/blog/the-t/thumbnails/070_thumbnail.jpg"
+        }
+      ]
+    },
+    {
+      "id": "genre-young-adult-fiction",
+      "header": {
+        "title": "Young Adult Fiction",
+        "subtitle": "Coming-of-age stories worth revisiting and discovering"
+      },
+      "items": [
+        {
+          "id": "071",
+          "slug": "kissing-is-the-easy-part-gets-first-love-more-right-than-most",
+          "eyebrow": "What to Watch",
+          "title": "Kissing Is the Easy Part Gets First Love More Right Than Most",
+          "subtitle": "One secret deal, two people with completely different plans, and neither of them saw this coming.",
+          "categoryTag": "Originals",
+          "thumbnail": "/static/blog/the-t/thumbnails/071_thumbnail.jpg"
+        },
+        {
+          "id": "053",
+          "slug": "how-to-lose-a-popularity-contest-on-tubi",
+          "eyebrow": "What to Watch",
+          "title": "How to Lose a Popularity Contest Is the YA Film You Never Knew You Needed",
+          "subtitle": "A rigged election, a reluctant alliance, and feelings that absolutely were not part of the plan.",
+          "categoryTag": "Originals",
+          "thumbnail": "/static/blog/the-t/thumbnails/053_thumbnail.jpg"
+        },
+        {
+          "id": "073",
+          "slug": "if-you-grew-up-on-degrassi-these-teen-dramas-on-tubi-are-for-you",
+          "eyebrow": "What to Watch",
+          "title": "If You Grew Up on Degrassi, These Teen Dramas on Tubi Are for You",
+          "subtitle": "Same emotional chaos, different hallways.",
+          "categoryTag": "Shows",
+          "thumbnail": "/static/blog/the-t/thumbnails/073_thumbnail.jpg"
+        }
+      ]
+    },
+    {
+      "id": "genre-animation",
+      "header": {
+        "title": "Animation",
+        "subtitle": "Cartoons and animation for every age"
+      },
+      "items": [
+        {
+          "id": "074",
+          "slug": "the-classic-cartoons-every-90s-kid-needs-to-revisit",
+          "eyebrow": "What to Watch",
+          "title": "The Classic Cartoons Every 90s Kid Needs to Revisit",
+          "subtitle": "The ones that were doing more than you realized.",
+          "categoryTag": "Shows",
+          "thumbnail": "/static/blog/the-t/thumbnails/074_thumbnail.jpg"
+        },
+        {
+          "id": "075",
+          "slug": "archer-and-the-adult-animation-on-tubi-that-earns-its-rating",
+          "eyebrow": "What to Watch",
+          "title": "Archer and the Adult Animation on Tubi That Earns Its Rating",
+          "subtitle": "Sharp, weird, and very aware of what it's doing.",
+          "categoryTag": "Shows",
+          "thumbnail": "/static/blog/the-t/thumbnails/075_thumbnail.jpg"
+        },
+        {
+          "id": "076",
+          "slug": "looney-tunes-is-free-on-tubi-and-it-holds-up-better-than-you-think",
+          "eyebrow": "What to Watch",
+          "title": "Bugs, Scooby, Courage, and the Cartoons Tubi Has for Free",
+          "subtitle": "Still funny, still fast, still free on Tubi.",
+          "categoryTag": "Shows",
+          "thumbnail": "/static/blog/the-t/thumbnails/076_thumbnail.jpg"
+        }
+      ]
+    },
+    {
+      "id": "genre-culture",
+      "header": {
+        "title": "Culture",
+        "subtitle": "Stories that reflect culture, community, and identity"
+      },
+      "items": [
+        {
+          "id": "077",
+          "slug": "girlfriends-good-times-and-the-black-sitcoms-on-tubi",
+          "eyebrow": "What to Watch",
+          "title": "Girlfriends, Good Times, and the Black Sitcoms on Tubi",
+          "subtitle": "Decades of laughs, real rent, and friendships that don't let you off easy.",
+          "categoryTag": "Shows",
+          "thumbnail": "/static/blog/the-t/thumbnails/077_thumbnail.jpg"
+        },
+        {
+          "id": "078",
+          "slug": "saved-by-the-bell-and-the-classic-shows-on-tubi",
+          "eyebrow": "What to Watch",
+          "title": "Saved by the Bell and the Classic Shows on Tubi",
+          "subtitle": "Comfort watches that still hold up when you go back to them.",
+          "categoryTag": "Shows",
+          "thumbnail": "/static/blog/the-t/thumbnails/078_thumbnail.jpg"
+        },
+        {
+          "id": "079",
+          "slug": "the-black-films-and-shows-on-tubi-worth-watching-this-month",
+          "eyebrow": "What to Watch",
+          "title": "The Black Films and Shows on Tubi Worth Watching This Month",
+          "subtitle": "A monthly lineup that moves across genres instead of staying in one lane.",
+          "categoryTag": "Shows",
+          "thumbnail": "/static/blog/the-t/thumbnails/079_thumbnail.jpg"
+        }
+      ]
+    }
+  ],
+  "pageTitle": "Explore Free Movie and TV Genres on Tubi"
+}

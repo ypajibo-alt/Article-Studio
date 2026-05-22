@@ -1,0 +1,160 @@
+{
+  "nav": {
+    "logoLabel": "The T",
+    "links": [
+      {
+        "label": "Home",
+        "href": "/the-t"
+      },
+      {
+        "label": "Coming Soon",
+        "href": "/the-t/coming-soon"
+      },
+      {
+        "label": "Shows",
+        "href": "/the-t/shows"
+      },
+      {
+        "label": "Movies",
+        "href": "/the-t/movies"
+      }
+    ],
+    "explore": {
+      "label": "Explore",
+      "items": [
+        {
+          "label": "FIFA World Cup 2026",
+          "href": "/the-t/fifa-world-cup"
+        },
+        {
+          "label": "Horror",
+          "href": "/the-t/horror"
+        },
+        {
+          "label": "Tubi Originals",
+          "href": "/the-t/originals"
+        },
+        {
+          "label": "Sports",
+          "href": "/the-t/sports"
+        }
+      ],
+      "moreGenresLabel": "More genres",
+      "moreGenresHref": "/the-t/genres"
+    },
+    "mobileMenu": {
+      "open": "Open menu",
+      "close": "Close menu"
+    }
+  },
+  "id": "058",
+  "slug": "the-teams-to-watch-in-the-world-cup",
+  "categoryTag": "Sports",
+  "type": "article",
+  "title": "Road to 2026: The Teams to Watch in the World Cup",
+  "subtitle": "From the favorites to the dark horses, the squads worth tracking all the way to the final.",
+  "datePosted": "2026-05-26",
+  "intro": "Four teams open their World Cup stories on Tubi in the first two days of the tournament. Mexico faces South Africa on June 11 in Mexico City, and the USMNT plays Paraguay on June 12 in Inglewood. With 48 teams in the tournament for the first time, the group stage has more room for surprise, pressure, and the kind of moments fans remember long after the bracket moves on. Tubi also has Destination World Cup 2026 streaming now, so you can start with the player stories before the live matches begin.",
+  "quote": "Four teams begin their World Cup stories on Tubi, and the first chapter is free.",
+  "faq": {
+    "header": {
+      "title": "More details"
+    },
+    "items": [
+      {
+        "question": "When does the FIFA World Cup 2026™ start?",
+        "answer": "FIFA World Cup 2026™ kicks off with an opening ceremony and match on Thursday, June 11. Pregame 1:00 PM ET. Kickoff 3:00 PM ET. You can stream both events LIVE & FREE in 4K* on Tubi with a free account."
+      },
+      {
+        "question": "Do I need an account to watch FIFA World Cup 2026™ on Tubi?",
+        "answer": "Yes. You need to register for a free account and sign in, but it’s quick and easy. We promise."
+      },
+      {
+        "question": "What devices can I use to stream FIFA World Cup 2026™ on Tubi?",
+        "answer": "Tubi works on most smart TVs, mobile devices, streaming devices, gaming consoles, and web browsers. Visit the Help Center for a complete list of supported devices. Don’t wanna miss a gooooooal? Get the Tubi mobile app to stream on the go."
+      }
+    ]
+  },
+  "images": {
+    "thumbnail": "/static/blog/the-t/thumbnails/058_thumbnail.png",
+    "hero": "/static/blog/the-t/heroes/058_hero.png",
+    "og": "/static/blog/the-t/og/058_og.png"
+  },
+  "keepReading": {
+    "header": {
+      "title": "Keep Reading",
+      "subtitle": "More articles to explore"
+    },
+    "items": [
+      {
+        "id": "060",
+        "slug": "best-soccer-stories-to-stream",
+        "eyebrow": "What to Watch",
+        "title": "Beyond the Pitch: The Best Soccer Stories to Stream Now",
+        "subtitle": "The stories behind the game, before the World Cup begins",
+        "categoryTag": "Sports",
+        "thumbnail": "/static/blog/the-t/thumbnails/060_thumbnail.jpg"
+      },
+      {
+        "id": "056",
+        "slug": "world-cup-opening-weekend-match-schedule-on-tubi",
+        "eyebrow": "Guide",
+        "title": "Your Guide to the World Cup Opening Weekend: Match Schedule on Tubi",
+        "subtitle": "The full match schedule for opening weekend, plus how to stream every game on Tubi.",
+        "categoryTag": "Sports",
+        "thumbnail": "/static/blog/the-t/thumbnails/056_thumbnail.png"
+      },
+      {
+        "id": "059",
+        "slug": "the-ultimate-guide-to-streaming-world-cup-games-for-free-on-tubi",
+        "eyebrow": "Guide",
+        "title": "The Ultimate Guide to Streaming World Cup Games for Free on Tubi",
+        "subtitle": "Everything you need to know to watch every match, every angle, every weekend — all on Tubi.",
+        "categoryTag": "Sports",
+        "thumbnail": "/static/blog/the-t/thumbnails/059_thumbnail.png"
+      }
+    ]
+  },
+  "hero": {
+    "watchLink": "https://tubitv.com/hubs/fifa-world-cup-fox-hub",
+    "watchNowLabel": "Watch Now"
+  },
+  "whyWatch": {
+    "header": {
+      "title": "Why Watch It"
+    },
+    "body": "The 48-team format changes the shape of the tournament, starting in the group stage. More teams means more storylines, more pressure points, and more room for an opener to become the match everyone is still talking about a week later.\n\nMexico and the USMNT both begin at home, which gives each match a specific kind of energy that a neutral venue never quite replicates. Paraguay and South Africa arrive without that home pressure and with plenty to gain, which makes both openers more interesting than the matchups might suggest on paper. Add in McKennie's documentary story on Tubi, and there is a real reason to start watching before kickoff even arrives.\n\nStart with Episode 1 of Destination World Cup 2026, then come back for Mexico vs. South Africa on June 11 and USA vs. Paraguay on June 12. Both matches stream live on Tubi with free registration, with replays available afterward without sign-in."
+  },
+  "gallery": {
+    "header": {
+      "title": "Media Shots"
+    },
+    "items": [
+      "/static/blog/the-t/media/058_media_1.png",
+      "/static/blog/the-t/media/058_media_2.png"
+    ]
+  },
+  "whatsComing": {
+    "header": {
+      "title": "What's Coming"
+    },
+    "items": [
+      {
+        "heading": "USA, Group D",
+        "paragraph": "The USMNT did not have to qualify as co-hosts, but playing at home carries its own weight. Their first World Cup match on home soil since 1994 arrives June 12 against Paraguay, and McKennie, Pepi, and Dest lead a squad that knows exactly what this moment means. Group D also includes Australia and Türkiye, so the pressure to start strong is real from minute one."
+      },
+      {
+        "heading": "Mexico, Group A",
+        "paragraph": "Mexico opens the tournament on June 11 at Mexico City Stadium, and this is not just a first group match. It is a national moment with a home crowd that will feel every touch from kickoff. Group A also includes South Korea and Czechia alongside South Africa, so Mexico will want to set the tone early and make the most of the home advantage while they have it."
+      },
+      {
+        "heading": "Paraguay, Group D",
+        "paragraph": "Paraguay earned its place through CONMEBOL and arrives in Inglewood with every reason to make the USMNT's opener uncomfortable. This is not the kind of opponent a host nation can ease into. If the US starts slowly, Paraguay has the quality to punish it."
+      },
+      {
+        "heading": "South Africa, Group A",
+        "paragraph": "South Africa opens against Mexico in one of the loudest possible environments. They know what a massive tournament atmosphere feels like from hosting in 2010, and they will need to draw on that experience against a Mexican side carrying the full energy of a home crowd behind them."
+      }
+    ]
+  }
+}

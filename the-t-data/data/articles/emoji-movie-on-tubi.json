@@ -1,0 +1,161 @@
+{
+  "nav": {
+    "logoLabel": "The T",
+    "links": [
+      {
+        "label": "Home",
+        "href": "/the-t"
+      },
+      {
+        "label": "Coming Soon",
+        "href": "/the-t/coming-soon"
+      },
+      {
+        "label": "Shows",
+        "href": "/the-t/shows"
+      },
+      {
+        "label": "Movies",
+        "href": "/the-t/movies"
+      }
+    ],
+    "explore": {
+      "label": "Explore",
+      "items": [
+        {
+          "label": "FIFA World Cup 2026",
+          "href": "/the-t/fifa-world-cup"
+        },
+        {
+          "label": "Horror",
+          "href": "/the-t/horror"
+        },
+        {
+          "label": "Tubi Originals",
+          "href": "/the-t/originals"
+        },
+        {
+          "label": "Sports",
+          "href": "/the-t/sports"
+        }
+      ],
+      "moreGenresLabel": "More genres",
+      "moreGenresHref": "/the-t/genres"
+    },
+    "mobileMenu": {
+      "open": "Open menu",
+      "close": "Close menu"
+    }
+  },
+  "id": "021",
+  "slug": "emoji-movie-on-tubi",
+  "categoryTag": "Coming Soon",
+  "type": "article",
+  "title": "Emoji Movie Is Back and Better Than Ever",
+  "subtitle": "Gene just wants to feel something. Turns out that's a lot to ask of a phone.",
+  "datePosted": "2026-05-26",
+  "intro": "The Emoji Movie came out in 2017, got destroyed by critics, made $217 million worldwide, and never once apologized for itself. Now it's back, and the conversation around it has quietly shifted. What looked like a cynical cash grab the first time around has developed a genuine cult following, the kind that watches it ironically and then watches it again without the irony. Gene is a meh emoji who can't do meh. That's the whole premise, and it holds up better than anyone expected it to.",
+  "cast": {
+    "header": {
+      "title": "The Cast"
+    },
+    "items": [
+      {
+        "name": "T.J. Miller",
+        "bio": "Miller voices Gene, the emoji who refuses to make one face. He plays the whole thing with an anxious sincerity that keeps the film from collapsing into pure product. Gene wants to fit in and keeps failing at it, which is a more relatable setup than it has any right to be."
+      },
+      {
+        "name": "James Corden",
+        "bio": "Corden is Hi-5, a hand emoji who peaked and knows it. He latches onto Gene because he needs the attention, and the film is honest about that. Hi-5 is not a good friend. He is a very funny one."
+      },
+      {
+        "name": "Anna Faris",
+        "bio": "Faris voices Jailbreak, a princess emoji who hacked her own code and refuses to go back. She has a goal that exists completely outside of Gene's story, which makes her the most functional character in the film."
+      },
+      {
+        "name": "Patrick Stewart",
+        "bio": "Stewart plays Poop. He committed. That is the entire note."
+      }
+    ]
+  },
+  "quote": "I'm not broken. I just feel everything.",
+  "faq": {
+    "header": {
+      "title": "More details"
+    },
+    "items": [
+      {
+        "question": "Who directed the film?",
+        "answer": "Tony Leondis"
+      },
+      {
+        "question": "Who is in the cast?",
+        "answer": "T.J. Miller, James Corden, Anna Faris, Patrick Stewart, Maya Rudolph, Steven Wright, Jennifer Coolidge, Christina Aguilera, Sofia Vergara, Jake T. Austin"
+      },
+      {
+        "question": "Where can I stream this?",
+        "answer": "Watch free on Tubi"
+      }
+    ]
+  },
+  "images": {
+    "thumbnail": "/static/blog/the-t/thumbnails/021_thumbnail.jpg",
+    "hero": "/static/blog/the-t/heroes/021_hero.jpg",
+    "og": "/static/blog/the-t/og/021_og.jpg"
+  },
+  "keepReading": {
+    "header": {
+      "title": "Keep Reading",
+      "subtitle": "More articles to explore"
+    },
+    "items": [
+      {
+        "id": "010",
+        "slug": "best-animation-on-tubi",
+        "eyebrow": "What to Watch",
+        "title": "Best Animation on Tubi",
+        "subtitle": "The kind of animation that always felt a step outside the usual.",
+        "categoryTag": "Shows",
+        "thumbnail": "/static/blog/the-t/thumbnails/010_thumbnail.jpg"
+      },
+      {
+        "id": "074",
+        "slug": "the-classic-cartoons-every-90s-kid-needs-to-revisit",
+        "eyebrow": "What to Watch",
+        "title": "The Classic Cartoons Every 90s Kid Needs to Revisit",
+        "subtitle": "The ones that were doing more than you realized.",
+        "categoryTag": "Shows",
+        "thumbnail": "/static/blog/the-t/thumbnails/074_thumbnail.jpg"
+      },
+      {
+        "id": "036",
+        "slug": "the-funniest-movies-streaming-on-tubi-now",
+        "eyebrow": "What to Watch",
+        "title": "The Funniest Movies Streaming on Tubi Now",
+        "subtitle": "Easy watches that still land when you need them to.",
+        "categoryTag": "Movies",
+        "thumbnail": "/static/blog/the-t/thumbnails/036_thumbnail.jpg"
+      }
+    ]
+  },
+  "hero": {
+    "watchLink": "https://tubitv.com/movies/100015286/the-emoji-movie",
+    "contentId": "100015286",
+    "watchNowLabel": "Watch Now"
+  },
+  "whyWatch": {
+    "header": {
+      "title": "Why Watch It"
+    },
+    "body": "Here is the thing about The Emoji Movie that nobody wanted to admit in 2017: the central premise actually works. An emoji who cannot control his expression, living inside a phone where conformity is the only survival strategy, is a real setup with real stakes. The film earns its ending because Gene's problem is specific, not vague. He doesn't want to be special. He wants to stop being wrong."
+  },
+  "gallery": {
+    "header": {
+      "title": "Media Shots"
+    },
+    "items": [
+      "/static/blog/the-t/media/021_media_1.jpg",
+      "/static/blog/the-t/media/021_media_2.jpg"
+    ]
+  }
+}

@@ -1,0 +1,289 @@
+{
+  "nav": {
+    "logoLabel": "The T",
+    "links": [
+      {
+        "label": "Home",
+        "href": "/the-t"
+      },
+      {
+        "label": "Coming Soon",
+        "href": "/the-t/coming-soon"
+      },
+      {
+        "label": "Shows",
+        "href": "/the-t/shows"
+      },
+      {
+        "label": "Movies",
+        "href": "/the-t/movies"
+      }
+    ],
+    "explore": {
+      "label": "Explore",
+      "items": [
+        {
+          "label": "FIFA World Cup 2026",
+          "href": "/the-t/fifa-world-cup"
+        },
+        {
+          "label": "Horror",
+          "href": "/the-t/horror"
+        },
+        {
+          "label": "Tubi Originals",
+          "href": "/the-t/originals"
+        },
+        {
+          "label": "Sports",
+          "href": "/the-t/sports"
+        }
+      ],
+      "moreGenresLabel": "More genres",
+      "moreGenresHref": "/the-t/genres"
+    },
+    "mobileMenu": {
+      "open": "Open menu",
+      "close": "Close menu"
+    }
+  },
+  "id": "041",
+  "slug": "the-slasher-movies-that-defined-the-genre",
+  "categoryTag": "Horror",
+  "type": "listicle",
+  "title": "The Slasher Movies That Defined the Genre",
+  "subtitle": "The films that wrote the rules - and the ones still collecting royalties on them.",
+  "intro": "Every slasher movie you've ever seen owes a debt to about a dozen films that came before it.\n\nThe babysitter who hears something downstairs. The summer camp that should've stayed closed. The masked figure who doesn't run, doesn't talk, and does not stop. Someone had to invent all of that - and the slasher movies that defined the genre did it first, did it messier, and did it with a conviction that still holds.\n\nHere's the lineage. Start anywhere.",
+  "images": {
+    "thumbnail": "/static/blog/the-t/thumbnails/041_thumbnail.jpg",
+    "og": "/static/blog/the-t/og/041_og.jpg"
+  },
+  "items": [
+    {
+      "position": 1,
+      "title": "Black Christmas",
+      "description": "Four years before Michael Myers. Black Christmas did it first.\n\nSorority sisters start getting phone calls. The voice on the other end is wrong in a way that's hard to explain - layered, shifting, not quite one person. Then the girls start disappearing. Director Bob Clark shoots the killer's POV from inside the attic, looking down through the house, and it is genuinely unsettling in a way that feels modern even now.\n\nThe ending doesn't resolve. It just stops. That choice alone influenced thirty years of slashers - the idea that the threat doesn't get explained, doesn't get defeated, just continues. This is where the genre's grammar was written.",
+      "contentTitle": "Black Christmas (1974)",
+      "tubiLink": "https://tubitv.com/movies/469540",
+      "contentId": "469540",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/041_title_1_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/041_title_1_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/041_title_1_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Horror",
+      "year": "1974",
+      "runtime": "1h 38m",
+      "rating": "R"
+    },
+    {
+      "position": 2,
+      "title": "The Texas Chain Saw Massacre",
+      "description": "Leatherface doesn't stalk. He erupts. One moment there's a door, and then there's a man in a mask made of human skin swinging a hammer, and the film never really recovers its footing after that.\n\nTobe Hooper shot it on 16mm in Texas summer heat and the result looks less like a horror movie than footage someone found. The family dinner scene in the third act is the kind of thing that stays with you - not because of what's shown, but because of how long it holds. No score cues telling you how to feel. Just the room.\n\nEvery rural horror film made in the fifty years since is working in this one's shadow.",
+      "contentTitle": "The Texas Chain Saw Massacre (1974)",
+      "tubiLink": "https://tubitv.com/movies/499404",
+      "contentId": "499404",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/041_title_2_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/041_title_2_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/041_title_2_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Horror",
+      "year": "1974",
+      "runtime": "1h 23m",
+      "rating": "R"
+    },
+    {
+      "position": 3,
+      "title": "Prom Night",
+      "description": "Jamie Lee Curtis is already a year past Halloween when she shows up here, and the film knows exactly what it's doing casting her. She plays Kim, whose little sister died in an accident six years earlier. The four kids responsible are about to graduate.\n\nThe killer's identity is actually held back with some discipline, which was rarer than it sounds in 1980. There's a disco sequence that commits completely and somehow works. The prom setting gave the genre a new architecture - the formal event, the crowded gymnasium, the slow reveal of who's missing - and every prom-slasher that followed is drawing from this blueprint.\n\nAlso: Leslie Nielsen is here, playing it completely straight.",
+      "contentTitle": "Prom Night (1980)",
+      "tubiLink": "https://tubitv.com/movies/449545",
+      "contentId": "449545",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/041_title_3_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/041_title_3_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/041_title_3_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Horror",
+      "year": "1980",
+      "runtime": "1h 33m",
+      "rating": "R"
+    },
+    {
+      "position": 4,
+      "title": "Terror Train",
+      "description": "A fraternity hazing prank sends a pledge to a psychiatric facility. Three years later, the same fraternity rents a train for a New Year's Eve costume party. The pledge is on the train.\n\nHere's what makes this one specific: every time the killer takes someone out, they take the victim's costume. So the group is hunting a threat that keeps changing what it looks like. Jamie Lee Curtis plays the dawning realization with the same controlled dread she brought to Halloween. David Copperfield also appears as a magician, and the film uses him better than it has any right to.\n\nThe closed-system setting - no exits, no help coming - became a slasher staple, and this is one of the clearest early examples of it.",
+      "contentTitle": "Terror Train (1980)",
+      "tubiLink": "https://tubitv.com/movies/652367",
+      "contentId": "652367",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/041_title_4_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/041_title_4_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/041_title_4_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Horror",
+      "year": "1980",
+      "runtime": "1h 37m",
+      "rating": "R"
+    },
+    {
+      "position": 5,
+      "title": "The Burning",
+      "description": "Cropsy was a camp caretaker. A prank left him burned beyond recognition. Now he's back at the waterfront with garden shears and a very specific list.\n\nThe Burning came out the year after Friday the 13th and shares its summer-camp DNA, but it has something Friday didn't: a single set piece that horror fans still talk about by name. A group of campers on a raft, drifting, no idea what's underneath. Tom Savini did the effects and did not hold back. The sequence is fast, chaotic, and genuinely shocking even now.\n\nThis is also an early film credit for both Jason Alexander and Holly Hunter, playing summer campers with absolutely no idea what's coming.",
+      "contentTitle": "The Burning (1981)",
+      "tubiLink": "https://tubitv.com/movies/486577",
+      "contentId": "486577",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/041_title_5_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/041_title_5_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/041_title_5_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Horror",
+      "year": "1981",
+      "runtime": "1h 31m",
+      "rating": "R"
+    },
+    {
+      "position": 6,
+      "title": "Happy Birthday to Me",
+      "description": "The poster advertised the murder methods. That was a choice, and it was the right one.\n\nVirginia has memory gaps. Her friends at Crawford Academy are dying in ways that are - creative is the word. A shish kebab. A barbell. The film treats each kill like its own individual attraction, designed to be remembered, and that changed how the genre thought about pacing. A slasher's rhythm is built around its set pieces, not its plot. This one figured that out early.\n\nGlenn Ford plays Virginia's psychiatrist and commits fully to a film that is, to be clear, completely unhinged by the end. The final act twist is genuinely strange in a way you won't see coming.",
+      "contentTitle": "Happy Birthday to Me (1981)",
+      "tubiLink": "https://tubitv.com/movies/691815",
+      "contentId": "691815",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/041_title_6_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/041_title_6_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/041_title_6_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Horror",
+      "year": "1981",
+      "runtime": "1h 51m",
+      "rating": "R"
+    },
+    {
+      "position": 7,
+      "title": "The House on Sorority Row",
+      "description": "Seven sorority sisters, one dead housemother, and a body they dropped in the swimming pool.\n\nThe decision to cover it up is the whole engine. The group has a shared secret, the secret generates the threat, and the threat picks them off one by one. That structure is so familiar now it's basically invisible - but this film is one of the places it crystallized. The killer's identity lands as an actual twist because the film withholds real information, not just camera angles.\n\nIt's also genuinely well-shot for the budget. A few sequences use the sorority house's geography with real patience - rooms and staircases earning their dread before anything happens in them.",
+      "contentTitle": "The House on Sorority Row (1982)",
+      "tubiLink": "https://tubitv.com/movies/596127",
+      "contentId": "596127",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/041_title_7_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/041_title_7_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/041_title_7_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Horror",
+      "year": "1982",
+      "runtime": "1h 31m",
+      "rating": "R"
+    },
+    {
+      "position": 8,
+      "title": "Silent Night, Deadly Night",
+      "description": "A child watches his parents murdered by a man in a Santa suit. Years later, working at a toy store, he's asked to wear the costume.\n\nSilent Night, Deadly Night generated organized protests outside theaters - parents groups, civic organizations, actual picket lines. Siskel and Ebert read the credits on air to shame the filmmakers. The film was pulled from some theaters mid-run. None of that happened because it's a bad slasher. It happened because the film understood that the genre's power comes from violating something people consider safe, and it picked the most protected symbol it could find.\n\nThe controversy reshaped how studios handled slasher marketing for the rest of the decade.",
+      "contentTitle": "Silent Night, Deadly Night (1984)",
+      "tubiLink": "https://tubitv.com/movies/626525",
+      "contentId": "626525",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/041_title_8_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/041_title_8_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/041_title_8_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Horror",
+      "year": "1984",
+      "runtime": "1h 25m",
+      "rating": "R"
+    },
+    {
+      "position": 9,
+      "title": "Child's Play",
+      "description": "The challenge was real: how do you make a Good Guy doll scary without it looking ridiculous?\n\nThe answer involved full-size puppet rigs, a small actor in a suit, and Brad Dourif's voice doing things that have no business coming out of a children's toy. The best scene is when Andy's mom realizes the doll has been talking to him with no batteries - she checks, they're not there, and Chucky turns to look at her. Dourif plays it like a caught animal, not a monster reveal. That's worse.\n\nChucky became one of the few slasher icons to sustain a franchise entirely on personality, and this is where that personality started.",
+      "contentTitle": "Child's Play (1988)",
+      "tubiLink": "https://tubitv.com/movies/438117",
+      "contentId": "438117",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/041_title_9_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/041_title_9_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/041_title_9_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Horror",
+      "year": "1988",
+      "runtime": "1h 27m",
+      "rating": "R"
+    },
+    {
+      "position": 10,
+      "title": "Sleepaway Camp II: Unhappy Campers",
+      "description": "Angela Baker is back at camp. This time she's a counselor.\n\nSleepaway Camp II is funny on purpose, which puts it in a specific category: the slasher that knows exactly what it is and uses that knowledge as a weapon. Angela lectures campers about their behavior before killing them for it. She has opinions about horror movies. She references Friday the 13th and Nightmare on Elm Street by name. In 1988, that kind of self-awareness was rare enough to feel genuinely strange.\n\nPamela Springsteen plays Angela with a cheerfulness that is deeply, specifically wrong, and the film never once breaks from it. Eight years before Scream made genre self-awareness a mainstream move, this one was already doing it from the inside.",
+      "contentTitle": "Sleepaway Camp II: Unhappy Campers (1988)",
+      "tubiLink": "https://tubitv.com/movies/302252",
+      "contentId": "302252",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/041_title_10_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/041_title_10_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/041_title_10_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Horror",
+      "year": "1988",
+      "runtime": "1h 20m",
+      "rating": "R"
+    }
+  ],
+  "keepReading": {
+    "header": {
+      "title": "Keep Reading",
+      "subtitle": "More articles to explore"
+    },
+    "items": [
+      {
+        "id": "040",
+        "slug": "best-horror-shows-on-tubi-right-now",
+        "eyebrow": "Binge-Worthy",
+        "title": "Best Horror Shows on Tubi Right Now",
+        "subtitle": "A range of horror that goes beyond the obvious picks.",
+        "categoryTag": "Horror",
+        "thumbnail": "/static/blog/the-t/thumbnails/040_thumbnail.jpg"
+      },
+      {
+        "id": "044",
+        "slug": "best-supernatural-horror-shows-on-tubi",
+        "eyebrow": "What to Watch",
+        "title": "Best Supernatural Horror Shows on Tubi",
+        "subtitle": "Stories where the threat feels just out of reach.",
+        "categoryTag": "Horror",
+        "thumbnail": "/static/blog/the-t/thumbnails/044_thumbnail.jpg"
+      },
+      {
+        "id": "043",
+        "slug": "skinamarink-and-the-best-found-footage-horror-movies-on-tubi",
+        "eyebrow": "What to Watch",
+        "title": "Skinamarink and the Best Found Footage Horror on Tubi",
+        "subtitle": "Minimal, eerie, and built around what you don't see.",
+        "categoryTag": "Horror",
+        "thumbnail": "/static/blog/the-t/thumbnails/043_thumbnail.jpg"
+      }
+    ]
+  },
+  "datePosted": "2026-05-26"
+}

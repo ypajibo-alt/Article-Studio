@@ -1,0 +1,160 @@
+{
+  "nav": {
+    "logoLabel": "The T",
+    "links": [
+      {
+        "label": "Home",
+        "href": "/the-t"
+      },
+      {
+        "label": "Coming Soon",
+        "href": "/the-t/coming-soon"
+      },
+      {
+        "label": "Shows",
+        "href": "/the-t/shows"
+      },
+      {
+        "label": "Movies",
+        "href": "/the-t/movies"
+      }
+    ],
+    "explore": {
+      "label": "Explore",
+      "items": [
+        {
+          "label": "FIFA World Cup 2026",
+          "href": "/the-t/fifa-world-cup"
+        },
+        {
+          "label": "Horror",
+          "href": "/the-t/horror"
+        },
+        {
+          "label": "Tubi Originals",
+          "href": "/the-t/originals"
+        },
+        {
+          "label": "Sports",
+          "href": "/the-t/sports"
+        }
+      ],
+      "moreGenresLabel": "More genres",
+      "moreGenresHref": "/the-t/genres"
+    },
+    "mobileMenu": {
+      "open": "Open menu",
+      "close": "Close menu"
+    }
+  },
+  "id": "048",
+  "slug": "battle-for-castle-itter-on-tubi",
+  "categoryTag": "Originals",
+  "type": "article",
+  "title": "Battle for Castle Itter: The True Story Behind Tubi's New Action Film",
+  "subtitle": "American soldiers and German Wehrmacht troops fighting side by side — against the SS — and it's all based on real events.",
+  "datePosted": "2026-05-26",
+  "intro": "May 5, 1945. The war in Europe is two days from ending. A small unit of U.S. soldiers rolls up to an Austrian castle where the SS has trapped a group of French VIPs, tennis stars, former prime ministers, a general, and decides the only way out is to fight alongside the Wehrmacht troops already holding the perimeter. This is not a premise someone invented. It happened. And The Battle for Castle Itter is the film that finally puts you inside it. The setup sounds like a pitch that got rejected for being too on the nose, but history didn't care about that.",
+  "cast": {
+    "header": {
+      "title": "The Cast"
+    },
+    "items": [
+      {
+        "name": "Aleksandar Trmcic",
+        "bio": "Trmcic carries the weight of a unit that has no business being here, fighting a battle that technically doesn't need to happen anymore. He's the axis the whole operation turns on, the soldier who has to hold together men who don't trust each other long enough to survive one more day."
+      },
+      {
+        "name": "Daniel Grogan",
+        "bio": "Grogan plays into the friction at the heart of the film, the American side of an alliance nobody wanted and nobody planned for. There's a scene where the distrust between allies is more dangerous than the enemy outside the walls, and Grogan is right in the middle of it."
+      },
+      {
+        "name": "Laurent Rouy",
+        "bio": "Rouy is one of the French prisoners, which means he's simultaneously the reason this mission exists and the biggest source of tension inside the castle. The people being rescued are not passive. They have opinions about how this should go."
+      },
+      {
+        "name": "Boris Lukman",
+        "bio": "Lukman represents the other half of the impossible alliance, the German side. He's not playing a villain or a redemption arc. He's playing a soldier who made a calculation and is now stuck living it out under fire."
+      }
+    ]
+  },
+  "quote": "The war ends in two days. Try not to die before then.",
+  "faq": {
+    "header": {
+      "title": "More details"
+    },
+    "items": [
+      {
+        "question": "Who directed the film?",
+        "answer": "Maximilian Elfeldt"
+      },
+      {
+        "question": "Who is in the cast?",
+        "answer": "Aleksandar Trmcic, Daniel Grogan, Frano Lasic, Boris Lukman, Laurent Rouy, Marko Filipovic"
+      },
+      {
+        "question": "Where can I stream this?",
+        "answer": "Watch free on Tubi"
+      }
+    ]
+  },
+  "images": {
+    "thumbnail": "/static/blog/the-t/thumbnails/048_thumbnail.jpg",
+    "hero": "/static/blog/the-t/heroes/048_hero.jpg",
+    "og": "/static/blog/the-t/og/048_og.jpg"
+  },
+  "keepReading": {
+    "header": {
+      "title": "Keep Reading",
+      "subtitle": "More articles to explore"
+    },
+    "items": [
+      {
+        "id": "033",
+        "slug": "tubis-best-action-movie-collection",
+        "eyebrow": "What to Watch",
+        "title": "Tubi's Best Action Movie Collection",
+        "subtitle": "Fast-moving stories with just enough weight behind the action.",
+        "categoryTag": "Movies",
+        "thumbnail": "/static/blog/the-t/thumbnails/033_thumbnail.jpg"
+      },
+      {
+        "id": "025",
+        "slug": "overlord-2018-free-on-tubi",
+        "eyebrow": "Available 6/1",
+        "title": "Overlord (2018): Watch J.J. Abrams' WWII Horror Free on Tubi",
+        "subtitle": "They were supposed to blow up a radio tower. Then they found what was in the basement.",
+        "categoryTag": "Coming Soon",
+        "thumbnail": "/static/blog/the-t/thumbnails/025_thumbnail.jpg"
+      },
+      {
+        "id": "012",
+        "slug": "from-cult-classics-to-hidden-gems-the-best-of-tubi",
+        "eyebrow": "What to Watch",
+        "title": "From Cult Classics to Hidden Gems: The Best of Tubi",
+        "subtitle": "The ones people keep finding, recommending, and coming back to.",
+        "categoryTag": "Movies",
+        "thumbnail": "/static/blog/the-t/thumbnails/012_thumbnail.jpg"
+      }
+    ]
+  },
+  "hero": {
+    "watchLink": "https://tubitv.com/movies/100029743/the-battle-for-castle-itter",
+    "contentId": "100029743",
+    "watchNowLabel": "Watch Now"
+  },
+  "whyWatch": {
+    "header": {
+      "title": "Why Watch It"
+    },
+    "body": "The reason this story works is the same reason it sounds fake: the stakes are completely inverted. The SS isn't fighting to win the war, that's already lost. They're fighting to make sure the prisoners don't survive to tell anyone what happened. Which means the Americans and the Wehrmacht are defending the same castle, sharing the same walls, pointing guns in the same direction, while every instinct they have is telling them the guy next to them is the enemy. That tension doesn't go away just because the situation demands cooperation."
+  },
+  "gallery": {
+    "header": {
+      "title": "Media Shots"
+    },
+    "items": [
+      "/static/blog/the-t/media/048_media_1.jpg"
+    ]
+  }
+}

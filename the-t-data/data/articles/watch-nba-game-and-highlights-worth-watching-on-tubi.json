@@ -1,0 +1,289 @@
+{
+  "nav": {
+    "logoLabel": "The T",
+    "links": [
+      {
+        "label": "Home",
+        "href": "/the-t"
+      },
+      {
+        "label": "Coming Soon",
+        "href": "/the-t/coming-soon"
+      },
+      {
+        "label": "Shows",
+        "href": "/the-t/shows"
+      },
+      {
+        "label": "Movies",
+        "href": "/the-t/movies"
+      }
+    ],
+    "explore": {
+      "label": "Explore",
+      "items": [
+        {
+          "label": "FIFA World Cup 2026",
+          "href": "/the-t/fifa-world-cup"
+        },
+        {
+          "label": "Horror",
+          "href": "/the-t/horror"
+        },
+        {
+          "label": "Tubi Originals",
+          "href": "/the-t/originals"
+        },
+        {
+          "label": "Sports",
+          "href": "/the-t/sports"
+        }
+      ],
+      "moreGenresLabel": "More genres",
+      "moreGenresHref": "/the-t/genres"
+    },
+    "mobileMenu": {
+      "open": "Open menu",
+      "close": "Close menu"
+    }
+  },
+  "id": "064",
+  "slug": "watch-nba-game-and-highlights-worth-watching-on-tubi",
+  "categoryTag": "Sports",
+  "type": "listicle",
+  "title": "College Basketball Classics and Live Hoops on Tubi",
+  "subtitle": "Big Ten, Big 12, March Madness energy, all free, all on Tubi.",
+  "intro": "Free college basketball used to mean someone's shaky livestream and a prayer. Not anymore.\n\nTubi has classic Big Ten championship games, Women's Champions Classic doubleheaders with legitimate March Madness energy, and NBA stars on camera talking about the college moments that made them. There's even a 16-team tournament in Las Vegas if you want something that feels brand new.\n\nHere's everything worth watching, and where to start.",
+  "images": {
+    "thumbnail": "/static/blog/the-t/thumbnails/064_thumbnail.jpg",
+    "og": "/static/blog/the-t/og/064_og.jpg"
+  },
+  "items": [
+    {
+      "position": 1,
+      "title": "FOX Sports College Basketball Classics: College Basketball Crown",
+      "description": "Sixteen teams. Las Vegas. No bracket mythology, no decades of seeding drama to wade through.\n\nThe College Basketball Crown throws Big Ten, Big 12, and at-large contenders into a neutral site before conference play even heats up - and because the format is still new, nobody's figured out how to game it yet. These programs have something to prove and nowhere comfortable to do it.\n\nIf you're tired of waiting for March to matter, this is your early-season fix.",
+      "contentTitle": "FOX Sports College Basketball Classics: College Basketball Crown (2025)",
+      "tubiLink": "https://tubitv.com/series/300017534",
+      "contentId": "300017534",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/064_title_1_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/064_title_1_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/064_title_1_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "",
+      "year": "2025",
+      "runtime": "1 Season",
+      "rating": "TV-PG"
+    },
+    {
+      "position": 2,
+      "title": "Women's College Basketball Classics: Women's Champions Classic",
+      "description": "A doubleheader built around the programs with the most history, the most pressure, and the most to lose - and it absolutely feels that way from tip-off.\n\nElite teams, early season, nowhere to hide. What makes this worth clearing your schedule for is that nobody's treating it like a tune-up. The crowd is in it. The coaches are in it. There's a specific intensity that shows up when storied programs meet before conference records start mattering, and this one has it from the first possession.",
+      "contentTitle": "Women's College Basketball Classics: Women's Champions Classic (2024)",
+      "tubiLink": "https://tubitv.com/series/300017555",
+      "contentId": "300017555",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/064_title_2_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/064_title_2_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/064_title_2_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "",
+      "year": "2024",
+      "runtime": "1 Season",
+      "rating": "TV-PG"
+    },
+    {
+      "position": 3,
+      "title": "Big Ten Classics: Basketball Championship Games",
+      "description": "Here's the thing about watching a game you already know the outcome of: the tension doesn't actually go away.\n\nThe Big Ten Men's Basketball Championship games collected here are the ones people still reference - late-game runs, conference pride on the line, coaches making decisions that look either brilliant or catastrophic depending on the next thirty seconds. Full games, full pressure, full rosters of players who went on to matter.\n\nThe Big Ten does not hand out championships quietly. The footage proves it.",
+      "contentTitle": "Big Ten Classics: Basketball Championship Games (2019)",
+      "tubiLink": "https://tubitv.com/series/300005598",
+      "contentId": "300005598",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/064_title_3_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/064_title_3_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/064_title_3_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Sport",
+      "year": "2019",
+      "runtime": "1 Season",
+      "rating": "TV-PG"
+    },
+    {
+      "position": 4,
+      "title": "Women's College Basketball Classics: Big Ten",
+      "description": "Big Ten women's basketball has been pulling numbers that used to belong exclusively to the men's game, and these classic matchups are a big part of why.\n\nPrograms that recruit differently, coach differently, and play with a physical style that makes every possession feel earned. Watch a game from a few years back and you'll recognize names that are now on WNBA rosters or coaching staffs.\n\nRewatching them now, knowing what came next for these players, makes the whole thing hit differently.",
+      "contentTitle": "Women's College Basketball Classics: Big Ten (2025)",
+      "tubiLink": "https://tubitv.com/series/300016407",
+      "contentId": "300016407",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/064_title_4_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/064_title_4_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/064_title_4_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Sport",
+      "year": "2025",
+      "runtime": "4 Seasons",
+      "rating": "TV-PG"
+    },
+    {
+      "position": 5,
+      "title": "Women's College Basketball Classics: Big 12",
+      "description": "The Big 12 women's game runs on competition that feels personal. These programs recruit against each other, meet in elimination games, and carry enough history that it shows up in how they play.\n\nRising stars in this collection have a habit of announcing themselves in the biggest moments - which is exactly when you want to be watching. If Big 12 women's hoops hasn't been on your radar, this is a fast and very convincing education in why it should be.",
+      "contentTitle": "Women's College Basketball Classics: Big 12 (2025)",
+      "tubiLink": "https://tubitv.com/series/300017587",
+      "contentId": "300017587",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/064_title_5_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/064_title_5_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/064_title_5_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Sport",
+      "year": "2025",
+      "runtime": "2 Seasons",
+      "rating": "TV-PG"
+    },
+    {
+      "position": 6,
+      "title": "Women's College Basketball Classics: Big East",
+      "description": "There's a specific pleasure in watching someone before everyone knows who they are. The Big East Women's Basketball Tournament classics here are full of those moments - players in the middle of proving themselves, coaches building something, programs fighting to establish that they belong.\n\nThe Big East women's game is deliberate, physical, and usually decided in the final minutes. Watch a few games and you'll start recognizing names that showed up later somewhere much bigger.",
+      "contentTitle": "Women's College Basketball Classics: Big East (2025)",
+      "tubiLink": "https://tubitv.com/series/300008256",
+      "contentId": "300008256",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/064_title_6_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/064_title_6_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/064_title_6_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Sport",
+      "year": "2025",
+      "runtime": "6 Seasons",
+      "rating": "TV-PG"
+    },
+    {
+      "position": 7,
+      "title": "FOX Sports College Basketball Classics: Mountain West",
+      "description": "Mountain West basketball doesn't always get the national spotlight. Then March comes around and a team nobody was watching goes on a run that surprises everyone - except anyone who actually watched the conference.\n\nThese FOX Sports classics show you why: programs playing with something to prove, in arenas that are genuinely loud, against opponents who know each other well enough for games to get personal. The talent that comes out of this conference has a long history of catching people off guard. These games are why it shouldn't be a surprise.",
+      "contentTitle": "FOX Sports College Basketball Classics: Mountain West (2025)",
+      "tubiLink": "https://tubitv.com/series/300000069",
+      "contentId": "300000069",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/064_title_7_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/064_title_7_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/064_title_7_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Sport",
+      "year": "2025",
+      "runtime": "3 Seasons",
+      "rating": "TV-G"
+    },
+    {
+      "position": 8,
+      "title": "FOX SPORTS College Basketball Classics: Fort Myers Tip-Off",
+      "description": "Neutral site. Early November. No home crowd to bail you out. The Fort Myers Tip-Off is where programs find out what they actually have before conference play starts asking harder questions.\n\nCoaches tend to reference these games in March - either as proof of something they knew early, or as a warning they didn't take seriously enough. Suncoast Credit Union Arena isn't Madison Square Garden, but the basketball doesn't care about the venue. These matchups have a way of setting the tone for entire seasons.",
+      "contentTitle": "FOX SPORTS College Basketball Classics: Fort Myers Tip-Off (2024)",
+      "tubiLink": "https://tubitv.com/series/300008264",
+      "contentId": "300008264",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/064_title_8_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/064_title_8_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/064_title_8_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Sport",
+      "year": "2024",
+      "runtime": "4 Seasons",
+      "rating": "TV-PG"
+    },
+    {
+      "position": 9,
+      "title": "Campus Lore Live Basketball",
+      "description": "Former and current NBA players talking about their college days is a completely different experience than a standard basketball documentary, and it's not close.\n\nThese are people who remember specific games, specific coaches, specific moments where everything shifted. When they break down today's college game, the context is real - they played it, they know what the pressure actually feels like, and they're not being diplomatic about any of it.\n\nThese aren't analysts with a clipboard. They were there.",
+      "contentTitle": "Campus Lore Live Basketball (2020)",
+      "tubiLink": "https://tubitv.com/series/300005685",
+      "contentId": "300005685",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/064_title_9_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/064_title_9_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/064_title_9_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Reality",
+      "year": "2020",
+      "runtime": "1 Season",
+      "rating": "TV-G"
+    },
+    {
+      "position": 10,
+      "title": "The American Basketball Association: An Unruly League and Renegade Game Changers",
+      "description": "The three-point line that every college basketball program now builds its entire offense around? It came from a league the NBA spent years trying to ignore.\n\nThe ABA was loud, underfunded, and willing to try things that looked reckless until they didn't. This documentary traces how a rival league that folded in 1976 permanently changed the way basketball is played at every level - including the college game you're watching right now.\n\nThe story of the three-pointer alone is worth the runtime. A rule that looked like a gimmick became the foundation of modern offense, and this is where it started.",
+      "contentTitle": "The American Basketball Association: An Unruly League and Renegade Game Changers (2021)",
+      "tubiLink": "https://tubitv.com/movies/639367",
+      "contentId": "639367",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/064_title_10_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/064_title_10_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/064_title_10_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Documentary",
+      "year": "2021",
+      "runtime": "53m",
+      "rating": "TV-PG"
+    }
+  ],
+  "keepReading": {
+    "header": {
+      "title": "Keep Reading",
+      "subtitle": "More articles to explore"
+    },
+    "items": [
+      {
+        "id": "063",
+        "slug": "watch-football-movies-and-documentaries-free-on-tubi",
+        "eyebrow": "What to Watch",
+        "title": "Watch Football Movies and Documentaries Free on Tubi",
+        "subtitle": "A Football Life, Undefeated, Blue Mountain State, and more, no subscription required.",
+        "categoryTag": "Sports",
+        "thumbnail": "/static/blog/the-t/thumbnails/063_thumbnail.jpg"
+      },
+      {
+        "id": "066",
+        "slug": "mlb-games-and-recaps-on-tubi",
+        "eyebrow": "What to Watch",
+        "title": "MLB Games and Recaps on Tubi",
+        "subtitle": "The walk-offs, the weirdos, the World Series. All free.",
+        "categoryTag": "Sports",
+        "thumbnail": "/static/blog/the-t/thumbnails/066_thumbnail.jpg"
+      },
+      {
+        "id": "065",
+        "slug": "fox-sports-on-tubi-whats-streaming-live-right-now",
+        "eyebrow": "What to Watch",
+        "title": "Fox Sports on Tubi: What's Streaming Live Right Now",
+        "subtitle": "What's live, what's next, and what's worth tuning into.",
+        "categoryTag": "Sports",
+        "thumbnail": "/static/blog/the-t/thumbnails/065_thumbnail.jpg"
+      }
+    ]
+  },
+  "datePosted": "2026-05-26"
+}

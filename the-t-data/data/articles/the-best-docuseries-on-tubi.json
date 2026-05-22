@@ -1,0 +1,289 @@
+{
+  "nav": {
+    "logoLabel": "The T",
+    "links": [
+      {
+        "label": "Home",
+        "href": "/the-t"
+      },
+      {
+        "label": "Coming Soon",
+        "href": "/the-t/coming-soon"
+      },
+      {
+        "label": "Shows",
+        "href": "/the-t/shows"
+      },
+      {
+        "label": "Movies",
+        "href": "/the-t/movies"
+      }
+    ],
+    "explore": {
+      "label": "Explore",
+      "items": [
+        {
+          "label": "FIFA World Cup 2026",
+          "href": "/the-t/fifa-world-cup"
+        },
+        {
+          "label": "Horror",
+          "href": "/the-t/horror"
+        },
+        {
+          "label": "Tubi Originals",
+          "href": "/the-t/originals"
+        },
+        {
+          "label": "Sports",
+          "href": "/the-t/sports"
+        }
+      ],
+      "moreGenresLabel": "More genres",
+      "moreGenresHref": "/the-t/genres"
+    },
+    "mobileMenu": {
+      "open": "Open menu",
+      "close": "Close menu"
+    }
+  },
+  "id": "030",
+  "slug": "the-best-docuseries-on-tubi",
+  "categoryTag": "Shows",
+  "type": "listicle",
+  "title": "The Best Docuseries on Tubi You Need to Watch",
+  "subtitle": "Real stories that are built to keep you watching longer than planned.",
+  "intro": "The best docuseries on Tubi don't feel like homework. They feel like falling down a hole you didn't see coming.\n\nA Florida man gets charged with two murders in a single night, and the trial turns into something nobody predicted. A wildlife expert wades into a river with a crocodile and seems genuinely unbothered. William Shatner hosts a show about phenomena science can't explain, and somehow that's the least surprising sentence in this list.\n\nHere's what to put on next.",
+  "images": {
+    "thumbnail": "/static/blog/the-t/thumbnails/030_thumbnail.jpg",
+    "og": "/static/blog/the-t/og/030_og.jpg"
+  },
+  "items": [
+    {
+      "position": 1,
+      "title": "Mayday: The Accident Files",
+      "description": "Aviation disasters reconstructed using the actual cockpit voice recordings. Not actors guessing at what happened - the real conversation between a crew in the last minutes before impact, and then investigators working backward from that tape to figure out why.\n\nThe reenactments are tight and the conclusions are specific. Every episode follows a different disaster, different airline, different failure point - mechanical, human, weather, or some combination of all three.\n\nIf you've ever wondered what actually happens when something goes wrong at 35,000 feet, this is the one to watch.",
+      "contentTitle": "Mayday: The Accident Files (2003)",
+      "tubiLink": "https://tubitv.com/series/300002665",
+      "contentId": "300002665",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/030_title_1_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/030_title_1_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/030_title_1_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Documentary",
+      "year": "2003",
+      "runtime": "3 Seasons",
+      "rating": "TV-14"
+    },
+    {
+      "position": 2,
+      "title": "Killer Looks: The Trial of Wade Wilson",
+      "description": "Wade Wilson is charged with killing two women in Cape Coral, Florida, within hours of each other. That's already a lot. Then the trial starts.\n\nThis series tracks how a case with that much weight becomes a media event - and what that does to everyone involved. The title isn't accidental. Wilson's appearance became part of the public conversation in ways that complicated the actual evidence, and the series doesn't let that slide.\n\nFour episodes. You will not be checking your phone.",
+      "contentTitle": "Killer Looks: The Trial of Wade Wilson (2024)",
+      "tubiLink": "https://tubitv.com/series/300016020",
+      "contentId": "300016020",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/030_title_2_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/030_title_2_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/030_title_2_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Documentary",
+      "year": "2024",
+      "runtime": "1 Season",
+      "rating": "TV-14"
+    },
+    {
+      "position": 3,
+      "title": "Wild Cats",
+      "description": "Three episodes, every continent, every size of cat from sand cats in the Sahara to snow leopards in Central Asia. The through-line isn't just felines being majestic - it's how each species is responding to shrinking habitat, changing prey patterns, and climate pressure right now.\n\nThere's a sequence tracking a cheetah mother teaching her cubs to hunt in terrain that's drying out faster than her instincts can account for. It makes the larger argument without ever stating it out loud.\n\nThe visuals are stunning, but the science underneath them is doing real work.",
+      "contentTitle": "Wild Cats (2023)",
+      "tubiLink": "https://tubitv.com/series/300017622",
+      "contentId": "300017622",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/030_title_3_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/030_title_3_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/030_title_3_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Documentary",
+      "year": "2023",
+      "runtime": "1 Season",
+      "rating": "TV-PG"
+    },
+    {
+      "position": 4,
+      "title": "World's Most Evil Killers",
+      "description": "Yes, the title is doing a lot. Stick with it.\n\nWhat separates this from the average true-crime rundown is who's talking - forensic pathologists, criminologists, and federal agents who actually worked these cases or study this behavior for a living. The analysis goes into methodology, psychology, and the investigative failures that let some of these killers operate as long as they did.\n\nIt casts a wide net: notorious cases from multiple countries across multiple decades. The series moves fast enough that it never lingers long enough to tip into exploitation, and every episode leaves you with something specific you didn't know before.",
+      "contentTitle": "World's Most Evil Killers (2025)",
+      "tubiLink": "https://tubitv.com/series/300008147",
+      "contentId": "300008147",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/030_title_4_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/030_title_4_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/030_title_4_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Documentary",
+      "year": "2025",
+      "runtime": "4 Seasons",
+      "rating": "TV-14"
+    },
+    {
+      "position": 5,
+      "title": "Savage Wild",
+      "description": "Wildlife expert Manny Puig does not use a telephoto lens. He gets in. Alligators, crocodiles, sharks, venomous reptiles - the whole show is built around close-contact interaction with animals that could end the interaction at any moment.\n\nThere's a sequence where he reads an alligator's body language mid-water the way someone else might read a room, then adjusts his whole approach in real time. That's not recklessness. That's the knowledge the show is built on.\n\nFor anyone who's watched a nature documentary and thought they wished someone would just go touch the thing - here you go.",
+      "contentTitle": "Savage Wild (2017)",
+      "tubiLink": "https://tubitv.com/series/300010412",
+      "contentId": "300010412",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/030_title_5_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/030_title_5_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/030_title_5_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Documentary",
+      "year": "2017",
+      "runtime": "4 Seasons",
+      "rating": "TV-PG"
+    },
+    {
+      "position": 6,
+      "title": "Wild Korea",
+      "description": "The Korean peninsula is one of the most geopolitically tense places on earth. It's also, because of that tension, home to some of the most undisturbed wildlife habitats in Asia.\n\nThe DMZ - the strip of land between North and South Korea that no human has legally entered in decades - has quietly become a refuge for species that have disappeared from the rest of the region. Amur leopard cats, Asiatic black bears, red-crowned cranes. The series documents them with the same care it gives to the broader story of how people and nature have learned to coexist in the south.\n\nKnowing the context changes every shot.",
+      "contentTitle": "Wild Korea (2019)",
+      "tubiLink": "https://tubitv.com/series/300014218",
+      "contentId": "300014218",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/030_title_6_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/030_title_6_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/030_title_6_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Documentary",
+      "year": "2019",
+      "runtime": "1 Season",
+      "rating": "TV-PG"
+    },
+    {
+      "position": 7,
+      "title": "Wild Assassins",
+      "description": "Venomous snakes, crocodiles, predatory birds - Wild Assassins is less interested in warning you about these animals than in showing you exactly how their hunting strategies work.\n\nThe up-close footage is the whole point. A gaboon viper's strike is documented at a speed that lets you actually see the mechanics: the jaw articulation, the fang deployment, the full sequence that happens too fast to register in real time. Same with crocodile ambush behavior in shallow water.\n\nIt treats the predator as an engineering problem worth understanding, not just a threat worth fearing.",
+      "contentTitle": "Wild Assassins (2022)",
+      "tubiLink": "https://tubitv.com/series/300001183",
+      "contentId": "300001183",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/030_title_7_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/030_title_7_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/030_title_7_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Documentary",
+      "year": "2022",
+      "runtime": "1 Season",
+      "rating": "TV-PG"
+    },
+    {
+      "position": 8,
+      "title": "The UnXplained",
+      "description": "William Shatner hosts a show about phenomena science hasn't been able to explain - strange creatures, inexplicable events, mysteries of human perception - and he plays it completely straight. No ironic distance. No hedging. He is fully, genuinely in.\n\nThat commitment is what makes it work. The topics range from documented historical anomalies to things that are genuinely hard to categorize, and Shatner moves between them with the same level of investment across all of it. You may not believe any of it. You will keep watching anyway.\n\nThe episodes about documented historical mysteries are the ones that stick with you longest.",
+      "contentTitle": "The UnXplained (2023)",
+      "tubiLink": "https://tubitv.com/series/300001909",
+      "contentId": "300001909",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/030_title_8_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/030_title_8_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/030_title_8_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Documentary",
+      "year": "2023",
+      "runtime": "6 Seasons",
+      "rating": "TV-14"
+    },
+    {
+      "position": 9,
+      "title": "Wild Life",
+      "description": "Two regions that don't get paired together often - the cloud forests of Central America and the cork oak landscapes of the Iberian Peninsula - shot with the kind of attention that makes you stop scrolling and just watch.\n\nThe series doesn't try to connect the two geographically. The argument is visual: here are two places where the natural world is doing something extraordinary, and you should see both of them.\n\nThe Iberian lynx sequences are worth finding on their own. One of the rarest cats in the world, filmed in habitat that looks like it belongs in a different century.",
+      "contentTitle": "Wild Life (2013)",
+      "tubiLink": "https://tubitv.com/series/3439",
+      "contentId": "3439",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/030_title_9_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/030_title_9_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/030_title_9_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Documentary",
+      "year": "2013",
+      "runtime": "1 Season",
+      "rating": "TV-PG"
+    },
+    {
+      "position": 10,
+      "title": "Wild Harvest",
+      "description": "Les Stroud knows how to stay alive in the wilderness. Paul Rogalski knows how to make food that costs a lot and tastes incredible. Wild Harvest puts them in the same forest and asks what happens when you forage for wild edibles and then actually cook them well.\n\nThe dynamic is real. Stroud is pragmatic - if it won't kill you, it's food. Rogalski is thinking about flavor, texture, what it pairs with. There's a sequence where they're working with something Stroud would eat raw in a survival situation and Rogalski is slow-roasting it with foraged herbs, and neither of them is wrong about it.\n\nNorth America looks completely different when you're watching someone eat it.",
+      "contentTitle": "Wild Harvest (2022)",
+      "tubiLink": "https://tubitv.com/series/300014674",
+      "contentId": "300014674",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/030_title_10_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/030_title_10_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/030_title_10_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Documentary",
+      "year": "2022",
+      "runtime": "2 Seasons",
+      "rating": "TV-PG"
+    }
+  ],
+  "keepReading": {
+    "header": {
+      "title": "Keep Reading",
+      "subtitle": "More articles to explore"
+    },
+    "items": [
+      {
+        "id": "005",
+        "slug": "best-true-crime-shows-and-documentaries-on-tubi",
+        "eyebrow": "What to Watch",
+        "title": "Best True Crime Shows & Documentaries on Tubi Right Now",
+        "subtitle": "Some cases seem simple. These only get more complicated.",
+        "categoryTag": "Shows",
+        "thumbnail": "/static/blog/the-t/thumbnails/005_thumbnail.jpg"
+      },
+      {
+        "id": "032",
+        "slug": "true-crime-cases-on-tubi",
+        "eyebrow": "What to Watch",
+        "title": "Unravel These True Crime Cases on Tubi",
+        "subtitle": "The cases that get heavier the more you understand them.",
+        "categoryTag": "Shows",
+        "thumbnail": "/static/blog/the-t/thumbnails/032_thumbnail.jpg"
+      },
+      {
+        "id": "037",
+        "slug": "the-best-dramas-on-tubi",
+        "eyebrow": "What to Watch",
+        "title": "The Best Dramas on Tubi",
+        "subtitle": "Stories that take their time and let things actually land.",
+        "categoryTag": "Movies",
+        "thumbnail": "/static/blog/the-t/thumbnails/037_thumbnail.jpg"
+      }
+    ]
+  },
+  "datePosted": "2026-05-26"
+}

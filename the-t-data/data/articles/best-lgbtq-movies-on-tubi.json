@@ -1,0 +1,289 @@
+{
+  "nav": {
+    "logoLabel": "The T",
+    "links": [
+      {
+        "label": "Home",
+        "href": "/the-t"
+      },
+      {
+        "label": "Coming Soon",
+        "href": "/the-t/coming-soon"
+      },
+      {
+        "label": "Shows",
+        "href": "/the-t/shows"
+      },
+      {
+        "label": "Movies",
+        "href": "/the-t/movies"
+      }
+    ],
+    "explore": {
+      "label": "Explore",
+      "items": [
+        {
+          "label": "FIFA World Cup 2026",
+          "href": "/the-t/fifa-world-cup"
+        },
+        {
+          "label": "Horror",
+          "href": "/the-t/horror"
+        },
+        {
+          "label": "Tubi Originals",
+          "href": "/the-t/originals"
+        },
+        {
+          "label": "Sports",
+          "href": "/the-t/sports"
+        }
+      ],
+      "moreGenresLabel": "More genres",
+      "moreGenresHref": "/the-t/genres"
+    },
+    "mobileMenu": {
+      "open": "Open menu",
+      "close": "Close menu"
+    }
+  },
+  "id": "007",
+  "slug": "best-lgbtq-movies-on-tubi",
+  "categoryTag": "Movies",
+  "type": "listicle",
+  "title": "Best LGBTQ+ Movies on Tubi for Pride Month",
+  "subtitle": "The Inspection, Priscilla, Summer of 85, and more worth your full attention.",
+  "intro": "The best LGBTQ+ movies on Tubi for Pride Month aren't here to explain themselves to anyone.\n\nA gay Black Marine finds something he wasn't looking for in the most unlikely place. Two men in a Georgian dance company try to pretend the tension between them is just rivalry. A Baptist choir director from Texas inherits a drag club and has to figure out what to do with all of it.\n\nTen films. All of them worth your time. Here's where to start.",
+  "images": {
+    "thumbnail": "/static/blog/the-t/thumbnails/007_thumbnail.jpg",
+    "og": "/static/blog/the-t/og/007_og.jpg"
+  },
+  "items": [
+    {
+      "position": 1,
+      "title": "The Inspection",
+      "description": "Ellis French has been homeless since his mother put him out for being gay. So he joins the Marines. Not out of patriotism, not out of options, but because he needs somewhere that will take him. What he finds there isn't acceptance exactly, but it's something close to it, and the film is honest about how complicated that is.\n\nBrendan Fraser plays his drill instructor with real menace, and Jeremy Pope carries the whole weight of Ellis without ever asking for your sympathy. There's a scene where Ellis is tested, physically and psychologically, and he doesn't break. Not because he's invincible, but because he's already survived worse. Director Elegance Bratton based this on his own life. That part matters.",
+      "contentTitle": "The Inspection (2022)",
+      "tubiLink": "https://tubitv.com/movies/100050692",
+      "contentId": "100050692",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/007_title_1_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/007_title_1_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/007_title_1_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Drama",
+      "year": "2022",
+      "runtime": "1h 34m",
+      "rating": "R"
+    },
+    {
+      "position": 2,
+      "title": "The Adventures of Priscilla, Queen of the Desert",
+      "description": "Three performers, two drag queens and a trans woman, pile into a bus and drive across the Australian desert to reach a gig in Alice Springs. That's the whole setup. What happens along the way is funnier, stranger, and more moving than it has any right to be.\n\nHugo Weaving, Guy Pearce, and Terence Stamp commit completely, and the costumes are genuinely spectacular. There's a sequence on top of the bus in the middle of the desert that you won't forget. But the film earns its emotional moments too, especially around Stamp's character, whose backstory lands quietly and stays with you. Thirty years later, it still holds.",
+      "contentTitle": "The Adventures of Priscilla, Queen of the Desert (1993)",
+      "tubiLink": "https://tubitv.com/movies/404566",
+      "contentId": "404566",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/007_title_2_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/007_title_2_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/007_title_2_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Comedy",
+      "year": "1993",
+      "runtime": "1h 43m",
+      "rating": "R"
+    },
+    {
+      "position": 3,
+      "title": "And Then We Danced",
+      "description": "Merab has spent years training in Georgian traditional dance, a form where masculine discipline is everything: posture, precision, control. Then Irakli arrives and throws all of it off. The rivalry between them is immediate. So is everything else.\n\nDirector Levan Akin shoots the dance sequences with the same intensity as the quieter scenes between the two men, which is exactly right. The body is the whole argument here. Georgia is not a safe place for this story, and the film doesn't pretend otherwise. What Merab risks to be honest about what he wants is specific and real, and the film doesn't resolve it cleanly. That's what makes it stick.",
+      "contentTitle": "And Then We Danced (2019)",
+      "tubiLink": "https://tubitv.com/movies/716940",
+      "contentId": "716940",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/007_title_3_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/007_title_3_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/007_title_3_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Drama",
+      "year": "2019",
+      "runtime": "1h 53m",
+      "rating": "TV-MA"
+    },
+    {
+      "position": 4,
+      "title": "Latter Days",
+      "description": "Yes, the premise sounds like a setup. It isn't played like one.\n\nAaron is a Mormon missionary from Idaho. Christian is his neighbor in LA, charming, shallow, and not looking for anything serious. The film takes its time letting both of them become actual people before it lets them fall for each other, and that patience is what makes the second half land as hard as it does. The religious stakes aren't treated as a joke or a villain. Aaron's faith is real to him, and the film respects that even while it complicates it. The third act goes somewhere genuinely painful. Worth it.",
+      "contentTitle": "Latter Days (2003)",
+      "tubiLink": "https://tubitv.com/movies/500188",
+      "contentId": "500188",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/007_title_4_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/007_title_4_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/007_title_4_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Comedy",
+      "year": "2003",
+      "runtime": "1h 47m",
+      "rating": "R"
+    },
+    {
+      "position": 5,
+      "title": "Stage Mother",
+      "description": "Maybelline inherits her estranged gay son's drag club after his death, and the film drops her directly into the deep end: feather boas, financial ruin, performers who have no reason to trust her. Jacki Weaver plays Maybelline with enough stubbornness and genuine warmth that you believe the shift when it comes.\n\nThere's a scene where she sits down with one of the queens and actually listens, really listens, for the first time, and you can see her rearranging something in herself in real time. It's a comedy, but it's not careless about grief. She lost her son before she knew him. The club is the only version of him she has left.",
+      "contentTitle": "Stage Mother (2020)",
+      "tubiLink": "https://tubitv.com/movies/100016709",
+      "contentId": "100016709",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/007_title_5_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/007_title_5_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/007_title_5_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Comedy",
+      "year": "2020",
+      "runtime": "1h 33m",
+      "rating": "R"
+    },
+    {
+      "position": 6,
+      "title": "La Cage Aux Folles",
+      "description": "Renato and Albin have been together for twenty years. They run a drag club on the French Riviera. Then Renato's son announces he's marrying the daughter of a right-wing morality crusader and needs them to, essentially, disappear for a dinner.\n\nMichel Serrault plays Albin with full commitment: the wounded pride, the theatrical despair, the genuine hurt underneath all of it. The farce mechanics are airtight, but what makes the film last is that it never stops being on Albin's side. The dinner scene, where the disguise starts unraveling, is still one of the funniest sequences in French cinema. The Birdcage is great. This one came first.",
+      "contentTitle": "La Cage Aux Folles (1979)",
+      "tubiLink": "https://tubitv.com/movies/301234",
+      "contentId": "301234",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/007_title_6_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/007_title_6_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/007_title_6_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Comedy",
+      "year": "1979",
+      "runtime": "1h 36m",
+      "rating": "R"
+    },
+    {
+      "position": 7,
+      "title": "Summer of 85",
+      "description": "Alexis tells you in the first minutes that David is dead. The whole film is the story of how they got there.\n\nFrançois Ozon adapts Aidan Chambers' novel with the kind of sun-soaked, slightly feverish intensity that makes you understand exactly why a sixteen-year-old would fall completely apart over someone. The Normandy coast looks gorgeous and slightly dangerous, which is exactly right. What the film does well is let the obsession feel real without making David a saint or a monster. He's just a person, which is somehow worse. The ending doesn't explain itself. You sit with it.",
+      "contentTitle": "Summer of 85 (2020)",
+      "tubiLink": "https://tubitv.com/movies/720973",
+      "contentId": "720973",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/007_title_7_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/007_title_7_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/007_title_7_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Drama",
+      "year": "2020",
+      "runtime": "1h 41m",
+      "rating": "TV-MA"
+    },
+    {
+      "position": 8,
+      "title": "Handsome Devil",
+      "description": "Ned doesn't fit at his boarding school, and he's made his peace with that. Conor arrives as the rugby star everyone expects great things from and gets assigned as Ned's roommate. The friendship that forms between them is specific and funny and genuinely warm, which makes what happens when outside pressure gets applied feel real.\n\nAndrew Scott shows up as their English teacher and is immediately the most interesting person in any room he enters. There's a classroom scene where he talks about honesty in writing that lands differently once you know where the film is going. The villain here isn't homophobia in the abstract. It's one specific coach who needs the team to be one specific thing. That specificity is what makes it sting.",
+      "contentTitle": "Handsome Devil (2017)",
+      "tubiLink": "https://tubitv.com/movies/631860",
+      "contentId": "631860",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/007_title_8_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/007_title_8_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/007_title_8_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Drama",
+      "year": "2017",
+      "runtime": "1h 34m",
+      "rating": "TV-14"
+    },
+    {
+      "position": 9,
+      "title": "I Can't Think Straight",
+      "description": "Tala is engaged. Again. She's been engaged before and it hasn't worked out, and her family is running out of patience. Then she meets Leyla at a party and something shifts that she doesn't have a framework for.\n\nThe film is low-budget and it shows occasionally, but Lisa Ray and Sheetal Sheth have real chemistry, and the script takes both women's cultural contexts seriously: Leyla's British-Indian family, Tala's Jordanian-Palestinian one, the specific ways each of them has learned to manage expectations. The scene where Tala finally says out loud what she's been circling around for the whole film is quiet and direct and exactly right. It became a cult film for a reason.",
+      "contentTitle": "I Can't Think Straight (2008)",
+      "tubiLink": "https://tubitv.com/movies/631183",
+      "contentId": "631183",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/007_title_9_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/007_title_9_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/007_title_9_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Drama",
+      "year": "2008",
+      "runtime": "1h 21m",
+      "rating": "PG-13"
+    },
+    {
+      "position": 10,
+      "title": "Hearts Beat Loud",
+      "description": "Frank is a record store owner in Brooklyn whose business is failing and whose daughter Sam is leaving for UCLA in the fall. He talks her into recording one song together. Then it gets traction online and he wants to keep going. She has a life to start.\n\nNick Offerman plays Frank as a man who is genuinely good at being a dad and genuinely bad at being anything else, which is a specific kind of sad. Sam's relationship with her girlfriend Rose is easy and warm and treated as completely unremarkable by everyone around her, which is its own kind of statement. The music is actually good. The scene where they play together for the last time before she leaves is the one that gets you.",
+      "contentTitle": "Hearts Beat Loud (2018)",
+      "tubiLink": "https://tubitv.com/movies/100004589",
+      "contentId": "100004589",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/007_title_10_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/007_title_10_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/007_title_10_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Drama",
+      "year": "2018",
+      "runtime": "1h 37m",
+      "rating": "PG-13"
+    }
+  ],
+  "keepReading": {
+    "header": {
+      "title": "Keep Reading",
+      "subtitle": "More articles to explore"
+    },
+    "items": [
+      {
+        "id": "071",
+        "slug": "kissing-is-the-easy-part-gets-first-love-more-right-than-most",
+        "eyebrow": "What to Watch",
+        "title": "Kissing Is the Easy Part Gets First Love More Right Than Most",
+        "subtitle": "One secret deal, two people with completely different plans, and neither of them saw this coming.",
+        "categoryTag": "Originals",
+        "thumbnail": "/static/blog/the-t/thumbnails/071_thumbnail.jpg"
+      },
+      {
+        "id": "037",
+        "slug": "the-best-dramas-on-tubi",
+        "eyebrow": "What to Watch",
+        "title": "The Best Dramas on Tubi",
+        "subtitle": "Stories that take their time and let things actually land.",
+        "categoryTag": "Movies",
+        "thumbnail": "/static/blog/the-t/thumbnails/037_thumbnail.jpg"
+      },
+      {
+        "id": "047",
+        "slug": "lesbian-homie-season-5-is-coming-to-tubi",
+        "eyebrow": "New Season",
+        "title": "Lesbian Homie Season 5 Is Coming to Tubi",
+        "subtitle": "He swore he was done with complicated. Complicated had other plans.",
+        "categoryTag": "Originals",
+        "thumbnail": "/static/blog/the-t/thumbnails/047_thumbnail.jpg"
+      }
+    ]
+  },
+  "datePosted": "2026-05-26"
+}

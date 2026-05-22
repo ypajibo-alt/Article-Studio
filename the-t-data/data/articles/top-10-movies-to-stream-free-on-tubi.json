@@ -1,0 +1,289 @@
+{
+  "nav": {
+    "logoLabel": "The T",
+    "links": [
+      {
+        "label": "Home",
+        "href": "/the-t"
+      },
+      {
+        "label": "Coming Soon",
+        "href": "/the-t/coming-soon"
+      },
+      {
+        "label": "Shows",
+        "href": "/the-t/shows"
+      },
+      {
+        "label": "Movies",
+        "href": "/the-t/movies"
+      }
+    ],
+    "explore": {
+      "label": "Explore",
+      "items": [
+        {
+          "label": "FIFA World Cup 2026",
+          "href": "/the-t/fifa-world-cup"
+        },
+        {
+          "label": "Horror",
+          "href": "/the-t/horror"
+        },
+        {
+          "label": "Tubi Originals",
+          "href": "/the-t/originals"
+        },
+        {
+          "label": "Sports",
+          "href": "/the-t/sports"
+        }
+      ],
+      "moreGenresLabel": "More genres",
+      "moreGenresHref": "/the-t/genres"
+    },
+    "mobileMenu": {
+      "open": "Open menu",
+      "close": "Close menu"
+    }
+  },
+  "id": "013",
+  "slug": "top-10-movies-to-stream-free-on-tubi",
+  "categoryTag": "Movies",
+  "type": "listicle",
+  "title": "Weekend Watchlist: Top 10 Movies to Stream Free on Tubi",
+  "subtitle": "A tight list when you don't have time to scroll through everything else.",
+  "intro": "A good weekend movie doesn't ask much. It just has to be worth staying on the couch for.\n\nThis list has a Florida loan shark who accidentally becomes a Hollywood producer. A teenage girl in 1989 who starts dating the wrong kind of dangerous. A Cleveland dockworker who somehow ends up at the center of a mob war that nobody survives. And a Godfather lookalike who runs a very unusual exotic animal business out of what appears to be a normal New Jersey home.\n\nHere are ten movies to stream free on Tubi this weekend. Pick one and see where the night takes you.",
+  "images": {
+    "thumbnail": "/static/blog/the-t/thumbnails/013_thumbnail.jpg",
+    "og": "/static/blog/the-t/og/013_og.jpg"
+  },
+  "items": [
+    {
+      "position": 1,
+      "title": "Get Shorty",
+      "description": "Chili Palmer comes to Los Angeles to collect a debt and never leaves, because he's better at the movie business than anyone already in it.\n\nJohn Travolta plays him completely relaxed. There's a scene early on where he pitches his own life story to a producer and the producer, who should be running this conversation, is clearly the more nervous of the two. Gene Hackman, Danny DeVito, and Rene Russo are all doing excellent work around him, but this is Travolta's film.\n\nElmore Leonard wrote the source novel and the DNA is all there: crime as comedy, confidence as the only currency that matters.",
+      "contentTitle": "Get Shorty (1995)",
+      "tubiLink": "https://tubitv.com/movies/312179",
+      "contentId": "312179",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/013_title_1_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/013_title_1_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/013_title_1_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Comedy",
+      "year": "1995",
+      "runtime": "1h 45m",
+      "rating": "R"
+    },
+    {
+      "position": 2,
+      "title": "Heathers",
+      "description": "Winona Ryder wants to survive high school. Christian Slater has a much more permanent solution in mind.\n\nWhat starts as a dark fantasy about social revenge turns into something genuinely unsettling. JD is completely convincing about all of it, which is the problem. There's a scene where he talks Veronica into something she knows is wrong and she goes along anyway, and the film doesn't let her off the hook for it.\n\nThis was made in 1989 and it still lands harder than most things trying to do the same thing now. The satire has teeth because the characters are real.",
+      "contentTitle": "Heathers (1989)",
+      "tubiLink": "https://tubitv.com/movies/475898",
+      "contentId": "475898",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/013_title_2_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/013_title_2_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/013_title_2_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Comedy",
+      "year": "1989",
+      "runtime": "1h 43m",
+      "rating": "R"
+    },
+    {
+      "position": 3,
+      "title": "In the Heat of the Night",
+      "description": "Sidney Poitier is Virgil Tibbs, a homicide detective from Philadelphia who gets pulled into a murder investigation in a Mississippi town that does not want him there. Rod Steiger plays the local police chief, and the film is essentially two men deciding whether they can tolerate each other long enough to solve something.\n\nThere's a scene where a white plantation owner slaps Tibbs and Tibbs slaps him back immediately, without hesitation. In 1967, that was not a small thing to put on screen.\n\nThe murder almost doesn't matter. What matters is every room Tibbs walks into and what he has to do to stay in it.",
+      "contentTitle": "In the Heat of the Night (1967)",
+      "tubiLink": "https://tubitv.com/movies/689652",
+      "contentId": "689652",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/013_title_3_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/013_title_3_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/013_title_3_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Drama",
+      "year": "1967",
+      "runtime": "1h 50m",
+      "rating": "TV-MA"
+    },
+    {
+      "position": 4,
+      "title": "Kill the Irishman",
+      "description": "Danny Greene was a Cleveland longshoreman who worked his way into the Irish mob, then the Italian mob, then somehow became so difficult to kill that the entire Cleveland underworld fell apart trying to do it.\n\nRay Stevenson plays him as a man who genuinely believes he's protected. Not arrogant. Just certain. The film is based on a true story, and the true story is almost too much - at one point a car bomb goes off next to him and he walks away and goes back inside.\n\nVal Kilmer, Christopher Walken, and Vinnie Jones are all in this. That tells you exactly what kind of movie it is.",
+      "contentTitle": "Kill the Irishman (2011)",
+      "tubiLink": "https://tubitv.com/movies/400845",
+      "contentId": "400845",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/013_title_4_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/013_title_4_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/013_title_4_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Crime",
+      "year": "2011",
+      "runtime": "1h 46m",
+      "rating": "R"
+    },
+    {
+      "position": 5,
+      "title": "The Freshman",
+      "description": "Matthew Broderick plays a film student who gets robbed on his first day in New York and ends up working for a man who looks and sounds exactly like Vito Corleone. Because it's Marlon Brando, playing the bit completely straight.\n\nThe job involves transporting endangered animals to illegal dinner parties for extremely wealthy people. Brando reportedly hated making this film and publicly said so, which makes his total commitment to every scene even more baffling.\n\nThere's a moment involving a Komodo dragon on roller skates that should not work at all. It works.",
+      "contentTitle": "The Freshman (1990)",
+      "tubiLink": "https://tubitv.com/movies/100044608",
+      "contentId": "100044608",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/013_title_5_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/013_title_5_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/013_title_5_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Comedy",
+      "year": "1990",
+      "runtime": "1h 43m",
+      "rating": "PG"
+    },
+    {
+      "position": 6,
+      "title": "Lansky",
+      "description": "Harvey Keitel plays Meyer Lansky at the end of his life, being slowly worked by a reporter who's also feeding information to the FBI. The film cuts between old Lansky and young Lansky, and the real tension isn't in the past.\n\nIt's in the present: watching an 80-year-old man decide exactly how much truth to give away and to whom. Keitel doesn't play him as a monster. He plays him as a businessman who made choices and has been doing the math on them ever since.\n\nMost mob biopics are loud. This one isn't, and that's what makes it stick.",
+      "contentTitle": "Lansky (2021)",
+      "tubiLink": "https://tubitv.com/movies/100025243",
+      "contentId": "100025243",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/013_title_6_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/013_title_6_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/013_title_6_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Drama",
+      "year": "2021",
+      "runtime": "1h 59m",
+      "rating": "R"
+    },
+    {
+      "position": 7,
+      "title": "Bugsy",
+      "description": "Warren Beatty plays Bugsy Siegel as a man who is genuinely charming and genuinely dangerous in roughly equal measure, and the film lets both things be true at once.\n\nThe Las Vegas story is real: Siegel looked at empty desert and decided to build a casino, kept going over budget, and kept telling the mob it would pay off. Annette Bening plays Virginia Hill, and their scenes together have a specific kind of heat that makes it easy to see how someone talks himself into building a city in the Mojave while his partners are losing patience.\n\nBarry Levinson directed it. The period detail is immaculate.",
+      "contentTitle": "Bugsy (1991)",
+      "tubiLink": "https://tubitv.com/movies/100040184",
+      "contentId": "100040184",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/013_title_7_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/013_title_7_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/013_title_7_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Crime",
+      "year": "1991",
+      "runtime": "2h 16m",
+      "rating": "R"
+    },
+    {
+      "position": 8,
+      "title": "Of Mice and Men",
+      "description": "Gary Sinise directed this and stars as George, the small sharp one. John Malkovich plays Lennie, and it's one of the most careful performances he's ever given. No tics, no distance. Just a man who is large and kind and doesn't understand his own strength.\n\nThe story is Steinbeck at his most deliberate: two migrant workers in 1930s California holding onto a plan to own land together, and everything standing between them and it.\n\nThere's no twist. The film is a slow accumulation of small moments, and the ending still hits hard even when you see it coming.",
+      "contentTitle": "Of Mice and Men (1992)",
+      "tubiLink": "https://tubitv.com/movies/306938",
+      "contentId": "306938",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/013_title_8_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/013_title_8_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/013_title_8_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Drama",
+      "year": "1992",
+      "runtime": "1h 51m",
+      "rating": "PG-13"
+    },
+    {
+      "position": 9,
+      "title": 187,
+      "description": "Samuel L. Jackson plays a teacher who was stabbed by a student in New York and takes a substitute position in Los Angeles a year and a half later, still not okay.\n\nThis is not Dangerous Minds. It's not about inspiration. It's about a man who has decided he won't be a victim again, and what that decision actually looks like when it plays out inside a classroom. Jackson plays it with a specific kind of exhausted resolve. He's not angry. He's just done.\n\nThe third act goes somewhere genuinely uncomfortable and doesn't apologize for it.",
+      "contentTitle": "187 (1997)",
+      "tubiLink": "https://tubitv.com/movies/100018430",
+      "contentId": "100018430",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/013_title_9_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/013_title_9_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/013_title_9_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Drama",
+      "year": "1997",
+      "runtime": "1h 59m",
+      "rating": "R"
+    },
+    {
+      "position": 10,
+      "title": "Zed's Dead",
+      "description": "Yes, this picks up in the world of Pulp Fiction, specifically inside the pawn shop where Butch and Zed had their encounter. A burned-out detective starts poking around, and the film builds its own strange momentum from there.\n\nIt's not trying to be Tarantino. It's more interested in the people who live in the margins of that world: the ones who run the shop, the ones who owe someone something, the ones who know too much.\n\nThe concept could easily collapse into a gimmick. It doesn't. The film is surprisingly committed to its own logic.",
+      "contentTitle": "Zed's Dead (2021)",
+      "tubiLink": "https://tubitv.com/movies/679477",
+      "contentId": "679477",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/013_title_10_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/013_title_10_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/013_title_10_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Comedy",
+      "year": "2021",
+      "runtime": "1h 11m",
+      "rating": "TV-MA"
+    }
+  ],
+  "keepReading": {
+    "header": {
+      "title": "Keep Reading",
+      "subtitle": "More articles to explore"
+    },
+    "items": [
+      {
+        "id": "006",
+        "slug": "best-free-movies-to-watch-this-weekend",
+        "eyebrow": "What to Watch",
+        "title": "Best Free Movies to Watch This Weekend",
+        "subtitle": "If you want a good pick without digging, start here.",
+        "categoryTag": "Movies",
+        "thumbnail": "/static/blog/the-t/thumbnails/006_thumbnail.jpg"
+      },
+      {
+        "id": "034",
+        "slug": "how-to-watch-great-movies-for-free",
+        "eyebrow": "What to Watch",
+        "title": "How to Watch Great Movies for Free",
+        "subtitle": "A simple way to find something worth your time without overthinking it.",
+        "categoryTag": "Movies",
+        "thumbnail": "/static/blog/the-t/thumbnails/034_thumbnail.jpg"
+      },
+      {
+        "id": "036",
+        "slug": "the-funniest-movies-streaming-on-tubi-now",
+        "eyebrow": "What to Watch",
+        "title": "The Funniest Movies Streaming on Tubi Now",
+        "subtitle": "Easy watches that still land when you need them to.",
+        "categoryTag": "Movies",
+        "thumbnail": "/static/blog/the-t/thumbnails/036_thumbnail.jpg"
+      }
+    ]
+  },
+  "datePosted": "2026-05-26"
+}

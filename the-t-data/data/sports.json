@@ -1,0 +1,215 @@
+{
+  "_doc": {
+    "description": "Sports hub slice of The T content. Rendered by src/web/features/theT/components/HubPage.tsx via the `sports` entry in `SLUG_RENDERERS` in src/web/features/theT/containers/Hub.tsx. Same shape as ./movies.json / ./shows.json / ./horror.json / ./originals.json — every section (`hero`, `featured`, `storyHero`, `watchlist`, `keepReading`) carries its own `header.{title,subtitle}` + items so the JSON drives both heading and content.",
+    "source": "Shell. Hero label + lede + image land first; Featured rail, Story Hero, Watchlist rail, and Keep Reading rail get authored section by section against the upstream `~/Desktop/Static Upload Tubi Blog/{listicles,single-titles,watchlist}.json` slices for `pageLocation: Sports` records.",
+    "doNotInclude": "intro, items[], cast[], whatsComing[] — only the fields the Sports hub actually renders should ship in this chunk.",
+    "linking": "Every article card / hero uses the canonical URL `/the-t/articles/<slug>`. Each slot stores just the bare `slug`; the renderer (`homePageData.ts → buildArticleHref`) prepends the prefix. The optional `watchLink` on some slots is reserved for CTAs that bypass the article and route straight into the Tubi catalog; it does NOT influence the article href."
+  },
+  "nav": {
+    "logoLabel": "The T",
+    "links": [
+      {
+        "label": "Home",
+        "href": "/the-t"
+      },
+      {
+        "label": "Coming Soon",
+        "href": "/the-t/coming-soon"
+      },
+      {
+        "label": "Shows",
+        "href": "/the-t/shows"
+      },
+      {
+        "label": "Movies",
+        "href": "/the-t/movies"
+      }
+    ],
+    "explore": {
+      "label": "Explore",
+      "items": [
+        {
+          "label": "FIFA World Cup 2026",
+          "href": "/the-t/fifa-world-cup"
+        },
+        {
+          "label": "Horror",
+          "href": "/the-t/horror"
+        },
+        {
+          "label": "Tubi Originals",
+          "href": "/the-t/originals"
+        },
+        {
+          "label": "Sports",
+          "href": "/the-t/sports"
+        }
+      ],
+      "moreGenresLabel": "More genres",
+      "moreGenresHref": "/the-t/genres"
+    },
+    "mobileMenu": {
+      "open": "Open menu",
+      "close": "Close menu"
+    }
+  },
+  "hero": {
+    "label": "Sports",
+    "description": "Everything you need to know about watching sports on Tubi. From NFL to NASCAR, your guide to every game, highlight, and live stream available.",
+    "image": "/static/blog/the-t/heroes/sports-hub_hero.png"
+  },
+  "featured": {
+    "header": {
+      "title": "Featured",
+      "subtitle": "Stories and recommendations from our team"
+    },
+    "items": [
+      {
+        "id": "061",
+        "slug": "destination-world-cup-2026-full-guide",
+        "eyebrow": "Guide",
+        "title": "Destination World Cup 2026 — Full Guide",
+        "subtitle": "Start with Destination World Cup 2026, then follow Weston McKennie from the documentary to the USMNT's live match on June 12.",
+        "categoryTag": "Sports",
+        "thumbnail": "/static/blog/the-t/thumbnails/061_thumbnail.jpg",
+        "contentId": "300019838",
+        "shouldUseVideoPreviewFallback": true
+      },
+      {
+        "id": "062",
+        "slug": "how-to-watch-fifa-world-cup-2026-free-on-tubi",
+        "eyebrow": "Guide",
+        "title": "How to Watch FIFA World Cup 2026 Free on Tubi",
+        "subtitle": "Stream Mexico and the USMNT live on Tubi and catch full replays after the final whistle.",
+        "categoryTag": "Sports",
+        "thumbnail": "/static/blog/the-t/thumbnails/062_thumbnail.png"
+      },
+      {
+        "id": "063",
+        "slug": "watch-football-movies-and-documentaries-free-on-tubi",
+        "eyebrow": "What to Watch",
+        "title": "Watch NFL Games and Highlights Free on Tubi",
+        "subtitle": "A Football Life, Undefeated, Blue Mountain State, and more, no subscription required.",
+        "categoryTag": "Sports",
+        "thumbnail": "/static/blog/the-t/thumbnails/063_thumbnail.jpg"
+      }
+    ]
+  },
+  "storyHero": {
+    "id": "064",
+    "slug": "watch-nba-game-and-highlights-worth-watching-on-tubi",
+    "eyebrow": "What to Watch",
+    "title": "College Basketball Classics and Live Hoops on Tubi",
+    "subtitle": "Big Ten, Big 12, March Madness energy, all free, all on Tubi.",
+    "categoryTag": "Sports",
+    "hero": "/static/blog/the-t/thumbnails/064_thumbnail.jpg"
+  },
+  "watchlist": {
+    "header": {
+      "title": "Watchlist",
+      "subtitle": "A handpicked list of sports to watch next"
+    },
+    "items": [
+      {
+        "id": "wl-sports-1",
+        "title": "Destination World Cup 2026",
+        "year": "2026",
+        "description": "Three stars. One stage. Everything on the line.",
+        "genreTag": "Documentary/Sport",
+        "poster": "/static/blog/the-t/watchlist/sports_1_poster.jpg",
+        "watchLink": "https://tubitv.com/series/300019838",
+        "contentId": "300019838",
+        "shouldUseVideoPreviewFallback": true
+      },
+      {
+        "id": "wl-sports-2",
+        "title": "Gonzaga: The Slipper Still Fits",
+        "year": "2026",
+        "description": "From underdogs to a powerhouse that refuses to quit.",
+        "genreTag": "Documentary/Sport",
+        "poster": "/static/blog/the-t/watchlist/sports_2_poster.jpg",
+        "watchLink": "https://tubitv.com/movies/100053310",
+        "contentId": "100053310"
+      },
+      {
+        "id": "wl-sports-3",
+        "title": "Chasing Perfection",
+        "year": "2024",
+        "description": "Injury, comeback, and the relentless chase for Olympic greatness.",
+        "genreTag": "Documentary/Sport",
+        "poster": "/static/blog/the-t/watchlist/sports_3_poster.jpg",
+        "watchLink": "https://tubitv.com/series/300013399",
+        "contentId": "300013399"
+      },
+      {
+        "id": "wl-sports-4",
+        "title": "GT World Challenge America",
+        "year": "2026",
+        "description": "High-speed racing where every second counts.",
+        "genreTag": "Sport",
+        "poster": "/static/blog/the-t/watchlist/sports_4_poster.jpg",
+        "watchLink": "https://tubitv.com/series/300020824",
+        "contentId": "300020824"
+      },
+      {
+        "id": "wl-sports-5",
+        "title": "Captain Tsubasa: Junior Youth Arc",
+        "year": "2024",
+        "description": "A young prodigy pushes toward soccer greatness with everything on the line.",
+        "genreTag": "Anime/Sport",
+        "poster": "/static/blog/the-t/watchlist/sports_5_poster.jpg",
+        "watchLink": "https://tubitv.com/series/300013824",
+        "contentId": "300013824"
+      },
+      {
+        "id": "wl-sports-6",
+        "title": "Salish Matter: Gymnastics",
+        "year": "2025",
+        "description": "Big skills, bigger goals. Salish keeps raising the bar.",
+        "genreTag": "Reality/Sport",
+        "poster": "/static/blog/the-t/watchlist/sports_6_poster.jpg",
+        "watchLink": "https://tubitv.com/series/300017158",
+        "contentId": "300017158"
+      }
+    ]
+  },
+  "keepReading": {
+    "header": {
+      "title": "Keep Reading",
+      "subtitle": "More articles to explore"
+    },
+    "items": [
+      {
+        "id": "065",
+        "slug": "fox-sports-on-tubi-whats-streaming-live-right-now",
+        "eyebrow": "What to Watch",
+        "title": "Fox Sports on Tubi: What's Streaming Live Right Now",
+        "subtitle": "What's live, what's next, and what's worth tuning into.",
+        "categoryTag": "Sports",
+        "thumbnail": "/static/blog/the-t/thumbnails/065_thumbnail.jpg"
+      },
+      {
+        "id": "066",
+        "slug": "mlb-games-and-recaps-on-tubi",
+        "eyebrow": "What to Watch",
+        "title": "MLB Games and Recaps on Tubi",
+        "subtitle": "The walk-offs, the weirdos, the World Series. All free.",
+        "categoryTag": "Sports",
+        "thumbnail": "/static/blog/the-t/thumbnails/066_thumbnail.jpg"
+      },
+      {
+        "id": "067",
+        "slug": "every-nascar-race-and-replay-you-can-stream-on-tubi",
+        "eyebrow": "What to Watch",
+        "title": "Every NASCAR Race and Replay You Can Stream on Tubi",
+        "subtitle": "From moonshine runners to Hendrick Motorsports, all of it, free.",
+        "categoryTag": "Sports",
+        "thumbnail": "/static/blog/the-t/thumbnails/067_thumbnail.png"
+      }
+    ]
+  },
+  "images": {
+    "og": "/static/blog/the-t/og/sports_hub_og.jpg"
+  },
+  "pageTitle": "Discover Free Sports Content, Highlights, and More on Tubi"
+}

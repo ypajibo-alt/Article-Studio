@@ -1,0 +1,289 @@
+{
+  "nav": {
+    "logoLabel": "The T",
+    "links": [
+      {
+        "label": "Home",
+        "href": "/the-t"
+      },
+      {
+        "label": "Coming Soon",
+        "href": "/the-t/coming-soon"
+      },
+      {
+        "label": "Shows",
+        "href": "/the-t/shows"
+      },
+      {
+        "label": "Movies",
+        "href": "/the-t/movies"
+      }
+    ],
+    "explore": {
+      "label": "Explore",
+      "items": [
+        {
+          "label": "FIFA World Cup 2026",
+          "href": "/the-t/fifa-world-cup"
+        },
+        {
+          "label": "Horror",
+          "href": "/the-t/horror"
+        },
+        {
+          "label": "Tubi Originals",
+          "href": "/the-t/originals"
+        },
+        {
+          "label": "Sports",
+          "href": "/the-t/sports"
+        }
+      ],
+      "moreGenresLabel": "More genres",
+      "moreGenresHref": "/the-t/genres"
+    },
+    "mobileMenu": {
+      "open": "Open menu",
+      "close": "Close menu"
+    }
+  },
+  "id": "037",
+  "slug": "the-best-dramas-on-tubi",
+  "categoryTag": "Movies",
+  "type": "listicle",
+  "title": "The Best Dramas on Tubi",
+  "subtitle": "Stories that take their time and let things actually land.",
+  "intro": "The best dramas on Tubi don't let anyone off easy.\n\nDanny Greene bets his life on being untouchable in 1970s Cleveland and almost wins. Meyer Lansky spends 80 years building an empire and ends up talking to a reporter in a diner. A teenager in South Central joins a gang because the alternative is invisibility, and the gang turns out to have its own costs.\n\nHere's where to start.",
+  "images": {
+    "thumbnail": "/static/blog/the-t/thumbnails/037_thumbnail.jpg",
+    "og": "/static/blog/the-t/og/037_og.jpg"
+  },
+  "items": [
+    {
+      "position": 1,
+      "title": "The Usual Suspects",
+      "description": "Verbal Kint sits across from a federal agent and tells him everything. That's the problem.\n\nKevin Spacey plays Kint as the least threatening man in any room - nervous, limping, eager to cooperate. The story he tells about Keyser Söze is elaborate, detailed, and completely in his control. The agent writing it all down never quite notices that he's the one being worked.\n\nThe final two minutes have been discussed for thirty years. They still land. The twist isn't a surprise at the end - it's been running the whole time, and you were watching it happen.",
+      "contentTitle": "The Usual Suspects (1995)",
+      "tubiLink": "https://tubitv.com/movies/303190",
+      "contentId": "303190",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/037_title_1_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/037_title_1_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/037_title_1_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Crime",
+      "year": "1995",
+      "runtime": "1h 46m",
+      "rating": "R"
+    },
+    {
+      "position": 2,
+      "title": "Kill the Irishman",
+      "description": "Ray Stevenson plays Danny Greene like a man who genuinely believes he cannot be killed, which is both his greatest asset and his only real flaw. Greene was a Cleveland longshoreman who talked his way into the mob, then decided he didn't need the mob anymore.\n\nWhat follows is a string of car bombings so relentless the film starts to feel like a dark comedy - except it's all documented. Real. The Cleveland mob ran out of patience before Greene ran out of luck.\n\nThere's a scene where he walks away from an explosion, brushes himself off, and keeps moving. The film just watches him go.",
+      "contentTitle": "Kill the Irishman (2011)",
+      "tubiLink": "https://tubitv.com/movies/400845",
+      "contentId": "400845",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/037_title_2_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/037_title_2_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/037_title_2_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Crime",
+      "year": "2011",
+      "runtime": "1h 46m",
+      "rating": "R"
+    },
+    {
+      "position": 3,
+      "title": "Elite Squad",
+      "description": "Nascimento joins BOPE, Rio's special ops police unit, because he believes in the mission. The film spends two hours showing him what the mission actually is.\n\nDirector José Padilha shoots it with a documentary urgency that makes the violence feel like weather - constant, structural, nobody's fault and everybody's fault at once. Nascimento narrates his own story from a distance, which is the only way he can tell it without fully implicating himself.\n\nBased on real accounts from inside the unit. The sequel goes even deeper into the rot. But this is where the disillusionment starts, and it starts early.",
+      "contentTitle": "Elite Squad (2008)",
+      "tubiLink": "https://tubitv.com/movies/507483",
+      "contentId": "507483",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/037_title_3_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/037_title_3_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/037_title_3_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Crime",
+      "year": "2008",
+      "runtime": "1h 55m",
+      "rating": "R"
+    },
+    {
+      "position": 4,
+      "title": "Lansky",
+      "description": "Harvey Keitel plays Meyer Lansky at 80, sitting in a diner, telling a reporter things he probably shouldn't. The reporter is working for the FBI. Lansky likely knows.\n\nThe film cuts between the old man at the table and the younger Lansky building an empire alongside Bugsy Siegel - two men who were inseparable until they weren't. The older Lansky tells the story without regret, exactly. More like a man doing the math one final time.\n\nKeitel doesn't play it as decline. He plays someone who has been the smartest person in every room for sixty years and is now deciding what that was worth.",
+      "contentTitle": "Lansky (2021)",
+      "tubiLink": "https://tubitv.com/movies/100025243",
+      "contentId": "100025243",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/037_title_4_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/037_title_4_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/037_title_4_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Drama",
+      "year": "2021",
+      "runtime": "1h 59m",
+      "rating": "R"
+    },
+    {
+      "position": 5,
+      "title": "Gotti",
+      "description": "John Travolta plays John Gotti as a man who loved being John Gotti - the suits, the block parties, the loyalty rituals, all of it. That's not a critique. That's the character.\n\nGotti rises through the Gambino family by being exactly what the organization needed and exactly what it couldn't survive: visible. The FBI couldn't touch him for years. His own people eventually could.\n\nThe film covers decades of his life and doesn't look away when the mythology starts cracking. His son is there for most of it, watching. What Gotti built and what he handed down - that's the part that stays with you.",
+      "contentTitle": "Gotti (2018)",
+      "tubiLink": "https://tubitv.com/movies/616772",
+      "contentId": "616772",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/037_title_5_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/037_title_5_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/037_title_5_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Drama",
+      "year": "2018",
+      "runtime": "1h 44m",
+      "rating": "R"
+    },
+    {
+      "position": 6,
+      "title": "Hoodlum",
+      "description": "Laurence Fishburne plays Ellsworth 'Bumpy' Johnson returning to Harlem after parole to find Dutch Schultz moving in on the numbers racket. The 1930s setting is specific, but the question underneath it isn't - who controls a neighborhood, and what does it cost to hold it.\n\nAndy Garcia plays Lucky Luciano as a man who respects Bumpy just enough to want to use him. Tim Roth plays Schultz as someone who respects nothing at all. Bumpy has to navigate both.\n\nThere's a scene at a negotiating table where Fishburne doesn't raise his voice once and still makes clear that the conversation has a hard limit. That scene is the whole film in one moment.",
+      "contentTitle": "Hoodlum (1997)",
+      "tubiLink": "https://tubitv.com/movies/310134",
+      "contentId": "310134",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/037_title_6_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/037_title_6_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/037_title_6_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Crime",
+      "year": "1997",
+      "runtime": "2h 10m",
+      "rating": "R"
+    },
+    {
+      "position": 7,
+      "title": "Shottas",
+      "description": "Ky-Mani Marley and Spragga Benz play childhood friends who grow up in Kingston's most dangerous neighborhoods and eventually take that education to Miami. The film doesn't romanticize the path. It just follows it.\n\nThe Kingston sequences feel lived-in, not set-dressed. The codes the characters operate by have history behind them, and the film trusts you to keep up.\n\nBy the time they're running Miami, the violence has a kind of inevitability to it. These are not men who stumbled into this life. They built toward it, step by step.",
+      "contentTitle": "Shottas (2002)",
+      "tubiLink": "https://tubitv.com/movies/494842",
+      "contentId": "494842",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/037_title_7_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/037_title_7_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/037_title_7_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Crime",
+      "year": "2002",
+      "runtime": "1h 39m",
+      "rating": "R"
+    },
+    {
+      "position": 8,
+      "title": "Youngblood",
+      "description": "A 15-year-old in South Central joins a gang because the street has a gravity to it that nothing else in his life can match. The film was made in 1978 and doesn't dress that up.\n\nWhat's striking is how it handles the gang itself - not as pure menace, but as a structure that makes sense to the people inside it, right up until it doesn't. The feud with the drug cartel arrives not as plot but as consequence. The kind that was always coming.\n\nThe neighborhood here isn't backdrop. It's the whole argument - and for a film made nearly fifty years ago about a world most studio movies were still ignoring, that honesty holds up.",
+      "contentTitle": "Youngblood (1978)",
+      "tubiLink": "https://tubitv.com/movies/303024",
+      "contentId": "303024",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/037_title_8_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/037_title_8_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/037_title_8_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Drama",
+      "year": "1978",
+      "runtime": "1h 27m",
+      "rating": "R"
+    },
+    {
+      "position": 9,
+      "title": "Capone",
+      "description": "Tom Hardy plays Al Capone at 47, in the last year of his life, neurosyphilis taking his mind apart piece by piece in a Florida mansion. No heist sequences. No courtroom victories. Just a man who built one of the most feared criminal empires in American history, now unable to tell the difference between what happened and what he's afraid happened.\n\nHardy plays it physical and strange - Capone lurches through the film like a man trying to outrun his own brain. The hallucinations aren't abstract. They're specific. They're people he hurt.\n\nThis is what the end of that life actually looked like.",
+      "contentTitle": "Capone (2020)",
+      "tubiLink": "https://tubitv.com/movies/100008277",
+      "contentId": "100008277",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/037_title_9_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/037_title_9_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/037_title_9_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Drama",
+      "year": "2020",
+      "runtime": "1h 44m",
+      "rating": "R"
+    },
+    {
+      "position": 10,
+      "title": "The Infiltrator",
+      "description": "Bryan Cranston plays Robert Mazur, a federal agent who goes so deep undercover inside Pablo Escobar's money-laundering network that he ends up with a fake fiancée, a fake business partner, and a very real problem: the cartel likes him.\n\nBased on Mazur's own account, and the detail that keeps surfacing is how much of the job is pure performance - dinners, toasts, handshakes with men who will have you killed if you slip for one second. Cranston plays the exhaustion of that without making it sentimental.\n\nThere's a scene at a bachelor party where the line between the cover and the man holding it gets genuinely hard to locate. Mazur feels it too.",
+      "contentTitle": "The Infiltrator (2016)",
+      "tubiLink": "https://tubitv.com/movies/639313",
+      "contentId": "639313",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/037_title_10_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/037_title_10_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/037_title_10_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Thriller",
+      "year": "2016",
+      "runtime": "2h 7m",
+      "rating": "R"
+    }
+  ],
+  "keepReading": {
+    "header": {
+      "title": "Keep Reading",
+      "subtitle": "More articles to explore"
+    },
+    "items": [
+      {
+        "id": "014",
+        "slug": "the-most-addictive-shows-on-tubi",
+        "eyebrow": "What to Watch",
+        "title": "Binge-Worthy TV: The Most Addictive Shows on Tubi",
+        "subtitle": "Shows that stack quickly and are harder to stop than you expect.",
+        "categoryTag": "Shows",
+        "thumbnail": "/static/blog/the-t/thumbnails/014_thumbnail.jpg"
+      },
+      {
+        "id": "030",
+        "slug": "the-best-docuseries-on-tubi",
+        "eyebrow": "What to Watch",
+        "title": "The Best Docuseries on Tubi You Need to Watch",
+        "subtitle": "Real stories that are built to keep you watching longer than planned.",
+        "categoryTag": "Shows",
+        "thumbnail": "/static/blog/the-t/thumbnails/030_thumbnail.jpg"
+      },
+      {
+        "id": "006",
+        "slug": "best-free-movies-to-watch-this-weekend",
+        "eyebrow": "What to Watch",
+        "title": "Best Free Movies to Watch This Weekend",
+        "subtitle": "If you want a good pick without digging, start here.",
+        "categoryTag": "Movies",
+        "thumbnail": "/static/blog/the-t/thumbnails/006_thumbnail.jpg"
+      }
+    ]
+  },
+  "datePosted": "2026-05-26"
+}

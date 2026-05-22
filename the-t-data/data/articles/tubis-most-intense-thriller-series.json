@@ -1,0 +1,289 @@
+{
+  "nav": {
+    "logoLabel": "The T",
+    "links": [
+      {
+        "label": "Home",
+        "href": "/the-t"
+      },
+      {
+        "label": "Coming Soon",
+        "href": "/the-t/coming-soon"
+      },
+      {
+        "label": "Shows",
+        "href": "/the-t/shows"
+      },
+      {
+        "label": "Movies",
+        "href": "/the-t/movies"
+      }
+    ],
+    "explore": {
+      "label": "Explore",
+      "items": [
+        {
+          "label": "FIFA World Cup 2026",
+          "href": "/the-t/fifa-world-cup"
+        },
+        {
+          "label": "Horror",
+          "href": "/the-t/horror"
+        },
+        {
+          "label": "Tubi Originals",
+          "href": "/the-t/originals"
+        },
+        {
+          "label": "Sports",
+          "href": "/the-t/sports"
+        }
+      ],
+      "moreGenresLabel": "More genres",
+      "moreGenresHref": "/the-t/genres"
+    },
+    "mobileMenu": {
+      "open": "Open menu",
+      "close": "Close menu"
+    }
+  },
+  "id": "031",
+  "slug": "tubis-most-intense-thriller-series",
+  "categoryTag": "Shows",
+  "type": "listicle",
+  "title": "Tubi's Most Intense Thriller Series",
+  "subtitle": "The Fall, Damages, The Killing, and seven more that will wreck your sleep schedule.",
+  "intro": "Some shows you watch. These ones watch you back.\n\nTubi's most intense thriller series aren't just about the crime. They're about the pressure. Gillian Anderson's detective in The Fall knows exactly who the killer is and still can't stop him. Glenn Close's lawyer in Damages will burn down anyone in her path, including the young associate she's supposedly mentoring. In The Killing, a murder case refuses to close neatly, and the family waiting for answers has to keep living in the meantime.\n\nHere's the full lineup. Pick your poison.",
+  "images": {
+    "thumbnail": "/static/blog/the-t/thumbnails/031_thumbnail.jpg",
+    "og": "/static/blog/the-t/og/031_og.jpg"
+  },
+  "items": [
+    {
+      "position": 1,
+      "title": "The Fall",
+      "description": "The show hands you the killer's identity in episode one. Paul Spector, played by Jamie Dornan, is a grief counselor by day. The rest of the series is a psychological chess match between him and DSI Stella Gibson, and both of them know it.\n\nThere's a scene where Spector watches Gibson on television and you realize he's studying her the same way she's studying him. Gillian Anderson doesn't panic. She calculates. Every scene with her has this cold, precise energy, like someone who has already thought three moves ahead and is just waiting for you to catch up.\n\nThe Belfast setting is grey and institutional and never lets up. By the end, you're not sure who's more unsettling.",
+      "contentTitle": "The Fall (2016)",
+      "tubiLink": "https://tubitv.com/series/300005636",
+      "contentId": "300005636",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/031_title_1_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/031_title_1_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/031_title_1_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Thriller",
+      "year": "2016",
+      "runtime": "3 Seasons",
+      "rating": "TV-MA"
+    },
+    {
+      "position": 2,
+      "title": "Damages",
+      "description": "Patty Hewes takes on a promising young lawyer named Ellen Parsons, and the show spends five seasons making clear that this was never an act of generosity. Glenn Close plays Patty without a single moment of self-doubt, which makes every scene with her feel like standing too close to a ledge.\n\nThe pilot opens with Ellen covered in blood. Then the show walks you back to how she got there.\n\nRose Byrne matches Close beat for beat, which is its own kind of achievement. The legal cases are almost beside the point. This is a show about what happens when someone powerful decides you're useful, and what it costs you before you figure that out.",
+      "contentTitle": "Damages (2007)",
+      "tubiLink": "https://tubitv.com/series/300017054",
+      "contentId": "300017054",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/031_title_2_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/031_title_2_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/031_title_2_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Crime",
+      "year": "2007",
+      "runtime": "5 Seasons",
+      "rating": "TV-MA"
+    },
+    {
+      "position": 3,
+      "title": "The Killing",
+      "description": "Most crime shows check in on the victim's family for emotional texture, then get back to the investigation. The Killing keeps returning to them with the same weight it gives the detectives. You never get to detach.\n\nMireille Enos plays Detective Sarah Linden like someone who has been doing this too long and knows it. The Pacific Northwest setting, grey and wet and always slightly wrong, does real work.\n\nThree perspectives run at once: the detectives, the suspects, and the family of the murdered girl just trying to get through the week. The case doesn't resolve the way you expect. Neither does the damage it leaves behind.",
+      "contentTitle": "The Killing (2014)",
+      "tubiLink": "https://tubitv.com/series/300019083",
+      "contentId": "300019083",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/031_title_3_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/031_title_3_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/031_title_3_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Drama",
+      "year": "2014",
+      "runtime": "4 Seasons",
+      "rating": "TV-14"
+    },
+    {
+      "position": 4,
+      "title": "The Bridge",
+      "description": "A body turns up on the bridge between El Paso and Juárez, positioned exactly on the international line. Neither side can claim it cleanly.\n\nDiane Kruger plays a Texas detective with a blunt, almost clinical way of moving through the world. Demián Bichir plays her Mexican counterpart who understands things about how Juárez works that she doesn't, and the show never lets you forget the difference. The killer is using the border the same way the border uses everyone else: as a place where accountability goes to disappear.\n\nThe procedural mechanics are tight. What lingers is the texture of two cities that share a river and almost nothing else.",
+      "contentTitle": "The Bridge (2013)",
+      "tubiLink": "https://tubitv.com/series/300002658",
+      "contentId": "300002658",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/031_title_4_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/031_title_4_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/031_title_4_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Crime",
+      "year": "2013",
+      "runtime": "2 Seasons",
+      "rating": "TV-MA"
+    },
+    {
+      "position": 5,
+      "title": "Miami Vice",
+      "description": "Yes, the pastel suits. Yes, the synth score. Stay with it.\n\nUnder Michael Mann's direction, Miami Vice was one of the first network shows to treat undercover work as psychologically corrosive rather than just dangerous. Crockett and Tubbs spend so much time inside criminal networks that the show starts questioning where the performance ends. There's an episode mid-run where Crockett's cover identity takes over completely, and the show doesn't treat it as a twist. It plays it as an inevitability.\n\nThe glamour isn't separate from the danger. It's the whole trap, for the characters and for the audience watching them get comfortable inside it.",
+      "contentTitle": "Miami Vice (1984)",
+      "tubiLink": "https://tubitv.com/series/300010244",
+      "contentId": "300010244",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/031_title_5_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/031_title_5_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/031_title_5_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Crime",
+      "year": "1984",
+      "runtime": "5 Seasons",
+      "rating": "TV-14"
+    },
+    {
+      "position": 6,
+      "title": "Lie to Me",
+      "description": "Cal Lightman built a career reading microexpressions, the involuntary tells that reveal what people are actually feeling underneath what they're saying. Tim Roth plays the edges of what that does to a person: someone who cannot turn the skill off, who clocks deception in his colleagues, his ex-wife, his daughter, constantly.\n\nThere's a hostage negotiation where Lightman reads the situation correctly and things get worse, because being right and being helpful aren't the same thing. That gap is where the show lives.\n\nThe cases move fast. The loneliness underneath them doesn't.",
+      "contentTitle": "Lie to Me (2011)",
+      "tubiLink": "https://tubitv.com/series/300010743",
+      "contentId": "300010743",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/031_title_6_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/031_title_6_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/031_title_6_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Drama",
+      "year": "2011",
+      "runtime": "3 Seasons",
+      "rating": "TV-14"
+    },
+    {
+      "position": 7,
+      "title": "Missing",
+      "description": "A young woman with a past she's been running from suddenly becomes the prime suspect in a serial killer investigation. She can't surface to clear her name without exposing everything she's been hiding. That's the trap the whole show is built around.\n\nCaterina Scorsone plays her with a kind of controlled desperation, someone who has been surviving on instinct for so long that asking for help doesn't even register as an option. Her past isn't backstory. It keeps showing up in the present with consequences she didn't plan for.\n\nThe tension isn't really about the killer. It's about how long she can stay ahead of two different threats at once.",
+      "contentTitle": "Missing (2006)",
+      "tubiLink": "https://tubitv.com/series/300012427",
+      "contentId": "300012427",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/031_title_7_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/031_title_7_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/031_title_7_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Crime",
+      "year": "2006",
+      "runtime": "1 Season",
+      "rating": "TV-14"
+    },
+    {
+      "position": 8,
+      "title": "Columbo",
+      "description": "Every episode tells you the killer's identity before the opening credits. The tension was never whodunit. It's watching Lieutenant Columbo, in his rumpled raincoat, pretend to be confused while he builds a case the suspect doesn't realize is being built.\n\nPeter Falk plays it as pure performance: the shuffling, the 'just one more thing,' the apparent disorganization that is actually a very patient trap. The suspects are usually wealthy, usually arrogant, and almost always underestimate him.\n\nThere's a specific pleasure in watching someone who thinks they've committed the perfect crime slowly realize that the distracted little man asking dumb questions has had them figured out from the start.",
+      "contentTitle": "Columbo (2003)",
+      "tubiLink": "https://tubitv.com/series/300006728",
+      "contentId": "300006728",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/031_title_8_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/031_title_8_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/031_title_8_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Crime",
+      "year": "2003",
+      "runtime": "16 Seasons",
+      "rating": "TV-PG"
+    },
+    {
+      "position": 9,
+      "title": "The Bridge",
+      "description": "Frank Leo is a beat cop who hits his limit with the corrupt brass running his department and ends up leading the police union. Not because he wanted the job. Because he made himself a target and decided to lean into it.\n\nAaron Douglas plays him as someone whose charisma is also a liability, the kind of person who can rally a room and alienate it in the same afternoon. The show is set in Toronto and doesn't glamorize any of it: the politics are grinding, the alliances are temporary, and every move Frank makes to protect himself seems to create a new enemy.\n\nThe threat here isn't a serial killer. It's institutional rot, and one man who refuses to let it absorb him.",
+      "contentTitle": "The Bridge (2010)",
+      "tubiLink": "https://tubitv.com/series/300019027",
+      "contentId": "300019027",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/031_title_9_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/031_title_9_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/031_title_9_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Crime",
+      "year": "2010",
+      "runtime": "1 Season",
+      "rating": "TV-14"
+    },
+    {
+      "position": 10,
+      "title": "The K2",
+      "description": "Ji Chang-wook plays K2, a former mercenary recruited to protect the hidden daughter of a presidential candidate. The setup sounds like a bodyguard romance, and there are elements of that, but the show keeps pulling toward something darker: a man who spent years as someone else's instrument, now trying to figure out what he actually wants.\n\nThe action sequences are genuinely sharp. K2 moves through hostile environments with a controlled efficiency the show earns rather than just asserts.\n\nBut the tension that sticks is political. The candidate's inner circle is running a conspiracy that K2 is now inside of, and the people who hired him don't tolerate complications. He has become one.",
+      "contentTitle": "The K2 (2016)",
+      "tubiLink": "https://tubitv.com/series/300009828",
+      "contentId": "300009828",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/031_title_10_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/031_title_10_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/031_title_10_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Drama",
+      "year": "2016",
+      "runtime": "1 Season",
+      "rating": "TV-14"
+    }
+  ],
+  "keepReading": {
+    "header": {
+      "title": "Keep Reading",
+      "subtitle": "More articles to explore"
+    },
+    "items": [
+      {
+        "id": "029",
+        "slug": "top-crime-series-on-tubi",
+        "eyebrow": "What to Watch",
+        "title": "Top Crime Series on Tubi Today",
+        "subtitle": "Where the cases pull you in because they get personal fast.",
+        "categoryTag": "Shows",
+        "thumbnail": "/static/blog/the-t/thumbnails/029_thumbnail.jpg"
+      },
+      {
+        "id": "038",
+        "slug": "movies-that-will-haunt-you-in-a-good-way",
+        "eyebrow": "What to Watch",
+        "title": "Movies That Will Haunt You (In a Good Way)",
+        "subtitle": "The kind that linger a little after the credits.",
+        "categoryTag": "Movies",
+        "thumbnail": "/static/blog/the-t/thumbnails/038_thumbnail.jpg"
+      },
+      {
+        "id": "046",
+        "slug": "the-psychological-horror-films-that-mess-with-your-head",
+        "eyebrow": "What to Watch",
+        "title": "The Psychological Horror Films That Mess With Your Head",
+        "subtitle": "More about tension and perspective than anything physical.",
+        "categoryTag": "Horror",
+        "thumbnail": "/static/blog/the-t/thumbnails/046_thumbnail.jpg"
+      }
+    ]
+  },
+  "datePosted": "2026-05-26"
+}

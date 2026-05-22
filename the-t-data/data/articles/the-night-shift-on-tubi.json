@@ -1,0 +1,149 @@
+{
+  "nav": {
+    "logoLabel": "The T",
+    "links": [
+      {
+        "label": "Home",
+        "href": "/the-t"
+      },
+      {
+        "label": "Coming Soon",
+        "href": "/the-t/coming-soon"
+      },
+      {
+        "label": "Shows",
+        "href": "/the-t/shows"
+      },
+      {
+        "label": "Movies",
+        "href": "/the-t/movies"
+      }
+    ],
+    "explore": {
+      "label": "Explore",
+      "items": [
+        {
+          "label": "FIFA World Cup 2026",
+          "href": "/the-t/fifa-world-cup"
+        },
+        {
+          "label": "Horror",
+          "href": "/the-t/horror"
+        },
+        {
+          "label": "Tubi Originals",
+          "href": "/the-t/originals"
+        },
+        {
+          "label": "Sports",
+          "href": "/the-t/sports"
+        }
+      ],
+      "moreGenresLabel": "More genres",
+      "moreGenresHref": "/the-t/genres"
+    },
+    "mobileMenu": {
+      "open": "Open menu",
+      "close": "Close menu"
+    }
+  },
+  "id": "017",
+  "slug": "the-night-shift-on-tubi",
+  "categoryTag": "Coming Soon",
+  "type": "article",
+  "title": "The Night Shift: What You Need to Know Before It Hits Tubi",
+  "subtitle": "Same night, same killer, same dead end.",
+  "datePosted": "2026-05-26",
+  "intro": "A first shift at a new job is already its own kind of nightmare. Now imagine you can't leave it. Night Shift drops Amy into a hotel with a history nobody warned her about, a killer who keeps showing up, and a time loop that resets every time things go wrong, which is often. It's a horror premise that takes two things people already dread (being new somewhere, being stuck somewhere) and fuses them into something that keeps tightening. Coming soon to Tubi, this one's worth clearing your evening for.",
+  "cast": {
+    "header": {
+      "title": "The Cast"
+    },
+    "items": [
+      {
+        "name": "Amy",
+        "bio": "The new hire who becomes the only person capable of breaking the cycle. She starts the night with no information and has to earn every piece of it the hard way. Each reset costs her something, and she keeps going anyway."
+      }
+    ]
+  },
+  "quote": "You can't check out. You can't call for help. You just have to survive it one more time.",
+  "faq": {
+    "header": {
+      "title": "More details"
+    },
+    "items": [
+      {
+        "question": "Who directed the film?",
+        "answer": "Stephen Hall"
+      },
+      {
+        "question": "Who is in the cast?",
+        "answer": "Ashleigh Dorrell, Nigel Mercier, Matthew O'Brien, Angel Hannigan, David Collins"
+      },
+      {
+        "question": "Where can I stream this?",
+        "answer": "Free on Tubi, coming soon."
+      }
+    ]
+  },
+  "images": {
+    "thumbnail": "/static/blog/the-t/thumbnails/017_thumbnail.jpg",
+    "hero": "/static/blog/the-t/heroes/017_hero.jpg",
+    "og": "/static/blog/the-t/og/017_og.jpg"
+  },
+  "keepReading": {
+    "header": {
+      "title": "Keep Reading",
+      "subtitle": "More articles to explore"
+    },
+    "items": [
+      {
+        "id": "019",
+        "slug": "the-grudge-2020-on-tubi",
+        "eyebrow": "Available 6/1",
+        "title": "The Grudge (2020) Hits Tubi This Month",
+        "subtitle": "The curse doesn't follow rules, and neither does this version of it.",
+        "categoryTag": "Coming Soon",
+        "thumbnail": "/static/blog/the-t/thumbnails/019_thumbnail.jpg"
+      },
+      {
+        "id": "040",
+        "slug": "best-horror-shows-on-tubi-right-now",
+        "eyebrow": "Binge-Worthy",
+        "title": "Best Horror Shows on Tubi Right Now",
+        "subtitle": "A range of horror that goes beyond the obvious picks.",
+        "categoryTag": "Horror",
+        "thumbnail": "/static/blog/the-t/thumbnails/040_thumbnail.jpg"
+      },
+      {
+        "id": "043",
+        "slug": "skinamarink-and-the-best-found-footage-horror-movies-on-tubi",
+        "eyebrow": "What to Watch",
+        "title": "Skinamarink and the Best Found Footage Horror on Tubi",
+        "subtitle": "Minimal, eerie, and built around what you don't see.",
+        "categoryTag": "Horror",
+        "thumbnail": "/static/blog/the-t/thumbnails/043_thumbnail.jpg"
+      }
+    ]
+  },
+  "hero": {
+    "watchLink": "https://tubitv.com/movies/463617/nightshift",
+    "contentId": "463617",
+    "watchNowLabel": "Watch Now"
+  },
+  "whyWatch": {
+    "header": {
+      "title": "Why Watch It"
+    },
+    "body": "Time loop horror is a specific kind of cruel. The monster doesn't get tired. The exits stay locked. The only thing that changes is how much the protagonist knows, and Night Shift makes Amy pay for every bit of that knowledge. There's no safety in the repetition, each loop is a chance to do worse, not just better, and the film leans into that pressure without letting up."
+  },
+  "gallery": {
+    "header": {
+      "title": "Media Shots"
+    },
+    "items": [
+      "/static/blog/the-t/media/017_media_1.jpg",
+      "/static/blog/the-t/media/017_media_2.jpg"
+    ]
+  }
+}

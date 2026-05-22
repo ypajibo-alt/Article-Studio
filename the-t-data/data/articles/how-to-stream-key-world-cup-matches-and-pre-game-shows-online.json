@@ -1,0 +1,156 @@
+{
+  "nav": {
+    "logoLabel": "The T",
+    "links": [
+      {
+        "label": "Home",
+        "href": "/the-t"
+      },
+      {
+        "label": "Coming Soon",
+        "href": "/the-t/coming-soon"
+      },
+      {
+        "label": "Shows",
+        "href": "/the-t/shows"
+      },
+      {
+        "label": "Movies",
+        "href": "/the-t/movies"
+      }
+    ],
+    "explore": {
+      "label": "Explore",
+      "items": [
+        {
+          "label": "FIFA World Cup 2026",
+          "href": "/the-t/fifa-world-cup"
+        },
+        {
+          "label": "Horror",
+          "href": "/the-t/horror"
+        },
+        {
+          "label": "Tubi Originals",
+          "href": "/the-t/originals"
+        },
+        {
+          "label": "Sports",
+          "href": "/the-t/sports"
+        }
+      ],
+      "moreGenresLabel": "More genres",
+      "moreGenresHref": "/the-t/genres"
+    },
+    "mobileMenu": {
+      "open": "Open menu",
+      "close": "Close menu"
+    }
+  },
+  "id": "057",
+  "slug": "how-to-stream-key-world-cup-matches-and-pre-game-shows-online",
+  "categoryTag": "Sports",
+  "type": "article",
+  "title": "How to Stream Key World Cup Matches and Pre-Game Shows Online",
+  "subtitle": "Your full guide to the can't-miss matches, the pre-game shows worth tuning in for, and how to stream it all free on Tubi.",
+  "datePosted": "2026-05-26",
+  "intro": "Tubi's World Cup coverage doesn't start at kickoff. Fox Pregame runs before Mexico vs. South Africa on June 11 and USA vs. Paraguay on June 12, so you're not walking in cold. The live matches stream free with a Tubi account, post-game coverage follows the USMNT opener, and VOD replays go up within 1 to 2 hours after each final whistle. The hub also includes highlights, extended cuts, vertical video for mobile, and 4K HDR on supported devices. The full broadcast stack, none of the subscription pile-up.",
+  "quote": "Pregame, live matches, replays, and highlights all live in one free World Cup hub.",
+  "faq": {
+    "header": {
+      "title": "More details"
+    },
+    "items": [
+      {
+        "question": "When does the FIFA World Cup 2026™ start?",
+        "answer": "FIFA World Cup 2026™ kicks off with an opening ceremony and match on Thursday, June 11. Pregame 1:00 PM ET. Kickoff 3:00 PM ET. You can stream both events LIVE & FREE in 4K* on Tubi with a free account."
+      },
+      {
+        "question": "Do I need an account to watch FIFA World Cup 2026™ on Tubi?",
+        "answer": "Yes. You need to register for a free account and sign in, but it’s quick and easy. We promise."
+      },
+      {
+        "question": "What devices can I use to stream FIFA World Cup 2026™ on Tubi?",
+        "answer": "Tubi works on most smart TVs, mobile devices, streaming devices, gaming consoles, and web browsers. Visit the Help Center for a complete list of supported devices. Don’t wanna miss a gooooooal? Get the Tubi mobile app to stream on the go."
+      }
+    ]
+  },
+  "images": {
+    "thumbnail": "/static/blog/the-t/thumbnails/057_thumbnail.jpg",
+    "hero": "/static/blog/the-t/heroes/057_hero.jpg",
+    "og": "/static/blog/the-t/og/057_og.jpg"
+  },
+  "keepReading": {
+    "header": {
+      "title": "Keep Reading",
+      "subtitle": "More articles to explore"
+    },
+    "items": [
+      {
+        "id": "056",
+        "slug": "world-cup-opening-weekend-match-schedule-on-tubi",
+        "eyebrow": "Guide",
+        "title": "Your Guide to the World Cup Opening Weekend: Match Schedule on Tubi",
+        "subtitle": "The full match schedule for opening weekend, plus how to stream every game on Tubi.",
+        "categoryTag": "Sports",
+        "thumbnail": "/static/blog/the-t/thumbnails/056_thumbnail.png"
+      },
+      {
+        "id": "003",
+        "slug": "how-to-watch-2026-world-cup-matches-live-for-free-on-tubi",
+        "eyebrow": "Guide",
+        "title": "How to Watch 2026 World Cup Matches Live for Free on Tubi",
+        "subtitle": "The World Cup hub is live on Tubi now. Stream Mexico and the USMNT free during opening week.",
+        "categoryTag": "Sports",
+        "thumbnail": "/static/blog/the-t/thumbnails/003_thumbnail.png"
+      },
+      {
+        "id": "060",
+        "slug": "best-soccer-stories-to-stream",
+        "eyebrow": "What to Watch",
+        "title": "Beyond the Pitch: The Best Soccer Stories to Stream Now",
+        "subtitle": "The stories behind the game, before the World Cup begins",
+        "categoryTag": "Sports",
+        "thumbnail": "/static/blog/the-t/thumbnails/060_thumbnail.jpg"
+      }
+    ]
+  },
+  "hero": {
+    "watchLink": "https://tubitv.com/hubs/fifa-world-cup-fox-hub",
+    "watchNowLabel": "Watch Now"
+  },
+  "whyWatch": {
+    "header": {
+      "title": "Why Watch It"
+    },
+    "body": "The match is the main event, but everything around it is what makes it feel like a full World Cup moment. Fox Pregame gives you the setup before kickoff. The live stream puts you in it as it happens. The replay is there if you miss it, no sign-in required. And the extended highlights land somewhere between a quick clip and the full 90 minutes, for when you want more than a recap but less than a commitment. Every piece of it is free on Tubi."
+  },
+  "gallery": {
+    "header": {
+      "title": "Media Shots"
+    },
+    "items": [
+      "/static/blog/the-t/media/057_media_1.jpg",
+      "/static/blog/the-t/media/057_media_2.png"
+    ]
+  },
+  "whatsComing": {
+    "header": {
+      "title": "What's Coming"
+    },
+    "items": [
+      {
+        "heading": "Fox Pregame, June 11 and June 12",
+        "paragraph": "Coverage starts before the ball moves. Fox Pregame airs before Mexico vs. South Africa and before USA vs. Paraguay, giving you time to get up to speed on lineups, matchup context, and stadium atmosphere. Both match days feel like events from the opening segment, not just from kickoff."
+      },
+      {
+        "heading": "Live matches, free with a Tubi account",
+        "paragraph": "Mexico vs. South Africa kicks off June 11 at 1:00 PM CT from Mexico City. USA vs. Paraguay follows June 12 at 6:00 PM PT from Los Angeles Stadium in Inglewood. Both are group stage openers with real stakes attached, and both stream live on Tubi with free sign-in."
+      },
+      {
+        "heading": "Post-game and VOD replays",
+        "paragraph": "Post-game coverage runs after the June 12 USMNT match. Miss either game live? The full 90-minute VOD replay goes up within 1 to 2 hours after the final whistle and doesn't require sign-in. The replay includes match footage only."
+      }
+    ]
+  }
+}

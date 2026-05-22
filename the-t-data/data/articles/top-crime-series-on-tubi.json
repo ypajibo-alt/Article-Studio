@@ -1,0 +1,289 @@
+{
+  "nav": {
+    "logoLabel": "The T",
+    "links": [
+      {
+        "label": "Home",
+        "href": "/the-t"
+      },
+      {
+        "label": "Coming Soon",
+        "href": "/the-t/coming-soon"
+      },
+      {
+        "label": "Shows",
+        "href": "/the-t/shows"
+      },
+      {
+        "label": "Movies",
+        "href": "/the-t/movies"
+      }
+    ],
+    "explore": {
+      "label": "Explore",
+      "items": [
+        {
+          "label": "FIFA World Cup 2026",
+          "href": "/the-t/fifa-world-cup"
+        },
+        {
+          "label": "Horror",
+          "href": "/the-t/horror"
+        },
+        {
+          "label": "Tubi Originals",
+          "href": "/the-t/originals"
+        },
+        {
+          "label": "Sports",
+          "href": "/the-t/sports"
+        }
+      ],
+      "moreGenresLabel": "More genres",
+      "moreGenresHref": "/the-t/genres"
+    },
+    "mobileMenu": {
+      "open": "Open menu",
+      "close": "Close menu"
+    }
+  },
+  "id": "029",
+  "slug": "top-crime-series-on-tubi",
+  "categoryTag": "Shows",
+  "type": "listicle",
+  "title": "Top Crime Series on Tubi Today",
+  "subtitle": "Where the cases pull you in because they get personal fast.",
+  "intro": "The best crime series don't hook you with the murder. They hook you with the person trying to solve it.\n\nA detective in Belfast who never breaks eye contact with a killer she's already profiling. A grief-wrecked Seattle detective who refuses to let a case go cold even when everyone else has moved on. Crockett and Tubbs in linen suits, moving through Miami's drug trade to a synth-pop soundtrack that somehow made danger feel like a lifestyle.\n\nIf you're looking for the top crime series on Tubi right now, here's where to start.",
+  "images": {
+    "thumbnail": "/static/blog/the-t/thumbnails/029_thumbnail.jpg",
+    "og": "/static/blog/the-t/og/029_og.jpg"
+  },
+  "items": [
+    {
+      "position": 1,
+      "title": "The Fall",
+      "description": "Gillian Anderson plays DSI Stella Gibson, sent to Belfast to review a stalled murder investigation. She identifies the killer, Paul Spector - played by Jamie Dornan - early. The show doesn't hide him from you. You know who he is almost immediately.\n\nWhat you're actually watching is two people who are both methodical, both controlled, both completely certain of themselves, slowly closing the distance between them. Gibson doesn't rattle. She observes. There's a scene where she reviews crime scene photos and you watch her build the profile in real time - no dramatic music, just a woman thinking faster than everyone around her.\n\nFive seasons. The pressure never really lets up.",
+      "contentTitle": "The Fall (2016)",
+      "tubiLink": "https://tubitv.com/series/300005636",
+      "contentId": "300005636",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/029_title_1_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/029_title_1_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/029_title_1_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Thriller",
+      "year": "2016",
+      "runtime": "3 Seasons",
+      "rating": "TV-MA"
+    },
+    {
+      "position": 2,
+      "title": "Miami Vice",
+      "description": "Michael Mann executive-produced a show where the detectives look like they belong at the party they're trying to bust. Crockett and Tubbs work South Florida's cocaine trade in pastel suits with no socks, driving a Ferrari - and the whole thing should feel like a joke. It doesn't.\n\nMann treated the visuals like they were making an argument: if the criminals controlled the money and the glamour, the cops had to move through that world to fight it. There's a coldness underneath all the cool that the show never lets you forget.\n\nFive seasons of cases. The city always feels like it's one deal away from swallowing everyone whole.",
+      "contentTitle": "Miami Vice (1984)",
+      "tubiLink": "https://tubitv.com/series/300010244",
+      "contentId": "300010244",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/029_title_2_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/029_title_2_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/029_title_2_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Crime",
+      "year": "1984",
+      "runtime": "5 Seasons",
+      "rating": "TV-14"
+    },
+    {
+      "position": 3,
+      "title": "The Killing",
+      "description": "Three timelines, one murder: the detectives working it, the family living inside it, the suspects circling around it. Most crime procedurals let you keep your distance. This one doesn't.\n\nEvery time the investigation makes progress, the show cuts back to the family and reminds you what progress actually means in a house where someone isn't coming home. Mireille Enos plays Detective Sarah Linden with a particular kind of exhaustion - not burned out, just someone who has looked at too many cases and genuinely cannot stop looking.\n\nIt's the kind of show where you finish an episode and immediately need to know what happens next, but you also kind of dread finding out.",
+      "contentTitle": "The Killing (2014)",
+      "tubiLink": "https://tubitv.com/series/300019083",
+      "contentId": "300019083",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/029_title_3_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/029_title_3_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/029_title_3_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Drama",
+      "year": "2014",
+      "runtime": "4 Seasons",
+      "rating": "TV-14"
+    },
+    {
+      "position": 4,
+      "title": "The Adventures of Sherlock Holmes",
+      "description": "Jeremy Brett's Holmes is not a warm man. He's precise, he's impatient, and he has absolutely no interest in making you comfortable with how fast his mind moves.\n\nBrett researched the role obsessively and it shows. There's a restlessness to the performance, a physical oddness, that makes every scene feel like you're watching someone who genuinely cannot slow down to your speed. When he solves something, it doesn't feel like a trick. It feels inevitable.\n\nThis 1984 Granada series is widely considered the definitive screen adaptation for a reason. If you've only seen the modern versions, this is the one they're all being measured against.",
+      "contentTitle": "The Adventures of Sherlock Holmes (1984)",
+      "tubiLink": "https://tubitv.com/series/300004157",
+      "contentId": "300004157",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/029_title_4_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/029_title_4_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/029_title_4_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Crime",
+      "year": "1984",
+      "runtime": "1 Season",
+      "rating": "TV-PG"
+    },
+    {
+      "position": 5,
+      "title": "The Return of Sherlock Holmes",
+      "description": "Still Jeremy Brett. Still Granada. But this run pulls from Doyle's later stories - the ones where the cases are messier and Holmes doesn't always get to be the smartest person in the room without it costing him something.\n\n\"The Empty House\" opens the series, which means you're starting with Holmes returning after everyone believed him dead. Brett plays the reunion with Watson with a restraint that lands harder than any dramatic version of that scene could.\n\nIf you watched The Adventures of Sherlock Holmes and want more, this is the direct continuation. The cases get stranger. The toll gets clearer.",
+      "contentTitle": "The Return of Sherlock Holmes (1988)",
+      "tubiLink": "https://tubitv.com/series/300013236",
+      "contentId": "300013236",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/029_title_5_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/029_title_5_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/029_title_5_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Drama",
+      "year": "1988",
+      "runtime": "1 Season",
+      "rating": "TV-PG"
+    },
+    {
+      "position": 6,
+      "title": "The Case-Book of Sherlock Holmes",
+      "description": "Arthur Conan Doyle spent years trying to kill Sherlock Holmes and failed every time the public demanded more. The Case-Book stories - the ones this 1991 series adapts - are the final batch, written late, some of them strange, a few of them genuinely unsettling in ways the earlier cases aren't.\n\nBrett is visibly older here, and the show doesn't hide it. There's a weight to his Holmes in these episodes that fits the material in a way the earlier Granada series couldn't have managed.\n\nFor anyone who's worked through the other Brett adaptations, this one closes the run. The cases are darker. Holmes is quieter about it.",
+      "contentTitle": "The Case-Book of Sherlock Holmes (1991)",
+      "tubiLink": "https://tubitv.com/series/300014013",
+      "contentId": "300014013",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/029_title_6_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/029_title_6_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/029_title_6_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Crime",
+      "year": "1991",
+      "runtime": "1 Season",
+      "rating": "TV-14"
+    },
+    {
+      "position": 7,
+      "title": "Lie to Me",
+      "description": "Tim Roth plays Dr. Cal Lightman, a deception expert who reads microexpressions - the involuntary flickers of emotion that cross a face in fractions of a second - and sells that skill to law enforcement, corporations, anyone who needs the truth fast.\n\nThe show is built around a genuinely maddening premise: every conversation is a performance, and Lightman watches the performance and the person underneath it at the same time. There's a scene early on where he interviews a suspect and spends the whole time watching their hands instead of their eyes, then explains exactly what he saw.\n\nThree seasons. The cases vary. Roth is consistently the most interesting thing in every room he walks into.",
+      "contentTitle": "Lie to Me (2011)",
+      "tubiLink": "https://tubitv.com/series/300010743",
+      "contentId": "300010743",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/029_title_7_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/029_title_7_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/029_title_7_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Drama",
+      "year": "2011",
+      "runtime": "3 Seasons",
+      "rating": "TV-14"
+    },
+    {
+      "position": 8,
+      "title": "Gracepoint",
+      "description": "A boy is found dead on the beach of a small coastal town. What follows is less about finding the killer than watching an entire community come apart under the pressure of being looked at.\n\nDavid Tennant plays the detective brought in to work the case - an outsider in a town that doesn't want outside eyes. Anna Gunn plays the local detective who has to work alongside him. The tension between them is almost as interesting as the investigation itself.\n\nGracepoint is a remake of the British series Broadchurch, same creator, and it earns its existence. The Pacific Northwest setting does something different with the grief and the isolation. Ten episodes. The ending is not what you expect.",
+      "contentTitle": "Gracepoint (2014)",
+      "tubiLink": "https://tubitv.com/series/300005174",
+      "contentId": "300005174",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/029_title_8_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/029_title_8_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/029_title_8_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Crime",
+      "year": "2014",
+      "runtime": "1 Season",
+      "rating": "TV-14"
+    },
+    {
+      "position": 9,
+      "title": "Jack the Ripper",
+      "description": "Michael Caine plays Inspector Frederick Abberline, the detective who actually led the Whitechapel investigation in 1888. The show isn't interested in the mythology. It's interested in the case - the evidence, the witnesses, the political pressure to close it, the way the investigation kept getting undermined from directions Abberline couldn't always see coming.\n\nCaine plays it without heroics. Abberline is competent and exhausted and working a case that the city's power structure doesn't entirely want solved.\n\nThe show proposes a specific suspect and makes its argument methodically. Whether you buy the conclusion or not, this two-part miniseries is built around something genuinely frustrating: watching a real investigation fail in real time.",
+      "contentTitle": "Jack the Ripper (1988)",
+      "tubiLink": "https://tubitv.com/series/300017242",
+      "contentId": "300017242",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/029_title_9_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/029_title_9_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/029_title_9_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Crime",
+      "year": "1988",
+      "runtime": "1 Season",
+      "rating": "TV-PG"
+    },
+    {
+      "position": 10,
+      "title": "Adventures of Sherlock Holmes",
+      "description": "Before Jeremy Brett made Holmes strange and precise, there was Ronald Howard's 1955 American television version - faster, looser, closer to a pulp detective show than a period drama.\n\nIt's a different Holmes. Less imperious, more accessible, working cases in a London that looks like it was built on a studio backlot because it absolutely was. The show ran 39 episodes and covered original stories alongside Doyle adaptations, so some of what you're watching is genuinely new material in the Holmes universe.\n\nIf you've spent time with the Granada series, this one is a useful contrast - same character, completely different energy. H. Marion Crawford plays Watson as a full partner, not comic relief, which was ahead of its time.",
+      "contentTitle": "Adventures of Sherlock Holmes (1955)",
+      "tubiLink": "https://tubitv.com/series/300005729",
+      "contentId": "300005729",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/029_title_10_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/029_title_10_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/029_title_10_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Mystery",
+      "year": "1955",
+      "runtime": "1 Season",
+      "rating": "TV-G"
+    }
+  ],
+  "keepReading": {
+    "header": {
+      "title": "Keep Reading",
+      "subtitle": "More articles to explore"
+    },
+    "items": [
+      {
+        "id": "032",
+        "slug": "true-crime-cases-on-tubi",
+        "eyebrow": "What to Watch",
+        "title": "Unravel These True Crime Cases on Tubi",
+        "subtitle": "The cases that get heavier the more you understand them.",
+        "categoryTag": "Shows",
+        "thumbnail": "/static/blog/the-t/thumbnails/032_thumbnail.jpg"
+      },
+      {
+        "id": "031",
+        "slug": "tubis-most-intense-thriller-series",
+        "eyebrow": "What to Watch",
+        "title": "Tubi's Most Intense Thriller Series",
+        "subtitle": "The Fall, Damages, The Killing, and seven more that will wreck your sleep schedule.",
+        "categoryTag": "Shows",
+        "thumbnail": "/static/blog/the-t/thumbnails/031_thumbnail.jpg"
+      },
+      {
+        "id": "005",
+        "slug": "best-true-crime-shows-and-documentaries-on-tubi",
+        "eyebrow": "What to Watch",
+        "title": "Best True Crime Shows & Documentaries on Tubi Right Now",
+        "subtitle": "Some cases seem simple. These only get more complicated.",
+        "categoryTag": "Shows",
+        "thumbnail": "/static/blog/the-t/thumbnails/005_thumbnail.jpg"
+      }
+    ]
+  },
+  "datePosted": "2026-05-26"
+}

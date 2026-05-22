@@ -1,0 +1,160 @@
+{
+  "nav": {
+    "logoLabel": "The T",
+    "links": [
+      {
+        "label": "Home",
+        "href": "/the-t"
+      },
+      {
+        "label": "Coming Soon",
+        "href": "/the-t/coming-soon"
+      },
+      {
+        "label": "Shows",
+        "href": "/the-t/shows"
+      },
+      {
+        "label": "Movies",
+        "href": "/the-t/movies"
+      }
+    ],
+    "explore": {
+      "label": "Explore",
+      "items": [
+        {
+          "label": "FIFA World Cup 2026",
+          "href": "/the-t/fifa-world-cup"
+        },
+        {
+          "label": "Horror",
+          "href": "/the-t/horror"
+        },
+        {
+          "label": "Tubi Originals",
+          "href": "/the-t/originals"
+        },
+        {
+          "label": "Sports",
+          "href": "/the-t/sports"
+        }
+      ],
+      "moreGenresLabel": "More genres",
+      "moreGenresHref": "/the-t/genres"
+    },
+    "mobileMenu": {
+      "open": "Open menu",
+      "close": "Close menu"
+    }
+  },
+  "id": "049",
+  "slug": "hijacked-on-tubi",
+  "categoryTag": "Originals",
+  "type": "article",
+  "title": "Hijacked on Tubi: Everything You Need to Know",
+  "subtitle": "One wrong ride and everything a father loves is suddenly on the line.",
+  "datePosted": "2026-05-26",
+  "intro": "The rideshare thriller has arrived at exactly the right moment. We all get in the car. We all hand over a little trust to a stranger with a star rating and a profile photo. Hijacked takes that everyday transaction and twists it into something you won't shake off easily.\n\nThis is a movie about a father who will not stop. Not when the odds are wrong, not when the situation keeps getting worse. That kind of singular, desperate love is the engine here, and it runs hot from the first scene.\n\nChris Stokes has built a career on films that move fast and hit hard, and Hijacked is exactly that kind of ride. Tight, mean, and personal. The influencer angle adds a layer that feels ripped straight from right now, the idea that someone's whole life is public until the moment it really, terrifyingly isn't.",
+  "cast": {
+    "header": {
+      "title": "The Cast"
+    },
+    "items": [
+      {
+        "name": "Tremayne Norris",
+        "bio": "Norris carries the weight of the whole film as the father at the center of the chase. He's not playing a superhero, he's playing a man running on fear and love, and that specific combination is what makes every decision he makes feel real and urgent."
+      },
+      {
+        "name": "Chrissy Stokes",
+        "bio": "As the influencer daughter caught in the middle of this nightmare, Stokes brings a believability that keeps the stakes grounded. She's not just a reason for the plot to happen, she's a full person trying to survive, and that distinction matters enormously for a film like this."
+      },
+      {
+        "name": "Ken Lawson",
+        "bio": "Lawson brings an unpredictable energy to his role that keeps you genuinely unsettled. The best thrillers need someone you can't read, and Lawson delivers that quality, you're never quite sure what the next move looks like, which is exactly where this film needs you."
+      },
+      {
+        "name": "Lateria Hope",
+        "bio": "Hope adds emotional texture to a film that could easily run on pure adrenaline. Her presence reminds you that everyone caught in this situation has their own reason to get out alive, and that reminder makes the tension land harder every single time."
+      }
+    ]
+  },
+  "quote": "You picked the wrong family.",
+  "faq": {
+    "header": {
+      "title": "More details"
+    },
+    "items": [
+      {
+        "question": "Who directed the film?",
+        "answer": "Chris Stokes"
+      },
+      {
+        "question": "Who is in the cast?",
+        "answer": "Tremayne Norris, Chrissy Stokes, Ken Lawson, Lateria Hope, Jessica Jarrell, Don Wallace"
+      },
+      {
+        "question": "Where can I stream this?",
+        "answer": "Watch free on Tubi"
+      }
+    ]
+  },
+  "images": {
+    "thumbnail": "/static/blog/the-t/thumbnails/049_thumbnail.jpg",
+    "hero": "/static/blog/the-t/heroes/049_hero.jpg",
+    "og": "/static/blog/the-t/og/049_og.jpg"
+  },
+  "keepReading": {
+    "header": {
+      "title": "Keep Reading",
+      "subtitle": "More articles to explore"
+    },
+    "items": [
+      {
+        "id": "033",
+        "slug": "tubis-best-action-movie-collection",
+        "eyebrow": "What to Watch",
+        "title": "Tubi's Best Action Movie Collection",
+        "subtitle": "Fast-moving stories with just enough weight behind the action.",
+        "categoryTag": "Movies",
+        "thumbnail": "/static/blog/the-t/thumbnails/033_thumbnail.jpg"
+      },
+      {
+        "id": "031",
+        "slug": "tubis-most-intense-thriller-series",
+        "eyebrow": "What to Watch",
+        "title": "Tubi's Most Intense Thriller Series",
+        "subtitle": "The Fall, Damages, The Killing, and seven more that will wreck your sleep schedule.",
+        "categoryTag": "Shows",
+        "thumbnail": "/static/blog/the-t/thumbnails/031_thumbnail.png"
+      },
+      {
+        "id": "048",
+        "slug": "battle-for-castle-itter-on-tubi",
+        "eyebrow": "What to Watch",
+        "title": "Battle for Castle Itter: The True Story Behind Tubi's New Action Film",
+        "subtitle": "American soldiers and German Wehrmacht troops fighting side by side — against the SS — and it's all based on real events.",
+        "categoryTag": "Originals",
+        "thumbnail": "/static/blog/the-t/thumbnails/048_thumbnail.jpg"
+      }
+    ]
+  },
+  "hero": {
+    "watchLink": "https://tubitv.com/movies/100052744/hijacked",
+    "contentId": "100052744",
+    "watchNowLabel": "Watch Now"
+  },
+  "whyWatch": {
+    "header": {
+      "title": "Why Watch It"
+    },
+    "body": "If you watch thrillers for the feeling of your pulse doing something it shouldn't, this one delivers. It's built for people who want their Friday night to have some teeth, a film that respects your appetite for suspense and doesn't let up once it finds its grip."
+  },
+  "gallery": {
+    "header": {
+      "title": "Media Shots"
+    },
+    "items": [
+      "/static/blog/the-t/media/049_media_1.jpg"
+    ]
+  }
+}

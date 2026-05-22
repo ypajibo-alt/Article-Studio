@@ -1,0 +1,289 @@
+{
+  "nav": {
+    "logoLabel": "The T",
+    "links": [
+      {
+        "label": "Home",
+        "href": "/the-t"
+      },
+      {
+        "label": "Coming Soon",
+        "href": "/the-t/coming-soon"
+      },
+      {
+        "label": "Shows",
+        "href": "/the-t/shows"
+      },
+      {
+        "label": "Movies",
+        "href": "/the-t/movies"
+      }
+    ],
+    "explore": {
+      "label": "Explore",
+      "items": [
+        {
+          "label": "FIFA World Cup 2026",
+          "href": "/the-t/fifa-world-cup"
+        },
+        {
+          "label": "Horror",
+          "href": "/the-t/horror"
+        },
+        {
+          "label": "Tubi Originals",
+          "href": "/the-t/originals"
+        },
+        {
+          "label": "Sports",
+          "href": "/the-t/sports"
+        }
+      ],
+      "moreGenresLabel": "More genres",
+      "moreGenresHref": "/the-t/genres"
+    },
+    "mobileMenu": {
+      "open": "Open menu",
+      "close": "Close menu"
+    }
+  },
+  "id": "077",
+  "slug": "girlfriends-good-times-and-the-black-sitcoms-on-tubi",
+  "categoryTag": "Shows",
+  "type": "listicle",
+  "title": "Girlfriends, Good Times, and the Black Sitcoms on Tubi",
+  "subtitle": "Decades of laughs, real rent, and friendships that don't let you off easy.",
+  "intro": "The best Black sitcoms on Tubi didn't just make you laugh. They made you feel like you knew the block.\n\nJ.J. Evans is trying to sell a painting while his family debates whether the lights are getting cut off. George Jefferson is telling his neighbor exactly what he thinks of him, loudly, from across a very expensive living room. Joan Clayton and her girls are navigating careers and love and each other with the kind of honesty that only happens between people who've known each other too long to be polite.\n\nDecades of it, all in one place. Here's where to start.",
+  "images": {
+    "thumbnail": "/static/blog/the-t/thumbnails/077_thumbnail.jpg",
+    "og": "/static/blog/the-t/og/077_og.jpg"
+  },
+  "items": [
+    {
+      "position": 1,
+      "title": "Good Times",
+      "description": "The Evans family lives in the Cabrini-Green projects on Chicago's South Side and the show never lets you forget what that means. James takes whatever job comes. Florida stretches every dollar. J.J. paints and cracks jokes and somehow keeps the whole apartment feeling alive.\n\nThe comedy is real. So is the rent being due.\n\nThere's an episode where a job falls through and you watch James Evans process it in real time - the way a man does when he can't let his kids see how scared he is. Esther Rolle, John Amos, Jimmie Walker: this cast had no business being this good. It holds up completely.",
+      "contentTitle": "Good Times (1974)",
+      "tubiLink": "https://tubitv.com/series/300012843",
+      "contentId": "300012843",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/077_title_1_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/077_title_1_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/077_title_1_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Comedy",
+      "year": "1974",
+      "runtime": "6 Seasons",
+      "rating": "TV-PG"
+    },
+    {
+      "position": 2,
+      "title": "The Jeffersons",
+      "description": "George Jefferson owns a chain of dry-cleaning businesses, lives in a Manhattan high-rise, and has opinions about everyone within a ten-foot radius. Sherman Hemsley plays him at full volume - not as a caricature, but as a specific kind of man who clawed his way up from Archie Bunker's neighborhood and is not going to pretend otherwise.\n\nThe interracial couple next door, the Willises, give the show a constant friction point the writing actually uses.\n\nIsabel Sanford as Louise is the reason any of it works. She matches George beat for beat and makes it look effortless. The 'movin' on up' premise could've been a one-note joke. Instead it ran for eleven seasons.",
+      "contentTitle": "The Jeffersons (1985)",
+      "tubiLink": "https://tubitv.com/series/300008457",
+      "contentId": "300008457",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/077_title_2_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/077_title_2_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/077_title_2_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Comedy",
+      "year": "1985",
+      "runtime": "2 Seasons",
+      "rating": "TV-PG"
+    },
+    {
+      "position": 3,
+      "title": "Girlfriends",
+      "description": "Joan is a lawyer who overplans everything. Maya is raising a kid and writing a book and has zero patience for Joan's overthinking. Lynn has three degrees and no career direction. Toni wants the best of everything and is completely honest about it.\n\nThe show runs eight seasons on the friction between these four, and it earns every single one.\n\nNone of them are wrong, exactly - they're just specific people with specific blind spots who love each other anyway. There are fights that go unresolved across multiple episodes, which was rare for network sitcoms at the time. The writing trusted the audience to sit with that, and the audience showed up.",
+      "contentTitle": "Girlfriends (2008)",
+      "tubiLink": "https://tubitv.com/series/300015867",
+      "contentId": "300015867",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/077_title_3_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/077_title_3_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/077_title_3_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Comedy",
+      "year": "2008",
+      "runtime": "8 Seasons",
+      "rating": "TV-PG"
+    },
+    {
+      "position": 4,
+      "title": "The Bernie Mac Show",
+      "description": "Bernie Mac's sister goes to rehab and he ends up with her three kids in his house. Jordan, Vanessa, and little Bryanna. This was not the plan.\n\nThe whole structure is Bernie stepping out of the scene to address the camera directly - explaining to 'America' exactly what is happening and why he is right about it. His stand-up instincts are baked into the format, so every aside lands like a punchline that's also a confession.\n\nKellita Smith as his wife Wanda is sharp and grounded and keeps the show from floating off into pure performance. The kids are genuinely funny. Not sitcom-funny. Actually funny.",
+      "contentTitle": "The Bernie Mac Show (2006)",
+      "tubiLink": "https://tubitv.com/series/300008079",
+      "contentId": "300008079",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/077_title_4_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/077_title_4_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/077_title_4_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Comedy",
+      "year": "2006",
+      "runtime": "5 Seasons",
+      "rating": "TV-PG"
+    },
+    {
+      "position": 5,
+      "title": "The Hughleys",
+      "description": "Darryl Hughley has money now and moved his family to a predominantly white neighborhood in California. The show is very specific about what that means. The neighbors are friendly in the way people are friendly when they've never had to think about race before.\n\nD.L. Hughley plays Darryl as a man who knows exactly what's happening in every room he walks into. He's not naive about the dynamic. He's just decided to live there anyway.\n\nThe tension between staying true to where you came from and building something new for your kids is the engine underneath all the jokes. It ran four seasons and never quite got the credit it deserved.",
+      "contentTitle": "The Hughleys (2002)",
+      "tubiLink": "https://tubitv.com/series/300015493",
+      "contentId": "300015493",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/077_title_5_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/077_title_5_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/077_title_5_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Comedy",
+      "year": "2002",
+      "runtime": "4 Seasons",
+      "rating": "TV-PG"
+    },
+    {
+      "position": 6,
+      "title": "Everybody Hates Chris",
+      "description": "Adult Chris Rock narrates his own teenage years in Bed-Stuy, which means every episode has two timelines running at once - what's happening to thirteen-year-old Chris, and what the man looking back at it actually thinks. The gap between those two is where most of the comedy lives.\n\nTerry Crews as Julius, the father who knows the exact price of everything in the house, is one of the great sitcom dad performances of the 2000s. Tichina Arnold as Rochelle is the other.\n\nThe show is set in the '80s but it's not nostalgic. It's specific about what being broke in Brooklyn actually looked like, and it doesn't soften any of it.",
+      "contentTitle": "Everybody Hates Chris (2009)",
+      "tubiLink": "https://tubitv.com/series/300015509",
+      "contentId": "300015509",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/077_title_6_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/077_title_6_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/077_title_6_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Comedy",
+      "year": "2009",
+      "runtime": "4 Seasons",
+      "rating": "TV-PG"
+    },
+    {
+      "position": 7,
+      "title": 227,
+      "description": "The building at 227 is a D.C. apartment house and the stoop out front is where most of the show actually happens. Mary Jenkins is sharp-tongued, opinionated, and usually right - which her neighbors find both useful and exhausting.\n\nRegina King is in the early seasons as Mary's daughter Brenda, and you can already see exactly who she's going to become.\n\nThe show is built around women: their friendships, their conflicts, the specific way women who share a building know each other's business whether they want to or not. It's quieter than a lot of sitcoms from this era, more rooted in the rhythms of a neighborhood than in big comic set pieces.",
+      "contentTitle": "227 (1990)",
+      "tubiLink": "https://tubitv.com/series/300008051",
+      "contentId": "300008051",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/077_title_7_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/077_title_7_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/077_title_7_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Comedy",
+      "year": "1990",
+      "runtime": "5 Seasons",
+      "rating": "TV-PG"
+    },
+    {
+      "position": 8,
+      "title": "What's Happening!!",
+      "description": "Raj wants to be a writer and is constantly getting derailed by whatever Rerun has decided to do this week. Fred Berry as Rerun is one of those sitcom characters who became genuinely iconic - the dancing, the beret, the way he commits completely to every bad idea.\n\nThe show captures something specific about being a teenager with nowhere particular to be. Just the diner, the block, and whatever trouble you can find.\n\nMabel King as Raj's mother is the straight-line anchor the whole thing pivots around. And Dee - eleven years old, already more competent than everyone else in the apartment - steals scenes without even trying.",
+      "contentTitle": "What's Happening!! (1979)",
+      "tubiLink": "https://tubitv.com/series/300008052",
+      "contentId": "300008052",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/077_title_8_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/077_title_8_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/077_title_8_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Comedy",
+      "year": "1979",
+      "runtime": "3 Seasons",
+      "rating": "TV-PG"
+    },
+    {
+      "position": 9,
+      "title": "What's Happening Now!!",
+      "description": "Ten years after the original ended, Raj is married to Nadine and running a diner, and Rerun is back. The show is genuinely trying to figure out what these characters are now that they're adults - which is a harder premise than it sounds. Sequel series that pick up a decade later usually feel like they're just wearing the original like a costume.\n\nThis one has enough self-awareness about the gap to make it work.\n\nShirley Hemphill returns as Shirley the waitress and is immediately the best thing in every scene she's in. It's not as sharp as the original, but it earns its own run.",
+      "contentTitle": "What's Happening Now!! (1988)",
+      "tubiLink": "https://tubitv.com/series/300008427",
+      "contentId": "300008427",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/077_title_9_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/077_title_9_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/077_title_9_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Comedy",
+      "year": "1988",
+      "runtime": "3 Seasons",
+      "rating": "TV-PG"
+    },
+    {
+      "position": 10,
+      "title": "Grady",
+      "description": "Whitman Mayo's Grady Wilson was a fixture on Sanford and Son - the slow-talking, good-natured friend who wandered in and out of Fred's junkyard. Give him his own show, move him to a racially mixed middle-class neighborhood in L.A., and suddenly you have something more interesting than a spinoff.\n\nGrady is older, set in his ways, and genuinely confused by some of what he finds in his new neighborhood - but not in a mean-spirited way. He's curious. The show is curious too, about what integration actually looks like on a street level, not as a political statement but as a daily lived experience.\n\nIt only ran one season, which is a shame.",
+      "contentTitle": "Grady (1975)",
+      "tubiLink": "https://tubitv.com/series/300008575",
+      "contentId": "300008575",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/077_title_10_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/077_title_10_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/077_title_10_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Comedy",
+      "year": "1975",
+      "runtime": "1 Season",
+      "rating": "TV-PG"
+    }
+  ],
+  "keepReading": {
+    "header": {
+      "title": "Keep Reading",
+      "subtitle": "More articles to explore"
+    },
+    "items": [
+      {
+        "id": "079",
+        "slug": "the-black-films-and-shows-on-tubi-worth-watching-this-month",
+        "eyebrow": "What to Watch",
+        "title": "The Black Films and Shows on Tubi Worth Watching This Month",
+        "subtitle": "A monthly lineup that moves across genres instead of staying in one lane.",
+        "categoryTag": "Shows",
+        "thumbnail": "/static/blog/the-t/thumbnails/079_thumbnail.jpg"
+      },
+      {
+        "id": "078",
+        "slug": "saved-by-the-bell-and-the-classic-shows-on-tubi",
+        "eyebrow": "What to Watch",
+        "title": "Saved by the Bell and the Classic Shows on Tubi",
+        "subtitle": "Comfort watches that still hold up when you go back to them.",
+        "categoryTag": "Shows",
+        "thumbnail": "/static/blog/the-t/thumbnails/078_thumbnail.jpg"
+      },
+      {
+        "id": "027",
+        "slug": "the-funniest-comedy-shows-streaming-now",
+        "eyebrow": "What to Watch",
+        "title": "The Funniest Comedy Shows Streaming Now",
+        "subtitle": "The ones that actually hold up past the first episode.",
+        "categoryTag": "Shows",
+        "thumbnail": "/static/blog/the-t/thumbnails/027_thumbnail.jpg"
+      }
+    ]
+  },
+  "datePosted": "2026-05-26"
+}

@@ -1,0 +1,289 @@
+{
+  "nav": {
+    "logoLabel": "The T",
+    "links": [
+      {
+        "label": "Home",
+        "href": "/the-t"
+      },
+      {
+        "label": "Coming Soon",
+        "href": "/the-t/coming-soon"
+      },
+      {
+        "label": "Shows",
+        "href": "/the-t/shows"
+      },
+      {
+        "label": "Movies",
+        "href": "/the-t/movies"
+      }
+    ],
+    "explore": {
+      "label": "Explore",
+      "items": [
+        {
+          "label": "FIFA World Cup 2026",
+          "href": "/the-t/fifa-world-cup"
+        },
+        {
+          "label": "Horror",
+          "href": "/the-t/horror"
+        },
+        {
+          "label": "Tubi Originals",
+          "href": "/the-t/originals"
+        },
+        {
+          "label": "Sports",
+          "href": "/the-t/sports"
+        }
+      ],
+      "moreGenresLabel": "More genres",
+      "moreGenresHref": "/the-t/genres"
+    },
+    "mobileMenu": {
+      "open": "Open menu",
+      "close": "Close menu"
+    }
+  },
+  "id": "034",
+  "slug": "how-to-watch-great-movies-for-free",
+  "categoryTag": "Movies",
+  "type": "listicle",
+  "title": "How to Watch Great Movies for Free",
+  "subtitle": "A simple way to find something worth your time without overthinking it.",
+  "intro": "Watching great movies for free used to mean waiting for the right Sunday afternoon and hoping cable came through. Not anymore.\n\nRain Man is on here. So is The Usual Suspects, the one where the last ten minutes rearrange everything you just watched. So is Apocalypto, which Mel Gibson shot in a nearly extinct language and somehow made one of the most propulsive chase films of the 2000s.\n\nTubi is free. These movies are on it. Here's where to start.",
+  "images": {
+    "thumbnail": "/static/blog/the-t/thumbnails/034_thumbnail.jpg",
+    "og": "/static/blog/the-t/og/034_og.jpg"
+  },
+  "items": [
+    {
+      "position": 1,
+      "title": "The Usual Suspects",
+      "description": "The lone survivor of a massacre sits across from a federal agent and explains how it all went wrong. He's nervous, cooperative, and extremely helpful. That's your first warning sign.\n\nKevin Spacey plays Verbal Kint like a man who's already won. The cast around him - Benicio del Toro, Gabriel Byrne, Kevin Pollak - is so good you almost forget the whole thing is a magic trick. Almost.\n\nThe final two minutes of this film have ended friendships. People who figured it out early act insufferable about it for years. Don't let them ruin it. Just watch it.",
+      "contentTitle": "The Usual Suspects (1995)",
+      "tubiLink": "https://tubitv.com/movies/303190",
+      "contentId": "303190",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/034_title_1_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/034_title_1_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/034_title_1_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Crime",
+      "year": "1995",
+      "runtime": "1h 46m",
+      "rating": "R"
+    },
+    {
+      "position": 2,
+      "title": "Rain Man",
+      "description": "Charlie Babbitt is not a good person when this film starts. He's using his estranged autistic brother as a bargaining chip to get his share of their father's estate. That's the setup.\n\nWhat happens on the drive from Cincinnati to Los Angeles is the whole movie. Dustin Hoffman's Raymond doesn't arc - he doesn't need to. Tom Cruise does all the changing, slowly, without announcing it.\n\nThere's a scene where Raymond recites every airline crash he's ever memorized, and Charlie has to figure out how to get them both home anyway. Two guys, a problem, no clean solution. That's the whole film right there.",
+      "contentTitle": "Rain Man (1988)",
+      "tubiLink": "https://tubitv.com/movies/300462",
+      "contentId": "300462",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/034_title_2_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/034_title_2_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/034_title_2_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Drama",
+      "year": "1988",
+      "runtime": "2h 14m",
+      "rating": "R"
+    },
+    {
+      "position": 3,
+      "title": "Apocalypto",
+      "description": "Shot entirely in Yucatec Maya, a language spoken by fewer than 800,000 people, this film has no business being as gripping as it is. And yet.\n\nA man from a peaceful jungle village watches his home destroyed and his people taken for sacrifice. Then he runs. The last hour is essentially one extended chase sequence through the Mesoamerican jungle, and it does not let up.\n\nMel Gibson made this in 2006 and it still moves faster than most action films with ten times the budget. The subtitles stop registering after about fifteen minutes. Your body just takes over.",
+      "contentTitle": "Apocalypto (2006)",
+      "tubiLink": "https://tubitv.com/movies/543161",
+      "contentId": "543161",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/034_title_3_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/034_title_3_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/034_title_3_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Adventure",
+      "year": "2006",
+      "runtime": "2h 18m",
+      "rating": "R"
+    },
+    {
+      "position": 4,
+      "title": "Get Shorty",
+      "description": "Chili Palmer is a Miami loan shark who flies to LA to collect a debt and ends up producing a movie. The joke is that he's better at it than everyone who's been doing it their whole career.\n\nJohn Travolta plays him as the calmest person in any room because he's already done the math. Gene Hackman, Rene Russo, and Dennis Farina are all operating at the same frequency. Everyone in this film is running a con on everyone else.\n\nElmore Leonard wrote the novel. Barry Sonnenfeld directed it. The dialogue lands like it was written to be quoted - because it was.",
+      "contentTitle": "Get Shorty (1995)",
+      "tubiLink": "https://tubitv.com/movies/312179",
+      "contentId": "312179",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/034_title_4_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/034_title_4_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/034_title_4_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Comedy",
+      "year": "1995",
+      "runtime": "1h 45m",
+      "rating": "R"
+    },
+    {
+      "position": 5,
+      "title": "The Intouchables",
+      "description": "Philippe is a wealthy French aristocrat paralyzed from the neck down. He interviews dozens of qualified candidates for a live-in caretaker. He hires Driss, who showed up only to get a signature proving he applied for a job so he could keep collecting unemployment.\n\nWhy it works becomes obvious by the second scene. Driss doesn't pity him. He argues with him, teases him, and treats him like a person who happens to need help - not a condition that needs managing.\n\nThis was the highest-grossing French film of all time when it came out. That's not a fluke.",
+      "contentTitle": "The Intouchables (2012)",
+      "tubiLink": "https://tubitv.com/movies/507628",
+      "contentId": "507628",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/034_title_5_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/034_title_5_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/034_title_5_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Drama",
+      "year": "2012",
+      "runtime": "1h 53m",
+      "rating": "R"
+    },
+    {
+      "position": 6,
+      "title": "Presumed Innocent",
+      "description": "Rusty Sabich is a senior prosecutor assigned to investigate the murder of a colleague. The problem: he was sleeping with her. The bigger problem: his boss, who assigned him the case, might already know.\n\nHarrison Ford plays it with the specific panic of a man who cannot tell the truth and cannot afford to lie badly. Every scene is Rusty calculating what the person across from him knows. It looks like a procedural. It runs like a pressure cooker.\n\nThe ending divided audiences in 1990. It still does. That's not a flaw.",
+      "contentTitle": "Presumed Innocent (1990)",
+      "tubiLink": "https://tubitv.com/movies/100042294",
+      "contentId": "100042294",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/034_title_6_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/034_title_6_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/034_title_6_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Thriller",
+      "year": "1990",
+      "runtime": "2h 7m",
+      "rating": "R"
+    },
+    {
+      "position": 7,
+      "title": "12 Angry Men",
+      "description": "Eleven jurors are ready to convict. One isn't. That's the entire film.\n\nThis 1997 remake puts Jack Lemmon in the Henry Fonda role - the holdout who isn't sure the kid did it and won't sign off until someone gives him a real reason. What follows is a masterclass in how bias, impatience, and ego corrupt a process that's supposed to be airtight.\n\nThe original is iconic. This version holds up because the cast - Lemmon, George C. Scott, Hume Cronyn, Tony Danza - commits completely. There's a moment where the foreman finally loses his composure and the room goes quiet in a way that costs something. That scene is the whole argument.",
+      "contentTitle": "12 Angry Men (1997)",
+      "tubiLink": "https://tubitv.com/movies/667137",
+      "contentId": "667137",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/034_title_7_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/034_title_7_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/034_title_7_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Crime",
+      "year": "1997",
+      "runtime": "1h 57m",
+      "rating": "PG-13"
+    },
+    {
+      "position": 8,
+      "title": "No Way Out",
+      "description": "A Pentagon official murders his mistress in a panic. He assigns a naval officer to lead the cover-up investigation. That officer is the one person who could blow the whole thing open - and also the one person who can't.\n\nKevin Costner plays Tom Farrell like a man watching the walls close in from both sides. Every move he makes to protect himself tightens the net around him.\n\nThe third act has a twist that was genuinely surprising in 1987 and still lands on a rewatch. The film earns it. You'll see why.",
+      "contentTitle": "No Way Out (1987)",
+      "tubiLink": "https://tubitv.com/movies/300458",
+      "contentId": "300458",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/034_title_8_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/034_title_8_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/034_title_8_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Thriller",
+      "year": "1987",
+      "runtime": "1h 54m",
+      "rating": "R"
+    },
+    {
+      "position": 9,
+      "title": "Eight Men Out",
+      "description": "Eight Chicago White Sox players conspired with gamblers to lose the 1919 World Series. That's the history. What John Sayles does with it is refuse to let the story be simple.\n\nThese players weren't corrupt so much as underpaid, resentful, and offered more money in one handshake than their owner had paid them all season. The film holds both things at once: they did it, and the conditions that made it possible were already there.\n\nJohn Cusack, David Strathairn, Charlie Sheen, and D.B. Sweeney play it without winking at history. Strathairn's Shoeless Joe Jackson - who could barely read and may not have fully understood what he'd agreed to - is the one that stays with you.",
+      "contentTitle": "Eight Men Out (1988)",
+      "tubiLink": "https://tubitv.com/movies/300449",
+      "contentId": "300449",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/034_title_9_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/034_title_9_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/034_title_9_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Drama",
+      "year": "1988",
+      "runtime": "2h",
+      "rating": "PG"
+    },
+    {
+      "position": 10,
+      "title": "Kill the Irishman",
+      "description": "Danny Greene was an Irish-American longshoreman who worked his way into the Cleveland mob in the 1970s and then spent several years being impossible to kill. Multiple car bombings. He walked away from all of them. The Cleveland Mafia eventually had to bring in outside help.\n\nRay Stevenson plays Greene as a man who genuinely believes he's protected - by his Irish heritage, by some vague spiritual force, by sheer stubbornness. The film doesn't fully disagree with him until it has to.\n\nVincent D'Onofrio, Val Kilmer, and Christopher Walken round out a cast that gets exactly what kind of movie this is: a true story that plays like it couldn't be.",
+      "contentTitle": "Kill the Irishman (2011)",
+      "tubiLink": "https://tubitv.com/movies/400845",
+      "contentId": "400845",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/034_title_10_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/034_title_10_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/034_title_10_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Crime",
+      "year": "2011",
+      "runtime": "1h 46m",
+      "rating": "R"
+    }
+  ],
+  "keepReading": {
+    "header": {
+      "title": "Keep Reading",
+      "subtitle": "More articles to explore"
+    },
+    "items": [
+      {
+        "id": "006",
+        "slug": "best-free-movies-to-watch-this-weekend",
+        "eyebrow": "What to Watch",
+        "title": "Best Free Movies to Watch This Weekend",
+        "subtitle": "If you want a good pick without digging, start here.",
+        "categoryTag": "Movies",
+        "thumbnail": "/static/blog/the-t/thumbnails/006_thumbnail.jpg"
+      },
+      {
+        "id": "012",
+        "slug": "from-cult-classics-to-hidden-gems-the-best-of-tubi",
+        "eyebrow": "What to Watch",
+        "title": "From Cult Classics to Hidden Gems: The Best of Tubi",
+        "subtitle": "The ones people keep finding, recommending, and coming back to.",
+        "categoryTag": "Movies",
+        "thumbnail": "/static/blog/the-t/thumbnails/012_thumbnail.jpg"
+      },
+      {
+        "id": "033",
+        "slug": "tubis-best-action-movie-collection",
+        "eyebrow": "What to Watch",
+        "title": "Tubi's Best Action Movie Collection",
+        "subtitle": "Fast-moving stories with just enough weight behind the action.",
+        "categoryTag": "Movies",
+        "thumbnail": "/static/blog/the-t/thumbnails/033_thumbnail.jpg"
+      }
+    ]
+  },
+  "datePosted": "2026-05-26"
+}

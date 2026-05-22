@@ -1,0 +1,289 @@
+{
+  "nav": {
+    "logoLabel": "The T",
+    "links": [
+      {
+        "label": "Home",
+        "href": "/the-t"
+      },
+      {
+        "label": "Coming Soon",
+        "href": "/the-t/coming-soon"
+      },
+      {
+        "label": "Shows",
+        "href": "/the-t/shows"
+      },
+      {
+        "label": "Movies",
+        "href": "/the-t/movies"
+      }
+    ],
+    "explore": {
+      "label": "Explore",
+      "items": [
+        {
+          "label": "FIFA World Cup 2026",
+          "href": "/the-t/fifa-world-cup"
+        },
+        {
+          "label": "Horror",
+          "href": "/the-t/horror"
+        },
+        {
+          "label": "Tubi Originals",
+          "href": "/the-t/originals"
+        },
+        {
+          "label": "Sports",
+          "href": "/the-t/sports"
+        }
+      ],
+      "moreGenresLabel": "More genres",
+      "moreGenresHref": "/the-t/genres"
+    },
+    "mobileMenu": {
+      "open": "Open menu",
+      "close": "Close menu"
+    }
+  },
+  "id": "001",
+  "slug": "best-anime-on-tubi",
+  "categoryTag": "Shows",
+  "type": "listicle",
+  "title": "Best Anime on Tubi Right Now",
+  "subtitle": "If you want something that grabs you fast and doesn't let go, start here.",
+  "intro": "No paywall between you and a 100-episode backlog. Just anime, ready to go.\n\nLight Yagami finds a notebook that can kill anyone and immediately starts playing god, and the cat-and-mouse that follows is still one of the tightest psychological thrillers the genre has ever produced. Gon Freecss just wants to find his dad, but first he has to survive an exam that most adults don't. And somewhere in there, a girl with deer antlers is about to make someone's school life extremely complicated.\n\nHere's where to start.",
+  "images": {
+    "thumbnail": "/static/blog/the-t/thumbnails/001_thumbnail.jpg",
+    "og": "/static/blog/the-t/og/001_og.jpg"
+  },
+  "items": [
+    {
+      "position": 1,
+      "title": "Death Note (Subtitled)",
+      "description": "Light Yagami isn't a monster when the story starts. He's brilliant, restless, and convinced the world needs fixing. Then the Death Note falls into his hands and suddenly he can kill anyone whose name he writes in it.\n\nThe real pull isn't the body count. It's the chess match. L, the detective hunting him, is Light's intellectual equal, and every episode is the two of them trying to outthink each other without ever being in the same room. There's an early sequence where Light constructs an alibi so layered it should be impossible, and you catch yourself genuinely impressed before you remember what he's actually doing.\n\nThe show notices that. It does not let you off the hook for it.",
+      "contentTitle": "Death Note (Subtitled) (2007)",
+      "tubiLink": "https://tubitv.com/series/1630",
+      "contentId": "1630",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/001_title_1_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/001_title_1_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/001_title_1_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Anime",
+      "year": "2007",
+      "runtime": "1 Season",
+      "rating": "TV-14"
+    },
+    {
+      "position": 2,
+      "title": "Hunter × Hunter (Subbed)",
+      "description": "Gon wants to find his father, who abandoned him to become a Hunter - one of the world's elite, licensed to do basically anything. The exam to become one kills people. That's not a metaphor.\n\nThe first arc feels like a classic shonen adventure: scrappy kid, new friends, impossible obstacles. Then the Yorknew City arc arrives and the tone shifts. Then the Chimera Ant arc arrives and the show becomes something else entirely - a war story with real casualties and a villain whose arc is one of the most unsettling things the genre has produced.\n\nGon's cheerfulness isn't naivety. It's exactly what makes the darkness hit harder when it finally comes.",
+      "contentTitle": "Hunter × Hunter (Subbed) (2014)",
+      "tubiLink": "https://tubitv.com/series/1627",
+      "contentId": "1627",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/001_title_2_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/001_title_2_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/001_title_2_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Anime",
+      "year": "2014",
+      "runtime": "3 Seasons",
+      "rating": "TV-14"
+    },
+    {
+      "position": 3,
+      "title": "JoJo's Bizarre Adventure",
+      "description": "Every season follows a different member of the Joestar family across different eras of history, which means the show essentially reinvents itself every time. Part 1 is Victorian England. Part 3 is a road trip across Egypt. The powers change, the protagonist changes, the whole vibe changes.\n\nWhat stays constant: the commitment to being completely, unapologetically maximalist. The poses are iconic. The villains are theatrical. Characters name-drop rock bands and fashion houses mid-battle, and it works because the show has earned that level of absurdity through sheer conviction.\n\nDio Brando, the recurring antagonist across multiple arcs, is one of the most genuinely menacing presences in anime. He is also, somehow, the funniest person in the room.",
+      "contentTitle": "JoJo's Bizarre Adventure (2019)",
+      "tubiLink": "https://tubitv.com/series/1823",
+      "contentId": "1823",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/001_title_3_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/001_title_3_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/001_title_3_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Anime",
+      "year": "2019",
+      "runtime": "4 Seasons",
+      "rating": "TV-MA"
+    },
+    {
+      "position": 4,
+      "title": "Naruto (Subtitled)",
+      "description": "Naruto Uzumaki has the Nine-Tailed Fox - a demon that destroyed the village - sealed inside him as a baby. The village never forgot. He grew up invisible, the kid everyone avoided, loud and reckless because it was the only way to get anyone to look at him.\n\nThat's the engine of the whole series. Not the jutsu, not the tournaments, not the bloodlines. A kid who decided that if the world wouldn't acknowledge him, he'd become someone it couldn't ignore.\n\nThe early episodes with Iruka, Naruto's teacher, are worth watching closely. There's a scene where Iruka has to choose between his own grief and doing right by Naruto, and the show handles it with more emotional weight than most live-action dramas manage.",
+      "contentTitle": "Naruto (Subtitled) (2006)",
+      "tubiLink": "https://tubitv.com/series/1622",
+      "contentId": "1622",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/001_title_4_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/001_title_4_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/001_title_4_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Anime",
+      "year": "2006",
+      "runtime": "4 Seasons",
+      "rating": "TV-14"
+    },
+    {
+      "position": 5,
+      "title": "Inuyasha (Subbed)",
+      "description": "Kagome falls into an ancient well in her family's shrine and lands in feudal Japan, 500 years before she was born. She finds Inuyasha, a half-demon pinned to a tree, and accidentally shatters a sacred jewel that every demon in the country now wants.\n\nThe quest to reassemble the jewel is technically the plot. The actual draw is the relationship between Kagome and Inuyasha - prickly and funny and occasionally devastating. Inuyasha is rude to her constantly. She is not impressed. There's a running gag where she can magically force him face-first into the ground that never stops being satisfying.\n\nFor a show from 2004, Kagome holds up. She doesn't wait to be rescued. She's usually the one doing the rescuing.",
+      "contentTitle": "Inuyasha (Subbed) (2004)",
+      "tubiLink": "https://tubitv.com/series/300013877",
+      "contentId": "300013877",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/001_title_5_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/001_title_5_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/001_title_5_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Anime",
+      "year": "2004",
+      "runtime": "7 Seasons",
+      "rating": "TV-14"
+    },
+    {
+      "position": 6,
+      "title": "Tougen Anki",
+      "description": "Shiki's father is murdered, and the fallout is that Shiki discovers he's descended from Oni - Japanese demons - and gets pulled into a hidden war between demons and the humans trained to fight them.\n\nThis one is airing in 2025, making it one of the freshest titles on the platform right now. The academy structure is familiar shonen territory, but the Oni mythology gives it something specific to stand on. These demons have history, hierarchy, and politics, and Shiki's mixed heritage puts him directly in the middle of all of it.\n\nShiki is not a chosen hero who was secretly good all along. He's genuinely volatile. That tension is more interesting than the usual reluctant-protagonist setup, and the show knows it.",
+      "contentTitle": "Tougen Anki (2025)",
+      "tubiLink": "https://tubitv.com/series/300019230",
+      "contentId": "300019230",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/001_title_6_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/001_title_6_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/001_title_6_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Anime",
+      "year": "2025",
+      "runtime": "1 Season",
+      "rating": "TV-MA"
+    },
+    {
+      "position": 7,
+      "title": "There's No Freaking Way I'll Be Your Lover! Unless...",
+      "description": "The plan was simple: become an extrovert. Make friends. Stop being the girl who eats lunch alone. What wasn't in the plan was the most popular girl in school deciding she wanted to be more than friends.\n\nThis 2025 girls' love series works because the lead's internal conflict isn't just about the romance - it's about who she's trying to become and whether that version of herself would even want what's being offered. Arishima, the popular girl, is warm and direct in a way that's genuinely disarming. Watching the protagonist try to categorize their relationship as anything other than what it obviously is gets funnier and more painful as the episodes go on.\n\nThe title is doing a lot of work. The show earns every word of it.",
+      "contentTitle": "There's No Freaking Way I'll Be Your Lover! Unless... (2025)",
+      "tubiLink": "https://tubitv.com/series/300018791",
+      "contentId": "300018791",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/001_title_7_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/001_title_7_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/001_title_7_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Anime",
+      "year": "2025",
+      "runtime": "1 Season",
+      "rating": "TV-14"
+    },
+    {
+      "position": 8,
+      "title": "My Deer Friend Nokotan (Dubbed)",
+      "description": "Torako is a reformed delinquent trying to maintain her good-girl reputation. Nokotan is a classmate with literal deer antlers who eats acorns off the ground and is completely unbothered by any of this. They are now best friends, whether Torako wants that or not.\n\nNobody questions the antlers. Nobody asks follow-up questions. The humor lives entirely in the gap between Nokotan's cheerful deer-brained energy and Torako's increasingly desperate attempts to keep her image intact while her new friend headbutts things.\n\nThere's a scene where Nokotan gets startled and bolts across a courtyard on all fours and Torako has to explain it to a teacher. The explanation does not help. This one is available dubbed, which is absolutely the correct way to watch it.",
+      "contentTitle": "My Deer Friend Nokotan (Dubbed) (2024)",
+      "tubiLink": "https://tubitv.com/series/300013215",
+      "contentId": "300013215",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/001_title_8_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/001_title_8_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/001_title_8_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Anime",
+      "year": "2024",
+      "runtime": "1 Season",
+      "rating": "TV-14"
+    },
+    {
+      "position": 9,
+      "title": "Vampire Knight",
+      "description": "Cross Academy runs two sessions. The Day Class is normal students. The Night Class is beautiful, mysterious, and - Yuki Cross knows - entirely vampires. She and Zero have been keeping that secret for years as the school's Guardians.\n\nVampire Knight is peak 2008 supernatural romance: dramatic lighting, complicated loyalties, at least one character brooding in a doorway per episode. The love triangle between Yuki, Zero, and Night Class president Kaname is genuinely tense because all three of them are keeping secrets from each other, and the audience is always slightly ahead of Yuki in figuring out why.\n\nZero is the more interesting character - a vampire hunter who is slowly becoming what he hunts. The show doesn't let him resolve that cleanly, and it's better for it.",
+      "contentTitle": "Vampire Knight (2008)",
+      "tubiLink": "https://tubitv.com/series/2906",
+      "contentId": "2906",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/001_title_9_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/001_title_9_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/001_title_9_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Anime",
+      "year": "2008",
+      "runtime": "2 Seasons",
+      "rating": "TV-14"
+    },
+    {
+      "position": 10,
+      "title": "Yu-Gi-Oh!",
+      "description": "Yes, the card game is the main event. But underneath it: Yugi solved an ancient puzzle and an amnesiac pharaoh from 3,000 years ago now shares his body, occasionally taking over to dispense supernatural justice on people who cheat or worse.\n\nThe early episodes lean into that darker setup more than most people remember - the Shadow Games in the first arc have actual stakes that have nothing to do with card battles. Then the show finds its groove as a tournament anime and commits fully to Duel Monsters, which is when it became a cultural phenomenon.\n\nKaiba is the reason adults rewatch this. He's contemptuous of everyone, refuses to learn any lesson, and is somehow always the most watchable person in any scene he's in.",
+      "contentTitle": "Yu-Gi-Oh! (2006)",
+      "tubiLink": "https://tubitv.com/series/2067",
+      "contentId": "2067",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/001_title_10_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/001_title_10_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/001_title_10_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Anime",
+      "year": "2006",
+      "runtime": "5 Seasons",
+      "rating": "TV-Y7"
+    }
+  ],
+  "keepReading": {
+    "header": {
+      "title": "Keep Reading",
+      "subtitle": "More articles to explore"
+    },
+    "items": [
+      {
+        "id": "011",
+        "slug": "epic-mecha-battles-the-best-giant-robot-anime-on-tubi",
+        "eyebrow": "What to Watch",
+        "title": "Epic Mecha Battles: The Best Giant Robot Anime on Tubi",
+        "subtitle": "Big fights, high stakes, and just enough story to make it land.",
+        "categoryTag": "Shows",
+        "thumbnail": "/static/blog/the-t/thumbnails/011_thumbnail.jpg"
+      },
+      {
+        "id": "069",
+        "slug": "the-best-anime-on-tubi-to-watch-completely-free",
+        "eyebrow": "What to Watch",
+        "title": "The Best Anime on Tubi to Watch Completely Free",
+        "subtitle": "Whether you're brand new or already deep in the rabbit hole.",
+        "categoryTag": "Shows",
+        "thumbnail": "/static/blog/the-t/thumbnails/069_thumbnail.jpg"
+      },
+      {
+        "id": "074",
+        "slug": "the-classic-cartoons-every-90s-kid-needs-to-revisit",
+        "eyebrow": "What to Watch",
+        "title": "The Classic Cartoons Every 90s Kid Needs to Revisit",
+        "subtitle": "The ones that were doing more than you realized.",
+        "categoryTag": "Shows",
+        "thumbnail": "/static/blog/the-t/thumbnails/074_thumbnail.jpg"
+      }
+    ]
+  },
+  "datePosted": "2026-05-26"
+}

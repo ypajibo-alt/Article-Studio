@@ -1,0 +1,158 @@
+{
+  "nav": {
+    "logoLabel": "The T",
+    "links": [
+      {
+        "label": "Home",
+        "href": "/the-t"
+      },
+      {
+        "label": "Coming Soon",
+        "href": "/the-t/coming-soon"
+      },
+      {
+        "label": "Shows",
+        "href": "/the-t/shows"
+      },
+      {
+        "label": "Movies",
+        "href": "/the-t/movies"
+      }
+    ],
+    "explore": {
+      "label": "Explore",
+      "items": [
+        {
+          "label": "FIFA World Cup 2026",
+          "href": "/the-t/fifa-world-cup"
+        },
+        {
+          "label": "Horror",
+          "href": "/the-t/horror"
+        },
+        {
+          "label": "Tubi Originals",
+          "href": "/the-t/originals"
+        },
+        {
+          "label": "Sports",
+          "href": "/the-t/sports"
+        }
+      ],
+      "moreGenresLabel": "More genres",
+      "moreGenresHref": "/the-t/genres"
+    },
+    "mobileMenu": {
+      "open": "Open menu",
+      "close": "Close menu"
+    }
+  },
+  "id": "061",
+  "slug": "destination-world-cup-2026-full-guide",
+  "categoryTag": "Sports",
+  "type": "article",
+  "title": "Destination World Cup 2026: Full Guide",
+  "subtitle": "Start with Destination World Cup 2026, then follow Weston McKennie from the documentary to the USMNT's live match on June 12.",
+  "datePosted": "2026-05-26",
+  "intro": "Before the first whistle, there's already a World Cup story worth watching. Destination World Cup 2026 is streaming on Tubi now, following Marc Cucurella, Harry Wilson, and Weston McKennie as they push toward the biggest stage in soccer. McKennie's road continues into the USMNT's live match against Paraguay on June 12 at Los Angeles Stadium. The World Cup hub is live now at tubitv.com/hubs/fifa-world-cup-fox-hub, with Fox Sports content, extended highlights, VOD replays, and live matches to follow. Start with the documentary, then come back as the tournament unfolds.",
+  "quote": "Watch the road to the tournament, then watch the match it leads to.",
+  "faq": {
+    "header": {
+      "title": "More details"
+    },
+    "items": [
+      {
+        "question": "When does the FIFA World Cup 2026™ start?",
+        "answer": "FIFA World Cup 2026™ kicks off with an opening ceremony and match on Thursday, June 11. Pregame 1:00 PM ET. Kickoff 3:00 PM ET. You can stream both events LIVE & FREE in 4K* on Tubi with a free account."
+      },
+      {
+        "question": "Do I need an account to watch FIFA World Cup 2026™ on Tubi?",
+        "answer": "Yes. You need to register for a free account and sign in, but it’s quick and easy. We promise."
+      },
+      {
+        "question": "What devices can I use to stream FIFA World Cup 2026™ on Tubi?",
+        "answer": "Tubi works on most smart TVs, mobile devices, streaming devices, gaming consoles, and web browsers. Visit the Help Center for a complete list of supported devices. Don’t wanna miss a gooooooal? Get the Tubi mobile app to stream on the go."
+      }
+    ]
+  },
+  "images": {
+    "thumbnail": "/static/blog/the-t/thumbnails/061_thumbnail.jpg",
+    "hero": "/static/blog/the-t/heroes/061_hero.jpg",
+    "og": "/static/blog/the-t/og/061_og.jpg"
+  },
+  "keepReading": {
+    "header": {
+      "title": "Keep Reading",
+      "subtitle": "More articles to explore"
+    },
+    "items": [
+      {
+        "id": "058",
+        "slug": "the-teams-to-watch-in-the-world-cup",
+        "eyebrow": "Guide",
+        "title": "Road to 2026: The Teams to Watch in the World Cup",
+        "subtitle": "From the favorites to the dark horses, the squads worth tracking all the way to the final.",
+        "categoryTag": "Sports",
+        "thumbnail": "/static/blog/the-t/thumbnails/058_thumbnail.png"
+      },
+      {
+        "id": "060",
+        "slug": "best-soccer-stories-to-stream",
+        "eyebrow": "What to Watch",
+        "title": "Beyond the Pitch: The Best Soccer Stories to Stream Now",
+        "subtitle": "The stories behind the game, before the World Cup begins",
+        "categoryTag": "Sports",
+        "thumbnail": "/static/blog/the-t/thumbnails/060_thumbnail.jpg"
+      },
+      {
+        "id": "063",
+        "slug": "watch-football-movies-and-documentaries-free-on-tubi",
+        "eyebrow": "What to Watch",
+        "title": "Watch Football Movies and Documentaries Free on Tubi",
+        "subtitle": "A Football Life, Undefeated, Blue Mountain State, and more, no subscription required.",
+        "categoryTag": "Sports",
+        "thumbnail": "/static/blog/the-t/thumbnails/063_thumbnail.jpg"
+      }
+    ]
+  },
+  "hero": {
+    "watchLink": "https://tubitv.com/hubs/fifa-world-cup-fox-hub",
+    "contentId": "300019838",
+    "watchNowLabel": "Watch Now",
+    "shouldUseVideoPreviewFallback": true
+  },
+  "whyWatch": {
+    "header": {
+      "title": "Why Watch It"
+    },
+    "body": "Destination World Cup 2026 is not a highlight reel. It follows McKennie, Cucurella, and Wilson through the pressure and preparation that happen before a ball is kicked in tournament play. If you care about where these players are mentally heading into June, Episode 1 is the right place to start.\n\nWatch it before June 12, then stream USA vs. Paraguay live with a free Tubi account. The documentary is free. The match is free. The hub is live now."
+  },
+  "gallery": {
+    "header": {
+      "title": "Media Shots"
+    },
+    "items": [
+      "/static/blog/the-t/media/061_media_1.jpg",
+      "/static/blog/the-t/media/061_media_2.jpg"
+    ]
+  },
+  "whatsComing": {
+    "header": {
+      "title": "What's Coming"
+    },
+    "items": [
+      {
+        "heading": "Destination World Cup 2026, Season 1, streaming now",
+        "paragraph": "Marc Cucurella, Harry Wilson, and Weston McKennie are chasing the same tournament from very different places in their careers. Each one brings a different kind of pressure into the series, and the show doesn't flatten that. It's TV-PG, free on Tubi, and a strong entry point for fans who want more than the matchday version of the story."
+      },
+      {
+        "heading": "S01:E01, Countdown to Glory, 23 min",
+        "paragraph": "Episode 1 puts you in Dallas with McKennie and inside a must-win moment with Wilson. In 23 minutes, you get the work, the waiting, and the pressure that exist long before the tournament spotlight turns on."
+      },
+      {
+        "heading": "Fox Sports and FIFA content hub, live now",
+        "paragraph": "The Tubi World Cup hub is live until July 19. Inside, you'll find live content, clips, and Fox Sports coverage that adds real context around the matches as they happen."
+      }
+    ]
+  }
+}

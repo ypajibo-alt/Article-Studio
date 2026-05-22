@@ -1,0 +1,289 @@
+{
+  "nav": {
+    "logoLabel": "The T",
+    "links": [
+      {
+        "label": "Home",
+        "href": "/the-t"
+      },
+      {
+        "label": "Coming Soon",
+        "href": "/the-t/coming-soon"
+      },
+      {
+        "label": "Shows",
+        "href": "/the-t/shows"
+      },
+      {
+        "label": "Movies",
+        "href": "/the-t/movies"
+      }
+    ],
+    "explore": {
+      "label": "Explore",
+      "items": [
+        {
+          "label": "FIFA World Cup 2026",
+          "href": "/the-t/fifa-world-cup"
+        },
+        {
+          "label": "Horror",
+          "href": "/the-t/horror"
+        },
+        {
+          "label": "Tubi Originals",
+          "href": "/the-t/originals"
+        },
+        {
+          "label": "Sports",
+          "href": "/the-t/sports"
+        }
+      ],
+      "moreGenresLabel": "More genres",
+      "moreGenresHref": "/the-t/genres"
+    },
+    "mobileMenu": {
+      "open": "Open menu",
+      "close": "Close menu"
+    }
+  },
+  "id": "005",
+  "slug": "best-true-crime-shows-and-documentaries-on-tubi",
+  "categoryTag": "Shows",
+  "type": "listicle",
+  "title": "Best True Crime Shows & Documentaries on Tubi Right Now",
+  "subtitle": "Some cases seem simple. These only get more complicated.",
+  "intro": "The best true crime doesn't just show you what happened. It pulls you into the part where nobody knows the answer yet.\n\nForensic Files has been running for decades because there's something genuinely satisfying about watching a single hair or a soil sample unravel an alibi. The First 48 drops you into a real homicide investigation in real time - the clock running, detectives making calls with incomplete information. Cold Case Files revisits murders that went cold for years, sometimes decades, and then didn't.\n\nHere's where to start.",
+  "images": {
+    "thumbnail": "/static/blog/the-t/thumbnails/005_thumbnail.jpg",
+    "og": "/static/blog/the-t/og/005_og.jpg"
+  },
+  "items": [
+    {
+      "position": 1,
+      "title": "Forensic Files",
+      "description": "Still the gold standard. Each episode runs about 20 minutes and solves a murder with evidence so specific it feels almost unfair - a bite mark, a pollen sample, a phone record from a tower that shouldn't exist.\n\nThe cases aren't always splashy. Sometimes it's a quiet killing in a small town that would have stayed unsolved forever without one piece of trace evidence that didn't belong.\n\nThe format is tight, the science is real, and watching an airtight alibi collapse under a microscope never stops being satisfying. If you're new to true crime docs, this is the one that explains why people get hooked.",
+      "contentTitle": "Forensic Files (2011)",
+      "tubiLink": "https://tubitv.com/series/2914",
+      "contentId": "2914",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/005_title_1_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/005_title_1_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/005_title_1_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Documentary",
+      "year": "2011",
+      "runtime": "14 Seasons",
+      "rating": "TV-14"
+    },
+    {
+      "position": 2,
+      "title": "The First 48",
+      "description": "Actual homicide detectives. Real cases. The cameras are rolling in the first 48 hours after a murder - the window where most cases either break open or go cold.\n\nNobody knows the ending yet. You watch detectives knock on doors that lead nowhere, follow leads that evaporate, and make judgment calls on almost no sleep.\n\nThere's a moment in almost every episode where an interview suddenly shifts - the person across the table starts talking differently, and the detective has to decide in real time what it means. No narration telling you what to think. Just the work.",
+      "contentTitle": "The First 48 (2023)",
+      "tubiLink": "https://tubitv.com/series/300001901",
+      "contentId": "300001901",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/005_title_2_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/005_title_2_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/005_title_2_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Documentary",
+      "year": "2023",
+      "runtime": "13 Seasons",
+      "rating": "TV-14"
+    },
+    {
+      "position": 3,
+      "title": "Cold Case Files",
+      "description": "Some of these murders sat unsolved for twenty, thirty, even forty years. Cold Case Files comes back when new tools - DNA databases, digital records, updated lab techniques - give investigators a second shot.\n\nThe gap between when the crime happened and when it finally cracked is part of what makes each episode land. A detective who worked the original case is now retired. The victim's family has been waiting most of their adult lives. And then a genealogy database flags a partial match.\n\nThe show doesn't rush to the resolution. It earns every minute of it.",
+      "contentTitle": "Cold Case Files (2025)",
+      "tubiLink": "https://tubitv.com/series/3903",
+      "contentId": "3903",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/005_title_3_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/005_title_3_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/005_title_3_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Documentary",
+      "year": "2025",
+      "runtime": "3 Seasons",
+      "rating": "TV-14"
+    },
+    {
+      "position": 4,
+      "title": "The FBI Files",
+      "description": "Federal cases move differently. The FBI Files goes behind the scenes of major investigations - bank robberies, kidnappings, domestic terrorism, organized crime - and the agents who worked them walk you through every forensic and tactical call that broke each one.\n\nWhat's interesting is how rarely the turning point is dramatic. A financial record. A traced phone call. A witness who finally felt safe enough to talk.\n\nThe reenactments are dated, but the case details are sharp, and the agents recounting them are specific in a way that keeps the whole thing grounded.",
+      "contentTitle": "The FBI Files (2005)",
+      "tubiLink": "https://tubitv.com/series/167",
+      "contentId": "167",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/005_title_4_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/005_title_4_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/005_title_4_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Documentary",
+      "year": "2005",
+      "runtime": "7 Seasons",
+      "rating": "TV-14"
+    },
+    {
+      "position": 5,
+      "title": "Killer Looks: The Trial of Wade Wilson",
+      "description": "Wade Wilson was charged with killing two women in Cape Coral, Florida, within hours of each other. The case was already disturbing. Then the trial happened.\n\nKiller Looks documents how Wilson's physical appearance became a bizarre subplot in the coverage - people posting about him online, courtroom dynamics shifting in ways that had nothing to do with the evidence.\n\nIt's as much about how we watch these trials as it is about the murders themselves. The case details are grim. The media circus around it is its own uncomfortable thing entirely.",
+      "contentTitle": "Killer Looks: The Trial of Wade Wilson (2024)",
+      "tubiLink": "https://tubitv.com/series/300016020",
+      "contentId": "300016020",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/005_title_5_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/005_title_5_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/005_title_5_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Documentary",
+      "year": "2024",
+      "runtime": "1 Season",
+      "rating": "TV-14"
+    },
+    {
+      "position": 6,
+      "title": "See No Evil",
+      "description": "Surveillance footage has changed what's solvable. See No Evil takes cases where CCTV, doorbell cameras, or cell phone video captured something the killer didn't account for - a timestamp that contradicts a story, a face in the background, a vehicle in a parking lot at the wrong time.\n\nEach episode reconstructs how investigators pieced that footage together with other evidence to build a case.\n\nThere's something quietly unsettling about how much is recorded now. The show knows that, but it never makes the technology the point. The point is always the case. The footage is just what finally made it crackable.",
+      "contentTitle": "See No Evil (2022)",
+      "tubiLink": "https://tubitv.com/series/300015200",
+      "contentId": "300015200",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/005_title_6_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/005_title_6_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/005_title_6_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Crime",
+      "year": "2022",
+      "runtime": "7 Seasons",
+      "rating": "TV-14"
+    },
+    {
+      "position": 7,
+      "title": "Cold Case Files Classic",
+      "description": "This is the original - not the reboot. Bill Kurtis narrating, late-90s forensics, cases investigated before half the current toolkit existed.\n\nWatching it now, what stands out is how much investigators managed to prove with less. A fiber match. A blood type. Shoe impressions in mud. These cases feel older in the best way - quieter crimes in quieter places, solved by detectives who had to be methodical because they couldn't just run a DNA swab and wait for a database hit.\n\nIf you've already burned through the newer version, this is where the template came from.",
+      "contentTitle": "Cold Case Files Classic (2007)",
+      "tubiLink": "https://tubitv.com/series/300016771",
+      "contentId": "300016771",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/005_title_7_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/005_title_7_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/005_title_7_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Documentary",
+      "year": "2007",
+      "runtime": "7 Seasons",
+      "rating": "TV-14"
+    },
+    {
+      "position": 8,
+      "title": "Murder Chose Me",
+      "description": "Rod Demery spent years as a homicide detective in Shreveport, Louisiana - one of the more violent cities in the country per capita - and Murder Chose Me is essentially him walking through his most significant cases.\n\nHe's not performing for the camera. He talks about the victims the way someone does when they actually knew the neighborhoods, knew the families, felt the weight of an unsolved case.\n\nThere are moments where he describes an interrogation and you can tell he's still working through whether he handled it right. That kind of honesty is rare in this format.",
+      "contentTitle": "Murder Chose Me (2019)",
+      "tubiLink": "https://tubitv.com/series/300010310",
+      "contentId": "300010310",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/005_title_8_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/005_title_8_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/005_title_8_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Documentary",
+      "year": "2019",
+      "runtime": "3 Seasons",
+      "rating": "TV-14"
+    },
+    {
+      "position": 9,
+      "title": "Unsolved Mysteries With Robert Stack",
+      "description": "Robert Stack stands in a foggy warehouse in a trenchcoat and tells you about a murder nobody has solved yet. That's the whole premise, and it still works.\n\nWhat Unsolved Mysteries did that almost nothing else does is present cases in real time - the episode wasn't a postmortem, it was a plea. Some of them actually generated tips that cracked cases.\n\nThe reenactments are low-budget and occasionally unintentionally strange, but the cases are genuinely unresolved, and Stack treats every single one with the same weight. The format is decades old. It holds up anyway.",
+      "contentTitle": "Unsolved Mysteries With Robert Stack (2023)",
+      "tubiLink": "https://tubitv.com/series/3046",
+      "contentId": "3046",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/005_title_9_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/005_title_9_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/005_title_9_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Documentary",
+      "year": "2023",
+      "runtime": "12 Seasons",
+      "rating": "TV-PG"
+    },
+    {
+      "position": 10,
+      "title": "Deadly Women",
+      "description": "Candice DeLong spent years as an FBI criminal profiler before hosting Deadly Women, and that background changes the texture of the show. She's not reading from a script about female killers - she's drawing on a framework she helped build.\n\nEach episode profiles a woman who killed, and DeLong walks through the psychological profile: the warning signs, the escalation pattern, the specific moment the calculus shifted.\n\nThe reenactments are dramatic in the way all of these shows are. But the analysis underneath them is sharper than most. DeLong doesn't sensationalize. She explains - and somehow that's more unsettling.",
+      "contentTitle": "Deadly Women (2012)",
+      "tubiLink": "https://tubitv.com/series/300013531",
+      "contentId": "300013531",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/005_title_10_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/005_title_10_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/005_title_10_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Documentary",
+      "year": "2012",
+      "runtime": "4 Seasons",
+      "rating": "TV-MA"
+    }
+  ],
+  "keepReading": {
+    "header": {
+      "title": "Keep Reading",
+      "subtitle": "More articles to explore"
+    },
+    "items": [
+      {
+        "id": "032",
+        "slug": "true-crime-cases-on-tubi",
+        "eyebrow": "What to Watch",
+        "title": "Unravel These True Crime Cases on Tubi",
+        "subtitle": "The cases that get heavier the more you understand them.",
+        "categoryTag": "Shows",
+        "thumbnail": "/static/blog/the-t/thumbnails/032_thumbnail.jpg"
+      },
+      {
+        "id": "029",
+        "slug": "top-crime-series-on-tubi",
+        "eyebrow": "What to Watch",
+        "title": "Top Crime Series on Tubi Today",
+        "subtitle": "Where the cases pull you in because they get personal fast.",
+        "categoryTag": "Shows",
+        "thumbnail": "/static/blog/the-t/thumbnails/029_thumbnail.jpg"
+      },
+      {
+        "id": "030",
+        "slug": "the-best-docuseries-on-tubi",
+        "eyebrow": "What to Watch",
+        "title": "The Best Docuseries on Tubi You Need to Watch",
+        "subtitle": "Real stories that are built to keep you watching longer than planned.",
+        "categoryTag": "Shows",
+        "thumbnail": "/static/blog/the-t/thumbnails/030_thumbnail.jpg"
+      }
+    ]
+  },
+  "datePosted": "2026-05-26"
+}

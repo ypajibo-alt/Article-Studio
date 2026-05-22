@@ -1,0 +1,289 @@
+{
+  "nav": {
+    "logoLabel": "The T",
+    "links": [
+      {
+        "label": "Home",
+        "href": "/the-t"
+      },
+      {
+        "label": "Coming Soon",
+        "href": "/the-t/coming-soon"
+      },
+      {
+        "label": "Shows",
+        "href": "/the-t/shows"
+      },
+      {
+        "label": "Movies",
+        "href": "/the-t/movies"
+      }
+    ],
+    "explore": {
+      "label": "Explore",
+      "items": [
+        {
+          "label": "FIFA World Cup 2026",
+          "href": "/the-t/fifa-world-cup"
+        },
+        {
+          "label": "Horror",
+          "href": "/the-t/horror"
+        },
+        {
+          "label": "Tubi Originals",
+          "href": "/the-t/originals"
+        },
+        {
+          "label": "Sports",
+          "href": "/the-t/sports"
+        }
+      ],
+      "moreGenresLabel": "More genres",
+      "moreGenresHref": "/the-t/genres"
+    },
+    "mobileMenu": {
+      "open": "Open menu",
+      "close": "Close menu"
+    }
+  },
+  "id": "068",
+  "slug": "epic-mecha-battles-anime-on-tubi",
+  "categoryTag": "Shows",
+  "type": "listicle",
+  "title": "Anime’s Biggest Machines: Top Mecha Picks on Tubi",
+  "subtitle": "Big robots, bigger feelings, and the stories that make you actually care.",
+  "intro": "Giant robot anime didn't borrow the rules. It wrote them.\n\nA kid engineered on a distant star to destroy Earth starts to love the people he was sent to kill. Five strangers in separate cockpits are the only thing standing between humanity and an alien empire that has already won everywhere else. A ten-year-old girl fuses with an alien soldier and has to figure out what she is now.\n\nThe best giant robot anime on Tubi is right here. Pick one and strap in.",
+  "images": {
+    "thumbnail": "/static/blog/the-t/thumbnails/068_thumbnail.jpg",
+    "og": "/static/blog/the-t/og/068_og.jpg"
+  },
+  "items": [
+    {
+      "position": 1,
+      "title": "God Mars (1982)",
+      "description": "Takeru was engineered on a distant star for one purpose: reach Earth and detonate. The bomb is inside him. His own body is the weapon.\n\nThen he actually gets here. Meets people. Starts to feel something. And suddenly the mission his creators are still counting on is the one thing he can't let happen. God Mars, the massive six-robot combiner he controls, becomes the physical expression of that contradiction. Every time he launches it against the Gishin forces, he's fighting his own origin.\n\nHis brother is on the other side, loyal to the empire Takeru has abandoned, and the battles between them carry the weight of that. For a super robot series from 1982, the emotional architecture holds up in ways you won't see coming.",
+      "contentTitle": "God Mars (1982)",
+      "tubiLink": "https://tubitv.com/series/2206",
+      "contentId": "2206",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/068_title_1_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/068_title_1_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/068_title_1_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Anime",
+      "year": "1982",
+      "runtime": "",
+      "rating": "TV-PG"
+    },
+    {
+      "position": 2,
+      "title": "Voltes Five (1978)",
+      "description": "Five pilots. One combining machine. An alien empire that has already conquered most of what it's touched.\n\nVoltes V aired in the Philippines in the late '70s and was pulled off the air mid-broadcast by the Marcos dictatorship, which decided a children's cartoon about oppressed people fighting back against an authoritarian ruling class was a little too on the nose. That's not a marketing claim. That actually happened.\n\nThe show earns the reaction. The Boazan invaders run a rigid class system built on whether you have horns, and the rebellion forming underneath it has stakes that feel genuinely political. The five members of the Voltes team are protecting Earth, but the story underneath is about who gets to be considered human. The combining sequences are as satisfying as anything the era produced. Knowing what they cost makes them land harder.",
+      "contentTitle": "Voltes Five (1978)",
+      "tubiLink": "https://tubitv.com/series/300017280",
+      "contentId": "300017280",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/068_title_2_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/068_title_2_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/068_title_2_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Sci-Fi",
+      "year": "1978",
+      "runtime": "",
+      "rating": "TV-PG"
+    },
+    {
+      "position": 3,
+      "title": "Figure 17 (2002)",
+      "description": "Tsubasa is ten years old, recently moved to Hokkaido, and so shy she can barely speak in class. Then a UFO crashes near her house and she fuses with the alien soldier inside it, and suddenly there's a second Tsubasa walking around, confident and capable of things the original can't imagine.\n\nThe alien eggs that need destroying are the plot. The actual show is about what it does to a lonely kid to suddenly have a version of herself that isn't afraid.\n\nFigure 17 runs each episode at nearly 45 minutes, which is unusual for the format, and it uses that space. The combat sequences are sharp and the creature designs are genuinely unsettling. But the scenes where both Tsubasas are just living their parallel lives, one going to school and struggling, one fighting things in the dark, are where it gets to something you don't see often. The ending earns every minute it takes to get there.",
+      "contentTitle": "Figure 17 (2002)",
+      "tubiLink": "https://tubitv.com/series/3529",
+      "contentId": "3529",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/068_title_3_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/068_title_3_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/068_title_3_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Anime",
+      "year": "2002",
+      "runtime": "",
+      "rating": "TV-14"
+    },
+    {
+      "position": 4,
+      "title": "Ghost in the Shell: Stand Alone Complex (2006)",
+      "description": "Major Motoko Kusanagi leads Section 9, a covert counter-cyberterrorism unit operating in a Japan where the line between human and machine has been blurred past the point of easy answers. The cases are intricate. The world-building is dense without being exhausting.\n\nBut the Tachikomas are the reason to stay. They're spider-shaped think tanks, officially just equipment, and they spend their downtime debating the nature of individuality and whether they've developed something like a soul. The show treats these conversations with complete seriousness.\n\nBy the time the Tachikoma storyline reaches its conclusion, you're not watching a robot subplot. You're watching the series' central argument play out in the characters who were never supposed to matter. Kenji Kamiyama directed with the same precision the Major operates with, and nothing here is accidental.",
+      "contentTitle": "Ghost in the Shell: Stand Alone Complex (2006)",
+      "tubiLink": "https://tubitv.com/series/300015461",
+      "contentId": "300015461",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/068_title_4_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/068_title_4_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/068_title_4_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Sci-Fi",
+      "year": "2006",
+      "runtime": "",
+      "rating": "TV-PG"
+    },
+    {
+      "position": 5,
+      "title": "Sacred Seven (2011)",
+      "description": "Alma Tandoji has spent years keeping to himself because the last time his power activated, people got hurt. He's not brooding about it. He's genuinely trying to protect everyone around him by staying away from all of them.\n\nThen Ruri Aiba shows up with a stone that can stabilize what's inside him, and a Dark Stone creature that only he can stop, and suddenly isolation isn't an option.\n\nSacred Seven runs eleven episodes and uses that constraint well. The suit Alma activates is striking in design, and the show is smart enough to keep the emotional core on the relationship between Alma and Ruri rather than the monster-of-the-week structure around it. Miyu Irino plays Alma with a quiet tension that makes the transformation sequences feel like relief. It doesn't overstay its welcome.",
+      "contentTitle": "Sacred Seven (2011)",
+      "tubiLink": "https://tubitv.com/series/300002644",
+      "contentId": "300002644",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/068_title_5_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/068_title_5_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/068_title_5_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Anime",
+      "year": "2011",
+      "runtime": "",
+      "rating": "TV-PG"
+    },
+    {
+      "position": 6,
+      "title": "Captain Harlock (1978)",
+      "description": "The year is 2977 and humanity has essentially retired. Machines do everything. People consume entertainment and wait. When the Mazone begin their invasion, most of humanity can't be bothered to care.\n\nHarlock cares. That's the whole problem. He commands the Arcadia, a skull-flagged warship, and fights an enemy his own civilization refuses to acknowledge, which makes him a pirate by default rather than by choice.\n\nLeiji Matsumoto's character design gives him a look that has been borrowed by basically every brooding space captain since, but the original has a weight the copies never replicate. The show is paced like the era it came from, deliberate, atmospheric, comfortable with silence. What it keeps returning to is what it costs to keep fighting for people who have stopped caring whether they survive. Harlock never gets a clean answer. The show doesn't give him one.",
+      "contentTitle": "Captain Harlock (1978)",
+      "tubiLink": "https://tubitv.com/series/1831",
+      "contentId": "1831",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/068_title_6_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/068_title_6_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/068_title_6_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Anime",
+      "year": "1978",
+      "runtime": "",
+      "rating": "TV-14"
+    },
+    {
+      "position": 7,
+      "title": "Galaxy Express 999 (1978)",
+      "description": "Tetsuo's mother was killed in front of him by a man who hunts humans for sport because he can, because he has a machine body and they don't. Tetsuo's plan is simple: get a machine body too. Then no one can touch him.\n\nThe Galaxy Express 999 is a space train that stops at a different planet each episode, and Matsumoto uses that structure to interrogate the thing Tetsuo wants before he can get it. Some machine-bodied people are free. Some are hollow. Some have forgotten what they were trying to preserve.\n\nMaetel, his mysterious companion, knows more than she says. The show lets that tension accumulate slowly. It's a road trip built around a question the destination can't actually answer, and Tetsuo figures that out at roughly the same time you do.",
+      "contentTitle": "Galaxy Express 999 (1978)",
+      "tubiLink": "https://tubitv.com/series/1834",
+      "contentId": "1834",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/068_title_7_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/068_title_7_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/068_title_7_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Anime",
+      "year": "1978",
+      "runtime": "",
+      "rating": "TV-G"
+    },
+    {
+      "position": 8,
+      "title": "Angel Cop (1989)",
+      "description": "Six episodes. 1989. Absolutely no interest in softening anything.\n\nSet in a near-future Japan where a terrorist organization called the Red May is operating freely, Angel Cop follows a special security force whose methods are, charitably, aggressive. The lead, Angel, is effective in the way a weapon is effective. The show doesn't frame that as a problem to be resolved.\n\nWhat makes it worth watching is how completely it commits to its own logic. The conspiracy that surfaces in the later episodes goes genuinely strange, and the action sequences have a kinetic nastiness that the era's TV animation couldn't match. Ichiro Itano directed the combat with the same precision he brought to Macross, and it shows. This is a specific product of a specific moment in anime history, and it knows exactly what it is.",
+      "contentTitle": "Angel Cop (1989)",
+      "tubiLink": "https://tubitv.com/series/4723",
+      "contentId": "4723",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/068_title_8_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/068_title_8_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/068_title_8_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Anime",
+      "year": "1989",
+      "runtime": "",
+      "rating": "TV-MA"
+    },
+    {
+      "position": 9,
+      "title": "Photon the Idiot Adventures (1997)",
+      "description": "Photon has the physical capabilities of a small army and the situational awareness of someone who has never once read the room. The show isn't laughing at him. It's genuinely fond of him.\n\nWhen a runaway friend ends up on another planet and Photon goes after her, the adventure that follows involves accidental marriages, alien politics, and combat sequences where Photon solves complicated problems by being very strong and very direct.\n\nIt works because the show around him is actually clever. This is a mid-90s OVA that knows exactly what it is: a comedy that uses its sci-fi setting for jokes rather than world-building, and it executes that with more discipline than the premise suggests. The mecha elements are light but present, and the action has a physical comedy rhythm that the animation team clearly had fun with. Faster and funnier than it has any obligation to be.",
+      "contentTitle": "Photon the Idiot Adventures (1997)",
+      "tubiLink": "https://tubitv.com/series/300007337",
+      "contentId": "300007337",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/068_title_9_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/068_title_9_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/068_title_9_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Anime",
+      "year": "1997",
+      "runtime": "",
+      "rating": "TV-MA"
+    },
+    {
+      "position": 10,
+      "title": "Kamen Rider Zero-One (2020)",
+      "description": "Aruto Hiden inherits a company that manufactures HumaGear, humanoid AI designed to do jobs humans don't want. He also inherits a transformation belt and becomes Kamen Rider Zero-One. The action is the delivery mechanism. The question underneath it is the point.\n\nZero-One keeps returning to the same thing from different angles: if something can learn, adapt, and express something that looks like preference or grief, what exactly separates it from a person? The show doesn't resolve this cleanly, which is the right call.\n\nThe episode that hits hardest is a quieter one, where a HumaGear who has developed something like a dream is asked to give it up, and Aruto has to decide whether to let that happen. The transformation sequences are elaborate, the locust-motif suit design shouldn't work as well as it does, and the action earns its place. But that one episode is what stays with you.",
+      "contentTitle": "Kamen Rider Zero-One (2020)",
+      "tubiLink": "https://tubitv.com/series/300008056",
+      "contentId": "300008056",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/068_title_10_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/068_title_10_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/068_title_10_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Action",
+      "year": "2020",
+      "runtime": "",
+      "rating": "TV-PG"
+    }
+  ],
+  "keepReading": {
+    "header": {
+      "title": "Keep Reading",
+      "subtitle": "More articles to explore"
+    },
+    "items": [
+      {
+        "id": "069",
+        "slug": "the-best-anime-on-tubi-to-watch-completely-free",
+        "eyebrow": "What to Watch",
+        "title": "The Best Anime on Tubi to Watch Completely Free",
+        "subtitle": "Whether you're brand new or already deep in the rabbit hole.",
+        "categoryTag": "Shows",
+        "thumbnail": "/static/blog/the-t/thumbnails/069_thumbnail.jpg"
+      },
+      {
+        "id": "001",
+        "slug": "best-anime-on-tubi",
+        "eyebrow": "What to Watch",
+        "title": "Best Anime on Tubi Right Now",
+        "subtitle": "If you want something that grabs you fast and doesn't let go, start here.",
+        "categoryTag": "Shows",
+        "thumbnail": "/static/blog/the-t/thumbnails/001_thumbnail.jpg"
+      },
+      {
+        "id": "070",
+        "slug": "ghost-in-the-shell-fans-heres-whats-waiting-for-you-on-tubi",
+        "eyebrow": "What to Watch",
+        "title": "Ghost in the Shell Fans: Here's What's Waiting for You on Tubi",
+        "subtitle": "More worlds like that one are already waiting for you.",
+        "categoryTag": "Movies",
+        "thumbnail": "/static/blog/the-t/thumbnails/070_thumbnail.jpg"
+      }
+    ]
+  },
+  "datePosted": "2026-05-26"
+}

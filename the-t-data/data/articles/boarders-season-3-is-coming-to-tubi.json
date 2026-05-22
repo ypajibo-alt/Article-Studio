@@ -1,0 +1,161 @@
+{
+  "nav": {
+    "logoLabel": "The T",
+    "links": [
+      {
+        "label": "Home",
+        "href": "/the-t"
+      },
+      {
+        "label": "Coming Soon",
+        "href": "/the-t/coming-soon"
+      },
+      {
+        "label": "Shows",
+        "href": "/the-t/shows"
+      },
+      {
+        "label": "Movies",
+        "href": "/the-t/movies"
+      }
+    ],
+    "explore": {
+      "label": "Explore",
+      "items": [
+        {
+          "label": "FIFA World Cup 2026",
+          "href": "/the-t/fifa-world-cup"
+        },
+        {
+          "label": "Horror",
+          "href": "/the-t/horror"
+        },
+        {
+          "label": "Tubi Originals",
+          "href": "/the-t/originals"
+        },
+        {
+          "label": "Sports",
+          "href": "/the-t/sports"
+        }
+      ],
+      "moreGenresLabel": "More genres",
+      "moreGenresHref": "/the-t/genres"
+    },
+    "mobileMenu": {
+      "open": "Open menu",
+      "close": "Close menu"
+    }
+  },
+  "id": "050",
+  "slug": "boarders-season-3-is-coming-to-tubi",
+  "categoryTag": "Originals",
+  "type": "article",
+  "title": "Boarders Season 3 on Tubi",
+  "subtitle": "The culture clash is real, the comedy is sharp, and the stakes are higher than any grade.",
+  "datePosted": "2026-05-26",
+  "intro": "There's a particular kind of tension that comes from being the smartest person in a room that still doesn't want you there. Boarders knows that tension intimately, and it builds an entire world out of it. Five scholarship kids from inner-city London land at an elite boarding school, and the friction starts before they even unpack.\n\nThis isn't a story about being grateful for the opportunity. It's about what it actually costs to exist in a space designed by and for people who look nothing like you. The comedy comes from that gap. So does the pain. Boarders holds both at the same time without flinching.\n\nRight now, when conversations about class, race, and who gets access to what are louder than ever, this show arrives with something to say and the nerve to say it sideways. It's funny when it needs to be, uncomfortable when it should be, and it never lets you forget which side of the gate you're standing on.",
+  "cast": {
+    "header": {
+      "title": "The Cast"
+    },
+    "items": [
+      {
+        "name": "Josh Tedeku",
+        "bio": "Tedeku anchors the group with a presence that's equal parts guarded and magnetic. He carries the weight of what it means to be first, to be watched, to be expected to represent something bigger than yourself, and he makes it look effortless even when the character clearly isn't."
+      },
+      {
+        "name": "Jodie Campbell",
+        "bio": "Campbell brings a sharpness that cuts through every scene she's in. Her character isn't here to assimilate quietly, and Campbell plays that refusal with a wit that makes her the funniest and most dangerous person in any room the show puts her in."
+      },
+      {
+        "name": "Myles Kamwendo",
+        "bio": "Kamwendo finds the emotional core of the ensemble. Where others in the group deflect or perform, his character absorbs everything, and Kamwendo lets you see exactly how much that costs."
+      },
+      {
+        "name": "Aruna Jalloh",
+        "bio": "Jalloh brings genuine warmth without softening the edges of what the show is doing. There's a hopefulness to the performance that the series needs to function, because without it, the harder moments would have nowhere to land."
+      }
+    ]
+  },
+  "quote": "You gave us a scholarship. You didn't give us permission.",
+  "faq": {
+    "header": {
+      "title": "More details"
+    },
+    "items": [
+      {
+        "question": "Who directed the film?",
+        "answer": "Ethosheia Hylton, Sarmad Masud, Joelle Mae David"
+      },
+      {
+        "question": "Who is in the cast?",
+        "answer": "Josh Tedeku, Jodie Campbell, Myles Kamwendo, Aruna Jalloh, Sekou Diaby"
+      },
+      {
+        "question": "Where can I stream this?",
+        "answer": "Watch free on Tubi"
+      }
+    ]
+  },
+  "images": {
+    "thumbnail": "/static/blog/the-t/thumbnails/050_thumbnail.jpg",
+    "hero": "/static/blog/the-t/heroes/050_hero.jpg",
+    "og": "/static/blog/the-t/og/050_og.jpg"
+  },
+  "keepReading": {
+    "header": {
+      "title": "Keep Reading",
+      "subtitle": "More articles to explore"
+    },
+    "items": [
+      {
+        "id": "014",
+        "slug": "the-most-addictive-shows-on-tubi",
+        "eyebrow": "What to Watch",
+        "title": "Binge-Worthy TV: The Most Addictive Shows on Tubi",
+        "subtitle": "Shows that stack quickly and are harder to stop than you expect.",
+        "categoryTag": "Shows",
+        "thumbnail": "/static/blog/the-t/thumbnails/014_thumbnail.jpg"
+      },
+      {
+        "id": "073",
+        "slug": "if-you-grew-up-on-degrassi-these-teen-dramas-on-tubi-are-for-you",
+        "eyebrow": "What to Watch",
+        "title": "If You Grew Up on Degrassi, These Teen Dramas on Tubi Are for You",
+        "subtitle": "Same emotional chaos, different hallways.",
+        "categoryTag": "Shows",
+        "thumbnail": "/static/blog/the-t/thumbnails/073_thumbnail.jpg"
+      },
+      {
+        "id": "028",
+        "slug": "the-best-reality-shows-streaming-free-on-tubi",
+        "eyebrow": "What to Watch",
+        "title": "The Best Reality Shows Streaming Free on Tubi",
+        "subtitle": "Low stakes, high chaos, and easy to lose an entire evening to.",
+        "categoryTag": "Shows",
+        "thumbnail": "/static/blog/the-t/thumbnails/028_thumbnail.jpg"
+      }
+    ]
+  },
+  "hero": {
+    "watchLink": "https://tubitv.com/series/300002557/boarders",
+    "contentId": "300002557",
+    "watchNowLabel": "Watch Now"
+  },
+  "whyWatch": {
+    "header": {
+      "title": "Why Watch It"
+    },
+    "body": "This is for anyone who's ever had to code-switch just to get through a Tuesday, for anyone who grew up watching other people's worlds on TV and never seeing their own, and honestly for anyone who just wants a show with actual stakes and actual personality. Boarders has both."
+  },
+  "gallery": {
+    "header": {
+      "title": "Media Shots"
+    },
+    "items": [
+      "/static/blog/the-t/media/050_media_1.jpg",
+      "/static/blog/the-t/media/050_media_2.jpg"
+    ]
+  }
+}

@@ -1,0 +1,289 @@
+{
+  "nav": {
+    "logoLabel": "The T",
+    "links": [
+      {
+        "label": "Home",
+        "href": "/the-t"
+      },
+      {
+        "label": "Coming Soon",
+        "href": "/the-t/coming-soon"
+      },
+      {
+        "label": "Shows",
+        "href": "/the-t/shows"
+      },
+      {
+        "label": "Movies",
+        "href": "/the-t/movies"
+      }
+    ],
+    "explore": {
+      "label": "Explore",
+      "items": [
+        {
+          "label": "FIFA World Cup 2026",
+          "href": "/the-t/fifa-world-cup"
+        },
+        {
+          "label": "Horror",
+          "href": "/the-t/horror"
+        },
+        {
+          "label": "Tubi Originals",
+          "href": "/the-t/originals"
+        },
+        {
+          "label": "Sports",
+          "href": "/the-t/sports"
+        }
+      ],
+      "moreGenresLabel": "More genres",
+      "moreGenresHref": "/the-t/genres"
+    },
+    "mobileMenu": {
+      "open": "Open menu",
+      "close": "Close menu"
+    }
+  },
+  "id": "060",
+  "slug": "best-soccer-stories-to-stream",
+  "categoryTag": "Sports",
+  "type": "listicle",
+  "title": "Beyond the Pitch: The Best Soccer Stories to Stream Now",
+  "subtitle": "The stories behind the game, before the World Cup begins",
+  "intro": "The best soccer stories aren't really about soccer.\n\nThey're about a kid from the favelas who plays barefoot because he can't afford a ball. A teenager in Malmö with a chip on his shoulder the size of a stadium. A group of American amateurs who walk onto a field in Brazil in 1950 and do something nobody saw coming. These are the best soccer stories streaming right now, and yes, the game is in them, but so is everything else.\n\nHere's where to start.",
+  "images": {
+    "thumbnail": "/static/blog/the-t/thumbnails/060_thumbnail.jpg",
+    "og": "/static/blog/the-t/og/060_og.jpg"
+  },
+  "items": [
+    {
+      "position": 1,
+      "title": "Pelé: Birth of a Legend",
+      "description": "Before Pelé was a global icon, he was a kid in Bauru playing with a grapefruit because a real ball cost too much. This dramatized origin story goes after something specific: the invention of ginga, the fluid, improvisational style of play that became his signature. The argument it makes is that this wasn't just natural talent - it was what poverty forced him to figure out.\n\nThere's a sequence where young Pelé gets told his style is wrong. Too flashy. Not serious football. He keeps playing it anyway. By the time the 1958 World Cup arrives, you've earned every second of the payoff.",
+      "contentTitle": "Pelé: Birth of a Legend (2016)",
+      "tubiLink": "https://tubitv.com/movies/100055499",
+      "contentId": "100055499",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/060_title_1_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/060_title_1_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/060_title_1_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Drama",
+      "year": "2016",
+      "runtime": "1h 47m",
+      "rating": "PG"
+    },
+    {
+      "position": 2,
+      "title": "Pelé: King of Football - Legend of the Game",
+      "description": "The stat everyone knows: three World Cup titles. What this documentary actually digs into is what it meant to be Pelé in Brazil - not a player, but a symbol. A country still figuring out what it was, and a teenager who somehow became the answer.\n\nThe archival footage here is genuinely remarkable. You see him at 17, already carrying the weight of national expectation in a way that would have broken most people. The talking heads are good, but the old footage is better. Watch it for the moments between the goals - the bench reactions, the sideline embraces - where you see what the sport actually meant to the people playing it.",
+      "contentTitle": "Pelé: King of Football - Legend of the Game (2020)",
+      "tubiLink": "https://tubitv.com/movies/100052518",
+      "contentId": "100052518",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/060_title_2_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/060_title_2_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/060_title_2_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Documentary",
+      "year": "2020",
+      "runtime": "49m",
+      "rating": "TV-PG"
+    },
+    {
+      "position": 3,
+      "title": "The Game of Their Lives",
+      "description": "The 1950 US soccer team beat England 1-0 in Belo Horizonte. England, the country that invented the sport. The US team was made up of amateurs: a mailman, a dishwasher, a teacher. They had no business winning that game.\n\nWhat makes this dramatization stick is the detail that the victory barely registered back home. The US press assumed the scoreline was a typo and didn't run the story. So you get this genuinely extraordinary upset - and then nothing. No parade, no headlines. Just eleven guys who knew what they'd done. Gerard Butler leads the cast and plays it completely straight, which is the only way a story this strange could work.",
+      "contentTitle": "The Game of Their Lives (2005)",
+      "tubiLink": "https://tubitv.com/movies/661724",
+      "contentId": "661724",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/060_title_3_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/060_title_3_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/060_title_3_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Drama",
+      "year": "2005",
+      "runtime": "1h 41m",
+      "rating": "PG"
+    },
+    {
+      "position": 4,
+      "title": "Becoming Zlatan",
+      "description": "Zlatan Ibrahimović grew up in Rosengård, a neighborhood in Malmö that Swedish football didn't take seriously. The clubs that scouted him wanted to sand down the edges. He refused. This documentary follows those early years - the Malmö FF days, the move to Ajax - and makes a specific argument: the ego wasn't a flaw to overcome. It was the thing that kept him in the room when everyone was trying to push him out.\n\nThere's footage of a young Zlatan in training where the body language alone tells you everything. He is not auditioning. He already knows. Whether you find that insufferable or magnetic probably determines how much you'll love this one.",
+      "contentTitle": "Becoming Zlatan (2015)",
+      "tubiLink": "https://tubitv.com/movies/100051717",
+      "contentId": "100051717",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/060_title_4_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/060_title_4_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/060_title_4_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Documentary",
+      "year": "2015",
+      "runtime": "1h 40m",
+      "rating": "TV-MA"
+    },
+    {
+      "position": 5,
+      "title": "Ronaldo vs. Messi",
+      "description": "Yes, it's the debate you've had at every bar and family dinner since 2008. But this documentary earns its runtime by treating the rivalry as a genuine question: what does it actually mean to be the best?\n\nRonaldo is constructed greatness - obsessive, relentless, built. Messi is something that looks more like it just happened, which is its own kind of illusion. The interviews and game footage don't settle the argument, which is exactly the right call. They just show you two people who pushed each other to levels neither might have reached alone. The most interesting moments aren't the goal compilations. They're when each player talks about the other.",
+      "contentTitle": "Ronaldo vs. Messi (2018)",
+      "tubiLink": "https://tubitv.com/movies/495012",
+      "contentId": "495012",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/060_title_5_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/060_title_5_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/060_title_5_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Documentary",
+      "year": "2018",
+      "runtime": "1h 6m",
+      "rating": "TV-14"
+    },
+    {
+      "position": 6,
+      "title": "Cristiano Ronaldo: The One and Only",
+      "description": "Cristiano Ronaldo grew up on an island. Not metaphorically - literally on Madeira, off the coast of Portugal, far from the academies and the scouts and the infrastructure of European football. Getting off the island required being impossible to ignore.\n\nThis documentary tracks how that specific origin shaped everything that came after: the distance, the poverty, the early move to Lisbon at age 12 without his family. The relentlessness isn't performance. It's what happens when someone knows exactly how far they've come and has no interest in sliding back. The talking heads are admiring but not uncritical, which keeps the whole thing from turning into a highlight reel with narration.",
+      "contentTitle": "Cristiano Ronaldo: The One and Only (2020)",
+      "tubiLink": "https://tubitv.com/movies/100031109",
+      "contentId": "100031109",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/060_title_6_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/060_title_6_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/060_title_6_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Documentary",
+      "year": "2020",
+      "runtime": "1h 6m",
+      "rating": "TV-PG"
+    },
+    {
+      "position": 7,
+      "title": "Ronaldo: From Lisbon to Legend",
+      "description": "Most sports documentaries are origin stories. This one has the advantage of perspective - made in 2024, it covers the full arc, including the parts that are harder to frame as triumphant. The Al-Nassr move. The Manchester United exit. The World Cup campaigns that didn't end the way he needed them to.\n\nExperts and analysts examine the career with enough distance to ask the uncomfortable question: how do you measure a legacy when the person hasn't stopped competing yet? It's the most complete picture of Ronaldo on the platform, and the most willing to sit with the complicated parts instead of just stacking trophies.",
+      "contentTitle": "Ronaldo: From Lisbon to Legend (2024)",
+      "tubiLink": "https://tubitv.com/movies/100027574",
+      "contentId": "100027574",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/060_title_7_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/060_title_7_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/060_title_7_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Documentary",
+      "year": "2024",
+      "runtime": "1h 6m",
+      "rating": "TV-PG"
+    },
+    {
+      "position": 8,
+      "title": "Neymar: Brazil's Number One",
+      "description": "Neymar didn't just become Brazil's top scorer - he inherited a specific expectation. Every Brazilian forward since Pelé has been measured against that standard, and Neymar wore it more visibly than most.\n\nThis documentary covers the full twenty-year path from Santos to PSG, and the most interesting thread is how the flamboyant style - the tricks, the flair, the showmanship - was never just entertainment. It was the thing that made him him, and also the thing that made him a target. The injuries, the controversy, the PSG years where the weight of expectation sometimes looked heavier than the game itself. It doesn't wrap up neatly, and that's exactly why it's worth watching.",
+      "contentTitle": "Neymar: Brazil's Number One (2023)",
+      "tubiLink": "https://tubitv.com/movies/100020806",
+      "contentId": "100020806",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/060_title_8_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/060_title_8_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/060_title_8_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Documentary",
+      "year": "2023",
+      "runtime": "46m",
+      "rating": "TV-G"
+    },
+    {
+      "position": 9,
+      "title": "Cristiano Ronaldo: The Portuguese Prodigy",
+      "description": "Made in 2001, when Cristiano Ronaldo was still a teenager at Sporting CP. That timestamp is the whole reason to watch this one. There's no global brand here, no statue, no record-breaking goals to reference. Just a young player with unusual ability and the particular intensity that would eventually take him everywhere.\n\nThe natural leadership on display doesn't look like confidence yet - it looks more like focus. Like someone who has already decided something and is just waiting for the rest of the world to catch up. As a time capsule, it's genuinely fascinating. You're watching the origin before anyone knew it was an origin.",
+      "contentTitle": "Cristiano Ronaldo: The Portuguese Prodigy (2001)",
+      "tubiLink": "https://tubitv.com/movies/553472",
+      "contentId": "553472",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/060_title_9_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/060_title_9_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/060_title_9_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Documentary",
+      "year": "2001",
+      "runtime": "55m",
+      "rating": "TV-PG"
+    },
+    {
+      "position": 10,
+      "title": "Golden Shoes",
+      "description": "A young boy with his father missing and his mother hospitalized finds the only place that makes sense is the soccer field. The youth league dream isn't just ambition - it's the one thing he can control when everything else has fallen apart.\n\nThis one's built for younger viewers, but it earns its emotional beats honestly. The soccer sequences are fun, but the film doesn't pretend the sport fixes the harder stuff. It's more like a place to put the feeling while you figure out the rest. Good for watching with kids who are old enough to handle some real stakes in their family movies.",
+      "contentTitle": "Golden Shoes (2015)",
+      "tubiLink": "https://tubitv.com/movies/690283",
+      "contentId": "690283",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/060_title_10_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/060_title_10_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/060_title_10_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Kids & Family",
+      "year": "2015",
+      "runtime": "1h 29m",
+      "rating": "TV-PG"
+    }
+  ],
+  "keepReading": {
+    "header": {
+      "title": "Keep Reading",
+      "subtitle": "More articles to explore"
+    },
+    "items": [
+      {
+        "id": "063",
+        "slug": "watch-football-movies-and-documentaries-free-on-tubi",
+        "eyebrow": "What to Watch",
+        "title": "Watch Football Movies and Documentaries Free on Tubi",
+        "subtitle": "A Football Life, Undefeated, Blue Mountain State, and more, no subscription required.",
+        "categoryTag": "Sports",
+        "thumbnail": "/static/blog/the-t/thumbnails/063_thumbnail.jpg"
+      },
+      {
+        "id": "030",
+        "slug": "the-best-docuseries-on-tubi",
+        "eyebrow": "What to Watch",
+        "title": "The Best Docuseries on Tubi You Need to Watch",
+        "subtitle": "Real stories that are built to keep you watching longer than planned.",
+        "categoryTag": "Shows",
+        "thumbnail": "/static/blog/the-t/thumbnails/030_thumbnail.jpg"
+      },
+      {
+        "id": "066",
+        "slug": "mlb-games-and-recaps-on-tubi",
+        "eyebrow": "What to Watch",
+        "title": "MLB Games and Recaps on Tubi",
+        "subtitle": "The walk-offs, the weirdos, the World Series. All free.",
+        "categoryTag": "Sports",
+        "thumbnail": "/static/blog/the-t/thumbnails/066_thumbnail.jpg"
+      }
+    ]
+  },
+  "datePosted": "2026-05-26"
+}

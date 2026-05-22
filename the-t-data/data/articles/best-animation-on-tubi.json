@@ -1,0 +1,289 @@
+{
+  "nav": {
+    "logoLabel": "The T",
+    "links": [
+      {
+        "label": "Home",
+        "href": "/the-t"
+      },
+      {
+        "label": "Coming Soon",
+        "href": "/the-t/coming-soon"
+      },
+      {
+        "label": "Shows",
+        "href": "/the-t/shows"
+      },
+      {
+        "label": "Movies",
+        "href": "/the-t/movies"
+      }
+    ],
+    "explore": {
+      "label": "Explore",
+      "items": [
+        {
+          "label": "FIFA World Cup 2026",
+          "href": "/the-t/fifa-world-cup"
+        },
+        {
+          "label": "Horror",
+          "href": "/the-t/horror"
+        },
+        {
+          "label": "Tubi Originals",
+          "href": "/the-t/originals"
+        },
+        {
+          "label": "Sports",
+          "href": "/the-t/sports"
+        }
+      ],
+      "moreGenresLabel": "More genres",
+      "moreGenresHref": "/the-t/genres"
+    },
+    "mobileMenu": {
+      "open": "Open menu",
+      "close": "Close menu"
+    }
+  },
+  "id": "010",
+  "slug": "best-animation-on-tubi",
+  "categoryTag": "Shows",
+  "type": "listicle",
+  "title": "Best Animation on Tubi",
+  "subtitle": "The kind of animation that always felt a step outside the usual.",
+  "intro": "The best animation on Tubi doesn't care what you think animation is for.\n\nA cat spirit loses his forest and has to figure out what side he's on. A cyborg cop hunts a hacker who might be something closer to a god. Two kids in a house on a cape slowly realize the old woman taking care of them is carrying something enormous. A pink dog in the middle of nowhere faces horrors that would break a braver animal.\n\nPick your mood. Here's where to start.",
+  "images": {
+    "thumbnail": "/static/blog/the-t/thumbnails/010_thumbnail.jpg",
+    "og": "/static/blog/the-t/og/010_og.jpg"
+  },
+  "items": [
+    {
+      "position": 1,
+      "title": "Ghost In The Shell 2.0",
+      "description": "Major Motoko Kusanagi can hack any system, survive any firefight, and still doesn't know if what she experiences counts as consciousness. That's the actual tension here - not the chase, not the Puppet Master, but what happens when the thing you're hunting turns out to have a better argument than you do.\n\nThere's a scene where the Puppet Master speaks directly to her about evolution and identity that hits harder than any action sequence in the film. Mamoru Oshii shoots it like a philosophical dialogue, not a confrontation.\n\nThis remastered version updates the visuals without losing the weight. Every cyberpunk film since has been trying to catch up to it.",
+      "contentTitle": "Ghost In The Shell 2.0 (2008)",
+      "tubiLink": "https://tubitv.com/movies/283906",
+      "contentId": "283906",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/010_title_1_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/010_title_1_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/010_title_1_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Anime",
+      "year": "2008",
+      "runtime": "1h 23m",
+      "rating": "TV-MA"
+    },
+    {
+      "position": 2,
+      "title": "Redline",
+      "description": "JP drives a car called the Roboworld Special into a race that the host planet's military is actively trying to stop with tanks and mechs. That's the pitch. The execution is something else entirely.\n\nStudio Madhouse spent seven years hand-drawing this film. You can feel it. Every race sequence moves at a speed that should be incomprehensible but somehow stays readable, and the character designs are so committed to their own maximalism that the whole thing feels like it was made by people who had never once considered restraint as an option.\n\nThere's a love story buried in all of it, and it actually lands - because the film earns the quieter moments by making the loud ones so completely unhinged.",
+      "contentTitle": "Redline (2011)",
+      "tubiLink": "https://tubitv.com/movies/283992",
+      "contentId": "283992",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/010_title_2_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/010_title_2_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/010_title_2_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Anime",
+      "year": "2011",
+      "runtime": "1h 43m",
+      "rating": "TV-MA"
+    },
+    {
+      "position": 3,
+      "title": "Courage the Cowardly Dog",
+      "description": "Courage is not brave. The show is extremely honest about this. He shakes, he screams, he makes a face that should not be physically possible, and then he saves his family anyway because there is no one else.\n\nThe monsters here are genuinely unsettling - not cartoon-scary, actually strange. There's an episode with a violin-playing ghost and another with a space chicken performing experimental surgery that would not feel out of place in a late-night horror anthology. The fact that it aired for kids is still a little baffling.\n\nEustace is mean to Courage every single episode and Courage saves him every single time. The show never comments on this. It doesn't need to.",
+      "contentTitle": "Courage the Cowardly Dog (2002)",
+      "tubiLink": "https://tubitv.com/series/300019075",
+      "contentId": "300019075",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/010_title_3_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/010_title_3_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/010_title_3_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Comedy",
+      "year": "2002",
+      "runtime": "4 Seasons",
+      "rating": "TV-PG"
+    },
+    {
+      "position": 4,
+      "title": "The Last Unicorn",
+      "description": "The Last Unicorn sets up a fairy tale and then keeps making it stranger and sadder than you expect. When the unicorn is transformed into a human woman, the film doesn't treat it as a temporary inconvenience - it treats it as a kind of loss, something she can't fully reverse even after everything is resolved.\n\nMia Farrow voices her with a detachment that reads at first as coldness and later as grief. There's a scene near the end where she tells Prince Lír something about what she is and what she isn't that hits harder than most of what passes for emotional weight in animation twice its budget.\n\nThe Rankin/Bass production has that slightly uncanny quality all their work has. Here, it fits perfectly.",
+      "contentTitle": "The Last Unicorn (1982)",
+      "tubiLink": "https://tubitv.com/movies/463838",
+      "contentId": "463838",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/010_title_4_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/010_title_4_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/010_title_4_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Kids & Family",
+      "year": "1982",
+      "runtime": "1h 33m",
+      "rating": "G"
+    },
+    {
+      "position": 5,
+      "title": "The Legend of Hei",
+      "description": "Hei is a cat spirit who loses his home when humans expand into his forest, and the goblins who find him are split on what to do about it. One faction wants coexistence. Another wants something closer to separation. Neither is obviously right.\n\nThe action sequences are fluid in a way that feels almost weightless - Studio MTJJ developed that looseness over years of web animation before this theatrical release. But the thing that sticks is the question underneath all of it: what do you owe the world that displaced you?\n\nHei spends most of the film being pulled between adults with competing philosophies. The resolution doesn't fully settle the debate, and that's exactly the point.",
+      "contentTitle": "The Legend of Hei (2019)",
+      "tubiLink": "https://tubitv.com/movies/100010511",
+      "contentId": "100010511",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/010_title_5_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/010_title_5_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/010_title_5_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Animation",
+      "year": "2019",
+      "runtime": "1h 42m",
+      "rating": "TV-PG"
+    },
+    {
+      "position": 6,
+      "title": "Jin-Roh (Dubbed)",
+      "description": "Kazuki Fuse is a soldier in an elite paramilitary unit who freezes during an operation and watches a young courier detonate a bomb rather than be captured. When he meets the girl's sister, he can't let it go.\n\nKoji Morimoto and Mamoru Oshii built this film around the bones of Little Red Riding Hood and don't hide it - the story gets referenced directly, repeatedly, as the conspiracy around Fuse tightens. The question isn't whether he's being manipulated. It's whether he knows and doesn't care.\n\nThe animation is deliberately slow and heavy. Political thriller pacing, not action movie pacing. The violence, when it finally comes, lands because of everything that was withheld before it.",
+      "contentTitle": "Jin-Roh (Dubbed) (2001)",
+      "tubiLink": "https://tubitv.com/movies/460471",
+      "contentId": "460471",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/010_title_6_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/010_title_6_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/010_title_6_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Drama",
+      "year": "2001",
+      "runtime": "1h 42m",
+      "rating": "TV-MA"
+    },
+    {
+      "position": 7,
+      "title": "The House of the Lost on the Cape (Dubbed)",
+      "description": "Hana is a teenage runaway. Coco is an orphaned girl. They end up in the care of an elderly woman named Kiwa in a house on a cape, and the film takes its time letting you understand what kind of place this is and what kind of person she is.\n\nDirector Shinya Kawatsura builds the relationship between these three through small moments of care - no dramatic confrontations, just things accumulating quietly until the weight of what Kiwa is carrying becomes clear.\n\nThe animation has a softness that matches the tone exactly: watercolor backgrounds, unhurried movement. Slow down with it, and the ending hits considerably harder than you were prepared for.",
+      "contentTitle": "The House of the Lost on the Cape (Dubbed) (2021)",
+      "tubiLink": "https://tubitv.com/movies/100010859",
+      "contentId": "100010859",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/010_title_7_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/010_title_7_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/010_title_7_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Anime",
+      "year": "2021",
+      "runtime": "1h 45m",
+      "rating": "TV-14"
+    },
+    {
+      "position": 8,
+      "title": "Penguin Highway (English Dubbed)",
+      "description": "Aoyama-kun is in fourth grade and completely certain he will be a great man someday. He keeps a research journal. He approaches every problem - including the sudden appearance of penguins in his suburban Japanese town - with the seriousness of a scientist who has not yet learned to doubt himself.\n\nThe penguins are coming from somewhere. The dental hygienist at his clinic knows more than she's saying. The field at the edge of town has something in it that shouldn't be there.\n\nDirector Hiroyasu Ishida makes the mystery feel genuinely strange without losing the warm, specific texture of being a kid who thinks very hard about things. Aoyama-kun's certainty about his own future is funny and a little heartbreaking once you understand what the film is really about.",
+      "contentTitle": "Penguin Highway (English Dubbed) (2018)",
+      "tubiLink": "https://tubitv.com/movies/590279",
+      "contentId": "590279",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/010_title_8_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/010_title_8_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/010_title_8_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Anime",
+      "year": "2018",
+      "runtime": "1h 58m",
+      "rating": "TV-PG"
+    },
+    {
+      "position": 9,
+      "title": "Looney Tunes",
+      "description": "You already know Bugs Bunny. You remember the bits. What you might not remember is how technically precise the comedy is - the timing on a Daffy Duck slow burn, the way a Wile E. Coyote gag builds its own internal logic before destroying it, the specific beat where Bugs breaks character to look directly at you.\n\nChuck Jones, Friz Freleng, Bob Clampett - these directors were competing against each other inside the same studio, and the cartoons got sharper because of it. There's a reason animation students still study them.\n\nPut this on with kids. Put it on without kids. The slapstick works at eight and it works at thirty-eight, and the jokes that confused you as a child will land completely differently now.",
+      "contentTitle": "Looney Tunes (2003)",
+      "tubiLink": "https://tubitv.com/series/300016553",
+      "contentId": "300016553",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/010_title_9_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/010_title_9_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/010_title_9_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Kids & Family",
+      "year": "2003",
+      "runtime": "13 Seasons",
+      "rating": "TV-PG"
+    },
+    {
+      "position": 10,
+      "title": "Pucca",
+      "description": "Garu is a ninja. He is serious about this. He trains, he meditates, he has a whole aesthetic going. Pucca does not care about any of it and will kiss him on the face at any moment regardless of what he's doing.\n\nThe show runs on this one joke and somehow never exhausts it, because the animators keep finding new contexts for Garu's dignity to be destroyed. The action sequences are genuinely well-choreographed - the show takes the ninja stuff seriously even while using it as a punchline.\n\nEpisodes are short, the color palette is loud, and the whole thing moves at a pace that makes it completely impossible to watch just one.",
+      "contentTitle": "Pucca (2007)",
+      "tubiLink": "https://tubitv.com/series/300005229",
+      "contentId": "300005229",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/010_title_10_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/010_title_10_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/010_title_10_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Kids & Family",
+      "year": "2007",
+      "runtime": "2 Seasons",
+      "rating": "TV-Y7"
+    }
+  ],
+  "keepReading": {
+    "header": {
+      "title": "Keep Reading",
+      "subtitle": "More articles to explore"
+    },
+    "items": [
+      {
+        "id": "074",
+        "slug": "the-classic-cartoons-every-90s-kid-needs-to-revisit",
+        "eyebrow": "What to Watch",
+        "title": "The Classic Cartoons Every 90s Kid Needs to Revisit",
+        "subtitle": "The ones that were doing more than you realized.",
+        "categoryTag": "Shows",
+        "thumbnail": "/static/blog/the-t/thumbnails/074_thumbnail.jpg"
+      },
+      {
+        "id": "075",
+        "slug": "archer-and-the-adult-animation-on-tubi-that-earns-its-rating",
+        "eyebrow": "What to Watch",
+        "title": "Archer and the Adult Animation on Tubi That Earns Its Rating",
+        "subtitle": "Sharp, weird, and very aware of what it's doing.",
+        "categoryTag": "Shows",
+        "thumbnail": "/static/blog/the-t/thumbnails/075_thumbnail.jpg"
+      },
+      {
+        "id": "076",
+        "slug": "looney-tunes-is-free-on-tubi-and-it-holds-up-better-than-you-think",
+        "eyebrow": "What to Watch",
+        "title": "Bugs, Scooby, Courage, and the Cartoons Tubi Has for Free",
+        "subtitle": "Still funny, still fast, still free on Tubi.",
+        "categoryTag": "Shows",
+        "thumbnail": "/static/blog/the-t/thumbnails/076_thumbnail.jpg"
+      }
+    ]
+  },
+  "datePosted": "2026-05-26"
+}

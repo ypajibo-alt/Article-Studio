@@ -1,0 +1,289 @@
+{
+  "nav": {
+    "logoLabel": "The T",
+    "links": [
+      {
+        "label": "Home",
+        "href": "/the-t"
+      },
+      {
+        "label": "Coming Soon",
+        "href": "/the-t/coming-soon"
+      },
+      {
+        "label": "Shows",
+        "href": "/the-t/shows"
+      },
+      {
+        "label": "Movies",
+        "href": "/the-t/movies"
+      }
+    ],
+    "explore": {
+      "label": "Explore",
+      "items": [
+        {
+          "label": "FIFA World Cup 2026",
+          "href": "/the-t/fifa-world-cup"
+        },
+        {
+          "label": "Horror",
+          "href": "/the-t/horror"
+        },
+        {
+          "label": "Tubi Originals",
+          "href": "/the-t/originals"
+        },
+        {
+          "label": "Sports",
+          "href": "/the-t/sports"
+        }
+      ],
+      "moreGenresLabel": "More genres",
+      "moreGenresHref": "/the-t/genres"
+    },
+    "mobileMenu": {
+      "open": "Open menu",
+      "close": "Close menu"
+    }
+  },
+  "id": "046",
+  "slug": "the-psychological-horror-films-that-mess-with-your-head",
+  "categoryTag": "Horror",
+  "type": "listicle",
+  "title": "The Psychological Horror Films That Mess With Your Head",
+  "subtitle": "More about tension and perspective than anything physical.",
+  "intro": "Some horror movies scare you. These psychological horror films rewire you.\n\nA couple moves into a neighborhood where every house is identical and no one can leave. Two children wake up and their parents are simply gone - not taken, not explained, just gone. A police sergeant travels to a remote Scottish island to find a missing girl and starts to suspect the island doesn't want him to find anything at all.\n\nIf you're looking for something that messes with your head long after the credits roll, you're in the right place.",
+  "images": {
+    "thumbnail": "/static/blog/the-t/thumbnails/046_thumbnail.jpg",
+    "og": "/static/blog/the-t/og/046_og.jpg"
+  },
+  "items": [
+    {
+      "position": 1,
+      "title": "Skinamarink",
+      "description": "Two kids wake up at night. Their parents are gone. The doors and windows are gone too.\n\nSkinamarink doesn't explain any of it. No reveal, no backstory, no creature stepping into frame. Just a house that's wrong in ways you can't quite name, filmed in grainy static that makes everything feel like a half-remembered nightmare. The camera never looks directly at anything. It watches corners, ceilings, the floor.\n\nSome people find this maddening. That reaction is kind of the whole point. It replicates something very specific - the texture of childhood fear, the kind where you couldn't say what was wrong, only that something was.",
+      "contentTitle": "Skinamarink (2022)",
+      "tubiLink": "https://tubitv.com/movies/100044384",
+      "contentId": "100044384",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/046_title_1_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/046_title_1_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/046_title_1_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Horror",
+      "year": "2022",
+      "runtime": "1h 40m",
+      "rating": "TV-MA"
+    },
+    {
+      "position": 2,
+      "title": "Vivarium",
+      "description": "Gemma and Tom just want to find a home. What they find is a neighborhood where every house looks exactly the same, the streets loop back on themselves, and leaving is simply not an option.\n\nThen a box appears on the doorstep with a baby inside and a note: raise the child.\n\nJesse Eisenberg plays Tom's slow unraveling with a specificity that's uncomfortable to watch. There's a scene where he starts digging a hole in the yard every day, for no stated reason, and the film never explains it. You understand it anyway. That's the kind of dread this one runs on - the life you didn't choose that closes around you regardless.",
+      "contentTitle": "Vivarium (2019)",
+      "tubiLink": "https://tubitv.com/movies/100033590",
+      "contentId": "100033590",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/046_title_2_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/046_title_2_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/046_title_2_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Sci-Fi",
+      "year": "2019",
+      "runtime": "1h 39m",
+      "rating": "R"
+    },
+    {
+      "position": 3,
+      "title": "The Wicker Man",
+      "description": "Sergeant Howie arrives on Summerisle with a missing persons report and the full confidence of a man who believes the law means something. The islanders are polite. Cooperative, even. They just don't seem to share his reality.\n\nEveryone sings. The children dance around maypoles. No one will confirm the girl exists. The deeper Howie investigates, the more the island seems to be performing normalcy specifically for him.\n\nFor a film from 1973 with musical numbers, the dread it builds is relentless. The ending is famous. What people forget is how completely the film earns it - one small, logical step at a time.",
+      "contentTitle": "The Wicker Man (1973)",
+      "tubiLink": "https://tubitv.com/movies/100010483",
+      "contentId": "100010483",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/046_title_3_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/046_title_3_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/046_title_3_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Horror",
+      "year": "1973",
+      "runtime": "1h 28m",
+      "rating": "R"
+    },
+    {
+      "position": 4,
+      "title": "Stir of Echoes",
+      "description": "Tom Witzky agrees to be hypnotized at a party as a party trick. His sister-in-law is curious about what's in there. Turns out: something is.\n\nKevin Bacon plays Tom not as someone going mad but as someone who can't stop digging into something he doesn't fully understand yet. There's a scene early on where he's watching TV and the signal cuts to static and a face - and the film plays it completely matter-of-fact, no score swell, no jump cut. That restraint is worse than any jump scare.\n\nStir of Echoes came out the same year as The Sixth Sense and got buried. It's the nastier film.",
+      "contentTitle": "Stir of Echoes (1999)",
+      "tubiLink": "https://tubitv.com/movies/313931",
+      "contentId": "313931",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/046_title_4_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/046_title_4_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/046_title_4_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Thriller",
+      "year": "1999",
+      "runtime": "1h 39m",
+      "rating": "R"
+    },
+    {
+      "position": 5,
+      "title": "The Stepford Wives",
+      "description": "Joanna moves to Stepford and immediately notices that the wives are a little too happy. Too agreeable. Too focused on housework and their husbands' comfort.\n\nHer friends tell her she's projecting. Her husband tells her she's adjusting. The real horror isn't the conspiracy - it's watching a woman's completely reasonable instincts get dismissed by everyone around her until she starts to doubt them herself.\n\nKatharine Ross plays Joanna with a mounting, quiet panic that never tips into hysteria. The dread here is social before it's supernatural, and that's what makes it stick.",
+      "contentTitle": "The Stepford Wives (1975)",
+      "tubiLink": "https://tubitv.com/movies/507433",
+      "contentId": "507433",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/046_title_5_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/046_title_5_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/046_title_5_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Horror",
+      "year": "1975",
+      "runtime": "1h 55m",
+      "rating": "PG"
+    },
+    {
+      "position": 6,
+      "title": "The Invitation",
+      "description": "Will hasn't seen his ex-wife Eden in two years. She's remarried, she seems happy, and she's invited him and his new girlfriend to a dinner party at the house they used to share - the house where something rough happened.\n\nThe film spends most of its runtime making you question Will's judgment. He's grieving. He's uncomfortable. Is he reading the room correctly, or is he projecting his own damage onto a perfectly normal evening?\n\nLogan Marshall-Green plays the paranoia as something that could tip either way right up until it doesn't. The Invitation holds that ambiguity longer than you'd expect, and it earns every minute of it.",
+      "contentTitle": "The Invitation (2016)",
+      "tubiLink": "https://tubitv.com/movies/622282",
+      "contentId": "622282",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/046_title_6_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/046_title_6_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/046_title_6_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Thriller",
+      "year": "2016",
+      "runtime": "1h 40m",
+      "rating": "TV-MA"
+    },
+    {
+      "position": 7,
+      "title": "The Awakening",
+      "description": "Florence Cathcart has built her career on exposing frauds - fake mediums, staged hauntings, grieving people being taken advantage of. She's good at it. She arrives at a boys' boarding school in 1921 with her equipment and her certainty and starts methodically ruling things out.\n\nThe film lets her be right for a while. Then it starts pulling threads she didn't know were there.\n\nRebecca Hall plays Florence with a control that makes her eventual unraveling feel earned rather than inevitable. The reveal recontextualizes everything that came before it, and that's genuinely rarer than it should be.",
+      "contentTitle": "The Awakening (2011)",
+      "tubiLink": "https://tubitv.com/movies/601868",
+      "contentId": "601868",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/046_title_7_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/046_title_7_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/046_title_7_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Horror",
+      "year": "2011",
+      "runtime": "1h 47m",
+      "rating": "R"
+    },
+    {
+      "position": 8,
+      "title": "First Born",
+      "description": "Frustrated new mother Laura starts seeing things. Her husband is distant. The babysitter is unsettling in ways she can't quite name. Everyone around her attributes it to stress, sleep deprivation, the difficulty of adjusting.\n\nFirst Born understands exactly how that dismissal works - the people who should be listening are the ones with the most incentive not to. Elisabeth Shue plays Laura's isolation with enough specificity that the film's ambiguity feels genuinely uncomfortable rather than cheap.\n\nYou're not sure what's real. Neither is she. The film sits in that uncertainty and doesn't rush to get out.",
+      "contentTitle": "First Born (2007)",
+      "tubiLink": "https://tubitv.com/movies/488357",
+      "contentId": "488357",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/046_title_8_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/046_title_8_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/046_title_8_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Drama",
+      "year": "2007",
+      "runtime": "1h 37m",
+      "rating": "PG-13"
+    },
+    {
+      "position": 9,
+      "title": "The Little Girl Who Lives Down the Lane",
+      "description": "Rynn answers the door, handles the neighbors, manages the house, and deflects every adult who gets too curious about where her father is. She's thirteen. She is extremely calm about all of it.\n\nJodie Foster plays Rynn as someone who has already made her decisions and is simply waiting for the world to catch up. The tension isn't really about what she's hiding - it's about watching her maintain the performance, the precise, measured way she handles each intrusion.\n\nMartin Sheen plays the neighbor who keeps coming back. He's genuinely frightening, and none of it is supernatural.",
+      "contentTitle": "The Little Girl Who Lives Down the Lane (1977)",
+      "tubiLink": "https://tubitv.com/movies/100004188",
+      "contentId": "100004188",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/046_title_9_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/046_title_9_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/046_title_9_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Drama",
+      "year": "1977",
+      "runtime": "1h 32m",
+      "rating": "PG"
+    },
+    {
+      "position": 10,
+      "title": "Burnt Offerings",
+      "description": "A family rents a sprawling country mansion for the summer at a price that seems too good. The owners mention, almost as an afterthought, that someone will be staying in the attic. Just an elderly woman. She won't be any trouble.\n\nOliver Reed plays Ben, the father, and the film's real horror is watching him change - not dramatically, not all at once, but in small increments that the people around him keep explaining away. The scariest version of possession is the one that looks, from the outside, like a bad mood.\n\nKaren Black plays his wife, and she has a scene near the end that the rest of the film spends the whole runtime setting up.",
+      "contentTitle": "Burnt Offerings (1976)",
+      "tubiLink": "https://tubitv.com/movies/100001275",
+      "contentId": "100001275",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/046_title_10_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/046_title_10_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/046_title_10_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Horror",
+      "year": "1976",
+      "runtime": "1h 56m",
+      "rating": "PG"
+    }
+  ],
+  "keepReading": {
+    "header": {
+      "title": "Keep Reading",
+      "subtitle": "More articles to explore"
+    },
+    "items": [
+      {
+        "id": "038",
+        "slug": "movies-that-will-haunt-you-in-a-good-way",
+        "eyebrow": "What to Watch",
+        "title": "Movies That Will Haunt You (In a Good Way)",
+        "subtitle": "The kind that linger a little after the credits.",
+        "categoryTag": "Movies",
+        "thumbnail": "/static/blog/the-t/thumbnails/038_thumbnail.jpg"
+      },
+      {
+        "id": "031",
+        "slug": "tubis-most-intense-thriller-series",
+        "eyebrow": "What to Watch",
+        "title": "Tubi's Most Intense Thriller Series",
+        "subtitle": "The Fall, Damages, The Killing, and seven more that will wreck your sleep schedule.",
+        "categoryTag": "Shows",
+        "thumbnail": "/static/blog/the-t/thumbnails/031_thumbnail.jpg"
+      },
+      {
+        "id": "035",
+        "slug": "the-scariest-horror-movies-to-watch-right-now",
+        "eyebrow": "What to Watch",
+        "title": "The Scariest Horror Movies to Watch Right Now",
+        "subtitle": "Not just loud scares. The kind that stay with you after.",
+        "categoryTag": "Movies",
+        "thumbnail": "/static/blog/the-t/thumbnails/035_thumbnail.jpg"
+      }
+    ]
+  },
+  "datePosted": "2026-05-26"
+}

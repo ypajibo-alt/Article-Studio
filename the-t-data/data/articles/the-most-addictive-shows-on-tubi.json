@@ -1,0 +1,289 @@
+{
+  "nav": {
+    "logoLabel": "The T",
+    "links": [
+      {
+        "label": "Home",
+        "href": "/the-t"
+      },
+      {
+        "label": "Coming Soon",
+        "href": "/the-t/coming-soon"
+      },
+      {
+        "label": "Shows",
+        "href": "/the-t/shows"
+      },
+      {
+        "label": "Movies",
+        "href": "/the-t/movies"
+      }
+    ],
+    "explore": {
+      "label": "Explore",
+      "items": [
+        {
+          "label": "FIFA World Cup 2026",
+          "href": "/the-t/fifa-world-cup"
+        },
+        {
+          "label": "Horror",
+          "href": "/the-t/horror"
+        },
+        {
+          "label": "Tubi Originals",
+          "href": "/the-t/originals"
+        },
+        {
+          "label": "Sports",
+          "href": "/the-t/sports"
+        }
+      ],
+      "moreGenresLabel": "More genres",
+      "moreGenresHref": "/the-t/genres"
+    },
+    "mobileMenu": {
+      "open": "Open menu",
+      "close": "Close menu"
+    }
+  },
+  "id": "014",
+  "slug": "the-most-addictive-shows-on-tubi",
+  "categoryTag": "Shows",
+  "type": "listicle",
+  "title": "Binge-Worthy TV: The Most Addictive Shows on Tubi",
+  "subtitle": "Shows that stack quickly and are harder to stop than you expect.",
+  "intro": "You sit down for one episode. You look up and it's 2 a.m.\n\nThe shows on this list earn that differently. The Gallagher family in Shameless turns dysfunction into something you can't stop watching because you genuinely don't know what they'll burn down next. Columbo already knows who did it in the first scene, and somehow that makes it impossible to stop. Sterling Archer is the worst spy alive and the funniest person in any room he walks into.\n\nHere are the shows on Tubi worth losing a weekend to.",
+  "images": {
+    "thumbnail": "/static/blog/the-t/thumbnails/014_thumbnail.jpg",
+    "og": "/static/blog/the-t/og/014_og.jpg"
+  },
+  "items": [
+    {
+      "position": 1,
+      "title": "Shameless",
+      "description": "Frank Gallagher doesn't parent so much as occasionally appear and make everything worse. His kids - Fiona, Lip, Ian, and the rest - have built an entire survival system around his absence and his disasters.\n\nThere's an episode early on where the family has to keep the electricity running through a scheme so convoluted it involves three neighbors and a stolen generator. Everyone plays it completely straight. It works.\n\nThe British original is great. This version runs longer and goes harder. You'll pick a favorite Gallagher by episode three and defend them unreasonably for the rest of the series.",
+      "contentTitle": "Shameless (2013)",
+      "tubiLink": "https://tubitv.com/series/300006342",
+      "contentId": "300006342",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/014_title_1_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/014_title_1_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/014_title_1_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Comedy",
+      "year": "2013",
+      "runtime": "11 Seasons",
+      "rating": "TV-MA"
+    },
+    {
+      "position": 2,
+      "title": "Columbo",
+      "description": "Most mysteries make you wait for the reveal. Columbo shows you the killer in the opening scene and then lets you watch a rumpled detective in a bad raincoat slowly, cheerfully take them apart.\n\nThese are usually wealthy, confident people who've committed what they think is a perfect crime. Then Columbo shows up, apologizes for bothering them, asks one more small question, and you watch the certainty drain out of their face. Peter Falk plays him like he's mildly confused about everything except the one thing that matters.\n\nOne more thing: you will not stop at one episode.",
+      "contentTitle": "Columbo (2003)",
+      "tubiLink": "https://tubitv.com/series/300006728",
+      "contentId": "300006728",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/014_title_2_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/014_title_2_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/014_title_2_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Crime",
+      "year": "2003",
+      "runtime": "16 Seasons",
+      "rating": "TV-PG"
+    },
+    {
+      "position": 3,
+      "title": "Archer",
+      "description": "Sterling Archer is technically a spy. In practice, he's a catastrophically self-absorbed man who somehow keeps surviving situations that should have ended him in episode one.\n\nThe show runs on rapid, layered comedy - callbacks to callbacks - where you'll miss a line because you're still laughing at the previous one. H. Jon Benjamin voices Archer completely deadpan, which is the only register that works. Mallory, Lana, Krieger, Pam - each has their own bit and the show knows exactly when to rotate them in.\n\nThe early seasons have a joke-per-minute density that makes rewatching feel like finding money in an old coat.",
+      "contentTitle": "Archer (2023)",
+      "tubiLink": "https://tubitv.com/series/300015980",
+      "contentId": "300015980",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/014_title_3_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/014_title_3_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/014_title_3_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Comedy",
+      "year": "2023",
+      "runtime": "14 Seasons",
+      "rating": "TV-MA"
+    },
+    {
+      "position": 4,
+      "title": "The Twilight Zone",
+      "description": "Rod Serling's anthology series invented the template that every prestige TV twist has been chasing since. Each episode is self-contained, runs about 25 minutes, and ends somewhere you didn't see coming - which means the binge math is genuinely dangerous. One more is always only 25 minutes away.\n\nWhat holds up isn't just the twists. These stories are actually about something: conformity, paranoia, loneliness, the specific American fear of being ordinary. \"Time Enough at Last\" still hurts. \"The Monsters Are Due on Maple Street\" is still sharp.\n\nThis show is from 1959 and it has absolutely no business feeling this current.",
+      "contentTitle": "The Twilight Zone (1959)",
+      "tubiLink": "https://tubitv.com/series/300017350",
+      "contentId": "300017350",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/014_title_4_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/014_title_4_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/014_title_4_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Sci-Fi",
+      "year": "1959",
+      "runtime": "5 Seasons",
+      "rating": "TV-PG"
+    },
+    {
+      "position": 5,
+      "title": "How to Get Away With Murder",
+      "description": "Annalise Keating is a law professor, a criminal defense attorney, and - it turns out - involved in at least one murder. Viola Davis plays her without softening any of it: the intelligence, the manipulation, the moments where the whole constructed persona slips.\n\nThe show runs on a flash-forward structure where you see something rough in the first episode and spend the season learning how everyone got there. It should get exhausting. Instead it keeps the tension wound tight across every episode.\n\nThe twists are wild. Davis is the reason you stay.",
+      "contentTitle": "How to Get Away With Murder (2020)",
+      "tubiLink": "https://tubitv.com/series/300015593",
+      "contentId": "300015593",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/014_title_5_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/014_title_5_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/014_title_5_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Drama",
+      "year": "2020",
+      "runtime": "6 Seasons",
+      "rating": "TV-14"
+    },
+    {
+      "position": 6,
+      "title": "Miami Vice",
+      "description": "Michael Mann produced Miami Vice like a feature film that happened to air on Friday nights - no earth tones, no laugh tracks, Jan Hammer's synth score running under everything. Crockett and Tubbs are undercover narcotics detectives, but the drug trade is almost secondary to the atmosphere: the light off Biscayne Bay, the pastel suits, the way the show treats silence as something you can build tension inside.\n\nThere's an episode where Crockett goes undercover so deep he starts forgetting which version of himself is real. The show gets genuinely strange in the best seasons.\n\nIt defined cool for a decade and then kept going.",
+      "contentTitle": "Miami Vice (1984)",
+      "tubiLink": "https://tubitv.com/series/300010244",
+      "contentId": "300010244",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/014_title_6_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/014_title_6_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/014_title_6_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Crime",
+      "year": "1984",
+      "runtime": "5 Seasons",
+      "rating": "TV-14"
+    },
+    {
+      "position": 7,
+      "title": "Lie to Me",
+      "description": "Cal Lightman can tell you're lying before you finish the sentence. He's spent his career cataloguing the micro-expressions that flash across a face in a fraction of a second before the controlled version takes over.\n\nTim Roth plays him as someone who is right about almost everything and pleasant to be around almost never. The show teaches you the tells as it goes - by mid-season you're watching the supporting characters and catching things before Lightman names them.\n\nYou're not just watching. You're playing. That's what makes it genuinely hard to stop.",
+      "contentTitle": "Lie to Me (2011)",
+      "tubiLink": "https://tubitv.com/series/300010743",
+      "contentId": "300010743",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/014_title_7_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/014_title_7_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/014_title_7_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Drama",
+      "year": "2011",
+      "runtime": "3 Seasons",
+      "rating": "TV-14"
+    },
+    {
+      "position": 8,
+      "title": "Everybody Hates Chris",
+      "description": "Chris Rock narrates his own adolescence in Bed-Stuy in the '80s, and the show is built around one specific joke that never gets old: Chris is the only person in his family who tries to do things right, and it makes absolutely no difference.\n\nHis father Julius tracks every expense to the cent. His mother Rochelle is terrifying in a way the whole neighborhood respects. His little brother Drew gets everything handed to him. Chris gets the bus fare, a packed lunch, and the expectation that he'll figure it out.\n\nTyler James Williams plays it with a specific kind of exhausted dignity that makes the comedy land - and the harder moments land harder.",
+      "contentTitle": "Everybody Hates Chris (2009)",
+      "tubiLink": "https://tubitv.com/series/300015509",
+      "contentId": "300015509",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/014_title_8_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/014_title_8_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/014_title_8_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Comedy",
+      "year": "2009",
+      "runtime": "4 Seasons",
+      "rating": "TV-PG"
+    },
+    {
+      "position": 9,
+      "title": "Married... with Children",
+      "description": "Al Bundy sells shoes he hates to people he can't stand, comes home to a wife who doesn't cook and a couch he can't leave, and delivers monologues about his high school football glory days to a family that stopped listening years ago.\n\nEd O'Neill plays him without a shred of self-pity. Al knows exactly what his life is. His response is pure, stubborn contempt.\n\nPeg gives as good as she gets. Kelly and Bud are disasters in their own right. The neighbors the Bundys despise are just as rough back. The insults fly in every direction and nobody here is innocent.",
+      "contentTitle": "Married... with Children (1987)",
+      "tubiLink": "https://tubitv.com/series/300018574",
+      "contentId": "300018574",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/014_title_9_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/014_title_9_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/014_title_9_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Comedy",
+      "year": "1987",
+      "runtime": "3 Seasons",
+      "rating": "TV-PG"
+    },
+    {
+      "position": 10,
+      "title": "Lonesome Dove",
+      "description": "Robert Duvall and Tommy Lee Jones play two retired Texas Rangers who decide to drive a cattle herd from Texas to Montana because there's nothing left to do and they're not ready to stop moving. The premise sounds like a classic Western adventure. The execution is something else.\n\nLonesome Dove is four episodes and it earns every minute of them. The trail is brutal. The path breaks people. Duvall's Gus is the kind of character you want more time with precisely because the show makes clear you won't have him forever.\n\nIt won eight Emmy Awards in 1989. The ending still hits like a door closing.",
+      "contentTitle": "Lonesome Dove (1989)",
+      "tubiLink": "https://tubitv.com/series/300001070",
+      "contentId": "300001070",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/014_title_10_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/014_title_10_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/014_title_10_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Western",
+      "year": "1989",
+      "runtime": "1 Season",
+      "rating": "TV-14"
+    }
+  ],
+  "keepReading": {
+    "header": {
+      "title": "Keep Reading",
+      "subtitle": "More articles to explore"
+    },
+    "items": [
+      {
+        "id": "026",
+        "slug": "a-guide-to-the-best-free-tv-shows-on-tubi",
+        "eyebrow": "Guide",
+        "title": "A Guide to the Best Free TV Shows on Tubi",
+        "subtitle": "A starting point when you want something easy to settle into.",
+        "categoryTag": "Shows",
+        "thumbnail": "/static/blog/the-t/thumbnails/026_thumbnail.jpg"
+      },
+      {
+        "id": "028",
+        "slug": "the-best-reality-shows-streaming-free-on-tubi",
+        "eyebrow": "What to Watch",
+        "title": "The Best Reality Shows Streaming Free on Tubi",
+        "subtitle": "Low stakes, high chaos, and easy to lose an entire evening to.",
+        "categoryTag": "Shows",
+        "thumbnail": "/static/blog/the-t/thumbnails/028_thumbnail.jpg"
+      },
+      {
+        "id": "027",
+        "slug": "the-funniest-comedy-shows-streaming-now",
+        "eyebrow": "What to Watch",
+        "title": "The Funniest Comedy Shows Streaming Now",
+        "subtitle": "The ones that actually hold up past the first episode.",
+        "categoryTag": "Shows",
+        "thumbnail": "/static/blog/the-t/thumbnails/027_thumbnail.jpg"
+      }
+    ]
+  },
+  "datePosted": "2026-05-26"
+}

@@ -1,0 +1,289 @@
+{
+  "nav": {
+    "logoLabel": "The T",
+    "links": [
+      {
+        "label": "Home",
+        "href": "/the-t"
+      },
+      {
+        "label": "Coming Soon",
+        "href": "/the-t/coming-soon"
+      },
+      {
+        "label": "Shows",
+        "href": "/the-t/shows"
+      },
+      {
+        "label": "Movies",
+        "href": "/the-t/movies"
+      }
+    ],
+    "explore": {
+      "label": "Explore",
+      "items": [
+        {
+          "label": "FIFA World Cup 2026",
+          "href": "/the-t/fifa-world-cup"
+        },
+        {
+          "label": "Horror",
+          "href": "/the-t/horror"
+        },
+        {
+          "label": "Tubi Originals",
+          "href": "/the-t/originals"
+        },
+        {
+          "label": "Sports",
+          "href": "/the-t/sports"
+        }
+      ],
+      "moreGenresLabel": "More genres",
+      "moreGenresHref": "/the-t/genres"
+    },
+    "mobileMenu": {
+      "open": "Open menu",
+      "close": "Close menu"
+    }
+  },
+  "id": "039",
+  "slug": "the-black-movies-worth-watching-this-month",
+  "categoryTag": "Movies",
+  "type": "listicle",
+  "title": "The Black Movies Worth Watching This Month",
+  "subtitle": "Beat Street, Finding Fela, Dolemite, and nine more reasons to clear your evening.",
+  "intro": "These are not background-noise movies. They're the ones you sit down for.\n\nA DJ from the South Bronx trying to get his crew on a stage before the city swallows them whole. A rapper who built a nation-state out of music and paid for it with his body. Two fake promoters who promised Young Jeezy and now have about 48 hours to figure out how to deliver him.\n\nThe Black movies worth watching this month are all here. Pick one and don't move.",
+  "images": {
+    "thumbnail": "/static/blog/the-t/thumbnails/039_thumbnail.jpg",
+    "og": "/static/blog/the-t/og/039_og.jpg"
+  },
+  "items": [
+    {
+      "position": 1,
+      "title": "Beat Street",
+      "description": "1984. Hip-hop doesn't have a name yet, not a mainstream one, and Beat Street is already filming it. A DJ named Kenny wants to get his crew out of the South Bronx and onto a real stage. His brother is painting trains. His friend is breaking on cardboard in the park. \n\nThe film doesn't explain any of this to you like it's exotic. It just drops you into the Fever and lets you watch. There's a scene at a battle where the crowd isn't cheering so much as witnessing something, and that's the feeling the whole movie is chasing. It mostly catches it.",
+      "contentTitle": "Beat Street (1984)",
+      "tubiLink": "https://tubitv.com/movies/310123",
+      "contentId": "310123",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/039_title_1_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/039_title_1_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/039_title_1_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Drama",
+      "year": "1984",
+      "runtime": "1h 46m",
+      "rating": "PG"
+    },
+    {
+      "position": 2,
+      "title": "Prince: Sign O' the Times",
+      "description": "The Sign O' the Times album came out in 1987 and opened with a list of things going wrong in the world: gangs, AIDS, a tornado in Kansas. The concert film is not that grim, but it carries the weight of it. \n\nPrince performs like someone who knows the stakes. The staging is minimal compared to what he could have done, which turns out to be the right call. It keeps your eyes on him and the band, and the band is extraordinary. Sheila E. is in this. Sheena Easton shows up. But the camera keeps finding Prince mid-riff, mid-thought, mid-something you can't quite name.",
+      "contentTitle": "Prince: Sign O' the Times (1987)",
+      "tubiLink": "https://tubitv.com/movies/528743",
+      "contentId": "528743",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/039_title_2_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/039_title_2_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/039_title_2_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Documentary",
+      "year": "1987",
+      "runtime": "1h 24m",
+      "rating": "PG-13"
+    },
+    {
+      "position": 3,
+      "title": "Finding Fela",
+      "description": "Fela Anikulapo Kuti turned his compound in Lagos into a sovereign nation called the Kalakuta Republic, declared it independent from Nigeria, and kept making music. The Nigerian military burned it down. His mother was thrown from a window. He rebuilt and kept going. \n\nAlex Gibney's documentary doesn't treat this as background mythology. It sits with the cost of it, interviewing people who were there and interweaving footage from the Broadway musical that tried to tell the same story years later. The music is extraordinary. What surrounds it is harder to shake.",
+      "contentTitle": "Finding Fela (2014)",
+      "tubiLink": "https://tubitv.com/movies/623333",
+      "contentId": "623333",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/039_title_3_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/039_title_3_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/039_title_3_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Documentary",
+      "year": "2014",
+      "runtime": "2h 0m",
+      "rating": "TV-14"
+    },
+    {
+      "position": 4,
+      "title": "Nas: Time Is Illmatic",
+      "description": "Illmatic came out in 1994 and ran 39 minutes. This documentary takes longer than that just to explain Queensbridge. That's the right instinct. \n\nThe film spends real time in the projects where Nas grew up, talking to his father, jazz musician Olu Dara, and to the people who watched him write those eight tracks. Jay-Z is in this. Alicia Keys. But the most valuable interviews are the ones where nobody famous is talking, just people who remember what the bridge felt like before Nas put it on record. The album made Queensbridge legible to the world. The documentary makes it specific again.",
+      "contentTitle": "Nas: Time Is Illmatic (2014)",
+      "tubiLink": "https://tubitv.com/movies/476913",
+      "contentId": "476913",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/039_title_4_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/039_title_4_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/039_title_4_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Music",
+      "year": "2014",
+      "runtime": "1h 14m",
+      "rating": "TV-14"
+    },
+    {
+      "position": 5,
+      "title": "Welcome to Death Row",
+      "description": "Yes, Tupac is in this. So is Suge Knight, in the way that a storm system is in a weather report: the thing everything else is organized around. \n\nBut Welcome to Death Row is less interested in the mythology than in the mechanics: how artists got locked into deals, how royalties disappeared, how a label that defined a decade left most of the people who built it with nothing. The interviews are candid in a way that feels like it cost something to give. By the end you understand the music better, and you feel considerably worse about the industry that packaged it.",
+      "contentTitle": "Welcome to Death Row (2001)",
+      "tubiLink": "https://tubitv.com/movies/560086",
+      "contentId": "560086",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/039_title_5_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/039_title_5_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/039_title_5_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Documentary",
+      "year": "2001",
+      "runtime": "1h 44m",
+      "rating": "TV-MA"
+    },
+    {
+      "position": 6,
+      "title": "Something From Nothing: The Art of Rap",
+      "description": "Ice-T drives around the country asking rappers how they write. Not why they rap, not what they've been through. How do you actually do it. \n\nEminem breaks down internal rhyme schemes like he's teaching a class. Kanye talks about melody first, words second. Q-Tip explains the difference between a verse that sounds good and a verse that means something. The documentary has no real narrative arc and doesn't need one. It's just an extended argument that rap is a technical discipline, made by someone who has been practicing it for thirty years and still finds it worth examining.",
+      "contentTitle": "Something From Nothing: The Art of Rap (2012)",
+      "tubiLink": "https://tubitv.com/movies/306385",
+      "contentId": "306385",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/039_title_6_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/039_title_6_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/039_title_6_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Documentary",
+      "year": "2012",
+      "runtime": "1h 52m",
+      "rating": "R"
+    },
+    {
+      "position": 7,
+      "title": "Fear of a Black Hat",
+      "description": "NWH, Niggaz With Hats, has a very detailed explanation for why Black men wear hats. It changes every time someone asks. \n\nFear of a Black Hat is a mockumentary shot in the same year the genre it's parodying was at its most self-serious, which is the only timing that could make it this sharp. Rusty Cundieff wrote, directed, and stars as Tone Def, the group's de facto philosopher, and he plays every interview with complete conviction. The jokes land because nobody in the film is winking. They believe everything they're saying. That's the joke, and it's a good one.",
+      "contentTitle": "Fear of a Black Hat (1993)",
+      "tubiLink": "https://tubitv.com/movies/463720",
+      "contentId": "463720",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/039_title_7_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/039_title_7_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/039_title_7_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Comedy",
+      "year": "1993",
+      "runtime": "1h 28m",
+      "rating": "R"
+    },
+    {
+      "position": 8,
+      "title": "Janky Promoters",
+      "description": "Russell and Ice Cube have booked Young Jeezy for a concert they cannot afford to produce. The venue deposit is gone. The flyers are already out. Jeezy is on his way. \n\nWhat follows is two men running very fast in multiple directions simultaneously, making promises to people who are already suspicious, and somehow believing it might still work out. Ice Cube plays this completely straight, which is funnier than any amount of mugging would be. The film is not trying to say anything about the music industry. It's just watching two people fail upward and hoping they make it.",
+      "contentTitle": "Janky Promoters (2009)",
+      "tubiLink": "https://tubitv.com/movies/642284",
+      "contentId": "642284",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/039_title_8_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/039_title_8_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/039_title_8_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Comedy",
+      "year": "2009",
+      "runtime": "1h 25m",
+      "rating": "R"
+    },
+    {
+      "position": 9,
+      "title": "Dolemite",
+      "description": "Dolemite is not a polished film. The boom mic appears. The kung fu is enthusiastic. Rudy Ray Moore cannot always be heard clearly over the ambient noise of wherever they were shooting that day. None of this matters. \n\nMoore financed this himself, wrote the character from his own stand-up act, and cast his friends. There's a scene where Dolemite recites a poem to a room full of people and they react like he's delivering the sermon of the century, and Moore plays it like he agrees with them. The confidence is the whole thing. Eddie Murphy made a movie about this man for a reason.",
+      "contentTitle": "Dolemite (1975)",
+      "tubiLink": "https://tubitv.com/movies/496328",
+      "contentId": "496328",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/039_title_9_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/039_title_9_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/039_title_9_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Action",
+      "year": "1975",
+      "runtime": "1h 30m",
+      "rating": "R"
+    },
+    {
+      "position": 10,
+      "title": "Fame",
+      "description": "The New York City High School of Performing Arts accepts you because you're exceptional. Then it spends four years making you prove it again, every day, in front of people who are equally exceptional and equally desperate. \n\nThe 2009 Fame doesn't have the raw edges of the 1980 original, but it has something else: a cast that actually trained, actually dances, actually sings. The audition sequences early in the film have a specific kind of tension. Not will they make it, but what does it cost to want this much. The film doesn't always answer that cleanly, but it keeps asking.",
+      "contentTitle": "Fame (2009)",
+      "tubiLink": "https://tubitv.com/movies/301151",
+      "contentId": "301151",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/039_title_10_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/039_title_10_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/039_title_10_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Comedy",
+      "year": "2009",
+      "runtime": "1h 46m",
+      "rating": "PG"
+    }
+  ],
+  "keepReading": {
+    "header": {
+      "title": "Keep Reading",
+      "subtitle": "More articles to explore"
+    },
+    "items": [
+      {
+        "id": "079",
+        "slug": "the-black-films-and-shows-on-tubi-worth-watching-this-month",
+        "eyebrow": "What to Watch",
+        "title": "The Black Films and Shows on Tubi Worth Watching This Month",
+        "subtitle": "A monthly lineup that moves across genres instead of staying in one lane.",
+        "categoryTag": "Shows",
+        "thumbnail": "/static/blog/the-t/thumbnails/079_thumbnail.jpg"
+      },
+      {
+        "id": "008",
+        "slug": "the-best-black-movies-and-shows-on-tubi",
+        "eyebrow": "What to Watch",
+        "title": "The Best Black Movies & Shows on Tubi Right Now",
+        "subtitle": "A range of stories that hit across genres without feeling one-note.",
+        "categoryTag": "Movies",
+        "thumbnail": "/static/blog/the-t/thumbnails/008_thumbnail.jpg"
+      },
+      {
+        "id": "077",
+        "slug": "girlfriends-good-times-and-the-black-sitcoms-on-tubi",
+        "eyebrow": "What to Watch",
+        "title": "Girlfriends, Good Times, and the Black Sitcoms on Tubi",
+        "subtitle": "Decades of laughs, real rent, and friendships that don't let you off easy.",
+        "categoryTag": "Shows",
+        "thumbnail": "/static/blog/the-t/thumbnails/077_thumbnail.jpg"
+      }
+    ]
+  },
+  "datePosted": "2026-05-26"
+}

@@ -167,7 +167,7 @@ async function generateListicle(
     try {
       raw = await callAI(systemPrompt, fillTemplate(userTemplate, {
         container_name: angle.trim(),
-        container_description: `A curated watchlist based on: ${angle.trim()}`,
+        container_description: angle.trim().startsWith('Derive your own') ? 'Derive the angle and headline from the titles — find what connects them.' : `A curated watchlist based on: ${angle.trim()}`,
         title_count: String(titles.length),
         title_list: titlesList,
         retry_feedback: retryFeedback,
@@ -228,7 +228,7 @@ async function generateListicle(
   const article: SavedArticle = {
     slug, createdAt: now, updatedAt: now,
     status: 'draft', published: false, publishedAt: null, publishAt: null,
-    articleType: 'listicle', articleTitle: angle,
+    articleType: 'listicle', articleTitle: output.headline || angle,
     tags: allTags, heroImageUrl,
     secondaryImageUrls: [],
     contentId: null, brandScore: finalBrandScore, brandNotes: finalBrandNotes,

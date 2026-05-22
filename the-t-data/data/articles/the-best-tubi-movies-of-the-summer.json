@@ -1,0 +1,289 @@
+{
+  "nav": {
+    "logoLabel": "The T",
+    "links": [
+      {
+        "label": "Home",
+        "href": "/the-t"
+      },
+      {
+        "label": "Coming Soon",
+        "href": "/the-t/coming-soon"
+      },
+      {
+        "label": "Shows",
+        "href": "/the-t/shows"
+      },
+      {
+        "label": "Movies",
+        "href": "/the-t/movies"
+      }
+    ],
+    "explore": {
+      "label": "Explore",
+      "items": [
+        {
+          "label": "FIFA World Cup 2026",
+          "href": "/the-t/fifa-world-cup"
+        },
+        {
+          "label": "Horror",
+          "href": "/the-t/horror"
+        },
+        {
+          "label": "Tubi Originals",
+          "href": "/the-t/originals"
+        },
+        {
+          "label": "Sports",
+          "href": "/the-t/sports"
+        }
+      ],
+      "moreGenresLabel": "More genres",
+      "moreGenresHref": "/the-t/genres"
+    },
+    "mobileMenu": {
+      "open": "Open menu",
+      "close": "Close menu"
+    }
+  },
+  "id": "009",
+  "slug": "the-best-tubi-movies-of-the-summer",
+  "categoryTag": "Movies",
+  "type": "listicle",
+  "title": "The Best Tubi Movies of the Summer",
+  "subtitle": "Hot tubs, sharks, con artists, and one very important Nantucket summer.",
+  "intro": "The best summer movies don't need to be set in summer. They just need to feel like it: reckless, specific, and slightly too warm for good judgment.\n\nSomewhere in this list, a mother-daughter con duo is about to marry the wrong man, two brothers are building a surf empire while bikers close in, and four guys in a hot tub are about to ruin and save their own lives simultaneously. Also: sharks. Specifically, sharks in an underwater cave with a dwindling air supply.\n\nHere are the best Tubi movies to watch this summer, ranked by nothing, curated by vibe.",
+  "images": {
+    "thumbnail": "/static/blog/the-t/thumbnails/009_thumbnail.jpg",
+    "og": "/static/blog/the-t/og/009_og.jpg"
+  },
+  "items": [
+    {
+      "position": 1,
+      "title": "Hot Tub Time Machine",
+      "description": "You already know the premise is odd. It's also, somehow, kind of devastating. Three middle-aged men and one nephew pile into a ski resort hot tub and wake up in 1986, the night everything went wrong for all of them. \n\nThe movie plays it as pure chaos comedy, and it is, but underneath all the callbacks and the Chevy Chase cameos is a genuine question about whether you'd actually do it differently if you could. John Cusack plays it straighter than everyone else, which is exactly the right call. The 80s details are committed enough to feel like love, not mockery. For a movie about a hot tub, it has a real point of view about regret.",
+      "contentTitle": "Hot Tub Time Machine (2010)",
+      "tubiLink": "https://tubitv.com/movies/639802",
+      "contentId": "639802",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/009_title_1_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/009_title_1_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/009_title_1_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Comedy",
+      "year": "2010",
+      "runtime": "1h 38m",
+      "rating": "R"
+    },
+    {
+      "position": 2,
+      "title": "One Crazy Summer",
+      "description": "Hoops McCann just wants to get into art school. Instead, he ends up in Nantucket helping a girl named Cassandra save her family home from a developer with a yacht and zero conscience. John Cusack again, yes, twice on this list, he had a whole era. \n\nHe plays Hoops with the specific energy of someone who is always slightly outside the thing happening around him. The animated sequences where his cartoons come to life are genuinely inventive for 1986. Demi Moore is Cassandra, and the stakes feel real even when the comedy goes full slapstick. This is a summer movie that actually believes in the people in it.",
+      "contentTitle": "One Crazy Summer (1986)",
+      "tubiLink": "https://tubitv.com/movies/100001408",
+      "contentId": "100001408",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/009_title_2_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/009_title_2_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/009_title_2_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Comedy",
+      "year": "1986",
+      "runtime": "1h 33m",
+      "rating": "PG"
+    },
+    {
+      "position": 3,
+      "title": "Into the Blue",
+      "description": "Paul Walker and Jessica Alba are divers in the Bahamas who find a sunken pirate ship and a drug stash in the same dive, which is the kind of luck that only gets worse from there. \n\nThe water photography is genuinely beautiful. Long stretches of this movie are just people moving through blue-green light, which is its own argument for watching it. Then the mob shows up and the decisions get worse and the stakes get higher and suddenly it's a thriller. Walker plays it with the same easy physicality he brought to everything. It's not trying to be more than it is, and in the middle of summer, that's exactly right.",
+      "contentTitle": "Into the Blue (2005)",
+      "tubiLink": "https://tubitv.com/movies/475620",
+      "contentId": "475620",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/009_title_3_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/009_title_3_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/009_title_3_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Action",
+      "year": "2005",
+      "runtime": "1h 50m",
+      "rating": "PG-13"
+    },
+    {
+      "position": 4,
+      "title": "Heartbreakers",
+      "description": "Sigourney Weaver and Jennifer Love Hewitt play a mother-daughter team who marry rich men, seduce them into infidelity, and pocket the divorce settlement. They're very good at it. \n\nThe final mark is Gene Hackman playing a tobacco billionaire who coughs through every scene and is somehow impossible not to like, which is a specific kind of acting achievement. The comedy is broad but the relationship between Weaver and Hewitt is the thing that keeps it grounded: two women who are genuinely good at something together, trying to figure out what happens when they don't need each other anymore. Ray Liotta shows up as a furious ex-husband and commits completely.",
+      "contentTitle": "Heartbreakers (2001)",
+      "tubiLink": "https://tubitv.com/movies/404570",
+      "contentId": "404570",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/009_title_4_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/009_title_4_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/009_title_4_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Comedy",
+      "year": "2001",
+      "runtime": "2h 3m",
+      "rating": "PG-13"
+    },
+    {
+      "position": 5,
+      "title": "47 Meters Down: Uncaged",
+      "description": "This is not the one where they're in the cage. This one is worse. Four teen divers explore a flooded Mayan city and find that the great white sharks living inside it have been down there long enough to go blind, which means they hunt entirely by sound and movement. \n\nThe cave structure removes every escape route you'd normally expect. There's a sequence where the group has to swim through a passage while a shark circles, and the film makes you feel the ceiling pressing down. It earns its tension honestly, without much setup. If you're planning a beach trip, maybe watch this after.",
+      "contentTitle": "47 Meters Down: Uncaged (2019)",
+      "tubiLink": "https://tubitv.com/movies/100039010",
+      "contentId": "100039010",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/009_title_5_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/009_title_5_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/009_title_5_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Thriller",
+      "year": "2019",
+      "runtime": "1h 30m",
+      "rating": "PG-13"
+    },
+    {
+      "position": 6,
+      "title": "Age of Summer",
+      "description": "Set in the summer of 1983 in a California beach town, this follows a kid named Chance who gets a job parking cars at a beach club and starts trying to claw his way into a world that wasn't built for him. \n\nThe details are specific enough to feel real: the clothes, the hierarchy, the particular cruelty of teenagers who have been comfortable their whole lives. It's quieter than most coming-of-age movies, less interested in big moments than in the accumulation of small ones. The film doesn't resolve the class gap neatly. Chance gets a summer, not a transformation, and that's the more honest version of the story.",
+      "contentTitle": "Age of Summer (2018)",
+      "tubiLink": "https://tubitv.com/movies/619760",
+      "contentId": "619760",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/009_title_6_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/009_title_6_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/009_title_6_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Comedy",
+      "year": "2018",
+      "runtime": "1h 28m",
+      "rating": "TV-14"
+    },
+    {
+      "position": 7,
+      "title": "Valley Girl (1983)",
+      "description": "Julie is from the Valley. Randy is a punk from Hollywood. Her friends think this is a disaster. The movie treats both worlds with actual affection instead of picking a side, which is rarer than it sounds. \n\nNicolas Cage is Randy, in one of his earliest roles, and he plays the punk infatuation as completely genuine. Not a pose, not a phase. The soundtrack is a specific document of 1983 and holds up better than it has any right to. There's a party scene where the two worlds collide and the film just lets the discomfort sit there without resolving it quickly. Julie has to make a real choice, and the movie doesn't make it easy for her.",
+      "contentTitle": "Valley Girl (1983) (1983)",
+      "tubiLink": "https://tubitv.com/movies/674422",
+      "contentId": "674422",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/009_title_7_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/009_title_7_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/009_title_7_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Comedy",
+      "year": "1983",
+      "runtime": "1h 39m",
+      "rating": "R"
+    },
+    {
+      "position": 8,
+      "title": "Drift",
+      "description": "Western Australia, the 1970s. Two brothers show up broke and start building a surf supply company in a coastal town that doesn't want them there. The townspeople are hostile. The bikers are worse. \n\nThe surfing footage is the kind that makes you understand why people dedicate their lives to it. Long, patient shots of waves that feel earned rather than decorative. Sam Worthington plays the older brother, the one carrying the weight of keeping everything together while his younger brother chases the water. It's a story about what you're willing to protect and what you're willing to risk, set against a coastline that doesn't care either way.",
+      "contentTitle": "Drift (2013)",
+      "tubiLink": "https://tubitv.com/movies/369847",
+      "contentId": "369847",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/009_title_8_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/009_title_8_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/009_title_8_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Drama",
+      "year": "2013",
+      "runtime": "1h 53m",
+      "rating": "R"
+    },
+    {
+      "position": 9,
+      "title": "The Brothers Bloom",
+      "description": "Rian Johnson directed this before Knives Out, and you can feel the same love of structure and misdirection running through it. Mark Ruffalo and Adrien Brody are the Bloom brothers, lifelong con artists running their final scheme on Rachel Weisz's eccentric heiress, who collects hobbies and has more money than she knows what to do with. \n\nWeisz plays her as genuinely strange and genuinely delightful, which is the only reason the con gets complicated. Brody's Bloom starts believing the version of himself he's performing for her, and the film is smart enough to make that feel like a problem, not a solution. Rinko Kikuchi plays their associate Bang Bang, who communicates almost entirely through expression and explosives.",
+      "contentTitle": "The Brothers Bloom (2008)",
+      "tubiLink": "https://tubitv.com/movies/328393",
+      "contentId": "328393",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/009_title_9_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/009_title_9_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/009_title_9_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Comedy",
+      "year": "2008",
+      "runtime": "1h 53m",
+      "rating": "PG-13"
+    },
+    {
+      "position": 10,
+      "title": "Source Code",
+      "description": "Colter Stevens wakes up on a commuter train as a man he doesn't recognize, sitting across from a woman who clearly knows him, with no memory of how he got there. Eight minutes later, the train explodes. Then he wakes up and does it again. \n\nDuncan Jones builds the tension by withholding information at exactly the right pace. You're disoriented alongside Stevens, not ahead of him. Jake Gyllenhaal plays it with a controlled urgency that keeps the repetition from feeling mechanical. The film is mostly a thriller, but it earns a genuine emotional question in the final act about what it means to be present in a moment that isn't technically yours.",
+      "contentTitle": "Source Code (2011)",
+      "tubiLink": "https://tubitv.com/movies/675386",
+      "contentId": "675386",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/009_title_10_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/009_title_10_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/009_title_10_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Action",
+      "year": "2011",
+      "runtime": "1h 32m",
+      "rating": "PG-13"
+    }
+  ],
+  "keepReading": {
+    "header": {
+      "title": "Keep Reading",
+      "subtitle": "More articles to explore"
+    },
+    "items": [
+      {
+        "id": "004",
+        "slug": "whats-new-on-tubi-this-may",
+        "eyebrow": "What to Watch",
+        "title": "What's New on Tubi This May",
+        "subtitle": "Not sure what you're in the mood for? This month makes it easy.",
+        "categoryTag": "Movies",
+        "thumbnail": "/static/blog/the-t/thumbnails/004_thumbnail.jpg"
+      },
+      {
+        "id": "034",
+        "slug": "how-to-watch-great-movies-for-free",
+        "eyebrow": "What to Watch",
+        "title": "How to Watch Great Movies for Free",
+        "subtitle": "A simple way to find something worth your time without overthinking it.",
+        "categoryTag": "Movies",
+        "thumbnail": "/static/blog/the-t/thumbnails/034_thumbnail.jpg"
+      },
+      {
+        "id": "006",
+        "slug": "best-free-movies-to-watch-this-weekend",
+        "eyebrow": "What to Watch",
+        "title": "Best Free Movies to Watch This Weekend",
+        "subtitle": "If you want a good pick without digging, start here.",
+        "categoryTag": "Movies",
+        "thumbnail": "/static/blog/the-t/thumbnails/006_thumbnail.jpg"
+      }
+    ]
+  },
+  "datePosted": "2026-05-26"
+}

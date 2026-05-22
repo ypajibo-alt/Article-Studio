@@ -1,0 +1,289 @@
+{
+  "nav": {
+    "logoLabel": "The T",
+    "links": [
+      {
+        "label": "Home",
+        "href": "/the-t"
+      },
+      {
+        "label": "Coming Soon",
+        "href": "/the-t/coming-soon"
+      },
+      {
+        "label": "Shows",
+        "href": "/the-t/shows"
+      },
+      {
+        "label": "Movies",
+        "href": "/the-t/movies"
+      }
+    ],
+    "explore": {
+      "label": "Explore",
+      "items": [
+        {
+          "label": "FIFA World Cup 2026",
+          "href": "/the-t/fifa-world-cup"
+        },
+        {
+          "label": "Horror",
+          "href": "/the-t/horror"
+        },
+        {
+          "label": "Tubi Originals",
+          "href": "/the-t/originals"
+        },
+        {
+          "label": "Sports",
+          "href": "/the-t/sports"
+        }
+      ],
+      "moreGenresLabel": "More genres",
+      "moreGenresHref": "/the-t/genres"
+    },
+    "mobileMenu": {
+      "open": "Open menu",
+      "close": "Close menu"
+    }
+  },
+  "id": "078",
+  "slug": "saved-by-the-bell-and-the-classic-shows-on-tubi",
+  "categoryTag": "Shows",
+  "type": "listicle",
+  "title": "Saved by the Bell and the Classic Shows on Tubi",
+  "subtitle": "Comfort watches that still hold up when you go back to them.",
+  "intro": "There's a specific kind of TV comfort that streaming hasn't fully replaced. The kind where you already know the theme song by heart, you have a favorite character, and you've seen every episode, but you're still going to watch it again.\n\nSaved by the Bell gave us Zack Morris talking to the camera like we were in on the joke. Married... with Children let Al Bundy be a disaster and never apologized for it. Dawson's Creek made a whole generation feel like their feelings were too big for their small town.\n\nThey're all here. Here's where to start.",
+  "images": {
+    "thumbnail": "/static/blog/the-t/thumbnails/078_thumbnail.jpg",
+    "og": "/static/blog/the-t/og/078_og.jpg"
+  },
+  "items": [
+    {
+      "position": 1,
+      "title": "Saved by the Bell",
+      "description": "Zack Morris could stop time. Not metaphorically - he'd look straight into the camera, say \"time out,\" and the whole world froze while he explained his scheme directly to you. That single trick made Saved by the Bell feel less like a show you watched and more like a show you were in on.\n\nThe Bayside crew never stopped being fun to watch even when the plots got absurd. Especially when the plots got absurd. The episode where Jessie gets addicted to caffeine pills is burned into an entire generation's memory for reasons nobody can fully explain.\n\nThis is the one that started it. Still holds up.",
+      "contentTitle": "Saved by the Bell (1993)",
+      "tubiLink": "https://tubitv.com/series/300016556",
+      "contentId": "300016556",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/078_title_1_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/078_title_1_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/078_title_1_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Comedy",
+      "year": "1993",
+      "runtime": "6 Seasons",
+      "rating": "TV-PG"
+    },
+    {
+      "position": 2,
+      "title": "Saved by the Bell: The College Years",
+      "description": "The gang leaves Bayside and heads to California University, which sounds like a dramatic reinvention. It is not. Zack is still scheming. Slater is still flexing. The stakes are slightly higher and the dorm rooms are slightly messier.\n\nThe College Years tries hard to be a grown-up show while keeping everything that made the original work. It doesn't fully stick the landing - the series ran one season - but if you're already deep in a Saved by the Bell rewatch, this is the natural next stop.\n\nThink of it as the epilogue. Not the main event, but you'll want to see how it ends.",
+      "contentTitle": "Saved by the Bell: The College Years (1994)",
+      "tubiLink": "https://tubitv.com/series/300016043",
+      "contentId": "300016043",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/078_title_2_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/078_title_2_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/078_title_2_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Comedy",
+      "year": "1994",
+      "runtime": "1 Season",
+      "rating": "TV-PG"
+    },
+    {
+      "position": 3,
+      "title": "Married... with Children",
+      "description": "When Married... with Children premiered, it was explicitly designed to be the opposite of every warm, lesson-delivering family sitcom on television. Al Bundy sells shoes, hates his life, and doesn't pretend otherwise. Peg watches TV and doesn't cook. The kids are disasters. Nobody learns anything.\n\nIt sounds bleak. It's actually one of the funniest shows ever made. Ed O'Neill plays Al completely straight - no winking, no redemption arc - which is the only reason the whole thing works. There's a scene in almost every episode where Al sits on the couch, hand in his waistband, and delivers a monologue about his misery with the conviction of a Shakespearean actor.\n\nThe show ran eleven seasons. America couldn't look away.",
+      "contentTitle": "Married... with Children (1987)",
+      "tubiLink": "https://tubitv.com/series/300018574",
+      "contentId": "300018574",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/078_title_3_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/078_title_3_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/078_title_3_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Comedy",
+      "year": "1987",
+      "runtime": "3 Seasons",
+      "rating": "TV-PG"
+    },
+    {
+      "position": 4,
+      "title": "Dawson's Creek",
+      "description": "No teenager in history has ever spoken the way Dawson Leery speaks. He's sixteen and he talks about his feelings with the vocabulary of a film school thesis. His friends do too. Everyone in Capeside, Massachusetts is apparently working through something and has a lot of words for it.\n\nIt should not work. It absolutely works. Dawson's Creek ran six seasons because it took its characters' inner lives completely seriously - even when those characters were being insufferable about it, which was often.\n\nThe Joey-Pacey-Dawson triangle is still one of the most debated in TV history. Pick a side before you start watching. You will have one by episode four.",
+      "contentTitle": "Dawson's Creek (2003)",
+      "tubiLink": "https://tubitv.com/series/300013803",
+      "contentId": "300013803",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/078_title_4_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/078_title_4_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/078_title_4_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Drama",
+      "year": "2003",
+      "runtime": "6 Seasons",
+      "rating": "TV-14"
+    },
+    {
+      "position": 5,
+      "title": "Growing Pains",
+      "description": "Jason Seaver is a psychiatrist who moves his practice into the house so his wife Maggie can go back to work as a journalist. In 1985, that was a quietly radical premise for a network sitcom. The show just let it be the normal situation and built a family comedy on top of it - no fanfare, no speeches about it.\n\nAlan Thicke plays Jason with a warmth that never tips into saccharine, and the Seaver kids - including a very young Leonardo DiCaprio in later seasons - give the show actual energy.\n\nSeven seasons in and it's still surprisingly easy to revisit.",
+      "contentTitle": "Growing Pains (1992)",
+      "tubiLink": "https://tubitv.com/series/300017722",
+      "contentId": "300017722",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/078_title_5_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/078_title_5_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/078_title_5_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Comedy",
+      "year": "1992",
+      "runtime": "7 Seasons",
+      "rating": "TV-PG"
+    },
+    {
+      "position": 6,
+      "title": "Sabrina the Teenage Witch",
+      "description": "Salem Saberhagen is a warlock who tried to take over the world, got caught, and was sentenced to spend a hundred years as a cat. He now lives in the attic and gives extremely bad advice with zero remorse.\n\nSabrina the Teenage Witch is technically about Sabrina - a sixteen-year-old figuring out how to use her powers without destroying her social life - but Salem steals every scene he's in, which is most of them. Nick Bakay voices him with the energy of someone who is genuinely inconvenienced by being a cat.\n\nMelissa Joan Hart plays Sabrina's chaos completely straight. The aunts are great. The magic is goofy. It's exactly what it should be.",
+      "contentTitle": "Sabrina the Teenage Witch (2003)",
+      "tubiLink": "https://tubitv.com/series/300016936",
+      "contentId": "300016936",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/078_title_6_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/078_title_6_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/078_title_6_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Comedy",
+      "year": "2003",
+      "runtime": "7 Seasons",
+      "rating": "TV-G"
+    },
+    {
+      "position": 7,
+      "title": "The Facts of Life",
+      "description": "Blair is rich and knows it. Jo rides a motorcycle and has no patience for Blair. Natalie is the funny one. Tootie has roller skates and information. Together, they're the core of a show that ran nine seasons and somehow never ran out of things to say.\n\nThe Facts of Life started as a Diff'rent Strokes spinoff and became its own institution. Mrs. Garrett - the housemother who actually cares about these kids - is the emotional anchor, and Charlotte Rae plays her with a warmth that makes every episode feel like it's happening somewhere safe.\n\nThe show tackled eating disorders, sexuality, and race in ways that were genuinely ahead of their time. No big speeches about it. It just handled it.",
+      "contentTitle": "The Facts of Life (1979)",
+      "tubiLink": "https://tubitv.com/series/300000119",
+      "contentId": "300000119",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/078_title_7_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/078_title_7_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/078_title_7_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Comedy",
+      "year": "1979",
+      "runtime": "9 Seasons",
+      "rating": "TV-PG"
+    },
+    {
+      "position": 8,
+      "title": "Perfect Strangers",
+      "description": "Balki Bartokomous arrives from a fictional Mediterranean island called Mypos with no knowledge of American customs and an absolute refusal to be embarrassed by this. His cousin Larry is embarrassed enough for both of them.\n\nBronson Pinchot built Balki entirely out of physical comedy and a specific kind of earnestness that never tips into naïveté. There's a recurring bit called the Dance of Joy - Balki and Larry leaping around the apartment when something good happens - that has no right to be as funny as it is every single time.\n\nEight seasons on the premise that two people who shouldn't work together keep making it work anyway. Pinchot and Mark Linn-Baker make a simple idea feel like something more.",
+      "contentTitle": "Perfect Strangers (1993)",
+      "tubiLink": "https://tubitv.com/series/300018235",
+      "contentId": "300018235",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/078_title_8_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/078_title_8_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/078_title_8_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Comedy",
+      "year": "1993",
+      "runtime": "8 Seasons",
+      "rating": "TV-PG"
+    },
+    {
+      "position": 9,
+      "title": "Diff'rent Strokes",
+      "description": "Gary Coleman's Arnold Jackson was one of the most recognizable faces on American television for a decade. The catchphrase is famous. What's easier to forget is how much the show was willing to take on.\n\nThe two-part storyline about a predator who befriends Arnold and Dudley - the bike shop episodes - aired in 1983 and was genuinely unsettling in a way that most family sitcoms wouldn't go near. The show trusted its audience, including its younger viewers, to handle difficult material.\n\nColeman carries every episode he's in, which is all of them. The chemistry between him and Todd Bridges as Willis is the real engine of the whole series.",
+      "contentTitle": "Diff'rent Strokes (1986)",
+      "tubiLink": "https://tubitv.com/series/300008356",
+      "contentId": "300008356",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/078_title_9_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/078_title_9_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/078_title_9_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Comedy",
+      "year": "1986",
+      "runtime": "8 Seasons",
+      "rating": "TV-PG"
+    },
+    {
+      "position": 10,
+      "title": "My Two Dads",
+      "description": "A judge looks at two men who both might be the father of a twelve-year-old girl and decides the solution is joint custody. To both of them. Simultaneously. In the same apartment.\n\nThe show commits completely to this being a reasonable outcome, and honestly, it earns it. Paul Reiser and Greg Evigan - one a financial type, one a free-spirited artist - bring enough genuine warmth that the absurd legal situation stops mattering after about ten minutes.\n\nStaci Keanan plays Nicole, the kid at the center of it, and she's the one who actually holds the show together. Warmer than you'd expect from a late-'80s family sitcom.",
+      "contentTitle": "My Two Dads (1990)",
+      "tubiLink": "https://tubitv.com/series/300008458",
+      "contentId": "300008458",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/078_title_10_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/078_title_10_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/078_title_10_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Comedy",
+      "year": "1990",
+      "runtime": "3 Seasons",
+      "rating": "TV-PG"
+    }
+  ],
+  "keepReading": {
+    "header": {
+      "title": "Keep Reading",
+      "subtitle": "More articles to explore"
+    },
+    "items": [
+      {
+        "id": "074",
+        "slug": "the-classic-cartoons-every-90s-kid-needs-to-revisit",
+        "eyebrow": "What to Watch",
+        "title": "The Classic Cartoons Every 90s Kid Needs to Revisit",
+        "subtitle": "The ones that were doing more than you realized.",
+        "categoryTag": "Shows",
+        "thumbnail": "/static/blog/the-t/thumbnails/074_thumbnail.jpg"
+      },
+      {
+        "id": "077",
+        "slug": "girlfriends-good-times-and-the-black-sitcoms-on-tubi",
+        "eyebrow": "What to Watch",
+        "title": "Girlfriends, Good Times, and the Black Sitcoms on Tubi",
+        "subtitle": "Decades of laughs, real rent, and friendships that don't let you off easy.",
+        "categoryTag": "Shows",
+        "thumbnail": "/static/blog/the-t/thumbnails/077_thumbnail.jpg"
+      },
+      {
+        "id": "027",
+        "slug": "the-funniest-comedy-shows-streaming-now",
+        "eyebrow": "What to Watch",
+        "title": "The Funniest Comedy Shows Streaming Now",
+        "subtitle": "The ones that actually hold up past the first episode.",
+        "categoryTag": "Shows",
+        "thumbnail": "/static/blog/the-t/thumbnails/027_thumbnail.jpg"
+      }
+    ]
+  },
+  "datePosted": "2026-05-26"
+}

@@ -155,6 +155,7 @@
     }
     .dd-item:last-child { border-bottom: none; }
     .dd-item:hover, .dd-item.highlighted { background: #f8fafb; }
+    .dd-item.dd-item-added { opacity: 0.5; cursor: default; }
     .dd-poster {
       width: 36px; height: 50px;
       border-radius: 4px;
@@ -611,6 +612,27 @@
     .ct-item.ct-unavailable:hover { border-color: #e2e4e8; background: #fff; }
 
     .ct-angle-wrap { margin-top: 14px; }
+
+    /* Manual pathway */
+    .manual-item {
+      display: flex; align-items: center; gap: 10px;
+      padding: 8px 10px; border: 1px solid #e2e4e8; border-radius: 8px;
+      background: #fff;
+    }
+    .manual-item-poster {
+      width: 32px; height: 44px; border-radius: 4px; object-fit: cover; flex-shrink: 0;
+      background: #f3f4f6;
+    }
+    .manual-item-info { flex: 1; min-width: 0; }
+    .manual-item-title { font-size: 13px; font-weight: 500; color: #1a1a1a; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .manual-item-meta { font-size: 11px; color: #9ca3af; margin-top: 2px; display: flex; align-items: center; gap: 6px; }
+    .manual-item-remove {
+      width: 22px; height: 22px; border-radius: 50%; border: none; background: #f3f4f6;
+      color: #9ca3af; font-size: 14px; cursor: pointer; flex-shrink: 0;
+      display: flex; align-items: center; justify-content: center; line-height: 1;
+      transition: background 0.12s, color 0.12s;
+    }
+    .manual-item-remove:hover { background: #fee2e2; color: #dc2626; }
   </style>
 </head>
 <body>
@@ -638,22 +660,8 @@
       </svg>
       Articles
     </a>
-    <a href="/history" class="ds-nav-item">
-      <svg class="ds-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8">
-        <path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
-      </svg>
-      History
-    </a>
-    <a href="/git" class="ds-nav-item">
-      <svg class="ds-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8">
-        <path stroke-linecap="round" stroke-linejoin="round" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"/>
-      </svg>
-      Git
-    </a>
-    <a href="/pipeline" class="ds-nav-item">
-      <svg class="ds-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8">
-        <path stroke-linecap="round" stroke-linejoin="round" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/>
-      </svg>
+      <a href="/pipeline" class="ds-nav-item">
+      <svg class="ds-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><circle cx="12" cy="12" r="9"/><polygon points="10,8 16,12 10,16" fill="currentColor" stroke="none"/></svg>
       Pipeline
     </a>
   </nav>
@@ -684,10 +692,9 @@
           <span class="pb-label">From Container</span>
           <span class="pb-desc">Pick from a Tubi category</span>
         </button>
-        <button class="pathway-btn" id="pw-manual" disabled>
+        <button class="pathway-btn" id="pw-manual" onclick="setPathway('manual')">
           <span class="pb-label">Manual Selection</span>
           <span class="pb-desc">Pick 5–10 titles</span>
-          <span class="pb-soon">Coming soon</span>
         </button>
       </div>
 
@@ -824,6 +831,57 @@
           <button class="generate-btn" id="listicle-generate-btn" disabled onclick="startListicleGenerate()" style="margin-top:14px;">
             <div class="btn-spinner" id="listicle-btn-spinner"></div>
             <span id="listicle-btn-label">Generate Listicle</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Pathway 4: Manual selection -->
+      <div id="pathway-manual" class="pathway-panel">
+        <label class="sec-label">Search titles<span class="hint">add 5–10 titles to your list</span></label>
+        <div class="search-wrap" style="position:relative;">
+          <svg class="search-icon" width="15" height="15" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
+          </svg>
+          <input
+            id="manual-search-input"
+            class="search-input"
+            type="text"
+            placeholder="Search by title or paste a content ID"
+            autocomplete="off"
+          />
+          <div class="search-spinner" id="manual-search-spinner"></div>
+          <div class="search-dropdown" id="manual-search-dropdown"></div>
+        </div>
+
+        <!-- Pinned list -->
+        <div id="manual-list-section" style="display:none;margin-top:16px;">
+          <div class="review-header">
+            <span class="review-header-label">Your titles</span>
+            <span class="review-count" id="manual-count"></span>
+          </div>
+          <div id="manual-list" style="display:flex;flex-direction:column;gap:6px;margin-top:8px;"></div>
+          <div class="review-min-notice" id="manual-min-notice" style="margin-top:8px;"></div>
+
+          <label class="sec-label" style="margin-top:14px;">Article angle<span class="hint">optional — leave blank to auto-derive from titles</span></label>
+          <input
+            id="manual-angle-input"
+            class="angle-input"
+            type="text"
+            placeholder="e.g. best horror movies on Tubi right now"
+            autocomplete="off"
+            maxlength="120"
+          />
+
+          <label class="sec-label" style="margin-top:12px;">Publish date<span class="hint">optional — shows availability info</span></label>
+          <input
+            id="manual-publish-date"
+            type="date"
+            style="width:100%;padding:9px 12px;border:1px solid #e2e4e8;border-radius:8px;font-size:14px;font-family:inherit;outline:none;background:#fff;color:#1a1a1a;transition:border-color 0.15s;box-sizing:border-box;"
+          />
+
+          <button class="generate-btn" id="manual-generate-btn" disabled onclick="startManualListicle()" style="margin-top:14px;">
+            <div class="btn-spinner" id="manual-btn-spinner"></div>
+            <span id="manual-btn-label">Generate Listicle</span>
           </button>
         </div>
       </div>
@@ -1910,10 +1968,194 @@ function updateCtCount() {
   }
 }
 
+// ── Manual pathway ────────────────────────────────────────────────────────────
+
+let manualTitles = []; // { id, title, year, type, description, posterart, availabilityEnds }
+
+const manualSearchInput = document.getElementById('manual-search-input');
+const manualSearchDropdown = document.getElementById('manual-search-dropdown');
+const manualSearchSpinner = document.getElementById('manual-search-spinner');
+
+let manualSearchTimer = null;
+manualSearchInput.addEventListener('input', () => {
+  const q = manualSearchInput.value.trim();
+  if (q.length < 2) { manualSearchDropdown.classList.remove('open'); return; }
+  clearTimeout(manualSearchTimer);
+  manualSearchTimer = setTimeout(async () => {
+    manualSearchSpinner.classList.add('visible');
+    try {
+      const res = await fetch(`${API}/api/search?q=${encodeURIComponent(q)}`);
+      const results = await res.json();
+      renderManualDropdown(results);
+    } catch { manualSearchDropdown.classList.remove('open'); }
+    finally { manualSearchSpinner.classList.remove('visible'); }
+  }, 300);
+});
+
+manualSearchInput.addEventListener('keydown', e => {
+  if (e.key === 'Escape') manualSearchDropdown.classList.remove('open');
+  if (e.key === 'Enter') { const hi = manualSearchDropdown.querySelector('.highlighted'); if (hi) hi.click(); }
+  if (e.key === 'ArrowDown' || e.key === 'ArrowUp') {
+    e.preventDefault();
+    const items = [...manualSearchDropdown.querySelectorAll('.dd-item')];
+    const cur = items.findIndex(i => i.classList.contains('highlighted'));
+    const next = e.key === 'ArrowDown' ? Math.min(cur + 1, items.length - 1) : Math.max(cur - 1, 0);
+    items.forEach((i, idx) => i.classList.toggle('highlighted', idx === next));
+  }
+});
+
+document.addEventListener('click', e => {
+  if (!manualSearchInput.contains(e.target) && !manualSearchDropdown.contains(e.target))
+    manualSearchDropdown.classList.remove('open');
+});
+
+function renderManualDropdown(results) {
+  manualSearchDropdown.innerHTML = '';
+  if (!results.length) {
+    manualSearchDropdown.innerHTML = '<div class="dd-empty">No results found</div>';
+    manualSearchDropdown.classList.add('open');
+    return;
+  }
+  results.forEach(r => {
+    const alreadyAdded = manualTitles.some(t => t.id === r.id);
+    const el = document.createElement('div');
+    el.className = 'dd-item' + (alreadyAdded ? ' dd-item-added' : '');
+    el.innerHTML = `
+      ${r.posterart ? `<img class="dd-poster" src="${esc(r.posterart)}" alt="" onerror="this.style.display='none'">` : '<div class="dd-poster-placeholder"></div>'}
+      <div class="dd-info">
+        <div class="dd-title">${esc(r.title)}${alreadyAdded ? ' <span style="color:#9ca3af;font-size:10px;">added</span>' : ''}</div>
+        <div class="dd-meta">${r.year || ''}${r.year && r.type ? ' · ' : ''}${r.type === 'series' ? 'Series' : r.type === 'movie' ? 'Movie' : ''}</div>
+      </div>
+    `;
+    if (!alreadyAdded) el.addEventListener('click', () => addManualTitle(r));
+    manualSearchDropdown.appendChild(el);
+  });
+  manualSearchDropdown.classList.add('open');
+}
+
+async function addManualTitle(t) {
+  if (manualTitles.some(m => m.id === t.id)) return;
+  if (manualTitles.length >= 10) {
+    updateManualNotice(); return;
+  }
+
+  // Fetch availability
+  let availabilityEnds = undefined;
+  try {
+    const res = await fetch(`${API}/api/availability`, {
+      method: 'POST', headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ contentIds: [t.id] }),
+    });
+    if (res.ok) {
+      const data = await res.json();
+      availabilityEnds = data[0]?.availability_ends ?? null;
+    }
+  } catch {}
+
+  manualTitles.push({ ...t, availabilityEnds });
+  manualSearchDropdown.classList.remove('open');
+  manualSearchInput.value = '';
+  renderManualList();
+}
+
+function renderManualList() {
+  const list = document.getElementById('manual-list');
+  const section = document.getElementById('manual-list-section');
+  list.innerHTML = '';
+
+  const publishDate = document.getElementById('manual-publish-date').value;
+
+  manualTitles.forEach((t, i) => {
+    const cutoff = publishDate ? new Date(new Date(publishDate).getTime() + 30 * 24 * 60 * 60 * 1000) : null;
+    const expired = cutoff && t.availabilityEnds && new Date(t.availabilityEnds) < cutoff;
+    const el = document.createElement('div');
+    el.className = 'manual-item' + (expired ? ' ct-unavailable' : '');
+    el.innerHTML = `
+      ${t.posterart ? `<img class="manual-item-poster" src="${esc(t.posterart)}" alt="" onerror="this.style.display='none'">` : '<div class="manual-item-poster"></div>'}
+      <div class="manual-item-info">
+        <div class="manual-item-title">${esc(t.title)}</div>
+        <div class="manual-item-meta">
+          ${t.year ? `<span>${t.year}</span>` : ''}
+          ${t.type ? `<span>${t.type === 'series' ? 'Series' : 'Movie'}</span>` : ''}
+          ${expiryBadge(t.availabilityEnds)}
+        </div>
+      </div>
+      <button class="manual-item-remove" data-idx="${i}" title="Remove">×</button>
+    `;
+    el.querySelector('.manual-item-remove').addEventListener('click', () => {
+      manualTitles.splice(i, 1);
+      renderManualList();
+    });
+    list.appendChild(el);
+  });
+
+  section.style.display = manualTitles.length ? 'block' : 'none';
+  updateManualNotice();
+}
+
+function updateManualNotice() {
+  const count = manualTitles.length;
+  const notice = document.getElementById('manual-min-notice');
+  const btn = document.getElementById('manual-generate-btn');
+  document.getElementById('manual-count').textContent = `${count}/10`;
+  if (count >= 10) {
+    notice.textContent = '10 titles selected — at the limit';
+    notice.classList.add('met');
+  } else if (count >= 5) {
+    notice.textContent = `${count} titles — ready to generate`;
+    notice.classList.add('met');
+  } else {
+    notice.textContent = `Add at least ${5 - count} more title${5 - count !== 1 ? 's' : ''}`;
+    notice.classList.remove('met');
+  }
+  btn.disabled = count < 5;
+}
+
+// Re-render list when publish date changes (updates availability highlight)
+document.getElementById('manual-publish-date').addEventListener('change', renderManualList);
+
+function startManualListicle() {
+  if (manualTitles.length < 5 || generating) return;
+  const angle = document.getElementById('manual-angle-input').value.trim()
+    || 'Derive your own angle and headline from the titles provided';
+
+  const titles = manualTitles.map(t => ({ id: t.id, title: t.title, year: t.year, description: t.description, posterart: t.posterart }));
+
+  generating = true;
+  const btn = document.getElementById('manual-generate-btn');
+  const spinner = document.getElementById('manual-btn-spinner');
+  const label = document.getElementById('manual-btn-label');
+  btn.disabled = true;
+  spinner.classList.add('visible');
+  label.textContent = 'Generating…';
+
+  document.getElementById('pp-idle').style.display = 'none';
+  document.getElementById('pp-active').classList.add('visible');
+  document.getElementById('pp-heading').textContent = 'Generating listicle…';
+  document.getElementById('pp-subheading').textContent = angle;
+  document.getElementById('done-card').classList.remove('visible');
+  document.getElementById('error-banner').classList.remove('visible');
+  document.getElementById('issue-list').innerHTML = '';
+  document.getElementById('issue-list').classList.remove('visible');
+  document.getElementById('attempt-badge').classList.remove('visible');
+  currentAttempt = 0;
+  for (let i = 1; i <= 5; i++) setDotState(i, '');
+  ['metadata','prompts','generate','quality','brand','save'].forEach(s => setStage(s, 'idle'));
+
+  runSSE_listicle(angle, titles).then(() => {
+    generating = false;
+    spinner.classList.remove('visible');
+    label.textContent = 'Generate Listicle';
+    btn.disabled = manualTitles.length < 5;
+  });
+}
+
+// ── Container pathway ─────────────────────────────────────────────────────────
+
 function startContainerListicle() {
   if (selectedContainerTitleIds.size < 5 || generating) return;
   const angle = document.getElementById('ct-angle-input').value.trim()
-    || `Best titles from ${selectedContainer?.title || 'Tubi'}`;
+    || 'Derive your own angle and headline from the titles provided — do not use the container name';
 
   const titles = containerTitles
     .filter(t => selectedContainerTitleIds.has(t.id))

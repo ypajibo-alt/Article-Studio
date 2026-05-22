@@ -1,0 +1,160 @@
+{
+  "nav": {
+    "logoLabel": "The T",
+    "links": [
+      {
+        "label": "Home",
+        "href": "/the-t"
+      },
+      {
+        "label": "Coming Soon",
+        "href": "/the-t/coming-soon"
+      },
+      {
+        "label": "Shows",
+        "href": "/the-t/shows"
+      },
+      {
+        "label": "Movies",
+        "href": "/the-t/movies"
+      }
+    ],
+    "explore": {
+      "label": "Explore",
+      "items": [
+        {
+          "label": "FIFA World Cup 2026",
+          "href": "/the-t/fifa-world-cup"
+        },
+        {
+          "label": "Horror",
+          "href": "/the-t/horror"
+        },
+        {
+          "label": "Tubi Originals",
+          "href": "/the-t/originals"
+        },
+        {
+          "label": "Sports",
+          "href": "/the-t/sports"
+        }
+      ],
+      "moreGenresLabel": "More genres",
+      "moreGenresHref": "/the-t/genres"
+    },
+    "mobileMenu": {
+      "open": "Open menu",
+      "close": "Close menu"
+    }
+  },
+  "id": "015",
+  "slug": "fifa-world-cup-2026-on-tubi",
+  "categoryTag": "Coming Soon",
+  "type": "article",
+  "title": "FIFA World Cup 2026 on Tubi",
+  "subtitle": "Start with the documentary already streaming, then come back for Mexico and the USMNT kicking off live on Tubi in June.",
+  "datePosted": "2026-05-26",
+  "intro": "Destination World Cup 2026 is already streaming on Tubi, and the tournament is just weeks away. Episode 1 follows Weston McKennie recharging in Dallas, Harry Wilson facing a must-win moment, and Marc Cucurella pushing toward the biggest stage of his career. The full World Cup hub is live now with Fox Sports content, tournament clips, replays, and more. Then the live matches begin: Mexico vs. South Africa on June 11 and USA vs. Paraguay on June 12. All of it is free on Tubi, all in one place, and ready when you are.",
+  "quote": "The road to the World Cup starts now, and the matches are waiting right behind it.",
+  "faq": {
+    "header": {
+      "title": "More details"
+    },
+    "items": [
+      {
+        "question": "When does the FIFA World Cup 2026™ start?",
+        "answer": "FIFA World Cup 2026™ kicks off with an opening ceremony and match on Thursday, June 11. Pregame 1:00 PM ET. Kickoff 3:00 PM ET. You can stream both events LIVE & FREE in 4K* on Tubi with a free account."
+      },
+      {
+        "question": "Do I need an account to watch FIFA World Cup 2026™ on Tubi?",
+        "answer": "Yes. You need to register for a free account and sign in, but it’s quick and easy. We promise."
+      },
+      {
+        "question": "What devices can I use to stream FIFA World Cup 2026™ on Tubi?",
+        "answer": "Tubi works on most smart TVs, mobile devices, streaming devices, gaming consoles, and web browsers. Visit the Help Center for a complete list of supported devices. Don’t wanna miss a gooooooal? Get the Tubi mobile app to stream on the go."
+      }
+    ]
+  },
+  "images": {
+    "thumbnail": "/static/blog/the-t/thumbnails/015_thumbnail.jpg",
+    "hero": "/static/blog/the-t/heroes/015_hero.jpg",
+    "og": "/static/blog/the-t/og/015_og.jpg"
+  },
+  "keepReading": {
+    "header": {
+      "title": "Keep Reading",
+      "subtitle": "More articles to explore"
+    },
+    "items": [
+      {
+        "id": "003",
+        "slug": "how-to-watch-2026-world-cup-matches-live-for-free-on-tubi",
+        "eyebrow": "What to Watch",
+        "title": "How to Watch 2026 World Cup Matches Live for Free on Tubi",
+        "subtitle": "The World Cup hub is live on Tubi now. Stream Mexico and the USMNT free during opening week.",
+        "categoryTag": "Sports",
+        "thumbnail": "/static/blog/the-t/thumbnails/003_thumbnail.png"
+      },
+      {
+        "id": "060",
+        "slug": "best-soccer-stories-to-stream",
+        "eyebrow": "What to Watch",
+        "title": "Beyond the Pitch: The Best Soccer Stories to Stream Now",
+        "subtitle": "The stories behind the game, before the World Cup begins",
+        "categoryTag": "Sports",
+        "thumbnail": "/static/blog/the-t/thumbnails/060_thumbnail.jpg"
+      },
+      {
+        "id": "062",
+        "slug": "how-to-watch-fifa-world-cup-2026-free-on-tubi",
+        "eyebrow": "Guide",
+        "title": "How to Watch FIFA World Cup 2026 Free on Tubi",
+        "subtitle": "Stream Mexico and the USMNT live on Tubi and catch full replays after the final whistle.",
+        "categoryTag": "Sports",
+        "thumbnail": "/static/blog/the-t/thumbnails/062_thumbnail.png"
+      }
+    ]
+  },
+  "hero": {
+    "watchLink": "https://tubitv.com/hubs/fifa-world-cup-fox-hub",
+    "watchNowLabel": "Watch Now"
+  },
+  "whyWatch": {
+    "header": {
+      "title": "Why Watch It"
+    },
+    "body": "The World Cup is free on Tubi this summer. Not a trial, not a promo, not another subscription to remember.\n\nThis is the first 48-team World Cup, with 3 host nations and 104 matches across the tournament. Tubi has the live US group opener, the Mexico opener, VOD replays for both, and an exclusive documentary series that gets you close to the players before the first whistle blows. If you want the story before the stakes, McKennie's episode is already there.\n\nStart with Destination World Cup 2026 today, visit the hub now at tubitv.com/hubs/fifa-world-cup-fox-hub, and set a reminder for June 11 at 1 PM CT and June 12 at 6 PM PT. The USMNT hasn't played a home World Cup match in 32 years. This one is free on an app that's probably already on your TV."
+  },
+  "gallery": {
+    "header": {
+      "title": "Media Shots"
+    },
+    "items": [
+      "/static/blog/the-t/media/015_media_1.png",
+      "/static/blog/the-t/media/015_media_2.png"
+    ]
+  },
+  "whatsComing": {
+    "header": {
+      "title": "What's Coming"
+    },
+    "items": [
+      {
+        "heading": "The hub is live now",
+        "paragraph": "The World Cup hub is live now at tubitv.com/hubs/fifa-world-cup-fox-hub and runs through July 19. It pulls together Fox Sports VOD, tournament clips, linear programming, and Tubi's World Cup coverage in one place, so you can move from the stories behind the players to the matches themselves without hunting around."
+      },
+      {
+        "heading": "Mexico vs. South Africa, June 11, 1:00 PM CT",
+        "paragraph": "Group A opens in Mexico City with Mexico playing in front of a home crowd that will make the atmosphere feel like anything but a neutral venue. South Africa comes in with a real chance to make that opener uncomfortable, which is exactly what makes first matches worth watching. Stream it live on Tubi with a free account."
+      },
+      {
+        "heading": "USA vs. Paraguay, June 12, 6:00 PM PT",
+        "paragraph": "The USMNT plays its first World Cup match on home soil since 1994 at Los Angeles Stadium in Inglewood. Paraguay is a serious opening test, and the US squad brings Weston McKennie, Ricardo Pepi, and Sergiño Dest into a match that already feels bigger than a group stage opener should. Fox pregame and post-game coverage are included."
+      },
+      {
+        "heading": "VOD replays, no account required",
+        "paragraph": "Miss the live match? The full 90-minute replay goes up within 1 to 2 hours after the final whistle. No sign-in required, no subscription needed. Pregame and post-game coverage are not included, but the full match is there when you're ready for it."
+      }
+    ]
+  }
+}

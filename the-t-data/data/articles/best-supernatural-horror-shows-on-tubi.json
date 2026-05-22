@@ -1,0 +1,289 @@
+{
+  "nav": {
+    "logoLabel": "The T",
+    "links": [
+      {
+        "label": "Home",
+        "href": "/the-t"
+      },
+      {
+        "label": "Coming Soon",
+        "href": "/the-t/coming-soon"
+      },
+      {
+        "label": "Shows",
+        "href": "/the-t/shows"
+      },
+      {
+        "label": "Movies",
+        "href": "/the-t/movies"
+      }
+    ],
+    "explore": {
+      "label": "Explore",
+      "items": [
+        {
+          "label": "FIFA World Cup 2026",
+          "href": "/the-t/fifa-world-cup"
+        },
+        {
+          "label": "Horror",
+          "href": "/the-t/horror"
+        },
+        {
+          "label": "Tubi Originals",
+          "href": "/the-t/originals"
+        },
+        {
+          "label": "Sports",
+          "href": "/the-t/sports"
+        }
+      ],
+      "moreGenresLabel": "More genres",
+      "moreGenresHref": "/the-t/genres"
+    },
+    "mobileMenu": {
+      "open": "Open menu",
+      "close": "Close menu"
+    }
+  },
+  "id": "044",
+  "slug": "best-supernatural-horror-shows-on-tubi",
+  "categoryTag": "Horror",
+  "type": "listicle",
+  "title": "Best Supernatural Horror Shows on Tubi",
+  "subtitle": "Stories where the threat feels just out of reach.",
+  "intro": "The best supernatural horror shows don't just spook you. They put you somewhere wrong and dare you to figure out why.\n\nFreddy Krueger leaves Elm Street entirely and starts haunting strangers in their darkest corners. A small Pennsylvania town starts losing its grip on what a monster even is. A couple moves into a beautiful Paris apartment and the neighbors are a little too interested in what's growing inside her. These aren't vibes. They're premises with teeth.\n\nHere are the best supernatural horror shows on Tubi right now, all free, all waiting.",
+  "images": {
+    "thumbnail": "/static/blog/the-t/thumbnails/044_thumbnail.jpg",
+    "og": "/static/blog/the-t/og/044_og.jpg"
+  },
+  "items": [
+    {
+      "position": 1,
+      "title": "The Twilight Zone",
+      "description": "Rod Serling built a show where the horror is never the monster. It's the reveal that the monster was always you, or someone you trusted, or the system you thought was on your side.\n\nThe Twilight Zone runs on moral logic. A wish gets granted wrong. A man survives the apocalypse but breaks his glasses. A soldier gets to live forever and slowly figures out what that actually means. Each episode sets up one clean premise and then closes the door behind you.\n\nThe twist endings aren't cheap. They're earned. Sixty-plus years later and every anthology show that came after is still trying to figure out how Serling made it look this easy.",
+      "contentTitle": "The Twilight Zone (1959)",
+      "tubiLink": "https://tubitv.com/series/300017350",
+      "contentId": "300017350",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/044_title_1_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/044_title_1_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/044_title_1_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Sci-Fi",
+      "year": "1959",
+      "runtime": "5 Seasons",
+      "rating": "TV-PG"
+    },
+    {
+      "position": 2,
+      "title": "Hemlock Grove",
+      "description": "A girl is found dead on the outskirts of town, and the two most obvious suspects are a Romani outsider and the strange, wealthy kid from the mansion on the hill. The show wants you to pick one. It keeps moving the answer.\n\nFamke Janssen plays the mansion's matriarch with a particular brand of calm that makes every scene she's in feel like a held breath.\n\nThe werewolf transformation sequence here is genuinely one of the most unsettling things on television. Not because it's gory. Because of how long it takes, and how much it clearly costs the person going through it. The supernatural in Hemlock Grove isn't spectacle. It's consequence.",
+      "contentTitle": "Hemlock Grove (2015)",
+      "tubiLink": "https://tubitv.com/series/300018273",
+      "contentId": "300018273",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/044_title_2_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/044_title_2_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/044_title_2_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Thriller",
+      "year": "2015",
+      "runtime": "3 Seasons",
+      "rating": "TV-MA"
+    },
+    {
+      "position": 3,
+      "title": "Rosemary's Baby",
+      "description": "Zoe Saldana plays Rosemary, a woman who moves to Paris with her husband and immediately starts feeling like the city is watching her. The apartment is gorgeous. The neighbors are warm and attentive in a way that takes a few episodes to start feeling like surveillance.\n\nThis miniseries remake moves the setting from New York to Paris and leans into the specific dread of being a stranger somewhere beautiful - not knowing who to trust when you don't fully know the language or the customs.\n\nSaldana doesn't panic. She calculates, quietly, while everything around her keeps insisting she's fine.",
+      "contentTitle": "Rosemary's Baby (2014)",
+      "tubiLink": "https://tubitv.com/series/300005644",
+      "contentId": "300005644",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/044_title_3_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/044_title_3_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/044_title_3_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Thriller",
+      "year": "2014",
+      "runtime": "1 Season",
+      "rating": "TV-14"
+    },
+    {
+      "position": 4,
+      "title": "Goosebumps",
+      "description": "R.L. Stine's formula is deceptively simple: take something completely ordinary - a new camera, a haunted mask, a ventriloquist dummy - and let it go wrong in one very specific direction. The series commits to that formula every single episode, and the commitment is what makes it work.\n\nSlappy the dummy doesn't scare kids because he's creepy. He scares them because he starts out as a toy and stops being one, and the line between those two states is never clearly marked.\n\nFor a show aimed at kids, it has a genuinely unsettling relationship with control - who has it, who loses it, and how fast that switch can happen.",
+      "contentTitle": "Goosebumps (1998)",
+      "tubiLink": "https://tubitv.com/series/300013625",
+      "contentId": "300013625",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/044_title_4_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/044_title_4_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/044_title_4_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Horror",
+      "year": "1998",
+      "runtime": "4 Seasons",
+      "rating": "TV-G"
+    },
+    {
+      "position": 5,
+      "title": "Freddy's Nightmares",
+      "description": "Yes, Freddy Krueger is here. But he's not hunting teenagers in their sleep - he's hosting. Freddy's Nightmares uses him as a guide through standalone horror stories, which turns out to be a smarter use of the character than another sequel would have been.\n\nRobert Englund plays it with the same theatrical menace that made the films work, but freed from a single narrative, Freddy becomes something closer to a force of nature than a villain. The stories go places the films couldn't - smaller, stranger, more personal.\n\nSome episodes feel like fever dreams. A few of them genuinely don't resolve. That's not a flaw.",
+      "contentTitle": "Freddy's Nightmares (1990)",
+      "tubiLink": "https://tubitv.com/series/300017478",
+      "contentId": "300017478",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/044_title_5_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/044_title_5_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/044_title_5_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Horror",
+      "year": "1990",
+      "runtime": "2 Seasons",
+      "rating": "TV-14"
+    },
+    {
+      "position": 6,
+      "title": "Two Sentence Horror Stories",
+      "description": "Each episode starts with a two-sentence horror prompt and builds a complete story around it. The supernatural is always present, but so is something else. A woman being watched. A neighborhood that doesn't want you there. A body that stops feeling like yours.\n\nThe show uses horror as a container for fears that already exist in everyday life, then drops one supernatural element in to make them impossible to look away from. Whose fears get centered here is not incidental - it's the whole point.\n\nShort episodes, high density. The kind of show where you finish one and immediately start the next.",
+      "contentTitle": "Two Sentence Horror Stories (2017)",
+      "tubiLink": "https://tubitv.com/series/300017707",
+      "contentId": "300017707",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/044_title_6_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/044_title_6_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/044_title_6_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Horror",
+      "year": "2017",
+      "runtime": "1 Season",
+      "rating": "TV-MA"
+    },
+    {
+      "position": 7,
+      "title": "Z Nation",
+      "description": "One man's blood might be the only thing that can save humanity, and a ragtag team has to get him across a zombie-infested country to the last working lab. Z Nation knows that's a lot, so it leans into the absurdity - zombie bears, a nuclear zombie, a baby that may or may not be the antichrist.\n\nBut the comedy never fully swallows the stakes. People die. The mission actually matters.\n\nThere's a character named Murphy who carries the weight of being the last hope for the human species and handles it about as well as you'd expect a regular person to handle that information. The laughs land because the dread underneath them is real.",
+      "contentTitle": "Z Nation (2018)",
+      "tubiLink": "https://tubitv.com/series/300012615",
+      "contentId": "300012615",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/044_title_7_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/044_title_7_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/044_title_7_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Action",
+      "year": "2018",
+      "runtime": "5 Seasons",
+      "rating": "TV-14"
+    },
+    {
+      "position": 8,
+      "title": "Tales of Tomorrow",
+      "description": "Tales of Tomorrow aired live in the early 1950s. Every performance you're watching was the only one. No second takes, no safety net.\n\nThe show adapted Frankenstein, 20,000 Leagues Under the Sea, and other genre classics before anyone had figured out what science fiction television was even supposed to look like. There's a famous episode where Lon Chaney Jr., playing the creature, didn't realize the cameras were rolling and handled the props too gently - he thought it was still rehearsal. That moment is still in the broadcast.\n\nWatching it now feels less like watching old TV and more like watching something being invented in real time.",
+      "contentTitle": "Tales of Tomorrow (1953)",
+      "tubiLink": "https://tubitv.com/series/300000572",
+      "contentId": "300000572",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/044_title_8_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/044_title_8_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/044_title_8_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Drama",
+      "year": "1953",
+      "runtime": "2 Seasons",
+      "rating": "TV-PG"
+    },
+    {
+      "position": 9,
+      "title": "The Nightmare Room",
+      "description": "R.L. Stine's second anthology series goes darker than Goosebumps in one specific way: the threats here are harder to name. It's not always a monster or a haunted object. Sometimes it's a new school where something is just off about the other students. Sometimes it's a dream that keeps bleeding into the day.\n\nThe show puts teenagers in situations where the normal safety nets - parents, teachers, the basic logic of the real world - have quietly stopped working. The kids have to figure that out before it's too late.\n\nFor a show aimed at the same age group as Goosebumps, it has a noticeably more unsettling relationship with reality itself.",
+      "contentTitle": "The Nightmare Room (2002)",
+      "tubiLink": "https://tubitv.com/series/300017488",
+      "contentId": "300017488",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/044_title_9_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/044_title_9_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/044_title_9_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Horror",
+      "year": "2002",
+      "runtime": "1 Season",
+      "rating": "TV-PG"
+    },
+    {
+      "position": 10,
+      "title": "Tales From the Stranger Side",
+      "description": "A woman obsessed with staying young. A man who has a demon for a friend and is starting to wonder if that's a problem. Each episode builds around a premise that sounds almost mundane - until it very much isn't.\n\nThe show's move is keeping the characters recognizable even as their situations go completely sideways. The horror lands harder when you understand exactly what the person stood to lose.\n\nShort, punchy episodes with twist endings that don't feel telegraphed. The demon friend episode in particular commits to its premise in a direction you probably won't see coming, and the show doesn't flinch when it gets there.",
+      "contentTitle": "Tales From the Stranger Side (2021)",
+      "tubiLink": "https://tubitv.com/series/300019005",
+      "contentId": "300019005",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/044_title_10_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/044_title_10_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/044_title_10_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Horror",
+      "year": "2021",
+      "runtime": "2 Seasons",
+      "rating": "TV-MA"
+    }
+  ],
+  "keepReading": {
+    "header": {
+      "title": "Keep Reading",
+      "subtitle": "More articles to explore"
+    },
+    "items": [
+      {
+        "id": "035",
+        "slug": "the-scariest-horror-movies-to-watch-right-now",
+        "eyebrow": "What to Watch",
+        "title": "The Scariest Horror Movies to Watch Right Now",
+        "subtitle": "Not just loud scares. The kind that stay with you after.",
+        "categoryTag": "Movies",
+        "thumbnail": "/static/blog/the-t/thumbnails/035_thumbnail.jpg"
+      },
+      {
+        "id": "040",
+        "slug": "best-horror-shows-on-tubi-right-now",
+        "eyebrow": "Binge-Worthy",
+        "title": "Best Horror Shows on Tubi Right Now",
+        "subtitle": "A range of horror that goes beyond the obvious picks.",
+        "categoryTag": "Horror",
+        "thumbnail": "/static/blog/the-t/thumbnails/040_thumbnail.jpg"
+      },
+      {
+        "id": "038",
+        "slug": "movies-that-will-haunt-you-in-a-good-way",
+        "eyebrow": "What to Watch",
+        "title": "Movies That Will Haunt You (In a Good Way)",
+        "subtitle": "The kind that linger a little after the credits.",
+        "categoryTag": "Movies",
+        "thumbnail": "/static/blog/the-t/thumbnails/038_thumbnail.jpg"
+      }
+    ]
+  },
+  "datePosted": "2026-05-26"
+}

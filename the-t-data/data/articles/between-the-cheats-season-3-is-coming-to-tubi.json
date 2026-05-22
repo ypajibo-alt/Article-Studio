@@ -1,0 +1,152 @@
+{
+  "nav": {
+    "logoLabel": "The T",
+    "links": [
+      {
+        "label": "Home",
+        "href": "/the-t"
+      },
+      {
+        "label": "Coming Soon",
+        "href": "/the-t/coming-soon"
+      },
+      {
+        "label": "Shows",
+        "href": "/the-t/shows"
+      },
+      {
+        "label": "Movies",
+        "href": "/the-t/movies"
+      }
+    ],
+    "explore": {
+      "label": "Explore",
+      "items": [
+        {
+          "label": "FIFA World Cup 2026",
+          "href": "/the-t/fifa-world-cup"
+        },
+        {
+          "label": "Horror",
+          "href": "/the-t/horror"
+        },
+        {
+          "label": "Tubi Originals",
+          "href": "/the-t/originals"
+        },
+        {
+          "label": "Sports",
+          "href": "/the-t/sports"
+        }
+      ],
+      "moreGenresLabel": "More genres",
+      "moreGenresHref": "/the-t/genres"
+    },
+    "mobileMenu": {
+      "open": "Open menu",
+      "close": "Close menu"
+    }
+  },
+  "id": "052",
+  "slug": "between-the-cheats-season-3-is-coming-to-tubi",
+  "categoryTag": "Originals",
+  "type": "article",
+  "title": "Between the Cheats Season 3 Is Coming to Tubi",
+  "subtitle": "When infidelity ends in murder, the receipts are all real.",
+  "datePosted": "2026-05-26",
+  "intro": "True crime has covered every angle of the human capacity for violence, but Between the Cheats zeroes in on something most of us already know is dangerous: the moment trust dies. This series isn't interested in fictional drama. It pulls from actual police footage, real testimony, and the people who were standing closest when everything collapsed.\n\nThere's something about infidelity-driven crime that cuts through the noise right now. We're in a moment where everyone has an opinion about loyalty, betrayal, and what people are capable of when they feel wronged. Between the Cheats doesn't theorize about it. It shows you.\n\nEach episode is its own contained gut punch. A relationship fractures, someone makes an irreversible decision, and the cameras and courts caught all of it. This is the kind of true crime that doesn't let you keep a comfortable distance.",
+  "cast": {
+    "header": {
+      "title": "The Cast"
+    },
+    "items": [
+      {
+        "name": "Jesse Weber",
+        "bio": "Weber is a legal analyst who knows how to translate courtroom complexity into something a real person can follow. He brings credibility and pace to the storytelling here, keeping the legal threads tight without losing the human weight underneath each case."
+      },
+      {
+        "name": "Elizabeth Millner",
+        "bio": "Millner grounds the series in the emotional reality of each story. She has a way of holding space for the people who survived these cases without letting the narrative tip into exploitation. That balance is harder to pull off than it looks."
+      }
+    ]
+  },
+  "quote": "You thought it was just a lie. It was a fuse.",
+  "faq": {
+    "header": {
+      "title": "More details"
+    },
+    "items": [
+      {
+        "question": "Who directed the film?",
+        "answer": "Director information is unavailable."
+      },
+      {
+        "question": "Who is in the cast?",
+        "answer": "Jesse Weber, Elizabeth Millner"
+      },
+      {
+        "question": "Where can I stream this?",
+        "answer": "Watch free on Tubi"
+      }
+    ]
+  },
+  "images": {
+    "thumbnail": "/static/blog/the-t/thumbnails/052_thumbnail.jpg",
+    "hero": "/static/blog/the-t/heroes/052_hero.jpg",
+    "og": "/static/blog/the-t/og/052_og.jpg"
+  },
+  "keepReading": {
+    "header": {
+      "title": "Keep Reading",
+      "subtitle": "More articles to explore"
+    },
+    "items": [
+      {
+        "id": "028",
+        "slug": "the-best-reality-shows-streaming-free-on-tubi",
+        "eyebrow": "What to Watch",
+        "title": "The Best Reality Shows Streaming Free on Tubi",
+        "subtitle": "Low stakes, high chaos, and easy to lose an entire evening to.",
+        "categoryTag": "Shows",
+        "thumbnail": "/static/blog/the-t/thumbnails/028_thumbnail.jpg"
+      },
+      {
+        "id": "014",
+        "slug": "the-most-addictive-shows-on-tubi",
+        "eyebrow": "What to Watch",
+        "title": "Binge-Worthy TV: The Most Addictive Shows on Tubi",
+        "subtitle": "Shows that stack quickly and are harder to stop than you expect.",
+        "categoryTag": "Shows",
+        "thumbnail": "/static/blog/the-t/thumbnails/014_thumbnail.jpg"
+      },
+      {
+        "id": "032",
+        "slug": "true-crime-cases-on-tubi",
+        "eyebrow": "What to Watch",
+        "title": "Unravel These True Crime Cases on Tubi",
+        "subtitle": "The cases that get heavier the more you understand them.",
+        "categoryTag": "Shows",
+        "thumbnail": "/static/blog/the-t/thumbnails/032_thumbnail.jpg"
+      }
+    ]
+  },
+  "hero": {
+    "watchLink": "https://tubitv.com/series/300018074/between-the-cheats",
+    "contentId": "300018074",
+    "watchNowLabel": "Watch Now"
+  },
+  "whyWatch": {
+    "header": {
+      "title": "Why Watch It"
+    },
+    "body": "Between the Cheats works because it never has to invent stakes. The stakes were already there, already documented, already adjudicated. The real police footage isn't a gimmick. It's evidence. And watching the series, you feel the weight of that word in a way that dramatized crime shows rarely achieve."
+  },
+  "gallery": {
+    "header": {
+      "title": "Media Shots"
+    },
+    "items": [
+      "/static/blog/the-t/media/052_media_1.jpg"
+    ]
+  }
+}

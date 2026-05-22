@@ -1,0 +1,289 @@
+{
+  "nav": {
+    "logoLabel": "The T",
+    "links": [
+      {
+        "label": "Home",
+        "href": "/the-t"
+      },
+      {
+        "label": "Coming Soon",
+        "href": "/the-t/coming-soon"
+      },
+      {
+        "label": "Shows",
+        "href": "/the-t/shows"
+      },
+      {
+        "label": "Movies",
+        "href": "/the-t/movies"
+      }
+    ],
+    "explore": {
+      "label": "Explore",
+      "items": [
+        {
+          "label": "FIFA World Cup 2026",
+          "href": "/the-t/fifa-world-cup"
+        },
+        {
+          "label": "Horror",
+          "href": "/the-t/horror"
+        },
+        {
+          "label": "Tubi Originals",
+          "href": "/the-t/originals"
+        },
+        {
+          "label": "Sports",
+          "href": "/the-t/sports"
+        }
+      ],
+      "moreGenresLabel": "More genres",
+      "moreGenresHref": "/the-t/genres"
+    },
+    "mobileMenu": {
+      "open": "Open menu",
+      "close": "Close menu"
+    }
+  },
+  "id": "075",
+  "slug": "archer-and-the-adult-animation-on-tubi-that-earns-its-rating",
+  "categoryTag": "Shows",
+  "type": "listicle",
+  "title": "Archer and the Adult Animation on Tubi That Earns Its Rating",
+  "subtitle": "Sharp, weird, and very aware of what it's doing.",
+  "intro": "Some cartoons are made for kids. These ones took one look at that lane and kept driving.\n\nArcher's Sterling Archer is running a spy agency staffed entirely by people who should not be running a spy agency. The Happy Tree Friends are adorable woodland creatures who cannot survive a single episode without losing a limb. The Freak Brothers wake up in 2024 after a 50-year weed nap and discover the world got weirder without them.\n\nIf you're looking for adult animation on Tubi that actually earns its rating, here's where to start.",
+  "images": {
+    "thumbnail": "/static/blog/the-t/thumbnails/075_thumbnail.jpg",
+    "og": "/static/blog/the-t/og/075_og.jpg"
+  },
+  "items": [
+    {
+      "position": 1,
+      "title": "Archer",
+      "description": "Sterling Archer is technically one of the best spies alive. His coworkers are a different story. His mother runs the agency and uses it primarily for personal vendettas. His ex is the head of human resources and still very much in his business. The comptroller is an alcoholic. The field agent next to him is either brilliant or catastrophically reckless depending on the episode.\n\nThe show has reinvented itself multiple times - noir, cocaine cartel, Dreamland, the Danger Island era - and somehow the voice cast makes every version work. H. Jon Benjamin plays Archer completely straight, which is the only reason any of the absurdity lands.\n\nIt's been running since 2009 and the jokes still hit. Fifteen years is a long time to stay sharp.",
+      "contentTitle": "Archer (2023)",
+      "tubiLink": "https://tubitv.com/series/300015980",
+      "contentId": "300015980",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/075_title_1_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/075_title_1_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/075_title_1_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Comedy",
+      "year": "2023",
+      "runtime": "14 Seasons",
+      "rating": "TV-MA"
+    },
+    {
+      "position": 2,
+      "title": "Happy Tree Friends",
+      "description": "You could mistake the first ten seconds for a Saturday morning cartoon. Bright colors, round-faced animals, cheerful music. Then someone loses an eye.\n\nHappy Tree Friends built its entire identity on that gap. The characters are sweet, the settings are wholesome, and every episode ends in catastrophic injury or death. Not implied. Shown. The violence is cartoonishly extreme in a way that loops back around to funny, but it is not subtle about what it is.\n\nWatch one episode and you'll understand immediately why this could never air in a kids' timeslot. The rating isn't incidental - it's the whole premise.",
+      "contentTitle": "Happy Tree Friends (2005)",
+      "tubiLink": "https://tubitv.com/series/300016973",
+      "contentId": "300016973",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/075_title_2_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/075_title_2_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/075_title_2_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Horror",
+      "year": "2005",
+      "runtime": "1 Season",
+      "rating": "TV-MA"
+    },
+    {
+      "position": 3,
+      "title": "The Freak Brothers",
+      "description": "Three stoners smoke some magical weed in 1971 and don't wake up until 50 years later. The world has changed. They have not.\n\nThe voice cast is absurd in the best way - Woody Harrelson, Pete Davidson, John Goodman, and Tiffany Haddish playing the cat. The show is based on Gilbert Shelton's underground comics, which means the counterculture DNA is real, not decorative. These aren't characters who happen to be stoners. The whole premise is about what happens when the people the culture left behind finally catch up to it.\n\nChaotic, strange, and occasionally very funny. The 2020s are a genuinely disorienting place to land after a 50-year nap, and the show knows it.",
+      "contentTitle": "The Freak Brothers (2026)",
+      "tubiLink": "https://tubitv.com/series/300007896",
+      "contentId": "300007896",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/075_title_3_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/075_title_3_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/075_title_3_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Comedy",
+      "year": "2026",
+      "runtime": "3 Seasons",
+      "rating": "TV-MA"
+    },
+    {
+      "position": 4,
+      "title": "Brickleberry",
+      "description": "Daniel Tosh voices a ranger at a national park where everyone is bad at their job in a different and specific way. One is delusional about his own competence. One is aggressively racist in ways the show does not let slide. The bear is possibly the most functional member of the staff.\n\nBrickleberry ran on Comedy Central and pushed hard against whatever line it was testing. It's the kind of show that makes a joke, commits to it past the point of comfort, and then keeps going. Not every swing connects, but the ones that do land hard.\n\nIf you liked early South Park for its willingness to go somewhere a reasonable person would not go, this is in that neighborhood.",
+      "contentTitle": "Brickleberry (2015)",
+      "tubiLink": "https://tubitv.com/series/300007907",
+      "contentId": "300007907",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/075_title_4_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/075_title_4_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/075_title_4_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Comedy",
+      "year": "2015",
+      "runtime": "3 Seasons",
+      "rating": "TV-MA"
+    },
+    {
+      "position": 5,
+      "title": "The Cyanide & Happiness Show",
+      "description": "Cyanide & Happiness started as a webcomic built around jokes that end somewhere you didn't expect and probably shouldn't have gone. The show is the same energy, just animated.\n\nThe format is short sketches - some connected, some standalone - most of them designed to pivot at the last second into something genuinely uncomfortable. The animation is deliberately crude: stick figures, flat color. That lo-fi look is doing real work. A bigger budget would soften the landing.\n\nGood for people who want something they can watch in chunks and don't mind occasionally questioning their own sense of humor.",
+      "contentTitle": "The Cyanide & Happiness Show (2014)",
+      "tubiLink": "https://tubitv.com/series/300018113",
+      "contentId": "300018113",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/075_title_5_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/075_title_5_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/075_title_5_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Comedy",
+      "year": "2014",
+      "runtime": "4 Seasons",
+      "rating": "TV-MA"
+    },
+    {
+      "position": 6,
+      "title": "Bordertown",
+      "description": "Set in a fictional town on the US-Mexico border, Bordertown puts a white border patrol agent and his Mexican-American neighbor next door to each other and lets the culture clash run. The show aired in 2016, which means the political context was already live when it premiered.\n\nIt's from Seth MacFarlane's production house, so the DNA is Family Guy - cutaway jokes, satirical jabs, characters who hold positions the show is clearly not endorsing. But the border setting gives it a specific target that most animated comedies don't bother with.\n\nThe parts that dig into what it actually means to live between two cultures are the ones that stick. Those land better than the broader jokes around them.",
+      "contentTitle": "Bordertown (2016)",
+      "tubiLink": "https://tubitv.com/series/300019154",
+      "contentId": "300019154",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/075_title_6_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/075_title_6_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/075_title_6_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Comedy",
+      "year": "2016",
+      "runtime": "1 Season",
+      "rating": "TV-14"
+    },
+    {
+      "position": 7,
+      "title": "The Goode Family",
+      "description": "The Goode family lives by WWAGD - What Would Al Gore Do? They drive a hybrid, they compost, they adopted a child they expected to be from Africa and got a white South African kid named Ubuntu. Their dog is vegan and visibly miserable.\n\nMike Judge created this one, and the satirical instinct is the same as King of the Hill - not mean, not condescending, just genuinely curious about what happens when people's ideals outrun their self-awareness. The Goodes aren't villains. They're true believers who can't see the gap between what they stand for and what they actually do.\n\nIt only ran one season. The premise had a lot more room to run.",
+      "contentTitle": "The Goode Family (2009)",
+      "tubiLink": "https://tubitv.com/series/486",
+      "contentId": "486",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/075_title_7_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/075_title_7_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/075_title_7_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Animation",
+      "year": "2009",
+      "runtime": "1 Season",
+      "rating": "TV-14"
+    },
+    {
+      "position": 8,
+      "title": "The PJs",
+      "description": "Eddie Murphy created and voices Thurgood Stubbs, the superintendent of a Chicago housing project, and the stop-motion claymation format is doing more than just looking different. The visual distance lets the show deal with poverty, drugs, and urban neglect through dark comedy that would hit completely differently in live action.\n\nThere's an episode where the heat goes out in the building mid-winter and Thurgood's attempts to fix it spiral into something increasingly desperate. The show plays it for laughs, but the situation underneath it is real. That tension - funny format, actual stakes - is what makes The PJs worth your time.\n\nIt ran on Fox and WB in the late '90s and got quietly forgotten. It shouldn't have.",
+      "contentTitle": "The PJs (2018)",
+      "tubiLink": "https://tubitv.com/series/300008591",
+      "contentId": "300008591",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/075_title_8_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/075_title_8_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/075_title_8_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Comedy",
+      "year": "2018",
+      "runtime": "3 Seasons",
+      "rating": "TV-14"
+    },
+    {
+      "position": 9,
+      "title": "Melvin's Macabre",
+      "description": "Melvin can't catch a break. The monsters are literal - they show up, they cause problems, they are not metaphors. But Melvin's emotional life is also genuinely a mess, and the show treats both tracks with equal seriousness.\n\nHorror-comedy animation is a crowded space, but Melvin's Macabre has a specific texture: the horror is played straight enough to be unsettling, and the comedy comes from Melvin's reaction to it rather than from the monsters themselves. He's not a bumbling idiot. He's just a guy who keeps ending up in situations that would break most people.\n\nNot many people have found this one yet. Worth getting there early.",
+      "contentTitle": "Melvin's Macabre (2024)",
+      "tubiLink": "https://tubitv.com/series/300018429",
+      "contentId": "300018429",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/075_title_9_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/075_title_9_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/075_title_9_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Comedy",
+      "year": "2024",
+      "runtime": "1 Season",
+      "rating": "TV-MA"
+    },
+    {
+      "position": 10,
+      "title": "Fugget About It",
+      "description": "Jimmy Falcone is a former New York mobster relocated to Regina, Saskatchewan, under witness protection. His family did not choose this. They are not adjusting well.\n\nThe joke is simple and the show commits to it completely: everything about mob life and New York Italian-American culture crashes into the specific politeness and flatness of the Canadian prairies. The neighbors are friendly. The winters are long. Nobody is impressed by anyone's criminal history.\n\nIt's a Canadian production, which means the jokes about Canada are coming from the inside. That makes them land differently than they would from an American writers' room doing an impression.",
+      "contentTitle": "Fugget About It (2015)",
+      "tubiLink": "https://tubitv.com/series/300004988",
+      "contentId": "300004988",
+      "hasVideoPlaybackSupport": true,
+      "images": {
+        "landscape": "/static/blog/the-t/listicles/075_title_10_landscape.jpg",
+        "poster": "/static/blog/the-t/listicles/075_title_10_poster.jpg",
+        "sidebar": "/static/blog/the-t/sidebar/075_title_10_sidebar.jpg"
+      },
+      "watchNowLabel": "Watch Now",
+      "genre": "Animation",
+      "year": "2015",
+      "runtime": "3 Seasons",
+      "rating": "TV-MA"
+    }
+  ],
+  "keepReading": {
+    "header": {
+      "title": "Keep Reading",
+      "subtitle": "More articles to explore"
+    },
+    "items": [
+      {
+        "id": "010",
+        "slug": "best-animation-on-tubi",
+        "eyebrow": "What to Watch",
+        "title": "Best Animation on Tubi",
+        "subtitle": "The kind of animation that always felt a step outside the usual.",
+        "categoryTag": "Shows",
+        "thumbnail": "/static/blog/the-t/thumbnails/010_thumbnail.jpg"
+      },
+      {
+        "id": "027",
+        "slug": "the-funniest-comedy-shows-streaming-now",
+        "eyebrow": "What to Watch",
+        "title": "The Funniest Comedy Shows Streaming Now",
+        "subtitle": "The ones that actually hold up past the first episode.",
+        "categoryTag": "Shows",
+        "thumbnail": "/static/blog/the-t/thumbnails/027_thumbnail.jpg"
+      },
+      {
+        "id": "074",
+        "slug": "the-classic-cartoons-every-90s-kid-needs-to-revisit",
+        "eyebrow": "What to Watch",
+        "title": "The Classic Cartoons Every 90s Kid Needs to Revisit",
+        "subtitle": "The ones that were doing more than you realized.",
+        "categoryTag": "Shows",
+        "thumbnail": "/static/blog/the-t/thumbnails/074_thumbnail.jpg"
+      }
+    ]
+  },
+  "datePosted": "2026-05-26"
+}

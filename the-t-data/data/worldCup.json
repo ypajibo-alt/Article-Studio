@@ -1,0 +1,139 @@
+{
+  "nav": {
+    "logoLabel": "The T",
+    "links": [
+      {
+        "label": "Home",
+        "href": "/the-t"
+      },
+      {
+        "label": "Coming Soon",
+        "href": "/the-t/coming-soon"
+      },
+      {
+        "label": "Shows",
+        "href": "/the-t/shows"
+      },
+      {
+        "label": "Movies",
+        "href": "/the-t/movies"
+      }
+    ],
+    "explore": {
+      "label": "Explore",
+      "items": [
+        {
+          "label": "FIFA World Cup 2026",
+          "href": "/the-t/fifa-world-cup"
+        },
+        {
+          "label": "Horror",
+          "href": "/the-t/horror"
+        },
+        {
+          "label": "Tubi Originals",
+          "href": "/the-t/originals"
+        },
+        {
+          "label": "Sports",
+          "href": "/the-t/sports"
+        }
+      ],
+      "moreGenresLabel": "More genres",
+      "moreGenresHref": "/the-t/genres"
+    },
+    "mobileMenu": {
+      "open": "Open menu",
+      "close": "Close menu"
+    }
+  },
+  "hero": {
+    "label": "World Cup",
+    "eyebrow": "World Cup",
+    "description": "Your home for everything you need to know about the two World Cup games streaming on Tubi. Schedules, previews, and everything in between.",
+    "image": "/static/blog/the-t/heroes/world-cup-hub_hero.png"
+  },
+  "featured": {
+    "header": {
+      "title": "Featured",
+      "subtitle": "Stories and recommendations from our team"
+    },
+    "items": [
+      {
+        "id": "003",
+        "slug": "how-to-watch-2026-world-cup-matches-live-for-free-on-tubi",
+        "eyebrow": "Guide",
+        "title": "How to Watch 2026 World Cup Matches Live for Free on Tubi",
+        "subtitle": "The World Cup hub is live on Tubi now. Stream Mexico and the USMNT free during opening week.",
+        "categoryTag": "Sports",
+        "thumbnail": "/static/blog/the-t/thumbnails/003_thumbnail.png"
+      },
+      {
+        "id": "055",
+        "slug": "how-to-watch-the-world-cup-live-and-free-on-tubi",
+        "eyebrow": "Guide",
+        "title": "USA vs. Paraguay: How to Watch the World Cup Live and Free on Tubi",
+        "subtitle": "Catch every minute of USA vs. Paraguay live on Tubi, with full replays on demand after the final whistle.",
+        "categoryTag": "Sports",
+        "thumbnail": "/static/blog/the-t/thumbnails/055_thumbnail.png"
+      },
+      {
+        "id": "056",
+        "slug": "world-cup-opening-weekend-match-schedule-on-tubi",
+        "eyebrow": "Guide",
+        "title": "Your Guide to the World Cup Opening Weekend: Match Schedule on Tubi",
+        "subtitle": "The full match schedule for opening weekend, plus how to stream every game on Tubi.",
+        "categoryTag": "Sports",
+        "thumbnail": "/static/blog/the-t/thumbnails/056_thumbnail.png"
+      }
+    ]
+  },
+  "storyHero": {
+    "id": "057",
+    "slug": "how-to-stream-key-world-cup-matches-and-pre-game-shows-online",
+    "eyebrow": "Guide",
+    "title": "How to Stream Key World Cup Matches and Pre-Game Shows Online",
+    "subtitle": "Your full guide to the can't-miss matches, the pre-game shows worth tuning in for, and how to stream it all free on Tubi.",
+    "categoryTag": "Sports",
+    "hero": "/static/blog/the-t/thumbnails/057_thumbnail.jpg"
+  },
+  "keepReading": {
+    "header": {
+      "title": "Keep Reading",
+      "subtitle": "More articles to explore"
+    },
+    "items": [
+      {
+        "id": "058",
+        "slug": "the-teams-to-watch-in-the-world-cup",
+        "eyebrow": "Guide",
+        "title": "Road to 2026: The Teams to Watch in the World Cup",
+        "subtitle": "From the favorites to the dark horses, the squads worth tracking all the way to the final.",
+        "categoryTag": "Sports",
+        "thumbnail": "/static/blog/the-t/thumbnails/058_thumbnail.png"
+      },
+      {
+        "id": "059",
+        "slug": "the-ultimate-guide-to-streaming-world-cup-games-for-free-on-tubi",
+        "eyebrow": "Guide",
+        "title": "The Ultimate Guide to Streaming World Cup Games for Free on Tubi",
+        "subtitle": "Everything you need to know to watch every match, every angle, every weekend — all on Tubi.",
+        "categoryTag": "Sports",
+        "thumbnail": "/static/blog/the-t/thumbnails/059_thumbnail.png"
+      },
+      {
+        "id": "060",
+        "slug": "best-soccer-stories-to-stream",
+        "eyebrow": "What to Watch",
+        "title": "Beyond the Pitch: The Best Soccer Stories to Stream Now",
+        "subtitle": "The stories behind the game, before the World Cup begins",
+        "categoryTag": "Sports",
+        "thumbnail": "/static/blog/the-t/thumbnails/060_thumbnail.jpg"
+      }
+    ]
+  },
+  "images": {
+    "og": "/static/blog/the-t/og/world_cup_hub_og.jpg"
+  },
+  "pageTitle": "Watch FIFA World Cup Highlights, Matches, and Coverage Free on Tubi"
+}

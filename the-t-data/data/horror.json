@@ -1,0 +1,212 @@
+{
+  "_doc": {
+    "description": "Horror hub slice of The T content. Rendered by src/web/features/theT/components/HubPage.tsx via the `horror` entry in `SLUG_RENDERERS` in src/web/features/theT/containers/Hub.tsx. Same shape as ./movies.json / ./shows.json — every section (`hero`, `featured`, `storyHero`, `watchlist`, `keepReading`) carries its own `header.{title,subtitle}` + items so the JSON drives both heading and content.",
+    "source": "Shell placeholder. Hero copy, Featured rail, Story Hero, Watchlist rail, and Keep Reading rail are all TBD — they'll get authored section by section against the upstream `~/Desktop/Static Upload Tubi Blog/{listicles,single-titles,watchlist}.json` slices for `pageLocation: Horror` records.",
+    "doNotInclude": "intro, items[], cast[], whatsComing[] — only the fields the Horror hub actually renders should ship in this chunk.",
+    "linking": "Every article card / hero uses the canonical URL `/the-t/articles/<slug>`. Each slot stores just the bare `slug`; the renderer (`homePageData.ts → buildArticleHref`) prepends the prefix. The optional `watchLink` on some slots is reserved for CTAs that bypass the article and route straight into the Tubi catalog; it does NOT influence the article href."
+  },
+  "nav": {
+    "logoLabel": "The T",
+    "links": [
+      {
+        "label": "Home",
+        "href": "/the-t"
+      },
+      {
+        "label": "Coming Soon",
+        "href": "/the-t/coming-soon"
+      },
+      {
+        "label": "Shows",
+        "href": "/the-t/shows"
+      },
+      {
+        "label": "Movies",
+        "href": "/the-t/movies"
+      }
+    ],
+    "explore": {
+      "label": "Explore",
+      "items": [
+        {
+          "label": "FIFA World Cup 2026",
+          "href": "/the-t/fifa-world-cup"
+        },
+        {
+          "label": "Horror",
+          "href": "/the-t/horror"
+        },
+        {
+          "label": "Tubi Originals",
+          "href": "/the-t/originals"
+        },
+        {
+          "label": "Sports",
+          "href": "/the-t/sports"
+        }
+      ],
+      "moreGenresLabel": "More genres",
+      "moreGenresHref": "/the-t/genres"
+    },
+    "mobileMenu": {
+      "open": "Open menu",
+      "close": "Close menu"
+    }
+  },
+  "hero": {
+    "label": "Horror",
+    "description": "From slow-burn psychological thrillers to all-out creature features, we cover the horror films worth watching with the lights off. Whether you're a seasoned fan or just getting into the genre, our picks span every flavor of fear. New recommendations added regularly.",
+    "image": "/static/blog/the-t/heroes/horror-hub_hero.jpg"
+  },
+  "featured": {
+    "header": {
+      "title": "Featured",
+      "subtitle": "Stories and recommendations from our team"
+    },
+    "items": [
+      {
+        "id": "040",
+        "slug": "best-horror-shows-on-tubi-right-now",
+        "eyebrow": "Binge-Worthy",
+        "title": "Best Horror Movies on Tubi Right Now",
+        "subtitle": "A range of horror that goes beyond the obvious picks.",
+        "categoryTag": "Horror",
+        "thumbnail": "/static/blog/the-t/thumbnails/040_thumbnail.jpg"
+      },
+      {
+        "id": "041",
+        "slug": "the-slasher-movies-that-defined-the-genre",
+        "eyebrow": "Binge-Worthy",
+        "title": "The Slasher Movies That Defined the Genre",
+        "subtitle": "The films that wrote the rules - and the ones still collecting royalties on them.",
+        "categoryTag": "Horror",
+        "thumbnail": "/static/blog/the-t/thumbnails/041_thumbnail.jpg"
+      },
+      {
+        "id": "042",
+        "slug": "free-scary-movies-to-watch-online",
+        "eyebrow": "Binge-Worthy",
+        "title": "Free Scary Movies to Watch Online — No Subscription Needed",
+        "subtitle": "Straightforward picks when you want something unsettling without the extra steps.",
+        "categoryTag": "Horror",
+        "thumbnail": "/static/blog/the-t/thumbnails/042_thumbnail.jpg"
+      }
+    ]
+  },
+  "storyHero": {
+    "id": "043",
+    "slug": "skinamarink-and-the-best-found-footage-horror-movies-on-tubi",
+    "eyebrow": "What to Watch",
+    "title": "Skinamarink and the Best Found Footage Horror on Tubi",
+    "subtitle": "Minimal, eerie, and built around what you don't see.",
+    "categoryTag": "Horror",
+    "hero": "/static/blog/the-t/thumbnails/043_thumbnail.jpg"
+  },
+  "watchlist": {
+    "header": {
+      "title": "Watchlist",
+      "subtitle": "A handpicked list of horror to watch next"
+    },
+    "items": [
+      {
+        "id": "wl-horror-1",
+        "title": "No One Will Hear You Scream",
+        "year": "2025",
+        "description": "A slasher that leans into fear you can feel.",
+        "genreTag": "Horror/Thriller",
+        "poster": "/static/blog/the-t/watchlist/horror_1_poster.jpg",
+        "watchLink": "https://tubitv.com/movies/100049589",
+        "contentId": "100049589"
+      },
+      {
+        "id": "wl-horror-2",
+        "title": "Sam and Colby",
+        "year": "2025",
+        "description": "Ghost hunting meets real curiosity. Believers and skeptics welcome.",
+        "genreTag": "Reality/Horror",
+        "poster": "/static/blog/the-t/watchlist/horror_2_poster.jpg",
+        "watchLink": "https://tubitv.com/series/300001572",
+        "contentId": "300001572"
+      },
+      {
+        "id": "wl-horror-3",
+        "title": "Loey Lane",
+        "year": "2026",
+        "description": "Internet horror gets real as Loey Lane goes deeper into the unknown.",
+        "genreTag": "Horror/Crime",
+        "poster": "/static/blog/the-t/watchlist/horror_3_poster.jpg",
+        "watchLink": "https://tubitv.com/series/300020271",
+        "contentId": "300020271"
+      },
+      {
+        "id": "wl-horror-4",
+        "title": "The House on Haunted Grounds",
+        "year": "2026",
+        "description": "They went in anyway. What came out is the footage.",
+        "genreTag": "Horror/Thriller",
+        "poster": "/static/blog/the-t/watchlist/horror_4_poster.jpg",
+        "watchLink": "https://tubitv.com/movies/100050931",
+        "contentId": "100050931"
+      },
+      {
+        "id": "wl-horror-5",
+        "title": "Field of Screams",
+        "year": "2025",
+        "description": "Nowhere to run. Nowhere to hide. The fear is all there is.",
+        "genreTag": "Horror",
+        "poster": "/static/blog/the-t/watchlist/horror_5_poster.jpg",
+        "watchLink": "https://tubitv.com/movies/100043433",
+        "contentId": "100043433"
+      },
+      {
+        "id": "wl-horror-6",
+        "title": "Dark Places",
+        "year": "2026",
+        "description": "A college student finds herself inside a world she cannot escape.",
+        "genreTag": "Horror/Thriller",
+        "poster": "/static/blog/the-t/watchlist/horror_6_poster.jpg",
+        "watchLink": "https://tubitv.com/movies/100053018",
+        "contentId": "100053018"
+      }
+    ]
+  },
+  "keepReading": {
+    "header": {
+      "title": "Keep Reading",
+      "subtitle": "More articles to explore"
+    },
+    "items": [
+      {
+        "id": "044",
+        "slug": "best-supernatural-horror-shows-on-tubi",
+        "eyebrow": "What to Watch",
+        "title": "Best Supernatural Horror Movies on Tubi",
+        "subtitle": "Stories where the threat feels just out of reach.",
+        "categoryTag": "Horror",
+        "thumbnail": "/static/blog/the-t/thumbnails/044_thumbnail.jpg"
+      },
+      {
+        "id": "045",
+        "slug": "zombie-movies-on-tubi-ranked",
+        "eyebrow": "What to Watch",
+        "title": "Zombie Movies on Tubi Ranked",
+        "subtitle": "From Romero's farmhouse to a Nazi zombie tank - here's what actually holds up.",
+        "categoryTag": "Horror",
+        "thumbnail": "/static/blog/the-t/thumbnails/045_thumbnail.jpg"
+      },
+      {
+        "id": "046",
+        "slug": "the-psychological-horror-films-that-mess-with-your-head",
+        "eyebrow": "What to Watch",
+        "title": "The Psychological Horror Films That Mess With Your Head",
+        "subtitle": "More about tension and perspective than anything physical.",
+        "categoryTag": "Horror",
+        "thumbnail": "/static/blog/the-t/thumbnails/046_thumbnail.jpg"
+      }
+    ]
+  },
+  "images": {
+    "og": "/static/blog/the-t/og/horror_hub_og.jpg"
+  },
+  "pageTitle": "Discover Free Horror Movies and TV Shows on Tubi"
+}
