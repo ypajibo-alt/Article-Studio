@@ -66,6 +66,8 @@
     .chip-warning .chip-dot { background: #f59e0b; }
     .chip-ok { background: rgba(22,163,74,0.08); color: #16a34a; border-color: rgba(22,163,74,0.2); }
     .chip-ok .chip-dot { background: #22c55e; }
+    .chip-stale { background: rgba(124,58,237,0.08); color: #7c3aed; border-color: rgba(124,58,237,0.2); }
+    .chip-stale .chip-dot { background: #8b5cf6; }
     .chip-unknown { background: #f3f4f6; color: #6b7280; border-color: #e5e7eb; }
     .chip-unknown .chip-dot { background: #d1d5db; }
 
@@ -98,6 +100,7 @@
     }
     .article-card.status-critical { border-left: 3px solid #ef4444; }
     .article-card.status-warning  { border-left: 3px solid #f59e0b; }
+    .article-card.status-stale    { border-left: 3px solid #8b5cf6; }
     .article-card.status-ok       { border-left: 3px solid #22c55e; }
     .article-card.status-unknown  { border-left: 3px solid #d1d5db; }
 
@@ -110,6 +113,7 @@
     .card-status-dot { width: 9px; height: 9px; border-radius: 50%; flex-shrink: 0; }
     .dot-critical { background: #ef4444; }
     .dot-warning  { background: #f59e0b; }
+    .dot-stale    { background: #8b5cf6; }
     .dot-ok       { background: #22c55e; }
     .dot-unknown  { background: #d1d5db; }
 
@@ -156,6 +160,7 @@
     .item-content-text { font-size: 11px; color: #6b7280; margin-top: 1px; }
     .expiry-critical { color: #dc2626; font-size: 12px; font-weight: 600; }
     .expiry-warning  { color: #d97706; font-size: 12px; font-weight: 600; }
+    .expiry-stale    { color: #7c3aed; font-size: 12px; font-weight: 600; }
     .expiry-ok       { color: #16a34a; font-size: 12px; }
     .expiry-expired  { color: #7f1d1d; font-size: 12px; font-weight: 700; }
     .expiry-unknown  { color: #c4c9d1; font-size: 12px; }
@@ -209,7 +214,7 @@
       Monitor
     </a>
     <a href="/articles" class="ds-nav-item">
-      <svg class="ds-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><rect x="3" y="3" width="8" height="8" rx="1.5"/><rect x="13" y="3" width="8" height="8" rx="1.5"/><rect x="3" y="13" width="8" height="8" rx="1.5"/><rect x="13" y="13" width="8" height="8" rx="1.5"/></svg>
+      <svg class="ds-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5.586a1 1 0 0 1 .707.293l5.414 5.414a1 1 0 0 1 .293.707V19a2 2 0 0 1-2 2z"/></svg>
       Articles
     </a>
     <a href="/generate" class="ds-nav-item">
@@ -241,8 +246,13 @@
   <div class="summary-bar" id="summary-bar">
     <div class="summary-chip chip-critical" data-filter="critical"><div class="chip-dot"></div><span id="count-critical">0</span> critical</div>
     <div class="summary-chip chip-warning"  data-filter="warning"><div class="chip-dot"></div><span id="count-warning">0</span> warning</div>
+    <div class="summary-chip chip-stale"    data-filter="stale"><div class="chip-dot"></div><span id="count-stale">0</span> now live</div>
     <div class="summary-chip chip-ok"       data-filter="ok"><div class="chip-dot"></div><span id="count-ok">0</span> ok</div>
-    <div class="summary-chip chip-unknown"  data-filter="unknown"><div class="chip-dot"></div><span id="count-unknown">0</span> no data</div>
+    <div class="summary-chip chip-unknown"  data-filter="unknown"><div class="chip-dot"></div><span id="count-unchecked">0</span> not checked</div>
+    <button class="refresh-btn" id="check-all-btn" onclick="checkAllAvailability()" style="margin-left:auto">
+      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12,6 12,12 16,14"/></svg>
+      Check all availability
+    </button>
   </div>
 
   <div class="filter-tabs">
@@ -276,7 +286,7 @@
   const checkedArticles = new Set();
 
   function esc(s) {
-    return String(s == null ? '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+    return String(s == null ? '' : s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
   }
 
   function showToast(msg, type = '') {
@@ -289,7 +299,9 @@
   function formatExpiry(contentId) {
     const a = availMap[contentId];
     if (!a) return `<span class="expiry-unknown">—</span>`;
-    const { status, daysLeft } = a;
+    const { status, daysLeft, startsIn, availability_starts } = a;
+    if (status === 'stale')                     return `<span class="expiry-stale">Just launched — refresh article</span>`;
+    if (startsIn !== null && startsIn > 0)       return `<span class="expiry-warning">Coming soon — arrives in ${startsIn}d</span>`;
     if (status === 'expired')                   return `<span class="expiry-expired">Expired</span>`;
     if (status === 'ok' && daysLeft === null)    return `<span class="expiry-ok">Permanent</span>`;
     if (daysLeft === 0)                         return `<span class="expiry-critical">Expires today</span>`;
@@ -307,9 +319,10 @@
     const items = article.items.filter(i => i.contentId);
     if (!items.length) return 'unknown';
     const statuses = items.map(i => itemStatus(i.contentId));
+    if (statuses.every(s => s === 'unknown')) return 'pending';
     if (statuses.some(s => s === 'critical' || s === 'expired')) return 'critical';
     if (statuses.some(s => s === 'warning')) return 'warning';
-    if (statuses.every(s => s === 'unknown')) return 'pending';
+    if (statuses.some(s => s === 'stale')) return 'stale';
     return 'ok';
   }
 
@@ -430,6 +443,7 @@
         availMap[item.contentId] = item;
       }
       checkedArticles.add(articleId);
+      updateSummaryChips();
 
       // Re-render just this card's rows and status
       const card = document.getElementById('card-' + articleId);
@@ -473,7 +487,7 @@
     try {
       const resp = await fetch(`${API}/api/monitor/suggest-replacement`, {
         method: 'POST', headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ contentTitle: item.content_title || item.title, contentType: '', articleTitle: article.title, contentId: item.contentId }),
+        body: JSON.stringify({ contentTitle: item.content_title || item.title, contentType: '', articleTitle: article.title, contentId: item.contentId, isComingSoon: (availMap[item.contentId]?.startsIn ?? 0) > 0 }),
       });
       const data = await resp.json();
       const cards = document.getElementById(`sugg-cards-${articleId}-${position}`);
@@ -482,13 +496,20 @@
         cards.innerHTML = '<span class="suggestion-empty">No suitable replacements found on Tubi right now.</span>';
       } else {
         cards.innerHTML = data.suggestions.map(s => {
-          const expiryText = s.daysLeft === null ? '<span class="suggestion-card-expiry none">No expiry date</span>' : `<span class="suggestion-card-expiry">${s.daysLeft}d available</span>`;
+          const expiryText = s.startsIn > 0
+            ? `<span class="suggestion-card-expiry" style="color:#7c3aed">Arrives in ${s.startsIn}d</span>`
+            : s.daysLeft === null ? '<span class="suggestion-card-expiry none">No expiry date</span>'
+            : `<span class="suggestion-card-expiry">${s.daysLeft}d available</span>`;
           const tubiUrl = `https://tubitv.com/${s.type === 'Series' ? 'series' : 'movies'}/${s.contentId}`;
+          const generateUrl = `/generate?contentId=${encodeURIComponent(s.contentId)}`;
           return `<div class="suggestion-card">
             <div class="suggestion-card-title">${esc(s.title)}</div>
             <div class="suggestion-card-meta">${esc(s.type)}${s.year ? ' · ' + s.year : ''}</div>
             ${expiryText}
-            <div style="margin-top:8px"><a href="${esc(tubiUrl)}" target="_blank" style="font-size:11px;color:#7C3AED;font-weight:600;text-decoration:none">View on Tubi ↗</a></div>
+            <div style="margin-top:10px;display:flex;flex-direction:column;gap:5px">
+              <a href="${esc(generateUrl)}" target="_blank" style="font-size:11px;background:#7C3AED;color:#fff;font-weight:600;text-decoration:none;padding:5px 10px;border-radius:5px;display:inline-block;text-align:center">Generate article →</a>
+              <a href="${esc(tubiUrl)}" target="_blank" style="font-size:11px;color:#7C3AED;font-weight:600;text-decoration:none">View on Tubi ↗</a>
+            </div>
           </div>`;
         }).join('');
       }
@@ -499,10 +520,57 @@
     }
   }
 
+  function updateSummaryChips() {
+    const checked = allArticles.filter(a => checkedArticles.has(a.id));
+    document.getElementById('count-critical').textContent = checked.filter(a => articleComputedStatus(a) === 'critical').length;
+    document.getElementById('count-warning').textContent  = checked.filter(a => articleComputedStatus(a) === 'warning').length;
+    document.getElementById('count-stale').textContent    = checked.filter(a => articleComputedStatus(a) === 'stale').length;
+    document.getElementById('count-ok').textContent       = checked.filter(a => articleComputedStatus(a) === 'ok').length;
+    document.getElementById('count-unchecked').textContent = allArticles.length - checkedArticles.size;
+  }
+
+  async function checkAllAvailability() {
+    const btn = document.getElementById('check-all-btn');
+    btn.disabled = true;
+    btn.textContent = 'Checking…';
+
+    // Collect all unique content IDs across all articles
+    const allIds = [...new Set(
+      allArticles.flatMap(a => a.items.map(i => i.contentId).filter(Boolean))
+    )];
+
+    try {
+      const resp = await fetch(`${API}/api/monitor/check-availability`, {
+        method: 'POST', headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ contentIds: allIds }),
+      });
+      const data = await resp.json();
+      for (const item of (data.items || [])) availMap[item.contentId] = item;
+    } catch (e) { console.error('check-all failed', e); }
+
+    // Mark all articles checked and update cards
+    for (const article of allArticles) {
+      checkedArticles.add(article.id);
+      const card = document.getElementById('card-' + article.id);
+      if (card) {
+        const st = articleComputedStatus(article);
+        card.className = `article-card status-${st}`;
+        card.querySelector('.card-status-dot').className = `card-status-dot dot-${st}`;
+        const tbody = document.getElementById('rows-' + article.id);
+        if (tbody) tbody.innerHTML = renderItemRows(article);
+      }
+    }
+
+    updateSummaryChips();
+    btn.disabled = false;
+    btn.innerHTML = `<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" d="M4 4v5h.582m15.356 2A8.001 8.001 0 0 0 4.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 0 1-15.357-2m15.357 2H15"/></svg> Re-check`;
+  }
+
   function applyFilter() {
     let filtered = allArticles;
     if (activeFilter === 'critical') filtered = allArticles.filter(a => articleComputedStatus(a) === 'critical');
     else if (activeFilter === 'warning') filtered = allArticles.filter(a => articleComputedStatus(a) === 'warning');
+    else if (activeFilter === 'stale') filtered = allArticles.filter(a => articleComputedStatus(a) === 'stale');
     else if (activeFilter === 'ok') filtered = allArticles.filter(a => articleComputedStatus(a) === 'ok');
     else if (activeFilter === 'listicle') filtered = allArticles.filter(a => a.articleType === 'listicle');
     else if (activeFilter === 'single') filtered = allArticles.filter(a => a.articleType === 'single');
@@ -529,10 +597,20 @@
   });
 
   function loadData() {
-    allArticles = window.__ARTICLES__ || [];
-    document.getElementById('summary-bar').style.display = 'flex';
-    document.getElementById('fetched-at').textContent = `${allArticles.length} articles`;
-    applyFilter();
+    try {
+      allArticles = window.__ARTICLES__ || [];
+      if (!allArticles.length) {
+        document.getElementById('content').innerHTML = '<div class="error-state">No articles loaded — data injection failed.</div>';
+        return;
+      }
+      document.getElementById('summary-bar').style.display = 'flex';
+      document.getElementById('fetched-at').textContent = `${allArticles.length} articles`;
+      updateSummaryChips();
+      applyFilter();
+      checkAllAvailability();
+    } catch(e) {
+      document.getElementById('content').innerHTML = `<div class="error-state">JS Error: ${esc(String(e))}</div>`;
+    }
   }
 
   document.getElementById('refresh-btn').addEventListener('click', () => window.location.reload());

@@ -1,5 +1,5 @@
 import { Router, Request, Response } from 'express';
-import { searchTubi, fetchAllContainers, fetchContainerTitles } from '../lib/tubiSearch.js';
+import { searchTubi, fetchAllContainers, fetchContainerTitles, fetchFullMetadata } from '../lib/tubiSearch.js';
 import { fetchContentAvailability } from '../lib/tubi.js';
 
 const router = Router();
@@ -30,6 +30,18 @@ router.get('/container-titles', async (req: Request, res: Response) => {
   const data = await fetchContainerTitles(id, limit);
     if (!data) { res.status(404).json({ error: 'Container not found' }); return; }
     res.json({ containerTitle: data.containerName, titles: data.titles.map(t => ({ id: t.id, title: t.title, year: t.year, type: t.type })) });
+  } catch (err) {
+    res.status(500).json({ error: (err as Error).message });
+  }
+});
+
+router.get('/metadata', async (req: Request, res: Response) => {
+  const contentId = String(req.query.contentId ?? '').trim();
+  if (!contentId) { res.status(400).json({ error: 'contentId required' }); return; }
+  try {
+    const meta = await fetchFullMetadata(contentId);
+    if (!meta) { res.status(404).json({ error: 'Not found' }); return; }
+    res.json({ id: meta.id, title: meta.title, year: meta.year, type: meta.type, description: meta.description, posterart: meta.posterart });
   } catch (err) {
     res.status(500).json({ error: (err as Error).message });
   }

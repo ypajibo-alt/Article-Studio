@@ -111,8 +111,14 @@ function daysUntil(dateStr: string | null): number | null {
   return Math.ceil((new Date(dateStr).getTime() - Date.now()) / 86_400_000);
 }
 
-function expiryStatus(daysLeft: number | null, foundInApi: boolean): 'expired' | 'critical' | 'warning' | 'ok' | 'unknown' {
+function expiryStatus(daysLeft: number | null, foundInApi: boolean, startsIn: number | null): 'expired' | 'critical' | 'warning' | 'ok' | 'stale' | 'unknown' {
   if (!foundInApi) return 'unknown';
+  // Title just launched — "coming soon" article angle is now dead
+  if (startsIn !== null && startsIn <= 0 && startsIn > -7) return 'stale';
+  // Coming soon — flag as warning so editor knows to prep a refresh
+  if (startsIn !== null && startsIn > 0 && startsIn <= 30) return 'warning';
+  if (startsIn !== null && startsIn > 30) return 'ok';
+  // Normal expiry logic
   if (daysLeft === null) return 'ok';
   if (daysLeft < 0) return 'expired';
   if (daysLeft <= 7) return 'critical';
@@ -120,23 +126,88 @@ function expiryStatus(daysLeft: number | null, foundInApi: boolean): 'expired' |
   return 'ok';
 }
 
-function articleStatus(items: TrackableItem[]): 'critical' | 'warning' | 'ok' | 'unknown' {
+function articleStatus(items: TrackableItem[]): 'critical' | 'warning' | 'stale' | 'ok' | 'unknown' {
   if (!items.length) return 'unknown';
   const critical = items.filter(i => i.status === 'critical' || i.status === 'expired').length;
   const warning = items.filter(i => i.status === 'warning').length;
+  const stale = items.filter(i => i.status === 'stale').length;
   const unknown = items.filter(i => i.status === 'unknown').length;
   if (critical > 0) return 'critical';
   if (warning > 0) return 'warning';
+  if (stale > 0) return 'stale';
   if (unknown === items.length) return 'unknown';
   return 'ok';
 }
 
 // ─── Replacement suggestions ──────────────────────────────────────────────────
 
+type SuggestionResult = {
+  contentId: string; title: string; year: number | null; type: string;
+  availability_starts: string | null; availability_ends: string | null;
+  daysLeft: number | null; startsIn: number | null;
+};
+
+let crmCacheIds: string[] = [];
+let crmCacheExpiry = 0;
+
+async function fetchComingSoonCrmIds(): Promise<string[]> {
+  if (crmCacheIds.length && Date.now() < crmCacheExpiry) return crmCacheIds;
+  try {
+    const token = await getToken();
+    if (!token) return crmCacheIds;
+    const allIds: string[] = [];
+    let cursor: string | null = null;
+    let page = 0;
+    do {
+      const url = `https://tensor.production-public.tubi.io/api/v7/containers/coming_soon_crm?expanded=true&limit=50${cursor ? `&cursor=${encodeURIComponent(cursor)}` : ''}`;
+      const res = await fetch(url, { headers: { Authorization: `Bearer ${token}`, Accept: 'application/json' } });
+      if (!res.ok) break;
+      const d = await res.json() as Record<string, unknown>;
+      const container = d.container as Record<string, unknown>;
+      const contents = d.contents as Record<string, unknown> ?? {};
+      allIds.push(...Object.keys(contents));
+      const newCursor = container?.cursor as string | null;
+      cursor = (newCursor && newCursor !== cursor) ? newCursor : null;
+      page++;
+    } while (cursor && page < 20);
+    if (allIds.length) {
+      crmCacheIds = [...new Set(allIds)];
+      crmCacheExpiry = Date.now() + 6 * 60 * 60 * 1000; // 6-hour cache
+    }
+    return crmCacheIds;
+  } catch { return crmCacheIds; }
+}
+
+async function suggestComingSoonReplacements(excludeContentId: string | null): Promise<SuggestionResult[]> {
+  const allIds = await fetchComingSoonCrmIds();
+  const ids = allIds.filter(id => id !== excludeContentId);
+  if (!ids.length) return [];
+
+  const avail = await fetchContentAvailability(ids);
+  return avail
+    .map(a => {
+      const startsIn = daysUntil(a.availability_starts);
+      const daysLeft = daysUntil(a.availability_ends);
+      return {
+        contentId: a.contentId, title: a.title, year: null,
+        type: a.type === 's' ? 'Series' : 'Movie',
+        availability_starts: a.availability_starts,
+        availability_ends: a.availability_ends,
+        daysLeft, startsIn,
+      };
+    })
+    .filter(c => c.startsIn !== null && c.startsIn > 0)  // only fully-pipelined upcoming titles
+    .sort((a, b) => (b.startsIn ?? 0) - (a.startsIn ?? 0))  // furthest arrival first
+    .slice(0, 3);
+}
+
 async function searchTubiForSuggestions(
   query: string,
   excludeContentId: string | null,
-): Promise<Array<{ contentId: string; title: string; year: number | null; type: string; availability_ends: string | null; daysLeft: number | null }>> {
+  isComingSoon = false,
+): Promise<SuggestionResult[]> {
+  if (isComingSoon) return suggestComingSoonReplacements(excludeContentId);
+
   const token = await getToken();
   if (!token) return [];
 
@@ -161,13 +232,17 @@ async function searchTubiForSuggestions(
     .map(c => {
       const a = availMap.get(c.id);
       const daysLeft = a ? daysUntil(a.availability_ends) : null;
+      const startsIn = a ? daysUntil(a.availability_starts) : null;
       return {
         contentId: c.id, title: c.title, year: c.year,
         type: c.type === 's' ? 'Series' : 'Movie',
-        availability_ends: a?.availability_ends ?? null, daysLeft,
+        availability_starts: a?.availability_starts ?? null,
+        availability_ends: a?.availability_ends ?? null,
+        daysLeft, startsIn,
       };
     })
     .filter(c => c.daysLeft === null || c.daysLeft > 30)
+    .sort((a, b) => (b.daysLeft ?? 999) - (a.daysLeft ?? 999))
     .slice(0, 3);
 }
 
@@ -203,11 +278,14 @@ router.post('/monitor/check-availability', async (req: Request, res: Response) =
       const avail = availMap.get(id);
       const foundInApi = avail !== undefined;
       const daysLeft = avail ? daysUntil(avail.availability_ends) : null;
+      const startsIn = avail ? daysUntil(avail.availability_starts) : null;
       return {
         contentId: id,
+        availability_starts: avail?.availability_starts ?? null,
         availability_ends: avail?.availability_ends ?? null,
         daysLeft,
-        status: expiryStatus(daysLeft, foundInApi),
+        startsIn,
+        status: expiryStatus(daysLeft, foundInApi, startsIn),
       };
     });
     res.json({ items });
@@ -232,15 +310,15 @@ router.post('/monitor/regenerate', async (req: Request, res: Response) => {
 });
 
 router.post('/monitor/suggest-replacement', async (req: Request, res: Response) => {
-  const { contentTitle, contentType, articleTitle, contentId } = req.body as {
-    contentTitle: string; contentType: string; articleTitle: string; contentId?: string;
+  const { contentTitle, contentType, articleTitle, contentId, isComingSoon } = req.body as {
+    contentTitle: string; contentType: string; articleTitle: string; contentId?: string; isComingSoon?: boolean;
   };
   if (!contentTitle || !articleTitle) {
     res.status(400).json({ error: 'contentTitle and articleTitle required' }); return;
   }
   try {
     const query = articleTitle.replace(/\b(best|top|free|on tubi|right now|this (week|weekend|month))\b/gi, '').trim() || contentTitle;
-    const suggestions = await searchTubiForSuggestions(query, contentId ?? null);
+    const suggestions = await searchTubiForSuggestions(query, contentId ?? null, isComingSoon ?? false);
     res.json({ suggestions });
   } catch (err) {
     res.status(500).json({ error: (err as Error).message });
