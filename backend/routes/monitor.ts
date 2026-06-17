@@ -4,6 +4,7 @@ import path from 'path';
 import { fileURLToPath } from 'url';
 import { fetchContentAvailability, extractContentId, getToken } from '../lib/tubi.js';
 import { regenerateBlurb } from '../lib/bedrock.js';
+import { MS_PER_DAY, CRM_CACHE_TTL_MS } from '../lib/config.js';
 
 const router = Router();
 
@@ -108,7 +109,7 @@ function loadAllArticles(): UnifiedArticle[] {
 
 function daysUntil(dateStr: string | null): number | null {
   if (!dateStr) return null;
-  return Math.ceil((new Date(dateStr).getTime() - Date.now()) / 86_400_000);
+  return Math.ceil((new Date(dateStr).getTime() - Date.now()) / MS_PER_DAY);
 }
 
 function expiryStatus(daysLeft: number | null, foundInApi: boolean, startsIn: number | null): 'expired' | 'critical' | 'warning' | 'ok' | 'stale' | 'unknown' {
@@ -149,9 +150,16 @@ type SuggestionResult = {
 
 let crmCacheIds: string[] = [];
 let crmCacheExpiry = 0;
+let pendingCrmFetch: Promise<string[]> | null = null;
 
 async function fetchComingSoonCrmIds(): Promise<string[]> {
   if (crmCacheIds.length && Date.now() < crmCacheExpiry) return crmCacheIds;
+  if (pendingCrmFetch) return pendingCrmFetch;
+  pendingCrmFetch = _fetchComingSoonCrmIds().finally(() => { pendingCrmFetch = null; });
+  return pendingCrmFetch;
+}
+
+async function _fetchComingSoonCrmIds(): Promise<string[]> {
   try {
     const token = await getToken();
     if (!token) return crmCacheIds;
@@ -172,7 +180,7 @@ async function fetchComingSoonCrmIds(): Promise<string[]> {
     } while (cursor && page < 20);
     if (allIds.length) {
       crmCacheIds = [...new Set(allIds)];
-      crmCacheExpiry = Date.now() + 6 * 60 * 60 * 1000; // 6-hour cache
+      crmCacheExpiry = Date.now() + CRM_CACHE_TTL_MS;
     }
     return crmCacheIds;
   } catch { return crmCacheIds; }

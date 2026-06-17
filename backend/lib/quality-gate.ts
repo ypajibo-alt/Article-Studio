@@ -1,4 +1,4 @@
-// Programmatic quality checks + serializers for article output
+import { MAX_HEADLINE_WORDS, MAX_LISTICLE_HEADLINE_WORDS } from './config.js';
 
 const BANNED_WORDS = [
   'delve', 'meticulously', 'showcases', 'nuanced', 'multifaceted',
@@ -13,6 +13,9 @@ const BANNED_PHRASES = [
 const NEGATIVE_BRAND_WORDS = ['stupid', 'bad', 'terrible', 'awful'];
 const GENERIC_JARGON = ['binge-worthy', 'must-see', 'hidden gem'];
 
+const EM_DASH_RE = /—/g;
+const EXCLAMATION_RE = /!/g;
+
 function wordCount(text: string): number {
   return text.trim().split(/\s+/).filter(Boolean).length;
 }
@@ -21,6 +24,20 @@ function isSentenceCase(headline: string): boolean {
   const words = headline.split(/\s+/).slice(1);
   const titleCaseCount = words.filter(w => w.length > 3 && /^[A-Z]/.test(w)).length;
   return titleCaseCount < Math.ceil(words.length * 0.5);
+}
+
+function applyAutoFixes(text: string): string {
+  return text.replace(EM_DASH_RE, ',').replace(EXCLAMATION_RE, '.');
+}
+
+function parseAIJSON<T>(raw: string): T {
+  const cleaned = raw.replace(/^```(?:json)?\n?/m, '').replace(/```\s*$/m, '').trim();
+  try { return JSON.parse(cleaned); }
+  catch {
+    const match = cleaned.match(/\{[\s\S]+\}/);
+    if (match) return JSON.parse(match[0]);
+    throw new Error('AI returned unparseable output');
+  }
 }
 
 export interface QualityResult<T> {
@@ -43,13 +60,7 @@ export interface ArticleOutput {
 }
 
 export function parseArticleJSON(raw: string): ArticleOutput {
-  const cleaned = raw.replace(/^```(?:json)?\n?/m, '').replace(/```\s*$/m, '').trim();
-  try { return JSON.parse(cleaned); }
-  catch {
-    const match = cleaned.match(/\{[\s\S]+\}/);
-    if (match) return JSON.parse(match[0]);
-    throw new Error('AI returned unparseable output');
-  }
+  return parseAIJSON<ArticleOutput>(raw);
 }
 
 export function serializeArticleOutput(output: ArticleOutput): string {
@@ -89,13 +100,7 @@ export interface ListicleOutput {
 }
 
 export function parseListicleJSON(raw: string): ListicleOutput {
-  const cleaned = raw.replace(/^```(?:json)?\n?/m, '').replace(/```\s*$/m, '').trim();
-  try { return JSON.parse(cleaned); }
-  catch {
-    const match = cleaned.match(/\{[\s\S]+\}/);
-    if (match) return JSON.parse(match[0]);
-    throw new Error('AI returned unparseable output');
-  }
+  return parseAIJSON<ListicleOutput>(raw);
 }
 
 export function serializeListicleOutput(output: ListicleOutput): string {
@@ -116,7 +121,7 @@ export function serializeListicleOutput(output: ListicleOutput): string {
   ].join('\n');
 }
 
-export function runListicleQualityGate(output: ListicleOutput): QualityResult<ListicleOutput> {
+export function runListicleQualityGate(output: ListicleOutput, validIds?: Set<string>): QualityResult<ListicleOutput> {
   const retryFeedback: string[] = [];
   const fixed: ListicleOutput = structuredClone(output);
 
@@ -134,15 +139,12 @@ export function runListicleQualityGate(output: ListicleOutput): QualityResult<Li
     blurb: e.blurb || '',
   }));
 
-  // Auto-fix em dashes and exclamation marks
-  const emDash = /—/g;
-  fixed.intro = fixed.intro.replace(emDash, ',').replace(/!/g, '.');
-  fixed.closing = fixed.closing.replace(emDash, ',').replace(/!/g, '.');
-  fixed.entries.forEach(e => { e.blurb = e.blurb.replace(emDash, ',').replace(/!/g, '.'); });
+  fixed.intro = applyAutoFixes(fixed.intro);
+  fixed.closing = applyAutoFixes(fixed.closing);
+  fixed.entries.forEach(e => { e.blurb = applyAutoFixes(e.blurb); });
 
-  // Hard checks
-  if (wordCount(fixed.headline) > 15)
-    retryFeedback.push(`Headline is ${wordCount(fixed.headline)} words, max 15.`);
+  if (wordCount(fixed.headline) > MAX_LISTICLE_HEADLINE_WORDS)
+    retryFeedback.push(`Headline is ${wordCount(fixed.headline)} words, max ${MAX_LISTICLE_HEADLINE_WORDS}.`);
 
   const introPara = fixed.intro.split(/\n\n+/).filter(p => p.trim());
   if (introPara.length < 1)
@@ -158,14 +160,13 @@ export function runListicleQualityGate(output: ListicleOutput): QualityResult<Li
 
   for (const entry of fixed.entries) {
     const wc = wordCount(entry.blurb);
-    if (wc < 60 || wc > 160)
-      retryFeedback.push(`Entry "${entry.title}" blurb is ${wc} words, need 85-135.`);
+    if (wc < 70 || wc > 120)
+      retryFeedback.push(`Entry "${entry.title}" blurb is ${wc} words, need 70-120.`);
     if (!entry.contentId)
       retryFeedback.push(`Entry "${entry.title}" is missing contentId.`);
+    else if (validIds && !validIds.has(entry.contentId))
+      retryFeedback.push(`Entry "${entry.title}" has contentId "${entry.contentId}" which is not in the provided title list. Only use contentIds from the list you were given.`);
   }
-
-  // Em dash auto-fix already handles the main structural issue.
-  // Word/phrase voice checks are handled by the prompt itself — don't duplicate here.
 
   return { passed: retryFeedback.length === 0, autoFixed: fixed, retryFeedback };
 }
@@ -182,15 +183,12 @@ export function runArticleQualityGate(output: ArticleOutput): QualityResult<Arti
   fixed.whyWatchIt = fixed.whyWatchIt || '';
   fixed.moreDetails = fixed.moreDetails || { director: '', fullCast: [], streamingNote: 'Watch free on Tubi' };
 
-  // Auto-fix
-  const emDash = /—/g;
-  fixed.introduction = fixed.introduction.replace(emDash, ',').replace(/!/g, '.');
-  fixed.whyWatchIt = fixed.whyWatchIt.replace(emDash, ',').replace(/!/g, '.');
-  fixed.cast.forEach(c => { c.bio = c.bio.replace(emDash, ',').replace(/!/g, '.'); });
+  fixed.introduction = applyAutoFixes(fixed.introduction);
+  fixed.whyWatchIt = applyAutoFixes(fixed.whyWatchIt);
+  fixed.cast.forEach(c => { c.bio = applyAutoFixes(c.bio); });
 
-  // Hard checks
-  if (wordCount(fixed.headline) > 12)
-    retryFeedback.push(`Headline is ${wordCount(fixed.headline)} words, max 12.`);
+  if (wordCount(fixed.headline) > MAX_HEADLINE_WORDS)
+    retryFeedback.push(`Headline is ${wordCount(fixed.headline)} words, max ${MAX_HEADLINE_WORDS}.`);
   if (!isSentenceCase(fixed.headline))
     retryFeedback.push('Headline must be sentence case, not Title Case.');
 

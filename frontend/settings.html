@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Settings — Article Studio</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #fff; color: #1a1a1a; min-height: 100vh; display: flex;
+    }
+
+    /* Sidebar */
+    .dossier-sidebar {
+      width: 200px; min-width: 200px; background: #1E1E2D;
+      display: flex; flex-direction: column; padding: 12px;
+      height: 100vh; position: sticky; top: 0; flex-shrink: 0;
+    }
+    .ds-logo { display: flex; align-items: center; gap: 10px; padding: 14px 12px 22px; }
+    .ds-logo span { font-size: 18px; font-weight: 700; color: #fff; letter-spacing: -0.02em; }
+    .ds-nav { display: flex; flex-direction: column; gap: 2px; }
+    .ds-nav-item {
+      display: flex; align-items: center; gap: 10px; padding: 8px 12px; border-radius: 8px;
+      color: rgba(255,255,255,0.5); text-decoration: none; font-size: 14px; font-weight: 500;
+      transition: background 0.15s, color 0.15s;
+    }
+    .ds-nav-item:hover { background: rgba(255,255,255,0.07); color: rgba(255,255,255,0.85); }
+    .ds-nav-item.active { background: #7C3AED; color: #fff; }
+    .ds-icon { width: 18px; height: 18px; flex-shrink: 0; }
+
+    /* Main */
+    .main { flex: 1; min-width: 0; display: flex; flex-direction: column; }
+
+    .topbar {
+      padding: 20px 36px 0; border-bottom: 1px solid #f0f1f3; flex-shrink: 0;
+    }
+    .topbar h1 { font-size: 20px; font-weight: 700; margin-bottom: 4px; }
+    .topbar p { font-size: 13px; color: #6b7280; margin-bottom: 18px; }
+
+    /* Section tabs */
+    .section-tabs { display: flex; gap: 0; border-bottom: 1px solid #e2e4e8; padding: 0 36px; }
+    .section-tab {
+      padding: 12px 18px; font-size: 13px; font-weight: 500; color: #6b7280;
+      cursor: pointer; border-bottom: 2px solid transparent; margin-bottom: -1px;
+      background: none; border-top: none; border-left: none; border-right: none;
+      font-family: inherit; transition: color 0.15s;
+    }
+    .section-tab:hover { color: #1a1a1a; }
+    .section-tab.active { color: #7C3AED; border-bottom-color: #7C3AED; font-weight: 600; }
+
+    .content { flex: 1; overflow-y: auto; padding: 32px 36px; }
+
+    /* Pipeline section */
+    .pipeline-section { display: none; }
+    .pipeline-section.active { display: block; }
+
+    .pipeline-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-bottom: 40px; }
+    .pipeline-card {
+      border: 1px solid #e2e4e8; border-radius: 12px; overflow: hidden;
+    }
+    .pipeline-card-header {
+      padding: 16px 20px; border-bottom: 1px solid #f0f1f3;
+      display: flex; align-items: center; gap: 10px;
+    }
+    .pipeline-card-header h3 { font-size: 14px; font-weight: 700; }
+    .pipeline-type-badge {
+      padding: 2px 8px; border-radius: 99px; font-size: 11px; font-weight: 700;
+    }
+    .badge-single { background: rgba(0,181,163,0.1); color: #00B5A3; }
+    .badge-listicle { background: rgba(124,58,237,0.1); color: #7C3AED; }
+
+    .pipeline-steps { padding: 16px 20px; display: flex; flex-direction: column; gap: 0; }
+    .pipeline-step {
+      display: flex; gap: 14px; align-items: flex-start; position: relative;
+    }
+    .pipeline-step:not(:last-child)::after {
+      content: ''; position: absolute; left: 15px; top: 32px;
+      width: 2px; height: calc(100% + 2px); background: #f0f1f3;
+    }
+    .step-dot {
+      width: 32px; height: 32px; border-radius: 99px; flex-shrink: 0;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 12px; font-weight: 700; z-index: 1;
+      background: #f3f4f6; color: #6b7280;
+    }
+    .step-dot.tubi { background: rgba(255,120,0,0.1); color: #f97316; }
+    .step-dot.ai { background: rgba(124,58,237,0.1); color: #7C3AED; }
+    .step-dot.check { background: rgba(0,181,163,0.1); color: #00B5A3; }
+    .step-dot.save { background: rgba(34,197,94,0.1); color: #16a34a; }
+    .step-body { padding: 6px 0 20px; }
+    .step-label { font-size: 13px; font-weight: 600; color: #1a1a1a; margin-bottom: 3px; }
+    .step-desc { font-size: 12px; color: #6b7280; line-height: 1.5; }
+    .step-model {
+      display: inline-block; margin-top: 5px; padding: 2px 7px;
+      border-radius: 5px; font-size: 11px; font-weight: 600;
+      background: #f3f4f6; color: #374151;
+    }
+
+    /* Prompts section */
+    .prompts-section { display: none; }
+    .prompts-section.active { display: block; }
+
+    .prompts-layout { display: flex; gap: 24px; }
+    .prompts-list { width: 220px; flex-shrink: 0; display: flex; flex-direction: column; gap: 4px; }
+    .prompt-list-item {
+      padding: 9px 12px; border-radius: 8px; cursor: pointer;
+      border: 1px solid transparent; transition: all 0.1s;
+    }
+    .prompt-list-item:hover { background: #f9fafb; }
+    .prompt-list-item.active { background: #f5f3ff; border-color: #ddd6fe; }
+    .prompt-list-item .pli-label { font-size: 13px; font-weight: 600; color: #1a1a1a; }
+    .prompt-list-item .pli-desc { font-size: 11px; color: #9ca3af; margin-top: 2px; line-height: 1.4; }
+
+    .prompt-editor-pane { flex: 1; min-width: 0; }
+    .prompt-editor-header {
+      display: flex; align-items: flex-start; justify-content: space-between;
+      margin-bottom: 12px; gap: 16px;
+    }
+    .prompt-editor-title { font-size: 15px; font-weight: 700; }
+    .prompt-editor-desc { font-size: 12px; color: #6b7280; margin-top: 3px; }
+    .prompt-editor-actions { display: flex; gap: 8px; flex-shrink: 0; }
+
+    .btn {
+      padding: 7px 14px; border-radius: 8px; font-size: 13px; font-weight: 600;
+      cursor: pointer; font-family: inherit; transition: all 0.15s; border: none;
+    }
+    .btn-primary { background: #7C3AED; color: #fff; }
+    .btn-primary:hover { background: #6d28d9; }
+    .btn-primary:disabled { background: #d1d5db; cursor: default; }
+    .btn-ghost { background: none; border: 1px solid #e2e4e8; color: #374151; }
+    .btn-ghost:hover { background: #f9fafb; }
+    .btn-danger { background: none; border: 1px solid #fca5a5; color: #ef4444; }
+    .btn-danger:hover { background: #fee2e2; }
+
+    .prompt-textarea {
+      width: 100%; height: 460px; padding: 14px; border: 1px solid #e2e4e8; border-radius: 10px;
+      font-family: 'SF Mono', 'Monaco', 'Menlo', Consolas, monospace; font-size: 12px;
+      line-height: 1.65; color: #1a1a1a; resize: vertical; outline: none;
+      transition: border-color 0.15s;
+    }
+    .prompt-textarea:focus { border-color: #7C3AED; }
+
+    /* Versions panel */
+    .versions-panel {
+      margin-top: 16px; border: 1px solid #e2e4e8; border-radius: 10px; overflow: hidden;
+    }
+    .versions-header {
+      padding: 10px 16px; background: #f9fafb; border-bottom: 1px solid #e2e4e8;
+      font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em;
+      color: #6b7280; display: flex; align-items: center; justify-content: space-between;
+    }
+    .versions-list { max-height: 180px; overflow-y: auto; }
+    .version-item {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 9px 16px; border-bottom: 1px solid #f9fafb; font-size: 13px;
+      transition: background 0.1s;
+    }
+    .version-item:last-child { border-bottom: none; }
+    .version-item:hover { background: #f9fafb; }
+    .version-ts { color: #374151; font-size: 12px; font-family: 'SF Mono', monospace; }
+    .version-actions { display: flex; gap: 6px; }
+    .version-btn {
+      padding: 3px 9px; border-radius: 5px; font-size: 11px; font-weight: 600;
+      cursor: pointer; font-family: inherit; border: 1px solid #e2e4e8;
+      background: #fff; color: #374151; transition: all 0.1s;
+    }
+    .version-btn:hover { background: #f3f4f6; }
+    .version-btn.restore { border-color: #7C3AED; color: #7C3AED; }
+    .version-btn.restore:hover { background: #f5f3ff; }
+    .versions-empty { padding: 16px; text-align: center; font-size: 12px; color: #c0c4cb; }
+
+    /* Unsaved indicator */
+    .unsaved-dot {
+      display: inline-block; width: 7px; height: 7px; border-radius: 50%;
+      background: #f59e0b; margin-left: 6px; vertical-align: middle;
+    }
+
+    /* Toast */
+    .toast {
+      position: fixed; bottom: 24px; right: 24px;
+      background: #1a1a1a; color: #fff; font-size: 13px; font-weight: 600;
+      padding: 10px 18px; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,.15);
+      opacity: 0; transform: translateY(8px); transition: all 0.2s; pointer-events: none; z-index: 1000;
+    }
+    .toast.show { opacity: 1; transform: translateY(0); }
+    .toast.success { background: #00B5A3; }
+    .toast.error { background: #ef4444; }
+
+    /* Loading */
+    .loading { padding: 60px; text-align: center; color: #c0c4cb; font-size: 14px; }
+  </style>
+</head>
+<body>
+
+<aside class="dossier-sidebar">
+  <div class="ds-logo">
+    <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#7C3AED" stroke-width="2"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg>
+    <span>Article Studio</span>
+  </div>
+  <nav class="ds-nav">
+    <a href="/monitor" class="ds-nav-item">
+      <svg class="ds-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path stroke-linecap="round" stroke-linejoin="round" d="M9 19v-6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2zm0 0V9a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v10m-6 0a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2m0 0V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-2a2 2 0 0 1-2-2z"/></svg>
+      Monitor
+    </a>
+    <a href="/generate?tab=articles" class="ds-nav-item">
+      <svg class="ds-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5.586a1 1 0 0 1 .707.293l5.414 5.414a1 1 0 0 1 .293.707V19a2 2 0 0 1-2 2z"/></svg>
+      Articles
+    </a>
+    <a href="/generate" class="ds-nav-item">
+      <svg class="ds-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path stroke-linecap="round" d="M11 5H6a2 2 0 0 0-2 2v11a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2v-5m-1.414-9.414a2 2 0 1 1 2.828 2.828L11.828 15H9v-2.828l8.586-8.586z"/></svg>
+      Generate
+    </a>
+    <a href="/pipeline" class="ds-nav-item">
+      <svg class="ds-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><circle cx="12" cy="12" r="9"/><polygon points="10,8 16,12 10,16" fill="currentColor" stroke="none"/></svg>
+      Pipeline
+    </a>
+    <a href="/settings" class="ds-nav-item active">
+      <svg class="ds-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path stroke-linecap="round" stroke-linejoin="round" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 0 0 2.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 0 0 1.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 0 0-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 0 0-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 0 0-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 0 0-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 0 0 1.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"/><circle cx="12" cy="12" r="3"/></svg>
+      Settings
+    </a>
+  </nav>
+</aside>
+
+<div class="main">
+  <div class="topbar">
+    <h1>Settings</h1>
+    <p>AI pipeline overview and prompt management</p>
+  </div>
+
+  <div style="padding: 0 36px; border-bottom: 1px solid #f0f1f3;">
+    <div class="section-tabs" style="padding: 0;">
+      <button class="section-tab active" data-tab="pipeline">Pipeline</button>
+      <button class="section-tab" data-tab="prompts">Prompts</button>
+    </div>
+  </div>
+
+  <div class="content">
+
+    <!-- Pipeline tab -->
+    <div class="pipeline-section active" id="tab-pipeline">
+      <div class="pipeline-grid">
+
+        <!-- Single title -->
+        <div class="pipeline-card">
+          <div class="pipeline-card-header">
+            <span class="pipeline-type-badge badge-single">Single Title</span>
+            <h3>Article generation pipeline</h3>
+          </div>
+          <div class="pipeline-steps">
+            <div class="pipeline-step">
+              <div class="step-dot tubi">1</div>
+              <div class="step-body">
+                <div class="step-label">Fetch metadata from Tubi</div>
+                <div class="step-desc">Pulls title, year, description, directors, cast, tags, rating, and image URLs from Tubi's content API using the content ID.</div>
+              </div>
+            </div>
+            <div class="pipeline-step">
+              <div class="step-dot ai">2</div>
+              <div class="step-body">
+                <div class="step-label">Generate article with Claude</div>
+                <div class="step-desc">Fills the user prompt template with the metadata, then sends system + user prompt to Claude. Generates headline, subheadline, intro, cast bios, pull quote, and "why watch it."</div>
+                <span class="step-model">Claude Sonnet 4.6 (Bedrock)</span>
+              </div>
+            </div>
+            <div class="pipeline-step">
+              <div class="step-dot check">3</div>
+              <div class="step-body">
+                <div class="step-label">Quality gate</div>
+                <div class="step-desc">Checks for banned words, em dashes, minimum word count, headline length, and sentence case. Fails the attempt and retries with feedback if any rule is violated. Up to 4 retries.</div>
+              </div>
+            </div>
+            <div class="pipeline-step">
+              <div class="step-dot check">4</div>
+              <div class="step-body">
+                <div class="step-label">Brand alignment check</div>
+                <div class="step-desc">GPT-4o scores the article across 5 dimensions: voice, specificity, angle, energy, and consistency. Scores below 3.5/5 trigger a retry with the scoring notes as feedback.</div>
+                <span class="step-model">GPT-4o (OpenAI)</span>
+              </div>
+            </div>
+            <div class="pipeline-step">
+              <div class="step-dot save">5</div>
+              <div class="step-body">
+                <div class="step-label">Save to database</div>
+                <div class="step-desc">Stores the final output, brand score, metadata, and status in SQLite. Article appears in the Articles list as a draft.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Listicle -->
+        <div class="pipeline-card">
+          <div class="pipeline-card-header">
+            <span class="pipeline-type-badge badge-listicle">Listicle</span>
+            <h3>Listicle generation pipeline</h3>
+          </div>
+          <div class="pipeline-steps">
+            <div class="pipeline-step">
+              <div class="step-dot tubi">1</div>
+              <div class="step-body">
+                <div class="step-label">Select containers</div>
+                <div class="step-desc">Fetches Tubi's full homepage container list. GPT-4o-mini picks the 3–5 containers most relevant to the article angle.</div>
+                <span class="step-model">GPT-4o-mini (OpenAI)</span>
+              </div>
+            </div>
+            <div class="pipeline-step">
+              <div class="step-dot tubi">2</div>
+              <div class="step-body">
+                <div class="step-label">Fetch titles from containers</div>
+                <div class="step-desc">Pulls all titles from the selected containers via Tubi's tensor API — up to 200 titles per container including metadata, ratings, cast, and directors.</div>
+              </div>
+            </div>
+            <div class="pipeline-step">
+              <div class="step-dot ai">3</div>
+              <div class="step-body">
+                <div class="step-label">Select titles</div>
+                <div class="step-desc">GPT-4o-mini reviews the full candidate list and selects 10–12 titles that best support the article angle. Returns IDs with reasoning.</div>
+                <span class="step-model">GPT-4o-mini (OpenAI)</span>
+              </div>
+            </div>
+            <div class="pipeline-step">
+              <div class="step-dot ai">4</div>
+              <div class="step-body">
+                <div class="step-label">Generate listicle with Claude</div>
+                <div class="step-desc">Sends the title list and container description to Claude with the full listicle prompt. Generates headline, subtitle, intro, and a blurb with tease for each entry.</div>
+                <span class="step-model">Claude Sonnet 4.6 (Bedrock)</span>
+              </div>
+            </div>
+            <div class="pipeline-step">
+              <div class="step-dot check">5</div>
+              <div class="step-body">
+                <div class="step-label">Quality gate + brand check</div>
+                <div class="step-desc">Same quality gate and brand alignment check as single titles. Up to 4 retries with failure feedback appended to the prompt.</div>
+                <span class="step-model">GPT-4o (OpenAI) for brand check</span>
+              </div>
+            </div>
+            <div class="pipeline-step">
+              <div class="step-dot save">6</div>
+              <div class="step-body">
+                <div class="step-label">Save to database</div>
+                <div class="step-desc">Stores the final listicle output including all entries, brand score, and metadata. Article appears in the Articles list as a draft.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Prompts tab -->
+    <div class="prompts-section" id="tab-prompts">
+      <div id="prompts-loading" class="loading">Loading prompts…</div>
+      <div class="prompts-layout" id="prompts-layout" style="display:none;">
+        <div class="prompts-list" id="prompts-list"></div>
+        <div class="prompt-editor-pane" id="prompt-editor-pane">
+          <div class="prompt-editor-header">
+            <div>
+              <div class="prompt-editor-title" id="editor-title"></div>
+              <div class="prompt-editor-desc" id="editor-desc"></div>
+            </div>
+            <div class="prompt-editor-actions">
+              <button class="btn btn-ghost" id="btn-discard" style="display:none;">Discard changes</button>
+              <button class="btn btn-primary" id="btn-save">Save</button>
+            </div>
+          </div>
+          <textarea class="prompt-textarea" id="prompt-textarea" spellcheck="false"></textarea>
+          <div class="versions-panel" id="versions-panel">
+            <div class="versions-header">
+              <span>Version history</span>
+            </div>
+            <div class="versions-list" id="versions-list"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script>
+const API = '';
+let prompts = [];
+let activeKey = null;
+let originalContent = '';
+
+function showToast(msg, type) {
+  const t = document.getElementById('toast');
+  t.textContent = msg;
+  t.className = 'toast show' + (type ? ' ' + type : '');
+  setTimeout(() => t.className = 'toast', 2800);
+}
+
+// Section tabs
+document.querySelectorAll('.section-tab').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.section-tab').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    const tab = btn.dataset.tab;
+    document.getElementById('tab-pipeline').classList.toggle('active', tab === 'pipeline');
+    document.getElementById('tab-prompts').classList.toggle('active', tab === 'prompts');
+    if (tab === 'prompts' && prompts.length === 0) loadPrompts();
+  });
+});
+
+async function loadPrompts() {
+  try {
+    const res = await fetch(API + '/api/settings/prompts');
+    const data = await res.json();
+    prompts = data.prompts;
+    document.getElementById('prompts-loading').style.display = 'none';
+    document.getElementById('prompts-layout').style.display = 'flex';
+    renderPromptList();
+    if (prompts.length) selectPrompt(prompts[0].key);
+  } catch (e) {
+    document.getElementById('prompts-loading').textContent = 'Failed to load prompts.';
+  }
+}
+
+function renderPromptList() {
+  const list = document.getElementById('prompts-list');
+  list.innerHTML = prompts.map(p => `
+    <div class="prompt-list-item ${p.key === activeKey ? 'active' : ''}" data-key="${p.key}">
+      <div class="pli-label">${p.label}</div>
+      <div class="pli-desc">${p.description}</div>
+    </div>
+  `).join('');
+  list.querySelectorAll('.prompt-list-item').forEach(el => {
+    el.addEventListener('click', () => {
+      if (hasUnsavedChanges() && !confirm('You have unsaved changes. Discard them?')) return;
+      selectPrompt(el.dataset.key);
+    });
+  });
+}
+
+function hasUnsavedChanges() {
+  return document.getElementById('prompt-textarea').value !== originalContent;
+}
+
+function selectPrompt(key) {
+  activeKey = key;
+  const p = prompts.find(p => p.key === key);
+  if (!p) return;
+
+  document.getElementById('editor-title').textContent = p.label;
+  document.getElementById('editor-desc').textContent = p.description;
+  document.getElementById('prompt-textarea').value = p.content;
+  originalContent = p.content;
+  document.getElementById('btn-discard').style.display = 'none';
+  renderVersions(p.versions);
+  renderPromptList();
+}
+
+function renderVersions(versions) {
+  const list = document.getElementById('versions-list');
+  if (!versions || !versions.length) {
+    list.innerHTML = '<div class="versions-empty">No saved versions yet. Versions are created automatically when you save changes.</div>';
+    return;
+  }
+  list.innerHTML = versions.map(v => `
+    <div class="version-item">
+      <span class="version-ts">${v.label}</span>
+      <div class="version-actions">
+        <button class="version-btn" data-ts="${v.timestamp}" data-action="preview">Preview</button>
+        <button class="version-btn restore" data-ts="${v.timestamp}" data-action="restore">Restore</button>
+      </div>
+    </div>
+  `).join('');
+  list.querySelectorAll('[data-action]').forEach(btn => {
+    btn.addEventListener('click', () => {
+      if (btn.dataset.action === 'preview') previewVersion(btn.dataset.ts);
+      else restoreVersion(btn.dataset.ts);
+    });
+  });
+}
+
+async function previewVersion(ts) {
+  try {
+    const res = await fetch(`${API}/api/settings/prompts/${activeKey}/version/${ts}`);
+    const data = await res.json();
+    document.getElementById('prompt-textarea').value = data.content;
+    document.getElementById('btn-discard').style.display = 'inline-flex';
+    showToast('Previewing version — save to apply, discard to go back');
+  } catch { showToast('Failed to load version', 'error'); }
+}
+
+async function restoreVersion(ts) {
+  if (!confirm('Restore this version? The current prompt will be saved as a version first.')) return;
+  try {
+    const res = await fetch(`${API}/api/settings/prompts/${activeKey}/restore/${ts}`, { method: 'POST' });
+    const data = await res.json();
+    const p = prompts.find(p => p.key === activeKey);
+    if (p) {
+      p.versions = data.versions;
+      // Reload current content
+      const allRes = await fetch(API + '/api/settings/prompts');
+      const allData = await allRes.json();
+      prompts = allData.prompts;
+      selectPrompt(activeKey);
+    }
+    showToast('Version restored', 'success');
+  } catch { showToast('Failed to restore', 'error'); }
+}
+
+document.getElementById('prompt-textarea').addEventListener('input', () => {
+  const changed = hasUnsavedChanges();
+  document.getElementById('btn-discard').style.display = changed ? 'inline-flex' : 'none';
+});
+
+document.getElementById('btn-discard').addEventListener('click', () => {
+  document.getElementById('prompt-textarea').value = originalContent;
+  document.getElementById('btn-discard').style.display = 'none';
+});
+
+document.getElementById('btn-save').addEventListener('click', async () => {
+  const content = document.getElementById('prompt-textarea').value;
+  const btn = document.getElementById('btn-save');
+  btn.disabled = true; btn.textContent = 'Saving…';
+  try {
+    const res = await fetch(`${API}/api/settings/prompts/${activeKey}`, {
+      method: 'PUT',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ content }),
+    });
+    const data = await res.json();
+    if (!res.ok) throw new Error(data.error);
+    const p = prompts.find(p => p.key === activeKey);
+    if (p) { p.content = content; p.versions = data.versions; }
+    originalContent = content;
+    document.getElementById('btn-discard').style.display = 'none';
+    renderVersions(data.versions);
+    showToast('Prompt saved — will apply to next generation', 'success');
+  } catch (e) { showToast(e.message || 'Save failed', 'error'); }
+  btn.disabled = false; btn.textContent = 'Save';
+});
+
+// Warn on unload if unsaved
+window.addEventListener('beforeunload', e => {
+  if (hasUnsavedChanges()) { e.preventDefault(); e.returnValue = ''; }
+});
+</script>
+</body>
+</html>

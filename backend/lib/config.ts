@@ -1,0 +1,9 @@
+export const BRAND_SCORE_PASS_THRESHOLD = 3.5;
+export const CLAUDE_MAX_TOKENS = 8192;
+export const CLAUDE_TEMPERATURE = 0.7;
+export const MAX_HEADLINE_WORDS = 12;
+export const MAX_LISTICLE_HEADLINE_WORDS = 15;
+export const MS_PER_DAY = 86_400_000;
+export const CRM_CACHE_TTL_MS = 6 * 60 * 60 * 1000;
+export const AVAILABILITY_WINDOW_MS = 30 * 24 * 60 * 60 * 1000;
+export const DEFAULT_PORT = 3002;

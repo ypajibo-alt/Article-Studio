@@ -3,14 +3,18 @@ import { fetchAllContainers, fetchContainerTitles } from '../lib/tubiSearch.js';
 import { fetchContentAvailability } from '../lib/tubi.js';
 import { selectContainersWithOpenAI, selectTitlesWithOpenAI } from '../lib/bedrock.js';
 import { loadPrompt } from '../lib/prompts.js';
+import { sse } from '../lib/sse.js';
+import { AVAILABILITY_WINDOW_MS } from '../lib/config.js';
 
 const router = Router();
 
-function sse(res: Response, data: object): void {
-  res.write(`data: ${JSON.stringify(data)}\n\n`);
-  if (typeof (res as unknown as { flush?: () => void }).flush === 'function') {
-    (res as unknown as { flush: () => void }).flush();
+function fisherYatesShuffle<T>(arr: T[]): T[] {
+  const out = [...arr];
+  for (let i = out.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [out[i], out[j]] = [out[j], out[i]];
   }
+  return out;
 }
 
 router.post('/discover', async (req: Request, res: Response) => {
@@ -98,11 +102,9 @@ router.post('/discover', async (req: Request, res: Response) => {
         : candidates;
 
     // Sort by year desc, then shuffle so repeated runs surface different titles
-    const preshuffle = filtered
-      .sort((a, b) => (b.year || 0) - (a.year || 0))
-      .slice(0, 150)
-      .sort(() => Math.random() - 0.5)
-      .slice(0, 60);
+    const preshuffle = fisherYatesShuffle(
+      filtered.sort((a, b) => (b.year || 0) - (a.year || 0)).slice(0, 150)
+    ).slice(0, 60);
 
     // ── Stage 3b: Fetch availability + filter by publish date ─────────────────
     sse(res, { type: 'stage', stage: 'titles', label: 'Checking title availability…' });
@@ -118,7 +120,7 @@ router.post('/discover', async (req: Request, res: Response) => {
     // Soft-filter by availability — if too few survive, fall back to full pool
     // Availability is shown on cards regardless so editor can make final call
     const cutoff = publishDate
-      ? new Date(new Date(publishDate).getTime() + 30 * 24 * 60 * 60 * 1000)
+      ? new Date(new Date(publishDate).getTime() + AVAILABILITY_WINDOW_MS)
       : null;
 
     const available = cutoff

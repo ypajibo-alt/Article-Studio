@@ -1,6 +1,7 @@
 import { BedrockRuntimeClient, InvokeModelCommand } from '@aws-sdk/client-bedrock-runtime';
 import { fromSSO } from '@aws-sdk/credential-providers';
 import OpenAI from 'openai';
+import { BRAND_SCORE_PASS_THRESHOLD, CLAUDE_MAX_TOKENS, CLAUDE_TEMPERATURE } from './config.js';
 
 export const MAX_RETRIES = 4;
 
@@ -26,8 +27,8 @@ export async function callAI(system: string, user: string): Promise<string> {
       anthropic_version: 'bedrock-2023-05-31',
       system,
       messages: [{ role: 'user', content: user }],
-      max_tokens: 8192,
-      temperature: 0.7,
+      max_tokens: CLAUDE_MAX_TOKENS,
+      temperature: CLAUDE_TEMPERATURE,
     }),
   });
   const response = await bedrockClient.send(command);
@@ -43,21 +44,25 @@ export async function runBrandCheck(
   const prompt = brandAlignmentPrompt
     .replace('{{brand_voice_reference}}', brandVoiceReference)
     .replace('{{generated_article}}', serializedContent);
-  try {
-    const response = await openaiClient().chat.completions.create({
-      model: 'gpt-4o',
-      response_format: { type: 'json_object' },
-      messages: [
-        { role: 'system', content: 'You are a Tubi brand reviewer. Return only valid JSON.' },
-        { role: 'user', content: prompt },
-      ],
-    });
-    const result = JSON.parse(response.choices[0]?.message?.content || '{}');
-    const overall = (result.voice + result.specificity + result.angle + result.energy + result.consistency) / 5;
-    return { passed: overall >= 3.5, overall, notes: result.notes || 'No notes' };
-  } catch (err) {
-    throw err;
+
+  const response = await openaiClient().chat.completions.create({
+    model: 'gpt-4o',
+    response_format: { type: 'json_object' },
+    messages: [
+      { role: 'system', content: 'You are a Tubi brand reviewer. Return only valid JSON.' },
+      { role: 'user', content: prompt },
+    ],
+  });
+
+  const result = JSON.parse(response.choices[0]?.message?.content || '{}');
+  const dims = [result.voice, result.specificity, result.angle, result.energy, result.consistency];
+
+  if (dims.some(d => typeof d !== 'number')) {
+    throw new Error(`Invalid brand score response — expected 5 numeric dimensions, got: ${JSON.stringify(result)}`);
   }
+
+  const overall = dims.reduce((sum, d) => sum + d, 0) / dims.length;
+  return { passed: overall >= BRAND_SCORE_PASS_THRESHOLD, overall, notes: result.notes || 'No notes' };
 }
 
 export async function selectContainersWithOpenAI(
@@ -112,7 +117,6 @@ export async function selectTitlesWithOpenAI(
   return result.selected || [];
 }
 
-// Regenerate a single listicle blurb entry
 export async function regenerateBlurb(entryTitle: string, contentTitle: string, contentType: string, articleTitle: string): Promise<string> {
   const system = `You write short, punchy blurbs for Tubi blog listicle entries. Tubi brand voice: direct, enthusiastic, champion the content. Never use: "delve", "meticulously", "showcases", "nuanced", em dashes. 80-120 words max per blurb.`;
   const user = `Write a fresh listicle blurb for this entry in the article "${articleTitle}":

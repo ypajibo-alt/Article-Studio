@@ -79,7 +79,7 @@ router.post('/articles/:slug/publish', (req: Request, res: Response) => {
   article.published = doPublish;
   article.publishedAt = doPublish ? now : null;
   article.publishAt = null;
-  if (doPublish) article.status = 'published';
+  article.status = doPublish ? 'published' : 'unpublished';
   article.updatedAt = now;
   writeArticle(article);
   res.json({ article });
@@ -107,7 +107,7 @@ router.post('/articles/:slug/comments', (req: Request, res: Response) => {
   if (!selectedText || !comment) { res.status(400).json({ error: 'selectedText and comment required' }); return; }
 
   const newComment: ArticleComment = {
-    id: `c-${Date.now()}-${Math.random().toString(36).slice(2, 6)}`,
+    id: crypto.randomUUID(),
     createdAt: new Date().toISOString(),
     author: author || 'Editor',
     selectedText, text: comment,

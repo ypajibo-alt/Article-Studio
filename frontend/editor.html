@@ -68,8 +68,6 @@
     }
     .status-dropdown-item:hover { background: #f9fafb; }
     .status-dropdown-item.active { font-weight: 700; }
-    .status-badge { cursor: pointer; user-select: none; }
-    .status-badge::after { content: ' ↓'; font-size: 10px; opacity: 0.6; }
 
     .btn-publish {
       padding: 7px 16px; border-radius: 8px; border: none;
@@ -80,6 +78,15 @@
     .btn-publish.published { background: #f3f4f6; color: #6b7280; border: 1px solid #e2e4e8; }
     .btn-publish.published:hover { background: #fee2e2; color: #ef4444; border-color: #fca5a5; }
     .btn-publish:disabled { opacity: 0.4; cursor: default; }
+
+    .btn-export {
+      padding: 7px 16px; border-radius: 8px; border: 1px solid #e2e4e8;
+      background: #fff; color: #374151; font-size: 13px; font-weight: 600;
+      cursor: pointer; font-family: inherit; transition: all 0.15s;
+      display: inline-flex; align-items: center; gap: 6px;
+    }
+    .btn-export:hover { background: #f9fafb; border-color: #d1d5db; }
+    .btn-export:disabled { opacity: 0.4; cursor: default; }
 
     /* Article header */
     .article-header { padding: 24px 32px 0; }
@@ -203,6 +210,24 @@
     .listicle-title { font-weight: 700; font-size: 14px; margin-bottom: 4px; }
     .listicle-blurb { font-size: 13px; color: #6b7280; line-height: 1.6; }
 
+    .section-block { position: relative; }
+    .section-header {
+      display: flex; align-items: center; justify-content: space-between;
+      margin: 20px 0 8px;
+    }
+    .section-header .section-label { margin: 0; }
+    .copy-btn {
+      opacity: 0;
+      padding: 3px 9px; border-radius: 6px; border: 1px solid #e2e4e8;
+      background: #fff; color: #9ca3af; font-size: 11px; font-weight: 600;
+      cursor: pointer; font-family: inherit; flex-shrink: 0;
+      transition: opacity 0.15s, background 0.15s, color 0.15s, border-color 0.15s;
+      display: inline-flex; align-items: center; white-space: nowrap;
+    }
+    .section-block:hover .copy-btn { opacity: 1; }
+    .copy-btn:hover { background: #f9fafb; border-color: #c8cdd5; color: #374151; }
+    .copy-btn.copied { opacity: 1; background: rgba(0,181,163,0.08); color: #00B5A3; border-color: rgba(0,181,163,0.3); }
+
     /* Feedback tab */
     .feedback-empty { padding: 40px 0; text-align: center; color: #c0c4cb; font-size: 13px; }
     .feedback-card {
@@ -305,7 +330,7 @@
       <svg class="ds-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path stroke-linecap="round" stroke-linejoin="round" d="M9 19v-6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2zm0 0V9a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v10m-6 0a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2m0 0V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-2a2 2 0 0 1-2-2z"/></svg>
       Monitor
     </a>
-    <a href="/articles" class="ds-nav-item active">
+    <a href="/generate?tab=articles" class="ds-nav-item active">
       <svg class="ds-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5.586a1 1 0 0 1 .707.293l5.414 5.414a1 1 0 0 1 .293.707V19a2 2 0 0 1-2 2z"/></svg>
       Articles
     </a>
@@ -316,6 +341,10 @@
       <a href="/pipeline" class="ds-nav-item">
       <svg class="ds-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><circle cx="12" cy="12" r="9"/><polygon points="10,8 16,12 10,16" fill="currentColor" stroke="none"/></svg>
       Pipeline
+    </a>
+    <a href="/settings" class="ds-nav-item">
+      <svg class="ds-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path stroke-linecap="round" stroke-linejoin="round" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 0 0 2.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 0 0 1.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 0 0-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 0 0-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 0 0-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 0 0-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 0 0 1.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"/><circle cx="12" cy="12" r="3"/></svg>
+      Settings
     </a>
   </nav>
 </aside>
@@ -338,7 +367,7 @@
 <div class="toast" id="toast"></div>
 
 <script>
-  const API = 'http://localhost:3002';
+  const API = '';
   const slug = new URLSearchParams(window.location.search).get('slug');
   let article = null;
 
@@ -354,7 +383,7 @@
   }
 
   function statusBadge(status) {
-    const map = { draft:['s-draft','Draft'], ready:['s-ready','Ready to publish'], approved:['s-approved','Published'], unpublished:['s-unpublished','Unpublished'] };
+    const map = { draft:['s-draft','Draft'], ready:['s-ready','Ready to publish'], published:['s-approved','Published'], unpublished:['s-unpublished','Unpublished'] };
     const [cls, label] = map[status] || ['s-draft', status];
     return '<span class="status-badge ' + cls + '">' + label + '</span>';
   }
@@ -370,29 +399,50 @@
     return renderSingle(output);
   }
 
+  function singleBlock(text, cls) {
+    let paras = (text || '').split(/\n\n+/).map(function(p) { return p.trim(); }).filter(Boolean);
+    return '<div class="art-body ' + cls + '" contenteditable="true">' + paras.map(esc).join('<br><br>') + '</div>';
+  }
+
   function renderSingle(o) {
-    var html = '<div class="art-subheadline" contenteditable="true">' + esc(o.subheadline) + '</div>';
+    let html = '<div class="section-block">';
+    html += '<div class="section-header"><span class="section-label">Subheadline</span><button class="copy-btn" data-copy=".subheadline">Copy</button></div>';
+    html += '<div class="art-subheadline subheadline" contenteditable="true">' + esc(o.subheadline) + '</div>';
+    html += '</div>';
+
     html += '<hr class="art-divider">';
-    html += '<div class="section-label">Introduction</div>';
-    html += '<div class="art-body">' + (o.introduction || '').split(/\n\n+/).map(function(p) {
-      return '<p contenteditable="true">' + esc(p.trim()) + '</p>';
-    }).join('') + '</div>';
+
+    html += '<div class="section-block">';
+    html += '<div class="section-header"><span class="section-label">Introduction</span><button class="copy-btn" data-copy=".introduction">Copy</button></div>';
+    html += singleBlock(o.introduction, 'introduction');
+    html += '</div>';
+
     if (o.pullQuote) {
+      html += '<div class="section-block">';
+      html += '<div class="section-header"><span class="section-label">Pull quote</span><button class="copy-btn" data-copy=".art-pull-quote">Copy</button></div>';
       html += '<div class="art-pull-quote" contenteditable="true">' + esc(o.pullQuote) + '</div>';
+      html += '</div>';
     }
+
     if (o.cast && o.cast.length) {
       html += '<hr class="art-divider"><div class="section-label">Cast</div>';
-      o.cast.forEach(function(c) {
+      o.cast.forEach(function(c, i) {
+        html += '<div class="section-block">';
+        html += '<div class="section-header" style="margin-top:4px;"><span style="font-size:13px;font-weight:600;color:#374151;">' + esc(c.name) + '</span><button class="copy-btn" data-copy=".cast-bio-' + i + '">Copy bio</button></div>';
         html += '<div class="cast-name" contenteditable="true">' + esc(c.name) + '</div>';
-        html += '<div class="cast-bio" contenteditable="true">' + esc(c.bio) + '</div>';
+        html += '<div class="cast-bio cast-bio-' + i + '" contenteditable="true">' + esc(c.bio) + '</div>';
+        html += '</div>';
       });
     }
+
     if (o.whyWatchIt) {
-      html += '<hr class="art-divider"><div class="section-label">Why watch it</div>';
-      html += '<div class="art-body">' + (o.whyWatchIt || '').split(/\n\n+/).map(function(p) {
-        return '<p contenteditable="true">' + esc(p.trim()) + '</p>';
-      }).join('') + '</div>';
+      html += '<hr class="art-divider">';
+      html += '<div class="section-block">';
+      html += '<div class="section-header"><span class="section-label">Why watch it</span><button class="copy-btn" data-copy=".why-watch-it">Copy</button></div>';
+      html += singleBlock(o.whyWatchIt, 'why-watch-it');
+      html += '</div>';
     }
+
     if (o.moreDetails && o.moreDetails.director) {
       html += '<hr class="art-divider"><div class="section-label">Details</div>';
       html += '<div class="art-body"><p><strong>Director:</strong> <span contenteditable="true">' + esc(o.moreDetails.director) + '</span></p>';
@@ -405,23 +455,40 @@
   }
 
   function renderListicle(o) {
-    var sub = o.subtitle || o.subheadline || o.angle || '';
-    var intro = o.intro || o.introduction || '';
-    var html = '<div class="art-subheadline" contenteditable="true">' + esc(sub) + '</div>';
+    let sub = o.subtitle || o.subheadline || o.angle || '';
+    let intro = o.intro || o.introduction || '';
+
+    let html = '<div class="section-block">';
+    html += '<div class="section-header"><span class="section-label">Subheadline</span><button class="copy-btn" data-copy=".listicle-sub">Copy</button></div>';
+    html += '<div class="art-subheadline listicle-sub" contenteditable="true">' + esc(sub) + '</div>';
+    html += '</div>';
+
     html += '<hr class="art-divider">';
-    html += '<div class="art-body">' + intro.split(/\n\n+/).map(function(p) {
-      return '<p contenteditable="true">' + esc(p.trim()) + '</p>';
-    }).join('') + '</div>';
+
+    html += '<div class="section-block">';
+    html += '<div class="section-header"><span class="section-label">Intro</span><button class="copy-btn" data-copy=".listicle-intro">Copy</button></div>';
+    html += singleBlock(intro, 'listicle-intro');
+    html += '</div>';
+
     html += '<hr class="art-divider">';
+
     (o.entries || []).forEach(function(e, i) {
       var tease = e.tease ? ' — ' + e.tease : '';
-      html += '<div class="listicle-entry">'
+      html += '<div class="section-block listicle-entry">'
+        + '<div class="section-header" style="margin-top:0;">'
         + '<div class="listicle-title" contenteditable="true">' + (i+1) + '. ' + esc(e.title) + esc(tease) + '</div>'
-        + '<div class="listicle-blurb" contenteditable="true">' + esc(e.blurb) + '</div>'
+        + '<button class="copy-btn" data-copy=".listicle-blurb-' + i + '">Copy</button>'
+        + '</div>'
+        + '<div class="listicle-blurb listicle-blurb-' + i + '" contenteditable="true">' + esc(e.blurb) + '</div>'
         + '</div>';
     });
+
     if (o.closing) {
-      html += '<hr class="art-divider"><div class="art-body"><p contenteditable="true">' + esc(o.closing) + '</p></div>';
+      html += '<hr class="art-divider">';
+      html += '<div class="section-block">';
+      html += '<div class="section-header"><span class="section-label">Closing</span><button class="copy-btn" data-copy=".listicle-closing">Copy</button></div>';
+      html += '<div class="listicle-closing art-body" contenteditable="true">' + esc(o.closing) + '</div>';
+      html += '</div>';
     }
     return html;
   }
@@ -461,7 +528,7 @@
 
   function applyEditorHighlights(containerEl, comments) {
     for (var i = 0; i < (comments || []).length; i++) {
-      var c = comments[i];
+      let c = comments[i];
       if (c.resolvedAt || !c.selectedText) continue;
       var color = c.author === 'Legal' ? 'rgba(245,158,11,0.3)' : c.author === 'Marketing' ? 'rgba(99,102,241,0.2)' : 'rgba(0,181,163,0.25)';
       var walker = document.createTreeWalker(containerEl, NodeFilter.SHOW_TEXT);
@@ -480,7 +547,7 @@
     }
     containerEl.querySelectorAll('mark[data-comment-id]').forEach(function(m) {
       m.addEventListener('click', function() {
-        var id = m.dataset.commentId;
+        let id = m.dataset.commentId;
         document.querySelectorAll('.ws-comment-card').forEach(function(c) { c.style.outline = ''; });
         var card = document.querySelector('.ws-comment-card[data-comment-id="' + id + '"]');
         if (card) { card.style.outline = '2px solid ' + (m.style.background.includes('245') ? '#d97706' : '#6366f1'); card.scrollIntoView({ behavior: 'smooth', block: 'nearest' }); }
@@ -506,11 +573,11 @@
   }
 
   function renderDetails(a) {
-    var seo = a.seo || {};
-    var html = '';
+    let seo = a.seo || {};
+    let html = '';
 
     // --- Publishing ---
-    var pubLine = a.published
+    let pubLine = a.published
       ? '<span style="color:#16a34a;font-weight:700;font-size:14px;">● Live</span>'
         + (a.publishedAt ? '<span style="color:#9ca3af;font-size:13px;margin-left:10px;">Published ' + formatDate(a.publishedAt) + '</span>' : '')
       : '<span style="color:#9ca3af;font-size:14px;">Not published</span>';
@@ -562,8 +629,8 @@
 
     // --- Brand score ---
     if (a.brandScore != null) {
-      var pct = (a.brandScore / 5) * 100;
-      var barCls = a.brandScore >= 3.5 ? '' : 'low';
+      let pct = (a.brandScore / 5) * 100;
+      let barCls = a.brandScore >= 3.5 ? '' : 'low';
       html += '<div class="detail-section">'
         + '<div class="detail-section-heading">Brand score</div>'
         + '<div class="score-row">'
@@ -594,16 +661,20 @@
 
   function buildPage(a) {
     article = a;
-    var output = a.output || {};
-    var headline = output.headline || a.articleTitle || 'Untitled';
-    var tags = (a.tags || []).map(function(t) { return '<span class="tag">' + esc(t) + '</span>'; }).join('');
+    let output = a.output || {};
+    let headline = output.headline || a.articleTitle || 'Untitled';
+    let tags = (a.tags || []).map(function(t) { return '<span class="tag">' + esc(t) + '</span>'; }).join('');
 
-    var mainEl = document.getElementById('main');
+    let mainEl = document.getElementById('main');
     mainEl.innerHTML = [
       // Top bar
       '<div class="topbar">',
-        '<a href="/articles" class="back-link">&#8592; Articles</a>',
+        '<a href="/generate?tab=articles" class="back-link">&#8592; Articles</a>',
         '<div class="topbar-actions">',
+          '<button class="btn-export" id="btn-export" title="Download dev-ready ZIP (JSON + images)">',
+            '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 16v-8m0 8l-3-3m3 3l3-3M4 20h16"/></svg>',
+            'Export ZIP',
+          '</button>',
           '<button class="btn-save" id="btn-save">Save changes</button>',
           '<button class="btn-publish ' + (a.published ? 'published' : '') + '" id="btn-publish">' + (a.published ? 'Unpublish' : 'Publish') + '</button>',
         '</div>',
@@ -650,7 +721,7 @@
 
     // Apply highlights to workspace article
     setTimeout(function() {
-      var wsArticle = document.getElementById('ws-article-content');
+      let wsArticle = document.getElementById('ws-article-content');
       if (wsArticle) applyEditorHighlights(wsArticle, a.comments || []);
     }, 0);
 
@@ -659,51 +730,70 @@
       btn.addEventListener('click', function() {
         mainEl.querySelectorAll('.tab').forEach(function(b) { b.classList.remove('active'); });
         btn.classList.add('active');
-        var tab = btn.dataset.tab;
+        let tab = btn.dataset.tab;
         document.getElementById('pane-workspace').classList.toggle('active', tab === 'workspace');
         document.getElementById('pane-details').classList.toggle('active', tab === 'details');
       });
     });
 
+    // Copy section button
+    mainEl.addEventListener('click', function(e) {
+      let btn = e.target.closest('.copy-btn');
+      if (!btn) return;
+      var sel = btn.dataset.copy;
+      var block = btn.closest('.section-block');
+      if (!block || !sel) return;
+      var target = block.querySelector(sel);
+      if (!target) return;
+      let text = (target.innerText || target.textContent || '').trim();
+      if (!text) return;
+      navigator.clipboard.writeText(text).then(function() {
+        let orig = btn.textContent;
+        btn.textContent = 'Copied!';
+        btn.classList.add('copied');
+        setTimeout(function() { btn.textContent = orig; btn.classList.remove('copied'); }, 1800);
+      }).catch(function() { showToast('Could not copy', 'error'); });
+    });
+
     // Toggle reply area
     mainEl.addEventListener('click', function(e) {
-      var btn = e.target.closest('.toggle-reply-btn');
+      let btn = e.target.closest('.toggle-reply-btn');
       if (!btn) return;
-      var id = btn.dataset.id;
-      var area = document.getElementById('reply-area-' + id);
+      let id = btn.dataset.id;
+      let area = document.getElementById('reply-area-' + id);
       if (!area) return;
-      var isVisible = area.style.display !== 'none';
+      let isVisible = area.style.display !== 'none';
       area.style.display = isVisible ? 'none' : 'block';
       if (!isVisible) document.getElementById('reply-input-' + id).focus();
     });
 
     // Cancel reply
     mainEl.addEventListener('click', function(e) {
-      var btn = e.target.closest('.cancel-reply-btn');
+      let btn = e.target.closest('.cancel-reply-btn');
       if (!btn) return;
-      var area = document.getElementById('reply-area-' + btn.dataset.id);
+      let area = document.getElementById('reply-area-' + btn.dataset.id);
       if (area) area.style.display = 'none';
     });
 
     // Send reply
     mainEl.addEventListener('click', async function(e) {
-      var btn = e.target.closest('.send-reply-btn');
+      let btn = e.target.closest('.send-reply-btn');
       if (!btn) return;
-      var id = btn.dataset.id;
-      var input = document.getElementById('reply-input-' + id);
-      var replyText = input ? input.value.trim() : '';
+      let id = btn.dataset.id;
+      let input = document.getElementById('reply-input-' + id);
+      let replyText = input ? input.value.trim() : '';
       if (!replyText) return;
       btn.disabled = true; btn.textContent = 'Sending...';
       try {
-        var resp = await fetch(API + '/api/articles/' + slug + '/comments/' + id, {
+        let resp = await fetch(API + '/api/articles/' + slug + '/comments/' + id, {
           method: 'PUT', headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ reply: replyText }),
         });
         if (!resp.ok) throw new Error();
-        var data = await resp.json();
-        var c = (article.comments || []).find(function(c) { return c.id === id; });
+        let data = await resp.json();
+        let c = (article.comments || []).find(function(c) { return c.id === id; });
         if (c) c.reply = replyText;
-        var wsList = document.getElementById('ws-comments-list');
+        let wsList = document.getElementById('ws-comments-list');
         if (wsList) wsList.innerHTML = renderWsComments(article.comments || []);
         showToast('Reply sent', 'success');
       } catch { showToast('Failed to send reply', 'error'); btn.disabled = false; btn.textContent = 'Send reply'; }
@@ -711,27 +801,44 @@
 
     // Mark feedback as addressed
     mainEl.addEventListener('click', async function(e) {
-      var btn = e.target.closest('.mark-done-btn');
+      let btn = e.target.closest('.mark-done-btn');
       if (!btn) return;
-      var id = btn.dataset.id;
+      let id = btn.dataset.id;
       try {
-        var resp = await fetch(API + '/api/articles/' + slug + '/comments/' + id, {
+        let resp = await fetch(API + '/api/articles/' + slug + '/comments/' + id, {
           method: 'PUT', headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ resolved: true, resolvedBy: 'Editor' }),
         });
-        var data = await resp.json();
-        var c = (article.comments || []).find(function(c) { return c.id === id; });
+        let data = await resp.json();
+        let c = (article.comments || []).find(function(c) { return c.id === id; });
         if (c) { c.resolvedAt = data.comment.resolvedAt; c.resolvedBy = data.comment.resolvedBy; }
-        var wsList = document.getElementById('ws-comments-list');
+        let wsList = document.getElementById('ws-comments-list');
         if (wsList) wsList.innerHTML = renderWsComments(article.comments || []);
         // Re-apply highlights
-        var wsArticle = document.getElementById('ws-article-content');
+        let wsArticle = document.getElementById('ws-article-content');
         if (wsArticle) { wsArticle.querySelectorAll('mark').forEach(function(m) { var p = m.parentNode; p.replaceChild(document.createTextNode(m.textContent), m); }); applyEditorHighlights(wsArticle, article.comments || []); }
-        var cnt = (article.comments || []).filter(function(c) { return !c.resolvedAt; }).length;
-        var badge = document.getElementById('ws-count');
+        let cnt = (article.comments || []).filter(function(c) { return !c.resolvedAt; }).length;
+        let badge = document.getElementById('ws-count');
         if (badge) badge.textContent = cnt;
         showToast('Marked as addressed', 'success');
       } catch { showToast('Failed', 'error'); }
+    });
+
+    // Export JSON
+    document.getElementById('btn-export').addEventListener('click', async function() {
+      let btn = document.getElementById('btn-export');
+      btn.disabled = true; btn.innerHTML = '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 16v-8m0 8l-3-3m3 3l3-3M4 20h16"/></svg> Exporting…';
+      try {
+        let resp = await fetch(API + '/api/export/' + slug);
+        if (!resp.ok) { var err = await resp.json(); throw new Error(err.error || 'Export failed'); }
+        let blob = await resp.blob();
+        let url = URL.createObjectURL(blob);
+        let a = document.createElement('a');
+        a.href = url; a.download = slug + '.zip'; a.click();
+        URL.revokeObjectURL(url);
+        showToast('Exported ' + slug + '.zip', 'success');
+      } catch (e) { showToast(e.message || 'Export failed', 'error'); }
+      btn.disabled = false; btn.innerHTML = '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 16v-8m0 8l-3-3m3 3l3-3M4 20h16"/></svg> Export ZIP';
     });
 
     // Save
@@ -743,13 +850,13 @@
       document.getElementById('status-menu').classList.toggle('open');
     });
     document.getElementById('status-menu').addEventListener('click', async function(e) {
-      var item = e.target.closest('[data-status]');
+      let item = e.target.closest('[data-status]');
       if (!item) return;
       var newStatus = item.dataset.status;
       document.getElementById('status-menu').classList.remove('open');
       if (newStatus === article.status) return;
       try {
-        var resp = await fetch(API + '/api/articles/' + slug, {
+        let resp = await fetch(API + '/api/articles/' + slug, {
           method: 'PUT', headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ status: newStatus }),
         });
@@ -766,20 +873,20 @@
 
     // Publish / Unpublish
     document.getElementById('btn-publish').addEventListener('click', async function() {
-      var btn = document.getElementById('btn-publish');
+      let btn = document.getElementById('btn-publish');
       var isPublished = article.published;
       var action = isPublished ? 'unpublish' : 'publish';
       if (isPublished && !confirm('Unpublish this article? It will be removed from the live feed immediately.')) return;
       btn.disabled = true;
       btn.textContent = isPublished ? 'Unpublishing...' : 'Publishing...';
       try {
-        var resp = await fetch(API + '/api/articles/' + slug + '/publish', {
+        let resp = await fetch(API + '/api/articles/' + slug + '/publish', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ publish: !isPublished }),
         });
         if (!resp.ok) throw new Error();
-        var data = await resp.json();
+        let data = await resp.json();
         article.published = data.article.published;
         article.publishedAt = data.article.publishedAt;
         article.status = data.article.status;
@@ -789,7 +896,7 @@
         // Refresh publish status line in details pane if open
         var pubAtEl = document.getElementById('publish-at');
         if (pubAtEl) {
-          var pubLine = article.published
+          let pubLine = article.published
             ? '<span style="color:#16a34a;font-weight:700;font-size:13px;">● Live</span>'
               + (article.publishedAt ? '<span style="color:#9ca3af;font-size:12px;margin-left:8px;">Published ' + formatDate(article.publishedAt) + '</span>' : '')
             : '<span style="color:#9ca3af;font-size:13px;">Not published</span>';
@@ -804,88 +911,70 @@
   }
 
   function collectOutput() {
-    var o = JSON.parse(JSON.stringify(article.output || {}));
+    let o = JSON.parse(JSON.stringify(article.output || {}));
     var ws = document.getElementById('pane-workspace');
     if (!ws) return o;
-    // Collect subheadline
-    var sub = ws.querySelector('.art-subheadline');
-    if (sub) {
-      if (o.entries) {
-        o.subtitle = sub.textContent; o.subheadline = sub.textContent; o.angle = sub.textContent;
-      } else {
-        o.subheadline = sub.textContent;
-      }
+
+    function read(sel) {
+      var el = ws.querySelector(sel);
+      return el ? el.innerText.trim() : null;
     }
-    // Collect introduction
-    var paras = ws.querySelectorAll('.art-body p[contenteditable]');
-    if (paras.length) {
-      var texts = Array.from(paras).map(function(p) { return p.textContent; });
-      if (o.entries) {
-        // First art-body block is intro; last (after closing hr) is closing
-        var bodyBlocks = ws.querySelectorAll('.art-body');
-        if (bodyBlocks.length >= 2) {
-          var introParas = bodyBlocks[0].querySelectorAll('p[contenteditable]');
-          var closingParas = bodyBlocks[bodyBlocks.length - 1].querySelectorAll('p[contenteditable]');
-          o.intro = Array.from(introParas).map(function(p) { return p.textContent; }).join('\n\n');
-          o.introduction = o.intro;
-          o.closing = Array.from(closingParas).map(function(p) { return p.textContent; }).join('\n\n');
-        } else {
-          o.intro = texts.join('\n\n'); o.introduction = o.intro;
-        }
-      } else {
-        o.introduction = texts.join('\n\n');
-      }
-    }
-    // Pull quote
-    var pq = ws.querySelector('.art-pull-quote');
-    if (pq) o.pullQuote = pq.textContent;
-    // Cast
-    var castNames = ws.querySelectorAll('.cast-name');
-    var castBios = ws.querySelectorAll('.cast-bio');
-    if (castNames.length && o.cast) {
-      castNames.forEach(function(el, i) { if (o.cast[i]) o.cast[i].name = el.textContent; });
-      castBios.forEach(function(el, i) { if (o.cast[i]) o.cast[i].bio = el.textContent; });
-    }
-    // Listicle entries
+
+    // Headline
+    let hl = document.getElementById('headline-edit');
+    if (hl) o.headline = hl.textContent.trim();
+
     if (o.entries) {
-      var titles = ws.querySelectorAll('.listicle-title');
-      var blurbs = ws.querySelectorAll('.listicle-blurb');
+      // Listicle
+      let sub = read('.listicle-sub'); if (sub !== null) { o.subtitle = sub; o.subheadline = sub; o.angle = sub; }
+      let intro = read('.listicle-intro'); if (intro !== null) { o.intro = intro; o.introduction = intro; }
+      let closing = read('.listicle-closing'); if (closing !== null) o.closing = closing;
+      let titles = ws.querySelectorAll('.listicle-title');
+      let blurbs = ws.querySelectorAll('.listicle-blurb');
       titles.forEach(function(el, i) {
         if (o.entries[i]) {
-          // Strip leading number and tease suffix (everything after " — ")
-          var raw = el.textContent.replace(/^\d+\.\s*/, '');
-          var dashIdx = raw.indexOf(' — ');
-          o.entries[i].title = dashIdx !== -1 ? raw.slice(0, dashIdx) : raw;
+          let raw = el.textContent.replace(/^\d+\.\s*/, '');
+          let dashIdx = raw.indexOf(' — ');
+          o.entries[i].title = (dashIdx !== -1 ? raw.slice(0, dashIdx) : raw).trim();
         }
       });
       blurbs.forEach(function(el, i) {
-        if (o.entries[i]) o.entries[i].blurb = el.textContent;
+        if (o.entries[i]) o.entries[i].blurb = el.innerText.trim();
       });
+    } else {
+      // Single
+      let sub = read('.subheadline'); if (sub !== null) o.subheadline = sub;
+      let intro = read('.introduction'); if (intro !== null) o.introduction = intro;
+      let why = read('.why-watch-it'); if (why !== null) o.whyWatchIt = why;
+      let pq = ws.querySelector('.art-pull-quote'); if (pq) o.pullQuote = pq.textContent.trim();
+      let castNames = ws.querySelectorAll('.cast-name');
+      let castBios = ws.querySelectorAll('.cast-bio');
+      if (castNames.length && o.cast) {
+        castNames.forEach(function(el, i) { if (o.cast[i]) o.cast[i].name = el.textContent.trim(); });
+        castBios.forEach(function(el, i) { if (o.cast[i]) o.cast[i].bio = el.innerText.trim(); });
+      }
     }
-    // Headline
-    var hl = document.getElementById('headline-edit');
-    if (hl) o.headline = hl.textContent;
     return o;
   }
 
   async function saveArticle() {
-    var btn = document.getElementById('btn-save');
+    let btn = document.getElementById('btn-save');
     btn.disabled = true;
     btn.textContent = 'Saving...';
-    var heroUrl = document.getElementById('hero-url') ? document.getElementById('hero-url').value : article.heroImageUrl;
-    var tagsRaw = document.getElementById('tags-input') ? document.getElementById('tags-input').value : (article.tags || []).join(', ');
-    var tags = tagsRaw.split(',').map(function(t) { return t.trim(); }).filter(Boolean);
-    var seo = {
+    let heroUrl = document.getElementById('hero-url') ? document.getElementById('hero-url').value : article.heroImageUrl;
+    let tagsRaw = document.getElementById('tags-input') ? document.getElementById('tags-input').value : (article.tags || []).join(', ');
+    let tags = tagsRaw.split(',').map(function(t) { return t.trim(); }).filter(Boolean);
+    let seo = {
       metaTitle: (document.getElementById('seo-title') ? document.getElementById('seo-title').value : article.seo && article.seo.metaTitle) || '',
       metaDescription: (document.getElementById('seo-description') ? document.getElementById('seo-description').value : article.seo && article.seo.metaDescription) || '',
       canonicalUrl: (document.getElementById('seo-canonical') ? document.getElementById('seo-canonical').value : article.seo && article.seo.canonicalUrl) || '',
     };
-    var publishAtEl = document.getElementById('publish-at');
-    var publishAt = publishAtEl && publishAtEl.value ? new Date(publishAtEl.value).toISOString() : null;
-    var outOfWindowEl = document.getElementById('out-of-window');
-    var outOfWindowDate = outOfWindowEl && outOfWindowEl.value ? outOfWindowEl.value : null;
+    let publishAtEl = document.getElementById('publish-at');
+    let publishAt = publishAtEl && publishAtEl.value ? new Date(publishAtEl.value).toISOString() : null;
+    let outOfWindowEl = document.getElementById('out-of-window');
+    let outOfWindowDate = outOfWindowEl && outOfWindowEl.value ? outOfWindowEl.value : null;
     try {
-      var resp = await fetch(API + '/api/articles/' + slug, {
+      let resp = await fetch(API + '/api/articles/' + slug, {
         method: 'PUT',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ output: collectOutput(), heroImageUrl: heroUrl, tags: tags, seo: seo, publishAt: publishAt, outOfWindowDate: outOfWindowDate }),
@@ -905,16 +994,16 @@
 
   async function loadArticle() {
     if (!slug) {
-      document.getElementById('main').innerHTML = '<div class="loading">No article slug provided. <a href="/articles">← Back to articles</a></div>';
+      document.getElementById('main').innerHTML = '<div class="loading">No article slug provided. <a href="/generate?tab=articles">← Back to articles</a></div>';
       return;
     }
     try {
-      var resp = await fetch(API + '/api/articles/' + slug);
+      let resp = await fetch(API + '/api/articles/' + slug);
       if (!resp.ok) throw new Error('Not found');
-      var data = await resp.json();
+      let data = await resp.json();
       buildPage(data);
     } catch (e) {
-      document.getElementById('main').innerHTML = '<div class="loading">Could not load article. <a href="/articles">← Back to articles</a></div>';
+      document.getElementById('main').innerHTML = '<div class="loading">Could not load article. <a href="/generate?tab=articles">← Back to articles</a></div>';
     }
   }
 
@@ -926,11 +1015,11 @@
 
   document.addEventListener('mouseup', function(e) {
     // Only trigger inside the workspace article area
-    var wsArticle = document.getElementById('ws-article-content');
+    let wsArticle = document.getElementById('ws-article-content');
     if (!wsArticle || !wsArticle.contains(e.target)) return;
     var sel = window.getSelection();
     if (!sel || sel.isCollapsed) return;
-    var text = sel.toString().trim();
+    let text = sel.toString().trim();
     if (text.length < 3) return;
 
     var range = sel.getRangeAt(0);
@@ -953,10 +1042,10 @@
   document.getElementById('fp-submit').addEventListener('click', async function() {
     var comment = document.getElementById('fp-comment').value.trim();
     if (!comment || !editorPendingSelection || !slug) return;
-    var btn = document.getElementById('fp-submit');
+    let btn = document.getElementById('fp-submit');
     btn.disabled = true; btn.textContent = 'Saving...';
     try {
-      var resp = await fetch(API + '/api/articles/' + slug + '/comments', {
+      let resp = await fetch(API + '/api/articles/' + slug + '/comments', {
         method: 'POST', headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
           selectedText: editorPendingSelection.text,
@@ -965,21 +1054,21 @@
           author: 'Editor',
         }),
       });
-      var data = await resp.json();
+      let data = await resp.json();
       if (!article.comments) article.comments = [];
       article.comments.push(data.comment);
 
       // Re-render comments panel and highlights
-      var wsList = document.getElementById('ws-comments-list');
+      let wsList = document.getElementById('ws-comments-list');
       if (wsList) wsList.innerHTML = renderWsComments(article.comments);
-      var wsArticle = document.getElementById('ws-article-content');
+      let wsArticle = document.getElementById('ws-article-content');
       if (wsArticle) {
         wsArticle.querySelectorAll('mark').forEach(function(m) {
           var p = m.parentNode; p.replaceChild(document.createTextNode(m.textContent), m);
         });
         applyEditorHighlights(wsArticle, article.comments);
       }
-      var panel = document.getElementById('ws-comments-panel');
+      let panel = document.getElementById('ws-comments-panel');
       if (panel) panel.classList.remove('empty');
       closeEditorPopup();
       showToast('Note added', 'success');

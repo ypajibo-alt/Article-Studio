@@ -1,10 +1,13 @@
 import { Router, Request, Response } from 'express';
 import { spawn } from 'child_process';
 import path from 'path';
+import { fileURLToPath } from 'url';
 
 const router = Router();
 
-const PIPELINE_DIR = '/Users/ypajibo/Downloads/Growth /Official Blog Directory/V2-Blog-main/Official Article Generation Pipeline/article-pipeline';
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
+const PIPELINE_DIR = process.env.PIPELINE_DIR
+  || path.resolve(__dirname, '../../../V2-Blog-main/Official Article Generation Pipeline/article-pipeline');
 
 router.post('/pipeline/run', async (req: Request, res: Response) => {
   const { articleName } = req.body as { articleName: string };

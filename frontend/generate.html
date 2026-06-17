@@ -34,11 +34,123 @@
     .ds-icon { width: 18px; height: 18px; flex-shrink: 0; }
 
     /* Main */
-    .main-content { flex: 1; min-width: 0; padding: 32px 36px; }
+    .main-content { flex: 1; min-width: 0; display: flex; flex-direction: column; min-height: 100vh; }
+
+    /* Top tabs */
+    .top-tabs {
+      display: flex; gap: 0; border-bottom: 1px solid #e2e4e8; background: #fff;
+      padding: 0 36px; flex-shrink: 0;
+    }
+    .top-tab {
+      padding: 14px 18px; font-size: 14px; font-weight: 600; color: #6b7280;
+      border: none; background: none; cursor: pointer; font-family: inherit;
+      border-bottom: 2px solid transparent; margin-bottom: -1px; transition: color 0.15s;
+    }
+    .top-tab:hover { color: #374151; }
+    .top-tab.active { color: #7C3AED; border-bottom-color: #7C3AED; }
+
+    .tab-panel { display: none; flex: 1; }
+    .tab-panel.active { display: flex; flex-direction: column; }
+
+    /* Generate tab */
+    .generate-panel { padding: 32px 36px; flex: 1; }
 
     .page-header { margin-bottom: 24px; }
     h1 { font-size: 22px; font-weight: 700; margin-bottom: 3px; }
     .subtitle { font-size: 14px; color: #8b919a; }
+
+    /* Articles tab */
+    .articles-panel { padding: 28px 36px; flex: 1; display: flex; flex-direction: column; gap: 16px; background: #f5f6f8; }
+    .articles-header { display: flex; align-items: center; justify-content: space-between; }
+    .articles-title { font-size: 20px; font-weight: 700; color: #1a1a1a; }
+    .articles-sub { font-size: 13px; color: #8b919a; margin-top: 2px; }
+
+    .filter-bar { display: flex; gap: 10px; align-items: center; }
+    .search-input {
+      flex: 1; padding: 9px 14px; border-radius: 8px; border: 1px solid #e2e4e8;
+      background: #fff; font-size: 13px; font-family: inherit; color: #374151;
+      outline: none; transition: border-color 0.15s;
+    }
+    .search-input:focus { border-color: #7C3AED; }
+    .search-input::placeholder { color: #c0c4cb; }
+    .status-chips { display: flex; gap: 4px; flex-shrink: 0; }
+    .status-chip {
+      padding: 7px 12px; border-radius: 6px; border: 1px solid #e2e4e8;
+      background: transparent; font-size: 12px; font-weight: 500; color: #8b919a;
+      cursor: pointer; font-family: inherit; transition: all 0.15s; white-space: nowrap;
+    }
+    .status-chip:hover { border-color: #c0c4cb; color: #374151; }
+    .status-chip.active { background: #7C3AED; color: #fff; border-color: #7C3AED; }
+    .status-chip .cnt { opacity: 0.65; margin-left: 4px; font-size: 11px; }
+
+    .art-table-card { background: #fff; border: 1px solid #e2e4e8; border-radius: 10px; overflow: hidden; flex: 1; }
+    .art-table { width: 100%; border-collapse: collapse; }
+    .art-table thead tr { border-bottom: 1px solid #e2e4e8; }
+    .art-table thead th {
+      text-align: left; padding: 11px 16px; font-size: 13px; font-weight: 600;
+      color: #374151; white-space: nowrap; cursor: pointer; user-select: none;
+      border-right: 1px solid #e9eaf0;
+    }
+    .art-table thead th:last-child { border-right: none; text-align: right; }
+    .art-table thead th .si { color: #9ca3af; margin-left: 5px; font-size: 11px; }
+    .art-table tbody tr { border-bottom: 1px solid #f0f1f5; cursor: pointer; transition: background 0.1s; }
+    .art-table tbody tr:hover { background: #f5f3ff; }
+    .art-table tbody tr:last-child { border-bottom: none; }
+    .art-table td { padding: 11px 16px; font-size: 13px; color: #374151; vertical-align: middle; }
+    .art-table-footer {
+      background: #fff; border-top: 1px solid #e2e4e8;
+      padding: 10px 16px; display: flex; align-items: center;
+      justify-content: space-between; font-size: 12px; color: #6b7280;
+    }
+    .headline-text { font-weight: 600; font-size: 13px; color: #1a1a1a; display: block; line-height: 1.35; margin-bottom: 2px; text-decoration: none; }
+    .headline-text:hover { color: #6d28d9; }
+    .article-sub { font-size: 11px; color: #8b919a; line-height: 1.4; margin-bottom: 3px; }
+    .tag-row { display: flex; flex-wrap: wrap; gap: 3px; margin-top: 3px; }
+    .art-tag { padding: 1px 6px; border-radius: 99px; font-size: 10px; font-weight: 600; background: rgba(124,58,237,0.08); color: #7C3AED; }
+    .art-type-badge { display: inline-block; padding: 2px 8px; border-radius: 6px; font-size: 11px; font-weight: 600; background: #f3f4f6; color: #8b919a; }
+    .art-status-badge { display: inline-block; padding: 2px 8px; border-radius: 6px; font-size: 11px; font-weight: 700; white-space: nowrap; }
+    .s-draft       { background: #f3f4f6; color: #6b7280; }
+    .s-ready       { background: rgba(0,181,163,0.1); color: #00B5A3; }
+    .s-legal       { background: rgba(245,158,11,0.1); color: #d97706; }
+    .s-mkt         { background: rgba(124,58,237,0.1); color: #7C3AED; }
+    .s-approved    { background: rgba(34,197,94,0.1); color: #16a34a; }
+    .s-unpublished { background: #f3f4f6; color: #9ca3af; }
+    .td-date { font-size: 12px; color: #c0c4cb; white-space: nowrap; }
+    .td-act { text-align: right; white-space: nowrap; }
+    .act-btn {
+      padding: 4px 11px; border-radius: 6px; border: 1px solid #e2e4e8;
+      background: #f9fafb; font-size: 11px; font-weight: 600; color: #8b919a;
+      text-decoration: none; display: inline-block; transition: all 0.15s; margin-left: 5px;
+    }
+    .act-btn:hover { border-color: #7C3AED; color: #6d28d9; background: rgba(124,58,237,0.08); }
+    .send-btn {
+      padding: 4px 11px; border-radius: 6px; border: 1px solid #e2e4e8;
+      background: #f9fafb; font-size: 11px; font-weight: 600; color: #8b919a;
+      cursor: pointer; font-family: inherit; transition: all 0.15s; margin-left: 5px;
+    }
+    .send-btn:hover { border-color: #c0c4cb; color: #374151; }
+    .pager-btn {
+      padding: 5px 12px; border-radius: 6px; border: 1px solid #e2e4e8;
+      background: #fff; font-size: 12px; font-weight: 500; color: #374151;
+      cursor: pointer; font-family: inherit; transition: all 0.15s;
+    }
+    .pager-btn:hover:not(:disabled) { border-color: #7C3AED; color: #7C3AED; }
+    .pager-btn:disabled { opacity: 0.35; cursor: default; }
+    .rev-dd {
+      background: #fff; border: 1px solid #e2e4e8; border-radius: 8px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.1); z-index: 999; min-width: 180px;
+      overflow: hidden;
+    }
+    .rev-opt {
+      display: block; width: 100%; text-align: left; padding: 10px 14px;
+      font-size: 13px; font-weight: 600; color: #374151; background: none;
+      border: none; cursor: pointer; font-family: inherit;
+    }
+    .rev-opt:hover { background: #f5f3ff; color: #7C3AED; }
+    .rev-opt .sub { display: block; font-size: 11px; font-weight: 400; color: #9ca3af; margin-top: 1px; }
+    .art-empty { text-align: center; padding: 48px; color: #9ca3af; font-size: 14px; }
+    .toast { position: fixed; bottom: 24px; left: 50%; transform: translateX(-50%); background: #1a1a1a; color: #fff; padding: 10px 20px; border-radius: 8px; font-size: 13px; font-weight: 500; opacity: 0; transition: opacity 0.2s; pointer-events: none; z-index: 1000; }
+    .toast.show { opacity: 1; }
 
     /* Layout */
     .layout {
@@ -613,6 +725,75 @@
 
     .ct-angle-wrap { margin-top: 14px; }
 
+    /* Bulk pathway */
+    .bulk-textarea {
+      width: 100%; height: 160px;
+      padding: 10px 13px;
+      border: 1px solid #e2e4e8;
+      border-radius: 8px;
+      font-size: 13px; font-family: monospace;
+      color: #1a1a1a; background: #fff;
+      resize: vertical; outline: none;
+      transition: border-color 0.15s, box-shadow 0.15s;
+      line-height: 1.6;
+    }
+    .bulk-textarea:focus { border-color: #7C3AED; box-shadow: 0 0 0 3px rgba(124,58,237,0.08); }
+    .bulk-textarea::placeholder { color: #c0c4cb; font-family: -apple-system, sans-serif; }
+
+    .bulk-mode-row {
+      display: flex; gap: 8px; margin: 12px 0;
+    }
+    .bulk-mode-btn {
+      flex: 1; padding: 9px 10px;
+      border-radius: 8px; border: 1.5px solid #e2e4e8;
+      background: #fff; font-family: inherit; cursor: pointer;
+      font-size: 12px; font-weight: 600; color: #6b7280;
+      transition: all 0.15s;
+    }
+    .bulk-mode-btn.active { border-color: #7C3AED; background: rgba(124,58,237,0.05); color: #7C3AED; }
+    .bulk-mode-btn:hover:not(.active) { border-color: #c0c4cb; color: #374151; }
+
+    .bulk-parsed-list {
+      display: flex; flex-direction: column; gap: 5px;
+      margin-top: 10px; max-height: 220px; overflow-y: auto;
+    }
+    .bulk-item-row {
+      display: flex; align-items: center; gap: 8px;
+      padding: 7px 10px; border: 1px solid #e2e4e8;
+      border-radius: 7px; background: #fafafa;
+      font-size: 12px;
+    }
+    .bulk-item-id { font-family: monospace; color: #374151; font-weight: 600; flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+    .bulk-item-mode { font-size: 10px; font-weight: 700; padding: 2px 6px; border-radius: 4px; flex-shrink: 0; }
+    .bulk-item-mode.single { background: #ede9fe; color: #7C3AED; }
+    .bulk-item-mode.coming-soon { background: #d1fae5; color: #059669; }
+    .bulk-item-date { font-size: 11px; color: #9ca3af; flex-shrink: 0; }
+    .bulk-item-remove { background: none; border: none; color: #d1d5db; font-size: 14px; cursor: pointer; padding: 0 2px; line-height: 1; flex-shrink: 0; transition: color 0.12s; }
+    .bulk-item-remove:hover { color: #ef4444; }
+
+    /* Bulk progress list (replaces right panel content during bulk run) */
+    .bulk-progress-list {
+      display: flex; flex-direction: column; gap: 8px; margin-top: 12px;
+    }
+    .bulk-progress-item {
+      border: 1px solid #e2e4e8; border-radius: 9px;
+      padding: 10px 14px; background: #fafafa;
+      transition: all 0.2s;
+    }
+    .bulk-progress-item.bpi-active { border-color: #00B5A3; background: rgba(0,181,163,0.04); }
+    .bulk-progress-item.bpi-done { border-color: #d1fae5; background: #f0fdf4; }
+    .bulk-progress-item.bpi-error { border-color: #fee2e2; background: #fff5f5; }
+
+    .bpi-header { display: flex; align-items: center; gap: 8px; }
+    .bpi-icon { width: 18px; flex-shrink: 0; display: flex; align-items: center; justify-content: center; }
+    .bpi-icon .s-spin { width: 12px; height: 12px; border: 2px solid rgba(0,181,163,0.2); border-top-color: #00B5A3; border-radius: 50%; animation: spin 0.7s linear infinite; }
+    .bpi-id { font-size: 12px; font-family: monospace; font-weight: 600; color: #374151; flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+    .bpi-status { font-size: 11px; color: #9ca3af; flex-shrink: 0; }
+    .bpi-stage { font-size: 11px; color: #6b7280; margin-top: 3px; padding-left: 26px; }
+    .bpi-link { font-size: 11px; color: #00B5A3; text-decoration: none; margin-top: 3px; padding-left: 26px; display: block; }
+    .bpi-link:hover { text-decoration: underline; }
+    .bpi-error-msg { font-size: 11px; color: #ef4444; margin-top: 3px; padding-left: 26px; }
+
     /* Manual pathway */
     .manual-item {
       display: flex; align-items: center; gap: 10px;
@@ -647,7 +828,7 @@
       <svg class="ds-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path stroke-linecap="round" stroke-linejoin="round" d="M9 19v-6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2zm0 0V9a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v10m-6 0a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2m0 0V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-2a2 2 0 0 1-2-2z"/></svg>
       Monitor
     </a>
-    <a href="/articles" class="ds-nav-item">
+    <a href="/generate?tab=articles" class="ds-nav-item" onclick="event.preventDefault();switchTab('articles');history.pushState({},'','/generate?tab=articles');">
       <svg class="ds-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5.586a1 1 0 0 1 .707.293l5.414 5.414a1 1 0 0 1 .293.707V19a2 2 0 0 1-2 2z"/></svg>
       Articles
     </a>
@@ -659,10 +840,24 @@
       <svg class="ds-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><circle cx="12" cy="12" r="9"/><polygon points="10,8 16,12 10,16" fill="currentColor" stroke="none"/></svg>
       Pipeline
     </a>
+    <a href="/settings" class="ds-nav-item">
+      <svg class="ds-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path stroke-linecap="round" stroke-linejoin="round" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 0 0 2.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 0 0 1.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 0 0-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 0 0-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 0 0-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 0 0-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 0 0 1.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"/><circle cx="12" cy="12" r="3"/></svg>
+      Settings
+    </a>
   </nav>
 </aside>
 
 <div class="main-content">
+
+  <!-- Top tabs -->
+  <div class="top-tabs">
+    <button class="top-tab active" id="tab-generate" onclick="switchTab('generate')">Generate</button>
+    <button class="top-tab" id="tab-articles" onclick="switchTab('articles')">Articles</button>
+  </div>
+
+  <!-- Generate tab -->
+  <div class="tab-panel active" id="panel-generate">
+  <div class="generate-panel">
   <div class="page-header">
     <h1>Generate Article</h1>
     <p class="subtitle">Choose a pathway to generate a new article</p>
@@ -690,6 +885,14 @@
         <button class="pathway-btn" id="pw-manual" onclick="setPathway('manual')">
           <span class="pb-label">Manual Selection</span>
           <span class="pb-desc">Pick 5–10 titles</span>
+        </button>
+        <button class="pathway-btn" id="pw-coming-soon" onclick="setPathway('coming-soon')">
+          <span class="pb-label">Coming Soon</span>
+          <span class="pb-desc">Arriving on Tubi</span>
+        </button>
+        <button class="pathway-btn" id="pw-bulk" onclick="setPathway('bulk')">
+          <span class="pb-label">Bulk Generate</span>
+          <span class="pb-desc">Paste content IDs</span>
         </button>
       </div>
 
@@ -725,6 +928,45 @@
         <button class="generate-btn" id="generate-btn" disabled onclick="startGenerate()">
           <div class="btn-spinner" id="btn-spinner"></div>
           <span id="btn-label">Generate Article</span>
+        </button>
+      </div>
+
+      <!-- Pathway: Coming Soon -->
+      <div id="pathway-coming-soon" class="pathway-panel">
+        <label class="sec-label">Search title<span class="hint">or paste a content ID</span></label>
+        <div class="search-wrap">
+          <svg class="search-icon" width="15" height="15" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
+          </svg>
+          <input
+            id="cs-search-input"
+            class="search-input cs-search-input"
+            type="text"
+            placeholder="e.g. The Stepfather or 100054992"
+            autocomplete="off"
+          />
+          <div class="search-spinner" id="cs-search-spinner"></div>
+          <div class="search-dropdown" id="cs-search-dropdown"></div>
+        </div>
+
+        <div class="title-card" id="cs-title-card">
+          <div id="cs-tc-poster-wrap"></div>
+          <div class="tc-info">
+            <div class="tc-title" id="cs-tc-title"></div>
+            <div class="tc-meta" id="cs-tc-meta"></div>
+            <div class="tc-id" id="cs-tc-id"></div>
+          </div>
+          <button class="tc-clear" id="cs-tc-clear" title="Clear selection">×</button>
+        </div>
+
+        <div style="margin:12px 0 16px;">
+          <label class="sec-label" style="margin-bottom:6px;">Release date <span style="font-weight:400;color:#9ca3af;font-size:12px;">optional</span></label>
+          <input type="text" id="cs-release-date" placeholder="e.g. June 19" style="width:100%;padding:9px 12px;border:1px solid #e2e4e8;border-radius:8px;font-size:14px;font-family:inherit;outline:none;color:#1a1a1a;" />
+        </div>
+
+        <button class="generate-btn" id="cs-generate-btn" disabled onclick="startComingSoonGenerate()">
+          <div class="btn-spinner" id="cs-btn-spinner"></div>
+          <span id="cs-btn-label">Generate Article</span>
         </button>
       </div>
 
@@ -826,6 +1068,38 @@
           <button class="generate-btn" id="listicle-generate-btn" disabled onclick="startListicleGenerate()" style="margin-top:14px;">
             <div class="btn-spinner" id="listicle-btn-spinner"></div>
             <span id="listicle-btn-label">Generate Listicle</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Pathway: Bulk Generate -->
+      <div id="pathway-bulk" class="pathway-panel">
+        <label class="sec-label">Paste content IDs<span class="hint">one per line — optionally add mode and release date</span></label>
+        <textarea
+          id="bulk-textarea"
+          class="bulk-textarea"
+          placeholder="100054992&#10;100012345 coming-soon&#10;100099887 coming-soon June 19&#10;&#10;Default mode is single. Add 'coming-soon' after an ID to use that mode."
+        ></textarea>
+
+        <label class="sec-label" style="margin-top:14px;">Default mode <span class="hint">applied when no mode specified on a line</span></label>
+        <div class="bulk-mode-row">
+          <button class="bulk-mode-btn active" id="bulk-default-single" onclick="setBulkDefault('single')">Single Title</button>
+          <button class="bulk-mode-btn" id="bulk-default-coming-soon" onclick="setBulkDefault('coming-soon')">Coming Soon</button>
+        </div>
+
+        <button class="generate-btn" id="bulk-parse-btn" style="background:#7C3AED;margin-top:10px;" onclick="parseBulkInput()">
+          <span>Preview IDs</span>
+        </button>
+
+        <div id="bulk-parsed-section" style="display:none;margin-top:12px;">
+          <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:6px;">
+            <span class="sec-label" style="margin-bottom:0;">Queued <span id="bulk-count" style="font-weight:400;color:#9ca3af;"></span></span>
+            <button onclick="clearBulkList()" style="background:none;border:none;color:#9ca3af;font-size:12px;cursor:pointer;padding:0;">Clear</button>
+          </div>
+          <div class="bulk-parsed-list" id="bulk-parsed-list"></div>
+          <button class="generate-btn" id="bulk-generate-btn" disabled style="margin-top:14px;" onclick="startBulkGenerate()">
+            <div class="btn-spinner" id="bulk-btn-spinner"></div>
+            <span id="bulk-btn-label">Generate All</span>
           </button>
         </div>
       </div>
@@ -952,7 +1226,7 @@
           <div class="brand-notes" id="done-brand-notes"></div>
           <div class="done-actions" style="margin-top:14px;">
             <a class="editor-btn" id="editor-link" href="#">Open in Editor</a>
-            <a class="articles-btn" href="/articles">View all articles</a>
+            <a class="articles-btn" href="/generate?tab=articles" onclick="event.preventDefault();switchTab('articles');history.pushState({},'','/generate?tab=articles');">View all articles</a>
           </div>
         </div>
 
@@ -966,7 +1240,57 @@
     </div>
 
   </div>
-</div>
+  </div><!-- /generate-panel -->
+  </div><!-- /panel-generate -->
+
+  <!-- Articles tab -->
+  <div class="tab-panel" id="panel-articles">
+  <div class="articles-panel">
+    <div class="articles-header">
+      <div>
+        <div class="articles-title">Articles</div>
+        <div class="articles-sub" id="art-sub">Browse and manage your articles</div>
+      </div>
+    </div>
+    <div class="filter-bar">
+      <input class="search-input" type="text" placeholder="Search by headline, title, tag..." id="art-search" autocomplete="off">
+      <div class="status-chips" id="art-status-tabs">
+        <button class="status-chip active" data-status="all">All <span class="cnt" id="ac-all"></span></button>
+        <button class="status-chip" data-status="draft">In Draft <span class="cnt" id="ac-draft"></span></button>
+        <button class="status-chip" data-status="waiting">Waiting Approval <span class="cnt" id="ac-waiting"></span></button>
+        <button class="status-chip" data-status="approved">Approved <span class="cnt" id="ac-approved"></span></button>
+      </div>
+    </div>
+    <div class="art-table-card">
+      <table class="art-table">
+        <thead>
+          <tr>
+            <th data-col="headline" class="sorted">Headline <span class="si">↑↓</span></th>
+            <th data-col="type" class="no-sort" style="width:90px;">Type</th>
+            <th data-col="status" class="no-sort" style="width:120px;">Status</th>
+            <th data-col="date" style="width:110px;">Date <span class="si">↑↓</span></th>
+            <th class="no-sort" style="width:130px;">Out of window</th>
+            <th class="no-sort" style="width:160px;">Actions</th>
+          </tr>
+        </thead>
+        <tbody id="art-tbody"></tbody>
+      </table>
+      <div class="art-empty" id="art-empty" style="display:none;">No articles yet</div>
+      <div class="art-table-footer">
+        <span id="art-page-info"></span>
+        <div style="display:flex;align-items:center;gap:10px;">
+          <span style="font-weight:600;color:#374151;" id="art-page-indicator"></span>
+          <button class="pager-btn" id="art-prev-btn">&lsaquo; Prev</button>
+          <button class="pager-btn" id="art-next-btn">Next &rsaquo;</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div><!-- /panel-articles -->
+
+</div><!-- /main-content -->
+
+<div class="toast" id="art-toast"></div>
 
 <script>
 const API = '';
@@ -1093,6 +1417,152 @@ document.getElementById('tc-clear').addEventListener('click', () => {
   searchInput.value = '';
   searchInput.focus();
 });
+
+// ── Coming Soon search ────────────────────────────────────────────────────────
+
+let csSelectedTitle = null;
+let csSearchTimer = null;
+let csSearchSeq = 0;
+
+const csSearchInput = document.getElementById('cs-search-input');
+const csSearchDropdown = document.getElementById('cs-search-dropdown');
+const csSearchSpinner = document.getElementById('cs-search-spinner');
+
+csSearchInput.addEventListener('input', () => {
+  const q = csSearchInput.value.trim();
+  clearTimeout(csSearchTimer);
+  if (q.length < 2) { csSearchDropdown.classList.remove('open'); return; }
+  csSearchTimer = setTimeout(() => doCsSearch(q), 280);
+});
+
+document.addEventListener('click', e => {
+  if (!csSearchInput.contains(e.target) && !csSearchDropdown.contains(e.target)) {
+    csSearchDropdown.classList.remove('open');
+  }
+});
+
+async function doCsSearch(q) {
+  const seq = ++csSearchSeq;
+  csSearchSpinner.classList.add('visible');
+  try {
+    const res = await fetch(`${API}/api/search?q=${encodeURIComponent(q)}`);
+    if (!res.ok || seq !== csSearchSeq) return;
+    const results = await res.json();
+    renderCsDropdown(results);
+  } catch {
+    if (seq === csSearchSeq) csSearchDropdown.classList.remove('open');
+  } finally {
+    if (seq === csSearchSeq) csSearchSpinner.classList.remove('visible');
+  }
+}
+
+function renderCsDropdown(results) {
+  csSearchDropdown.innerHTML = '';
+  if (!results.length) {
+    csSearchDropdown.innerHTML = '<div class="dd-empty">No results found</div>';
+    csSearchDropdown.classList.add('open');
+    return;
+  }
+  results.forEach(r => {
+    const el = document.createElement('div');
+    el.className = 'dd-item';
+    const typeLabel = r.type === 'series' ? 'Series' : 'Movie';
+    const typeClass = r.type === 'series' ? 'series' : 'movie';
+    const poster = r.posterart
+      ? `<img class="dd-poster" src="${esc(r.posterart)}" alt="" loading="lazy" onerror="this.style.display='none';this.nextSibling.style.display='flex'">`
+        + `<div class="dd-poster-placeholder" style="display:none">🎬</div>`
+      : `<div class="dd-poster-placeholder">🎬</div>`;
+    el.innerHTML = `${poster}<div class="dd-info"><div class="dd-title">${esc(r.title)}</div><div class="dd-meta">${r.year || '—'}</div></div><span class="dd-type-badge ${typeClass}">${typeLabel}</span>`;
+    el.addEventListener('click', () => selectCsTitle(r));
+    csSearchDropdown.appendChild(el);
+  });
+  csSearchDropdown.classList.add('open');
+}
+
+function selectCsTitle(r) {
+  csSelectedTitle = r;
+  csSearchDropdown.classList.remove('open');
+  csSearchInput.value = '';
+  const card = document.getElementById('cs-title-card');
+  document.getElementById('cs-tc-title').textContent = r.title;
+  document.getElementById('cs-tc-meta').textContent = [r.year || null, r.type === 'series' ? 'TV Series' : 'Movie'].filter(Boolean).join(' · ');
+  document.getElementById('cs-tc-id').textContent = `ID: ${r.id}`;
+  const wrap = document.getElementById('cs-tc-poster-wrap');
+  wrap.innerHTML = r.posterart
+    ? `<img class="tc-poster" src="${esc(r.posterart)}" alt="" loading="lazy" onerror="this.outerHTML='<div class=tc-poster-placeholder>🎬</div>'">`
+    : `<div class="tc-poster-placeholder">🎬</div>`;
+  card.classList.add('visible');
+  document.getElementById('cs-generate-btn').disabled = false;
+}
+
+document.getElementById('cs-tc-clear').addEventListener('click', () => {
+  csSelectedTitle = null;
+  document.getElementById('cs-title-card').classList.remove('visible');
+  document.getElementById('cs-generate-btn').disabled = true;
+  csSearchInput.value = '';
+  csSearchInput.focus();
+});
+
+function startComingSoonGenerate() {
+  if (!csSelectedTitle || generating) return;
+  const releaseDate = document.getElementById('cs-release-date').value.trim();
+  generating = true;
+
+  document.getElementById('cs-generate-btn').disabled = true;
+  document.getElementById('cs-btn-spinner').classList.add('visible');
+  document.getElementById('cs-btn-label').textContent = 'Generating…';
+
+  document.getElementById('pp-idle').style.display = 'none';
+  const ppActive = document.getElementById('pp-active');
+  ppActive.classList.add('visible');
+  document.getElementById('pp-heading').textContent = `Generating: ${csSelectedTitle.title}`;
+  document.getElementById('pp-subheading').textContent = 'This usually takes 30–60 seconds';
+
+  ['metadata','prompts','generate','quality','brand','save'].forEach(s => setStage(s, 'idle'));
+  document.getElementById('issue-list').innerHTML = '';
+  document.getElementById('issue-list').classList.remove('visible');
+  document.getElementById('done-card').classList.remove('visible');
+  document.getElementById('error-banner').classList.remove('visible');
+  document.getElementById('attempt-badge').classList.remove('visible');
+  currentAttempt = 0;
+  for (let i = 1; i <= 5; i++) setDotState(i, '');
+
+  runComingSoonSSE(csSelectedTitle.id, releaseDate);
+}
+
+async function runComingSoonSSE(contentId, releaseDate) {
+  let res;
+  try {
+    res = await fetch(`${API}/api/generate`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ mode: 'coming-soon', contentId, releaseDate: releaseDate || undefined }),
+    });
+  } catch (err) {
+    onError(err.message || 'Network error');
+    return;
+  }
+
+  const reader = res.body.getReader();
+  const decoder = new TextDecoder();
+  let buf = '';
+  while (true) {
+    const { done, value } = await reader.read();
+    if (done) break;
+    buf += decoder.decode(value, { stream: true });
+    const lines = buf.split('\n');
+    buf = lines.pop();
+    for (const line of lines) {
+      if (line.startsWith('data: ')) {
+        try { const evt = JSON.parse(line.slice(6)); handleEvent(evt); } catch {}
+      }
+    }
+  }
+  generating = false;
+  document.getElementById('cs-generate-btn').disabled = !csSelectedTitle;
+  document.getElementById('cs-btn-spinner').classList.remove('visible');
+  document.getElementById('cs-btn-label').textContent = 'Generate Article';
+}
 
 // ── Pathway selector ───────────────────────────────────────────────────────────
 
@@ -2197,6 +2667,422 @@ function startContainerListicle() {
     label.textContent = 'Generate Listicle';
     btn.disabled = selectedContainerTitleIds.size < 5;
   });
+}
+
+// ── Tab switching ──────────────────────────────────────────────────────────────
+
+function switchTab(name) {
+  document.querySelectorAll('.top-tab').forEach(t => t.classList.remove('active'));
+  document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+  document.getElementById('tab-' + name).classList.add('active');
+  document.getElementById('panel-' + name).classList.add('active');
+  if (name === 'articles' && !artLoaded) loadArtArticles();
+}
+
+// Check URL param to auto-switch to articles tab
+(function() {
+  const p = new URLSearchParams(window.location.search);
+  if (p.get('tab') === 'articles') switchTab('articles');
+})();
+
+// ── Articles tab ──────────────────────────────────────────────────────────────
+
+let artArticles = [], artFiltered = [], artStatusFilter = 'all';
+let artSort = { col: 'date', asc: false };
+let artPage = 0;
+const ART_PAGE_SIZE = 25;
+let artActiveDropdown = null;
+let artLoaded = false;
+
+function artEsc(s) { return (s || '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
+
+function artStatusBadge(status) {
+  const map = {
+    draft: ['s-draft','Draft'], ready: ['s-ready','Ready to publish'],
+    'legal-review': ['s-legal','Legal'], 'marketing-review': ['s-mkt','Marketing'],
+    approved: ['s-approved','Published'], unpublished: ['s-unpublished','Unpublished'],
+  };
+  const [cls, label] = map[status] || ['s-draft', status];
+  return `<span class="art-status-badge ${cls}">${label}</span>`;
+}
+
+function artFormatDate(iso) {
+  if (!iso) return '';
+  return new Date(iso).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
+}
+
+function artShowToast(msg) {
+  const t = document.getElementById('art-toast');
+  t.textContent = msg; t.className = 'toast show';
+  setTimeout(() => { t.className = 'toast'; }, 2800);
+}
+
+function artCloseDropdown() {
+  if (artActiveDropdown) { artActiveDropdown.remove(); artActiveDropdown = null; }
+}
+
+async function artSendForReview(slug, reviewType) {
+  try {
+    const resp = await fetch(`/api/articles/${slug}/send-review`, {
+      method: 'POST', headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ reviewType }),
+    });
+    if (!resp.ok) throw new Error('Failed');
+    const data = await resp.json();
+    const a = artArticles.find(a => a.slug === slug);
+    if (a) a.status = data.article.status;
+    artApplyFilter();
+    artShowToast(`Sent to ${reviewType === 'legal' ? 'Legal Review' : 'Marketing'}`);
+  } catch { artShowToast('Failed to send for review'); }
+}
+
+async function loadArtArticles() {
+  artLoaded = true;
+  try {
+    const resp = await fetch('/api/articles');
+    if (!resp.ok) throw new Error('Server error');
+    artArticles = await resp.json();
+    const counts = {};
+    artArticles.forEach(a => { counts[a.status] = (counts[a.status] || 0) + 1; });
+    document.getElementById('ac-all').textContent = artArticles.length;
+    document.getElementById('ac-draft').textContent = counts['draft'] || 0;
+    document.getElementById('ac-waiting').textContent = (counts['ready']||0)+(counts['legal-review']||0)+(counts['marketing-review']||0);
+    document.getElementById('ac-approved').textContent = counts['approved'] || 0;
+    document.getElementById('art-sub').textContent = `${artArticles.length} article${artArticles.length !== 1 ? 's' : ''} · Browse and manage your articles`;
+    artApplyFilter();
+  } catch (err) {
+    const el = document.getElementById('art-empty');
+    el.textContent = `Could not load articles: ${err.message}`;
+    el.style.display = 'block';
+  }
+}
+
+function artApplyFilter() {
+  const query = document.getElementById('art-search').value.toLowerCase();
+  const waiting = ['ready','legal-review','marketing-review'];
+  artFiltered = artArticles.filter(a => {
+    if (artStatusFilter === 'waiting' && !waiting.includes(a.status)) return false;
+    if (artStatusFilter !== 'all' && artStatusFilter !== 'waiting' && a.status !== artStatusFilter) return false;
+    if (query) {
+      const s = [a.headline, a.subheadline, a.articleTitle, ...(a.tags||[])].filter(Boolean).join(' ').toLowerCase();
+      if (!s.includes(query)) return false;
+    }
+    return true;
+  });
+  artFiltered.sort((a, b) => {
+    const col = artSort.col;
+    const va = col === 'headline' ? (a.headline||'') : (a.createdAt||'');
+    const vb = col === 'headline' ? (b.headline||'') : (b.createdAt||'');
+    return artSort.asc ? va.localeCompare(vb) : vb.localeCompare(va);
+  });
+  artPage = 0;
+  artRender();
+}
+
+function artRender() {
+  const start = artPage * ART_PAGE_SIZE;
+  const slice = artFiltered.slice(start, start + ART_PAGE_SIZE);
+  const tbody = document.getElementById('art-tbody');
+  const empty = document.getElementById('art-empty');
+  if (!artFiltered.length) {
+    tbody.innerHTML = '';
+    empty.style.display = 'block';
+    empty.textContent = artArticles.length === 0 ? 'No articles yet — generate your first one!' : 'No articles match your filters';
+    artUpdatePager(); return;
+  }
+  empty.style.display = 'none';
+  tbody.innerHTML = slice.map(a => {
+    const tags = (a.tags||[]).map(t => `<span class="art-tag">${artEsc(t)}</span>`).join('');
+    const typeBadge = `<span class="art-type-badge">${a.articleType === 'listicle' ? 'Listicle' : 'Single'}</span>`;
+    const reviewBtn = a.status === 'ready' ? `<button class="send-btn" data-slug="${a.slug}">Send for review ▾</button>` : '';
+    const legalLink = a.status === 'legal-review' ? `<a href="/legal?slug=${a.slug}" class="act-btn" style="color:#f59e0b;border-color:rgba(245,158,11,0.3);">Review</a>` : '';
+    const mktLink = a.status === 'marketing-review' ? `<a href="/marketing?slug=${a.slug}" class="act-btn" style="color:#B073FF;border-color:rgba(124,58,237,0.3);">Review</a>` : '';
+    const ood = a.outOfWindowDate;
+    const oodStyle = ood && a.status === 'approved' && new Date(ood) < new Date() ? 'color:#ef4444;font-weight:600;' : 'color:#9ca3af;';
+    return `<tr>
+      <td>
+        <a href="/editor?slug=${artEsc(a.slug)}" class="headline-text">${artEsc(a.headline||a.articleTitle)}</a>
+        ${a.subheadline ? `<div class="article-sub">${artEsc(a.subheadline)}</div>` : ''}
+        ${tags ? `<div class="tag-row">${tags}</div>` : ''}
+      </td>
+      <td>${typeBadge}</td>
+      <td>${artStatusBadge(a.status)}</td>
+      <td class="td-date">${artFormatDate(a.createdAt)}</td>
+      <td class="td-date" style="${oodStyle}">${ood ? artFormatDate(ood) : '—'}</td>
+      <td class="td-act">
+        <a href="/editor?slug=${artEsc(a.slug)}" class="act-btn">View</a>
+        ${legalLink}${mktLink}${reviewBtn}
+      </td>
+    </tr>`;
+  }).join('');
+  artUpdatePager();
+  tbody.querySelectorAll('.send-btn').forEach(btn => {
+    btn.addEventListener('click', e => {
+      e.stopPropagation(); artCloseDropdown();
+      const slug = btn.dataset.slug;
+      const rect = btn.getBoundingClientRect();
+      const dd = document.createElement('div');
+      dd.className = 'rev-dd'; dd.style.cssText = `position:fixed;top:${rect.bottom+4}px;right:${window.innerWidth-rect.right}px;`;
+      dd.innerHTML = `<button class="rev-opt" data-type="legal">Legal Review<span class="sub">Flag legal concerns</span></button><button class="rev-opt" data-type="marketing">Marketing Review<span class="sub">Check brand alignment</span></button>`;
+      document.body.appendChild(dd); artActiveDropdown = dd;
+      dd.querySelectorAll('.rev-opt').forEach(o => o.addEventListener('click', () => { artCloseDropdown(); artSendForReview(slug, o.dataset.type); }));
+    });
+  });
+}
+
+function artUpdatePager() {
+  const total = artFiltered.length;
+  const start = artPage * ART_PAGE_SIZE;
+  const end = Math.min(start + ART_PAGE_SIZE, total);
+  const totalPages = Math.ceil(total / ART_PAGE_SIZE);
+  document.getElementById('art-page-info').textContent = total > 0 ? `Showing ${start+1}–${end} of ${total}` : '';
+  document.getElementById('art-page-indicator').textContent = totalPages > 0 ? `${artPage+1} / ${totalPages}` : '';
+  document.getElementById('art-prev-btn').disabled = artPage === 0;
+  document.getElementById('art-next-btn').disabled = end >= total;
+}
+
+document.addEventListener('click', () => artCloseDropdown());
+document.getElementById('art-status-tabs').addEventListener('click', e => {
+  const chip = e.target.closest('.status-chip');
+  if (!chip) return;
+  artStatusFilter = chip.dataset.status;
+  document.querySelectorAll('#art-status-tabs .status-chip').forEach(c => c.classList.remove('active'));
+  chip.classList.add('active');
+  artApplyFilter();
+});
+document.getElementById('art-search').addEventListener('input', artApplyFilter);
+document.querySelectorAll('.art-table thead th[data-col]').forEach(th => {
+  th.addEventListener('click', () => {
+    const col = th.dataset.col;
+    if (artSort.col === col) artSort.asc = !artSort.asc;
+    else { artSort.col = col; artSort.asc = true; }
+    document.querySelectorAll('.art-table thead th').forEach(t => { t.classList.remove('sorted'); const si = t.querySelector('.si'); if (si) si.textContent = '↑↓'; });
+    th.classList.add('sorted');
+    const si = th.querySelector('.si'); if (si) si.textContent = artSort.asc ? '↑' : '↓';
+    artRender();
+  });
+});
+document.getElementById('art-prev-btn').addEventListener('click', () => { if (artPage > 0) { artPage--; artRender(); } });
+document.getElementById('art-next-btn').addEventListener('click', () => { if ((artPage+1)*ART_PAGE_SIZE < artFiltered.length) { artPage++; artRender(); } });
+
+// ── Bulk Generate ──────────────────────────────────────────────────────────────
+
+let bulkDefaultMode = 'single';
+let bulkItems = []; // { contentId, mode, releaseDate? }
+
+function setBulkDefault(mode) {
+  bulkDefaultMode = mode;
+  document.getElementById('bulk-default-single').classList.toggle('active', mode === 'single');
+  document.getElementById('bulk-default-coming-soon').classList.toggle('active', mode === 'coming-soon');
+}
+
+function parseBulkInput() {
+  const raw = document.getElementById('bulk-textarea').value;
+  const lines = raw.split('\n').map(l => l.trim()).filter(Boolean);
+  bulkItems = [];
+
+  for (const line of lines) {
+    const parts = line.split(/\s+/);
+    const contentId = parts[0];
+    if (!contentId) continue;
+
+    let mode = bulkDefaultMode;
+    let releaseDate = undefined;
+
+    if (parts[1] && (parts[1].toLowerCase() === 'coming-soon' || parts[1].toLowerCase() === 'cs')) {
+      mode = 'coming-soon';
+      if (parts.length > 2) releaseDate = parts.slice(2).join(' ');
+    } else if (parts[1] && (parts[1].toLowerCase() === 'single' || parts[1].toLowerCase() === 's')) {
+      mode = 'single';
+    } else if (parts.length > 1 && mode === 'coming-soon') {
+      // treat remainder as release date if default mode is coming-soon
+      releaseDate = parts.slice(1).join(' ');
+    }
+
+    bulkItems.push({ contentId, mode, releaseDate });
+  }
+
+  renderBulkParsedList();
+}
+
+function renderBulkParsedList() {
+  const list = document.getElementById('bulk-parsed-list');
+  const section = document.getElementById('bulk-parsed-section');
+  const countEl = document.getElementById('bulk-count');
+  const btn = document.getElementById('bulk-generate-btn');
+
+  list.innerHTML = '';
+  if (!bulkItems.length) {
+    section.style.display = 'none';
+    return;
+  }
+
+  section.style.display = 'block';
+  countEl.textContent = `${bulkItems.length} item${bulkItems.length !== 1 ? 's' : ''}`;
+
+  bulkItems.forEach((item, i) => {
+    const el = document.createElement('div');
+    el.className = 'bulk-item-row';
+    el.dataset.idx = String(i);
+    el.innerHTML = `
+      <span class="bulk-item-id">${esc(item.contentId)}</span>
+      <span class="bulk-item-mode ${item.mode === 'coming-soon' ? 'coming-soon' : 'single'}">${item.mode === 'coming-soon' ? 'Coming Soon' : 'Single'}</span>
+      ${item.releaseDate ? `<span class="bulk-item-date">${esc(item.releaseDate)}</span>` : ''}
+      <button class="bulk-item-remove" title="Remove" onclick="removeBulkItem(${i})">×</button>
+    `;
+    list.appendChild(el);
+  });
+
+  btn.disabled = false;
+}
+
+function removeBulkItem(idx) {
+  bulkItems.splice(idx, 1);
+  renderBulkParsedList();
+}
+
+function clearBulkList() {
+  bulkItems = [];
+  document.getElementById('bulk-textarea').value = '';
+  document.getElementById('bulk-parsed-section').style.display = 'none';
+}
+
+async function startBulkGenerate() {
+  if (!bulkItems.length || generating) return;
+  generating = true;
+
+  const btn = document.getElementById('bulk-generate-btn');
+  const spinner = document.getElementById('bulk-btn-spinner');
+  const label = document.getElementById('bulk-btn-label');
+  btn.disabled = true;
+  spinner.classList.add('visible');
+  label.textContent = 'Generating…';
+
+  // Switch progress panel to bulk view
+  document.getElementById('pp-idle').style.display = 'none';
+  const ppActive = document.getElementById('pp-active');
+  ppActive.classList.add('visible');
+  document.getElementById('pp-heading').textContent = `Bulk generating ${bulkItems.length} articles`;
+  document.getElementById('pp-subheading').textContent = 'Processing one at a time — this may take a while';
+  document.getElementById('stage-list').style.display = 'none';
+  document.getElementById('attempt-badge').classList.remove('visible');
+  document.getElementById('done-card').classList.remove('visible');
+  document.getElementById('error-banner').classList.remove('visible');
+  document.getElementById('issue-list').innerHTML = '';
+  document.getElementById('issue-list').classList.remove('visible');
+
+  // Inject bulk progress list
+  const existingBulkList = document.getElementById('bulk-progress-list');
+  if (existingBulkList) existingBulkList.remove();
+  const bulkList = document.createElement('div');
+  bulkList.className = 'bulk-progress-list';
+  bulkList.id = 'bulk-progress-list';
+  bulkItems.forEach((item, i) => {
+    const el = document.createElement('div');
+    el.className = 'bulk-progress-item';
+    el.id = `bpi-${i}`;
+    el.innerHTML = `
+      <div class="bpi-header">
+        <div class="bpi-icon"><div class="s-dot"></div></div>
+        <span class="bpi-id">${esc(item.contentId)}</span>
+        <span class="bpi-status">${item.mode === 'coming-soon' ? 'Coming Soon' : 'Single'}</span>
+      </div>
+      <div class="bpi-stage" id="bpi-stage-${i}">Queued</div>
+    `;
+    bulkList.appendChild(el);
+  });
+  ppActive.appendChild(bulkList);
+
+  try {
+    const res = await fetch(`${API}/api/generate/bulk`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ items: bulkItems }),
+    });
+
+    const reader = res.body.getReader();
+    const decoder = new TextDecoder();
+    let buf = '';
+
+    while (true) {
+      const { done, value } = await reader.read();
+      if (done) break;
+      buf += decoder.decode(value, { stream: true });
+      const lines = buf.split('\n');
+      buf = lines.pop();
+      for (const line of lines) {
+        if (line.startsWith('data: ')) {
+          try { handleBulkEvent(JSON.parse(line.slice(6))); } catch {}
+        }
+      }
+    }
+  } catch (err) {
+    document.getElementById('pp-heading').textContent = 'Bulk generation failed';
+    document.getElementById('pp-subheading').textContent = err.message || 'Network error';
+  }
+
+  generating = false;
+  spinner.classList.remove('visible');
+  label.textContent = 'Generate All';
+  btn.disabled = !bulkItems.length;
+  document.getElementById('stage-list').style.display = '';
+}
+
+function handleBulkEvent(evt) {
+  const idx = evt.bulkIndex;
+  if (idx === undefined && evt.type !== 'bulk_done') return;
+
+  const item = document.getElementById(`bpi-${idx}`);
+  const stageEl = document.getElementById(`bpi-stage-${idx}`);
+  if (!item) return;
+
+  switch (evt.type) {
+    case 'bulk_item_start':
+      item.className = 'bulk-progress-item bpi-active';
+      item.querySelector('.bpi-icon').innerHTML = '<div class="s-spin"></div>';
+      if (stageEl) stageEl.textContent = 'Starting…';
+      document.getElementById('pp-subheading').textContent = `${idx + 1} / ${evt.bulkTotal} in progress`;
+      break;
+
+    case 'stage':
+      if (stageEl) stageEl.textContent = evt.label || evt.stage;
+      break;
+
+    case 'metadata':
+      if (item.querySelector('.bpi-id') && evt.title) {
+        item.querySelector('.bpi-id').textContent = evt.title;
+      }
+      break;
+
+    case 'quality_fail':
+    case 'brand_fail':
+      if (stageEl) stageEl.textContent = evt.type === 'quality_fail' ? 'Quality retry…' : 'Brand retry…';
+      break;
+
+    case 'done': {
+      item.className = 'bulk-progress-item bpi-done';
+      item.querySelector('.bpi-icon').innerHTML = '<span class="s-check" style="color:#10b981;font-size:13px;">✓</span>';
+      if (stageEl) {
+        stageEl.innerHTML = `<a class="bpi-link" href="/editor?slug=${encodeURIComponent(evt.slug)}" target="_blank">Open in editor →</a>`;
+      }
+      break;
+    }
+
+    case 'error':
+      item.className = 'bulk-progress-item bpi-error';
+      item.querySelector('.bpi-icon').innerHTML = '<span style="color:#ef4444;font-size:13px;">✗</span>';
+      if (stageEl) stageEl.innerHTML = `<span class="bpi-error-msg">${esc(evt.message || 'Failed')}</span>`;
+      break;
+
+    case 'bulk_item_end':
+      document.getElementById('pp-subheading').textContent = `${evt.index + 1} / ${evt.total} complete`;
+      break;
+
+    case 'bulk_done':
+      document.getElementById('pp-heading').textContent = `All ${evt.total} articles generated`;
+      document.getElementById('pp-subheading').textContent = 'Click any title above to open in editor';
+      break;
+  }
 }
 </script>
 </body>

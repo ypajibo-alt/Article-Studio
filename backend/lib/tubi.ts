@@ -26,9 +26,10 @@ interface TokenPayload { exp: number; tubi_id: string }
 interface TokenResponse { access_token: string; refresh_token: string; expires_in: number }
 interface SigningKeyResponse { id: string; key: string }
 
-// Token cache
+// Token cache with pending-promise guard to prevent parallel refresh races
 let cachedToken: string | null = null;
 let cachedTokenExp = 0;
+let pendingTokenFetch: Promise<string | null> | null = null;
 
 function getDateISO(): string {
   return new Date().toISOString().split('.')[0].concat('Z').replace(/[^A-Za-z0-9]/g, '');
@@ -114,12 +115,18 @@ export async function getToken(): Promise<string | null> {
       if (Date.now() / 1000 + EXPIRE_BUFFER_TIME_SECONDS < exp) return cachedToken;
     } catch { /* fall through */ }
   }
-  const token = await generateFreshToken();
-  if (token) {
-    cachedToken = token;
-    try { cachedTokenExp = jwtDecode<TokenPayload>(token).exp; } catch { cachedTokenExp = 0; }
+  if (!pendingTokenFetch) {
+    pendingTokenFetch = generateFreshToken()
+      .then(token => {
+        if (token) {
+          cachedToken = token;
+          try { cachedTokenExp = jwtDecode<TokenPayload>(token).exp; } catch { cachedTokenExp = 0; }
+        }
+        return token;
+      })
+      .finally(() => { pendingTokenFetch = null; });
   }
-  return token;
+  return pendingTokenFetch;
 }
 
 export interface TubiContentAvailability {
